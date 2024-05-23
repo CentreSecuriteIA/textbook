@@ -47,14 +47,14 @@ The rest of this textbook assumes familiarity with Machine Learning (ML). Please
 
 #### Week 1: **Human-Level AI, What, How and When?**
 
-📖 [Chapter](1-Capabilities/Chapter-1_section_2-Chapter-Overview/)
+📖 [Chapter](Chapters/1-Capabilities/2-Overview.md)
 
 ??? abstract "Concepts covered"
     Current Capabilities, Foundation Models, Leveraging Computation, Future Capabilities, Timelines and Anchors, Instrumental Convergence.
 
 #### Week 2: **AI Risks Landscape**
 
-📖 [Chapter](https://docs.google.com/document/d/1ifYc49Wq-9HuqCXCa8jIr5n6ZOYjZ3FvxE9vHPMcu58/edit)
+📖 [Chapter](Chapters/2-Risks/2-Introduction.md)
 
 ??? abstract "Concepts covered"
     Misuses, Alignment risks, Systemic risks.

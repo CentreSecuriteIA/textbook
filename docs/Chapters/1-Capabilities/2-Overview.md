@@ -16,7 +16,7 @@
 
 <div class="grid cards" markdown>
 
-- :material-robot-outline:{ .lg .middle } __[State-of-the-Art AI](docs/Chapter1-Capabilities/Chapter-1_section_3-State-of-the-Art-AI.md)__
+- :material-robot-outline:{ .lg .middle } __[State-of-the-Art AI](1-Capabilities/Chapter-1_section_5-Terminology.md)__
   - We begin with a brief introduction to the current advancements in artificial intelligence as of 2024. We aim to acquaint readers with the latest breakthroughs across various domains such as language processing, vision, and robotics. [State-of-the-Art AI](docs/Chapter1-Capabilities/Chapter-1_section_3-State-of-the-Art-AI.md)
 
 - :material-table-column-plus-after:{ .lg .middle } __Foundation Models__

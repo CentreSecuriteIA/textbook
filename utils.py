@@ -4,6 +4,7 @@ import re
 def sanitize_filename(filename):
     # Remove invalid characters for filenames
     filename = re.sub(r'[\\/*?:"<>|]', "", filename)
+    filename = filename.replace(" ", '-')
     return filename
 
 def split_markdown(file_path):
@@ -18,8 +19,6 @@ def split_markdown(file_path):
     if sections[0].strip() == '':
         sections = sections[1:]
 
-    base_filename = os.path.splitext(file_path)[0]
-
     for i, section in enumerate(sections):
         section = section.strip()
         if not section:
@@ -32,7 +31,7 @@ def split_markdown(file_path):
             body = section[len(title):].strip()
 
         sanitized_title = sanitize_filename(title)
-        output_filename = f"{base_filename}_section_{i+1}-{sanitized_title}.md"
+        output_filename = f"{i}-{sanitized_title}.md"
         with open(output_filename, 'w', encoding='utf-8') as output_file:
             output_file.write(f"# {title}\n{body}")
 
