@@ -20,8 +20,6 @@ The creativity of LLMs is often debated, but there are clear indications that AI
 
 - **Creative Optimization**: AI can optimize in surprisingly creative ways. The phenomena of specification gaming, where AI finds unintended solutions to problems, illustrate this. Although this unpredictability poses its challenges, it also shows that AI systems can come up with novel, creative solutions that might not be immediately obvious or intuitive to human problem solvers. DeepMind's blog post on [Specification Gaming](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/) illustrates this point vividly.
 
-- (Footnote) While currently, creativity might often be in the formulation of instructions, it's conceivable to imagine a system that can automatically generate creative instructions or tasks. For instance, GPT-4 could be prompted to create bizarre or novel instructions, showcasing its ability to generate creative and unconventional ideas.
-
 **Slow Learning Speed?**
 
 The slow learning speed of LLMs compared to humans is often highlighted. It's typically said that to increase performance in new tasks or situations, LLMs require training on vast amounts of data — millions of times more than a human would need. However, there's a growing belief that data efficiency can be significantly improved in future models.
@@ -42,7 +40,7 @@ While it is true that AI has not yet achieved maximal robustness, for example be
 
 **Stochastic Parrot: Do AIs only memorize information without truly compressing it?**
 
-![Enter image alt description](Images/NPm_Image_26.png)
+![Enter image alt description](Images/wr2_Image_26.png)
 
 ([source](https://twitter.com/fchollet/status/1735799743505433020))
 
@@ -50,7 +48,7 @@ For example, François Chollet said ([tweet](https://twitter.com/fchollet/status
 
 There are two archetypal ways to represent information in an LLM: either memorize point by point, like a look-up table, or compress the information by only memorizing higher-level features, which we can then call “the world model”. This is explained in the very important paper "Superposition, Memorization, and Double Descent": it turns out that to store points, initially the model learns the position of all the points (pure memorization), then, if we increase the number of points, the model starts to compress this knowledge, and the model is now capable of generalization (and implements a simple model of the data).
 
-![Enter image alt description](Images/iBl_Image_27.png)
+![Enter image alt description](Images/G3Y_Image_27.png)
  \
 ([source](https://pbs.twimg.com/media/GBki4GWXcAAO22Y?format=jpg&name=medium))
 
@@ -80,6 +78,26 @@ Allowing the AI to express degrees of confidence in its answers, acknowledging u
 Process-based training ensures that the systems are accustomed to detailing their thoughts in much greater detail and not being able to skip too many reasoning steps. For example, see OpenAI’s Improving Mathematical Reasoning with process supervision (source).
 Training for metacognition: Models can be trained to give the probability of what they assert, a form of metacognition. For instance, the paper "Language Models (Mostly) Know What They Know" (source) demonstrates that AIs can be Bayesian calibrated about their knowledge. This implies that they can have a rudimentary form of self-awareness, recognizing the likelihood of their own accuracy. Informally, this means it is possible to query a chatbot with "Are you sure about what you are telling me?" and receive a relatively reliable response. This can serve as training against hallucinations.
 It's worth noting that these techniques enable substantial problem mitigation for the current LLMs, but they don’t solve all the problems that we encounter with AI that are potentially deceptive, as we will see in the chapter on goal misgeneralization. |
+
+??? note
+
+- **Fine-tuning LLMs for Factuality:** In this paper ([link](https://arxiv.org/abs/2311.08401)), the authors recommend fine-tuning methods using Direct Preference Optimization (DPO) to decrease the rate of hallucinations. By applying such techniques, a 7B Llama 2 model saw a 58% reduction in factual error rate compared to its original model.
+
+- **Retrieval Augmented Generation (RAG)**. This method works by incorporating a process of looking up real-world information (retrieval, like a Google search) and then using that information to guide the AI's responses (generation, based on the document retrieved). By doing so, the AI is better anchored in factual reality, reducing the chances of producing unrealistic or incorrect content. Essentially, it's like giving the AI a reference library to check facts against while it learns and responds, ensuring its output is more grounded in reality. This approach is particularly useful in the context of in-context learning, where the AI learns from the information and context provided in each interaction.
+
+- **Prompting techniques** in AI have evolved to include sophisticated methods like
+
+- **Consistency checks** ([source](https://arxiv.org/abs/2306.09983)), that involve comparing the output from multiple instances of the model on the same prompt, identifying and resolving any disagreements in the responses. This method enhances the accuracy and credibility of the information provided. For instance, if different iterations of the model produce conflicting answers, this discrepancy can be used to refine and improve the model's understanding.
+
+- **Reflexion.** The Reflexion technique ("Reflexion: Language Agents with Verbal Reinforcement Learning"): It’s possible to simply ask the LLM to take a step back, to question whether what it has done is correct or not, and to consider ways to improve the previous answer, and this enhances a lot the capabilities of GPT-4, and this technique is emergent and does not work well with previous models. ([source](https://arxiv.org/abs/2303.11366)).
+
+- **verification chains**, like **selection inference** ([source](https://arxiv.org/abs/2205.09712)). Chain-of-Thought has access to the whole context, so each reasoning step is not necessarily causally connected to the last. But selection inference enforces a structure where each reasoning step necessarily follows from the last, and therefore the whole reasoning chain is causal. This process involves the AI model examining its own reasoning or the steps it took to arrive at a conclusion. By doing so, it can verify the logic and consistency of its responses, ensuring they are well-founded and trustworthy.
+
+- **Allowing the AI to express degrees of confidence** in its answers, acknowledging uncertainty when appropriate. For instance, instead of a definitive "Yes" or "No," the model might respond with "I am not sure," reflecting a more nuanced understanding akin to human reasoning. This approach is evident in advanced models like Gopher ([source](https://arxiv.org/pdf/2112.11446.pdf)), which contrasts with earlier models such as WebGPT which may not exhibit the same level of nuanced responses.
+
+- **Process-based training** ensures that the systems are accustomed to detailing their thoughts in much greater detail and not being able to skip too many reasoning steps. For example, see OpenAI’s Improving Mathematical Reasoning with process supervision ([source](https://openai.com/research/improving-mathematical-reasoning-with-process-supervision)).
+
+- **Training for metacognition**: Models can be trained to give the probability of what they assert, a form of metacognition. For instance, the paper "Language Models (Mostly) Know What They Know" ([source](https://arxiv.org/abs/2207.05221)) demonstrates that AIs can be Bayesian calibrated about their knowledge. This implies that they can have a rudimentary form of self-awareness, recognizing the likelihood of their own accuracy. Informally, this means it is possible to query a chatbot with "Are you sure about what you are telling me?" and receive a relatively reliable response. This can serve as training against hallucinations.
 
 ## Structural inadequacy?
 
