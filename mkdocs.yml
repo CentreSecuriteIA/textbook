@@ -2,6 +2,7 @@ site_name: The AI Safety Handbook
 site_url: https://mydomain.org/mysite
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.indexes
@@ -10,6 +11,9 @@ theme:
     - navigation.top
     - navigation.footer
     - content.tooltips
+    - content.footnote.tooltips
+    - header.autohide
+    - announce.dismiss
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -24,5 +28,11 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - abbr
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
 watch:
   - includes
