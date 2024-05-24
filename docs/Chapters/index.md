@@ -61,7 +61,7 @@ This textbook assumes familiarity with Machine Learning (ML). Please take your t
 
 #### Chapter 2: **AI Risks Landscape**
 
-📖 [Chapter](Chapters/1-Capabilities/0-Chapter-Overview.md)
+📖 [Chapter](2-Risks/)
 
 ??? abstract "Concepts covered"
     Concepts covered: Misuses, Alignment risks, Systemic risks.
