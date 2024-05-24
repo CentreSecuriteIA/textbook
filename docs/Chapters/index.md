@@ -15,7 +15,7 @@ This textbook is an adaptation of the [course](https://www.master-mva.com/cours/
 
 ---
 
-!!! quote
+!!! quote "Quotes"
     “I found it to be very well written and super insightful. Learned tons of new things. Looking forwards to continue reading.” - Participant of ML4G Germany 2023.
 
     “I liked the text, was well written, concise, easy to follow, contained many important points.” - Participant of ML4G Germany 2023.
@@ -32,7 +32,7 @@ This textbook is an adaptation of the [course](https://www.master-mva.com/cours/
 !!! info "Contact Information"
     This textbook was created by Charbel-Raphael Segerie, Markov, Jeanne Salle, and Vincent Corruble. We are actively looking for funding. Please consider upvoting us on [Manifund](https://manifund.org/projects/ai-safety-textbook) if you like our work.
 
-    Contacts: [Charbel-Raphael Segerie](mailto:crsegerie@gmail.com), [agisf_textbook.0fh6l@slmail.me](mailto:agisf_textbook.0fh6l@slmail.me), [jeanne.salle@yahoo.fr](mailto:jeanne.salle@yahoo.fr)
+    Contacts: [Charbel-Raphael Segerie](mailto:crsegerie@gmail.com), [Markov](mailto:agisf_textbook.0fh6l@slmail.me).
 
 ## **Curriculum**
 
@@ -45,30 +45,36 @@ The textbook is currently written as a list of chapters. Some chapters contain a
 
 ---
 
-#### Week 0: **Artificial Intelligence**
+#### Chapter 0: **Artificial Intelligence**
 
 This textbook assumes familiarity with Machine Learning (ML). Please take your time to understand the core concepts, *especially* Reinforcement Learning (RL). Here are some [resources](https://course.aisafetyfundamentals.com/alignment?week=0) if you are not familiar with ML yet.
 
-Concepts covered: Basics of Machine Learning, Basics of Reinforcement Learning, Basics of the Transformer Architecture.
+??? abstract "Concepts covered"
+    Concepts covered: Basics of Machine Learning, Basics of Reinforcement Learning, Basics of the Transformer Architecture.
 
-#### Week 1: **Human-Level AI, What, How and When?**
+#### Chapter 1: **Human-Level AI, What, How and When?**
 
 📖 [Chapter](Chapters/1-Capabilities/2-Overview.md)
 
-Concepts covered: Current Capabilities, Foundation Models, Leveraging Computation, Future Capabilities, Timelines and Anchors, Instrumental Convergence.
+??? abstract "Concepts covered"
+    Concepts covered: Current Capabilities, Foundation Models, Leveraging Computation, Future Capabilities, Timelines and Anchors, Instrumental Convergence.
 
-#### Week 2: **AI Risks Landscape**
+#### Chapter 2: **AI Risks Landscape**
 
 📖 [Chapter](Chapters/2-Risks/2-Introduction.md)
 
-Concepts covered: Misuses, Alignment risks, Systemic risks.
+??? abstract "Concepts covered"
+    Concepts covered: Misuses, Alignment risks, Systemic risks.
 
-#### Week 3: **Solutions Landscape**
+#### Chapter 3: **Solutions Landscape**
 
 📖 [Chapter](https://docs.google.com/document/d/1WTyLHyaJ_NEDEu49U_hh7oz0-AOQfp7uOJKLck-7A78/edit)
 
 ??? abstract "Concepts covered"
     API, defense acceleration, AI alignment main paradigms, safety culture, and organizational safety.
+
+!!! warning "Warning"
+    Beyond chapter 3, the content has not yet been integrated into the website and is still only available on google docs.
 
 ### **PART 2 : TECHNICAL PROBLEMS**
 
@@ -79,7 +85,7 @@ Concepts covered: Misuses, Alignment risks, Systemic risks.
 
 ---
 
-#### Week 4: **Reward Misspecification**
+#### Chapter 4: **Reward Misspecification**
 
 👉 Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=nKJlF-olKmg).
 
@@ -88,7 +94,7 @@ Concepts covered: Misuses, Alignment risks, Systemic risks.
 ??? abstract "Concepts covered"
     Reward, Reward Misspecification, Optimization, Goodhart's Law, Learning by imitation, Learning by Feedback.
 
-#### Week 5: **Goal Misgeneralization**
+#### Chapter 5: **Goal Misgeneralization**
 
 👉 Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=bJLcIBixGj8).
 
@@ -106,7 +112,7 @@ Concepts covered: Misuses, Alignment risks, Systemic risks.
 
 ---
 
-#### Week 6: **Task Decomposition for Scalable Oversight**
+#### Chapter 6: **Task Decomposition for Scalable Oversight**
 
 👉 Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=v9M2Ho9I9Qo).
 
@@ -115,7 +121,7 @@ Concepts covered: Misuses, Alignment risks, Systemic risks.
 ??? abstract "Concepts covered"
     Scalable Oversight Problem, Sandwiching, Task decomposition, Factored cognition, Iterated Amplification, amplification in modern LLMs, Process Supervision.
 
-#### Week 7: **Adversarial Techniques for Scalable Oversight**
+#### Chapter 7: **Adversarial Techniques for Scalable Oversight**
 
 👉 Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=wIX00bZ173k).
 
@@ -125,7 +131,7 @@ Concepts covered: Misuses, Alignment risks, Systemic risks.
     Debate, obfuscated arguments problem, AI-written critiques, problems with debate.
     Unrestricted adversarial training, adversarial training, red-teaming language models, interpretability for finding adversarial examples, relaxed adversarial training.
 
-#### Week 8: **Interpretability**
+#### Chapter 8: **Interpretability**
 
 **Vision**
 
@@ -143,14 +149,14 @@ Concepts covered: Misuses, Alignment risks, Systemic risks.
 ??? abstract "Concepts covered"
     Logit Lens, Rome, Probing, Induction heads, limits of interpretability.
 
-#### Week 9: **Agent Foundations**
+#### Chapter 9: **Agent Foundations**
 
 📖 [Chapter](https://docs.google.com/document/d/1z4CwGDUzHvPvfXNxyfDaIfh9kK1JBJWEcfdGUutfJY0/edit)
 
 ??? abstract "Concepts covered"
     Utility functions, agent AI, tool AI, True Name, Shard theory, CEV, CIRL.
 
-#### Week 10: **Governance**
+#### Chapter 10: **Governance**
 
 📖 WIP, for the moment, please follow [Bluedot Impact's](https://course.aisafetyfundamentals.com/alignment?session=6) course which is already great.
 

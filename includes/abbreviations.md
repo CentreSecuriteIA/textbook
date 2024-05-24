@@ -1,3 +1,4 @@
+<!-- Don't forget to copy what is here to the file glossary.md -->
 *[ML]: Machine Learning
 *[LLM]: Large Language Model
 *[AI]: Artificial Intelligence
