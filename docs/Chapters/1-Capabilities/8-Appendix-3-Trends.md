@@ -4,7 +4,7 @@ Generally, the three main components recognized as the main variables of advance
 
 We can anticipate that models will continue to scale in the near future. Increased scale combined with the increasingly general-purpose nature of foundation models could potentially lead to a sustained growth in general-purpose AI capabilities.
 
-![Enter image alt description](Images/lsq_Image_27.png)
+![Enter image alt description](Images/D13_Image_28.png)
 
 Figure: Monitoring the trends in ML quantitatively. Epoch (2023), "Key trends and figures in Machine Learning". Published online at epochai.org. ([source](https://epochai.org/trends))
 
@@ -16,7 +16,7 @@ Hardware advancements are paralleling these trends in training compute and data.
 
 In 2010, before the deep learning revolution, DeepMind co-founder Shane Legg predicted human-level AI by 2028 using compute-based estimates ([source](http://www.vetta.org/2010/12/goodbye-2010/)). OpenAI co-founder Ilya Sutskever, whose AlexNet paper sparked the deep learning revolution, was also an early proponent of the idea that scaling up deep learning would be transformative.
 
-![Enter image alt description](Images/aUd_Image_28.png)
+![Enter image alt description](Images/Xhw_Image_29.png)
 
 Source: Epoch (2023), "[Key trends and figures in Machine Learning](https://epochai.org/trends)"
 
@@ -34,7 +34,7 @@ The following table and graph illustrate the trend change in machine learning mo
 | Gopher | 2021 | 280 billion | 300 billion |
 | MT-NLG 530B | 2022 | 530 billion | 270 billion |
 
-![Enter image alt description](Images/9A6_Image_29.png)
+![Enter image alt description](Images/5tP_Image_30.png)
 
 Source: Villalobos, Pablo et. al. (Jul 2022) “[Machine Learning Model Sizes and the Parameter Gap](https://arxiv.org/abs/2207.02852)”
 
@@ -49,7 +49,7 @@ Source: Villalobos, Pablo et. al. (Jul 2022) “[Machine Learning Model Sizes an
 | This is a complicated question, but some evidence suggests that once an architecture is expressive and scalable enough, the architecture matters less than we might have thought:
 
 In a paper titled ‘ConvNets Match Vision Transformers at Scale,' Google researchers found that Visual Transformers (ViT) can achieve the same results as CNNs simply by using more compute. They took a special CNN architecture and trained it on a massive dataset of four billion images. The resulting model matched the accuracy of existing ViT systems that used similar training compute.  
-Even fully-connected networks—hard to get much simpler than them—work surprisingly well for many tasks.
+Even fully-connected networks—hard to get much simpler than them—work surprisingly well for many tasks. 
 Variational Auto Encoders (long an also-ran to GANs or autoregressive models in terms of image generation) catch up if you make them very deep (Child 2020, Vahdat & Kautz 2020).
 Progress in late 2023, such as the mamba architecture (source), appears to be an improvement on the transformer. It can be seen as an algorithmic advancement that reduces the amount of training computation needed to achieve the same performance.
 The connections and normalizations in the transformer, which were thought to be important, can be taken out if the weights are set up correctly. This can also make the transformer design simpler (Note however that this architecture is slower to converge than the others). (source)
@@ -70,7 +70,7 @@ The total amount of data generated every single day is on the order of ~463EB (S
 
 The median projection for when the training dataset of notable ML models exhausts the stock of professionally edited texts on the internet is 2024. The median projection for the year in which ML models use up all the text on the internet is 2040. Overall, projections by Epochai predict that we will have exhausted high-quality language data before 2026, low-quality language data somewhere between 2030 and 2050, and vision data between 2030 and 2060. This might be an indicator of slowing down ML progress after the next couple of decades. These conclusions from Epochai, like all the other conclusions in this entire leveraging computation section, rely on the unrealistic assumptions that current trends in ML data usage and production will continue and that there will be no major innovations in data efficiency, i.e. we are assuming that the amount of capabilities gained per training datapoint will not change from current standards.
 
-![Enter image alt description](Images/STG_Image_30.png)
+![Enter image alt description](Images/zWd_Image_31.png)
 ML data consumption and data production trends for low-quality text, high-quality text, and images. - Source: Epoch (2023), "[Key trends and figures in Machine Learning](https://epochai.org/trends)"
 
 Even if we run out of Data, many solutions are proposed, from using synthetic data, for example, filtering and preprocessing the data with GPT-3.5 to create a new cleaner dataset, an approach used in the paper "Textbooks are all you need" with models like Phi 1.5B that demonstrate excellent performance for their size through the use of high-quality filtered data, to the use of more efficient trainings, or being more efficient by training on more epochs.

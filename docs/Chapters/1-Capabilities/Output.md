@@ -4,6 +4,9 @@
 
 # Chapter Overview
 
+!!! info “Requirements” \
+TAB This chapter does not require any familiarity with ML, but the appendixes are more technical and can be skipped.
+
 This chapter seeks to outline the recent important developments in AI and presents some potential trajectories for developing highly capable AI systems.
 
 **State-of-the-Art AI**. We begin with a brief introduction to the current advancements in artificial intelligence as of 2024. We aim to acquaint readers with the latest breakthroughs across various domains such as language processing, vision, and robotics.
@@ -20,11 +23,58 @@ This chapter seeks to outline the recent important developments in AI and presen
 
 **Estimated reading time (including Appendices)**: 3 Hours 40 minutes reading at 100 wpm. The appendices are meant for people already quite familiar with topics in machine learning.
 
+Chapter Overview
+*Human-Level AI, What, How and When?*
+
+!!! question
+
+TAB If you have a question, or a remark don't hesitate to ask to agisf_textbook.0fh6l@slmail.me
+
+!!! tip
+
+TAB For more information on how to use best this textbook, you can read ...
+
+!!! abstract
+
+TAB This chapter seeks to outline the recent important developments in AI and presents some potential trajectories for developing highly capable AI systems.
+
+<div class="grid cards" markdown>
+
+- :material-robot-outline:{ .lg .middle } __[State-of-the-Art AI](1-Capabilities/Chapter-1_section_5-Terminology.md)__
+
+- We begin with a brief introduction to the current advancements in artificial intelligence as of 2024. We aim to acquaint readers with the latest breakthroughs across various domains such as language processing, vision, and robotics. [State-of-the-Art AI](docs/Chapter1-Capabilities/Chapter-1_section_3-State-of-the-Art-AI.md)
+
+- :material-table-column-plus-after:{ .lg .middle } __Foundation Models__
+
+- The second section focuses on foundation models, the paradigm powering the state-of-the-art systems introduced in the previous section. We explain the key techniques underpinning the huge success of these models such as self-supervised learning, zero-shot learning, and fine-tuning. The section concludes by looking at the risks that the foundation model paradigm could pose such as power centralization, homogenization, and the potential for emergent capabilities.
+
+- :material-book-outline:{ .lg .middle } __Terminology__
+
+- Before diving deeper, we establish the definitions that this book will be working with. This section explains why "capabilities" rather than "intelligence" is a more pragmatic measure for discussing AI risks. We also delineate key terms within the AI debate, such as Artificial General Intelligence (AGI), Artificial Super Intelligence (ASI), and Transformative AI (TAI). The section concludes by introducing the (t,n)-AGI framework which allows us to more concretely measure the level of AI capabilities on a continuous scale, rather than having to rely on discrete thresholds.
+
+- :simple-rocket:{ .lg .middle } __Leveraging Computation__
+
+- In this section, we explore the importance of computation in AI's progress introducing the three main variables that govern the capabilities of today's foundation models - compute, data and parameter count. We explore scaling laws and hypotheses that predict the future capabilities of AI based on current scaling trends of these variables, offering insights into the computational strategies that could pave the way to AGI.
+
+- :material-chart-line:{ .lg .middle } __Forecasting__
+
+- Finally, the chapter addresses the challenge of forecasting AI's future, using biological anchors as a method to estimate the computational needs for transformative AI. This section sets the groundwork for discussing AI takeoff dynamics, including speed, polarity, and homogeneity, offering a comprehensive view of potential futures shaped by AI development.
+
+- :material-timer-sand:{ .lg .middle } __Estimated Reading Time__
+
+- Estimated reading time: 2 Hours 40 minutes reading at 100 wpm. Given the density and type of material covered in this chapter, this should be taken as a lower bound estimate.
+
+- :material-book-clock:{ .lg .middle } __Estimated Reading Time (including Appendices)__
+
+- Estimated reading time (including Appendices): 3 Hours 40 minutes reading at 100 wpm. The appendices are meant for people already quite familiar with topics in machine learning.
+
+</div>
+
 # State-of-the-Art AI
 
 Over the last decade, the field of artificial intelligence (AI) has experienced a profound transformation, largely attributed to the successes in deep learning. This remarkable progress has redefined the boundaries of AI capabilities, challenging many preconceived notions of what machines can achieve. The following sections detail some of these advancements.
 
-![Enter image alt description](Images/h7p_Image_1.jpeg)
+![Enter image alt description](Images/uOv_Image_1.jpeg)
 
 **Figure**: Once a benchmark is published, it takes less and less time to solve it. This can illustrate the accelerating progress in AI and how quickly AI benchmarks are “saturating”, and starting to surpass human performance on a variety of tasks. **(**[source](https://www.science.org/content/article/computers-ace-iq-tests-still-make-dumb-mistakes-can-different-tests-help)) , From DynaBench.
 
@@ -32,17 +82,17 @@ Over the last decade, the field of artificial intelligence (AI) has experienced 
 
 **Language-based tasks.** There have been transformative changes in sequence and language-based tasks, primarily through the development of large language models (LLMs). Early language models in 2018 struggled to construct coherent sentences. The evolution from these to the advanced capabilities of GPT-3 (Generative Pre-Trained Transformer) and ChatGPT within less than 5 years is remarkable. These models demonstrate not only an improved capacity for generating text but also for responding to complex queries with nuanced, common-sense reasoning. Their performance in various question-answering tasks, including those requiring strategic thinking, has been particularly impressive.
 
-**GPT-4.**One of the state-of-the-art language models in 2024 is OpenAI’s LLM GPT-4. In contrast with the text-only GPT-3 and follow-ups, GPT-4 is multimodal: it was trained on both text and images. This means that it can now not only generate text based on images but has also gained some other capabilities. GPT-4 saw an upgraded context window with up to 32k tokens (tokens ≈ words). The short-term memory limit of an LLM can be thought of as the model's ability to retain information from previous tokens within a certain context window. GPT-4 is trained via next-token prediction (autoregressive self-supervised learning). In 2018 GPT-1 was barely able to count to 10, while in 2024 GPT-4 can implement complex programmatic functions among other things.
+**GPT-4. **One of the state-of-the-art language models in 2024 is OpenAI’s LLM GPT-4. In contrast with the text-only GPT-3 and follow-ups, GPT-4 is multimodal: it was trained on both text and images. This means that it can now not only generate text based on images but has also gained some other capabilities. GPT-4 saw an upgraded context window with up to 32k tokens (tokens ≈ words). The short-term memory limit of an LLM can be thought of as the model's ability to retain information from previous tokens within a certain context window. GPT-4 is trained via next-token prediction (autoregressive self-supervised learning). In 2018 GPT-1 was barely able to count to 10, while in 2024 GPT-4 can implement complex programmatic functions among other things.
 
-![Enter image alt description](Images/Nsl_Image_2.png)
+![Enter image alt description](Images/WJw_Image_2.png)
 
 Figure: a list of "Nowhere near solved” [...] issues in AI, from "A brief history of AI", published in January 2021 ([source](https://www.amazon.com/Brief-History-Artificial-Intelligence-Where/dp/1250770742)). They also say: “At present, we have no idea how to get computers to do the tasks at the bottom of the list”. But everything in the category “Nowhere near solved” has been solved by GPT-4 ([source](https://arxiv.org/abs/2303.12712)), except human-level general intelligence.
 
 **Scaling**. Remarkably, GPT-4 is trained using roughly the same methods as GPT-1, 2, and 3. The only significant difference is the size of the model and the data given to it during training. The size of the model has gone from 1.5B parameters to hundreds of billions of parameters, and datasets have become similarly larger and more diverse.
 
-![Enter image alt description](Images/xo9_Image_3.png)
+![Enter image alt description](Images/3bk_Image_3.png)
  \
-Figure: How fast is AI Improving? ([source](https://theaidigest.org/progress-and-dangers))
+Figure: How fast is AI Improving? ([source](https://theaidigest.org/progress-and-dangers)) 
 
 We have observed that just an expansion in scale has contributed to enhanced performance. This includes improvements in the ability to generate contextually appropriate responses, and highly diverse text across a range of domains. It has also contributed to overall improved understanding, and coherence. Most of those advances in the GPT series come from increasing the size and computation power behind the models, rather than fundamental shifts in architecture or training.
 
@@ -58,7 +108,7 @@ Here are some of the capabilities that have been emerging in the last few years:
 
 - **Self-correction**. The model's ability to identify and correct its own mistakes, which is crucial for improving the accuracy of AI-generated content ([source](https://arxiv.org/abs/2303.11366)).
 
-![Enter image alt description](Images/joK_Image_4.png)
+![Enter image alt description](Images/UD1_Image_4.png)
 
 Figure: An example of a mathematical problem solved by GPT-4 using Chain of Thought (CoT), from the paper “Sparks of Artificial General Intelligence” ([source](https://arxiv.org/abs/2303.12712)).
 
@@ -68,7 +118,7 @@ Figure: An example of a mathematical problem solved by GPT-4 using Chain of Thou
 
 - **Scientific & Mathematical ability**. In mathematics, AI's have assisted in the subfield of automatic theorem proving for decades. Today's models continue to assist in solving complex problems. AI can even achieve a gold medal level in the mathematical Olympiad by solving geometry problems ([source](https://www.nature.com/articles/s41586-023-06747-5)).
 
-![Enter image alt description](Images/3FW_Image_5.png)
+![Enter image alt description](Images/rkt_Image_5.png)
 
 Figure: GPT-4 solves some tasks that GPT-3.5 was unable to, like the uniform bar examination, where GPT-4 scores 90% compared to 10% for GPT-3.5. GPT-4 is also capable of vision processing, and the added vision component had only a minor impact, but it helped others tremendously.  ([source](https://openai.com/research/gpt-4))
 
@@ -76,7 +126,7 @@ Figure: GPT-4 solves some tasks that GPT-3.5 was unable to, like the uniform bar
 
 The leap forward in image generation is not just in accuracy, but also in the ability to handle complex, real-world images. The latter, particularly with the advent of Generative Adversarial Networks (GANs) in 2014, has shown an astounding rate of progress. The quality of images generated by AI has evolved from simple, blurry representations to highly detailed and creative scenes, often in response to intricate language prompts.
 
-![Enter image alt description](Images/Ziz_Image_6.png)
+![Enter image alt description](Images/yBJ_Image_6.png)
 
 Figure: An example of state-of-the-art image recognition. The Segment Anything Model (SAM) by Meta’s FAIR (Fundamental AI Research) lab, can classify and segment visual data at highly precise levels. The detection is performed without the need to annotate images. ([source](https://viso.ai/deep-learning/segment-anything-model-sam-explained/))
 
@@ -122,7 +172,7 @@ DeepMind’s 2022 Flamingo model, could be “*rapidly adapted to various image/
 
 The field of robotics has also been progressing alongside artificial intelligence. In this section, we provide a couple of examples where these two fields are merging, highlighting some robots using inspiration from machine learning techniques to make advancements.
 
-![Enter image alt description](Images/zYQ_Image_7.png)
+![Enter image alt description](Images/NsV_Image_7.png)
 
 Figure: Researchers used Model-Free Reinforcement Learning to automatically learn quadruped locomotion in only 20 minutes in the real world instead of in simulated environments. The Figure shows examples of learned gaits on a variety of real-world terrains. ([source](https://arxiv.org/abs/2208.07860))
 
@@ -132,7 +182,7 @@ Simultaneously, developments in vision-language models have led to breakthroughs
 
 Mobile ALOHA is another example of combining modern machine learning techniques with robotics. Trained using supervised behavioral cloning, the robot can autonomously perform complex tasks “*such as sauteing and serving a piece of shrimp, opening a two-door wall cabinet to store heavy cooking pots, calling and entering an elevator, and lightly rinsing a used pan using a kitchen faucet.*” ([source](https://arxiv.org/abs/2401.02117)) Such advancements not only demonstrate the increasing sophistication and applicability of robotic systems but also highlight the potential for further groundbreaking developments in autonomous technologies.
 
-![Enter image alt description](Images/gMr_Image_8.png)
+![Enter image alt description](Images/Uuq_Image_8.png)
 
 Figure: DeepMinds RT-2 can both plan long-horizon skill sequences and predict robot actions using inspiration from LLM prompting techniques (chain-of-thought). ([source](https://deepmind.google/discover/blog/rt-2-new-model-translates-vision-and-language-into-action/))
 
@@ -144,15 +194,23 @@ Figure: DeepMinds RT-2 can both plan long-horizon skill sequences and predict ro
 
 In recent years, AI's capability has extended to open-ended environments like Minecraft, showcasing an ability to perform complex sequences of actions. In strategy games, Meta’s Cicero displayed intricate strategic negotiation and deception skills in natural language for the game Diplomacy ([source](https://arxiv.org/abs/2210.05492)).
 
-![Enter image alt description](Images/mLq_Image_9.png)
+![Enter image alt description](Images/fpG_Image_9.png)
  \
 **Figure**: A map of diplomacy and the dialog box where the AI negotiates. ([source](https://www.youtube.com/watch?v=u5192bvUS7k&t=2216s))
+
+!!! question “Example of Voyager: Planning and Continuous Learning in Minecraft with GPT-4” \
+TAB Voyager ([source](https://arxiv.org/abs/2305.16291)) stands as a particularly impressive example of the capabilities of AI in continuous learning environments. This AI is designed to play Minecraft, a task that involves a significant degree of planning and adaptive learning. What makes Voyager so remarkable is its ability to learn continuously and progressively within the game's environment, using GPT-4 contextual reasoning abilities to plan and write the code necessary for each new challenge. Starting from scratch in a single game session, Voyager initially learns to navigate the virtual world, engage and defeat enemies, and remember all these skills in its long-term memory. As the game progresses, it continues to learn and store new skills, leading up to the challenging task of mining diamonds, a complex activity that requires a deep understanding of the game mechanics and strategic planning. The ability of Voyager to integrate new information continuously and utilize it effectively showcases the potential of AI in managing complex, changing environments and performing tasks that require a long-term buildup of knowledge and skills.
+
+![Enter image alt description](Images/MZ8_Image_10.png)
+
+TAB Figure: from Voyager: Voyager discovers new Minecraft items and skills continually by self-driven exploration, significantly outperforming the baselines.
 
 | Box. Example of Voyager: Planning and Continuous Learning in Minecraft with GPT-4 |
 |---|
 | Voyager (source) stands as a particularly impressive example of the capabilities of AI in continuous learning environments. This AI is designed to play Minecraft, a task that involves a significant degree of planning and adaptive learning. What makes Voyager so remarkable is its ability to learn continuously and progressively within the game's environment, using GPT-4 contextual reasoning abilities to plan and write the code necessary for each new challenge. Starting from scratch in a single game session, Voyager initially learns to navigate the virtual world, engage and defeat enemies, and remember all these skills in its long-term memory. As the game progresses, it continues to learn and store new skills, leading up to the challenging task of mining diamonds, a complex activity that requires a deep understanding of the game mechanics and strategic planning. The ability of Voyager to integrate new information continuously and utilize it effectively showcases the potential of AI in managing complex, changing environments and performing tasks that require a long-term buildup of knowledge and skills.
 
-Figure from Voyager: Voyager discovers new Minecraft items and skills continually by self-driven exploration, significantly outperforming the baselines. |
+TAB 
+TAB Figure: from Voyager: Voyager discovers new Minecraft items and skills continually by self-driven exploration, significantly outperforming the baselines. |
 
 # Foundation Models
 
@@ -180,11 +238,11 @@ This is repeated on a large number of such images, learning to recognize pattern
 
 **Zero & Few-Shot Learning.** These are techniques in machine learning where models learn to perform tasks with very few examples. Zero-shot is when they perform well without any specific examples. This is yet another example of a technique which is useful when collecting extensive labeled data is impractical or too costly. Think about introducing a human to the concept of a cat for the first time with just a few images. Despite only seeing three examples, they learn to identify cats in a variety of contexts, not limited to the initial examples. Similarly, few-shot learning enables AI models to generalize from a minimal set of instances, identifying new examples in broader categories they've scarcely encountered.
 
-**Transfer Learning.**Transfer learning is the next step that follows the pre-training. It's where the model takes the general patterns, structures, and knowledge it has learned from the pre-training phase and applies them to new, related tasks. This technique hinges on the fact that knowledge acquired in one context can actually be "transferred" to enhance learning in another. It allows for the utilization of pre-existing knowledge, thereby sidestepping the need to start from scratch for every new task.
+**Transfer Learning. **Transfer learning is the next step that follows the pre-training. It's where the model takes the general patterns, structures, and knowledge it has learned from the pre-training phase and applies them to new, related tasks. This technique hinges on the fact that knowledge acquired in one context can actually be "transferred" to enhance learning in another. It allows for the utilization of pre-existing knowledge, thereby sidestepping the need to start from scratch for every new task.
 
 **Fine-Tuning.** The fine-tuning phase is where the model is specifically adapted to perform particular tasks. Fine-tuning enables the creation of versatile models capable of undertaking a wide range of tasks, from following instructions to doing programming or scientific analysis. This can be further enhanced later through methods like "Reinforcement Learning from Human Feedback" (RLHF), which refines models to be more effective and user-friendly by reinforcing desirable outputs. We will talk about this technique in detail in later chapters.
 
-![https://www.artificialintelligence.news/pathal/uploads/2021/09/2021-foundationmodel-1024x692.png](Images/miM-.png)
+![https://www.artificialintelligence.news/pathal/uploads/2021/09/2021-foundationmodel-1024x692.png](Images/Uga-.png)
 
 Source: Bommasani Rishi et. al. (2022) "[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)"
 
@@ -196,7 +254,7 @@ The learning journey of a student—beginning with acquiring broad knowledge, ho
 
 ## Properties
 
-![Enter image alt description](Images/iOB_Image_11.png)
+![Enter image alt description](Images/w5O_Image_12.png)
 
 Source: Bommasani Rishi et. al. (2022) "[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)"
 
@@ -210,7 +268,7 @@ We slightly touched on these capabilities in the section on state-of-the-art AI.
 
 ## Limitations & Risks
 
-**Balancing Cost and Accessibility.**The development and training of foundation models require a significant investment, posing a delicate balance between cost and accessibility. While adapting an existing model for a specific task might be more cost-effective than developing a new one from scratch, potentially democratizing access to cutting-edge AI capabilities, the substantial initial costs risk centralizing power among a few well-resourced entities. Ensuring equitable access and ethical use of these technologies is vital to harness their societal benefits fully.
+**Balancing Cost and Accessibility. **The development and training of foundation models require a significant investment, posing a delicate balance between cost and accessibility. While adapting an existing model for a specific task might be more cost-effective than developing a new one from scratch, potentially democratizing access to cutting-edge AI capabilities, the substantial initial costs risk centralizing power among a few well-resourced entities. Ensuring equitable access and ethical use of these technologies is vital to harness their societal benefits fully.
 
 **Homogenization**. The process of homogenization refers to the situation where an increasing number of AI systems are merely fine-tuned versions of the same foundation models. Therefore, if a foundation model has certain biases or failure modes, these could potentially be propagated to all models that are fine-tuned from this foundation. This is a significant risk because if the same problem exists in the foundation model, it could manifest across many different models and applications, leading to widespread and potentially correlated failures. For example, if a foundation model has been trained on data that has gender or racial biases, these biases could propagate to all models fine-tuned from it, leading to biased decisions across various applications, whether it be text generation, sentiment analysis, or even predictive policing.
 
@@ -266,7 +324,7 @@ This section explores various definitions of different AI capability thresholds.
 
 **Artificial Super Intelligence (ASI)**: *“This is any intellect that greatly exceeds the cognitive performance of humans in virtually all domains of interest*". — Bostrom, Nick (2014) “Superintelligence” Unlike AGI, an ASI refers to a system that not only matches but greatly exceeds human capabilities in virtually all economically valuable work or domains of interest. ASI implies a level of intelligence where the AI system can outperform the best human brains in practically every field, including scientific creativity, general wisdom, and social skills. This would mean an ASI could potentially perform tasks that humans couldn't even comprehend.
 
-![Enter image alt description](Images/TA4_Image_12.png)
+![Enter image alt description](Images/rTI_Image_13.png)
 
 Figure: For illustrative purposes. This graph could be criticized because it is not clear that the capabilities of those AIs can be reduced to a single dimension.
 
@@ -274,23 +332,30 @@ Often, these terms get used as discrete capability thresholds; that is, individu
 
 ## (t,n)-AGI
 
+```
+??? question "How to formalize intelligence"
+   "I found it to be very well written and super insightful. Learned tons of new things. Looking forwards to continue reading." - Participant of ML4G Germany 2023.
+
+
 **Defi****ning (t,n)-AGI**. A system receives the designation of "t-AGI" if it can surpass a human expert in a certain cognitive task within the timespan 't'. A system gets identified as (t,n)-AGI if it can outdo a group of 'n' human experts working collectively on a set of cognitive tasks for the duration 't'.
+
+```
 
 For instance, an AI that exceeds the capability of a human expert in one second on a given cognitive task would be classified as a "one-second AGI". This scalable measure extends to longer durations, such as one minute, one hour, or even one year, depending on the AI's efficiency compared to human expertise within those periods.
 
 - **One-second AGI**: Beating humans at recognizing objects in images, basic physics intuitions (e.g. "What happens if I push a string?"), answering trivia questions, etc.
 
-- **One-minute****AGI**: Beating humans at answering questions about short text passages or videos, common-sense reasoning (e.g. Yann LeCuns gear problems), looking up facts, justifying an opinion, etc.
+- **One-minute ****AGI**: Beating humans at answering questions about short text passages or videos, common-sense reasoning (e.g. Yann LeCuns gear problems), looking up facts, justifying an opinion, etc.
 
-![Enter image alt description](Images/Pud_Image_13.png)
+![Enter image alt description](Images/Unl_Image_14.png)
 
 Figure: Example of gears problems by Yann LeCun ([source](https://twitter.com/ylecun/status/1639696127132835840))
 
-- **One-hour****AGI**: Beating humans at problem sets/exams, composing short articles or blog posts, executing most tasks in white-collar jobs (e.g., diagnosing patients, providing legal opinions), conducting therapy, etc.
+- **One-hour ****AGI**: Beating humans at problem sets/exams, composing short articles or blog posts, executing most tasks in white-collar jobs (e.g., diagnosing patients, providing legal opinions), conducting therapy, etc.
 
-- **One-day****AGI**: Beating humans at negotiating business deals, developing new apps, running scientific experiments, reviewing scientific papers, summarizing books, etc.
+- **One-day ****AGI**: Beating humans at negotiating business deals, developing new apps, running scientific experiments, reviewing scientific papers, summarizing books, etc.
 
-- **One-month****AGI**: Beating humans at carrying out medium-term plans coherently (e.g., founding a startup), supervising large projects, becoming proficient in new fields, writing large software applications (e.g., a new operating system), making novel scientific discoveries, etc.
+- **One-month ****AGI**: Beating humans at carrying out medium-term plans coherently (e.g., founding a startup), supervising large projects, becoming proficient in new fields, writing large software applications (e.g., a new operating system), making novel scientific discoveries, etc.
 
 - **One-year AGI**: These AIs would beat humans at basically everything. Mainly because most projects can be divided into sub-tasks that can be completed in shorter timeframes.
 
@@ -336,7 +401,7 @@ Increased numbers of parameters not only enhance image quality but also aid the 
 
 Below is a chart illustrating the impact of each of these three factors on model loss.
 
-![Enter image alt description](Images/jv8_Image_14.png)
+![Enter image alt description](Images/2Ka_Image_15.png)
 
 Source: Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)”
 
@@ -348,7 +413,7 @@ Source: Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Mo
 
 The paper presented several scaling laws. One scaling law compares model shape and model size and found that performance correlates strongly with scale and weakly with architectural hyperparameters of model shape, such as depth vs. width. Another law compared the relative performance contribution of the different factors of scale - data, training steps, and parameter count. They found that larger language models tend to be more sample-efficient, meaning they can achieve better performance with less data. The following graph shows the relationship between the relative contributions of different factors in scaling models. The graph indicates that for optimally compute-efficient training “*most of the increase should go towards increased model size. A relatively small increase in data is needed to avoid reuse. Of the increase in data, most can be used to increase parallelism through larger batch sizes, with only a very small increase in serial training time required.*” ([source](https://arxiv.org/abs/2001.08361)) As an example, according to OpenAI's results, if you get 10x more compute, you increase your model size by about 5x and your data size by about 2x. Another 10x in compute, and model size is 25x bigger, and the data size is only 4x bigger. ([source](https://www.lesswrong.com/posts/midXmMb2Xg37F2Kgn/new-scaling-laws-for-large-language-models))
 
-![Enter image alt description](Images/pi6_Image_15.png)
+![Enter image alt description](Images/7QJ_Image_16.png)
 
 Source: Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)”
 
@@ -460,23 +525,23 @@ Neural Network and Genome Anchors: Various computational benchmarks based on the
 
 **Forecasting with Biological Anchors**. By integrating these anchors with projections of future compute accessibility, we can outline a potential timeline for TAI. This method aims to provide a "soft upper bound" on TAI's arrival rather than pinpointing an exact year, acknowledging the complexity and unpredictability of AI development. ([source](https://forum.effectivealtruism.org/posts/ajBYeiggAzu6Cgb3o/biological-anchors-is-about-bounding-not-pinpointing-ai)) The following image gives an overview of the methodology.
 
-![Enter image alt description](Images/Rqe_Image_16.png)
+![Enter image alt description](Images/g6W_Image_17.png)
 
 ([source](https://epochai.org/blog/grokking-bioanchors))
 
-**Evolution anchor.**This anchor quantifies the computational effort invested by evolution in shaping the human brain. It considers the vast amount of processing and learning that has taken place from the emergence of the first neurons to the development of the modern human brain. This method suggests that evolution has served as a form of "pre-training" for the human brain, enhancing its ability to adapt and survive. To estimate the computational power of this evolutionary "pre-training", the report considers the total amount of compute used by all animal brains over the course of evolution. This includes not just the brains of humans, but also those of our ancestors and other animals with nervous systems. The idea is that all of this brain activity represents a form of learning or adaptation that has contributed to the development of the modern human brain. While the exact calculations involved in this estimate are complex and subject to considerable uncertainty, the basic idea is to multiply the number of animals that have ever lived by the amount of compute each of their brains performed over their lifetimes. This gives an estimate of the total compute performed by all animal brains over the course of evolution.
+**Evolution anchor. **This anchor quantifies the computational effort invested by evolution in shaping the human brain. It considers the vast amount of processing and learning that has taken place from the emergence of the first neurons to the development of the modern human brain. This method suggests that evolution has served as a form of "pre-training" for the human brain, enhancing its ability to adapt and survive. To estimate the computational power of this evolutionary "pre-training", the report considers the total amount of compute used by all animal brains over the course of evolution. This includes not just the brains of humans, but also those of our ancestors and other animals with nervous systems. The idea is that all of this brain activity represents a form of learning or adaptation that has contributed to the development of the modern human brain. While the exact calculations involved in this estimate are complex and subject to considerable uncertainty, the basic idea is to multiply the number of animals that have ever lived by the amount of compute each of their brains performed over their lifetimes. This gives an estimate of the total compute performed by all animal brains over the course of evolution.
 
-![Enter image alt description](Images/fjp_Image_17.png)
+![Enter image alt description](Images/Qqw_Image_18.png)
 
 ([source](https://epochai.org/blog/grokking-bioanchors))
 
 Cotra accounts for these considerations and assumes that the “average ancestor” performed as many FLOP/s as a nematode, and that there were on average ~1e21 ancestors at any time. This yields a **median of ~1e41 FLOP**, which seems extraordinarily high compared to modern machine learning. As an example, Google’s PaLM model was trained with ~2.5e24 FLOP (17 orders of magnitude smaller). She gives this anchor a **weight of 10%**. ([source](https://epochai.org/blog/grokking-bioanchors))
 
-**Lifetime anchor.**This refers to the total computational activity the human brain performs over a human lifetime. This anchor is essentially a measure of the "training" a human brain undergoes from birth to adulthood and incorporates factors such as the number of neurons in the human brain, the amount of computation each neuron performs per year, and the number of years it takes for a human to reach adulthood. The human brain has an estimated 86 billion neurons. Each of these neurons performs a certain number of computations per second, which can be calculated as a certain number of operations per second in FLOP/s. When calculating the total amount of compute over a lifetime, these factors are multiplied together, along with the number of years a human typically lives.
+**Lifetime anchor. **This refers to the total computational activity the human brain performs over a human lifetime. This anchor is essentially a measure of the "training" a human brain undergoes from birth to adulthood and incorporates factors such as the number of neurons in the human brain, the amount of computation each neuron performs per year, and the number of years it takes for a human to reach adulthood. The human brain has an estimated 86 billion neurons. Each of these neurons performs a certain number of computations per second, which can be calculated as a certain number of operations per second in FLOP/s. When calculating the total amount of compute over a lifetime, these factors are multiplied together, along with the number of years a human typically lives.
 
 For example, if we assume that a neuron is able to perform about 1000 operations per second, and there are about 31.5 million seconds in a year, then a single neuron would perform about 31.5 billion operations in a year. Now, if we multiply this by the estimated number of neurons in the human brain (86 billion), we get an estimate of the total brain-compute performed in one year. We can then multiply this by the number of years in a typical human lifespan to estimate the total brain-compute over a lifetime. Plugging in the numbers about brain FLOP/s seems to suggest that ~1e27 FLOP would be required to reach TAI. This seems low since examples from other technological domains suggest that the efficiency of things we build (on relevant metrics) is generally not great when compared to nature ([source](https://docs.google.com/document/d/1HUtUBpRbNnnWBxiO2bz3LumEsQcaZioAPZDNcsWPnos/edit)).
 
-![Enter image alt description](Images/FQM_Image_18.png)
+![Enter image alt description](Images/OTB_Image_19.png)
 
 ([source](https://epochai.org/blog/grokking-bioanchors))
 
@@ -484,31 +549,31 @@ Cotra's report finds a median of ~1e28 FLOP and only gives the lifetime anchor a
 
 **Neural network Anchors.** Each of the neural network anchors serves to provide a different perspective on the amount of compute that might be required to train a TAI. There are three Neural Network Anchors presented in the report: long (~1e37 FLOP), medium (~1e34 FLOP), and short horizon (~1e32 FLOP). These anchors hypothesize that the ratio of parameters to compute used by a TAI should be similar to the ratio observed in today's neural networks. Additionally, a TAI should perform approximately as many FLOPs per subjective second as a human brain. A “subjective second” is the time it takes a model to process as much data as a human can in one second ([source](https://epochai.org/blog/grokking-bioanchors)). As an example a typical human reads about 3-4 words per second for non-technical material, so “one subjective second” for a language model would correspond to however much time that the model takes to process about ~3-4 words of data. ([source](https://www.alignmentforum.org/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines)) Cotra determines the training data requirements based on a mix of machine learning theory and empirical considerations. She puts 15% weight on short horizons, 30% on medium horizons, and 20% on long horizons, for a total of 65% on the three anchors. ([source](https://epochai.org/blog/grokking-bioanchors))
 
-![Enter image alt description](Images/Qxu_Image_19.png)
+![Enter image alt description](Images/VP1_Image_20.png)
 
 ([source](https://epochai.org/blog/grokking-bioanchors))
 
 **Genome Anchor**. The genome anchor looks at the FLOP/subj sec of the human brain and expects TAI to require as many parameters as there are bytes in the human genome. This hypothesis implicitly assumes a training process that’s structurally analogous to evolution, and that TAI will have some critical cognitive ability that evolution optimized for. This differs from the evolution anchor in that it assumes we can search over possible architectures/algorithms a lot more efficiently than evolution, using gradients. Due to this structural similarity, and because feedback signals about the fitness of a particular genome configuration are generally sparse, this suggests that the anchor only really makes sense with long horizon lengths. ([source](https://epochai.org/blog/grokking-bioanchors))
 
-![Enter image alt description](Images/lNn_Image_20.png)
+![Enter image alt description](Images/7ax_Image_21.png)
 
 ([source](https://epochai.org/blog/grokking-bioanchors))
 
 At least at the time of writing (May 2022), machine learning architectures don’t look very much like the human genome, and we are yet to develop TAI – thus Cotra updates against this hypothesis towards requiring more FLOP. Overall, she finds a median of ~1e33 FLOP and places 10% weight on this anchor. ([source](https://epochai.org/blog/grokking-bioanchors))
 
-**Affordability of compute.**The costs related to bio anchors are calculated by considering three different factors: Algorithmic progress, compute price estimates, and willingness to spend on machine learning. The report considers a doubling in algorithmic efficiency every ~2-3 years. As for prices, Cotra assumes cost decreases over time, halving every ~2.5 years, and further expects this to level off after 6 orders of magnitude. Cotra assumes that the willingness to spend on machine learning training runs should be capped at 1% of the GDP of the largest country, referencing previous case studies with megaprojects (e.g. the Manhattan Project), and should follow a doubling time of 2 years after 2025. ([source](https://epochai.org/blog/grokking-bioanchors)) The main uncertainty is whether or not existing trends are going to persist more than several years into the future. For instance, Epoch found that OpenAI’s *AI and Compute* investigation ([source](https://openai.com/blog/ai-and-compute/)) was too aggressive in its findings for compute growth. ([source](https://epochai.org/blog/grokking-bioanchors)) This suggests taking caution when interpreting the forecasts made by the Bio Anchors report.
+**Affordability of compute. **The costs related to bio anchors are calculated by considering three different factors: Algorithmic progress, compute price estimates, and willingness to spend on machine learning. The report considers a doubling in algorithmic efficiency every ~2-3 years. As for prices, Cotra assumes cost decreases over time, halving every ~2.5 years, and further expects this to level off after 6 orders of magnitude. Cotra assumes that the willingness to spend on machine learning training runs should be capped at 1% of the GDP of the largest country, referencing previous case studies with megaprojects (e.g. the Manhattan Project), and should follow a doubling time of 2 years after 2025. ([source](https://epochai.org/blog/grokking-bioanchors)) The main uncertainty is whether or not existing trends are going to persist more than several years into the future. For instance, Epoch found that OpenAI’s *AI and Compute* investigation ([source](https://openai.com/blog/ai-and-compute/)) was too aggressive in its findings for compute growth. ([source](https://epochai.org/blog/grokking-bioanchors)) This suggests taking caution when interpreting the forecasts made by the Bio Anchors report.
 
-![Enter image alt description](Images/D4n_Image_21.png)
+![Enter image alt description](Images/qBL_Image_22.png)
 
 ([source](https://epochai.org/blog/grokking-bioanchors))
 
 The following graph gives an overview of the findings. Overall, the graph takes a weighted average of the different ways that the trajectory could flow. This gives us an estimate of a >10% chance of transformative AI by 2036, a ~50% chance by 2055, and an ~80% chance by 2100. In 2022 a two-year update on the author’s (Ajeya Cotra) timelines was published. The updated timelines for TAI are ~15% probability by 2030, ~35% probability by 2036, a median of ~2040, and a ~60% probability by 2050. ([source](https://www.alignmentforum.org/posts/AfH2oPHCApdKicM4m/two-year-update-on-my-personal-ai-timelines))
 
-![Enter image alt description](Images/geu_Image_22.png)
+![Enter image alt description](Images/atP_Image_23.png)
 
 ([source](https://forum.effectivealtruism.org/posts/vCaEnTbZ5KbypaGsm/forecasting-transformative-ai-the-biological-anchors-method))
 
-**Criticisms.**The Biological Anchors framework provides a unique perspective but it's also crucial to recognize its limitations and the broader debates it sparks within the AI research community. It is not universally accepted as the primary predictive tool among all ML scientists or alignment researchers.
+**Criticisms. **The Biological Anchors framework provides a unique perspective but it's also crucial to recognize its limitations and the broader debates it sparks within the AI research community. It is not universally accepted as the primary predictive tool among all ML scientists or alignment researchers.
 
 Platt's Law is a generalized observation named after Charles Platt. It is used to highlight a historical pattern where the estimated arrival of AGI (Artificial General Intelligence) consistently seems to be "just 30 years away". Vernor Vinge referenced it in the body of his famous 1993 NASA speech, whose abstract begins, “*Within thirty years, we will have the technological means to create superhuman intelligence. Shortly after, the human era will be ended.*” ([source](https://intelligence.org/2021/12/03/biology-inspired-agi-timelines-the-trick-that-never-works/)) Yudkowsky notes that this law seems to fit remarkably well with the prediction made by the Biological Anchors report in 2020. As the statistical aphorism goes: "All models are wrong, but some are useful".
 
@@ -542,13 +607,13 @@ This section introduces the concept of AI takeoff. There is much debate about ho
 
 **Takeoff Speeds**. Slow and fast takeoff scenarios offer contrasting views on AI's future trajectory, emphasizing different challenges and preparation strategies. While slow takeoff allows for iterative safety measures and societal adaptation, fast takeoff underscores the urgency of robust, pre-established safety frameworks. Understanding both dynamics is crucial for informed AI governance, safety research, and policy development, ensuring readiness for a range of possible futures.
 
-**Slow takeoff**. This refers to a scenario where AI capabilities improve in a gradual and measured manner over a relatively longer temporal interval, which could be years or even decades. Note that the "speed" of the takeoff is not just about the raw increase in AI capabilities, but also about the societal and economic impact of those capabilities. Slow takeoff's advantage lies in the preparation time it affords, potentially allowing us to adapt, respond, and correct course if things go wrong. However, on the other hand, more time being exposed to a certain growth trajectory might also breed complacency. It might also be the case that most preparations undertaken before the onset of a slow takeoff would be rendered obsolete as better solutions gradually become visible which utilize new AI capabilities. In a slow takeoff scenario, humanity’s fate essentially depends on preparations put in place during the times when such growth is apparent. The terms "slow takeoff" and "soft takeoff" are often used interchangeably.
+**Slow takeoff**. This refers to a scenario where AI capabilities improve in a gradual and measured manner over a relatively longer temporal interval, which could be years or even decades. Note that the "speed" of the takeoff is not just about the raw increase in AI capabilities, but also about the societal and economic impact of those capabilities. Slow takeoff's advantage lies in the preparation time it affords, potentially allowing us to adapt, respond, and correct course if things go wrong. However, on the other hand, more time being exposed to a certain growth trajectory might also breed complacency. It might also be the case that most preparations undertaken before the onset of a slow takeoff would be rendered obsolete as better solutions gradually become visible which utilize new AI capabilities. In a slow takeoff scenario, humanity’s fate essentially depends on preparations put in place during the times when such growth is apparent. The terms "slow takeoff" and "soft takeoff" are often used interchangeably. 
 
 **Fast takeoff**. A "fast takeoff" envisages AI's leap to superintelligence in a short timeframe, such as hours or days, limiting human capacity for response or control. This speed leaves little to no room for humans to react, adapt, or manage the situation. Fast takeoff scenarios highlight the critical importance of preemptive safety and alignment efforts, as the window for post-emergence intervention could be minimal. Given such a short time to react, local dynamics of the takeoff become relevant. The primary mechanism behind a fast takeoff is often considered to be 'recursive self-improvement' through an “intelligence explosion”, where the AI system continually improves its own intelligence and capabilities. We talk about an intelligence explosion, and discontinuity in the next subsection. Terms like “fast takeoff”, “hard takeoff” and “FOOM” are often used interchangeably.
 
 **Speed vs. Continuity.** We observe that AI systems are created in discrete "events", sometimes many months or years apart. As an example GPT-3 was released in June 2020, and GPT-4 was released in March 2023. Is there a sudden, extremely large jump between such releases? or could the capabilities have been predicted by extrapolating trends? Where speed might be a measure of how quickly the AI becomes superintelligent, continuity can be thought of as a measure of "surprise". Continuity measures the predictability and pattern of AI advancements, focusing on whether these advancements occur through gradual, steady improvements or unexpected breaks in previous technological trends. Even though we are presenting speed and continuity separately, the distinction between them is extremely nuanced. They are very related concepts, so much so that oftentimes most researchers use slow takeoff as analogous to continuous takeoff, and fast takeoff as analogous to discontinuous takeoff, making no distinction whatsoever.
 
-**Continuous takeoff**. Continuous takeoff depicts AI's progression as an extension of existing trends, where advancements are made incrementally. An example is the steady advancement of technology witnessed during the Industrial Revolution, where each decade produced slightly better tools and machinery. The term 'continuous' in this context borrows from mathematical terminology, where a function is considered continuous if it doesn't have any abrupt changes or discontinuities. Some people prefer the term 'gradual' or 'incremental' over 'continuous' as they find it more descriptive and mathematically accurate.
+**Continuous takeoff**. Continuous takeoff depicts AI's progression as an extension of existing trends, where advancements are made incrementally. An example is the steady advancement of technology witnessed during the Industrial Revolution, where each decade produced slightly better tools and machinery. The term 'continuous' in this context borrows from mathematical terminology, where a function is considered continuous if it doesn't have any abrupt changes or discontinuities. Some people prefer the term 'gradual' or 'incremental' over 'continuous' as they find it more descriptive and mathematically accurate. 
 
 **Discontinuous Takeoff**. The term 'discontinuous' in this context suggests that there are sudden jumps in capabilities, rather than being a smooth, gradual increase. This means that the AI system makes leaps that significantly exceed what would be expected based on past progress. In a discontinuous takeoff scenario, the AI's capabilities quickly surpass human control and understanding. The terms 'fast takeoff' and 'discontinuous takeoff' are often used interchangeably. However, the images below displaying different takeoff trajectories might help in clarifying the subtle differences between the concepts.
 
@@ -562,9 +627,10 @@ This section introduces the concept of AI takeoff. There is much debate about ho
 
 Figure: A comparative illustration of combinations of slow and fast takeoff, alongside continuity. Source: Samuel Dylan Martin, Daniel_Eth (Sep 2021) “[Takeoff Speeds and Discontinuities](https://www.alignmentforum.org/posts/pGXR2ynhe5bBCCNqn/takeoff-speeds-and-discontinuities)”
 
+
 ### Similarity
 
-**Homogenous takeoff.**This refers to the similarity among different AI systems in play during the development and deployment of advanced AI. ([source](https://www.lesswrong.com/posts/mKBfa8v4S9pNKSyKK/homogeneity-vs-heterogeneity-in-ai-takeoff-scenarios)) Future AI systems might share significant similarities in their design, capabilities, and alignment. This could be due to shared underlying foundation models, common APIs, or similar training methods. The uniformity of AI systems under a homogenous takeoff scenario might imply the potential for easy cooperation between AI entities. Additionally, if homogeneity arises due to fine-tuning prevailing as the paradigm; the alignment of the initial AI system becomes the crucial factor for the alignment of all subsequent AI systems. A single misaligned system could, therefore, have widespread consequences, underscoring the importance of rigorous alignment and safety measures in early AI development stages. Homogeneity could either mitigate risks or exacerbate them, depending on the alignment and governance frameworks established during the initial phases of AI development.
+**Homogenous takeoff. **This refers to the similarity among different AI systems in play during the development and deployment of advanced AI. ([source](https://www.lesswrong.com/posts/mKBfa8v4S9pNKSyKK/homogeneity-vs-heterogeneity-in-ai-takeoff-scenarios)) Future AI systems might share significant similarities in their design, capabilities, and alignment. This could be due to shared underlying foundation models, common APIs, or similar training methods. The uniformity of AI systems under a homogenous takeoff scenario might imply the potential for easy cooperation between AI entities. Additionally, if homogeneity arises due to fine-tuning prevailing as the paradigm; the alignment of the initial AI system becomes the crucial factor for the alignment of all subsequent AI systems. A single misaligned system could, therefore, have widespread consequences, underscoring the importance of rigorous alignment and safety measures in early AI development stages. Homogeneity could either mitigate risks or exacerbate them, depending on the alignment and governance frameworks established during the initial phases of AI development.
 
 **Heterogeneity**. A heterogeneous takeoff scenario represents diversity and variation in the development, safety levels, and deployment of AI systems. Several factors contribute to the heterogeneity in AI takeoff. First is the diversity in AI development approaches. Organizations and researchers might adopt different strategies and technologies, leading to varied outcomes in terms of AI capabilities and alignment. Moreover, competitive dynamics among AI projects could exacerbate this diversity, as teams race to achieve breakthroughs without necessarily aligning on methodologies or sharing crucial information. As an example, we might have a future where AI becomes a strategic national asset, and AI development is closely guarded. In this environment, the pursuit of AI capabilities becomes siloed, each company or country would then employ different development methodologies, potentially leading to a wide range of behaviors, functionalities, and safety levels.
 
@@ -614,9 +680,10 @@ Factors Influencing Polarity. Several key elements influence whether takeoff pol
 
 Depending on the strength and interplay of these feedback loops, they can create a self-fulfilling prophecy leading to either an accelerating fast takeoff if regulations don't curtail various aspects of such loops, or a slow takeoff if the loops are weaker or counterbalanced by other factors. The entire model is shown in the diagram below:
 
-![Enter image alt description](Images/Z7e_Image_23.png)
+![Enter image alt description](Images/lzB_Image_24.png)
 
 ([source](https://www.openphilanthropy.org/research/what-a-compute-centric-framework-says-about-takeoff-speeds/))
+
 
 # Appendix 1: Expert Opinions
 
@@ -624,7 +691,7 @@ Depending on the strength and interplay of these feedback loops, they can create
 
 According to a recent survey conducted by AI Impact ([source](https://aiimpacts.org/wp-content/uploads/2023/04/Thousands_of_AI_authors_on_the_future_of_AI.pdf)): *“****Expected time to human-level performance dropped 1–5 decades since the 2022 survey****. As always, our questions about ‘high-level machine intelligence’ (HLMI) and ‘full automation of labor’ (FAOL) got very different answers, and individuals disagreed a lot (shown as thin lines below), but the aggregate forecasts for both sets of questions dropped sharply. For context, between 2016 and 2022 surveys, the forecast for HLMI had only shifted about a year.”*
 
-![Enter image alt description](Images/tVf_Image_24.png)
+![Enter image alt description](Images/Zzs_Image_25.png)
 
 ([source](https://blog.aiimpacts.org/p/2023-ai-survey-of-2778-six-things))
 
@@ -668,9 +735,9 @@ Do LLMs empirically not work as expected or fall short in practice? This section
 
 The creativity of LLMs is often debated, but there are clear indications that AI, in principle, is capable of creative processes in various ways:
 
-- **Autonomous Scientific Research**: Recent advancements have shown that LLMs can indeed make novel discoveries. For instance, a study by DeepMind demonstrated that an LLM["discovered new solutions for the cap set problem, a long-standing open problem in mathematics,"](https://deepmind.google/discover/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/) which was a favorite open problem of Terence Tao. This indicates that AI can not only understand existing knowledge but also contribute new insights in complex fields like mathematics.
+- **Autonomous Scientific Research**: Recent advancements have shown that LLMs can indeed make novel discoveries. For instance, a study by DeepMind demonstrated that an LLM[ "discovered new solutions for the cap set problem, a long-standing open problem in mathematics,"](https://deepmind.google/discover/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/) which was a favorite open problem of Terence Tao. This indicates that AI can not only understand existing knowledge but also contribute new insights in complex fields like mathematics.
 
-- **Autonomous Discovery**: AI has the capability to rediscover human strategies and openings independently. AlphaGo, for example,[rediscovered human Go strategies and openings through self-play](https://arxiv.org/pdf/2111.09259.pdf), without any human data input. This demonstrates an AI's ability to independently learn and innovate within established domains.
+- **Autonomous Discovery**: AI has the capability to rediscover human strategies and openings independently. AlphaGo, for example,[ rediscovered human Go strategies and openings through self-play](https://arxiv.org/pdf/2111.09259.pdf), without any human data input. This demonstrates an AI's ability to independently learn and innovate within established domains.
 
 - **Creative Optimization**: AI can optimize in surprisingly creative ways. The phenomena of specification gaming, where AI finds unintended solutions to problems, illustrate this. Although this unpredictability poses its challenges, it also shows that AI systems can come up with novel, creative solutions that might not be immediately obvious or intuitive to human problem solvers. DeepMind's blog post on [Specification Gaming](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/) illustrates this point vividly.
 
@@ -690,21 +757,21 @@ While it is true that AI has not yet achieved maximal robustness, for example be
 
 - **Robustness correlates with capabilities**: Robustness is closely linked to the capabilities of AI models when AIs are trained on difficult tasks. For instance, there is a significant improvement in robustness and transfer learning from GPT-2 to GPT-4. In computer vision, recent models like Segment Anything ([source](https://arxiv.org/abs/2304.02643)) are far more robust and capable of transfer learning than their less capable predecessors. This progression isn't due to any mysterious factors but rather a result of scaling and improving upon existing architectures.
 
-- **Robustness is a continuum, and perfect robustness may be not necessary:**Robustness in AI should not be viewed as a binary concept, but rather as existing on a continuum. This continuum is evident in the way AI models, like those in image classification, often surpass human performance in both capability and robustness ([source](https://aiimpacts.org/time-for-ai-to-cross-the-human-performance-range-in-imagenet-image-classification/)). However, it's important to recognize that no system is completely immune to challenges such as adversarial attacks. This is exemplified by advanced AIs like Katago in Go, which, despite being vulnerable to such attacks, still achieves a superhuman level of play. However, the quest for perfect robustness may not be essential to create capable transformative AI, as even systems with certain vulnerabilities can achieve superhuman levels of competence. However, while robustness may not be necessary to create capable AI, the creation of safe, aligned AI will have to solve the problem of misgeneralizing goals.
+- **Robustness is a continuum, and perfect robustness may be not necessary: **Robustness in AI should not be viewed as a binary concept, but rather as existing on a continuum. This continuum is evident in the way AI models, like those in image classification, often surpass human performance in both capability and robustness ([source](https://aiimpacts.org/time-for-ai-to-cross-the-human-performance-range-in-imagenet-image-classification/)). However, it's important to recognize that no system is completely immune to challenges such as adversarial attacks. This is exemplified by advanced AIs like Katago in Go, which, despite being vulnerable to such attacks, still achieves a superhuman level of play. However, the quest for perfect robustness may not be essential to create capable transformative AI, as even systems with certain vulnerabilities can achieve superhuman levels of competence. However, while robustness may not be necessary to create capable AI, the creation of safe, aligned AI will have to solve the problem of misgeneralizing goals.
 
 ## Shallow Understanding?
 
 **Stochastic Parrot: Do AIs only memorize information without truly compressing it?**
 
-![Enter image alt description](Images/pSp_Image_25.png)
+![Enter image alt description](Images/NPm_Image_26.png)
 
 ([source](https://twitter.com/fchollet/status/1735799743505433020))
 
-For example, François Chollet said ([tweet](https://twitter.com/fchollet/status/1735799743505433020)): *“Unfortunately, too few people understand the distinction between memorization and understanding. It's not some lofty question like "does the system have an internal world model?", it's a very pragmatic behavior distinction: "is the system capable of broad generalization, or is it limited to local generalization?”.*François Chollet then listed papers aiming to show that LLMs do not really understand. ([source](https://x.com/fchollet/status/1736079054313574578?s=20)) There is a small informal commentary on this list [at this link](https://x.com/CRSegerie/status/1736466297175560268?s=20).
+For example, François Chollet said ([tweet](https://twitter.com/fchollet/status/1735799743505433020)): *“Unfortunately, too few people understand the distinction between memorization and understanding. It's not some lofty question like "does the system have an internal world model?", it's a very pragmatic behavior distinction: "is the system capable of broad generalization, or is it limited to local generalization?”. *François Chollet then listed papers aiming to show that LLMs do not really understand. ([source](https://x.com/fchollet/status/1736079054313574578?s=20)) There is a small informal commentary on this list [at this link](https://x.com/CRSegerie/status/1736466297175560268?s=20).
 
 There are two archetypal ways to represent information in an LLM: either memorize point by point, like a look-up table, or compress the information by only memorizing higher-level features, which we can then call “the world model”. This is explained in the very important paper "Superposition, Memorization, and Double Descent": it turns out that to store points, initially the model learns the position of all the points (pure memorization), then, if we increase the number of points, the model starts to compress this knowledge, and the model is now capable of generalization (and implements a simple model of the data).
 
-![Enter image alt description](Images/xQh_Image_26.png)
+![Enter image alt description](Images/iBl_Image_27.png)
  \
 ([source](https://pbs.twimg.com/media/GBki4GWXcAAO22Y?format=jpg&name=medium))
 
@@ -726,8 +793,8 @@ LLMs are prone to "hallucinate," a term used to describe the generation of conte
 |---|
 | Fine-tuning LLMs for Factuality: In this paper (link), the authors recommend fine-tuning methods using Direct Preference Optimization (DPO) to decrease the rate of hallucinations. By applying such techniques, a 7B Llama 2 model saw a 58% reduction in factual error rate compared to its original model.
 Retrieval Augmented Generation (RAG). This method works by incorporating a process of looking up real-world information (retrieval, like a Google search) and then using that information to guide the AI's responses (generation, based on the document retrieved). By doing so, the AI is better anchored in factual reality, reducing the chances of producing unrealistic or incorrect content. Essentially, it's like giving the AI a reference library to check facts against while it learns and responds, ensuring its output is more grounded in reality. This approach is particularly useful in the context of in-context learning, where the AI learns from the information and context provided in each interaction.
-Prompting techniques in AI have evolved to include sophisticated methods like
-Consistency checks (source), that involve comparing the output from multiple instances of the model on the same prompt, identifying and resolving any disagreements in the responses. This method enhances the accuracy and credibility of the information provided. For instance, if different iterations of the model produce conflicting answers, this discrepancy can be used to refine and improve the model's understanding.
+Prompting techniques in AI have evolved to include sophisticated methods like 
+Consistency checks (source), that involve comparing the output from multiple instances of the model on the same prompt, identifying and resolving any disagreements in the responses. This method enhances the accuracy and credibility of the information provided. For instance, if different iterations of the model produce conflicting answers, this discrepancy can be used to refine and improve the model's understanding. 
 Reflexion. The Reflexion technique ("Reflexion: Language Agents with Verbal Reinforcement Learning"): It’s possible to simply ask the LLM to take a step back, to question whether what it has done is correct or not, and to consider ways to improve the previous answer, and this enhances a lot the capabilities of GPT-4, and this technique is emergent and does not work well with previous models. (source).
 verification chains, like selection inference (source). Chain-of-Thought has access to the whole context, so each reasoning step is not necessarily causally connected to the last. But selection inference enforces a structure where each reasoning step necessarily follows from the last, and therefore the whole reasoning chain is causal. This process involves the AI model examining its own reasoning or the steps it took to arrive at a conclusion. By doing so, it can verify the logic and consistency of its responses, ensuring they are well-founded and trustworthy.
 Allowing the AI to express degrees of confidence in its answers, acknowledging uncertainty when appropriate. For instance, instead of a definitive "Yes" or "No," the model might respond with "I am not sure," reflecting a more nuanced understanding akin to human reasoning. This approach is evident in advanced models like Gopher (source), which contrasts with earlier models such as WebGPT which may not exhibit the same level of nuanced responses.
@@ -737,7 +804,7 @@ It's worth noting that these techniques enable substantial problem mitigation fo
 
 ## Structural inadequacy?
 
-**Missing System 2?******System 1 and System 2 are terms popularized by economist Daniel Kahneman in his book "Thinking, Fast and Slow," describing the two different ways our brains form thoughts and make decisions. System 1 is fast, automatic, and intuitive; it's the part of our thinking that handles everyday decisions and judgments without much effort or conscious deliberation. For instance, when you recognize a face or understand simple sentences, you're typically using System 1. On the other hand, System 2 is slower, more deliberative, and more logical. It takes over when you're solving a complex problem, making a conscious choice, or focusing on a difficult task. It requires more energy and is more controlled, handling tasks such as planning for the future, checking the validity of a complex argument, or any activity that requires deep focus. Together, these systems interact and influence how we think, make judgments, and decide, highlighting the complexity of human thought and behavior.
+**Missing System 2?**** **System 1 and System 2 are terms popularized by economist Daniel Kahneman in his book "Thinking, Fast and Slow," describing the two different ways our brains form thoughts and make decisions. System 1 is fast, automatic, and intuitive; it's the part of our thinking that handles everyday decisions and judgments without much effort or conscious deliberation. For instance, when you recognize a face or understand simple sentences, you're typically using System 1. On the other hand, System 2 is slower, more deliberative, and more logical. It takes over when you're solving a complex problem, making a conscious choice, or focusing on a difficult task. It requires more energy and is more controlled, handling tasks such as planning for the future, checking the validity of a complex argument, or any activity that requires deep focus. Together, these systems interact and influence how we think, make judgments, and decide, highlighting the complexity of human thought and behavior.
 
 A key concern is whether LLMs are able to emulate System 2 processes, which involve slower, more deliberate, and logical thinking. Some theoretical arguments about the depth limit in transformers show that they are provably incapable of internally dividing large integers ([source](https://arxiv.org/abs/2207.02098)). However, this is not what we observe in practice: GPT-4 is capable of detailing some calculations step-by-step and obtaining the expected result through a chain of thought or via the usage of tools like a code interpreter.
 
@@ -791,7 +858,7 @@ It appears that there are several points of convergence between the LLMs and the
 
 Following are some reasons to believe that labs will continue to scale LLMs.
 
-**Scaling Laws on LLM implies further qualitative improvements.**The scaling laws might not initially appear impressive. However, linking these quantitative measures can translate to a qualitative improvement in algorithm quality. An algorithm that achieves near-perfect loss, though, is one that necessarily comprehends all subtleties, and displays enormous adaptability. The fact that the scaling laws are not bending is very significant and means that we can make the model a qualitatively better reasoner.
+**Scaling Laws on LLM implies further qualitative improvements. **The scaling laws might not initially appear impressive. However, linking these quantitative measures can translate to a qualitative improvement in algorithm quality. An algorithm that achieves near-perfect loss, though, is one that necessarily comprehends all subtleties, and displays enormous adaptability. The fact that the scaling laws are not bending is very significant and means that we can make the model a qualitatively better reasoner.
 
 **From simple correlations to understanding.** During a training run, GPTs go from basic correlations to deeper and deeper understanding. Initially, the model merely establishes connections between successive words. Gradually, it develops an understanding of grammar and semantics, creating links between sentences and subsequently between paragraphs. Eventually, GPT masters the nuances of writing style. Footnote: See also "The Scaling Hypothesis," to delve into this progression in a fascinating story.
 
@@ -799,7 +866,7 @@ Following are some reasons to believe that labs will continue to scale LLMs.
 
 **Text completion is probably an AI-complete test** ([source](https://en.wikipedia.org/wiki/AI-complete)).
 
-**Current LLMs have only as many parameters as small mammals have synapses, no wonder they are still imperfect.**Models like GPT-4, though very big compared to other models, should be noted for their relatively modest scale compared to the size of a human brain. To illustrate, the largest GPT-3 model has a similar number of parameters to the synapses of a hedgehog.  We don't really know how many parameters GPT-4 has, but if it is the same size as PALM, which has 512 B parameters, then GPT-4 has only as many parameters as a chinchilla has synapses. In contrast, the human neocortex contains about 140 trillion synapses, which is over 200 times more synapses than a chinchilla. For a more in-depth discussion on this comparison, see the related discussion [here](https://www.lesswrong.com/posts/YKfNZAmiLdepDngwi/gpt-175bee). For a discussion of the number of parameters necessary to emulate a synapse, see [Ajeya].
+**Current LLMs have only as many parameters as small mammals have synapses, no wonder they are still imperfect. **Models like GPT-4, though very big compared to other models, should be noted for their relatively modest scale compared to the size of a human brain. To illustrate, the largest GPT-3 model has a similar number of parameters to the synapses of a hedgehog.  We don't really know how many parameters GPT-4 has, but if it is the same size as PALM, which has 512 B parameters, then GPT-4 has only as many parameters as a chinchilla has synapses. In contrast, the human neocortex contains about 140 trillion synapses, which is over 200 times more synapses than a chinchilla. For a more in-depth discussion on this comparison, see the related discussion [here](https://www.lesswrong.com/posts/YKfNZAmiLdepDngwi/gpt-175bee). For a discussion of the number of parameters necessary to emulate a synapse, see [Ajeya].
 
 **GPT-4 is still orders of magnitude cheaper than other big science projects.**: Despite the high costs associated with training large models, the significant leaps in AI capabilities provided by scaling justify these costs. For example, GPT-4 is expensive compared to other ML models. It is said to cost 50M in training [source]. But the Manhattan Project cost 25B, which is 500 times more without accounting for inflation, and achieving Human-level intelligence, may be more economically important than achieving the nuclear bomb.
 
@@ -811,7 +878,7 @@ Generally, the three main components recognized as the main variables of advance
 
 We can anticipate that models will continue to scale in the near future. Increased scale combined with the increasingly general-purpose nature of foundation models could potentially lead to a sustained growth in general-purpose AI capabilities.
 
-![Enter image alt description](Images/lsq_Image_27.png)
+![Enter image alt description](Images/D13_Image_28.png)
 
 Figure: Monitoring the trends in ML quantitatively. Epoch (2023), "Key trends and figures in Machine Learning". Published online at epochai.org. ([source](https://epochai.org/trends))
 
@@ -823,7 +890,7 @@ Hardware advancements are paralleling these trends in training compute and data.
 
 In 2010, before the deep learning revolution, DeepMind co-founder Shane Legg predicted human-level AI by 2028 using compute-based estimates ([source](http://www.vetta.org/2010/12/goodbye-2010/)). OpenAI co-founder Ilya Sutskever, whose AlexNet paper sparked the deep learning revolution, was also an early proponent of the idea that scaling up deep learning would be transformative.
 
-![Enter image alt description](Images/aUd_Image_28.png)
+![Enter image alt description](Images/Xhw_Image_29.png)
 
 Source: Epoch (2023), "[Key trends and figures in Machine Learning](https://epochai.org/trends)"
 
@@ -841,7 +908,7 @@ The following table and graph illustrate the trend change in machine learning mo
 | Gopher | 2021 | 280 billion | 300 billion |
 | MT-NLG 530B | 2022 | 530 billion | 270 billion |
 
-![Enter image alt description](Images/9A6_Image_29.png)
+![Enter image alt description](Images/5tP_Image_30.png)
 
 Source: Villalobos, Pablo et. al. (Jul 2022) “[Machine Learning Model Sizes and the Parameter Gap](https://arxiv.org/abs/2207.02852)”
 
@@ -856,7 +923,7 @@ Source: Villalobos, Pablo et. al. (Jul 2022) “[Machine Learning Model Sizes an
 | This is a complicated question, but some evidence suggests that once an architecture is expressive and scalable enough, the architecture matters less than we might have thought:
 
 In a paper titled ‘ConvNets Match Vision Transformers at Scale,' Google researchers found that Visual Transformers (ViT) can achieve the same results as CNNs simply by using more compute. They took a special CNN architecture and trained it on a massive dataset of four billion images. The resulting model matched the accuracy of existing ViT systems that used similar training compute.  
-Even fully-connected networks—hard to get much simpler than them—work surprisingly well for many tasks.
+Even fully-connected networks—hard to get much simpler than them—work surprisingly well for many tasks. 
 Variational Auto Encoders (long an also-ran to GANs or autoregressive models in terms of image generation) catch up if you make them very deep (Child 2020, Vahdat & Kautz 2020).
 Progress in late 2023, such as the mamba architecture (source), appears to be an improvement on the transformer. It can be seen as an algorithmic advancement that reduces the amount of training computation needed to achieve the same performance.
 The connections and normalizations in the transformer, which were thought to be important, can be taken out if the weights are set up correctly. This can also make the transformer design simpler (Note however that this architecture is slower to converge than the others). (source)
@@ -877,7 +944,7 @@ The total amount of data generated every single day is on the order of ~463EB (S
 
 The median projection for when the training dataset of notable ML models exhausts the stock of professionally edited texts on the internet is 2024. The median projection for the year in which ML models use up all the text on the internet is 2040. Overall, projections by Epochai predict that we will have exhausted high-quality language data before 2026, low-quality language data somewhere between 2030 and 2050, and vision data between 2030 and 2060. This might be an indicator of slowing down ML progress after the next couple of decades. These conclusions from Epochai, like all the other conclusions in this entire leveraging computation section, rely on the unrealistic assumptions that current trends in ML data usage and production will continue and that there will be no major innovations in data efficiency, i.e. we are assuming that the amount of capabilities gained per training datapoint will not change from current standards.
 
-![Enter image alt description](Images/STG_Image_30.png)
+![Enter image alt description](Images/zWd_Image_31.png)
 ML data consumption and data production trends for low-quality text, high-quality text, and images. - Source: Epoch (2023), "[Key trends and figures in Machine Learning](https://epochai.org/trends)"
 
 Even if we run out of Data, many solutions are proposed, from using synthetic data, for example, filtering and preprocessing the data with GPT-3.5 to create a new cleaner dataset, an approach used in the paper "Textbooks are all you need" with models like Phi 1.5B that demonstrate excellent performance for their size through the use of high-quality filtered data, to the use of more efficient trainings, or being more efficient by training on more epochs.

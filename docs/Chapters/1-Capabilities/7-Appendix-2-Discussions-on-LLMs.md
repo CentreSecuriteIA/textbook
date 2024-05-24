@@ -1,4 +1,5 @@
 # Appendix 2: Discussions on LLMs
+
 Current LLMs, although trained on abundant data, are still far from perfect.
 
 Will these problems persist in future iterations, or will they disappear? This section examines the main criticisms of those models and tries to determine if they are valid even for future LLMs.
@@ -41,7 +42,7 @@ While it is true that AI has not yet achieved maximal robustness, for example be
 
 **Stochastic Parrot: Do AIs only memorize information without truly compressing it?**
 
-![Enter image alt description](Images/pSp_Image_25.png)
+![Enter image alt description](Images/NPm_Image_26.png)
 
 ([source](https://twitter.com/fchollet/status/1735799743505433020))
 
@@ -49,7 +50,7 @@ For example, François Chollet said ([tweet](https://twitter.com/fchollet/status
 
 There are two archetypal ways to represent information in an LLM: either memorize point by point, like a look-up table, or compress the information by only memorizing higher-level features, which we can then call “the world model”. This is explained in the very important paper "Superposition, Memorization, and Double Descent": it turns out that to store points, initially the model learns the position of all the points (pure memorization), then, if we increase the number of points, the model starts to compress this knowledge, and the model is now capable of generalization (and implements a simple model of the data).
 
-![Enter image alt description](Images/xQh_Image_26.png)
+![Enter image alt description](Images/iBl_Image_27.png)
  \
 ([source](https://pbs.twimg.com/media/GBki4GWXcAAO22Y?format=jpg&name=medium))
 

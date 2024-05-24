@@ -1,4 +1,5 @@
 # Leveraging Computation
+
 Leveraging computation refers to the strategic utilization of computational resources to maximize the performance of AI models. We learned in the previous section that foundation models have ushered in an era where scale—model size, data volume, and computational resources—has become a cornerstone of AI capabilities. This section aims to delve further into model scaling and its pivotal role in AI capabilities.
 
 ## The Bitter Lesson
@@ -33,7 +34,7 @@ Increased numbers of parameters not only enhance image quality but also aid the 
 
 Below is a chart illustrating the impact of each of these three factors on model loss.
 
-![Enter image alt description](Images/jv8_Image_14.png)
+![Enter image alt description](Images/2Ka_Image_15.png)
 
 Source: Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)”
 
@@ -45,7 +46,7 @@ Source: Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Mo
 
 The paper presented several scaling laws. One scaling law compares model shape and model size and found that performance correlates strongly with scale and weakly with architectural hyperparameters of model shape, such as depth vs. width. Another law compared the relative performance contribution of the different factors of scale - data, training steps, and parameter count. They found that larger language models tend to be more sample-efficient, meaning they can achieve better performance with less data. The following graph shows the relationship between the relative contributions of different factors in scaling models. The graph indicates that for optimally compute-efficient training “*most of the increase should go towards increased model size. A relatively small increase in data is needed to avoid reuse. Of the increase in data, most can be used to increase parallelism through larger batch sizes, with only a very small increase in serial training time required.*” ([source](https://arxiv.org/abs/2001.08361)) As an example, according to OpenAI's results, if you get 10x more compute, you increase your model size by about 5x and your data size by about 2x. Another 10x in compute, and model size is 25x bigger, and the data size is only 4x bigger. ([source](https://www.lesswrong.com/posts/midXmMb2Xg37F2Kgn/new-scaling-laws-for-large-language-models))
 
-![Enter image alt description](Images/pi6_Image_15.png)
+![Enter image alt description](Images/7QJ_Image_16.png)
 
 Source: Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)”
 
