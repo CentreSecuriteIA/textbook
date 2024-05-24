@@ -7,19 +7,25 @@ title: Home
 
 ![AI Safety](https://lh7-us.googleusercontent.com/XuuImYOYY7YElHDnooD6S7k1tf11JAV_a7LQZ6IUXbItUbPp0p7sAgDp1EjHJAuuHvZ_cJ-pj7rGq7SLxb0O4Xe9OkyRIEKh4R8TwoUwERq8TJxKRMQdixUPBjXXwVEjog_AqBgNiCwvE9QHEHlr_rk)
 
-!!! info "About This Guide"
-    *This document contains all the useful resources for the AISF (previously named AGISF). It will be updated regularly.*
+This textbook summarizes some key notions and papers in modern AI Safety, requiring minimal familiarity with the other materials covered. We tried to connect the various articles within a unified framework and coherent narrative.
 
-    This textbook summarizes some key notions and papers in modern AI Safety, requiring minimal familiarity with the other materials covered. We tried to connect the various articles within a unified framework and coherent narrative.
+The alignment problem is a pre-paradigmatic problem, and there is no consensus on some of the concepts presented. So please read critically and feel free to add feedback on this [form](https://docs.google.com/forms/d/e/1FAIpQLSe-UI2pt99SHaH2RFPVbDdmo8nuiRBZcxl49rBh67Guj6_p5Q/viewform) on the various chapters if something seems unclear. Some weeks start with a gentle introduction, which you should follow if you are unfamiliar with the concepts.
 
-    The alignment problem is a pre-paradigmatic problem, and there is no consensus on some of the concepts presented. So please read critically and feel free to add feedback on this [form](https://docs.google.com/forms/d/e/1FAIpQLSe-UI2pt99SHaH2RFPVbDdmo8nuiRBZcxl49rBh67Guj6_p5Q/viewform) on the various chapters if something seems unclear. Some weeks start with a gentle introduction, which you should follow if you are unfamiliar with the concepts.
-
-    This textbook is an adaptation of the [course](https://www.master-mva.com/cours/seminaire-turing/) held at ENS Paris-Saclay in Paris during March 2023, and offered by [EffiSciences](https://ia.effisciences.org/) and was used and appreciated during the [ML4Good](https://www.lesswrong.com/posts/DkDy2hvkwbQ54GM9u/introducing-effisciences-ai-safety-unit-1) bootcamps in Paris and Germany.
+This textbook is an adaptation of the [course](https://www.master-mva.com/cours/seminaire-turing/) held at ENS Paris-Saclay in Paris during March 2023, and offered by [EffiSciences](https://ia.effisciences.org/) and was used and appreciated during the [ML4Good](https://www.lesswrong.com/posts/DkDy2hvkwbQ54GM9u/introducing-effisciences-ai-safety-unit-1) bootcamps in Paris and Germany.
 
 ---
 
-!!! warning "Note"
-    This textbook is still under construction.
+!!! quote
+    “I found it to be very well written and super insightful. Learned tons of new things. Looking forwards to continue reading.” - Participant of ML4G Germany 2023.
+
+    “I liked the text, was well written, concise, easy to follow, contained many important points.” - Participant of ML4G Germany 2023.
+
+    “The textbooks are very helpful to keep a clear line of thought and a better structure.”  - Participant of ML4G France 2023.
+
+    “The material and content are great, thank you for writing it and I can't wait to read it in its entirety.” - Participant of ML4G France 2023.
+
+!!! warning "Warning"
+    This textbook is still under construction. It will be updated regularly.
 
 ## **Contact**
 
@@ -34,30 +40,28 @@ The textbook is currently written as a list of chapters. Some chapters contain a
 
 ### **PART 1 : FUNDAMENTALS**
 
-We encourage all readers, including those without a technical background, to read through Chapters 1, 2, and 3. These chapters explain in an accessible way why it is plausible to see the emergence of human-level AI in the next few years, what are the potential risks associated with these advanced AIs, and what solutions can be put in place to mitigate these risks. These introductory chapters aim to provide a solid foundation for understanding the issues and challenges of AI Safety.
+!!! info ""
+    We encourage all readers, including those without a technical background, to read through Chapters 1, 2, and 3. These chapters explain in an accessible way why it is plausible to see the emergence of human-level AI in the next few years, what are the potential risks associated with these advanced AIs, and what solutions can be put in place to mitigate these risks. These introductory chapters aim to provide a solid foundation for understanding the issues and challenges of AI Safety.
 
 ---
 
 #### Week 0: **Artificial Intelligence**
 
-The rest of this textbook assumes familiarity with Machine Learning (ML). Please take your time to understand the core concepts, *especially* Reinforcement Learning (RL). Here are some [resources](https://course.aisafetyfundamentals.com/alignment?week=0) if you are not familiar with ML yet.
+This textbook assumes familiarity with Machine Learning (ML). Please take your time to understand the core concepts, *especially* Reinforcement Learning (RL). Here are some [resources](https://course.aisafetyfundamentals.com/alignment?week=0) if you are not familiar with ML yet.
 
-??? abstract "Concepts covered"
-    Basics of Machine Learning, Basics of Reinforcement Learning, Basics of the Transformer Architecture.
+Concepts covered: Basics of Machine Learning, Basics of Reinforcement Learning, Basics of the Transformer Architecture.
 
 #### Week 1: **Human-Level AI, What, How and When?**
 
 📖 [Chapter](Chapters/1-Capabilities/2-Overview.md)
 
-??? abstract "Concepts covered"
-    Current Capabilities, Foundation Models, Leveraging Computation, Future Capabilities, Timelines and Anchors, Instrumental Convergence.
+Concepts covered: Current Capabilities, Foundation Models, Leveraging Computation, Future Capabilities, Timelines and Anchors, Instrumental Convergence.
 
 #### Week 2: **AI Risks Landscape**
 
 📖 [Chapter](Chapters/2-Risks/2-Introduction.md)
 
-??? abstract "Concepts covered"
-    Misuses, Alignment risks, Systemic risks.
+Concepts covered: Misuses, Alignment risks, Systemic risks.
 
 #### Week 3: **Solutions Landscape**
 
@@ -68,9 +72,10 @@ The rest of this textbook assumes familiarity with Machine Learning (ML). Please
 
 ### **PART 2 : TECHNICAL PROBLEMS**
 
-In this part, we dive into the specific technical challenges of AI alignment. We start with the problem of Reward Misspecification, which occurs when the reward function given to an AI agent fails to properly capture the intended goals. We explore key concepts such as optimization, Goodhart's Law, and different approaches to learning human preferences, such as learning by imitation and feedback.
+!!! info ""
+    In this part, we dive into the specific technical challenges of AI alignment. We start with the problem of Reward Misspecification, which occurs when the reward function given to an AI agent fails to properly capture the intended goals. We explore key concepts such as optimization, Goodhart's Law, and different approaches to learning human preferences, such as learning by imitation and feedback.
 
-Next, we address the problem of Goal Misgeneralization, where an AI agent may learn unintended goals that differ from those intended by its designers. We examine important concepts such as mesa-optimization, inner alignment, and deceptive alignment. This part aims to provide a deep understanding of the main technical challenges in AI alignment and sets the stage for exploring research paradigms in the next part.
+    Next, we address the problem of Goal Misgeneralization, where an AI agent may learn unintended goals that differ from those intended by its designers. We examine important concepts such as mesa-optimization, inner alignment, and deceptive alignment. This part aims to provide a deep understanding of the main technical challenges in AI alignment and sets the stage for exploring research paradigms in the next part.
 
 ---
 
@@ -94,9 +99,10 @@ Next, we address the problem of Goal Misgeneralization, where an AI agent may le
 
 ### **PART 3 : RESEARCH PARADIGMS**
 
-In this part, we explore the main research paradigms proposed to address the challenges of AI alignment. We start with task decomposition techniques for Scalable Oversight, such as iterated amplification and process supervision. Next, we examine adversarial techniques for Scalable Oversight, including debate and adversarial training. We dedicate an entire chapter to interpretability, covering both interpretability techniques for computer vision and transformers used in natural language processing. We also delve into Agent Foundations and examine more theoretical research paradigms. Finally, we also give an overview of AI Governance.
+!!! info ""
+    In this part, we explore the main research paradigms proposed to address the challenges of AI alignment. We start with task decomposition techniques for Scalable Oversight, such as iterated amplification and process supervision. Next, we examine adversarial techniques for Scalable Oversight, including debate and adversarial training. We dedicate an entire chapter to interpretability, covering both interpretability techniques for computer vision and transformers used in natural language processing. We also delve into Agent Foundations and examine more theoretical research paradigms. Finally, we also give an overview of AI Governance.
 
-This part aims to give readers an overview of the main research approaches in the field of AI alignment and inspire them to contribute to this crucial domain.
+    This part aims to give readers an overview of the main research approaches in the field of AI alignment and inspire them to contribute to this crucial domain.
 
 ---
 
@@ -160,3 +166,4 @@ This part aims to give readers an overview of the main research approaches in th
 
 ??? tip "How to Best Read This Book"
     One of the best ways to use this textbook is in a reading group consisting of students or young researchers who gather periodically. You don't need to have a large group; a friend is enough, which allows you to discuss the concepts presented in the different chapters critically. If you want to create a reading group to facilitate this course, please get in touch.
+‹

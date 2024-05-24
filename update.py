@@ -1,5 +1,11 @@
+"""
+1. If you update a chapter on gdoc, use the 
+
+"""
+
 import os
 import re
+
 
 def sanitize_filename(filename):
     # Remove invalid characters for filenames
