@@ -1,7 +1,7 @@
 ---
 title: Home
 ---
-# **The AI Safety** of **Handbook**
+# The AI Safety Handbook
 
 ## **Curriculum**
 
