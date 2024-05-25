@@ -1,3 +1,4 @@
+This is just for experimenting
 
 === "Unordered list"
 
@@ -221,17 +222,6 @@ stateDiagram-v2
 ```
 
 ### 5. Entity Relationship Diagram
-
-```mermaid
-erDiagram
-    CHAPTER ||--o{ SECTION : contains
-    SECTION {
-        String name
-    }
-    CHAPTER {
-        String title
-    }
-```
 
 ### 6. User Journey
 
