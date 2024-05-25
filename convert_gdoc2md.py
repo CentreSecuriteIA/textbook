@@ -76,7 +76,8 @@ def split_markdown(folder_source, chapter):
 
 
 split_markdown(
-    folder_source='/Users/raph/Downloads/Chapter 3 - Overview of Solutions - [Commentable]_25-05-2024_03_11_33',
-    chapter = "3-Solutions"
+    folder_source='/Users/raph/Downloads/Chapter 1 - Capabilities - [Commentable]_25-05-2024_04_31_24',
+    chapter = "1-Capabilities",
+    # Last revision
 )
 print("Don't forget to check the result of the formating and then commit")

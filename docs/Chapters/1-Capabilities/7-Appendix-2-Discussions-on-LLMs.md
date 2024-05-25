@@ -40,17 +40,17 @@ While it is true that AI has not yet achieved maximal robustness, for example be
 
 **Stochastic Parrot: Do AIs only memorize information without truly compressing it?**
 
-![Enter image alt description](Images/wr2_Image_26.png)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Unfortunately , too few people understand the distinction between memorization and understanding. It&#39;s not some lofty question like &quot;does the system have an internal world model?&quot;, it&#39;s a very pragmatic behavior distinction: &quot;is the system capable of broad generalization, or is… <a href="https://t.co/1fagV1YI15">https://t.co/1fagV1YI15</a></p>&mdash; François Chollet (@fchollet) <a href="https://twitter.com/fchollet/status/1735799743505433020?ref_src=twsrc%5Etfw">December 15, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-([source](https://twitter.com/fchollet/status/1735799743505433020))
+Figure: Tweet from François Chollet ([source](https://twitter.com/fchollet/status/1735799743505433020))
 
 For example, François Chollet said ([tweet](https://twitter.com/fchollet/status/1735799743505433020)): *“Unfortunately, too few people understand the distinction between memorization and understanding. It's not some lofty question like "does the system have an internal world model?", it's a very pragmatic behavior distinction: "is the system capable of broad generalization, or is it limited to local generalization?”. *François Chollet then listed papers aiming to show that LLMs do not really understand. ([source](https://x.com/fchollet/status/1736079054313574578?s=20)) There is a small informal commentary on this list [at this link](https://x.com/CRSegerie/status/1736466297175560268?s=20).
 
 There are two archetypal ways to represent information in an LLM: either memorize point by point, like a look-up table, or compress the information by only memorizing higher-level features, which we can then call “the world model”. This is explained in the very important paper "Superposition, Memorization, and Double Descent": it turns out that to store points, initially the model learns the position of all the points (pure memorization), then, if we increase the number of points, the model starts to compress this knowledge, and the model is now capable of generalization (and implements a simple model of the data).
 
-![Enter image alt description](Images/G3Y_Image_27.png)
+![Enter image alt description](Images/q5q_Image_30.png)
  \
-([source](https://pbs.twimg.com/media/GBki4GWXcAAO22Y?format=jpg&name=medium))
+Figure: From Superposition, Memorization, and Double Descent ([source](https://transformer-circuits.pub/2023/toy-double-descent/index.html))
 
 AI is capable of compressing information, often in a relevant manner. For example, when examining the representations of words representing colors in LLMs like “red” and “blue”, the structure formed by all the embeddings of those colors creates the correct color circle (This uses a nonlinear projection such as a T-SNE to project from high-dimensional space to the 2D plane). Other examples of world models are presented in ([source](https://arxiv.org/abs/2304.00612)). Of course, there are other domains where AI resembles more of a look-up table, but it is a spectrum, and each case should be examined individually. For instance, for "factual association," the paper “Locating and Editing Factual Associations in GPT” shows that the underlying data structure for GPT-2 is more of a look-up table ([source](https://arxiv.org/abs/2202.05262)), but the paper “Emergent Linear Representations in World Models of Self-Supervised Sequence Models” demonstrates that a small GPT is capable of learning a compressed world model of OthelloGpt. ([source](https://arxiv.org/abs/2309.00941)) There are more examples in the section dedicated to world models in the paper “Eight Things to Know about Large Language Models” ([source](https://arxiv.org/abs/2304.00612)).
 
@@ -66,6 +66,8 @@ LLMs are prone to "hallucinate," a term used to describe the generation of conte
 
 - **Larger models can be more truthful than smaller ones.** This is the case with TruthfulQA. OpenAI reports that GPT-4 is 40% more accurate and factually consistent than its predecessor.
 
+<!--
+
 | Box. Many techniques can be used to increase the truthfulness of LLM |
 |---|
 | Fine-tuning LLMs for Factuality: In this paper (link), the authors recommend fine-tuning methods using Direct Preference Optimization (DPO) to decrease the rate of hallucinations. By applying such techniques, a 7B Llama 2 model saw a 58% reduction in factual error rate compared to its original model.
@@ -79,7 +81,9 @@ Process-based training ensures that the systems are accustomed to detailing thei
 Training for metacognition: Models can be trained to give the probability of what they assert, a form of metacognition. For instance, the paper "Language Models (Mostly) Know What They Know" (source) demonstrates that AIs can be Bayesian calibrated about their knowledge. This implies that they can have a rudimentary form of self-awareness, recognizing the likelihood of their own accuracy. Informally, this means it is possible to query a chatbot with "Are you sure about what you are telling me?" and receive a relatively reliable response. This can serve as training against hallucinations.
 It's worth noting that these techniques enable substantial problem mitigation for the current LLMs, but they don’t solve all the problems that we encounter with AI that are potentially deceptive, as we will see in the chapter on goal misgeneralization. |
 
-??? note
+-->
+
+??? note "Many techniques can be used to increase the truthfulness of LLM"
 
 - **Fine-tuning LLMs for Factuality:** In this paper ([link](https://arxiv.org/abs/2311.08401)), the authors recommend fine-tuning methods using Direct Preference Optimization (DPO) to decrease the rate of hallucinations. By applying such techniques, a 7B Llama 2 model saw a 58% reduction in factual error rate compared to its original model.
 
@@ -137,7 +141,7 @@ It should be noted that scaffold-based long-term memory is not considered an ele
 
 **Planning**
 
-Planning is an area that AIs currently struggle with, but there is significant progress. Some paradigms, such as those based on scaffolding, enable task decomposition and breaking down objectives into smaller, more achievable sub-objectives [see AutoGPT box].
+Planning is an area that AIs currently struggle with, but there is significant progress. Some paradigms, such as those based on scaffolding, enable task decomposition and breaking down objectives into smaller, more achievable sub-objectives.
 
 Furthermore, the paper [Voyager](https://voyager.minedojo.org/) demonstrates that it is possible to use GPT-4 for planning in Natural language in Minecraft. See the [Voyager] box.
 
@@ -145,7 +149,7 @@ Furthermore, the paper [Voyager](https://voyager.minedojo.org/) demonstrates tha
 
 It appears that there are several points of convergence between the LLMs and the linguistic cortex:
 
-- **Behavioral similarities.** From [[4]](https://www.lesswrong.com/posts/3nMpdmt8LrzxQnkGp/ai-timelines-via-cumulative-optimization-power-less-long#fn-uL4CtAHDBwDHrweh8-4), it's highlighted that LLMs show a close comparison to human linguistic abilities and the linguistic cortex. These models have excelled in mastering syntax and a significant portion of semantics in human language. Of course, today, they still lag in aspects such as long-term memory, coherence, and general reasoning - faculties that in humans depend on various brain regions like the hippocampus and prefrontal cortex, but we explained in the last sections that those problems may be solvable.
+- **Behavioral similarities.** From ([source](https://www.lesswrong.com/posts/3nMpdmt8LrzxQnkGp/ai-timelines-via-cumulative-optimization-power-less-long#fn-uL4CtAHDBwDHrweh8-4)), it's highlighted that LLMs show a close comparison to human linguistic abilities and the linguistic cortex. These models have excelled in mastering syntax and a significant portion of semantics in human language. Of course, today, they still lag in aspects such as long-term memory, coherence, and general reasoning - faculties that in humans depend on various brain regions like the hippocampus and prefrontal cortex, but we explained in the last sections that those problems may be solvable.
 
 - **Convergence in internal Representations**: LLMs have a representation that converges with scale toward the brain representation. This is supported by the study, "Brains and algorithms partially converge in natural language processing." ([source](https://scholar.google.com/scholar?cluster=7281145279140743388&hl=en&as_sdt=0,5)) Additional insights can be found in the works "The Brain as a Universal Learning Machine" ([source](https://www.lesswrong.com/posts/9Yc7Pp7szcjPgPsjf/the-brain-as-a-universal-learning-machine)) and "Brain Efficiency: Much More than You Wanted to Know." ([source](https://www.lesswrong.com/posts/xwBuoE9p8GE7RAuhd/brain-efficiency-much-more-than-you-wanted-to-know)) At comparable learning stages, LLMs and the linguistic cortex develop similar or equivalent feature representations. In some evaluations, advanced LLMs have been able to predict 100% of the explainable neural variance, as detailed by Schrimpf, Martin, et al. in "The neural architecture of language: Integrative modeling converges on predictive processing." ([source](https://www.pnas.org/content/118/45/e2105646118))
 
