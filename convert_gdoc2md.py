@@ -24,7 +24,8 @@ def sanitize_filename(filename):
 
 
 def process(body:str):
-    body = body.replace("TAB ", "\t") # it's no longer necessary
+    body = body.replace("$$$$", "    ")
+    # Otherwise the parser is kindof stochastic
     return body 
 
 def split_markdown(folder_source, chapter):
@@ -76,7 +77,7 @@ def split_markdown(folder_source, chapter):
 
 
 split_markdown(
-    folder_source='/Users/raph/Downloads/Chapter 1 - Capabilities - [Commentable]_25-05-2024_04_31_24',
+    folder_source='/Users/raph/Downloads/Chapter 1 - Capabilities - [Commentable]_25-05-2024_06_24_22',
     chapter = "1-Capabilities",
     # Last revision
 )

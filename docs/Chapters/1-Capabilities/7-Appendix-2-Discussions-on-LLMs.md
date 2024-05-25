@@ -6,6 +6,10 @@ Will these problems persist in future iterations, or will they disappear? This s
 
 This kind of qualitative assessment is important to know whether LLMs represent the most likely route to AGI or not.
 
+??? question "Why is this section important?"
+
+     This section is more opinionated, but the authors basically think that most criticisms that say LLMs are not capable of this or that, even in principle, are ill-founded. We wanted to provide more answers here.
+
 ## Empirically insufficiency?
 
 Do LLMs empirically not work as expected or fall short in practice? This section opens the discussion and examines some essential aspects of LLMs that may be missing to create a transformative AI.
@@ -48,8 +52,9 @@ For example, François Chollet said ([tweet](https://twitter.com/fchollet/status
 
 There are two archetypal ways to represent information in an LLM: either memorize point by point, like a look-up table, or compress the information by only memorizing higher-level features, which we can then call “the world model”. This is explained in the very important paper "Superposition, Memorization, and Double Descent": it turns out that to store points, initially the model learns the position of all the points (pure memorization), then, if we increase the number of points, the model starts to compress this knowledge, and the model is now capable of generalization (and implements a simple model of the data).
 
-![Enter image alt description](Images/q5q_Image_30.png)
- \
+![Enter image alt description](Images/1lr_Image_30.png)
+
+
 Figure: From Superposition, Memorization, and Double Descent ([source](https://transformer-circuits.pub/2023/toy-double-descent/index.html))
 
 AI is capable of compressing information, often in a relevant manner. For example, when examining the representations of words representing colors in LLMs like “red” and “blue”, the structure formed by all the embeddings of those colors creates the correct color circle (This uses a nonlinear projection such as a T-SNE to project from high-dimensional space to the 2D plane). Other examples of world models are presented in ([source](https://arxiv.org/abs/2304.00612)). Of course, there are other domains where AI resembles more of a look-up table, but it is a spectrum, and each case should be examined individually. For instance, for "factual association," the paper “Locating and Editing Factual Associations in GPT” shows that the underlying data structure for GPT-2 is more of a look-up table ([source](https://arxiv.org/abs/2202.05262)), but the paper “Emergent Linear Representations in World Models of Self-Supervised Sequence Models” demonstrates that a small GPT is capable of learning a compressed world model of OthelloGpt. ([source](https://arxiv.org/abs/2309.00941)) There are more examples in the section dedicated to world models in the paper “Eight Things to Know about Large Language Models” ([source](https://arxiv.org/abs/2304.00612)).

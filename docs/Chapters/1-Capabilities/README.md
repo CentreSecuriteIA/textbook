@@ -4,7 +4,7 @@ Human-Level AI, What, How and When?
 
 !!! abstract
 
-This chapter seeks to outline the recent important developments in AI and presents some potential trajectories for developing highly capable AI systems.
+     This chapter seeks to outline the recent important developments in AI and presents some potential trajectories for developing highly capable AI systems.
 
 <div class="grid cards" markdown>
 
@@ -36,4 +36,4 @@ This chapter seeks to outline the recent important developments in AI and presen
 
 !!! question
 
-    If you have a question, or a remark don't hesitate to ask to agisf_textbook.0fh6l@slmail.me
+     If you have a question, or a remark don't hesitate to ask to agisf_textbook.0fh6l@slmail.me

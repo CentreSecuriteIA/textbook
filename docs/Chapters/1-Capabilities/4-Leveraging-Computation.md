@@ -2,6 +2,10 @@
 
 Leveraging computation refers to the strategic utilization of computational resources to maximize the performance of AI models. We learned in the previous section that foundation models have ushered in an era where scale—model size, data volume, and computational resources—has become a cornerstone of AI capabilities. This section aims to delve further into model scaling and its pivotal role in AI capabilities.
 
+??? question "Why is this section important?"
+
+     This is because many people think that computation is the "secret sauce", or at least a core ingredient in how to get more capability. This section shows that it may be very plausible that there is no remaining theoretical difficulty in getting to human-level AIs. More discussion can be found in the appendix 2.
+
 ## The Bitter Lesson
 
 **What is the bitter lesson?** Traditionally, AI research has predominantly designed systems under the assumption that a fixed amount of computing power will be available to the designed agent. However, over time, computing power so far has been expanding in line with Moore's law (the number of transistors in an integrated circuit doubles every 1.5 years) ([source](https://en.wikipedia.org/wiki/Moore's_law)). So researchers could either leverage their human knowledge of the domain or exploit increases in general-purpose computational methods. Theoretically, the two were mutually compatible, but as time went on it was discovered that “*the biggest lesson that can be read from 70 years of AI research is that general methods that leverage computation are ultimately the most effective, and by a large margin. … [The bitter lesson teaches us] the great power of general purpose methods, of methods that continue to scale with increased computation even as the available computation becomes very great.*” - Sutton, Rich (March 2019) “[The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)”
@@ -24,7 +28,7 @@ This section explains the primary variables involved in scaling - compute, data,
 
 The following example offers a tangible illustration of capabilities increasing with an increasing parameter count in image generation models. In the following images, the same model architecture ([Parti](https://parti.research.google/)) is used to generate an image using an identical prompt, with the sole difference between the models being the parameter size.
 
-![Enter image alt description](Images/xEj_Image_17.png)
+![Enter image alt description](Images/Bno_Image_17.png)
 
 Figure: Images generated with the prompt, “a portrait photo of a kangaroo wearing an orange hoodie and blue sunglasses standing on the grass in front of the Sydney Opera House holding a sign on the chest that says Welcome Friends!”. Source: GoogleAI (2022) , "[Parti (Pathways Autoregressive Text-to-Image model)](https://parti.research.google/)"
 
@@ -32,7 +36,7 @@ Increased numbers of parameters not only enhance image quality but also aid the 
 
 Below is a chart illustrating the impact of each of these three factors on model loss.
 
-![Enter image alt description](Images/r6A_Image_18.png)
+![Enter image alt description](Images/8yo_Image_18.png)
 
 Figure: Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)”
 
@@ -44,7 +48,7 @@ Figure: Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Mo
 
 The paper presented several scaling laws. One scaling law compares model shape and model size and found that performance correlates strongly with scale and weakly with architectural hyperparameters of model shape, such as depth vs. width. Another law compared the relative performance contribution of the different factors of scale - data, training steps, and parameter count. They found that larger language models tend to be more sample-efficient, meaning they can achieve better performance with less data. The following graph shows the relationship between the relative contributions of different factors in scaling models. The graph indicates that for optimally compute-efficient training “*most of the increase should go towards increased model size. A relatively small increase in data is needed to avoid reuse. Of the increase in data, most can be used to increase parallelism through larger batch sizes, with only a very small increase in serial training time required.*” ([source](https://arxiv.org/abs/2001.08361)) As an example, according to OpenAI's results, if you get 10x more compute, you increase your model size by about 5x and your data size by about 2x. Another 10x in compute, and model size is 25x bigger, and the data size is only 4x bigger. ([source](https://www.lesswrong.com/posts/midXmMb2Xg37F2Kgn/new-scaling-laws-for-large-language-models))
 
-![Enter image alt description](Images/qwT_Image_19.png)
+![Enter image alt description](Images/9MK_Image_19.png)
 
 **Figure:** Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)”
 
@@ -64,10 +68,13 @@ To validate this law, DeepMind trained a 70-billion parameter model ("Chinchilla
 
 We have explored and understood foundation models, as well as observed the increasing capabilities obtained through sheer scale. There are some researchers who believe that scale is overemphasized, while others think that scale alone is enough to lead us to AGI. Researchers are divided: some argue for new paradigms or algorithms, while others believe in scaling current models to achieve AGI. In this subsection, we explore two scaling hypotheses: from considering computation as a crucial but not exclusive factor to viewing it as the primary bottleneck.
 
-**Weak Scaling Hypothesis**. The weak scaling hypothesis suggests that computation is a main bottleneck to AGI, but other factors, like architecture, might also be vital. It was originally coined by Gwern, and states that
+**Weak Scaling Hypothesis**. The weak scaling hypothesis suggests that computation is a main bottleneck to AGI, but other factors, like architecture, might also be vital. It was originally coined by Gwern, and states that 
 
 !!! quote "Gwern (2022) “[The Scaling Hypothesis](https://gwern.net/scaling-hypothesis#scaling-hypothesis)”."
-    “*… AGI will require us to “find the right algorithms” effectively replicating a mammalian brain module by module, and that while these modules will be extremely large & expensive by contemporary standards (which is why compute is important, to give us “a more powerful tool with which to hunt for the right algorithms”), they still need to be invented & finetuned piece by piece, with little risk or surprise until the final assembly.*“
+
+
+
+    “*… **AGI will require us to “find the right algorithms” effectively replicating a mammalian brain module by module, and that while these modules will be extremely large & expensive by contemporary standards (which is why compute is important, to give us “a more powerful tool with which to hunt for the right algorithms”), they still need to be invented & finetuned piece by piece, with little risk or surprise until the final assembly.*“
 
 LeCun's H-Jepa architecture ([source](https://openreview.net/pdf?id=BZ5a1r-kVsf)), or Richard Sutton’s Alberta Plan ([source](https://arxiv.org/abs/2208.11173)) are notable plans that might support the weak scaling hypothesis. Proponents of this hypothesis generally have a number of criticisms regarding current LLMs, which are discussed in the Appendix.
 
@@ -75,10 +82,20 @@ LeCun's H-Jepa architecture ([source](https://openreview.net/pdf?id=BZ5a1r-kVsf)
 
 !!! quote "Gwern (2022) “[The Scaling Hypothesis](https://gwern.net/scaling-hypothesis#scaling-hypothesis)”."
 
+
+
     “*... once we find a scalable architecture like self-attention or convolutions, which like the brain can be applied fairly uniformly, we can simply train ever larger NNs and ever more sophisticated behavior will emerge naturally as the easiest way to optimize for all the tasks & data. More powerful NNs are ‘just’ scaled-up weak NNs, in much the same way that human brains look much like scaled-up primate brains.*”
 
 This hypothesis advocates that merely scaling up models on more data, modalities, and computation will resolve most current AI limitations. This strong scaling hypothesis is strongly coupled with the phenomenon that is called “The blessing of scale”, which is a general phenomenon in the literature: “*The blessings of scale are the observation that for deep learning, hard problems are easier to solve than easy problems—everything gets better as it gets larger (in contrast to the usual outcome in research, where small things are hard and large things impossible). The bigger the neural net/compute/data/problem, the faster it learns, the better it learns, the stabler it learns, and so on. A problem we can’t solve at all at small n may suddenly become straightforward with millions or billions of n. “NNs are lazy”: they can do far more than we make them do when we push them beyond easy answers & cheap shortcuts. The bitter lesson is the harder and bigger, the better.*” See a discussion in “[The Scaling Hypothesis](https://gwern.net/scaling-hypothesis#blessings-of-scale)” for other, many examples in the literature.
 
-Proponents include OpenAI ([source](https://openai.com/blog/planning-for-agi-and-beyond))
+Proponents include OpenAI ([sou](https://openai.com/blog/planning-for-agi-and-beyond)[rce](https://openai.com/blog/planning-for-agi-and-beyond))
  , Anthropic’s head Dario Amodei ([source](https://www.youtube.com/watch?v=Nlkk3glap_U)), DeepMind’s safety team ([source](https://www.lesswrong.com/posts/GctJD5oCDRxCspEaZ/clarifying-ai-x-risk#Development_model__))
 , Conjecture ([source](https://www.lesswrong.com/posts/PE22QJSww8mpwh7bt/agi-in-sight-our-look-at-the-game-board)) and others.
+
+??? question "What did you learn in this section?"
+
+     Can you explain the Bitter lesson?
+
+     Why are the scaling laws that important?
+
+     Can you explain the difference between the weak and strong scaling hypotheses?

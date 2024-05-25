@@ -1,10 +1,14 @@
 # Appendix 1: Expert Opinions
 
+??? question "Why is this section important?"
+
+     We do not think this section is that important. The author of this textbook encourages you to think for yourself. But this is at least informative.
+
 ## Surveys
 
 According to a recent survey conducted by AI Impact ([source](https://aiimpacts.org/wp-content/uploads/2023/04/Thousands_of_AI_authors_on_the_future_of_AI.pdf)): *“****Expected time to human-level performance dropped 1–5 decades since the 2022 survey****. As always, our questions about ‘high-level machine intelligence’ (HLMI) and ‘full automation of labor’ (FAOL) got very different answers, and individuals disagreed a lot (shown as thin lines below), but the aggregate forecasts for both sets of questions dropped sharply. For context, between 2016 and 2022 surveys, the forecast for HLMI had only shifted about a year.”*
 
-![Enter image alt description](Images/u0I_Image_29.png)
+![Enter image alt description](Images/d1m_Image_29.png)
 
 Figure: 2024 Survey of AI Experts ([source](https://blog.aiimpacts.org/p/2023-ai-survey-of-2778-six-things))
 

@@ -2,6 +2,10 @@
 
 This section continues the discussion on the terminology necessary to discuss AI capabilities. It focuses in particular on certain thresholds that we might reach in the cognitive capabilities of these AI models.
 
+??? question "Why is this section important?"
+
+     Because much of the confusion in AI security boils down to terminology. This is similar to the topic of consciousness: different people have different definitions, and people talk past each other. ([source](https://www.lesswrong.com/posts/KpD2fJa6zo8o2MBxg/consciousness-as-a-conflationary-alliance-term))
+
 ## Capabilities vs. Intelligence
 
 **The difficulty of defining and measuring intelligence**. Defining something is akin to establishing a standard unit of measurement, such as a gram for weight or a meter for distance. This foundational step is critical for assessment, understanding, and measurement. However, crafting a universally accepted definition of intelligence has proven to be a formidable challenge. Approaches tried in the past such as the Turing test, endeavored to test if AI systems think or act like humans. These criteria are outdated, and we need much more precise benchmarking not for systems that think or act purely rationally. ([source](https://www.ibm.com/topics/artificial-intelligence)) Since then there have been many attempts made at formalizing definitions of “intelligence”, “machine intelligence”([source](https://arxiv.org/abs/cs/0605024)), “human-like general intelligence” ([source](https://arxiv.org/abs/1911.01547)), and so on. The difficulty in finding a universally agreed-upon definition comes from several key factors:
@@ -48,7 +52,7 @@ This section explores various definitions of different AI capability thresholds.
 
 **Artificial Super Intelligence (ASI)**: *“This is any intellect that greatly exceeds the cognitive performance of humans in virtually all domains of interest*". — Bostrom, Nick (2014) “Superintelligence” Unlike AGI, an ASI refers to a system that not only matches but greatly exceeds human capabilities in virtually all economically valuable work or domains of interest. ASI implies a level of intelligence where the AI system can outperform the best human brains in practically every field, including scientific creativity, general wisdom, and social skills. This would mean an ASI could potentially perform tasks that humans couldn't even comprehend.
 
-![Enter image alt description](Images/2Sb_Image_15.png)
+![Enter image alt description](Images/MBZ_Image_15.png)
 
 Figure: For illustrative purposes. This graph could be criticized because it is not clear that the capabilities of those AIs can be reduced to a single dimension.
 
@@ -64,7 +68,7 @@ For instance, an AI that exceeds the capability of a human expert in one second 
 
 - **One-minute ****AGI**: Beating humans at answering questions about short text passages or videos, common-sense reasoning (e.g. Yann LeCuns gear problems), looking up facts, justifying an opinion, etc.
 
-![Enter image alt description](Images/l71_Image_16.png)
+![Enter image alt description](Images/9u8_Image_16.png)
 
 Figure: Example of gears problems by Yann LeCun ([source](https://twitter.com/ylecun/status/1639696127132835840))
 
@@ -81,3 +85,13 @@ Although it is more formal than the definitions provided in the previous section
 As of the third quarter of 2023, we can establish a rough equivalence “*from informal initial experiments, our guess is that humans need about three minutes per problem to be overall as useful as GPT-4 when playing the role of trusted high-quality labor.”*([source](https://arxiv.org/abs/2312.06942)) So existing systems can roughly be believed to qualify as one-second AGIs, and are considered to be nearing the level of one-minute AGIs.
 
 They might be a few years away from becoming one-hour AGIs. Within this framework, Ngo anticipates that a superintelligence (ASI) could be something akin to a (one year, eight billion)-AGI, that is, an ASI could be seen as an AGI that outperforms all eight billion humans coordinating for one year on a given task.
+
+??? question "What did you learn in this section?"
+
+     Can you explain why intelligence is ill defined and should be substituted by capabilities measures?
+
+     What is Emergence?
+
+     Do you remember what means AGI, TAI, HLAI, NAI, ASI?
+
+     Can you explain the (t-n)-AGI framework
