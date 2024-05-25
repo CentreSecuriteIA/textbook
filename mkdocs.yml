@@ -32,11 +32,19 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - abbr
   - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 watch:
   - includes
 extra_javascript:

@@ -27,6 +27,8 @@ This textbook is an adaptation of the [course](https://www.master-mva.com/cours/
 !!! warning "Warning"
     This textbook is still under construction. It will be updated regularly.
 
+[Read the Book](Chapters){ .md-button }
+
 ## **Contact**
 
 !!! info "Contact Information"
