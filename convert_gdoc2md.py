@@ -4,11 +4,7 @@ If you update a chapter on gdoc, use this script to update the website
 0. Check that you have commited the last version beforehand
 1. Use the extension "Doc to Markdown pro" on gdoc, convert the page to a zipped markdown
 2. Unzip the zip
-3. Delete the last version of the chapter
-4. Copy the new version to the Chapter folder, and modify the title to be something like "1-Capability"
-
-
-
+3. Execute the script
 
 """
 import os
@@ -77,7 +73,7 @@ def split_markdown(folder_source, chapter):
 
 
 split_markdown(
-    folder_source='/Users/raph/Downloads/Chapter 1 - Capabilities - [Commentable]_25-05-2024_06_24_22',
+    folder_source='/Users/raph/Downloads/Chapter 1 - Capabilities - [Commentable]_25-05-2024_16_54_18',
     chapter = "1-Capabilities",
     # Last revision
 )
