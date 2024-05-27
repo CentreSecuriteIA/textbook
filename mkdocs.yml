@@ -15,6 +15,7 @@ theme:
     - content.footnote.tooltips
     - header.autohide
     - announce.dismiss
+    - toc.integrate
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
