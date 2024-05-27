@@ -12,6 +12,7 @@ theme:
     - navigation.top
     - navigation.footer
     - content.tooltips
+
     - content.footnote.tooltips
     - header.autohide
     - announce.dismiss
@@ -44,6 +45,7 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.superfences
+  - footnotes
   - pymdownx.tabbed:
       alternate_style: true
 watch:
