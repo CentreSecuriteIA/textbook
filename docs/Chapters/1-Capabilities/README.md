@@ -10,7 +10,7 @@ Human-Level AI, What, How and When?
 
 - :material-robot-outline:{ .lg .middle } **[State-of-the-Art AI](1-State-of-the-Art-AI/)**
 
-- We begin with a brief introduction to the current advancements in artificial intelligence as of 2024. We aim to acquaint readers with the latest breakthroughs across various domains such as language processing, vision, and robotics. [State-of-the-Art AI](docs/1-Capabilities/Chapter-1_section_3-State-of-the-Art-AI.md)
+- We begin with a brief introduction to the current advancements in artificial intelligence as of 2024. We aim to acquaint readers with the latest breakthroughs across various domains such as language processing, vision, and robotics.
 
 - :material-table-column-plus-after:{ .lg .middle } __Foundation Models__
 
@@ -30,10 +30,90 @@ Human-Level AI, What, How and When?
 
 </div>
 
+``` mermaid
+mindmap
+    root((Capabilities))
+        Chapter Overview
+            State-of-the-Art AI
+                Language
+                Image Generation
+                Multi & Cross Modality
+                Robotics
+                Playing Games
+                Foundation Models
+            Techniques
+            Properties
+            Limitations & Risks
+            Terminology
+        Capabilities vs. Intelligence
+            Definitions of Advanced AI Systems
+                Artificial Narrow Intelligence (ANI)
+                Artificial General Intelligence (AGI)
+                Human-Level AI (HLAI)
+                Transformative AI (TAI)
+                Artificial Super Intelligence (ASI)
+            t,n-AGI Framework
+        Leveraging Computation
+            The Bitter Lesson
+            Scaling Variables
+                Compute
+                Dataset Size
+                Parameter Count
+            Scaling Laws
+                OpenAI's Scaling Laws
+                DeepMind's Scaling Law Update
+            Scaling Hypotheses
+                Weak Scaling Hypothesis
+                Strong Scaling Hypothesis
+        Forecasting
+            Zeroth-Order Forecasting
+                Reference Classes
+                Anchors
+            First-Order Forecasting
+                Current Trends Analysis
+                Rate of Change Calculation
+            Biological Anchors Framework
+                Evolution Anchor
+                Lifetime Anchor
+                Neural Network Anchors
+                Genome Anchor
+            Affordability of Compute
+        Takeoff
+            Speed
+                Slow Takeoff
+                Fast Takeoff
+            Continuity
+                Continuous Takeoff
+                Discontinuous Takeoff
+            Similarity
+                Homogeneous Takeoff
+                Heterogeneous Takeoff
+            Polarity
+                Unipolar Takeoff
+                Multipolar Takeoff
+        Appendices
+            Expert Opinions
+                Surveys
+                Expert Quotes
+                Prediction Markets
+            Discussions on LLMs
+                Empirical Insufficiency
+                Shallow Understanding
+                Structural Inadequacy
+                Differences with the Brain
+                Reasons to Continue Scaling LLMs
+            Trends
+                Compute Trends
+                Model Size Trends
+                Algorithmic Trends
+                Data Trends
+```
+
+
 **Estimated reading time**: 2 Hours 40 minutes reading at 100 wpm. Given the density and type of material covered in this chapter, this should be taken as a lower bound estimate.
 
 **Estimated reading time (including Appendices)**: 3 Hours 40 minutes reading at 100 wpm. The appendices are meant for people already quite familiar with topics in machine learning.
 
 !!! question
 
-     If you have a question, or a remark don't hesitate to ask to agisf_textbook.0fh6l@slmail.me
+     If you have a question, or a remark don't hesitate to ask to [agisf_textbook.0fh6l@slmail.me](mailto:agisf_textbook.0fh6l@slmail.me)

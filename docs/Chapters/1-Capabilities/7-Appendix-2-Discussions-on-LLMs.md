@@ -52,7 +52,7 @@ For example, François Chollet said ([tweet](https://twitter.com/fchollet/status
 
 There are two archetypal ways to represent information in an LLM: either memorize point by point, like a look-up table, or compress the information by only memorizing higher-level features, which we can then call “the world model”. This is explained in the very important paper "Superposition, Memorization, and Double Descent": it turns out that to store points, initially the model learns the position of all the points (pure memorization), then, if we increase the number of points, the model starts to compress this knowledge, and the model is now capable of generalization (and implements a simple model of the data).
 
-![Enter image alt description](Images/1lr_Image_30.png)
+![Enter image alt description](Images/J1F_Image_30.png)
 
 
 Figure: From Superposition, Memorization, and Double Descent ([source](https://transformer-circuits.pub/2023/toy-double-descent/index.html))
@@ -166,7 +166,9 @@ Following are some reasons to believe that labs will continue to scale LLMs.
 
 **Scaling Laws on LLM implies further qualitative improvements. **The scaling laws might not initially appear impressive. However, linking these quantitative measures can translate to a qualitative improvement in algorithm quality. An algorithm that achieves near-perfect loss, though, is one that necessarily comprehends all subtleties, and displays enormous adaptability. The fact that the scaling laws are not bending is very significant and means that we can make the model a qualitatively better reasoner.
 
-**From simple correlations to understanding.** During a training run, GPTs go from basic correlations to deeper and deeper understanding. Initially, the model merely establishes connections between successive words. Gradually, it develops an understanding of grammar and semantics, creating links between sentences and subsequently between paragraphs. Eventually, GPT masters the nuances of writing style. Footnote: See also "The Scaling Hypothesis," to delve into this progression in a fascinating story.
+**From simple correlations to understanding.** During a training run, GPTs go from basic correlations to deeper and deeper understanding. Initially, the model merely establishes connections between successive words. Gradually, it develops an understanding of grammar and semantics, creating links between sentences and subsequently between paragraphs. Eventually, GPT masters the nuances of writing style[^footnote_scaling_law].
+
+[^footnote_scaling_law]: See also "The Scaling Hypothesis," to delve into this progression in a fascinating story.
 
 **Toggle box: Exercise: Scaling Laws on LLM implies further qualitative improvements.** Let's calculate the difference in loss, measured in bits, between two model outputs: "Janelle ate some ice cream because he likes sweet things like ice cream." and "Janelle ate some ice cream because she likes sweet things like ice cream.” The sentence contains approximately twenty tokens. If the model vacillates between "He" or "She," choosing randomly (50/50 odds), it incurs a loss of 2 bits on the pronoun token when incorrect. The loss for other tokens remains the same in both models. However, since the model is only incorrect half the time, a factor of 1/2 should be applied. This results in a difference of (1/2) * (2/20) = 1/20, or 0.05 bits. Thus, a model within 0.05 bits of the minimal theoretical loss should be capable of understanding even more nuanced concepts than the one discussed above.
 

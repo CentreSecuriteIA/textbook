@@ -34,7 +34,7 @@ This is repeated on a large number of such images, learning to recognize pattern
 
 **Fine-Tuning.** The fine-tuning phase is where the model is specifically adapted to perform particular tasks. Fine-tuning enables the creation of versatile models capable of undertaking a wide range of tasks, from following instructions to doing programming or scientific analysis. This can be further enhanced later through methods like "Reinforcement Learning from Human Feedback" (RLHF), which refines models to be more effective and user-friendly by reinforcing desirable outputs. We will talk about this technique in detail in later chapters.
 
-![https://www.artificialintelligence.news/pathal/uploads/2021/09/2021-foundationmodel-1024x692.png](Images/h5P-.png)
+![https://www.artificialintelligence.news/pathal/uploads/2021/09/2021-foundationmodel-1024x692.png](Images/wHy-.png)
 
 Figune: Bommasani Rishi et. al. (2022) "[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)"
 
@@ -46,7 +46,7 @@ The learning journey of a student—beginning with acquiring broad knowledge, ho
 
 ## Properties
 
-![Enter image alt description](Images/X5N_Image_14.png)
+![Enter image alt description](Images/vNm_Image_14.png)
 
 Figure: Bommasani Rishi et. al. (2022) "[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)"
 

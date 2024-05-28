@@ -19,9 +19,35 @@ def sanitize_filename(filename):
     return filename
 
 
+def read_file(file_path):
+    """
+    Read the contents of a file and return as a string.
+    """
+    with open(file_path, 'r') as file:
+        return file.read()
+
+def replace_occurrences(big_file:str, snippets_directory):
+    """
+    Replace occurrences of file names in the big file with the contents of those files.
+    """
+    # List all snippet files
+    snippet_files = os.listdir(snippets_directory)
+
+    # Replace occurrences of snippet file names with their contents
+    for snippet_file in snippet_files:
+        if snippet_file in big_file:
+            print(f"{snippet_file} will be included")
+            snippet_file_path = os.path.join(snippets_directory, snippet_file)
+            snippet_content = read_file(snippet_file_path)
+            print(snippet_content)
+            big_file = big_file.replace(snippet_file, snippet_content)
+
+    return big_file
+
 def process(body:str):
     body = body.replace("$$$$", "    ")
-    # Otherwise the parser is kindof stochastic
+    # Otherwise the parser for tab is stochastic
+    body = replace_occurrences(body, "include_snippets")
     return body 
 
 def split_markdown(folder_source, chapter):
@@ -73,7 +99,7 @@ def split_markdown(folder_source, chapter):
 
 
 split_markdown(
-    folder_source='/Users/raph/Downloads/Chapter 1 - Capabilities - [Commentable]_25-05-2024_16_54_18',
+    folder_source='/Users/raph/Downloads/Chapter 1 - Capabilities - [Commentable]_28-05-2024_13_32_29',
     chapter = "1-Capabilities",
     # Last revision
 )
