@@ -1,7 +1,6 @@
 
 *[ML]: Machine Learning
 *[LLM]: Large Language Model
-*[AI]: Artificial Intelligence
 *[NLP]: Natural Language Processing
 *[CV]: Computer Vision
 *[GAN]: Generative Adversarial Network
