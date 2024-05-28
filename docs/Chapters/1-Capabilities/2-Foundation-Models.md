@@ -1,6 +1,6 @@
 # Foundation Models
 
-⌛ Estimated Reading Time: 10 minutes. (1877 words)
+⌛ Estimated Reading Time: 10 minutes. (1855 words)
 
 
 !!! abstract
@@ -37,9 +37,9 @@ This is repeated on a large number of such images, learning to recognize pattern
 
 **Fine-Tuning.** The fine-tuning phase is where the model is specifically adapted to perform particular tasks. Fine-tuning enables the creation of versatile models capable of undertaking a wide range of tasks, from following instructions to doing programming or scientific analysis. This can be further enhanced later through methods like "Reinforcement Learning from Human Feedback" (RLHF), which refines models to be more effective and user-friendly by reinforcing desirable outputs. We will talk about this technique in detail in later chapters.
 
-![https://www.artificialintelligence.news/pathal/uploads/2021/09/2021-foundationmodel-1024x692.png](Images/wHy-.png)
+![https://www.artificialintelligence.news/pathal/uploads/2021/09/2021-foundationmodel-1024x692.png](Images/1yj-.png)
 
-Figune: Bommasani Rishi et. al. (2022) "[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)"
+Figure: Bommasani Rishi et. al. (2022) "[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)"
 
 **Elicitation Techniques**. Prompting is how we interact with the models. It's akin to giving the model a nudge in the right direction, ensuring that the vast knowledge it has acquired is applied in a way that's relevant and useful. So the structure of the prompt can have a large effect on the overall performance you are able to elicit out of the system. We only briefly introduce the concept here. There are a variety of elicitation techniques like chain-of-thought (CoT) that will be discussed in later chapters.
 
@@ -49,7 +49,7 @@ The learning journey of a student—beginning with acquiring broad knowledge, ho
 
 ## Properties
 
-![Enter image alt description](Images/vNm_Image_14.png)
+![Enter image alt description](Images/7BP_Image_14.png)
 
 Figure: Bommasani Rishi et. al. (2022) "[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)"
 
@@ -71,8 +71,6 @@ We slightly touched on these capabilities in the section on state-of-the-art AI.
 
 ??? question "What did you learn in this section?"
 
-     You should be able to answer the following questions:
-
      What is Emergence?
 
      What is Homogeneization?
@@ -80,5 +78,3 @@ We slightly touched on these capabilities in the section on state-of-the-art AI.
      What is Multimodality?
 
      What is Generalization?
-
-     Are you able to describe the pipeline to create a ChatBot?

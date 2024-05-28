@@ -1,13 +1,13 @@
 # Appendix 3: Trends
 
-⌛ Estimated Reading Time: 9 minutes. (1798 words)
+⌛ Estimated Reading Time: 10 minutes. (1838 words)
 
 
 Generally, the three main components recognized as the main variables of advancement in deep learning are: computational power available, algorithmic improvements, and the availability of data. ([source](https://cset.georgetown.edu/publication/the-ai-triad-and-what-it-means-for-national-security-strategy/))
 
 We can anticipate that models will continue to scale in the near future. Increased scale combined with the increasingly general-purpose nature of foundation models could potentially lead to a sustained growth in general-purpose AI capabilities.
 
-![Enter image alt description](Images/ftz_Image_31.png)
+![Enter image alt description](Images/uVE_Image_31.png)
 
 Figure: Monitoring the trends in ML quantitatively. Epoch (2023), "Key trends and figures in Machine Learning". Published online at epochai.org. ([source](https://epochai.org/trends))
 
@@ -19,7 +19,7 @@ Hardware advancements are paralleling these trends in training compute and data.
 
 In 2010, before the deep learning revolution, DeepMind co-founder Shane Legg predicted human-level AI by 2028 using compute-based estimates ([source](http://www.vetta.org/2010/12/goodbye-2010/)). OpenAI co-founder Ilya Sutskever, whose AlexNet paper sparked the deep learning revolution, was also an early proponent of the idea that scaling up deep learning would be transformative.
 
-![Enter image alt description](Images/Uuo_Image_32.png)
+![Enter image alt description](Images/3Li_Image_32.png)
 
 Figure: Epoch (2023), "[Key trends and figures in Machine Learning](https://epochai.org/trends)"
 
@@ -37,7 +37,7 @@ The following table and graph illustrate the trend change in machine learning mo
 | Gopher | 2021 | 280 billion | 300 billion |
 | MT-NLG 530B | 2022 | 530 billion | 270 billion |
 
-![Enter image alt description](Images/lx7_Image_33.png)
+![Enter image alt description](Images/Hl8_Image_33.png)
 
 Figure: Villalobos, Pablo et. al. (Jul 2022) “[Machine Learning Model Sizes and the Parameter Gap](https://arxiv.org/abs/2207.02852)”
 
@@ -88,8 +88,28 @@ The total amount of data generated every single day is on the order of ~463EB (S
 
 The median projection for when the training dataset of notable ML models exhausts the stock of professionally edited texts on the internet is 2024. The median projection for the year in which ML models use up all the text on the internet is 2040. Overall, projections by Epochai predict that we will have exhausted high-quality language data before 2026, low-quality language data somewhere between 2030 and 2050, and vision data between 2030 and 2060. This might be an indicator of slowing down ML progress after the next couple of decades. These conclusions from Epochai, like all the other conclusions in this entire leveraging computation section, rely on the unrealistic assumptions that current trends in ML data usage and production will continue and that there will be no major innovations in data efficiency, i.e. we are assuming that the amount of capabilities gained per training datapoint will not change from current standards.
 
-![Enter image alt description](Images/ppc_Image_34.png)
+![Enter image alt description](Images/xtU_Image_34.png)
 
 Figure: ML data consumption and data production trends for low-quality text, high-quality text, and images. - Source: Epoch (2023), "[Key trends and figures in Machine Learning](https://epochai.org/trends)"
 
 Even if we run out of Data, many solutions are proposed, from using synthetic data, for example, filtering and preprocessing the data with GPT-3.5 to create a new cleaner dataset, an approach used in the paper "Textbooks are all you need" with models like Phi 1.5B that demonstrate excellent performance for their size through the use of high-quality filtered data, to the use of more efficient trainings, or being more efficient by training on more epochs.
+
+=== "Unordered list"
+
+	
+	* Sed sagittis eleifend rutrum
+	
+	* Donec vitae suscipit est
+	
+	* Nulla tempor lobortis orci
+	
+
+=== "Ordered list"
+
+	
+	1. Sed sagittis eleifend rutrum
+	
+	2. Donec vitae suscipit est
+	
+	3. Nulla tempor lobortis orci
+	

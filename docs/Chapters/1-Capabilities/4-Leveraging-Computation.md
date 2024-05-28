@@ -31,7 +31,7 @@ This section explains the primary variables involved in scaling - compute, data,
 
 The following example offers a tangible illustration of capabilities increasing with an increasing parameter count in image generation models. In the following images, the same model architecture ([Parti](https://parti.research.google/)) is used to generate an image using an identical prompt, with the sole difference between the models being the parameter size.
 
-![Enter image alt description](Images/5al_Image_17.png)
+![Enter image alt description](Images/VzC_Image_17.png)
 
 Figure: Images generated with the prompt, “a portrait photo of a kangaroo wearing an orange hoodie and blue sunglasses standing on the grass in front of the Sydney Opera House holding a sign on the chest that says Welcome Friends!”. Source: GoogleAI (2022) , "[Parti (Pathways Autoregressive Text-to-Image model)](https://parti.research.google/)"
 
@@ -39,7 +39,7 @@ Increased numbers of parameters not only enhance image quality but also aid the 
 
 Below is a chart illustrating the impact of each of these three factors on model loss.
 
-![Enter image alt description](Images/L6b_Image_18.png)
+![Enter image alt description](Images/y4j_Image_18.png)
 
 Figure: Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)”
 
@@ -51,7 +51,7 @@ Figure: Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Mo
 
 The paper presented several scaling laws. One scaling law compares model shape and model size and found that performance correlates strongly with scale and weakly with architectural hyperparameters of model shape, such as depth vs. width. Another law compared the relative performance contribution of the different factors of scale - data, training steps, and parameter count. They found that larger language models tend to be more sample-efficient, meaning they can achieve better performance with less data. The following graph shows the relationship between the relative contributions of different factors in scaling models. The graph indicates that for optimally compute-efficient training “*most of the increase should go towards increased model size. A relatively small increase in data is needed to avoid reuse. Of the increase in data, most can be used to increase parallelism through larger batch sizes, with only a very small increase in serial training time required.*” ([source](https://arxiv.org/abs/2001.08361)) As an example, according to OpenAI's results, if you get 10x more compute, you increase your model size by about 5x and your data size by about 2x. Another 10x in compute, and model size is 25x bigger, and the data size is only 4x bigger. ([source](https://www.lesswrong.com/posts/midXmMb2Xg37F2Kgn/new-scaling-laws-for-large-language-models))
 
-![Enter image alt description](Images/t8R_Image_19.png)
+![Enter image alt description](Images/yCJ_Image_19.png)
 
 **Figure:** Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)”
 

@@ -26,7 +26,7 @@ def read_file(file_path):
     with open(file_path, 'r') as file:
         return file.read()
 
-def replace_occurrences(big_file: str, snippets_directory):
+def replace_snippets(big_file: str, snippets_directory):
     """
     Replace occurrences of file names in the big file with the contents of those files.
     """
@@ -39,16 +39,30 @@ def replace_occurrences(big_file: str, snippets_directory):
             print(f"{snippet_file} will be included")
             snippet_file_path = os.path.join(snippets_directory, snippet_file)
             snippet_content = read_file(snippet_file_path)
-            print(snippet_content)
             big_file = big_file.replace(snippet_file, snippet_content)
 
     return big_file
 
+def replace_tab_sections(body: str):
+    """
+    Replace lines between <tab> and </tab> with tabs in the final markdown.
+    """
+    while True:
+        tab_pattern = re.compile(r'<tab>([^<]*?)</tab>', re.DOTALL)
+        match = tab_pattern.search(body)
+        if not match:
+            break
+        tab_content = match.group(1)
+        tab_replacement = '\n'.join(['\t' + line for line in tab_content.splitlines()])
+        body = body[:match.start()] + tab_replacement[2:] + body[match.end():]
+    return body
+
 def process(body: str):
     body = body.replace("$$$$", "    ")
     # Otherwise the parser for tab is stochastic
-    body = replace_occurrences(body, "include_snippets")
-    return body 
+    body = replace_snippets(body, "include_snippets")
+    body = replace_tab_sections(body)
+    return body
 
 def calculate_reading_time(text):
     words_per_minute = 200  # Average reading speed
@@ -106,7 +120,7 @@ def split_markdown(folder_source, chapter):
     os.remove(chapter_path / "Output.md")
 
 split_markdown(
-    folder_source='/Users/raph/Downloads/Chapter 1 - Capabilities - [Commentable]_28-05-2024_13_32_29',
+    folder_source='/Users/raph/Downloads/Chapter 1 - Capabilities - [Commentable]_28-05-2024_15_29_32',
     chapter = "1-Capabilities",
     # Last revision
 )
