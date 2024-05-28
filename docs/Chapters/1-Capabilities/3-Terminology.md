@@ -1,5 +1,8 @@
 # Terminology
 
+⌛ Estimated Reading Time: 11 minutes. (2046 words)
+
+
 This section continues the discussion on the terminology necessary to discuss AI capabilities. It focuses in particular on certain thresholds that we might reach in the cognitive capabilities of these AI models.
 
 ??? question "Why is this section important?"

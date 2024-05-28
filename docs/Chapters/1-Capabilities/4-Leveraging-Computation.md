@@ -1,5 +1,8 @@
 # Leveraging Computation
 
+⌛ Estimated Reading Time: 14 minutes. (2702 words)
+
+
 Leveraging computation refers to the strategic utilization of computational resources to maximize the performance of AI models. We learned in the previous section that foundation models have ushered in an era where scale—model size, data volume, and computational resources—has become a cornerstone of AI capabilities. This section aims to delve further into model scaling and its pivotal role in AI capabilities.
 
 ??? question "Why is this section important?"

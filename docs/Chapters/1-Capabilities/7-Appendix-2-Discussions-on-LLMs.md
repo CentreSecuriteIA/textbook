@@ -1,5 +1,8 @@
 # Appendix 2: Discussions on LLMs
 
+⌛ Estimated Reading Time: 25 minutes. (4821 words)
+
+
 Current LLMs, although trained on abundant data, are still far from perfect.
 
 Will these problems persist in future iterations, or will they disappear? This section examines the main criticisms of those models and tries to determine if they are valid even for future LLMs.

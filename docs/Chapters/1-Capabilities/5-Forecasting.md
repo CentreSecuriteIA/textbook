@@ -1,5 +1,8 @@
 # Forecasting
 
+⌛ Estimated Reading Time: 31 minutes. (6114 words)
+
+
 ??? question "Why is this section important?"
 
     The main answer is strategy: if human-level AI is plausibly coming in 2 years instead of 20 years, a different strategy should be pursued. Today, a lot of people say they think the timelines are short and they don't have enough time to solve the technical problem, which is why MIRI, for example, switched from mainly technical research to communication. ([source](https://intelligence.org/2024/01/04/miri-2024-mission-and-strategy-update/))

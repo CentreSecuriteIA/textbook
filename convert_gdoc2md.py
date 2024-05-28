@@ -11,13 +11,13 @@ import os
 import re
 from pathlib import Path
 import shutil
+import math
 
 def sanitize_filename(filename):
     # Remove invalid characters for filenames
     filename = re.sub(r'[\\/*?:"<>|]', "", filename)
     filename = filename.replace(" ", '-')
     return filename
-
 
 def read_file(file_path):
     """
@@ -26,7 +26,7 @@ def read_file(file_path):
     with open(file_path, 'r') as file:
         return file.read()
 
-def replace_occurrences(big_file:str, snippets_directory):
+def replace_occurrences(big_file: str, snippets_directory):
     """
     Replace occurrences of file names in the big file with the contents of those files.
     """
@@ -44,11 +44,19 @@ def replace_occurrences(big_file:str, snippets_directory):
 
     return big_file
 
-def process(body:str):
+def process(body: str):
     body = body.replace("$$$$", "    ")
     # Otherwise the parser for tab is stochastic
     body = replace_occurrences(body, "include_snippets")
     return body 
+
+def calculate_reading_time(text):
+    words_per_minute = 200  # Average reading speed
+    words = len(text.split())
+    reading_time = math.ceil(words / words_per_minute)
+
+    reading_time = f"⌛ Estimated Reading Time: {reading_time} minutes. ({words} words)"
+    return reading_time
 
 def split_markdown(folder_source, chapter):
     """Update the chapter with the folder source.
@@ -80,6 +88,7 @@ def split_markdown(folder_source, chapter):
     # assert len(sections[0]) < 40 , "Error: everything should be written inside subsection '# '"
     for i, section in enumerate(sections[1:]):
         title, body = section.split('\n', 1)
+        reading_time = calculate_reading_time(body)
         body = process(body)
         sanitized_title = sanitize_filename(title)
         output_filename = f"{i}-{sanitized_title}.md"
@@ -88,19 +97,17 @@ def split_markdown(folder_source, chapter):
             output_filename = "README.md"
 
         with open(folder_source / output_filename, 'w', encoding='utf-8') as output_file:
-            output_file.write(f"# {title}\n{body}")
+            output_file.write(f"# {title}\n\n{reading_time}\n\n{body}")
         print(f"Created {output_filename}.")
-
 
     # delete old chapter
     chapter_path= Path("docs/Chapters") / chapter
     shutil.copytree(folder_source, chapter_path, dirs_exist_ok=True)
     os.remove(chapter_path / "Output.md")
 
-
 split_markdown(
     folder_source='/Users/raph/Downloads/Chapter 1 - Capabilities - [Commentable]_28-05-2024_13_32_29',
     chapter = "1-Capabilities",
     # Last revision
 )
-print("Don't forget to check the result of the formating and then commit")
+print("Don't forget to check the result of the formatting and then commit")

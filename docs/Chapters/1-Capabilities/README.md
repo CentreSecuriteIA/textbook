@@ -1,5 +1,8 @@
 # Chapter Overview
 
+⌛ Estimated Reading Time: 3 minutes. (450 words)
+
+
 Human-Level AI, What, How and When?
 
 !!! abstract
@@ -41,13 +44,12 @@ mindmap
                 Robotics
                 Playing Games
                 Foundation Models
-            Techniques
-            Properties
+            Fine-tuning
             Limitations & Risks
             Terminology
         Capabilities vs. Intelligence
             Definitions of Advanced AI Systems
-                Artificial Narrow Intelligence (ANI)
+                Artificial Narrow Intelligence
                 Artificial General Intelligence (AGI)
                 Human-Level AI (HLAI)
                 Transformative AI (TAI)
@@ -55,13 +57,7 @@ mindmap
             t,n-AGI Framework
         Leveraging Computation
             The Bitter Lesson
-            Scaling Variables
-                Compute
-                Dataset Size
-                Parameter Count
             Scaling Laws
-                OpenAI's Scaling Laws
-                DeepMind's Scaling Law Update
             Scaling Hypotheses
                 Weak Scaling Hypothesis
                 Strong Scaling Hypothesis

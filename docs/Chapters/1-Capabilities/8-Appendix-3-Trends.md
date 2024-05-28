@@ -1,5 +1,8 @@
 # Appendix 3: Trends
 
+⌛ Estimated Reading Time: 9 minutes. (1798 words)
+
+
 Generally, the three main components recognized as the main variables of advancement in deep learning are: computational power available, algorithmic improvements, and the availability of data. ([source](https://cset.georgetown.edu/publication/the-ai-triad-and-what-it-means-for-national-security-strategy/))
 
 We can anticipate that models will continue to scale in the near future. Increased scale combined with the increasingly general-purpose nature of foundation models could potentially lead to a sustained growth in general-purpose AI capabilities.

@@ -1,5 +1,8 @@
 # Appendix 1: Expert Opinions
 
+⌛ Estimated Reading Time: 4 minutes. (651 words)
+
+
 ??? question "Why is this section important?"
 
      We do not think this section is that important. The author of this textbook encourages you to think for yourself. But this is at least informative.
