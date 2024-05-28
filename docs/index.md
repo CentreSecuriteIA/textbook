@@ -35,3 +35,15 @@ This textbook is an adaptation of the [course](https://www.master-mva.com/cours/
     This textbook was created by Charbel-Raphael Segerie, Markov, Jeanne Salle, and Vincent Corruble. We are actively looking for funding. Please consider upvoting us on [Manifund](https://manifund.org/projects/ai-safety-textbook) if you like our work.
 
     Contacts: [Charbel-Raphael Segerie](mailto:crsegerie@gmail.com), [Markov](mailto:agisf_textbook.0fh6l@slmail.me).
+
+??? info "How to cite this work?"
+
+    ```
+    @book{ai_safety_handbook,
+    title        = {The AI Safety Handbook},
+    author       = {Segerie Charbel-Raphael and Markov and Jeanne Salle and Charles Martinet and Vincent Corruble},
+    year         = {2024},
+    url          = {https://centresecuriteia.github.io/textbook/Chapters/},
+    note         = {Accessed: 2024-05-28}
+    }
+    ```
