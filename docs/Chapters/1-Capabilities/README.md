@@ -1,6 +1,7 @@
 # Chapter Overview
 
-⌛ Estimated Reading Time: 3 minutes. (463 words)
+⌛ Estimated Reading Time: 3 minutes. (468 words)
+
 
 Human-Level AI, What, How and When?
 
@@ -104,6 +105,7 @@ mindmap
                 Data Trends
 ```
 
+
 **Estimated reading time**: 2 Hours 40 minutes reading at 100 wpm. Given the density and type of material covered in this chapter, this should be taken as a lower bound estimate.
 
 **Estimated reading time (including Appendices)**: 3 Hours 40 minutes reading at 100 wpm. The appendices are meant for people already quite familiar with topics in machine learning.
@@ -112,4 +114,10 @@ If you prefer reading and commenting on gdoc, this is possible [here](https://do
 
 !!! question
 
-     If you have a question, or a remark don't hesitate to reach out to [Markov](mailto:ai_safety_textbook.y4wqu@slmail.me)
+     If you have a question, or a remark don't hesitate to ask to [agisf_textbook.0fh6l@slmail.me](mailto:agisf_textbook.0fh6l@slmail.me)
+
+<!--
+
+this is a comment
+
+-->
