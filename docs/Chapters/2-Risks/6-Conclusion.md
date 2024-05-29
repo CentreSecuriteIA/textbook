@@ -1,4 +1,8 @@
 # Conclusion
+
+⌛ Estimated Reading Time: 2 minutes. (238 words)
+
+
 There are many types of risks and a lot of uncertainty.
 
 **AI risks are complex.** In this chapter, we have traversed the complex and multifaceted landscape of AI risks, highlighting the myriad ways in which the burgeoning capabilities of artificial intelligence might pose significant threats to human well-being and even survival. From the misuse of AI technologies in cyberwarfare and bioterrorism to the intrinsic dangers of misalignment and systemic risks, the potential for catastrophic outcomes. Moreover, the competitive pressures of the AI development landscape and the inadequacy of current regulatory and oversight mechanisms exacerbate our challenges.
@@ -7,6 +11,7 @@ There are many types of risks and a lot of uncertainty.
 
 **However, this chapter also serves as a call to action.** As we stand on the precipice of potentially transformative advancements in AI. We think it is necessary to develop a global, multidisciplinary approach to AI safety that encompasses technical safeguards, robust ethical frameworks, and international cooperation. The development of AI technologies cannot be left solely in the hands of technologists; it requires the involvement of policymakers, ethicists, social scientists, and the broader public to navigate the moral and societal implications of AI.
 
-![Enter image alt description](Images/yRF_Image_15.png)
+![Enter image alt description](Images/nIK_Image_17.png)
  \
-from XKCD ([source](https://xkcd.com/)).
+Figure: from XKCD ([source](https://xkcd.com/)).
+

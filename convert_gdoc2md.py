@@ -120,8 +120,8 @@ def split_markdown(folder_source, chapter):
     os.remove(chapter_path / "Output.md")
 
 split_markdown(
-    folder_source='/Users/raph/Downloads/Chapter 1 - Capabilities - [Commentable]_28-05-2024_15_29_32',
-    chapter = "1-Capabilities",
+    folder_source='/home/markov/downloads/textbook/chapter_2',
+    chapter = "2-Risks",
     # Last revision
 )
 print("Don't forget to check the result of the formatting and then commit")

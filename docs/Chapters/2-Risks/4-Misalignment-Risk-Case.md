@@ -1,7 +1,11 @@
 # Misalignment Risk Case
+
+⌛ Estimated Reading Time: 22 minutes. (4246 words)
+
+
 In the earlier sections, we outlined what exactly it means for an AI to be misaligned, and covered some basic capabilities and risks (deceptive behavior, power-seeking behaviors, etc.). In this section, we focus on why we might expect a powerful AI to be misaligned in the first place.
 
-“The *development of superhuman machine intelligence (SMI) is probably the greatest threat to the continued existence of humanity.*” - Sam Altman, CEO of OpenAI, Feb 2015( [source](https://blog.samaltman.com/machine-intelligence-part-1)).
+“The *development of superhuman machine intelligence (SMI) is probably the greatest threat to the continued existence of humanity.*” - Sam Altman, CEO of OpenAI, Feb 2015 ([source](https://blog.samaltman.com/machine-intelligence-part-1)).
 
 In the previous chapter, we discussed how AI systems might continue to get increasingly capable if current trends continue. This indicates that at some point in the future AI systems could surpass human capabilities. It is generally safe to assume that the most capable entity is the one that shapes the future.
 
@@ -31,7 +35,7 @@ This thesis, while not definitively proven, faces weak counterarguments. It argu
 
 A terminal goal, also known as an “intrinsic goal”, is an objective that you have for its own sake. Think of these as things that you want just because you want them. There is no further asking why you want this. On the other hand, an instrumental goal is one that you pursue to increase your likelihood of achieving its terminal goals.
 
-**Instrumental Convergence Thesis**. Several instrumental values can be identified that are convergent in the sense that their attainment would increase the chances of the agent's goal being realized for a wide range of final goals and a wide range of situations, implying that these instrumental values are likely to be pursued by a broad spectrum of situated intelligent agents. ([source](https://www.amazon.com/Superintelligence-Dangers-Strategies-Nick-Bostrom/dp/1501227742))
+**Instrumental Convergence Hypo****t****hesis**. Several instrumental values can be identified that are convergent in the sense that their attainment would increase the chances of the agent's goal being realized for a wide range of final goals and a wide range of situations, implying that these instrumental values are likely to be pursued by a broad spectrum of situated intelligent agents. ([source](https://www.amazon.com/Superintelligence-Dangers-Strategies-Nick-Bostrom/dp/1501227742))
 
 **“***You can't get the coffee if you're dead*" is Stuart Russell's short description to convey the notion of instrumental convergence. For such a robot, self-preservation would be an instrumental goal necessary to achieve the terminal goal of “fetching the coffee”. And not dying is instrumental to achieving many goals. Instrumental convergence is the idea that sufficiently advanced intelligent systems, with a wide variety of terminal goals, would discover similar instrumental goals, like self-preservation, goal integrity, resource acquisition, cognitive enhancement, etc. These are like sub-goals that are always useful. An example of this is money (or resources more generally). No matter what final goal you might have in life, it is always useful to have more resources as they increase the likelihood of you being able to achieve your final goal. This gives us an idea of what kinds of behaviors that even superintelligent AIs might end up displaying.
 
@@ -84,24 +88,35 @@ What plans could be executed?
 Example: One could install food crops over the entire surface of the Earth, to the point that there is no longer any habitable surface for humans.
 A sufficiently competent program pursuing a poorly aligned goal would create a large-scale accident. |
 
-| Technical Details: What does goal-directed even mean? |
-|---|
-| The concept of goal is generally fuzzy, but we can try to define the concept by giving some examples: An image classifier is not goal-directed. AlphaGo is goal-directed to maximize the chance of winning. 
-What about a human? That depends. If a human just wants to go to sleep, not really. But if a human really wants to achieve a goal, lists different possibilities on a piece of paper, evaluates those possibilities, and chooses the best one, it is much more goal-directed.
-What about a chatbot? It depends. If you put a chatbot in AutoGPT, the system can become goal-directed: the system can list possibilities, and try to rate and evaluate each possibility against the goal. This is much more goal-oriented than the basic LLM.
+??? question "What does goal-directed even mean?"
 
-Figure: (source)
-What about a mouse AI trained to navigate a maze to find the cheese? It depends on how you define goal-directedness, but behaviorally it navigates to the cheese, and it is possible to look at the internal structure of the AI to discover that we can somewhat decompose the AI between the “goal” and the capabilities.
-
-Figure: (source)
-One part of the mouse tries to find the cheese (is it up or down?). Another part of the mouse is trying to navigate to that cheese. This is the difference between the motivational API, which can implement different types of goals and the capabilities.
-Unfortunately, in general, this distinction between capabilities and goals is not so clear. (source) |
+	
+	The concept of goal is generally fuzzy, but we can try to define the concept by giving some examples: An image classifier is not goal-directed. AlphaGo is goal-directed to maximize the chance of winning.
+	
+	What about a human? That depends. If a human just wants to go to sleep, not really. But if a human really wants to achieve a goal, lists different possibilities on a piece of paper, evaluates those possibilities, and chooses the best one, it is much more goal-directed.
+	
+	What about a chatbot? It depends. If you put a chatbot in AutoGPT, the system can become goal-directed: the system can list possibilities, and try to rate and evaluate each possibility against the goal. This is much more goal-oriented than the basic LLM.
+	
+	![Enter image alt description](Images/kxO_Image_12.png)
+	
+	Figure: ([source](https://www.alignmentforum.org/s/sCGfFb5DPfjEmtEdn/p/cAC4AXiNC5ig6jQnc))
+	
+	What about a mouse AI trained to navigate a maze to find the cheese? It depends on how you define goal-directedness, but behaviorally it navigates to the cheese, and it is possible to look at the internal structure of the AI to discover that we can somewhat decompose the AI between the “goal” and the capabilities.
+	
+	![Enter image alt description](Images/rcF_Image_13.png)
+	
+	Figure: ([source](https://www.alignmentforum.org/s/sCGfFb5DPfjEmtEdn/p/cAC4AXiNC5ig6jQnc))
+	
+	One part of the mouse tries to find the cheese (is it up or down?). Another part of the mouse is trying to navigate to that cheese. This is the difference between the motivational API, which can implement different types of goals and the capabilities.
+	
+	Unfortunately, in general, this distinction between capabilities and goals is not so clear. ([source](https://www.alignmentforum.org/s/sCGfFb5DPfjEmtEdn/p/cAC4AXiNC5ig6jQnc))
+	
 
 ### Vingean uncertainty
 
-![Enter image alt description](Images/nW3_Image_4.png)
+![Enter image alt description](Images/QaN_Image_14.png)
 
-**Figure: **An illustration of Vingean uncertainty: Magnus Carlsen checkmates Bill Gates in 12 seconds, and this is not a surprise. Bill Gates knew he was going to lose, but not how. ([source](https://www.chess.com/news/view/bill-gates-vs-magnus-carlsen-checkmate-in-12-seconds-8224))
+Figure: An illustration of Vingean uncertainty: Magnus Carlsen checkmates Bill Gates in 12 seconds, and this is not a surprise. Bill Gates knew he was going to lose, but not how. ([source](https://www.chess.com/news/view/bill-gates-vs-magnus-carlsen-checkmate-in-12-seconds-8224))
 
 **Goal-directed systems are not only dangerous, but their actions are also difficult to anticipate.**
 
@@ -113,15 +128,19 @@ And the greater the space for action, the more difficult it is to predict the ac
 
 **The conclusion of Vingean uncertainty is that you should assume that a misaligned superintelligence could kill you. **Even if you do not find any way for the superintelligence to kill you – because you have put defenses in place, or you put the superintelligence in a box, or you restricted the causal bandwidth between the world and the superintelligence – that doesn't mean that the superintelligence won't be able to kill you because you can not foresee all the possible options. Building a superintelligence is probably deadly.
 
-*“Of course, I never wrote the “important” story, the sequel about the first amplified human. Once I tried something similar. John Campbell’s letter of rejection began: “Sorry—you can’t write this story. Neither can anyone else.”* -- Vernor Vinge, True Names and Other Dangers, p. 47.* (**[source](https://www.alignmentforum.org/s/sCGfFb5DPfjEmtEdn/p/cAC4AXiNC5ig6jQnc)**)*
+!!! quote "Vernor Vinge, True Names and Other Dangers, p. 47."
+
+	
+	"*Of course, I never wrote the “important” story, the sequel about the first amplified human. Once I tried something similar. John Campbell’s letter of rejection began: “Sorry—you can’t write this story. Neither can anyone else.*" ([source](https://www.alignmentforum.org/s/sCGfFb5DPfjEmtEdn/p/cAC4AXiNC5ig6jQnc))
+	
 
 ## <span style="text - decoration: underline;">Alignment is hard</span>
 
 ### Specification gaming
 
-![Enter image alt description](Images/PXZ_Image_5.png)
+![Enter image alt description](Images/Gt6_Image_15.png)
 
-**Figure: An example of Specification Gaming. **Developers train an AI boat to race in a game. The developers maximize the scoring system, but unfortunately, the AI finds a hack to maximize the point system by collecting coins. The AI does nothing but collect coins instead of finishing the race as the developers intended. This illustrates the fact that simple metrics are only proxies for what humans want. However, AIs are trained to maximize metrics. ([source](https://openai.com/research/faulty-reward-functions))
+Figure: An example of Specification Gaming. Developers train an AI boat to race in a game. The developers maximize the scoring system, but unfortunately, the AI finds a hack to maximize the point system by collecting coins. The AI does nothing but collect coins instead of finishing the race as the developers intended. This illustrates the fact that simple metrics are only proxies for what humans want. However, AIs are trained to maximize metrics. ([source](https://openai.com/research/faulty-reward-functions))
 
 **Since most goals are dangerous, we need to choose a goal. Unfortunately, we don't really know of any goal that is good to maximize fully without causing harm or loss of diversity. And this is not only true for AI but also for humans. **Here is the story of the cobra effect. The government wanted to reduce the number of venomous cobras in Delhi, so they offered a bounty for every dead cobra. Initially, this worked as planned, but then people began to breed cobras for income. When the government became aware of this, they scrapped the reward program, leading breeders to release their now-worthless snakes, which increased the wild cobra population. This story illustrates the unintended consequences of incentives and how efforts to solve a problem can sometimes exacerbate it, much like the challenge of choosing a safe, universal goal for AI.
 
@@ -135,9 +154,9 @@ We already see some AI systems that are not general-purpose and directly maximiz
 
 ### Goal misgeneralization
 
-![Enter image alt description](Images/zBS_Image_6.png)
+![Enter image alt description](Images/rjB_Image_16.png)
 
-**Figure:** Example of Goal misgeneralization. An AI is trained to catch a coin in a platform game (similar to Mario). As the coin is located at the end of the level, the AI learns to go to the end of the level and not to pick up the coin. When we change the position of the piece by putting the piece in the middle of the level instead of at the far right of the level; the AI remains competent, and can still navigate and dodge enemies, but only its objective generalizes incorrectly and heads to the right instead of towards the piece.  Note that this is not a specification problem because the developer was able to specify the goal mathematically. The goal was correctly specified because the developer used the correct code to describe the winning condition (Something like “the AI wins if the AI is touching the coin”), but the AI still learned the wrong goal. Worse still, the objective was incorrect from the start, with no way for the developer to notice that the goal was correct. Figure from [Goal Misgeneralization in Deep Reinforcement Learning](https://arxiv.org/abs/2105.14111).
+**Figure**: Example of Goal misgeneralization. An AI is trained to catch a coin in a platform game (similar to Mario). As the coin is located at the end of the level, the AI learns to go to the end of the level and not to pick up the coin. When we change the position of the piece by putting the piece in the middle of the level instead of at the far right of the level; the AI remains competent, and can still navigate and dodge enemies, but only its objective generalizes incorrectly and heads to the right instead of towards the piece.  Note that this is not a specification problem because the developer was able to specify the goal mathematically. The goal was correctly specified because the developer used the correct code to describe the winning condition (Something like “the AI wins if the AI is touching the coin”), but the AI still learned the wrong goal. Worse still, the objective was incorrect from the start, with no way for the developer to notice that the goal was correct. ([source](https://arxiv.org/abs/2105.14111))
 
 **Even if we can specify the goal, there is no guarantee that the goal will be correctly internalized by the AI, this is what we call the goal misgeneralization problem. This kind of concern is only noticeable after a distribution change.**
 
@@ -160,3 +179,4 @@ An AI might be like a child. Even if it could be aligned when it becomes an adul
 - **Safe Exploration:** In the training phase, AI systems may exhibit unsafe or unintended behaviors while navigating their environment or learning new tasks. This challenge, known as safe exploration in reinforcement learning (RL), highlights the difficulty in ensuring that AI actions stay safe and aligned with human expectations.
 
 **Even if we knew how to build arbitrary goals into AIs, we would still face the question of which goal to choose.** Preferences can vary widely, with some voting Republican and other Democrats, making it challenging to reach consensus. The alignment problem might not be well-defined, potentially requiring solving ethics, metaethics, and metaphilosophy. It's conceivable that defining what constitutes “correct alignment” rigorously is unattainable, or that striving for alignment is undesirable, and would be like treating AIs as obedient slaves.
+

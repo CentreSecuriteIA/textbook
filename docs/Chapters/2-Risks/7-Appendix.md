@@ -1,10 +1,14 @@
 # Appendix
+
+⌛ Estimated Reading Time: 12 minutes. (2325 words)
+
+
 ## <span style="text - decoration: underline;">From Misaligned AI to X-Risks</span>
 
-![Enter image alt description](Images/OgY_Image_16.png)
+![Enter image alt description](Images/SB0_Image_18.png)
 
 
-**Figure:** Consider the following pictures of stuff that humanity as a species has done. One underlying backdrop of many of those scenarios is that “Intelligent agency is a mighty force for transforming the world on purpose, and Creating agents who are far more intelligent than us, is playing with fire”. Image from Joe Carlsmith’s [presentation](https://docs.google.com/presentation/d/1UE_cAsogrK5i9wvF3YMIZX-iO9qzjevnrYfTxlKL7ns/edit#slide=id.p).
+**Figure:** Consider the following pictures of stuff that humanity as a species has done. One underlying backdrop of many of those scenarios is that “Intelligent agency is a mighty force for transforming the world on purpose, and Creating agents who are far more intelligent than us, is playing with fire”. Image from Joe Carlsmith’s presentation. ([source](https://docs.google.com/presentation/d/1UE_cAsogrK5i9wvF3YMIZX-iO9qzjevnrYfTxlKL7ns/edit#slide=id.p))
 
 The consensus threat model among DeepMind's alignment team suggests that X-risks will most likely stem from a Misaligned Power Seeking AGI. This type of AGI seeks power as an instrumental subgoal—having more power expands the system's capabilities, thereby improving its effectiveness in achieving its primary objectives. The misalignment is anticipated to arise from a combination of Specification Gaming, where the AGI exploits loopholes in the rules or objectives it has been given, and goal misgeneralization, where the AGI applies its objectives in broader contexts than intended and can lead to deceptive alignment, where the AGI's misalignment may not be readily apparent.
 
@@ -24,7 +28,7 @@ Advanced Planning Strategically aware systems would be useful for a wide range o
 
 **Instrumental Convergence Dilemma.** Instrumental convergence, as previously discussed, is a likely outcome if left unchecked, given that power is a universally beneficial resource for achieving various ends. Central to the report is the hypothesis that observed misaligned behaviors in response to certain inputs indicate potential misaligned power-seeking behaviors associated with those inputs. Therefore, any misalignment detected in contemporary systems could presage power-seeking tendencies in more advanced future systems.
 
-**Inherent Technical Challenges.** The phenomenon of Specification Gaming is a significant concern. When systems optimize for proxies that correlate with the desired outcome, they may inadvertently disrupt this correlation. Similarly, issues arise during the search for systems that fulfill specific evaluation criteria, for example, goal misgeneralization. Meeting these criteria does not guarantee that the systems are inherently driven by them
+**Inherent Technical Challenges.** The phenomenon of Specification Gaming is a significant concern. When systems optimize for proxies that correlate with the desired outcome, they may inadvertently disrupt this correlation. Similarly, issues arise during the search for systems that fulfill specific evaluation criteria, for example, goal misgeneralization. Meeting these criteria does not guarantee that the systems are inherently driven by them.
 
 **The Imperfection of Existing Solutions.** Current strategies for shaping objectives, such as promoting honesty or rewarding cooperation, are still rudimentary and fraught with limitations, as detailed in the section 'Problems with RLHF'. Moreover, attempts to control capabilities through specialization or prevention of capability enhancement often conflict with economic motivations. For instance, an AI tasked with maximizing a startup's revenue will naturally gravitate towards enhancing its capabilities. Sometimes, to remain competitive, a high degree of generality is indispensable. Options for control, such as containment (boxing) or surveillance, also tend to run counter to economic drives. Collectively, all proposed solutions carry inherent problems and pose significant risks if relied upon during the scaling of capabilities.
 
@@ -34,22 +38,22 @@ Advanced Planning Strategically aware systems would be useful for a wide range o
 
 **AGI Safety is a unique challenge.** In contrast to other scientific fields, AGI safety is particularly challenging because the problem is not only new but also may be inherently difficult to comprehend. Additionally, in computer science generally, when there is a bug, the computer is not optimizing adversarially against the programmer, but we cannot make the same assumption here. We are not dealing with a passive system, but we're engaging with one that could be actively and adversarially optimizing—searching for loopholes to exploit. Additionally, the stakes of misaligning AGI systems are essentially unbounded. Mistakes in alignment could lead to severe and potentially irreversible consequences, underscoring the gravity of approaching AGI with a safety-first mindset.
 
-![Enter image alt description](Images/gYY_Image_17.jpeg)
+![Enter image alt description](Images/WlA_Image_19.jpeg)
 
-**figure:** The median probabilities for each of the seven questions and the 25%-75% quantiles as of 6 April 2023. For illustration, multiple super-forecasters have tried to use Carlsmith breakdown to estimate the probability of AI X-Risks ([source](https://goodjudgment.com/superforecasting-ai/)) \
+**F****igure:** The median probabilities for each of the seven questions and the 25%-75% quantiles as of 6 April 2023. For illustration, multiple super-forecasters have tried to use Carlsmith breakdown to estimate the probability of AI X-Risks ([source](https://goodjudgment.com/superforecasting-ai/)) \
 
 
 Misaligned Power Seeking AGI scenarios are the subject of abundant literature, for example:
 
-- [Without specific countermeasures, the easiest path to transformative AI likely leads to AI takeover](https://www.lesswrong.com/posts/pRkFkzwKZ2zfa3R6H/without-specific-countermeasures-the-easiest-path-to) (Cotra): Cotra shows that our current training setting, which she calls "human feedback on diverse tasks," is on a path to create competent planners in a way which will lead by default to deception and takeover. This report is quite accessible and thorough.
+- Without specific countermeasures, the easiest path to transformative AI likely leads to AI takeover ([source](https://www.lesswrong.com/posts/pRkFkzwKZ2zfa3R6H/without-specific-countermeasures-the-easiest-path-to)): Cotra shows that our current training setting, which she calls "human feedback on diverse tasks," is on a path to create competent planners in a way which will lead by default to deception and takeover. This report is quite accessible and thorough.
 
-- [The alignment problem from a deep learning perspective](https://www.lesswrong.com/posts/KbyRPCAsWv5GtfrbG/what-misalignment-looks-like-as-capabilities-scale) (Ngo): Ngo shows that by default, advanced AIs are general purpose and deceptive.
+- The alignment problem from a deep learning perspective ([source](https://www.lesswrong.com/posts/KbyRPCAsWv5GtfrbG/what-misalignment-looks-like-as-capabilities-scale)): Ngo shows that by default, advanced AIs are general purpose and deceptive.
 
-- [AI Risk from Program Search](https://www.lesswrong.com/posts/wnnkD6P2k2TfHnNmt/threat-model-literature-review#AI_Risk_from_Program_Search__Shah_) (Shah): In this short analysis, Shah shows that searching for an efficient AI program leads to finding autonomous planners and that it's hard to distinguish the deceptive ones from the non-deceptive ones.
+- AI Risk from Program Search ([source](https://www.lesswrong.com/posts/wnnkD6P2k2TfHnNmt/threat-model-literature-review#AI_Risk_from_Program_Search__Shah_)): In this short analysis, Shah shows that searching for an efficient AI program leads to finding autonomous planners and that it's hard to distinguish the deceptive ones from the non-deceptive ones.
 
-- [Advanced artificial agents intervene in the provision of reward](https://onlinelibrary.wiley.com/doi/10.1002/aaai.12064) (Cohen et al.): Advanced AI strives to wirehead itself. Catastrophic consequences ensue.
+- Advanced artificial agents intervene in the provision of reward ([source](https://onlinelibrary.wiley.com/doi/10.1002/aaai.12064)): Advanced AI strives to wirehead itself. Catastrophic consequences ensue.
 
-- [How harmful AIs could appear - Yoshua Bengio](https://yoshuabengio.org/en/2023/05/30/how-harmful-ais-could-appear/).
+- How harmful AIs could appear - Yoshua Bengio ([source](https://yoshuabengio.org/en/2023/05/30/how-harmful-ais-could-appear/))
 
 This [literature review](https://www.alignmentforum.org/posts/wnnkD6P2k2TfHnNmt/threat-model-literature-review) is a good summary of more scenarios on Misaligned Power Seeking AI.
 
@@ -57,19 +61,19 @@ This [literature review](https://www.alignmentforum.org/posts/wnnkD6P2k2TfHnNmt/
 
 The discourse on existential risks (X-Risks) associated with artificial intelligence (AI) is a pivotal concern among experts and researchers in the field. These professionals are increasingly vocal about the potential for AI systems to cause significant harm if not developed and managed with utmost caution.
 
-**Jan Leike**, the lead of the OpenAI Alignment Team, estimates the probability of catastrophic outcomes due to AI, known as P(doom), to range between 10% and 90%. This broad range underscores the uncertainty and serious concerns within the expert community regarding AI's long-term impacts.
+**Jan Leike**, the ex-lead of the OpenAI Alignment Team, estimates the probability of catastrophic outcomes due to AI, known as P(doom), to range between 10% and 90%. This broad range underscores the uncertainty and serious concerns within the expert community regarding AI's long-term impacts.
 
-**A 2022 Expert Survey on Progress in AI **by AI Impacts revealed that “48% of respondents gave at least a 10% chance of an extremely bad outcome,” highlighting considerable apprehension among AI researchers about the paths AI development might take. ([2022 Expert Survey on Progress in AI – AI Impacts](https://aiimpacts.org/2022-expert-survey-on-progress-in-ai/)). 
+**A 2022 Expert Survey on Progress in AI **by AI Impacts revealed that “48% of respondents gave at least a 10% chance of an extremely bad outcome,” highlighting considerable apprehension among AI researchers about the paths AI development might take. ([2022 Expert Survey on Progress in AI – AI Impacts](https://aiimpacts.org/2022-expert-survey-on-progress-in-ai/)).
 
 **Samotsvety Forecasting**, recognized as the world's leading super forecasting group, has also weighed in on this issue. Through their collective expertise in AI-specific forecasting, they have arrived at an aggregate prediction of a 30% chance for an AI-induced catastrophe. This catastrophe is defined as an event leading to the death of more than 95% of humanity, with individual forecasts ranging from 8% to 71%. Such a statistic is a stark reminder of the existential stakes involved in AI development and deployment.
 
-![Enter image alt description](Images/2y1_Image_18.png)
+![Enter image alt description](Images/QSN_Image_20.png)
 
 The collection of P(doom) values from various experts, available [here](https://pauseai.info/pdoom), provides a comprehensive overview of the perceived risks. These values further contribute to the ongoing discussion on how best to navigate the uncertain future AI may bring.
 
-![Enter image alt description](Images/byk_Image_19.png)
+![Enter image alt description](Images/YCK_Image_21.png)
 
-Illustration from Michael Trazzi of [My views on “doom” — LessWrong](https://www.lesswrong.com/posts/xWMqsvHapP3nwdSW8/my-views-on-doom), describing Paul Christiano’s view of the future. Paul Christiano is a highly respected figure in the AI Safety community.
+Figure: Illustration from Michael Trazzi of [My views on “doom” — LessWrong](https://www.lesswrong.com/posts/xWMqsvHapP3nwdSW8/my-views-on-doom), describing Paul Christiano’s view of the future. Paul Christiano is a highly respected figure in the AI Safety community.
 
 ## <span style="text - decoration: underline;">AI risks are non-enumerable</span>
 
@@ -81,19 +85,18 @@ A complete exhaustive systematization is difficult.
 
 An exercise you can try to convince yourself of this point is to search for loopholes in this document and read [the list of lethalities](https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities#E2getLSb35tmAZC5t) from Yudkovsky. How many points overlap? Not much. That’s expected.
 
-![Enter image alt description](Images/7zF_Image_20.png)
- \
-**Figure:** Here is another framework that is very different from what we presented.
+![Enter image alt description](Images/QUt_Image_22.png)
+Figure: Here is another framework that is very different from what we presented.
 
-![Enter image alt description](Images/RFr_Image_21.png)
+![Enter image alt description](Images/woM_Image_23.png)
 
-**Figure:** Here is another framework focusing on LLM vulnerabilities. [source.](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)
+Figure: Here is another framework focusing on LLM vulnerabilities. ([source](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf))
 
 ## <span style="text - decoration: underline;">Measuring alignment is hard</span>
 
-![Enter image alt description](Images/ha6_Image_22.png)
+![Enter image alt description](Images/06G_Image_24.png)
  \
-Figure: from [AI Safety Seems Hard to Measure](https://www.cold-takes.com/ai-safety-seems-hard-to-measure/) 
+Figure: ([source](https://www.cold-takes.com/ai-safety-seems-hard-to-measure/)) 
 
 The article "AI Safety Seems Hard to Measure" by Holden Karnofsky discusses the complexities and challenges of ensuring the safety of AI. The text outlines four major difficulties, which may be another way of presenting the alignment problem:
 
@@ -109,11 +112,11 @@ The article "AI Safety Seems Hard to Measure" by Holden Karnofsky discusses the 
 
 Yes, as per various experts in AI safety and alignment, a sufficiently advanced AI could potentially pose a significant threat to society.
 
-**Superintelligence could create “cognitive superpowers**”. These might include the ability to conduct research to build a better AI system, hack into human-built software globally, manipulate human psychology, generate large sums of wealth, develop plans superior to those of humans, and develop advanced weaponry capable of overpowering human militaries [[1]](https://www.lesswrong.com/posts/oBBzqkZwkxDvsKBGB/ai-could-defeat-all-of-us-combined).
+**Superintelligence could create “cognitive superpowers**”. These might include the ability to conduct research to build a better AI system, hack into human-built software globally, manipulate human psychology, generate large sums of wealth, develop plans superior to those of humans, and develop advanced weaponry capable of overpowering human militaries ([source](https://www.lesswrong.com/posts/oBBzqkZwkxDvsKBGB/ai-could-defeat-all-of-us-combined)).
 
 **Even AI at human levels of intelligence could pose a significant threat if it operates with the intention of undermining human civilization. Those human-level unaligned AIs would be akin to a scenario where highly skilled humans on another planet attempt to take down our civilization using just the Internet.** This analogy underscores the potential for AI to leverage existing digital infrastructures to orchestrate wide-scale disruptions or attacks.
 
-**AI could be dangerous even without bodies**. Karnofsky notes that AIs could still exert influence by recruiting human allies, teleoperating military equipment, and generating wealth through methods like quantitative trading. These capabilities suggest that physical form is not a prerequisite for an AI to exert power or initiate conflict [[1]](https://www.lesswrong.com/posts/oBBzqkZwkxDvsKBGB/ai-could-defeat-all-of-us-combined). AI systems could also acquire more resources and do human-level work, increasing their numbers and potentially out-resourcing humans. Even without physical bodies, they could pose a threat, as they could disable or control others' equipment, further increasing their power [[3]](https://www.cold-takes.com/ai-could-defeat-all-of-us-combined/). However, it's important to note that these scenarios are hypothetical and depend on AI technology development far exceeding current capabilities.
+**AI could be dangerous even without bodies**. Karnofsky notes that AIs could still exert influence by recruiting human allies, teleoperating military equipment, and generating wealth through methods like quantitative trading. These capabilities suggest that physical form is not a prerequisite for an AI to exert power or initiate conflict ([source](https://www.lesswrong.com/posts/oBBzqkZwkxDvsKBGB/ai-could-defeat-all-of-us-combined)). AI systems could also acquire more resources and do human-level work, increasing their numbers and potentially out-resourcing humans. Even without physical bodies, they could pose a threat, as they could disable or control others' equipment, further increasing their power ([source](https://www.cold-takes.com/ai-could-defeat-all-of-us-combined/)). However, it's important to note that these scenarios are hypothetical and depend on AI technology development far exceeding current capabilities.
 
 ## <span style="text - decoration: underline;">Why </span>d<span style="text - decoration: underline;">o Labs </span>e<span style="text - decoration: underline;">ngage in AGI </span>d<span style="text - decoration: underline;">evelopment </span>d<span style="text - decoration: underline;">espite the </span>r<span style="text - decoration: underline;">isks?</span>
 
