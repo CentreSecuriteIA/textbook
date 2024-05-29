@@ -112,6 +112,4 @@ If you prefer reading and commenting on gdoc, this is possible [here](https://do
 
 !!! question
 
-     If you have a question, or a remark don't hesitate to ask to [agisf_textbook.0fh6l@slmail.me](mailto:agisf_textbook.0fh6l@slmail.me)
-
-Test edit for commit
+     If you have a question, or a remark don't hesitate to reach out to [Markov](mailto:ai_safety_textbook.y4wqu@slmail.me)
