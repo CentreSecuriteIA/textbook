@@ -33,14 +33,3 @@ The alignment field is a pre-paradigmatic, and there is no consensus on many of 
 
     Contacts: [Charbel-Raphael Segerie](mailto:crsegerie@gmail.com), [Markov Grey](mailto:ai_safety_textbook.y4wqu@slmail.me).
 
-??? note "How to cite this work?"
-
-    ```
-    @book{ai_safety_handbook,
-    title        = {The AI Safety Handbook},
-    author       = {Segerie Charbel-Raphael and Markov Grey and Jeanne Salle and Charles Martinet and Vincent Corruble},
-    year         = {2024},
-    url          = {https://centresecuriteia.github.io/textbook/Chapters/},
-    note         = {Accessed: 2024-05-28}
-    }
-    ```

@@ -100,4 +100,5 @@ mindmap
                 Algorithmic Trends
                 Data Trends
 ```
-If you prefer reading and commenting on gdoc, this is possible [here](https://docs.google.com/document/d/1HKo0Kest9Xppjn7m2ODpfMUlEu93SzLsfxXBH48Xaus/edit?usp=sharing).
+
+

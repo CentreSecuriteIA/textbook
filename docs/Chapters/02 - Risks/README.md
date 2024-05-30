@@ -27,4 +27,4 @@ He now wants to bet his entire life savings in a match against Magnus Carlson (W
 	" “*There is no question that machines will become smarter than humans—in all domains in which humans are smart—in the future,*" says LeCun. "*It's a question of when and how, not a question of if.*" 
 	
 	([source](https://www.technologyreview.com/2023/05/02/1072528/geoffrey-hinton-google-why-scared-ai/))
-	
+
