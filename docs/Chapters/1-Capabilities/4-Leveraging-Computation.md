@@ -1,13 +1,9 @@
 # Leveraging Computation
 
-⌛ Estimated Reading Time: 14 minutes. (2702 words)
+⌛ Estimated Reading Time: 13 minutes. (2542 words)
 
 
 Leveraging computation refers to the strategic utilization of computational resources to maximize the performance of AI models. We learned in the previous section that foundation models have ushered in an era where scale—model size, data volume, and computational resources—has become a cornerstone of AI capabilities. This section aims to delve further into model scaling and its pivotal role in AI capabilities.
-
-??? question "Why is this section important?"
-
-     This is because many people think that computation is the "secret sauce", or at least a core ingredient in how to get more capability. This section shows that it may be very plausible that there is no remaining theoretical difficulty in getting to human-level AIs. More discussion can be found in the appendix 2.
 
 ## The Bitter Lesson
 
@@ -31,7 +27,7 @@ This section explains the primary variables involved in scaling - compute, data,
 
 The following example offers a tangible illustration of capabilities increasing with an increasing parameter count in image generation models. In the following images, the same model architecture ([Parti](https://parti.research.google/)) is used to generate an image using an identical prompt, with the sole difference between the models being the parameter size.
 
-![Enter image alt description](Images/VzC_Image_17.png)
+![Enter image alt description](Images/Dhh_Image_17.png)
 
 Figure: Images generated with the prompt, “a portrait photo of a kangaroo wearing an orange hoodie and blue sunglasses standing on the grass in front of the Sydney Opera House holding a sign on the chest that says Welcome Friends!”. Source: GoogleAI (2022) , "[Parti (Pathways Autoregressive Text-to-Image model)](https://parti.research.google/)"
 
@@ -39,7 +35,7 @@ Increased numbers of parameters not only enhance image quality but also aid the 
 
 Below is a chart illustrating the impact of each of these three factors on model loss.
 
-![Enter image alt description](Images/y4j_Image_18.png)
+![Enter image alt description](Images/nQO_Image_18.png)
 
 Figure: Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)”
 
@@ -47,31 +43,37 @@ Figure: Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Mo
 
 **Why do we care about scaling laws?** Scaling laws are mathematical relationships that describe how the performance of a machine learning model changes as we vary different aspects of the model and its training process. Training large foundation models like GPT is expensive. When potentially millions of dollars are invested in training AI models, developers need to ensure that funds are efficiently allocated. Developers need to decide on an appropriate resource allocation between - model size, training time, and dataset size. Scaling laws can guide decisions between trade-offs, such as: Should a developer invest in a license to train on Stack Overflow's data, or should they invest in more GPUs? Would it be efficient if they continued to cover the extra costs incurred by longer model training? If access to compute increases tenfold, how many parameters should be added to the model for optimal use of GPUs? For sizable language models like GPT-3, these trade-offs might resemble choosing between training a 20-billion parameter model on 40% of an internet archive or a 200-billion parameter model on just 4% of the same archive. ([source](https://www.lesswrong.com/posts/midXmMb2Xg37F2Kgn/new-scaling-laws-for-large-language-models)) In short, scaling laws are important because they help us optimally allocate resources, and they allow us to make predictions about how changes in compute, model size, and data size will affect the performance of future models.
 
-
-
 === "**2020 OpenAI’s scaling laws**"
 
-    OpenAI developed the first generation of formal neural scaling laws in their 2020 paper “[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)”, moving away from reliance on experience and intuition. To determine the relationships between different scaling variables, some elements were held fixed while others were varied. As an example, data can be kept constant, while parameter count and training time are varied, or parameter count is kept constant and data amounts are varied, etc… This allows a measurement of the relative contribution of each towards overall performance. Such experiments allowed the development of concrete relationships that OpenAI first introduced as scaling laws.
-
-    The paper presented several scaling laws. One scaling law compares model shape and model size and found that performance correlates strongly with scale and weakly with architectural hyperparameters of model shape, such as depth vs. width. Another law compared the relative performance contribution of the different factors of scale - data, training steps, and parameter count. They found that larger language models tend to be more sample-efficient, meaning they can achieve better performance with less data. The following graph shows the relationship between the relative contributions of different factors in scaling models. The graph indicates that for optimally compute-efficient training “*most of the increase should go towards increased model size. A relatively small increase in data is needed to avoid reuse. Of the increase in data, most can be used to increase parallelism through larger batch sizes, with only a very small increase in serial training time required.*” ([source](https://arxiv.org/abs/2001.08361)) As an example, according to OpenAI's results, if you get 10x more compute, you increase your model size by about 5x and your data size by about 2x. Another 10x in compute, and model size is 25x bigger, and the data size is only 4x bigger. ([source](https://www.lesswrong.com/posts/midXmMb2Xg37F2Kgn/new-scaling-laws-for-large-language-models))
-
-    ![Enter image alt description](Images/yCJ_Image_19.png)
-
-    **Figure:** Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)”
-
-    **What are the scaling equations?** The mathematical representation of scaling laws often takes the form of power-law relationships. For instance, one of the key findings of OpenAI's research was that model performance (measured as loss) scales as a power law with respect to model size, dataset size, and the amount of compute. The exact equations can vary depending on the specific scaling law, but a general form could be:
-
-    $$\text{Performance} = k \cdot (\text{Compute})^a \cdot (\text{Model size})^b \cdot (\text{Data size})^c$$
-
-    Where $k$ is a constant, and $a$, $b$, and $c$ are the exponents that describe how performance scales with compute, model size, and data size, respectively.
+	
+	OpenAI developed the first generation of formal neural scaling laws in their 2020 paper “[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)”, moving away from reliance on experience and intuition. To determine the relationships between different scaling variables, some elements were held fixed while others were varied. As an example, data can be kept constant, while parameter count and training time are varied, or parameter count is kept constant and data amounts are varied, etc… This allows a measurement of the relative contribution of each towards overall performance. Such experiments allowed the development of concrete relationships that OpenAI first introduced as scaling laws.
+	
+	The paper presented several scaling laws. One scaling law compares model shape and model size and found that performance correlates strongly with scale and weakly with architectural hyperparameters of model shape, such as depth vs. width. Another law compared the relative performance contribution of the different factors of scale - data, training steps, and parameter count. They found that larger language models tend to be more sample-efficient, meaning they can achieve better performance with less data. The following graph shows the relationship between the relative contributions of different factors in scaling models. The graph indicates that for optimally compute-efficient training “*most of the increase should go towards increased model size. A relatively small increase in data is needed to avoid reuse. Of the increase in data, most can be used to increase parallelism through larger batch sizes, with only a very small increase in serial training time required.*” ([source](https://arxiv.org/abs/2001.08361)) As an example, according to OpenAI's results, if you get 10x more compute, you increase your model size by about 5x and your data size by about 2x. Another 10x in compute, and model size is 25x bigger, and the data size is only 4x bigger. ([source](https://www.lesswrong.com/posts/midXmMb2Xg37F2Kgn/new-scaling-laws-for-large-language-models))
+	
+	![Enter image alt description](Images/o2j_Image_19.png)
+	
+	**Figure:** Kaplan, Jared et. al. (Jan 2020) “[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)”
+	
+	**What are the scaling equations?** The mathematical representation of scaling laws often takes the form of power-law relationships. For instance, one of the key findings of OpenAI's research was that model performance (measured as loss) scales as a power law with respect to model size, dataset size, and the amount of compute. The exact equations can vary depending on the specific scaling law, but a general form could be:
+	
+	$$\text{Performance} = k \cdot (\text{Compute})^a \cdot (\text{Model size})^b \cdot (\text{Data size})^c$$
+	
+	Where $k$ is a constant, and $a$, $b$, and $c$ are the exponents that describe how performance scales with compute, model size, and data size, respectively.
+	
 
 === "**2022 DeepMinds scaling law update**"
 
-     In 2022, DeepMind provided an update to these scaling laws by publishing a paper called “[Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556)”. They choose 9 different quantities of compute, ranging from about 10^18 FLOPs to 10^21 FLOPs. They hold the compute fixed at these amounts, and then for each quantity of compute, they train many different-sized models. Because the quantity of compute is constant for each level, the smaller models are trained for more time and the larger models for less. Based on their research DeepMind concluded that for every increase in compute, you should increase data size and model size by approximately the same amount. If you get a 100x increase in compute, you should make your model 10x bigger and your data 10x bigger. ([source](https://www.lesswrong.com/posts/midXmMb2Xg37F2Kgn/new-scaling-laws-for-large-language-models))
+	
+	In 2022, DeepMind provided an update to these scaling laws by publishing a paper called “[Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556)”. They choose 9 different quantities of compute, ranging from about 10^18 FLOPs to 10^21 FLOPs. They hold the compute fixed at these amounts, and then for each quantity of compute, they train many different-sized models. Because the quantity of compute is constant for each level, the smaller models are trained for more time and the larger models for less. Based on their research DeepMind concluded that for every increase in compute, you should increase data size and model size by approximately the same amount. If you get a 100x increase in compute, you should make your model 10x bigger and your data 10x bigger. ([source](https://www.lesswrong.com/posts/midXmMb2Xg37F2Kgn/new-scaling-laws-for-large-language-models))
+	
+	To validate this law, DeepMind trained a 70-billion parameter model ("Chinchilla") using the same compute as had been used for the 280-billion parameter model Gopher. That is, the smaller Chinchilla was trained with 1.4 trillion tokens, whereas the larger Gopher was only trained with 300 billion tokens. As predicted by the new scaling laws, Chinchilla surpasses Gopher in almost every metric.
+	
 
-    To validate this law, DeepMind trained a 70-billion parameter model ("Chinchilla") using the same compute as had been used for the 280-billion parameter model Gopher. That is, the smaller Chinchilla was trained with 1.4 trillion tokens, whereas the larger Gopher was only trained with 300 billion tokens. As predicted by the new scaling laws, Chinchilla surpasses Gopher in almost every metric.
+=== "**2023 Broken Neural scaling laws**"
 
-**Scaling laws and future models.** As for what scaling laws tell us about future AI models, they suggest that we can continue to see performance improvements as we scale up models, especially if we do so in a balanced way across compute, model size, and data size. However, they also indicate that there will be diminishing returns as we keep scaling up, and there may be practical and economic limits to how far we can push each variable.
+	
+	Work in progress.
+	
 
 ## Scaling Hypotheses
 
@@ -100,11 +102,3 @@ This hypothesis advocates that merely scaling up models on more data, modalities
 Proponents include OpenAI ([sou](https://openai.com/blog/planning-for-agi-and-beyond)[rce](https://openai.com/blog/planning-for-agi-and-beyond))
  , Anthropic’s head Dario Amodei ([source](https://www.youtube.com/watch?v=Nlkk3glap_U)), DeepMind’s safety team ([source](https://www.lesswrong.com/posts/GctJD5oCDRxCspEaZ/clarifying-ai-x-risk#Development_model__))
 , Conjecture ([source](https://www.lesswrong.com/posts/PE22QJSww8mpwh7bt/agi-in-sight-our-look-at-the-game-board)) and others.
-
-??? question "What did you learn in this section?"
-
-     Can you explain the Bitter lesson?
-
-     Why are the scaling laws that important?
-
-     Can you explain the difference between the weak and strong scaling hypotheses?

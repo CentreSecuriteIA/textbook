@@ -1,17 +1,13 @@
 # Appendix 1: Expert Opinions
 
-⌛ Estimated Reading Time: 4 minutes. (651 words)
+⌛ Estimated Reading Time: 4 minutes. (617 words)
 
-
-??? question "Why is this section important?"
-
-     We do not think this section is that important. The author of this textbook encourages you to think for yourself. But this is at least informative.
 
 ## Surveys
 
 According to a recent survey conducted by AI Impact ([source](https://aiimpacts.org/wp-content/uploads/2023/04/Thousands_of_AI_authors_on_the_future_of_AI.pdf)): *“****Expected time to human-level performance dropped 1–5 decades since the 2022 survey****. As always, our questions about ‘high-level machine intelligence’ (HLMI) and ‘full automation of labor’ (FAOL) got very different answers, and individuals disagreed a lot (shown as thin lines below), but the aggregate forecasts for both sets of questions dropped sharply. For context, between 2016 and 2022 surveys, the forecast for HLMI had only shifted about a year.”*
 
-![Enter image alt description](Images/Z1H_Image_29.png)
+![Enter image alt description](Images/01G_Image_29.png)
 
 Figure: 2024 Survey of AI Experts ([source](https://blog.aiimpacts.org/p/2023-ai-survey-of-2778-six-things))
 
@@ -36,5 +32,8 @@ Here are some quotes from experts regarding transformative AI:
 Note that Hinton, Bengio, and Sutskever are the 3 most cited researchers in the field of AI. And that Hinton, Bengio, and LeCun are the recipients of the Turing Award in Deep Learning. Some users on reddit have put together a comprehensive list of publicly stated AI timelines forecasts from famous researchers and industry leaders. The full list can be found at [this link](https://www.reddit.com/r/singularity/comments/18vawje/comment/kfpntso/).
 
 ## Prediction Markets
+
+<iframe src="https://www.metaculus.com/questions/question_embed/3479/?theme=light" style="height:430px; width:100%; max-width:550px"></iframe>
+<iframe src="https://www.metaculus.com/questions/question_embed/5121/?theme=light" style="height:430px; width:100%; max-width:550px"></iframe>
 
 A prediction market, such as [manifold](https://manifold.markets/home) market, allows users to bet on future events, for example the result of a national election, or the release date of a particular product. Prediction markets are one of the best probabilistic crystal balls we currently have, and they are, in general, better tools than surveys or experts. An article on the prediction of the reproducibility of scientific articles compared these prediction methods, and it was found that prediction markets outperformed expert surveys ([source](https://www.pnas.org/doi/10.1073/pnas.1516179112)). The argument is that either prediction markets are more accurate than experts, or experts should be able to make a lot of money from these markets and, in doing so, correct the markets. As of January 2024, in response to the question “When will the first weakly general AI system be devised, tested, and publicly announced?”, the Metaculus market predicts currently a median year of 2026 ([source](https://www.notion.so/Economic-foresight-from-the-perspective-of-AI-development-8e2cf5c63f1748af85fa25e37fd5bc22?pvs=21)), and for the question “When will the first general AI system be devised, tested, and publicly announced?”Metaculus predicts currently a median of 2031. ([source](https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/)).

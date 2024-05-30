@@ -1,6 +1,6 @@
 # Appendix 2: Discussions on LLMs
 
-⌛ Estimated Reading Time: 22 minutes. (4234 words)
+⌛ Estimated Reading Time: 22 minutes. (4230 words)
 
 
 Current LLMs, although trained on abundant data, are still far from perfect.
@@ -55,7 +55,7 @@ For example, François Chollet said ([tweet](https://twitter.com/fchollet/status
 
 There are two archetypal ways to represent information in an LLM: either memorize point by point, like a look-up table, or compress the information by only memorizing higher-level features, which we can then call “the world model”. This is explained in the very important paper "Superposition, Memorization, and Double Descent": it turns out that to store points, initially the model learns the position of all the points (pure memorization), then, if we increase the number of points, the model starts to compress this knowledge, and the model is now capable of generalization (and implements a simple model of the data).
 
-![Enter image alt description](Images/tec_Image_30.png)
+![Enter image alt description](Images/XcP_Image_30.png)
 
 
 Figure: From Superposition, Memorization, and Double Descent ([source](https://transformer-circuits.pub/2023/toy-double-descent/index.html))
@@ -74,28 +74,24 @@ LLMs are prone to "hallucinate," a term used to describe the generation of conte
 
 - **Larger models can be more truthful than smaller ones.** This is the case with TruthfulQA. OpenAI reports that GPT-4 is 40% more accurate and factually consistent than its predecessor.
 
-<!--
-
-this is a comment
-
--->
-
-??? note "Many techniques can be used to increase the truthfulness of LLM"
+??? note "Many techniques can be used to increase the truthfulness of LLMs"
 
 	
 	- **Fine-tuning LLMs for Factuality****:** In this paper ([link](https://arxiv.org/abs/2311.08401)), the authors recommend fine-tuning methods using Direct Preference Optimization (DPO) to decrease the rate of hallucinations. By applying such techniques, a 7B Llama 2 model saw a 58% reduction in factual error rate compared to its original model.
 	
 	- **Retrieval Augmented Generation (RAG)**. This method works by incorporating a process of looking up real-world information (retrieval, like a Google search) and then using that information to guide the AI's responses (generation, based on the document retrieved). By doing so, the AI is better anchored in factual reality, reducing the chances of producing unrealistic or incorrect content. Essentially, it's like giving the AI a reference library to check facts against while it learns and responds, ensuring its output is more grounded in reality. This approach is particularly useful in the context of in-context learning, where the AI learns from the information and context provided in each interaction.
 	
-	- **Prompting techniques** in AI have evolved to include sophisticated methods like 
+	- **Prompting techniques** in AI have evolved to include sophisticated methods like
 	
-	- **Consistency checks** ([source](https://arxiv.org/abs/2306.09983)), that involve comparing the output from multiple instances of the model on the same prompt, identifying and resolving any disagreements in the responses. This method enhances the accuracy and credibility of the information provided. For instance, if different iterations of the model produce conflicting answers, this discrepancy can be used to refine and improve the model's understanding. 
-	
-	- **Reflexion. **The Reflexion technique ("Reflexion: Language Agents with Verbal Reinforcement Learning"): It’s possible to simply ask the LLM to take a step back, to question whether what it has done is correct or not, and to consider ways to improve the previous answer, and this enhances a lot the capabilities of GPT-4, and this technique is emergent and does not work well with previous models. ([source](https://arxiv.org/abs/2303.11366)).
-	
-	- **verification chains**, like **selection inference** ([source](https://arxiv.org/abs/2205.09712)). Chain-of-Thought has access to the whole context, so each reasoning step is not necessarily causally connected to the last. But selection inference enforces a structure where each reasoning step necessarily follows from the last, and therefore the whole reasoning chain is causal. This process involves the AI model examining its own reasoning or the steps it took to arrive at a conclusion. By doing so, it can verify the logic and consistency of its responses, ensuring they are well-founded and trustworthy.
-	
-	- **Allowing the AI to express degrees of confidence** in its answers, acknowledging uncertainty when appropriate. For instance, instead of a definitive "Yes" or "No," the model might respond with "I am not sure," reflecting a more nuanced understanding akin to human reasoning. This approach is evident in advanced models like Gopher ([source](https://arxiv.org/pdf/2112.11446.pdf)), which contrasts with earlier models such as WebGPT which may not exhibit the same level of nuanced responses.
+		
+		- **Consistency checks** ([source](https://arxiv.org/abs/2306.09983)), that involve comparing the output from multiple instances of the model on the same prompt, identifying and resolving any disagreements in the responses. This method enhances the accuracy and credibility of the information provided. For instance, if different iterations of the model produce conflicting answers, this discrepancy can be used to refine and improve the model's understanding. 
+		
+		- **Reflexion. **The Reflexion technique ("Reflexion: Language Agents with Verbal Reinforcement Learning"): It’s possible to simply ask the LLM to take a step back, to question whether what it has done is correct or not, and to consider ways to improve the previous answer, and this enhances a lot the capabilities of GPT-4, and this technique is emergent and does not work well with previous models. ([source](https://arxiv.org/abs/2303.11366)).
+		
+		- **verification chains**, like **selection inference** ([source](https://arxiv.org/abs/2205.09712)). Chain-of-Thought has access to the whole context, so each reasoning step is not necessarily causally connected to the last. But selection inference enforces a structure where each reasoning step necessarily follows from the last, and therefore the whole reasoning chain is causal. This process involves the AI model examining its own reasoning or the steps it took to arrive at a conclusion. By doing so, it can verify the logic and consistency of its responses, ensuring they are well-founded and trustworthy.
+		
+		- **Allowing the AI to express degrees of confidence** in its answers, acknowledging uncertainty when appropriate. For instance, instead of a definitive "Yes" or "No," the model might respond with "I am not sure," reflecting a more nuanced understanding akin to human reasoning. This approach is evident in advanced models like Gopher ([source](https://arxiv.org/pdf/2112.11446.pdf)), which contrasts with earlier models such as WebGPT which may not exhibit the same level of nuanced responses.
+		
 	
 	- **Process-based training** ensures that the systems are accustomed to detailing their thoughts in much greater detail and not being able to skip too many reasoning steps. For example, see OpenAI’s Improving Mathematical Reasoning with process supervision ([source](https://openai.com/research/improving-mathematical-reasoning-with-process-supervision)).
 	

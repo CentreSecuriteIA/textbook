@@ -1,13 +1,9 @@
 # Terminology
 
-⌛ Estimated Reading Time: 11 minutes. (2044 words)
+⌛ Estimated Reading Time: 11 minutes. (2004 words)
 
 
 This section continues the discussion on the terminology necessary to discuss AI capabilities. It focuses in particular on certain thresholds that we might reach in the cognitive capabilities of these AI models.
-
-??? question "Why is this section important?"
-
-     Because much of the confusion in AI security boils down to terminology. This is similar to the topic of consciousness: different people have different definitions, and people talk past each other. ([source](https://www.lesswrong.com/posts/KpD2fJa6zo8o2MBxg/consciousness-as-a-conflationary-alliance-term))
 
 ## Capabilities vs. Intelligence
 
@@ -55,7 +51,7 @@ This section explores various definitions of different AI capability thresholds.
 
 **Artificial Super Intelligence (ASI)**: *“This is any intellect that greatly exceeds the cognitive performance of humans in virtually all domains of interest*". — Bostrom, Nick (2014) “Superintelligence” Unlike AGI, an ASI refers to a system that not only matches but greatly exceeds human capabilities in virtually all economically valuable work or domains of interest. ASI implies a level of intelligence where the AI system can outperform the best human brains in practically every field, including scientific creativity, general wisdom, and social skills. This would mean an ASI could potentially perform tasks that humans couldn't even comprehend.
 
-![Enter image alt description](Images/T2I_Image_15.png)
+![Enter image alt description](Images/kCH_Image_15.png)
 
 Figure: For illustrative purposes. This graph could be criticized because it is not clear that the capabilities of those AIs can be reduced to a single dimension.
 
@@ -71,7 +67,7 @@ For instance, an AI that exceeds the capability of a human expert in one second 
 
 - **One-minute ****AGI**: Beating humans at answering questions about short text passages or videos, common-sense reasoning (e.g. Yann LeCuns gear problems), looking up facts, justifying an opinion, etc.
 
-![Enter image alt description](Images/p4C_Image_16.png)
+![Enter image alt description](Images/bo0_Image_16.png)
 
 Figure: Example of gears problems by Yann LeCun ([source](https://twitter.com/ylecun/status/1639696127132835840))
 

@@ -1,15 +1,10 @@
 # Foundation Models
 
-⌛ Estimated Reading Time: 10 minutes. (1855 words)
+⌛ Estimated Reading Time: 10 minutes. (1830 words)
 
 
-!!! abstract
+Foundation models emerged in the mid-to-late 2010s, symbolizing a move away from the labor-intensive, one-model-per-task approach. These models are trained on vast, diverse datasets to learn broad patterns and skills, ready to be adapted to a multitude of tasks. Imagine them as the Swiss Army knives of the AI that can tackle everything from language translation to generating artwork. This marked a shift in strategy, to leveraging large, unlabeled datasets creating generalist models that can later be fine-tuned for specific needs.
 
-     Foundation models emerged in the mid-to-late 2010s, symbolizing a move away from the labor-intensive, one-model-per-task approach. These models are trained on vast, diverse datasets to learn broad patterns and skills, ready to be adapted to a multitude of tasks. Imagine them as the Swiss Army knives of the AI that can tackle everything from language translation to generating artwork. This marked a shift in strategy, to leveraging large, unlabeled datasets creating generalist models that can later be fine-tuned for specific needs.
-
-??? question "Why is this section important?"
-
-     Because foundation models are at the heart of today's most impressive advances.
 
 **Economics of Foundation Models.** The shift towards foundation models was fueled by several factors: the explosion of data, advances in computational power, and refinements in machine learning techniques. These models are also extremely resource-intensive. Their development, training, and deployment often requires significant investment. This capital requirement comes from three main areas:
 
@@ -37,7 +32,7 @@ This is repeated on a large number of such images, learning to recognize pattern
 
 **Fine-Tuning.** The fine-tuning phase is where the model is specifically adapted to perform particular tasks. Fine-tuning enables the creation of versatile models capable of undertaking a wide range of tasks, from following instructions to doing programming or scientific analysis. This can be further enhanced later through methods like "Reinforcement Learning from Human Feedback" (RLHF), which refines models to be more effective and user-friendly by reinforcing desirable outputs. We will talk about this technique in detail in later chapters.
 
-![https://www.artificialintelligence.news/pathal/uploads/2021/09/2021-foundationmodel-1024x692.png](Images/1yj-.png)
+![https://www.artificialintelligence.news/pathal/uploads/2021/09/2021-foundationmodel-1024x692.png](Images/uxE-.png)
 
 Figure: Bommasani Rishi et. al. (2022) "[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)"
 
@@ -49,7 +44,7 @@ The learning journey of a student—beginning with acquiring broad knowledge, ho
 
 ## Properties
 
-![Enter image alt description](Images/7BP_Image_14.png)
+![Enter image alt description](Images/Wif_Image_14.png)
 
 Figure: Bommasani Rishi et. al. (2022) "[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)"
 
@@ -68,13 +63,3 @@ We slightly touched on these capabilities in the section on state-of-the-art AI.
 **Homogenization**. The process of homogenization refers to the situation where an increasing number of AI systems are merely fine-tuned versions of the same foundation models. Therefore, if a foundation model has certain biases or failure modes, these could potentially be propagated to all models that are fine-tuned from this foundation. This is a significant risk because if the same problem exists in the foundation model, it could manifest across many different models and applications, leading to widespread and potentially correlated failures. For example, if a foundation model has been trained on data that has gender or racial biases, these biases could propagate to all models fine-tuned from it, leading to biased decisions across various applications, whether it be text generation, sentiment analysis, or even predictive policing.
 
 **Emergence**. Increasing the centralization of general-purpose capabilities within a single model might result in unexpected and unexplainable behavior arising as a function of scale. This describes the phenomenon where foundation models exhibit complex behaviors or outputs not explicitly programmed, arising unpredictably from some underlying learned patterns. Emergent qualities rather than their explicit construction provide immense benefits, but this also makes foundation models hard to understand, predict, and control. This lack of predictability and control is a significant concern when these models are used in high-stakes domains. If they fail in ways that are outside our current understanding and expectations, these failures could be particularly problematic when combined with homogenization described above. The same foundation model integrated into multiple critical functions could lead to correlated failures that span multiple critical functions or failsafes. This phenomenon of emergence is also talked about in more detail in subsequent sections.
-
-??? question "What did you learn in this section?"
-
-     What is Emergence?
-
-     What is Homogeneization?
-
-     What is Multimodality?
-
-     What is Generalization?

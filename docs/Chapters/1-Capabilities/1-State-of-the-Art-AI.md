@@ -1,13 +1,11 @@
 # State-of-the-Art AI
 
-⌛ Estimated Reading Time: 11 minutes. (2154 words)
+⌛ Estimated Reading Time: 11 minutes. (2138 words)
 
 
-!!! abstract
+Over the last decade, the field of artificial intelligence (AI) has experienced a profound transformation, largely attributed to the successes in deep learning. This remarkable progress has redefined the boundaries of AI capabilities, challenging many preconceived notions of what machines can achieve. The following sections detail some of these advancements.
 
-     Over the last decade, the field of artificial intelligence (AI) has experienced a profound transformation, largely attributed to the successes in deep learning. This remarkable progress has redefined the boundaries of AI capabilities, challenging many preconceived notions of what machines can achieve. The following sections detail some of these advancements.
-
-![Enter image alt description](Images/uOv_Image_1.jpeg)
+![Enter image alt description](Images/V7p_Image_1.jpeg)
 
 *Figure:** Once a benchmark is published, it takes less and less time to solve it. This can illustrate the accelerating progress in AI and how quickly AI benchmarks are “saturating”, and starting to surpass human performance on a variety of tasks. (**[source](https://www.science.org/content/article/computers-ace-iq-tests-still-make-dumb-mistakes-can-different-tests-help)**) **, From DynaBench.*
 
@@ -17,13 +15,13 @@
 
 **GPT-4. **One of the state-of-the-art language models in 2024 is OpenAI’s LLM GPT-4. In contrast with the text-only GPT-3 and follow-ups, GPT-4 is multimodal: it was trained on both text and images. This means that it can now not only generate text based on images but has also gained some other capabilities. GPT-4 saw an upgraded context window with up to 32k tokens (tokens ≈ words). The short-term memory limit of an LLM can be thought of as the model's ability to retain information from previous tokens within a certain context window. GPT-4 is trained via next-token prediction (autoregressive self-supervised learning). In 2018 GPT-1 was barely able to count to 10, while in 2024 GPT-4 can implement complex programmatic functions among other things.
 
-![Enter image alt description](Images/WJw_Image_2.png)
+![Enter image alt description](Images/CAe_Image_2.png)
 
 Figure: a list of "Nowhere near solved” [...] issues in AI, from "A brief history of AI", published in January 2021 ([source](https://www.amazon.com/Brief-History-Artificial-Intelligence-Where/dp/1250770742)). They also say: “At present, we have no idea how to get computers to do the tasks at the bottom of the list”. But everything in the category “Nowhere near solved” has been solved by GPT-4 ([source](https://arxiv.org/abs/2303.12712)), except human-level general intelligence.
 
 **Scaling**. Remarkably, GPT-4 is trained using roughly the same methods as GPT-1, 2, and 3. The only significant difference is the size of the model and the data given to it during training. The size of the model has gone from 1.5B parameters to hundreds of billions of parameters, and datasets have become similarly larger and more diverse.
 
-![Enter image alt description](Images/3bk_Image_3.png)
+![Enter image alt description](Images/uW1_Image_3.png)
 
 Figure: How fast is AI Improving? ([source](https://theaidigest.org/progress-and-dangers)) 
 
@@ -41,9 +39,9 @@ Here are some of the capabilities that have been emerging in the last few years:
 
 - **Self-correction**. The model's ability to identify and correct its own mistakes, which is crucial for improving the accuracy of AI-generated content ([source](https://arxiv.org/abs/2303.11366)).
 
-![Enter image alt description](Images/UD1_Image_4.png)
+![Enter image alt description](Images/vR6_Image_4.png)
 
-Figure: An example of a mathematical problem solved by GPT-4 using Chain of Thought (CoT), from the paper “Sparks of Artificial General Intelligence” ([source](https://arxiv.org/abs/2303.12712)).
+*Figure: An example of a mathematical problem solved by GPT-4 using Chain of Thought (CoT), from the paper “Sparks of Artificial General Intelligence” (**[source](https://arxiv.org/abs/2303.12712)**).*
 
 - **Reasoning**. The advancements in LLMs have also led to significant improvements in the ability to process and generate logical chains of thought and reasoning. This is particularly important in problem-solving tasks where a straightforward answer isn't immediately available, and a step-by-step reasoning process is required. ([Source](https://arxiv.org/abs/2303.12712))
 
@@ -51,7 +49,7 @@ Figure: An example of a mathematical problem solved by GPT-4 using Chain of Thou
 
 - **Scientific & Mathematical ability**. In mathematics, AI's have assisted in the subfield of automatic theorem proving for decades. Today's models continue to assist in solving complex problems. AI can even achieve a gold medal level in the mathematical Olympiad by solving geometry problems ([source](https://www.nature.com/articles/s41586-023-06747-5)).
 
-![Enter image alt description](Images/rkt_Image_5.png)
+![Enter image alt description](Images/mPJ_Image_5.png)
 
 Figure: GPT-4 solves some tasks that GPT-3.5 was unable to, like the uniform bar examination, where GPT-4 scores 90% compared to 10% for GPT-3.5. GPT-4 is also capable of vision processing, and the added vision component had only a minor impact, but it helped others tremendously.  ([source](https://openai.com/research/gpt-4))
 
@@ -59,17 +57,17 @@ Figure: GPT-4 solves some tasks that GPT-3.5 was unable to, like the uniform bar
 
 The leap forward in image generation is not just in accuracy, but also in the ability to handle complex, real-world images. The latter, particularly with the advent of Generative Adversarial Networks (GANs) in 2014, has shown an astounding rate of progress. The quality of images generated by AI has evolved from simple, blurry representations to highly detailed and creative scenes, often in response to intricate language prompts.
 
-![Enter image alt description](Images/QBv_Image_6.png)
+![Enter image alt description](Images/dwX_Image_6.png)
 
 Figure: An example of state-of-the-art image recognition. The Segment Anything Model (SAM) by Meta’s FAIR (Fundamental AI Research) lab, can classify and segment visual data at highly precise levels. The detection is performed without the need to annotate images. ([source](https://viso.ai/deep-learning/segment-anything-model-sam-explained/))
 
-![Enter image alt description](Images/sPa_Image_7.png)
+![Enter image alt description](Images/PBp_Image_7.png)
 
 Figure: An example of the evolution of image generation. At the top left, starting from GANs (Generative Adversarial Networks) to the bottom right, an image from MidJourney V5.
 
 The rate of progress within a single year alone is quite astounding as is seen from the improvements between the V1 of the MidJourney image generation model in early 2022, to the V6 in December 2023.
 
-![Enter image alt description](Images/hWT_Image_8.png)
+![Enter image alt description](Images/wh2_Image_8.png)
 
 Figure: MidJourney AI image generation over 2022-2023. Prompt: high-quality photography of a young Japanese woman smiling, backlighting, natural pale light, film camera, by Rinko Kawauchi, HDR ([source](https://goldpenguin.org/blog/midjourney-v1-to-v6-evolution/))
 
@@ -91,7 +89,7 @@ DeepMind’s 2022 Flamingo model, could be “*rapidly adapted to various image/
 
 The field of robotics has also been progressing alongside artificial intelligence. In this section, we provide a couple of examples where these two fields are merging, highlighting some robots using inspiration from machine learning techniques to make advancements.
 
-![Enter image alt description](Images/ZhY_Image_9.png)
+![Enter image alt description](Images/VZl_Image_9.png)
 
 **Figure:** Researchers used Model-Free Reinforcement Learning to automatically learn quadruped locomotion in only 20 minutes in the real world instead of in simulated environments. The Figure shows examples of learned gaits on a variety of real-world terrains. ([source](https://arxiv.org/abs/2208.07860))
 
@@ -101,7 +99,7 @@ Simultaneously, developments in vision-language models have led to breakthroughs
 
 Mobile ALOHA is another example of combining modern machine learning techniques with robotics. Trained using supervised behavioral cloning, the robot can autonomously perform complex tasks “*such as sauteing and serving a piece of shrimp, opening a two-door wall cabinet to store heavy cooking pots, calling and entering an elevator, and lightly rinsing a used pan using a kitchen faucet.*” ([source](https://arxiv.org/abs/2401.02117)) Such advancements not only demonstrate the increasing sophistication and applicability of robotic systems but also highlight the potential for further groundbreaking developments in autonomous technologies.
 
-![Enter image alt description](Images/AOF_Image_10.png)
+![Enter image alt description](Images/3A4_Image_10.png)
 
 **Figure:** DeepMinds RT-2 can both plan long-horizon skill sequences and predict robot actions using inspiration from LLM prompting techniques (chain-of-thought). ([source](https://deepmind.google/discover/blog/rt-2-new-model-translates-vision-and-language-into-action/))
 
@@ -113,19 +111,16 @@ Mobile ALOHA is another example of combining modern machine learning techniques 
 
 In recent years, AI's capability has extended to open-ended environments like Minecraft, showcasing an ability to perform complex sequences of actions. In strategy games, Meta’s Cicero displayed intricate strategic negotiation and deception skills in natural language for the game Diplomacy ([source](https://arxiv.org/abs/2210.05492)).
 
-![Enter image alt description](Images/oBV_Image_11.png)
+![Enter image alt description](Images/KMJ_Image_11.png)
 
 Figure: A map of diplomacy and the dialog box where the AI negotiates. ([source](https://www.youtube.com/watch?v=u5192bvUS7k&t=2216s))
 
-| Box. Example of Voyager: Planning and Continuous Learning in Minecraft with GPT-4 |
-|---|
-| Voyager (source) stands as a particularly impressive example of the capabilities of AI in continuous learning environments. This AI is designed to play Minecraft, a task that involves a significant degree of planning and adaptive learning. What makes Voyager so remarkable is its ability to learn continuously and progressively within the game's environment, using GPT-4 contextual reasoning abilities to plan and write the code necessary for each new challenge. Starting from scratch in a single game session, Voyager initially learns to navigate the virtual world, engage and defeat enemies, and remember all these skills in its long-term memory. As the game progresses, it continues to learn and store new skills, leading up to the challenging task of mining diamonds, a complex activity that requires a deep understanding of the game mechanics and strategic planning. The ability of Voyager to integrate new information continuously and utilize it effectively showcases the potential of AI in managing complex, changing environments and performing tasks that require a long-term buildup of knowledge and skills.
- |
+??? note "Example of Voyager: Planning and Continuous Learning in Minecraft with GPT-4"
 
-![Enter image alt description](Images/ou5_Image_12.png)
-
-Figure: from Voyager: Voyager discovers new Minecraft items and skills continually by self-driven exploration, significantly outperforming the baselines.
-
-??? question "What did you learn in this section?"
-
-     WIP
+	
+	Voyager ([source](https://arxiv.org/abs/2305.16291)) stands as a particularly impressive example of the capabilities of AI in continuous learning environments. This AI is designed to play Minecraft, a task that involves a significant degree of planning and adaptive learning. What makes Voyager so remarkable is its ability to learn continuously and progressively within the game's environment, using GPT-4 contextual reasoning abilities to plan and write the code necessary for each new challenge. Starting from scratch in a single game session, Voyager initially learns to navigate the virtual world, engage and defeat enemies, and remember all these skills in its long-term memory. As the game progresses, it continues to learn and store new skills, leading up to the challenging task of mining diamonds, a complex activity that requires a deep understanding of the game mechanics and strategic planning. The ability of Voyager to integrate new information continuously and utilize it effectively showcases the potential of AI in managing complex, changing environments and performing tasks that require a long-term buildup of knowledge and skills.
+	
+	![Enter image alt description](Images/ccN_Image_12.png)
+	
+	Figure: from Voyager: Voyager discovers new Minecraft items and skills continually by self-driven exploration, significantly outperforming the baselines.
+	
