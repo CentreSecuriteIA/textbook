@@ -3,8 +3,7 @@ title: Home
 ---
 # The AI Safety Handbook
 
-!!! warning "Warning"
-    This textbook is still under construction. It will be updated regularly.
+!!! warning "This textbook is still under construction. It will be updated regularly."
 
 [Read the Book](Chapters/index.md){ .md-button }
 
@@ -20,35 +19,17 @@ Our textbook is designed to serve as a comprehensive educational resource for th
 
 The alignment field is a pre-paradigmatic, and there is no consensus on many of the concepts presented. Please read the book critically and feel free to add feedback on this [form](https://docs.google.com/forms/d/e/1FAIpQLSe-UI2pt99SHaH2RFPVbDdmo8nuiRBZcxl49rBh67Guj6_p5Q/viewform) on the various chapters if something seems unclear.
 
----
-
-## **Reception**
-
-!!! quote "Quotes"
-    “I found it to be very well written and super insightful. Learned tons of new things. Looking forwards to continue reading.” - Participant of ML4G Germany 2023.
-
-    “I liked the text, was well written, concise, easy to follow, contained many important points.” - Participant of ML4G Germany 2023.
-
-    “The textbooks are very helpful to keep a clear line of thought and a better structure.”  - Participant of ML4G France 2023.
-
-    “The material and content are great, thank you for writing it and I can't wait to read it in its entirety.” - Participant of ML4G France 2023.
+!!! quote "Reception"
+    * “*I found it to be very well written and super insightful. Learned tons of new things. Looking forwards to continue reading.*” - Participant of ML4G Germany 2023.
+    * “*I liked the text, was well written, concise, easy to follow, contained many important points.*” - Participant of ML4G Germany 2023.
+    * “*The textbooks are very helpful to keep a clear line of thought and a better structure.*”  - Participant of ML4G France 2023.
+    * “*The material and content are great, thank you for writing it and I can't wait to read it in its entirety.*” - Participant of ML4G France 2023.
 
 
-## **Contact**
+## **About**
 
-!!! info "Contact Information"
+!!! note "Contact Information"
     This textbook was created by Charbel-Raphael Segerie, Markov Grey, Jeanne Salle, and Vincent Corruble. We are actively looking for funding to be able to continue working on this project. Please consider either reaching out, or upvoting us on [Manifund](https://manifund.org/projects/ai-safety-textbook) if you like our work.
 
     Contacts: [Charbel-Raphael Segerie](mailto:crsegerie@gmail.com), [Markov Grey](mailto:ai_safety_textbook.y4wqu@slmail.me).
 
-??? info "How to cite this work?"
-
-    ```
-    @book{ai_safety_handbook,
-    title        = {The AI Safety Handbook},
-    author       = {Segerie Charbel-Raphael and Markov Grey and Jeanne Salle and Charles Martinet and Vincent Corruble},
-    year         = {2024},
-    url          = {https://centresecuriteia.github.io/textbook/Chapters/},
-    note         = {Accessed: 2024-05-28}
-    }
-    ```

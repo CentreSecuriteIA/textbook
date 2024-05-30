@@ -102,18 +102,3 @@ mindmap
 ```
 
 
-**Estimated reading time**: 2 Hours 40 minutes reading at 100 wpm. Given the density and type of material covered in this chapter, this should be taken as a lower bound estimate.
-
-**Estimated reading time (including Appendices)**: 3 Hours 40 minutes reading at 100 wpm. The appendices are meant for people already quite familiar with topics in machine learning.
-
-If you prefer reading and commenting on gdoc, this is possible [here](https://docs.google.com/document/d/1HKo0Kest9Xppjn7m2ODpfMUlEu93SzLsfxXBH48Xaus/edit?usp=sharing).
-
-!!! question
-
-     If you have a question, or a remark don't hesitate to ask to [agisf_textbook.0fh6l@slmail.me](mailto:agisf_textbook.0fh6l@slmail.me)
-
-<!--
-
-this is a comment
-
--->

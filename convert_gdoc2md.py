@@ -122,6 +122,18 @@ def split_markdown(folder_source, chapter):
 split_markdown(
     folder_source='/home/markov/downloads/textbook/chapter_5.2',
     chapter = "5-Goal Misgeneralization",
-    # Last revision
+
+    # Chapter names (match this exact naming):
+        # 01 - Capabilities
+        # 02 - Risks
+        # 03 - Solutions
+        # 04 - Evaluations
+        # 05 - Governance
+        # 06 - Reward Misspecification
+        # 07 - Goal Misgeneralization
+        # 08 - Oversight
+        # 09 - Intepretability
+        # 10 - Agent Foundations
+
 )
 print("Don't forget to check the result of the formatting and then commit")

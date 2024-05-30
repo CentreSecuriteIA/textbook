@@ -1,144 +1,99 @@
----
-title: Home
----
+
 # The AI Safety Handbook
 
-## **Curriculum**
+### **PART 1 : SAFETY FUNDAMENTALS**
 
-The textbook is currently written as a list of chapters. Some chapters contain a list of quizzes on key resources. Reading carefully each chapter of the textbook should take 1-2 hours.
-
-### **PART 1 : FUNDAMENTALS**
-
-!!! info ""
-    We encourage all readers, including those without a technical background, to read through Chapters 1, 2, and 3. These chapters explain in an accessible way why it is plausible to see the emergence of human-level AI in the next few years, what are the potential risks associated with these advanced AIs, and what solutions can be put in place to mitigate these risks. These introductory chapters aim to provide a solid foundation for understanding the issues and challenges of AI Safety.
+We encourage all readers, including those without a technical background, to read through the fundamentals section of the textbook. This entails reading Chapters 1 through 5. These chapters explain in an accessible way why it is plausible to see the emergence of human-level AI, the potential risks associated, and what solutions are currently being explored to mitigate these risks. These introductory chapters aim to provide a solid foundation for understanding the issues and challenges of AI Safety.
 
 ---
 
-#### Chapter 0: **Artificial Intelligence**
+#### [Chapter 1: **Capabilities**](01 - Capabilities/README.md/)
 
-This textbook assumes familiarity with Machine Learning (ML). Please take your time to understand the core concepts, *especially* Reinforcement Learning (RL). Here are some [resources](https://course.aisafetyfundamentals.com/alignment?week=0) if you are not familiar with ML yet.
+Concepts covered: Current Capabilities, Foundation Models, Leveraging Computation, Future Capabilities, Timelines and Anchors, Instrumental Convergence.
 
-??? abstract "Concepts covered"
-    Concepts covered: Basics of Machine Learning, Basics of Reinforcement Learning, Basics of the Transformer Architecture.
+#### [Chapter 2: **Risks Landscape**](02 - Risks/README.md/)
 
-#### Chapter 1: **Human-Level AI, What, How and When?**
+Concepts covered: Misuses, Alignment risks, Systemic risks.
 
-📖 [Chapter](1-Capabilities/README.md/)
+#### [Chapter 3: **Solutions Landscape**](03 - Solutions/README.md/)
 
-??? abstract "Concepts covered"
-    Concepts covered: Current Capabilities, Foundation Models, Leveraging Computation, Future Capabilities, Timelines and Anchors, Instrumental Convergence.
+Defense acceleration, Paradigms in AI Safety, Safety culture, Organizational safety.
 
-#### Chapter 2: **AI Risks Landscape**
+#### [Chapter 4: **Evaluations**](04 - Evaluations/README.md/)
 
-📖 [Chapter](2-Risks/README.md/)
+!!! warning "This chapter is still being written, it will be uploaded soon."
 
-??? abstract "Concepts covered"
-    Concepts covered: Misuses, Alignment risks, Systemic risks.
+#### [Chapter 5: **Governance**](05 - Governance/README.md/)
 
-#### Chapter 3: **Solutions Landscape**
-
-📖 [Chapter](https://docs.google.com/document/d/1WTyLHyaJ_NEDEu49U_hh7oz0-AOQfp7uOJKLck-7A78/edit)
-
-??? abstract "Concepts covered"
-    API, defense acceleration, AI alignment main paradigms, safety culture, and organizational safety.
-
-!!! warning "Warning"
-    Beyond chapter 3, the content has not yet been integrated into the website and is still only available on google docs.
-
-### **PART 2 : TECHNICAL PROBLEMS**
-
-!!! info ""
-    In this part, we dive into the specific technical challenges of AI alignment. We start with the problem of Reward Misspecification, which occurs when the reward function given to an AI agent fails to properly capture the intended goals. We explore key concepts such as optimization, Goodhart's Law, and different approaches to learning human preferences, such as learning by imitation and feedback.
-
-    Next, we address the problem of Goal Misgeneralization, where an AI agent may learn unintended goals that differ from those intended by its designers. We examine important concepts such as mesa-optimization, inner alignment, and deceptive alignment. This part aims to provide a deep understanding of the main technical challenges in AI alignment and sets the stage for exploring research paradigms in the next part.
+!!! warning "This chapter is still being written, it will be uploaded soon."
 
 ---
 
-#### Chapter 4: **Reward Misspecification**
+### **TECHNICAL SAFETY**
 
-👉 Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=nKJlF-olKmg).
 
-📖 [Chapter](https://docs.google.com/document/d/1niRLuFX1FfsMrlMLJtbOm4m_yK8dTdXi3gKmkENp-ss/edit?usp=sharing)
+In this part, we dive into the specific technical challenges of AI alignment. We start with the problem of Reward Misspecification, which occurs when the reward function given to an AI agent fails to properly capture the intended goals. We explore key concepts such as optimization, Goodhart's Law, and different approaches to learning human preferences, such as learning by imitation and feedback.
 
-??? abstract "Concepts covered"
-    Reward, Reward Misspecification, Optimization, Goodhart's Law, Learning by imitation, Learning by Feedback.
+Next, we address the problem of Goal Misgeneralization, where an AI agent may learn unintended goals that differ from those intended by its designers. We examine important concepts such as mesa-optimization, inner alignment, and deceptive alignment. This part aims to provide a deep understanding of the main technical challenges in AI alignment and sets the stage for exploring research paradigms in the next part.
 
-#### Chapter 5: **Goal Misgeneralization**
-
-👉 Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=bJLcIBixGj8).
-
-📖 [Chapter](https://docs.google.com/document/d/1K52KgxyveZWw4p4rzMqw9mu6FvJC7ulSYxvaXQc5p10/edit?usp=sharing)
-
-??? abstract "Concepts covered"
-    Optimization, Mesa-optimization, Inner-Alignment, Deceptive Alignment.
-
-### **PART 3 : RESEARCH PARADIGMS**
-
-!!! info ""
-    In this part, we explore the main research paradigms proposed to address the challenges of AI alignment. We start with task decomposition techniques for Scalable Oversight, such as iterated amplification and process supervision. Next, we examine adversarial techniques for Scalable Oversight, including debate and adversarial training. We dedicate an entire chapter to interpretability, covering both interpretability techniques for computer vision and transformers used in natural language processing. We also delve into Agent Foundations and examine more theoretical research paradigms. Finally, we also give an overview of AI Governance.
-
-    This part aims to give readers an overview of the main research approaches in the field of AI alignment and inspire them to contribute to this crucial domain.
+These chapters assume some basic familiarity with Machine Learning (ML). Please take your time to understand the core concepts, *especially* Reinforcement Learning (RL). Here are some [resources](https://course.aisafetyfundamentals.com/alignment?week=0) if you are not familiar with ML yet.
 
 ---
 
-#### Chapter 6: **Task Decomposition for Scalable Oversight**
+#### [Chapter 6: **Reward Misspecification**](06 - Reward Misspecification/README.md)
 
-👉 Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=v9M2Ho9I9Qo).
+Reward, Reward Misspecification, Optimization, Goodhart's Law, Learning by imitation, Learning by Feedback.
 
-📖 [Chapter](https://docs.google.com/document/d/1k6rlyBCZJw8xbUx0dzd-4sOhlzj-xzsmwi_OIZY1-3M/edit)
 
-??? abstract "Concepts covered"
-    Scalable Oversight Problem, Sandwiching, Task decomposition, Factored cognition, Iterated Amplification, amplification in modern LLMs, Process Supervision.
+Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=nKJlF-olKmg)
 
-#### Chapter 7: **Adversarial Techniques for Scalable Oversight**
+#### [Chapter 7: **Goal Misgeneralization**](07 - Goal Misgeneralization)
 
-👉 Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=wIX00bZ173k).
+Concepts covered: Optimization, Mesa-optimization, Inner-Alignment, Deceptive Alignment.
 
-📖 [Chapter - Debate](https://docs.google.com/document/d/1KXEWXHKwgeu-0NX5iirGS1h5zsh1skYMadZN3ZoVMAI/edit?usp=sharing) & [Chapter - Adversarial training](https://docs.google.com/document/d/1bsHau2v9EPoVGXc9iRZvVUF-kjfLb3D0CKEKik_J4tQ/edit)
+Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=bJLcIBixGj8)
 
-??? abstract "Concepts covered"
-    Debate, obfuscated arguments problem, AI-written critiques, problems with debate.
-    Unrestricted adversarial training, adversarial training, red-teaming language models, interpretability for finding adversarial examples, relaxed adversarial training.
+#### [Chapter 8.1: **Task Decomposition**](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/FFz6H35Gy6BArHxkc)
 
-#### Chapter 8: **Interpretability**
+Scalable Oversight Problem, Sandwiching, Task decomposition, Factored cognition, Iterated Amplification, amplification in modern LLMs, Process Supervision.
 
-**Vision**
+Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=v9M2Ho9I9Qo)
 
-👉 Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=cqMe9E4p7fE).
+#### [Chapter 8.2: **Debate**](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/WP4fciGn3rNtmq3tY)
 
-📖 [Chapter](https://www.lesswrong.com/posts/XZfJvxZqfbLfN6pKh/introductory-textbook-to-vision-models-interpretability)
+Debate, obfuscated arguments problem, AI-written critiques, problems with debate.
 
-??? abstract "Concepts covered"
-    Feature visualization, saliency techniques (Grad-CAM), activation atlas, circuits, early vision, RL vision, automatic interpretability (NetDissect), multimodal neurons.
+#### [Chapter 8.3: **Adversarial Techniques**](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/nz5NNAtfKJLmbtksL)
 
-**Transformers (Bonus, after vision)**
+Unrestricted adversarial training, adversarial training, red-teaming language models, interpretability for finding adversarial examples, relaxed adversarial training.
 
-📖 [Chapter](https://drive.google.com/file/d/145_PXa5XE1iaq911NmO25Res_ALAGLlE/view?usp=sharing)
+Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=wIX00bZ173k)
 
-??? abstract "Concepts covered"
-    Logit Lens, Rome, Probing, Induction heads, limits of interpretability.
+#### [Chapter 9.1: **Interpretability: Vision**](https://www.lesswrong.com/posts/XZfJvxZqfbLfN6pKh/introductory-textbook-to-vision-models-interpretability)
 
-#### Chapter 9: **Agent Foundations**
+Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=cqMe9E4p7fE).
 
-📖 [Chapter](https://docs.google.com/document/d/1z4CwGDUzHvPvfXNxyfDaIfh9kK1JBJWEcfdGUutfJY0/edit)
+Feature visualization, saliency techniques (Grad-CAM), activation atlas, circuits, early vision, RL vision, automatic interpretability (NetDissect), multimodal neurons.
 
-??? abstract "Concepts covered"
-    Utility functions, agent AI, tool AI, True Name, Shard theory, CEV, CIRL.
+#### [Chapter 9.2: **Interpretability: NLP**](https://drive.google.com/file/d/145_PXa5XE1iaq911NmO25Res_ALAGLlE/view?usp=sharing)
 
-#### Chapter 10: **Governance**
+Logit Lens, ROME, Probing, Induction heads, limits of interpretability.
 
-📖 WIP, for the moment, please follow [Bluedot Impact's](https://course.aisafetyfundamentals.com/alignment?session=6) course which is already great.
+#### [Chapter 10: **Agent Foundations**](https://docs.google.com/document/d/1z4CwGDUzHvPvfXNxyfDaIfh9kK1JBJWEcfdGUutfJY0/edit)
+
+!!! warning "This chapter is still being written, the link is a very early draft."
+
+Utility functions, agent AI, tool AI, True Name, Shard theory, CEV, CIRL.
+
+
+The field of alignment does not stop at just the concepts presented in the textbook. Many schools of thought are only briefly touched upon. To get an overview of the field, the best advice is to stay curious and try out various different viewpoints.
 
 ## Going Further
 
-??? tip "Other Resources"
-    - Detailed list of articles: [Alignment Course](https://course.aisafetyfundamentals.com/alignment).
-    - The old long list of individual summaries: [AGISF 2023 Summaries](https://docs.google.com/document/d/1m94jGvbdhU4FJQr6v4knSg7MoaKgiO64Mr5P7I8kBPs/edit#).
+!!! tip "Other Resources"
     - For each week, there is a list of videos for each chapter: [Textbook: Videos](https://docs.google.com/document/d/19OeWv-_yhG0dUyrl6mfnHeHgZYVtyRdNt0kZQjtfSdc/edit).
-    - List of bonus exercises: [Archived: 2022 Alignment Fundamentals Curriculum](https://docs.google.com/document/d/1mTm_sT2YQx3mRXQD6J2xD2QJG1c3kHyvX8kQc_IQ0ns/edit#heading=h.dlm795ug69gc).
+    - List of old exercises: [Archived: 2022 Alignment Fundamentals Curriculum](https://docs.google.com/document/d/1mTm_sT2YQx3mRXQD6J2xD2QJG1c3kHyvX8kQc_IQ0ns/edit#heading=h.dlm795ug69gc).
 
-    The field of alignment does not stop at just the concepts presented in the textbook. Many schools of thought are only briefly touched upon. To get an overview of the field, the best advice is to stay curious and try out various different viewpoints.
-
-??? tip "How to Best Read This Book"
+!!! tip "How to Best Read This Book"
     One of the best ways to use this textbook is in a reading group consisting of students or young researchers who gather periodically. You don't need to have a large group; a friend is enough, which allows you to discuss the concepts presented in the different chapters critically. If you want to create a reading group to facilitate this course, please get in touch.
-‹
+
