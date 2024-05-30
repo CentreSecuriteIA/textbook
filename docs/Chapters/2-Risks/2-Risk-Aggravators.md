@@ -33,7 +33,6 @@ Risks from corporate indifference highlight why merely having the technological 
 
 ??? note "Anecdote: Steinhardt’s forecasting contest"
 
-	
 	ML researchers, superforecasters
 	, and most others were all surprised by the progress in large language models in 2022 and 2023.
 	

@@ -12,7 +12,6 @@ theme:
     - navigation.top
     - navigation.footer
     - content.tooltips
-
     - content.footnote.tooltips
     - header.autohide
     - announce.dismiss

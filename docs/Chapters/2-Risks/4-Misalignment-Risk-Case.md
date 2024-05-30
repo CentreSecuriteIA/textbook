@@ -41,17 +41,17 @@ A terminal goal, also known as an “intrinsic goal”, is an objective that you
 
 **Examples and evidence of instrumentally convergent behavior**. One example can be seen from OpenAI, where agents trained to play hide and seek learned to use objects and construct shelters to stay hidden. They were not rewarded for using these objects, instead, the hiders were rewarded for evading the seekers, and the seekers were rewarded for finding them. This behavior emerged as instrumentally convergent. ([source](https://arxiv.org/abs/1909.07528))
 
-| Can’t We Just Shut Down an AI? The “Stop-Button” Problem |
-|---|
-| What would we do if the AIs became competent and self-preserving?
-One thing that might make your AI system safer is to include an off-switch. This way, if it ever does anything we don’t like, we can turn it off. Unfortunately, this only works if we can turn it off before things get bad, which we might not be able to do when the AI thinks much faster than humans.
-But, even assuming we’ll notice in time, an off-switch might still not work.
+??? note "Cant We Just Shut Down an AI? The Stop-Button Problem"
 
-The “Stop-Button” problem. Ideally, an off-switch would allow humans to deactivate the AI before it causes harm. However, AIs might resist shutdown efforts for instrumental reasons, much like humans might resist being “turned off” to continue protecting or fulfilling their objectives. A parent, for example, might fight against threats to their life not out of self-preservation but to ensure their child's safety. As Stuart Russell quipped: “You can’t fetch the coffee if you’re dead.” If the AI dies or is shut down, that means it has to stop doing what it was doing. Therefore, it will be motivated to protect itself as an instrumental goal.
+    What would we do if the AIs became competent and self-preserving?
+    One thing that might make your AI system safer is to include an off-switch. This way, if it ever does anything we don’t like, we can turn it off. Unfortunately, this only works if we can turn it off before things get bad, which we might not be able to do when the AI thinks much faster than humans.
+    But, even assuming we’ll notice in time, an off-switch might still not work.
 
-More powerful AIs may become too essential to society or our need to be shut down, similar to the indispensability of the Internet. As we become increasingly dependent on AI, the skills or knowledge to function without AI will diminish, which could increase the stakes of their interruption.
+    The “Stop-Button” problem. Ideally, an off-switch would allow humans to deactivate the AI before it causes harm. However, AIs might resist shutdown efforts for instrumental reasons, much like humans might resist being “turned off” to continue protecting or fulfilling their objectives. A parent, for example, might fight against threats to their life not out of self-preservation but to ensure their child's safety. As Stuart Russell quipped: “You can’t fetch the coffee if you’re dead.” If the AI dies or is shut down, that means it has to stop doing what it was doing. Therefore, it will be motivated to protect itself as an instrumental goal.
 
-In summary, while an off-switch seems a practical solution to AI risks, the reality is fraught with challenges in ensuring such systems are truly corrigible, especially as they become more capable and embedded in our daily lives. |
+    More powerful AIs may become too essential to society or our need to be shut down, similar to the indispensability of the Internet. As we become increasingly dependent on AI, the skills or knowledge to function without AI will diminish, which could increase the stakes of their interruption.
+
+    In summary, while an off-switch seems a practical solution to AI risks, the reality is fraught with challenges in ensuring such systems are truly corrigible, especially as they become more capable and embedded in our daily lives.
 
 ## <span style="text - decoration: underline;">Misalignment is dangerous</span>
 
@@ -75,22 +75,23 @@ Instead of trying to enumerate all these heuristics, it is more feasible to enco
 
 **A goal-directed system could be powerful and dangerous. **If your only goal is to eliminate cancer, for example by minimizing the number of people with cancer, and you lack human instincts, a first solution might be to monitor people. However, monitoring can only reduce the number of people with cancer. That is not enough if you want to get to zero cancer. So, another relatively easy solution might be to release an engineered virus and kill everyone in the world. If you are competent enough to carry out this plan, it will reduce cancer to zero. This kind of problem is what we call specification gaming, and can be expected for any kind of problem given to a superintelligence because it is very difficult to specify precisely all the things we care about. Less catastrophic versions of this type of problem, specification gaming, have been observed in many AI systems.
 
-| Exercise: Thought Experiment on Autonomous Planning |
-|---|
-| We want an AI able to manage an agricultural company autonomously.
-Consider the following program:
-For each imaginable plan (or scenario):
-Predict the consequences of executing the plan
-Rate its consequences based on the company’s production (and nothing else)
-Execute the plan whose predicted consequences are the best.
-This is the canonical example of what we will call autonomous planning (or agency).
-What plans could be executed?
-Example: One could install food crops over the entire surface of the Earth, to the point that there is no longer any habitable surface for humans.
-A sufficiently competent program pursuing a poorly aligned goal would create a large-scale accident. |
+??? example "Exercise: Thought Experiment on Autonomous Planning"
 
-??? question "What does goal-directed even mean?"
+    We want an AI able to manage an agricultural company autonomously.
+    Consider the following program:
+    For each imaginable plan (or scenario):
+    Predict the consequences of executing the plan
+    Rate its consequences based on the company’s production (and nothing else)
+    Execute the plan whose predicted consequences are the best.
+    This is the canonical example of what we will call autonomous planning (or agency).
 
-	
+    What plans could be executed?
+
+    Example: One could install food crops over the entire surface of the Earth, to the point that there is no longer any habitable surface for humans.
+    A sufficiently competent program pursuing a poorly aligned goal would create a large-scale accident.
+
+??? note "What does goal-directed even mean?"
+
 	The concept of goal is generally fuzzy, but we can try to define the concept by giving some examples: An image classifier is not goal-directed. AlphaGo is goal-directed to maximize the chance of winning.
 	
 	What about a human? That depends. If a human just wants to go to sleep, not really. But if a human really wants to achieve a goal, lists different possibilities on a piece of paper, evaluates those possibilities, and chooses the best one, it is much more goal-directed.
@@ -146,7 +147,10 @@ Figure: An example of Specification Gaming. Developers train an AI boat to race 
 
 **Correctly specifying the goals of an AI system has proven to be a challenging task**, even in simple, self-contained environments such as video games. Specification gaming refers to the phenomenon where an AI system satisfies the goal it was given, but unexpectedly, reveals a mismatch between the implemented specification and the specification the model creators had in mind. ([source](https://www.deepmind.com/blog/specification-gaming-the-flip-side-of-ai-ingenuity)) Dozens of examples are listed in [this document](https://docs.google.com/spreadsheets/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml). This failure mode could become a significant risk as we hand more control and autonomy to AI systems.
 
-**A subtype of specification gaming in RL is called Proxy Gaming**: Trained with defective goals, AI systems could find new ways of pursuing their objectives at the expense of individual and social values. AI systems are trained using measurable objectives, which may be only indirect proxies for what we value. As AI systems become more capable and influential, the goals we use to train them must be specified with greater care and incorporate shared human values. [Footnote: Note that proxy gaming can also become a systemic issue, like in the scenario [What failure looks like (Part 1)](https://www.alignmentforum.org/posts/HBxe6wdjxK239zajf/what-failure-looks-like).]
+**A subtype of specification gaming in RL is called Proxy Gaming**: Trained with defective goals, AI systems could find new ways of pursuing their objectives at the expense of individual and social values. AI systems are trained using measurable objectives, which may be only indirect proxies for what we value. As AI systems become more capable and influential, the goals we use to train them must be specified with greater care and incorporate shared human values.
+[^1]
+
+[^1]: Note that proxy gaming can also become a systemic issue, like in the scenario [What failure looks like (Part 1)](https://www.alignmentforum.org/posts/HBxe6wdjxK239zajf/what-failure-looks-like).
 
 At this point, you might argue that this kind of problem can usually be noticed during training. This is the case with the boat example. However, it's important to note that some AI will be general purpose, and we will be able to ask them to maximize any goal in real-world scenarios, similar to AutoGPT.
 
