@@ -8,21 +8,17 @@ title: Home
 
 [Read the Book](Chapters/index.md){ .md-button }
 
-## **Overview**
-
 <!--<h2 align="left">A comprehensive guide</h2>-->
 
 <!--![AI Safety](https://lh7-us.googleusercontent.com/XuuImYOYY7YElHDnooD6S7k1tf11JAV_a7LQZ6IUXbItUbPp0p7sAgDp1EjHJAuuHvZ_cJ-pj7rGq7SLxb0O4Xe9OkyRIEKh4R8TwoUwERq8TJxKRMQdixUPBjXXwVEjog_AqBgNiCwvE9QHEHlr_rk)-->
 
-Currently, AI Safety courses rely heavily on a patchwork of many external links to blog posts and research papers (e.g. [AISF](https://course.aisafetyfundamentals.com/alignment?session=1)). This content varies in terms of technical depth and communication style, posing a significant barrier to coherent learning. We are writing a textbook that aims to unify these into a seamless narrative, to help improve the learning experience. We also want to include in our curriculum important considerations that are often neglected in other courses.
-
-Our textbook is designed to serve as a comprehensive educational resource for the AI safety field. This will include an adaptation of the Turing Seminar, which is an accredited course with talks, workshops, and exercises at Ecole Normale Superieure (ENS) Ulm, and ENS Paris-Saclay in France. The original syllabus for the seminar was loosely inspired by the AI Safety Fundamentals (AISF) curriculum that I teach at [Master MVA](https://www.master-mva.com/cours/seminaire-turing/).
+This textbook aims to summarize some key notions in modern AI Safety, requiring minimal familiarity with the other materials covered. The goal is to stitch together the many arguments from papers, blog posts, and debates, creating a coherent unified work presenting the arguments and techniques used in AI safety in a coherent narrative.
 
 The alignment field is a pre-paradigmatic, and there is no consensus on many of the concepts presented. Please read the book critically and feel free to add feedback on this [form](https://docs.google.com/forms/d/e/1FAIpQLSe-UI2pt99SHaH2RFPVbDdmo8nuiRBZcxl49rBh67Guj6_p5Q/viewform) on the various chapters if something seems unclear.
 
----
+This textbook was used for [Turing seminar course](https://www.master-mva.com/cours/seminaire-turing/) held at ENS Paris-Saclay in Paris during March 2023, and offered by [EffiSciences](https://ia.effisciences.org/). It was also used and appreciated during the various [ML4Good](https://www.lesswrong.com/posts/DkDy2hvkwbQ54GM9u/introducing-effisciences-ai-safety-unit-1) bootcamps in France and Germany.
 
-## **Reception**
+---
 
 !!! quote "Quotes"
     “I found it to be very well written and super insightful. Learned tons of new things. Looking forwards to continue reading.” - Participant of ML4G Germany 2023.
