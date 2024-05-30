@@ -1,4 +1,4 @@
-# Courses
+# Courses using this book
 
 Even though our book is still a work in progress, many courses and groups are already using these resources:
 
@@ -8,3 +8,5 @@ Even though our book is still a work in progress, many courses and groups are al
 - [AI Safety Gothenburg](https://www.facebook.com/aisafetygothenburg) - A local AI safety group that used our textbook.
 
 If you want to use this resource for your group, don't hesitate to get in touch with us to receive a facilitation guide.
+
+[Read the Book](Chapters/index.md){ .md-button }
