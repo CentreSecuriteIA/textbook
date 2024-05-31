@@ -43,7 +43,7 @@ The alignment field is a pre-paradigmatic, and there is no consensus on many of 
 
     Proven effective in diverse educational settings, our content is already being utilized in various universities, bootcamps, and reading groups.
 
-    [:octicons-arrow-right-24: Courses using this book](Courses)
+    [:octicons-arrow-right-24: Courses using this book](Courses.md)
 
 - :material-laptop:{ .lg .middle } **Interactive**
 

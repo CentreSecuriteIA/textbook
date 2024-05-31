@@ -47,7 +47,7 @@ Reward, Reward Misspecification, Optimization, Goodhart's Law, Learning by imita
 
 Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=nKJlF-olKmg)
 
-#### [Chapter 7: **Goal Misgeneralization**](07 - Goal Misgeneralization)
+#### [Chapter 7: **Goal Misgeneralization**](07 - Goal Misgeneralization/README.md)
 
 Concepts covered: Optimization, Mesa-optimization, Inner-Alignment, Deceptive Alignment.
 
