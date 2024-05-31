@@ -1,6 +1,6 @@
 # State-of-the-Art AI
 
-⌛ Estimated Reading Time: 11 minutes. (2138 words)
+⌛ Estimated Reading Time: 11 minutes. (2133 words)
 
 
 Over the last decade, the field of artificial intelligence (AI) has experienced a profound transformation, largely attributed to the successes in deep learning. This remarkable progress has redefined the boundaries of AI capabilities, challenging many preconceived notions of what machines can achieve. The following sections detail some of these advancements.
@@ -23,7 +23,7 @@ Figure: a list of "Nowhere near solved” [...] issues in AI, from "A brief hist
 
 ![Enter image alt description](Images/uW1_Image_3.png)
 
-Figure: How fast is AI Improving? ([source](https://theaidigest.org/progress-and-dangers)) 
+***Figure****: How fast is AI Improving? (**[source](https://theaidigest.org/progress-and-dangers)**) *
 
 We have observed that just an expansion in scale has contributed to enhanced performance. This includes improvements in the ability to generate contextually appropriate responses, and highly diverse text across a range of domains. It has also contributed to overall improved understanding, and coherence. Most of those advances in the GPT series come from increasing the size and computation power behind the models, rather than fundamental shifts in architecture or training.
 
@@ -41,7 +41,7 @@ Here are some of the capabilities that have been emerging in the last few years:
 
 ![Enter image alt description](Images/vR6_Image_4.png)
 
-*Figure: An example of a mathematical problem solved by GPT-4 using Chain of Thought (CoT), from the paper “Sparks of Artificial General Intelligence” (**[source](https://arxiv.org/abs/2303.12712)**).*
+***Figure****: An example of a mathematical problem solved by GPT-4 using Chain of Thought (CoT), from the paper “Sparks of Artificial General Intelligence” (**[source](https://arxiv.org/abs/2303.12712)**).*
 
 - **Reasoning**. The advancements in LLMs have also led to significant improvements in the ability to process and generate logical chains of thought and reasoning. This is particularly important in problem-solving tasks where a straightforward answer isn't immediately available, and a step-by-step reasoning process is required. ([Source](https://arxiv.org/abs/2303.12712))
 
@@ -51,7 +51,7 @@ Here are some of the capabilities that have been emerging in the last few years:
 
 ![Enter image alt description](Images/mPJ_Image_5.png)
 
-Figure: GPT-4 solves some tasks that GPT-3.5 was unable to, like the uniform bar examination, where GPT-4 scores 90% compared to 10% for GPT-3.5. GPT-4 is also capable of vision processing, and the added vision component had only a minor impact, but it helped others tremendously.  ([source](https://openai.com/research/gpt-4))
+***Figure****: GPT-4 solves some tasks that GPT-3.5 was unable to, like the uniform bar examination, where GPT-4 scores 90% compared to 10% for GPT-3.5. GPT-4 is also capable of vision processing, and the added vision component had only a minor impact, but it helped others tremendously.  (**[source](https://openai.com/research/gpt-4)**)*
 
 ## Image Generation
 
@@ -63,13 +63,13 @@ Figure: An example of state-of-the-art image recognition. The Segment Anything M
 
 ![Enter image alt description](Images/PBp_Image_7.png)
 
-Figure: An example of the evolution of image generation. At the top left, starting from GANs (Generative Adversarial Networks) to the bottom right, an image from MidJourney V5.
+***Figure****: An example of the evolution of image generation. At the top left, starting from GANs (Generative Adversarial Networks) to the bottom right, an image from MidJourney V5.*
 
 The rate of progress within a single year alone is quite astounding as is seen from the improvements between the V1 of the MidJourney image generation model in early 2022, to the V6 in December 2023.
 
 ![Enter image alt description](Images/wh2_Image_8.png)
 
-Figure: MidJourney AI image generation over 2022-2023. Prompt: high-quality photography of a young Japanese woman smiling, backlighting, natural pale light, film camera, by Rinko Kawauchi, HDR ([source](https://goldpenguin.org/blog/midjourney-v1-to-v6-evolution/))
+***Figure****: MidJourney AI image generation over 2022-2023. Prompt: high-quality photography of a young Japanese woman smiling, backlighting, natural pale light, film camera, by Rinko Kawauchi, HDR (**[source](https://goldpenguin.org/blog/midjourney-v1-to-v6-evolution/)**)*
 
 ## Multi & Cross modality
 
@@ -79,9 +79,9 @@ AI systems are becoming increasingly multimodal. This means that they can proces
 
 **Multi-modality**. A model is called multi-modal when both the inputs and outputs of a model can be in more than one modality. E.g. audio-to-text, video-to-text, text-to-image, etc…
 
-|  |  |  |
-|---|---|---|
-| Figure: Image-to-text and text-to-image multimodality from the Flamingo model. (source) |  |  |
+![Enter image alt description](Images/oIJ_Image_9.png)
+
+***Figure:**** Image-to-text and text-to-image multimodality from the Flamingo model. (**[source](https://arxiv.org/abs/2204.14198)**)*
 
 DeepMind’s 2022 Flamingo model, could be “*rapidly adapted to various image/video understanding tasks*” and “*is also capable of multi-image visual dialogue*”. ([source](https://arxiv.org/abs/2204.14198)) Similarly, DeepMind’s 2022 Gato model, was called a "Generalist Agent". It was a single network with the same weights which could “*play Atari, caption images, chat, stack blocks with a real robot arm, and much more*”. ([source](https://arxiv.org/abs/2205.06175)) Continuing this trend, DeepMind’s 2023 Google Gemini model could be called a Large Multimodal Model (LMM). The paper described Gemini as “*natively multimodal*” and claimed to be able to “*seamlessly combine their capabilities across modalities (e.g. extracting information and spatial layout out of a table, a chart, or a figure) with the strong reasoning capabilities of a language model (e.g. its state-of-art-performance in math and coding)*”([source](https://arxiv.org/abs/2312.11805))
 
@@ -91,7 +91,7 @@ The field of robotics has also been progressing alongside artificial intelligenc
 
 ![Enter image alt description](Images/VZl_Image_9.png)
 
-**Figure:** Researchers used Model-Free Reinforcement Learning to automatically learn quadruped locomotion in only 20 minutes in the real world instead of in simulated environments. The Figure shows examples of learned gaits on a variety of real-world terrains. ([source](https://arxiv.org/abs/2208.07860))
+***Figure:**** Researchers used Model-Free Reinforcement Learning to automatically learn quadruped locomotion in only 20 minutes in the real world instead of in simulated environments. The Figure shows examples of learned gaits on a variety of real-world terrains. (**[source](https://arxiv.org/abs/2208.07860)**)*
 
 **Advances in robotics**. At the forefront of robotic advancements is PaLM-E, a general-purpose, embodied model with 562 billion parameters that integrates vision, language, and robot data for real-time manipulator control and excels in language tasks involving geospatial reasoning. ([source](https://arxiv.org/abs/2303.03378))
 
@@ -101,7 +101,7 @@ Mobile ALOHA is another example of combining modern machine learning techniques 
 
 ![Enter image alt description](Images/3A4_Image_10.png)
 
-**Figure:** DeepMinds RT-2 can both plan long-horizon skill sequences and predict robot actions using inspiration from LLM prompting techniques (chain-of-thought). ([source](https://deepmind.google/discover/blog/rt-2-new-model-translates-vision-and-language-into-action/))
+***Figure:**** DeepMinds RT-2 can both plan long-horizon skill sequences and predict robot actions using inspiration from LLM prompting techniques (chain-of-thought). (**[source](https://deepmind.google/discover/blog/rt-2-new-model-translates-vision-and-language-into-action/)**)*
 
 ## Playing Games
 
@@ -113,7 +113,7 @@ In recent years, AI's capability has extended to open-ended environments like Mi
 
 ![Enter image alt description](Images/KMJ_Image_11.png)
 
-Figure: A map of diplomacy and the dialog box where the AI negotiates. ([source](https://www.youtube.com/watch?v=u5192bvUS7k&t=2216s))
+***Figure****: A map of diplomacy and the dialog box where the AI negotiates. (**[source](https://www.youtube.com/watch?v=u5192bvUS7k&t=2216s)**)*
 
 ??? note "Example of Voyager: Planning and Continuous Learning in Minecraft with GPT-4"
 
@@ -122,5 +122,5 @@ Figure: A map of diplomacy and the dialog box where the AI negotiates. ([source]
 	
 	![Enter image alt description](Images/ccN_Image_12.png)
 	
-	Figure: from Voyager: Voyager discovers new Minecraft items and skills continually by self-driven exploration, significantly outperforming the baselines.
+	**Figure**: Voyager discovers new Minecraft items and skills continually by self-driven exploration, significantly outperforming the baselines. ([source](https://arxiv.org/abs/2305.16291))
 	

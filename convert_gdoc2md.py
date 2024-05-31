@@ -120,13 +120,13 @@ def split_markdown(folder_source, chapter):
     os.remove(chapter_path / "Output.md")
 
 split_markdown(
-    folder_source='/home/markov/downloads/textbook/chapter_5.2',
-    chapter = "5-Goal Misgeneralization",
+    folder_source='/home/markov/downloads/textbook/chapter_3.2',
+    chapter = "03 - Solutions Landscape",
 
     # Chapter names (match this exact naming):
         # 01 - Capabilities
-        # 02 - Risks
-        # 03 - Solutions
+        # 02 - Risks Landscape
+        # 03 - Solutions Landscape
         # 04 - Evaluations
         # 05 - Governance
         # 06 - Reward Misspecification

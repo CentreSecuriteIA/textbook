@@ -104,6 +104,12 @@
 *[Embedded agent]: An agent which is not modeled as separate from the environment it acts on.
 *[embedded agency]: An agent which is not modeled as separate from the environment it acts on.
 
+<!--Catastrophic risk-->
+<!--catastrophic risk-->
+<!--catastrophic risks-->
+
+*[existential risk]: A risk of human extinction or the destruction of humanity’s long-term potential.
+*[existential risks]: A risk of human extinction or the destruction of humanity’s long-term potential.
 *[Existential risk]: A risk of human extinction or the destruction of humanity’s long-term potential.
 *[existential threat]: A risk of human extinction or the destruction of humanity’s long-term potential.
 *[x-risk]: A risk of human extinction or the destruction of humanity’s long-term potential.

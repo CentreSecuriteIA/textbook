@@ -1,33 +1,21 @@
 # Chapter Overview
 
-⌛ Estimated Reading Time: 3 minutes. (443 words)
+⌛ Estimated Reading Time: 2 minutes. (317 words)
 
 
 Human-Level AI, What, How and When?
 
-<div class="grid cards" markdown>
+**[State-of-the-Art AI](1-State-of-the-Art-AI.md)**: We begin with a brief introduction to the current advancements in artificial intelligence as of 2024. We aim to acquaint readers with the latest breakthroughs across various domains such as language processing, vision, and robotics.
 
-- :material-robot-outline:{ .lg .middle } **[State-of-the-Art AI](1-State-of-the-Art-AI.md)**
+**[Foundation Models](2-Foundation-Models.md)**: The second section focuses on foundation models, the paradigm powering the state-of-the-art systems introduced in the previous section. We explain the key techniques underpinning the huge success of these models such as self-supervised learning, zero-shot learning, and fine-tuning. The section concludes by looking at the risks that the foundation model paradigm could pose such as power centralization, homogenization, and the potential for emergent capabilities.
 
-- We begin with a brief introduction to the current advancements in artificial intelligence as of 2024. We aim to acquaint readers with the latest breakthroughs across various domains such as language processing, vision, and robotics.
+**[Terminology](3-Terminology.md)**: Before diving deeper, we establish the definitions that this book will be working with. This section explains why "capabilities" rather than "intelligence" is a more pragmatic measure for discussing AI risks. We also delineate key terms within the AI debate, such as Artificial General Intelligence (AGI), Artificial Super Intelligence (ASI), and Transformative AI (TAI). The section concludes by introducing the (t,n)-AGI framework which allows us to more concretely measure the level of AI capabilities on a continuous scale, rather than having to rely on discrete thresholds.
 
-- :material-table-column-plus-after:{ .lg .middle }  **[Foundation Models](2-Foundation-Models.md)**
+**[Leveraging Computation](4-Leveraging-Computation.md)**: In this section, we explore the importance of computation in AI's progress introducing the three main variables that govern the capabilities of today's foundation models - compute, data and parameter count. We explore scaling laws and hypotheses that predict the future capabilities of AI based on current scaling trends of these variables, offering insights into the computational strategies that could pave the way to AGI.
 
-- The second section focuses on foundation models, the paradigm powering the state-of-the-art systems introduced in the previous section. We explain the key techniques underpinning the huge success of these models such as self-supervised learning, zero-shot learning, and fine-tuning. The section concludes by looking at the risks that the foundation model paradigm could pose such as power centralization, homogenization, and the potential for emergent capabilities.
+**[Forecasting](5-Forecasting.md)**: Finally, the chapter addresses the challenge of forecasting AI's future, using biological anchors as a method to estimate the computational needs for transformative AI. This section sets the groundwork for discussing AI takeoff dynamics, including speed, polarity, and homogeneity, offering a comprehensive view of potential futures shaped by AI development.
 
-- :material-book-outline:{ .lg .middle } **[Terminology](3-Terminology.md)**
-
-- Before diving deeper, we establish the definitions that this book will be working with. This section explains why "capabilities" rather than "intelligence" is a more pragmatic measure for discussing AI risks. We also delineate key terms within the AI debate, such as Artificial General Intelligence (AGI), Artificial Super Intelligence (ASI), and Transformative AI (TAI). The section concludes by introducing the (t,n)-AGI framework which allows us to more concretely measure the level of AI capabilities on a continuous scale, rather than having to rely on discrete thresholds.
-
-- :simple-rocket:{ .lg .middle } **[Leveraging Computation](4-Leveraging-Computation.md)**
-
-- In this section, we explore the importance of computation in AI's progress introducing the three main variables that govern the capabilities of today's foundation models - compute, data and parameter count. We explore scaling laws and hypotheses that predict the future capabilities of AI based on current scaling trends of these variables, offering insights into the computational strategies that could pave the way to AGI.
-
-- :material-chart-line:{ .lg .middle } **[Forecasting](5-Forecasting.md)**
-
-- Finally, the chapter addresses the challenge of forecasting AI's future, using biological anchors as a method to estimate the computational needs for transformative AI. This section sets the groundwork for discussing AI takeoff dynamics, including speed, polarity, and homogeneity, offering a comprehensive view of potential futures shaped by AI development.
-
-</div>
+<!--
 
 ``` mermaid
 mindmap
@@ -102,3 +90,4 @@ mindmap
 ```
 
 
+-->

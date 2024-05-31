@@ -1,6 +1,6 @@
 # Appendix 3: Trends
 
-⌛ Estimated Reading Time: 8 minutes. (1488 words)
+⌛ Estimated Reading Time: 8 minutes. (1444 words)
 
 
 Generally, the three main components recognized as the main variables of advancement in deep learning are: computational power available, algorithmic improvements, and the availability of data. ([source](https://cset.georgetown.edu/publication/the-ai-triad-and-what-it-means-for-national-security-strategy/))
@@ -78,29 +78,3 @@ The median projection for when the training dataset of notable ML models exhaust
 Figure: ML data consumption and data production trends for low-quality text, high-quality text, and images. - Source: Epoch (2023), "[Key trends and figures in Machine Learning](https://epochai.org/trends)"
 
 Even if we run out of Data, many solutions are proposed, from using synthetic data, for example, filtering and preprocessing the data with GPT-3.5 to create a new cleaner dataset, an approach used in the paper "Textbooks are all you need" with models like Phi 1.5B that demonstrate excellent performance for their size through the use of high-quality filtered data, to the use of more efficient trainings, or being more efficient by training on more epochs.
-
-<!--
-
-Content tabs
-
-=== "Unordered list"
-
-	
-	* Sed sagittis eleifend rutrum
-	
-	* Donec vitae suscipit est
-	
-	* Nulla tempor lobortis orci
-	
-
-=== "Ordered list"
-
-	
-	1. Sed sagittis eleifend rutrum
-	
-	2. Donec vitae suscipit est
-	
-	3. Nulla tempor lobortis orci
-	
-
-–>

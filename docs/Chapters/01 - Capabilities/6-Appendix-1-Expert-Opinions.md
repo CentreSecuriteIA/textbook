@@ -1,6 +1,6 @@
 # Appendix 1: Expert Opinions
 
-⌛ Estimated Reading Time: 4 minutes. (617 words)
+⌛ Estimated Reading Time: 4 minutes. (629 words)
 
 
 ## Surveys
@@ -33,7 +33,12 @@ Note that Hinton, Bengio, and Sutskever are the 3 most cited researchers in the 
 
 ## Prediction Markets
 
-<iframe src="https://www.metaculus.com/questions/question_embed/3479/?theme=light" style="height:430px; width:100%; max-width:550px"></iframe>
-<iframe src="https://www.metaculus.com/questions/question_embed/5121/?theme=light" style="height:430px; width:100%; max-width:550px"></iframe>
+<iframe src="https://www.metaculus.com/questions/question_embed/3479/?theme=light" style="height:430px; width:100%; max-width:550px">
+
+</iframe>
+
+<iframe src="https://www.metaculus.com/questions/question_embed/5121/?theme=light" style="height:430px; width:100%; max-width:550px">
+
+</iframe>
 
 A prediction market, such as [manifold](https://manifold.markets/home) market, allows users to bet on future events, for example the result of a national election, or the release date of a particular product. Prediction markets are one of the best probabilistic crystal balls we currently have, and they are, in general, better tools than surveys or experts. An article on the prediction of the reproducibility of scientific articles compared these prediction methods, and it was found that prediction markets outperformed expert surveys ([source](https://www.pnas.org/doi/10.1073/pnas.1516179112)). The argument is that either prediction markets are more accurate than experts, or experts should be able to make a lot of money from these markets and, in doing so, correct the markets. As of January 2024, in response to the question “When will the first weakly general AI system be devised, tested, and publicly announced?”, the Metaculus market predicts currently a median year of 2026 ([source](https://www.notion.so/Economic-foresight-from-the-perspective-of-AI-development-8e2cf5c63f1748af85fa25e37fd5bc22?pvs=21)), and for the question “When will the first general AI system be devised, tested, and publicly announced?”Metaculus predicts currently a median of 2031. ([source](https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/)).

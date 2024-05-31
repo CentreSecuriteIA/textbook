@@ -1,6 +1,6 @@
 # Appendix 2: Discussions on LLMs
 
-⌛ Estimated Reading Time: 22 minutes. (4230 words)
+⌛ Estimated Reading Time: 21 minutes. (4189 words)
 
 
 Current LLMs, although trained on abundant data, are still far from perfect.
@@ -8,10 +8,6 @@ Current LLMs, although trained on abundant data, are still far from perfect.
 Will these problems persist in future iterations, or will they disappear? This section examines the main criticisms of those models and tries to determine if they are valid even for future LLMs.
 
 This kind of qualitative assessment is important to know whether LLMs represent the most likely route to AGI or not.
-
-??? question "Why is this section important?"
-
-     This section is more opinionated, but the authors basically think that most criticisms that say LLMs are not capable of this or that, even in principle, are ill-founded. We wanted to provide more answers here.
 
 ## Empirically insufficiency?
 
@@ -162,7 +158,11 @@ Following are some reasons to believe that labs will continue to scale LLMs.
 
 [^footnote_scaling_law]: See also "The Scaling Hypothesis," to delve into this progression in a fascinating story.
 
-**Toggle box: Exercise: Scaling Laws on LLM implies further qualitative improvements.** Let's calculate the difference in loss, measured in bits, between two model outputs: "Janelle ate some ice cream because he likes sweet things like ice cream." and "Janelle ate some ice cream because she likes sweet things like ice cream.” The sentence contains approximately twenty tokens. If the model vacillates between "He" or "She," choosing randomly (50/50 odds), it incurs a loss of 2 bits on the pronoun token when incorrect. The loss for other tokens remains the same in both models. However, since the model is only incorrect half the time, a factor of 1/2 should be applied. This results in a difference of (1/2) * (2/20) = 1/20, or 0.05 bits. Thus, a model within 0.05 bits of the minimal theoretical loss should be capable of understanding even more nuanced concepts than the one discussed above.
+!!! note “Exercise: Scaling Laws on LLM implies further qualitative improvements.”
+
+	
+	Let's calculate the difference in loss, measured in bits, between two model outputs: "Janelle ate some ice cream because he likes sweet things like ice cream." and "Janelle ate some ice cream because she likes sweet things like ice cream.” The sentence contains approximately twenty tokens. If the model vacillates between "He" or "She," choosing randomly (50/50 odds), it incurs a loss of 2 bits on the pronoun token when incorrect. The loss for other tokens remains the same in both models. However, since the model is only incorrect half the time, a factor of 1/2 should be applied. This results in a difference of (1/2) * (2/20) = 1/20, or 0.05 bits. Thus, a model within 0.05 bits of the minimal theoretical loss should be capable of understanding even more nuanced concepts than the one discussed above.
+	
 
 **Text completion is probably an AI-complete test** ([source](https://en.wikipedia.org/wiki/AI-complete)).
 

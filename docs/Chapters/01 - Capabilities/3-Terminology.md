@@ -1,6 +1,6 @@
 # Terminology
 
-⌛ Estimated Reading Time: 11 minutes. (2004 words)
+⌛ Estimated Reading Time: 10 minutes. (1941 words)
 
 
 This section continues the discussion on the terminology necessary to discuss AI capabilities. It focuses in particular on certain thresholds that we might reach in the cognitive capabilities of these AI models.
@@ -65,11 +65,7 @@ For instance, an AI that exceeds the capability of a human expert in one second 
 
 - **One-second AGI**: Beating humans at recognizing objects in images, basic physics intuitions (e.g. "What happens if I push a string?"), answering trivia questions, etc.
 
-- **One-minute ****AGI**: Beating humans at answering questions about short text passages or videos, common-sense reasoning (e.g. Yann LeCuns gear problems), looking up facts, justifying an opinion, etc.
-
-![Enter image alt description](Images/bo0_Image_16.png)
-
-Figure: Example of gears problems by Yann LeCun ([source](https://twitter.com/ylecun/status/1639696127132835840))
+- **One-minute ****AGI**: Beating humans at answering questions about short text passages or videos, common-sense reasoning, looking up facts, justifying an opinion, etc.
 
 - **One-hour ****AGI**: Beating humans at problem sets/exams, composing short articles or blog posts, executing most tasks in white-collar jobs (e.g., diagnosing patients, providing legal opinions), conducting therapy, etc.
 
@@ -84,11 +80,3 @@ Although it is more formal than the definitions provided in the previous section
 As of the third quarter of 2023, we can establish a rough equivalence “*from informal initial experiments, our guess is that humans need about three minutes per problem to be overall as useful as GPT-4 when playing the role of trusted high-quality labor.”*([source](https://arxiv.org/abs/2312.06942)) So existing systems can roughly be believed to qualify as one-second AGIs, and are considered to be nearing the level of one-minute AGIs.
 
 They might be a few years away from becoming one-hour AGIs. Within this framework, Ngo anticipates that a superintelligence (ASI) could be something akin to a (one year, eight billion)-AGI, that is, an ASI could be seen as an AGI that outperforms all eight billion humans coordinating for one year on a given task.
-
-??? question "What did you learn in this section?"
-
-     Can you explain why intelligence is ill defined and should be substituted by capabilities measures?
-
-     Do you remember what the terms AGI, TAI, HLAI, NAI, ASI mean?
-
-     Can you explain the (t-n)-AGI framework?
