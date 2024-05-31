@@ -1,7 +1,7 @@
 
 # The AI Safety Handbook
 
-### **PART 1 : SAFETY FUNDAMENTALS**
+### **FUNDAMENTALS**
 
 We encourage all readers, including those without a technical background, to read through the fundamentals section of the textbook. This entails reading Chapters 1 through 5. These chapters explain in an accessible way why it is plausible to see the emergence of human-level AI, the potential risks associated, and what solutions are currently being explored to mitigate these risks. These introductory chapters aim to provide a solid foundation for understanding the issues and challenges of AI Safety.
 
