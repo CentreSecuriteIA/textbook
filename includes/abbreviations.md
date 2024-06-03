@@ -18,6 +18,9 @@
 *[multimodal system]: An AI model that can take in and produce multiple forms of data (such as both text and images).
 *[multimodal model]: *[multimodal AI]: An AI model that can take in and produce multiple forms of data (such as both text and images).
 
+*[CEV]: Coherent Extrapolated Volition.
+*[CAV]: Coherent Aggregated Volition.
+
 *[NLP]: Natural Language Processing
 *[NLU]: Natural Language Understanding
 
@@ -96,30 +99,31 @@
 *[Chain-of-thought]: A prompting technique which makes a language model generate intermediate reasoning steps in its output.
 *[Chain of thought]: A prompting technique which makes a language model generate intermediate reasoning steps in its output.
 
-*[Deceptive alignment]: A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.
-*[deceptive misalignment]: A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.
-*[deceptively aligned]: A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.
-*[deceptively misaligned]: A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned. 
 
 *[Embedded agent]: An agent which is not modeled as separate from the environment it acts on.
 *[embedded agency]: An agent which is not modeled as separate from the environment it acts on.
+*[Embedded agency]: An agent which is not modeled as separate from the environment it acts on.
 
 <!--Catastrophic risk-->
 <!--catastrophic risk-->
 <!--catastrophic risks-->
 
-*[existential risk]: A risk of human extinction or the destruction of humanity’s long-term potential.
-*[existential risks]: A risk of human extinction or the destruction of humanity’s long-term potential.
-*[Existential risk]: A risk of human extinction or the destruction of humanity’s long-term potential.
-*[existential threat]: A risk of human extinction or the destruction of humanity’s long-term potential.
-*[x-risk]: A risk of human extinction or the destruction of humanity’s long-term potential.
+*[existential risk]: A risk of human extinction or the permanent destruction of humanity’s long-term potential.
+*[existential risks]: A risk of human extinction or the permanent destruction of humanity’s long-term potential.
+*[Existential risk]: A risk of human extinction or the permanent destruction of humanity’s long-term potential.
+*[existential threat]: A risk of human extinction or the permanent destruction of humanity’s long-term potential.
+*[x-risk]: Existential risk. A risk of human extinction or the permanent destruction of humanity’s long-term potential.
+*[s-risk]: Existential suffering risk.
+
 
 *[Fast takeoff]: A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.
 *[FOOM]: A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.
 *[hard takeoff]: A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.
 
-*[Feature]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.
-*[features]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.
+
+<!--
+*[Feature]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+<!--*[features]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
 
 
 *[FLOP]: A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.
@@ -142,34 +146,51 @@
 *[Goodhart's law]: “When a measure becomes a target, it ceases to be a good measure.”
 *[Goodharts law]: “When a measure becomes a target, it ceases to be a good measure.”
 *[Goodharting]: “When a measure becomes a target, it ceases to be a good measure.”
-*[Goodhart]: “When a measure becomes a target, it ceases to be a good measure.”
 
-*[Inner misalignment]: When an mesa optimizer pursues a different objective than the one that was specified. 
-*[Inner alignment]: When an AI system ends up pursuing the objective that was specified. 
+*[Inner misalignment]: When an mesa optimizer pursues a different objective than the one that was specified.
+*[Inner-Alignment]: When an mesa optimizer pursues a different objective than the one that was specified.
+*[Inner Alignment]: When an mesa optimizer pursues a different objective than the one that was specified.
+*[Inner alignment]: When a mesa optimizer ends up pursuing the objective that was specified.
+
+*[Mesa-optimization]: An algorithm that is created by optimization and that is also itself an optimizer.
+*[Mesa optimization]: An algorithm that is created by optimization and that is also itself an optimizer.
+*[mesa-optimizer]: An algorithm that is created by optimization and that is also itself an optimizer.
+*[mesa optimizer]: An algorithm that is created by optimization and that is also itself an optimizer.
+*[inner optimizer]: An algorithm that is created by optimization and that is also itself an optimizer.
+*[inner-optimizer]: An algorithm that is created by optimization and that is also itself an optimizer.
+*[learned optimizer]: An algorithm that is created by optimization and that is also itself an optimizer.
+*[learned-optimizer]: An algorithm that is created by optimization and that is also itself an optimizer.
+*[Mesa-objective]: The objective pursued by a mesa-optimizer.
+
+*[Deceptive Alignment]: A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.
+*[Deceptive alignment]: A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.
+*[deceptive misalignment]: A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.
+*[Deceptive misalignment]: A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.
+*[deceptively aligned]: A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.
+*[deceptively misaligned]: A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned. 
 
 *[Instrumental convergence]: The idea that agents with widely different terminal goals will end up adopting many of the same instrumental goals.
-*[Instrumental convergence]: The idea that agents with widely different terminal goals will end up adopting many of the same instrumental goals.
+*[instrumental convergence]: The idea that agents with widely different terminal goals will end up adopting many of the same instrumental goals.
 *[instrumentally convergent]: The idea that agents with widely different terminal goals will end up adopting many of the same instrumental goals.
-
 *[Instrumental goal]: Goals which are pursued as means to some other end, rather than as ends in themselves.
+*[instrumental goal]: Goals which are pursued as means to some other end, rather than as ends in themselves.
 *[sub-goal]: Goals which are pursued as means to some other end, rather than as ends in themselves.
 
 *[Intelligence explosion]: A hypothetical scenario where machines become more intelligent very quickly, driven by recursive self-improvement.
 
 *[Interpretability]: A research area that aims to make machine learning systems easier for humans to understand.
+*[interpretability]: A research area that aims to make machine learning systems easier for humans to understand.
+
+<!--polysemantic-->
+<!--polysemanticity-->
+<!--monosemantic-->
+<!--monosemanticity-->
+<!--superposition-->
 
 *[Mechanistic interpretability]: A subfield of interpretability which involves reverse-engineering the mechanisms by which a model gets from its inputs to its outputs.
 *[mech interp]: A subfield of interpretability which involves reverse-engineering the mechanisms by which a model gets from its inputs to its outputs.
 
 
-*[Mesa-optimization]: An algorithm that is created by optimization and that is also itself an optimizer.
-*[mesa-optimizer]: An algorithm that is created by optimization and that is also itself an optimizer.
-*[inner optimizer]: An algorithm that is created by optimization and that is also itself an optimizer.
-*[inner-optimizer]: An algorithm that is created by optimization and that is also itself an optimizer.
-*[learned optimizer]: An algorithm that is created by optimization and that is also itself an optimizer.
-*[learned-optimizer]: An algorithm that is created by optimization and that is also itself an optimizer.
-
-*[Mesa-objective]: The objective pursued by a mesa-optimizer.
 
 *[Multipolar scenario]: A scenario in which there end up being multiple powerful decision makers.
 *[Multipolarity]: A scenario in which there end up being multiple powerful decision makers.
@@ -190,23 +211,29 @@
 
 
 *[Auto-induced distributional shift]: A distributional shift caused by the behavior or actions of an algorithm or machine learning system itself. It arises due to the influence of the system on its own input distribution.
+*[auto-induced distributional shift]: A distributional shift caused by the behavior or actions of an algorithm or machine learning system itself. It arises due to the influence of the system on its own input distribution.
+*[auto induced distributional shift]: A distributional shift caused by the behavior or actions of an algorithm or machine learning system itself. It arises due to the influence of the system on its own input distribution.
 *[ADS]: Auto-induced distributional shift. A distributional shift caused by the behavior or actions of an algorithm or machine learning system itself. It arises due to the influence of the system on its own input distribution.
 
 
-*[Optimization algorithm]: A general procedure for finding solutions that score highly according to some well-defined objective function.
+<!--
+*[Optimization algorithm]: A general procedure for finding solutions that score highly according to some well-defined objective function.-->
 
+<!--
+*[Optimizer]: Something that can improve some process or physical artifact so that it is fit for a certain purpose or fulfills some set of requirements.-->
 
-*[Optimizer]: Something that can improve some process or physical artifact so that it is fit for a certain purpose or fulfills some set of requirements.
 *[optimization process]: Something that can improve some process or physical artifact so that it is fit for a certain purpose or fulfills some set of requirements.
 
-*[Oracle]: An AI whose only goal is to give correct answers to questions.
 *[Oracle AI]: An AI whose only goal is to give correct answers to questions.
 
 *[Orthogonality thesis]: The claim that any level of intelligence is compatible with any terminal goal. This implies that intelligence alone is not enough to make a system moral.
+*[orthogonality thesis]: The claim that any level of intelligence is compatible with any terminal goal. This implies that intelligence alone is not enough to make a system moral.
 *[Orthogonality hypothesis]: The claim that any level of intelligence is compatible with any terminal goal. This implies that intelligence alone is not enough to make a system moral.
+*[orthogonality hypothesis]: The claim that any level of intelligence is compatible with any terminal goal. This implies that intelligence alone is not enough to make a system moral.
 
 
 *[Outer alignment]: The problem of making sure that the precise formulation of what we train the AI to do matches what we intend it to do.
+*[outer alignment]: The problem of making sure that the precise formulation of what we train the AI to do matches what we intend it to do.
 *[outer misalignment]: The problem of making sure that the precise formulation of what we train the AI to do matches what we intend it to do.
 *[reward misspecification]: The problem of making sure that the precise formulation of what we train the AI to do matches what we intend it to do.
 
@@ -216,14 +243,19 @@
 *[Proxy goal]: A goal that performs well on the intended objective due to some spurious correlation in the training distribution.
 
 *[Reinforcement learning from human feedback]: A method for training an AI to give desirable outputs by using human feedback as a training signal. 
+*[reinforcement learning from human feedback]: A method for training an AI to give desirable outputs by using human feedback as a training signal. 
 *[RLHF]: Reinforcement learning from human feedback. A method for training an AI to give desirable outputs by using human feedback as a training signal. 
+*[RLAIF]: Reinforcement learning from AI feedback. A method for training an AI to give desirable outputs by using AI feedback as a training signal. 
+
 
 *[Robustness]: An agent's ability to maintain its goal and its capabilities when exposed to environments that are substantially different from that on which the agent was trained.
 
 *[Recursive self-improvement]: Self-improvement that leads to further self-improvement in a self-reinforcing feedback loop. 
+*[Recursive self improvement]: Self-improvement that leads to further self-improvement in a self-reinforcing feedback loop. 
 *[recursive self improvement]: Self-improvement that leads to further self-improvement in a self-reinforcing feedback loop. 
 *[RSI]: Recursive self-improvement. Self-improvement that leads to further self-improvement in a self-reinforcing feedback loop. 
 
+*[Scalable Oversight]: Methods that allow humans to provide oversight for numerous or superhuman AI systems, usually by using AI systems to help supervise other AI systems.
 *[Scalable oversight]: Methods that allow humans to provide oversight for numerous or superhuman AI systems, usually by using AI systems to help supervise other AI systems.
 *[scaleable oversight]: Methods that allow humans to provide oversight for numerous or superhuman AI systems, usually by using AI systems to help supervise other AI systems.
 
@@ -259,6 +291,7 @@
 *[Tool AI]: A type of artificial general intelligence that can only function as an assistant to human use, and not as an autonomous agent.
 *[tool AIs]: A type of artificial general intelligence that can only function as an assistant to human use, and not as an autonomous agent.
 
+*[Utility functions]: A mathematical function that assigns a number representing utility to every possible outcome. Outcomes with higher utility are preferred to outcomes with lower utility. “Maximizing utility” then means choosing the most preferred outcome.
 *[Utility function]: A mathematical function that assigns a number representing utility to every possible outcome. Outcomes with higher utility are preferred to outcomes with lower utility. “Maximizing utility” then means choosing the most preferred outcome.
 
 *[Base optimizer]: In contrast to a mesa-optimizer, a base optimizer is the “outer” optimizer usually explicitly implemented by humans.

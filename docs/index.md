@@ -13,11 +13,15 @@ title: Home
 
 <!-- ![AI Safety](https://lh7-us.googleusercontent.com/XuuImYOYY7YElHDnooD6S7k1tf11JAV_a7LQZ6IUXbItUbPp0p7sAgDp1EjHJAuuHvZ_cJ-pj7rGq7SLxb0O4Xe9OkyRIEKh4R8TwoUwERq8TJxKRMQdixUPBjXXwVEjog_AqBgNiCwvE9QHEHlr_rk) -->
 
-Currently, AI Safety courses rely heavily on a patchwork of many external links to blog posts and research papers (e.g. [AISF](https://course.aisafetyfundamentals.com/alignment?session=1)). This content varies in terms of technical depth and communication style, posing a significant barrier to coherent learning. We are writing a textbook that aims to unify these into a seamless narrative, to help improve the learning experience. We also want to include in our curriculum important considerations that are often neglected in other courses.
+Currently, AI Safety educational materials often rely heavily on a patchwork of many external links to blog posts and research papers. This content varies in terms of technical depth and communication style, posing a significant barrier to coherent learning. We are writing a textbook that aims to unify the disparate narratives in the field of AI Safety into a seamless end-to-end narrative. This helps improve the learning experience for newcomers, while at the same time also providing a single unified reference text for existing researchers in the field.
 
-Our textbook is designed to serve as a comprehensive educational resource for the AI safety field. This will include an adaptation of the Turing Seminar, which is an accredited course with talks, workshops, and exercises at Ecole Normale Superieure (ENS) Ulm, and ENS Paris-Saclay in France. The original syllabus for the seminar was loosely inspired by the AI Safety Fundamentals (AISF) curriculum that I teach at [Master MVA](https://www.master-mva.com/cours/seminaire-turing/).
+This textbook is designed to serve as the central comprehensive educational resource for the AI safety field bringing together, organizing and presenting arguments on AI Safety from research papers, blog posts, seminars and lectures, etc.
 
-The alignment field is a pre-paradigmatic, and there is no consensus on many of the concepts presented. Please read the book critically and feel free to add feedback on this [form](https://docs.google.com/forms/d/e/1FAIpQLSe-UI2pt99SHaH2RFPVbDdmo8nuiRBZcxl49rBh67Guj6_p5Q/viewform) on the various chapters if something seems unclear.
+To get a glimpse of the amount of papers and research that will be distilled into this central resource check [Markov's Zotero for the project](https://www.zotero.org/groups/5540649/ai_safety_textbook/library).
+
+We also plan to provide slide decks, online videos, and exercises alongsid the textbook which can be easily incorporated into university courses.
+
+The alignment field is a pre-paradigmatic, and there is no right or wrong research direction, or a consensus for many of the concepts that this textbook will present. Please read the book critically and feel free to add feedback on this [form](https://docs.google.com/forms/d/e/1FAIpQLSe-UI2pt99SHaH2RFPVbDdmo8nuiRBZcxl49rBh67Guj6_p5Q/viewform) if something seems unclear, or needs to be improved.
 
 <div class="grid cards" markdown>
 
