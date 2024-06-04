@@ -92,3 +92,13 @@ details.question {
 details[open].question summary {
 	border-bottom: 1px solid black;
 }
+
+.md-header {
+	background-color:#161616;
+}
+
+.md-tabs {
+	background-color:#161616;
+	font-weight: bold;
+	text-transform: uppercase;
+}
