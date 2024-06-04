@@ -31,6 +31,22 @@ h2,h3 {
 	padding: 0px 25px 0px 25px;
 }
 
+
+.admonition.note .admonition-title{
+	color:black;
+	/*background-color:#b8b8b8;*/
+	border: 0px;
+	border-radius:0px;
+}
+
+.admonition.note {
+	color:black;
+	/*background-color:#eeeeee;*/
+	border: 0px;
+	box-shadow: none;
+	border-radius:0px;
+}
+
 .admonition.quote .admonition-title{
 	color:black;
 	background-color:#b8b8b8;
@@ -76,4 +92,3 @@ details.question {
 details[open].question summary {
 	border-bottom: 1px solid black;
 }
-
