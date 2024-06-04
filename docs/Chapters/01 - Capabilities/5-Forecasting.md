@@ -1,7 +1,13 @@
 # Forecasting
 
-⌛ Estimated Reading Time: 31 minutes. (6016 words)
+⌛ Estimated Reading Time: 31 minutes. (6109 words)
 
+
+???+ note "Forecasting TAI - Video Introduction"
+
+    <iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/3K25VPdbAjU"></iframe>
+
+    !!! warning "This video is optional and not necessary to understand the text."
 
 This section of the chapter investigates techniques used to forecast AI timelines and takeoff dynamics.
 
@@ -88,17 +94,21 @@ Figure: The biological anchor model ([source](https://epochai.org/blog/grokking-
 === "**Evolution anchor**"
 
 	
+	!!! warning "This is extra detail provided for those interested. It can be safely skipped."
+	
 	This anchor quantifies the computational effort invested by evolution in shaping the human brain. It considers the vast amount of processing and learning that has taken place from the emergence of the first neurons to the development of the modern human brain. This method suggests that evolution has served as a form of "pre-training" for the human brain, enhancing its ability to adapt and survive. To estimate the computational power of this evolutionary "pre-training", the report considers the total amount of compute used by all animal brains over the course of evolution. This includes not just the brains of humans, but also those of our ancestors and other animals with nervous systems. The idea is that all of this brain activity represents a form of learning or adaptation that has contributed to the development of the modern human brain. While the exact calculations involved in this estimate are complex and subject to considerable uncertainty, the basic idea is to multiply the number of animals that have ever lived by the amount of compute each of their brains performed over their lifetimes. This gives an estimate of the total compute performed by all animal brains over the course of evolution.
 	
 	![Enter image alt description](Images/jAr_Image_21.png)
 	
-	Figure: The Evolution anchor ([source](https://epochai.org/blog/grokking-bioanchors))
+	***Figure****: The Evolution anchor (**[source](https://epochai.org/blog/grokking-bioanchors)**)*
 	
 	Cotra accounts for these considerations and assumes that the “average ancestor” performed as many FLOP/s as a nematode, and that there were on average ~1e21 ancestors at any time. This yields a **median of ~1e41 FLOP**, which seems extraordinarily high compared to modern machine learning. As an example, Google’s PaLM model was trained with ~2.5e24 FLOP (17 orders of magnitude smaller). She gives this anchor a **weight of 10%**. ([source](https://epochai.org/blog/grokking-bioanchors))
 	
 
 === "**Lifetime anchor**"
 
+	
+	!!! warning "This is extra detail provided for those interested. It can be safely skipped."
 	
 	This refers to the total computational activity the human brain performs over a human lifetime. This anchor is essentially a measure of the "training" a human brain undergoes from birth to adulthood and incorporates factors such as the number of neurons in the human brain, the amount of computation each neuron performs per year, and the number of years it takes for a human to reach adulthood. The human brain has an estimated 86 billion neurons. Each of these neurons performs a certain number of computations per second, which can be calculated as a certain number of operations per second in FLOP/s. When calculating the total amount of compute over a lifetime, these factors are multiplied together, along with the number of years a human typically lives.
 	
@@ -114,6 +124,8 @@ Figure: The biological anchor model ([source](https://epochai.org/blog/grokking-
 === "**Neural network Anchors**"
 
 	
+	!!! warning "This is extra detail provided for those interested. It can be safely skipped."
+	
 	Each of the neural network anchors serves to provide a different perspective on the amount of compute that might be required to train a TAI. There are three Neural Network Anchors presented in the report: long (~1e37 FLOP), medium (~1e34 FLOP), and short horizon (~1e32 FLOP). These anchors hypothesize that the ratio of parameters to compute used by a TAI should be similar to the ratio observed in today's neural networks. Additionally, a TAI should perform approximately as many FLOPs per subjective second as a human brain. A “subjective second” is the time it takes a model to process as much data as a human can in one second ([source](https://epochai.org/blog/grokking-bioanchors)). As an example a typical human reads about 3-4 words per second for non-technical material, so “one subjective second” for a language model would correspond to however much time that the model takes to process about ~3-4 words of data. ([source](https://www.alignmentforum.org/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines)) Cotra determines the training data requirements based on a mix of machine learning theory and empirical considerations. She puts 15% weight on short horizons, 30% on medium horizons, and 20% on long horizons, for a total of 65% on the three anchors. ([source](https://epochai.org/blog/grokking-bioanchors))
 	
 	![Enter image alt description](Images/Day_Image_23.png)
@@ -123,6 +135,8 @@ Figure: The biological anchor model ([source](https://epochai.org/blog/grokking-
 
 === "**Genome Anchor**"
 
+	
+	!!! warning "This is extra detail provided for those interested. It can be safely skipped."
 	
 	The genome anchor looks at the FLOP/subj sec of the human brain and expects TAI to require as many parameters as there are bytes in the human genome. This hypothesis implicitly assumes a training process that’s structurally analogous to evolution, and that TAI will have some critical cognitive ability that evolution optimized for. This differs from the evolution anchor in that it assumes we can search over possible architectures/algorithms a lot more efficiently than evolution, using gradients. Due to this structural similarity, and because feedback signals about the fitness of a particular genome configuration are generally sparse, this suggests that the anchor only really makes sense with long horizon lengths. ([source](https://epochai.org/blog/grokking-bioanchors))
 	
@@ -191,7 +205,7 @@ This section introduces the concept of AI takeoff. There is much debate about ho
 
 ![Enter image alt description](Images/kIj_Image_27.png)
 
-Figure: A comparative illustration of combinations of slow and fast takeoff, alongside continuity. Source: Samuel Dylan Martin, Daniel_Eth (Sep 2021) “[Takeoff Speeds and Discontinuities](https://www.alignmentforum.org/posts/pGXR2ynhe5bBCCNqn/takeoff-speeds-and-discontinuities)”
+***Figure****: A comparative illustration of combinations of slow and fast takeoff, alongside continuity. Source: Samuel Dylan Martin, Daniel_Eth (Sep 2021) “**[Takeoff Speeds and Discontinuities](https://www.alignmentforum.org/posts/pGXR2ynhe5bBCCNqn/takeoff-speeds-and-discontinuities)**”*
 
 
 ### Similarity

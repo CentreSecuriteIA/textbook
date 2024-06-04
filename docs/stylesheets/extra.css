@@ -1,0 +1,79 @@
+/*Has to be added in the yml file to work*/
+/*extra_css:*/
+  /*- stylesheets/extra.css*/
+p {
+	text-align: justify;
+	text-justify: inter-word;
+	padding: 5px
+}
+h2,h3 {
+  color: white;
+  font-weight: bold;
+  background-color:#161616;
+  padding: 7px 7px 7px 20px; <!--top right bottom left-->
+  text-transform: uppercase;
+}
+
+/*.md-nav__item{*/
+	/*padding:0px;*/
+	/*margin:0px;*/
+	/*background-color:red;*/
+/*}*/
+
+.tabbed-labels{
+	color:black;
+	/*background-color:#b8b8b8;*/
+}
+
+.tabbed-content{
+	color:black;
+	background-color:#f2f2f2;
+	padding: 0px 25px 0px 25px;
+}
+
+.admonition.quote .admonition-title{
+	color:black;
+	background-color:#b8b8b8;
+	border: 0px;
+	border-radius:0px;
+}
+
+.admonition.quote {
+	color:black;
+	background-color:#eeeeee;
+	border: 0px;
+	box-shadow: none;
+	border-radius:0px;
+}
+
+.admonition.warning {
+	/*color:black;*/
+	/*background-color:#eeeeee;*/
+	border: 0px;
+	box-shadow: none;
+	border-radius:0px;
+}
+
+details.note {
+	color:black;
+	/*background-color:#eeeeee;*/
+	border: 0px;
+	box-shadow: none;
+	border-radius:0px;
+}
+
+/*details[open].note {*/
+	/*background-color:red;*/
+/*}*/
+
+details.question {
+	color:black;
+	border: 0px;
+	box-shadow: none;
+	border-radius:0px;
+}
+
+details[open].question summary {
+	border-bottom: 1px solid black;
+}
+

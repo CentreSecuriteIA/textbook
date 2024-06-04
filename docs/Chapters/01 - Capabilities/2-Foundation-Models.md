@@ -1,11 +1,15 @@
 # Foundation Models
 
-⌛ Estimated Reading Time: 10 minutes. (1810 words)
+⌛ Estimated Reading Time: 10 minutes. (1840 words)
 
 
-!!! abstract
+???+ note "Foundation Models - Video Introduction"
 
-     Foundation models emerged in the mid-to-late 2010s, symbolizing a move away from the labor-intensive, one-model-per-task approach. These models are trained on vast, diverse datasets to learn broad patterns and skills, ready to be adapted to a multitude of tasks. Imagine them as the Swiss Army knives of the AI that can tackle everything from language translation to generating artwork. This marked a shift in strategy, to leveraging large, unlabeled datasets creating generalist models that can later be fine-tuned for specific needs.
+    <iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/kK3NmQT241w"></iframe>
+
+    !!! warning "This video is optional and not necessary to understand the text."
+
+Foundation models emerged in the mid-to-late 2010s, symbolizing a move away from the labor-intensive, one-model-per-task approach. These models are trained on vast, diverse datasets to learn broad patterns and skills, ready to be adapted to a multitude of tasks. Imagine them as the Swiss Army knives of the AI that can tackle everything from language translation to generating artwork. This marked a shift in strategy, to leveraging large, unlabeled datasets creating generalist models that can later be fine-tuned for specific needs.
 
 **Economics of Foundation Models.** The shift towards foundation models was fueled by several factors: the explosion of data, advances in computational power, and refinements in machine learning techniques. These models are also extremely resource-intensive. Their development, training, and deployment often requires significant investment. This capital requirement comes from three main areas:
 
@@ -35,7 +39,7 @@ This is repeated on a large number of such images, learning to recognize pattern
 
 ![https://www.artificialintelligence.news/pathal/uploads/2021/09/2021-foundationmodel-1024x692.png](Images/uxE-.png)
 
-Figure: Bommasani Rishi et. al. (2022) "[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)"
+***Figure****:** Bommasani Rishi et. al. (2022) "**[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)**"*
 
 **Elicitation Techniques**. Prompting is how we interact with the models. It's akin to giving the model a nudge in the right direction, ensuring that the vast knowledge it has acquired is applied in a way that's relevant and useful. So the structure of the prompt can have a large effect on the overall performance you are able to elicit out of the system. We only briefly introduce the concept here. There are a variety of elicitation techniques like chain-of-thought (CoT) that will be discussed in later chapters.
 
@@ -47,7 +51,7 @@ The learning journey of a student—beginning with acquiring broad knowledge, ho
 
 ![Enter image alt description](Images/Wif_Image_14.png)
 
-Figure: Bommasani Rishi et. al. (2022) "[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)"
+***Figure****: Bommasani Rishi et. al. (2022) "**[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)**"*
 
 **Efficient use of resources**. Foundation models have the capacity to elevate their performance by leveraging additional data, more powerful computing resources, or advancements in model architecture. It's not merely a technique, but a pivotal attribute that dictates how well a model can adapt and expand its capabilities. As foundation models scale, they don't just grow; they become more nuanced, capable, and efficient in processing information, mirroring the enrichment of understanding and knowledge transfer. This makes scalability a crucial determinant in the operational efficacy of these models. We will discuss this capability further in the subsequent section on leveraging computation.
 

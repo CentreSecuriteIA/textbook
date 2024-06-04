@@ -120,8 +120,8 @@ def split_markdown(folder_source, chapter):
     os.remove(chapter_path / "Output.md")
 
 split_markdown(
-    folder_source='/home/markov/downloads/textbook/chapter_3.2',
-    chapter = "03 - Solutions Landscape",
+    folder_source='/home/markov/downloads/textbook/chapter_1.3',
+    chapter = "01 - Capabilities",
 
     # Chapter names (match this exact naming):
         # 01 - Capabilities

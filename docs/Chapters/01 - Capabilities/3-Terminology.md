@@ -53,7 +53,7 @@ This section explores various definitions of different AI capability thresholds.
 
 ![Enter image alt description](Images/kCH_Image_15.png)
 
-Figure: For illustrative purposes. This graph could be criticized because it is not clear that the capabilities of those AIs can be reduced to a single dimension.
+***Figure****: For illustrative purposes. This graph could be criticized because it is not clear that the capabilities of those AIs can be reduced to a single dimension.*
 
 Often, these terms get used as discrete capability thresholds; that is, individuals tend to categorize an AI as potentially an AGI, an ASI, or neither. The next section will introduce a framework for viewing AI capabilities on a continuous scale, providing a more granular and insightful lens through which to assess AI development and its implications for humanity.
 

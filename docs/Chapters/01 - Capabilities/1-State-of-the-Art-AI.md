@@ -1,13 +1,13 @@
 # State-of-the-Art AI
 
-⌛ Estimated Reading Time: 11 minutes. (2133 words)
+⌛ Estimated Reading Time: 11 minutes. (2129 words)
 
 
 Over the last decade, the field of artificial intelligence (AI) has experienced a profound transformation, largely attributed to the successes in deep learning. This remarkable progress has redefined the boundaries of AI capabilities, challenging many preconceived notions of what machines can achieve. The following sections detail some of these advancements.
 
 ![Enter image alt description](Images/V7p_Image_1.jpeg)
 
-*Figure:** Once a benchmark is published, it takes less and less time to solve it. This can illustrate the accelerating progress in AI and how quickly AI benchmarks are “saturating”, and starting to surpass human performance on a variety of tasks. (**[source](https://www.science.org/content/article/computers-ace-iq-tests-still-make-dumb-mistakes-can-different-tests-help)**) **, From DynaBench.*
+***Figure****:** Once a benchmark is published, it takes less and less time to solve it. This can illustrate the accelerating progress in AI and how quickly AI benchmarks are “saturating”, and starting to surpass human performance on a variety of tasks. (**[source](https://www.science.org/content/article/computers-ace-iq-tests-still-make-dumb-mistakes-can-different-tests-help)**)*
 
 ## Language
 
@@ -17,13 +17,13 @@ Over the last decade, the field of artificial intelligence (AI) has experienced 
 
 ![Enter image alt description](Images/CAe_Image_2.png)
 
-Figure: a list of "Nowhere near solved” [...] issues in AI, from "A brief history of AI", published in January 2021 ([source](https://www.amazon.com/Brief-History-Artificial-Intelligence-Where/dp/1250770742)). They also say: “At present, we have no idea how to get computers to do the tasks at the bottom of the list”. But everything in the category “Nowhere near solved” has been solved by GPT-4 ([source](https://arxiv.org/abs/2303.12712)), except human-level general intelligence.
+***Figure****: a list of "Nowhere near solved” [...] issues in AI, from "A brief history of AI", published in January 2021 (**[source](https://www.amazon.com/Brief-History-Artificial-Intelligence-Where/dp/1250770742)**). They also say: “At present, we have no idea how to get computers to do the tasks at the bottom of the list”. But everything in the category “Nowhere near solved” has been solved by GPT-4 (**[source](https://arxiv.org/abs/2303.12712)**), except human-level general intelligence.*
 
 **Scaling**. Remarkably, GPT-4 is trained using roughly the same methods as GPT-1, 2, and 3. The only significant difference is the size of the model and the data given to it during training. The size of the model has gone from 1.5B parameters to hundreds of billions of parameters, and datasets have become similarly larger and more diverse.
 
 ![Enter image alt description](Images/uW1_Image_3.png)
 
-***Figure****: How fast is AI Improving? (**[source](https://theaidigest.org/progress-and-dangers)**) *
+***Figure****: How fast is AI Improving? (**[source](https://theaidigest.org/progress-and-dangers)**)*
 
 We have observed that just an expansion in scale has contributed to enhanced performance. This includes improvements in the ability to generate contextually appropriate responses, and highly diverse text across a range of domains. It has also contributed to overall improved understanding, and coherence. Most of those advances in the GPT series come from increasing the size and computation power behind the models, rather than fundamental shifts in architecture or training.
 
@@ -79,7 +79,7 @@ AI systems are becoming increasingly multimodal. This means that they can proces
 
 **Multi-modality**. A model is called multi-modal when both the inputs and outputs of a model can be in more than one modality. E.g. audio-to-text, video-to-text, text-to-image, etc…
 
-![Enter image alt description](Images/oIJ_Image_9.png)
+![Enter image alt description](Images/6oW_Image_9.png)
 
 ***Figure:**** Image-to-text and text-to-image multimodality from the Flamingo model. (**[source](https://arxiv.org/abs/2204.14198)**)*
 

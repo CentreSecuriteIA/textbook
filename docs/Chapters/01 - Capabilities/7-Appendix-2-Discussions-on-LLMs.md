@@ -1,6 +1,6 @@
 # Appendix 2: Discussions on LLMs
 
-⌛ Estimated Reading Time: 21 minutes. (4189 words)
+⌛ Estimated Reading Time: 21 minutes. (4131 words)
 
 
 Current LLMs, although trained on abundant data, are still far from perfect.
@@ -41,11 +41,7 @@ While it is true that AI has not yet achieved maximal robustness, for example be
 
 ## Shallow Understanding?
 
-**Stochastic Parrot: Do AIs only memorize information without truly compressing it?**
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Unfortunately , too few people understand the distinction between memorization and understanding. It&#39;s not some lofty question like &quot;does the system have an internal world model?&quot;, it&#39;s a very pragmatic behavior distinction: &quot;is the system capable of broad generalization, or is… <a href="https://t.co/1fagV1YI15">https://t.co/1fagV1YI15</a></p>&mdash; François Chollet (@fchollet) <a href="https://twitter.com/fchollet/status/1735799743505433020?ref_src=twsrc%5Etfw">December 15, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-Figure: Tweet from François Chollet ([source](https://twitter.com/fchollet/status/1735799743505433020))
+**Stochastic Parrots: Do AIs only memorize information without truly compressing it?**
 
 For example, François Chollet said ([tweet](https://twitter.com/fchollet/status/1735799743505433020)): *“Unfortunately, too few people understand the distinction between memorization and understanding. It's not some lofty question like "does the system have an internal world model?", it's a very pragmatic behavior distinction: "is the system capable of broad generalization, or is it limited to local generalization?”. *François Chollet then listed papers aiming to show that LLMs do not really understand. ([source](https://x.com/fchollet/status/1736079054313574578?s=20)) There is a small informal commentary on this list [at this link](https://x.com/CRSegerie/status/1736466297175560268?s=20).
 
@@ -54,7 +50,7 @@ There are two archetypal ways to represent information in an LLM: either memoriz
 ![Enter image alt description](Images/XcP_Image_30.png)
 
 
-Figure: From Superposition, Memorization, and Double Descent ([source](https://transformer-circuits.pub/2023/toy-double-descent/index.html))
+***Figure****: From Superposition, Memorization, and Double Descent (**[source](https://transformer-circuits.pub/2023/toy-double-descent/index.html)**)*
 
 AI is capable of compressing information, often in a relevant manner. For example, when examining the representations of words representing colors in LLMs like “red” and “blue”, the structure formed by all the embeddings of those colors creates the correct color circle (This uses a nonlinear projection such as a T-SNE to project from high-dimensional space to the 2D plane). Other examples of world models are presented in ([source](https://arxiv.org/abs/2304.00612)). Of course, there are other domains where AI resembles more of a look-up table, but it is a spectrum, and each case should be examined individually. For instance, for "factual association," the paper “Locating and Editing Factual Associations in GPT” shows that the underlying data structure for GPT-2 is more of a look-up table ([source](https://arxiv.org/abs/2202.05262)), but the paper “Emergent Linear Representations in World Models of Self-Supervised Sequence Models” demonstrates that a small GPT is capable of learning a compressed world model of OthelloGpt. ([source](https://arxiv.org/abs/2309.00941)) There are more examples in the section dedicated to world models in the paper “Eight Things to Know about Large Language Models” ([source](https://arxiv.org/abs/2304.00612)).
 
@@ -136,7 +132,7 @@ It should be noted that scaffold-based long-term memory is not considered an ele
 
 Planning is an area that AIs currently struggle with, but there is significant progress. Some paradigms, such as those based on scaffolding, enable task decomposition and breaking down objectives into smaller, more achievable sub-objectives.
 
-Furthermore, the paper [Voyager](https://voyager.minedojo.org/) demonstrates that it is possible to use GPT-4 for planning in Natural language in Minecraft. See the [Voyager] box.
+Furthermore, the paper “*Voyager: An Open-Ended Embodied Agent with Large Language Models*” demonstrates that it is possible to use GPT-4 for planning in Natural language in Minecraft.  ([source](https://arxiv.org/abs/2305.16291))
 
 ## Differences with the brain
 

@@ -9,7 +9,7 @@ We can anticipate that models will continue to scale in the near future. Increas
 
 ![Enter image alt description](Images/yZw_Image_31.png)
 
-Figure: Monitoring the trends in ML quantitatively. Epoch (2023), "Key trends and figures in Machine Learning". Published online at epochai.org. ([source](https://epochai.org/trends))
+***Figure****: Monitoring the trends in ML quantitatively. Epoch (2023), "Key trends and figures in Machine Learning". Published online at epochai.org. (**[source](https://epochai.org/trends)**)*
 
 ## Compute Trends
 
@@ -21,7 +21,7 @@ In 2010, before the deep learning revolution, DeepMind co-founder Shane Legg pre
 
 ![Enter image alt description](Images/fhc_Image_32.png)
 
-Figure: Epoch (2023), "[Key trends and figures in Machine Learning](https://epochai.org/trends)"
+***Figure****: Epoch (2023), "**[Key trends and figures in Machine Learning](https://epochai.org/trends)**"*
 
 ## Model Size Trends
 
@@ -39,7 +39,7 @@ The following table and graph illustrate the trend change in machine learning mo
 
 ![Enter image alt description](Images/iPe_Image_33.png)
 
-Figure: Villalobos, Pablo et. al. (Jul 2022) “[Machine Learning Model Sizes and the Parameter Gap](https://arxiv.org/abs/2207.02852)”
+***Figure****: Villalobos, Pablo et. al. (Jul 2022) “**[Machine Learning Model Sizes and the Parameter Gap](https://arxiv.org/abs/2207.02852)**”*
 
 ## Algorithmic Trends
 
@@ -75,6 +75,6 @@ The median projection for when the training dataset of notable ML models exhaust
 
 ![Enter image alt description](Images/sZd_Image_34.png)
 
-Figure: ML data consumption and data production trends for low-quality text, high-quality text, and images. - Source: Epoch (2023), "[Key trends and figures in Machine Learning](https://epochai.org/trends)"
+***Figure****: ML data consumption and data production trends for low-quality text, high-quality text, and images. - Source: Epoch (2023), "**[Key trends and figures in Machine Learning](https://epochai.org/trends)**"*
 
 Even if we run out of Data, many solutions are proposed, from using synthetic data, for example, filtering and preprocessing the data with GPT-3.5 to create a new cleaner dataset, an approach used in the paper "Textbooks are all you need" with models like Phi 1.5B that demonstrate excellent performance for their size through the use of high-quality filtered data, to the use of more efficient trainings, or being more efficient by training on more epochs.
