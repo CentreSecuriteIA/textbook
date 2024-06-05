@@ -3,6 +3,8 @@ site_url: https://centresecuriteia.github.io/textbook/
 copyright: MIT; 2023 - 2024 Centre pour la Sécurité de l'IA (CeSIA) - EffiSciences
 theme:
   name: material
+  font:
+    text: Lora
   custom_dir: overrides
   features:
     - navigation.tabs
