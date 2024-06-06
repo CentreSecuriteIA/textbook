@@ -117,6 +117,7 @@
 
 
 *[Fast takeoff]: A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.
+*[fast takeoff]: A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.
 *[FOOM]: A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.
 *[hard takeoff]: A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.
 
@@ -193,10 +194,16 @@
 
 
 *[Multipolar scenario]: A scenario in which there end up being multiple powerful decision makers.
+*[multipolar scenario]: A scenario in which there end up being multiple powerful decision makers.
+*[multipolar takeoff]: A scenario in which there end up being multiple powerful decision makers.
+*[Multipolar takeoff]: A scenario in which there end up being multiple powerful decision makers.
 *[Multipolarity]: A scenario in which there end up being multiple powerful decision makers.
 
 
 *[Unipolar scenario]: A scenario in which there ends up being a single powerful decision maker.
+*[unipolar scenario]: A scenario in which there ends up being a single powerful decision maker.
+*[unipolar takeoff]: A scenario in which there ends up being a single powerful decision maker.
+*[Unipolar takeoff]: A scenario in which there ends up being a single powerful decision maker.
 *[Unipolarity]: A scenario in which there ends up being a single powerful decision maker.
 
 *[Out-of-distribution]: A case is out-of-distribution if it is very different from the cases the system encountered during training.
@@ -277,13 +284,19 @@
 
 
 *[Slow takeoff]: A transition from human-level AI to superintelligent AI that goes slowly. This usually implies that we have time to react.
+*[slow takeoff]: A transition from human-level AI to superintelligent AI that goes slowly. This usually implies that we have time to react.
 *[soft takeoff]: A transition from human-level AI to superintelligent AI that goes slowly. This usually implies that we have time to react.
+*[Soft takeoff]: A transition from human-level AI to superintelligent AI that goes slowly. This usually implies that we have time to react.
 
 
 *[Takeoff homogeneity]: The degree to which the first AI systems that become superintelligent will have similar designs and goals.
 
 *[Homogeneous scenario]: A scenario where the first AIs to reach superintelligence are similar in nature.
+*[Homogeneous takeoff]: A scenario where the first AIs to reach superintelligence are similar in nature.
+*[homogeneous takeoff]: A scenario where the first AIs to reach superintelligence are similar in nature.
 *[Heterogeneous scenario]: A scenario where the first AIs to reach superintelligence are different in nature.
+*[Heterogeneous takeoff]: A scenario where the first AIs to reach superintelligence are different in nature.
+*[heterogeneous takeoff]: A scenario where the first AIs to reach superintelligence are different in nature.
 
 *[Terminal goals]: Goals which are valued as ends in themselves, rather than as means to some other end. 
 *[terminal goal]: Goals which are valued as ends in themselves, rather than as means to some other end. 
