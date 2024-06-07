@@ -42,48 +42,37 @@ These chapters assume some basic familiarity with Machine Learning (ML). Please 
 
 #### [Chapter 6: **Reward Misspecification**](06 - Reward Misspecification/README.md)
 
-Reward, Reward Misspecification, Optimization, Goodhart's Law, Learning by imitation, Learning by Feedback.
-
-
-Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=nKJlF-olKmg)
+Concepts covered: Reward, Reward Misspecification, Optimization, Goodhart's Law, Learning by imitation, Learning by Feedback.
 
 #### [Chapter 7: **Goal Misgeneralization**](07 - Goal Misgeneralization/README.md)
 
 Concepts covered: Optimization, Mesa-optimization, Inner-Alignment, Deceptive Alignment.
 
-Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=bJLcIBixGj8)
-
 #### [Chapter 8.1: **Task Decomposition**](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/FFz6H35Gy6BArHxkc)
 
-Scalable Oversight Problem, Sandwiching, Task decomposition, Factored cognition, Iterated Amplification, amplification in modern LLMs, Process Supervision.
-
-Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=v9M2Ho9I9Qo)
+Concepts covered: Scalable Oversight Problem, Sandwiching, Task decomposition, Factored cognition, Iterated Amplification, amplification in modern LLMs, Process Supervision.
 
 #### [Chapter 8.2: **Debate**](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/WP4fciGn3rNtmq3tY)
 
-Debate, obfuscated arguments problem, AI-written critiques, problems with debate.
+Concepts covered: Debate, obfuscated arguments problem, AI-written critiques, problems with debate.
 
 #### [Chapter 8.3: **Adversarial Techniques**](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/nz5NNAtfKJLmbtksL)
 
-Unrestricted adversarial training, adversarial training, red-teaming language models, interpretability for finding adversarial examples, relaxed adversarial training.
-
-Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=wIX00bZ173k)
+Concepts covered: Unrestricted adversarial training, adversarial training, red-teaming language models, interpretability for finding adversarial examples, relaxed adversarial training.
 
 #### [Chapter 9.1: **Interpretability: Vision**](https://www.lesswrong.com/posts/XZfJvxZqfbLfN6pKh/introductory-textbook-to-vision-models-interpretability)
 
-Gentle introduction: [Youtube Video](https://www.youtube.com/watch?v=cqMe9E4p7fE).
-
-Feature visualization, saliency techniques (Grad-CAM), activation atlas, circuits, early vision, RL vision, automatic interpretability (NetDissect), multimodal neurons.
+Concepts covered: Feature visualization, saliency techniques (Grad-CAM), activation atlas, circuits, early vision, RL vision, automatic interpretability (NetDissect), multimodal neurons.
 
 #### [Chapter 9.2: **Interpretability: NLP**](https://drive.google.com/file/d/145_PXa5XE1iaq911NmO25Res_ALAGLlE/view?usp=sharing)
 
-Logit Lens, ROME, Probing, Induction heads, limits of interpretability.
+Concepts covered: Logit Lens, ROME, Probing, Induction heads, limits of interpretability.
 
 #### [Chapter 10: **Agent Foundations**](https://docs.google.com/document/d/1z4CwGDUzHvPvfXNxyfDaIfh9kK1JBJWEcfdGUutfJY0/edit)
 
 !!! warning "This chapter is still being written, the link is a very early draft."
 
-Utility functions, agent AI, tool AI, True Name, Shard theory, CEV, CIRL.
+Concepts covered: Utility functions, agent AI, tool AI, True Name, Shard theory, CEV, CIRL.
 
 
 The field of alignment does not stop at just the concepts presented in the textbook. Many schools of thought are only briefly touched upon. To get an overview of the field, the best advice is to stay curious and try out various different viewpoints.

@@ -1,7 +1,3 @@
-IGNORE THIS FILE FOR NOW, just testing out section numbering
-
-
-
 import os
 import re
 from pathlib import Path
@@ -57,92 +53,99 @@ def calculate_reading_time(text):
     reading_time = math.ceil(words / words_per_minute)
     return f"⌛ Estimated Reading Time: {reading_time} minutes. ({words} words)"
 
+def extract_chapter_info(content):
+    """Extract the chapter number and title from the first line of the content."""
+    first_line = content.split('\n', 1)[0]
+    chapter_info = re.match(r'#\s*Chapter\s*(\d+)\s*-\s*(.+)', first_line)
+    if chapter_info:
+        chapter_number = chapter_info.group(1)
+        chapter_title = chapter_info.group(2).strip()
+    else:
+        raise ValueError("The first line of the document does not match the expected format '# Chapter X - Title'")
+    return chapter_number, chapter_title
+
+def extract_overview(content):
+    """Create the overview by ignoring the table of contents and writing the first section to README.md."""
+    section_pattern = re.compile(r'(#+)\s*(.+)')
+    lines = content.splitlines()
+    toc_ended = False
+    overview_content = []
+    first_section_found = False
+    i = 0
+
+    # Skip the chapter title and table of contents
+    while i < len(lines):
+        line = lines[i]
+        if re.match(r'\[.+\]\(#.+\)', line.strip()):
+            i += 1
+        else:
+            toc_ended = True
+            break
+
+    # Process the first real section (overview)
+    if toc_ended:
+        while i < len(lines):
+            line = lines[i]
+            match = section_pattern.match(line)
+            if match:
+                header_level = len(match.group(1))
+                title = match.group(2).strip()
+                if header_level == 1:
+                    first_section_found = True
+                    i += 1
+                    while i < len(lines) and not section_pattern.match(lines[i]):
+                        overview_content.append(lines[i])
+                        i += 1
+                    break
+            i += 1
+
+    if not first_section_found:
+        raise ValueError("No valid section found after the table of contents.")
+
+    return '\n'.join(overview_content), '\n'.join(lines[i:])
+
 def split_and_number_sections(content, chapter_number):
-    """Split content into numbered sections and handle appendices separately."""
+    """Split content into numbered sections."""
     section_pattern = re.compile(r'(#+)\s*(.+)')
     sections = []
     current_section = []
     section_counter = 0
     subsection_counter = 0
     subsubsection_counter = 0
-    appendix_counter = 0
-    in_appendix = False
-    overview_section = True
-    toc_found = False
-    toc_ended = False
-    overview_content = []
-
     lines = content.splitlines()
     i = 0
+
     while i < len(lines):
         line = lines[i]
         match = section_pattern.match(line)
-        
-        if overview_section:
-            if match and match.group(1) == '#':
-                overview_section = False
-                current_section = []
-                i += 1
-                while i < len(lines) and not section_pattern.match(lines[i]):
-                    current_section.append(lines[i])
-                    i += 1
-                overview_content = current_section
-                current_section = []
-            else:
-                if "Table of Contents" in line or toc_found:
-                    toc_found = True
-                    if line.strip() == "":
-                        toc_ended = True
-                    if toc_ended:
-                        continue
-                i += 1
-            continue
-        
         if match:
             header_level = len(match.group(1))
             title = match.group(2).strip()
 
-            if header_level == 1 and "Appendix" in title:
-                title = re.sub(r'Appendix \d+:\s*', '', title)
-                if current_section:
-                    sections.append(current_section)
-                in_appendix = True
-                appendix_counter += 1
-                section_counter = appendix_counter
-                subsection_counter = 0
-                subsubsection_counter = 0
-                current_section = [f"# A{section_counter} {title}"]
-            elif header_level == 1:
+            if header_level == 1:
                 if current_section:
                     sections.append(current_section)
                 section_counter += 1
                 current_section = [f"# {chapter_number}.{section_counter} {title}"]
                 subsection_counter = 0
                 subsubsection_counter = 0
-                in_appendix = False
             elif header_level == 2:
                 subsection_counter += 1
                 subsubsection_counter = 0
-                if in_appendix:
-                    current_section.append(f"## A{section_counter}.{subsection_counter} {title}")
-                else:
-                    current_section.append(f"## {chapter_number}.{section_counter}.{subsection_counter} {title}")
+                current_section.append(f"## {chapter_number}.{section_counter}.{subsection_counter} {title}")
             elif header_level == 3:
                 subsubsection_counter += 1
-                if in_appendix:
-                    current_section.append(f"### A{section_counter}.{subsection_counter}.{subsubsection_counter} {title}")
-                else:
-                    current_section.append(f"### {chapter_number}.{section_counter}.{subsection_counter}.{subsubsection_counter} {title}")
+                current_section.append(f"### {chapter_number}.{section_counter}.{subsection_counter}.{subsubsection_counter} {title}")
             i += 1
         else:
             if current_section:
                 current_section.append(line)
             i += 1
-    
+
     if current_section:
         sections.append(current_section)
-    
-    return ['\n'.join(section) for section in sections], '\n'.join(overview_content)
+
+    return ['\n'.join(section) for section in sections]
 
 def extract_zip(zip_path, extract_to):
     """Extract the zip file to the specified directory."""
@@ -161,27 +164,22 @@ def split_markdown(zip_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
 
-    first_line = content.split('\n', 1)[0]
-    chapter_info = re.match(r'#\s*Chapter\s*(\d+)\s*-\s*(.+)', first_line)
-    if chapter_info:
-        chapter_number = chapter_info.group(1)
-        chapter_title = chapter_info.group(2).strip()
-    else:
-        raise ValueError("The first line of the document does not match the expected format '# Chapter X - Title'")
-
+    chapter_number, chapter_title = extract_chapter_info(content)
     chapter_folder_name = f"{chapter_number.zfill(2)} - {chapter_title}"
     
-    numbered_sections, overview_content = split_and_number_sections(content, chapter_number)
-    
-    section_files_created = set()
+    overview_content, remaining_content = extract_overview(content)
     
     chapter_path = Path("docs/Chapters") / chapter_folder_name
     chapter_path.mkdir(parents=True, exist_ok=True)
     
     # Create README.md for the overview section
     with open(chapter_path / "README.md", 'w', encoding='utf-8') as readme_file:
-        readme_file.write('\n'.join(overview_content))
+        readme_file.write(overview_content)
     print("Created README.md.")
+    
+    numbered_sections = split_and_number_sections(remaining_content, chapter_number)
+    
+    section_files_created = set()
     
     for i, section in enumerate(numbered_sections):
         lines = section.split('\n')
@@ -191,10 +189,7 @@ def split_markdown(zip_path):
         reading_time = calculate_reading_time(body)
         body = process(body)
         sanitized_title = sanitize_filename(title)
-        output_filename = f"{sanitized_title}.md" if title_line.startswith("# A") else f"{chapter_number}.{i + 1} - {sanitized_title}.md"
-        
-        if output_filename in section_files_created:
-            output_filename = f"{chapter_number}.{i + 1} - {sanitized_title}.md"
+        output_filename = f"{chapter_number}.{i + 1} - {sanitized_title}.md"
         
         section_files_created.add(output_filename)
         
@@ -209,5 +204,5 @@ def split_markdown(zip_path):
     shutil.rmtree(extract_to)
 
 # Example usage
-split_markdown('/home/markov/downloads/textbook/Chapter 1 - Capabilities - [Commentable]_05-06-2024_00 03 57.zip')
+split_markdown('/home/markov/git/textbook/source_zips/01_Capabilities_07-06-2024.zip')
 print("Don't forget to check the result of the formatting and then commit")

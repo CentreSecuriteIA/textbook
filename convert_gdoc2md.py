@@ -12,6 +12,7 @@ import re
 from pathlib import Path
 import shutil
 import math
+import zipfile
 
 def sanitize_filename(filename):
     # Remove invalid characters for filenames

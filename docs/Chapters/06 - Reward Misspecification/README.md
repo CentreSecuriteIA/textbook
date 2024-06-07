@@ -13,3 +13,10 @@
 
 5. **Learning by Feedback**: The final section investigates proposals aiming to rectify reward misspecification by providing feedback to the machine learning models. The section also provides a comprehensive insight into how current large language models (LLMs) are trained. The discussion covers reward modeling, reinforcement learning from human feedback (RLHF), reinforcement learning from artificial intelligence feedback (RLAIF), and the limitations of these approaches.
 
+Here is a quick video introduction to the concept of specification gaming:
+<iframe
+    style=" width: 100%; aspect-ratio: 16 / 9;"
+    frameborder="0"
+    allowfullscreen
+    src="https://www.youtube.com/embed/jQOBaGka7O0">
+</iframe>

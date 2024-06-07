@@ -41,9 +41,8 @@ A terminal goal, also known as an “intrinsic goal”, is an objective that you
 
 **Examples and evidence of instrumentally convergent behavior**. One example can be seen from OpenAI, where agents trained to play hide and seek learned to use objects and construct shelters to stay hidden. They were not rewarded for using these objects, instead, the hiders were rewarded for evading the seekers, and the seekers were rewarded for finding them. This behavior emerged as instrumentally convergent. ([source](https://arxiv.org/abs/1909.07528))
 
-??? note “**Can’t We Just Shut Down an AI? The Stop-Button Problem**”
+??? note "**Can’t We Just Shut Down an AI? The Stop-Button Problem**"
 
-	
 	What would we do if the AIs became competent and self-preserving?
 	
 	One thing that might make your AI system safer is to include an off-switch. This way, if it ever does anything we don’t like, we can turn it off. Unfortunately, this only works if we can turn it off before things get bad, which we might not be able to do when the AI thinks much faster than humans.

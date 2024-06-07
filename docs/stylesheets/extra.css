@@ -8,18 +8,17 @@
 	/*text-align: justify;*/
 	/*text-justify: inter-word;*/
 	/*padding: 5px;*/
-    /*margin: 0 auto; [> Center the paragraph <]*/
-    /*width: 100%; [> Default width for smaller screens <]*/
+	/*margin: 0 auto; [> Center the paragraph <]*/
+	/*width: 100%; [> Default width for smaller screens <]*/
 /*}*/
 
 /*[> Styles for larger screens <]*/
 /*@media (min-width: 1000px) {*/
-    /*.md-content {*/
-        /*width: 60vw; [> Use viewport width for larger screens <]*/
-        /*max-width: 768px; [> Set a maximum width <]*/
-    /*}*/
+	/*.md-content {*/
+		/*width: 60vw; [> Use viewport width for larger screens <]*/
+		/*max-width: 768px; [> Set a maximum width <]*/
+	/*}*/
 /*}*/
-
 
 /*h2,h3 {*/
   /*color: white;*/
