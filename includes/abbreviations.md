@@ -3,9 +3,12 @@
 
 *[LLM]: Large Language Model. An AI model that takes in some text and predicts how it’s most likely to continue.
 *[LLMs]: Large Language Model. An AI model that takes in some text and predicts how it’s most likely to continue.
-*[Large language model]: An AI model that takes in some text and predicts how it’s most likely to continue.
-*[language model]: An AI model that takes in some text and predicts how it’s most likely to continue.
-*[large language models]: An AI model that takes in some text and predicts how it’s most likely to continue.
+
+
+<!--
+*[Large language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[large language models]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
 
 *[ML]: Machine Learning. An approach to AI in which, instead of designing an algorithm directly, we have the system search through possible algorithms based on how well they do on some training data.
 
@@ -14,9 +17,9 @@
 
 *[LMM]: Large Multimodal Model. An AI model that can take in and produce multiple forms of data (such as both text and images).
 *[LMMs]: Large Multimodal Model. An AI model that can take in and produce multiple forms of data (such as both text and images).
-*[Multimodal]: An AI model that can take in and produce multiple forms of data (such as both text and images).
+*[Multimodal model]: An AI model that can take in and produce multiple forms of data (such as both text and images).
 *[multimodal system]: An AI model that can take in and produce multiple forms of data (such as both text and images).
-*[multimodal model]: *[multimodal AI]: An AI model that can take in and produce multiple forms of data (such as both text and images).
+*[multimodal model]: An AI model that can take in and produce multiple forms of data (such as both text and images).
 
 *[CEV]: Coherent Extrapolated Volition.
 *[CAV]: Coherent Aggregated Volition.

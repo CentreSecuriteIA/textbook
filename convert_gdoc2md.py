@@ -121,20 +121,7 @@ def split_markdown(folder_source, chapter):
     os.remove(chapter_path / "Output.md")
 
 split_markdown(
-    folder_source='/home/markov/downloads/textbook/chapter_1.3',
+    folder_source='/home/markov/git/00_textbook_temp/source_zips/ch_1.3',
     chapter = "01 - Capabilities",
-
-    # Chapter names (match this exact naming):
-        # 01 - Capabilities
-        # 02 - Risks Landscape
-        # 03 - Solutions Landscape
-        # 04 - Evaluations
-        # 05 - Governance
-        # 06 - Reward Misspecification
-        # 07 - Goal Misgeneralization
-        # 08 - Oversight
-        # 09 - Intepretability
-        # 10 - Agent Foundations
-
 )
 print("Don't forget to check the result of the formatting and then commit")

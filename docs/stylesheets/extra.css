@@ -3,15 +3,15 @@
   /*- stylesheets/extra.css*/
 
 
-/*Uncomment if you want the narrower view width.*/
-/*.md-content {*/
-	/*text-align: justify;*/
-	/*text-justify: inter-word;*/
-	/*padding: 5px;*/
-	/*margin: 0 auto; [> Center the paragraph <]*/
-	/*width: 100%; [> Default width for smaller screens <]*/
-/*}*/
+.md-content {
+	text-align: justify;
+	text-justify: inter-word;
+	padding: 5px;
+	margin: 0 auto; /* Center the paragraph */
+	width: 100%; /* Default width for smaller screens */
+}
 
+/*Uncomment if you want the narrower view width.*/
 /*[> Styles for larger screens <]*/
 /*@media (min-width: 1000px) {*/
 	/*.md-content {*/
@@ -20,13 +20,11 @@
 	/*}*/
 /*}*/
 
-/*h2,h3 {*/
-  /*color: white;*/
-  /*font-weight: bold;*/
-  /*background-color:#161616;*/
-  /*padding: 7px 7px 7px 20px; <!--top right bottom left-->*/
-  /*text-transform: uppercase;*/
-/*}*/
+h2,h3 {
+  font-weight: bold;
+  padding: 7px 7px 7px 20px; <!--top right bottom left-->
+  text-transform: uppercase;
+}
 
 /*.md-nav__item{*/
 	/*padding:0px;*/

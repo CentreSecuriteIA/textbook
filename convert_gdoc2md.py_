@@ -204,5 +204,5 @@ def split_markdown(zip_path):
     shutil.rmtree(extract_to)
 
 # Example usage
-split_markdown('/home/markov/git/textbook/source_zips/01_Capabilities_07-06-2024.zip')
+split_markdown('/home/markov/git/00_textbook_temp/source_zips/01_Capabilities_07-06-2024_2.zip')
 print("Don't forget to check the result of the formatting and then commit")

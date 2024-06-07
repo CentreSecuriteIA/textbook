@@ -120,3 +120,114 @@ Proponents include OpenAI ([sou](https://openai.com/blog/planning-for-agi-and-be
 [^3]:The Superintelligence team at OpenAI announces their goal of creating AI capable of autonomous alignment research within 4 years (by 2027). ([source](https://openai.com/blog/introducing-superalignment))
 
 [^4]:According to the DeepMind team, there are "not many more fundamental innovations needed for AGI. Scaled-up deep learning foundation models with RL from human feedback (RLHF) fine-tuning [should suffice]"; ([source](https://www.lesswrong.com/posts/GctJD5oCDRxCspEaZ/clarifying-ai-x-risk))
+
+## Questions & Exercises
+
+??? question "What does leveraging computation mean in the context of AI models?"
+
+	
+	Leveraging computation refers to the strategic use of computational resources to maximize AI model performance. This involves utilizing powerful processors, extensive data, and advanced algorithms to enhance model capabilities.
+	
+	*Example*: When training large language models like GPT-3, leveraging computation involves using thousands of GPUs and TPUs over weeks or months to process vast datasets, enabling the model to generate coherent and contextually relevant text.
+	
+
+??? question "What is the main idea behind Rich Sutton's Bitter Lesson?"
+
+	
+	Rich Sutton's "The Bitter Lesson" emphasizes that general methods leveraging computation and large-scale data tend to outperform specialized, human-designed solutions in AI development over time. It is considered 'bitter' because it reveals that human ingenuity and domain-specific knowledge are less critical than leveraging computation and general methods.
+	
+	*Example*: In AI game playing, general algorithms like deep reinforcement learning have outperformed systems relying on handcrafted strategies. AlphaGo's victory over Lee Sedol, achieved through a combination of deep learning and Monte Carlo tree search, exemplifies this lesson.
+	
+
+??? question "How does the bitter lesson impact considerations in AI Safety?"
+
+	
+	The bitter lesson has safety implications as it suggests that the most effective AI systems will likely be those that are less interpretable and predictable due to their scale and complexity.
+	
+	*Example*: Larger models, such as OpenAI's GPT-3 with 175 billion parameters, exhibit emergent behaviors that are not easily predictable. These behaviors arise because the interactions between a vast number of parameters can create new capabilities and failure modes that were not present or detectable in smaller models. This unpredictability necessitates robust safety measures, such as rigorous testing and monitoring, to mitigate potential risks.
+	
+	Additionally, as models scale, their internal workings become more opaque. The sheer number of parameters and the complexity of their interactions make it challenging to understand how specific inputs lead to particular outputs. This lack of interpretability hampers the ability to diagnose and rectify issues, increasing the risk of unintended behaviors. For instance, understanding why GPT-3 might generate a specific response requires deep analysis of its training data and parameter interactions, which is a non-trivial task.
+	
+
+??? question "What are the primary variables involved in scaling AI models?"
+
+	
+	The primary variables involved in scaling AI models are compute (processing power), data (dataset size), and parameters (the number of tunable variables in the model).
+	
+
+??? question "How does compute impact AI model performance?"
+
+	
+	Compute impacts AI model performance by determining the speed and capacity of training runs. Access to higher amounts of compute allows for bigger more complex models and longer training times, leading to better performance and capabilities.
+	
+	*Example*: Google's huge TPU clusters in their data centers enable training models like Gemini at a scale that would be impractical with less advanced hardware, resulting in significant performance improvements.
+	
+
+??? question "How does the parameter count affect an AI model's capabilities?"
+
+	
+	The parameter count is effectively the model size. It affects an AI model's capabilities by allowing it to learn more complex representations. More parameters enable the model to capture intricate patterns in the data, but also increase the risk of overfitting.
+	
+	*Example*: One classic example is the Parti class of models which as they simply scaled from 350 million (Parti-350M) parameters, to 20 billion (Parti-20B), the model gained increased capability to generate coherent text in images.
+	
+
+??? question "What is a scaling law in the context of machine learning models?"
+
+	
+	Scaling laws describe how the performance of machine learning models improves predictably with increased computational resources, model size, and data.
+	
+	*Example*: OpenAI's research found that doubling the compute typically reduces the error rate by a fixed percentage, guiding efficient resource allocation.
+	
+
+??? question "Why are scaling laws significant for AI research and development?"
+
+	
+	Scaling laws are significant because they provide a framework for predicting the improvements in model performance as resources are scaled up, guiding investment and research strategies. They describe how the performance of AI models improves predictably with increases in three key factors: the amount of training data, the size of the model, and the length of the training run. These laws help allocate computational resources efficiently to maximize model capabilities..
+	
+	*Example*: If a research team has a fixed compute budget, scaling laws can guide them on whether to invest in more GPUs, extend the training duration, or increase the model size to achieve the best performance.
+	
+
+??? question "What are the potential risks associated with the scaling of AI models as proposed by scaling laws?"
+
+	
+	The primary risk of continued scaling is the emergence of unanticipated capabilities. Since they are unanticipated, they could pose safety concerns that we are not prepared for.
+	
+	*Example*: Foundation models might develop the ability to generate increasingly persuasive but false information, posing risks in contexts where misinformation can have serious consequences.
+	
+
+??? question "What is the scaling hypothesis in AI?"
+
+	
+	The scaling hypothesis posits that increasing the scale of models, data, and computational resources will continue to yield significant improvements in AI performance, potentially leading to more general and capable AI systems.
+	
+	*Example*: The impressive performance of GPT-3 and GPT-4, achieved by scaling up parameters and data, supports the scaling hypothesis, suggesting that simply continuing further scaling would lead to even more advanced AI capabilities.
+	
+
+??? question "How do scaling laws influence the safety measures needed for AI models?"
+
+	
+	Scaling laws influence safety measures by providing a framework for understanding how performance scales with increased data, model size, and compute. They help predict when and where safety issues might arise as models grow.
+	
+
+??? question "What is the weak scaling hypothesis?"
+
+	
+	The weak scaling hypothesis suggests that while scaling models is important, achieving AGI will also require discovering the right algorithms.
+	
+	*Example*: LeCun's H-Jepa architecture and Richard Sutton’s Alberta Plan propose developing specific brain-like modules, emphasizing the need for new paradigms alongside scaling.
+	
+
+??? question "What is the strong scaling hypothesis?"
+
+	
+	The strong scaling hypothesis posits that merely scaling up models, data, and computation will lead to increasingly sophisticated AI behavior, eventually resulting in AGI.
+	
+
+??? question "What are the safety implications of adhering to the weak and strong scaling hypotheses?"
+
+	
+	The weak scaling hypothesis, which assumes linear improvements with increased compute and data, suggests that safety measures can be incrementally scaled up as models grow. However, the strong scaling hypothesis, which posits exponential improvements, implies that small increases in compute and data could lead to disproportionately large performance gains and potential safety risks.
+	
+	In high-stakes applications, even modest changes in model design or training could result in significant, unpredictable behaviors. Therefore, adhering to the strong scaling hypothesis requires more comprehensive safety protocols put in place before training a model, including extensive testing, continuous monitoring, and adaptive risk management strategies to address potential emergent behaviors.
+	
+
