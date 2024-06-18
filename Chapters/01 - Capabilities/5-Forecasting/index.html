@@ -1,0 +1,2221 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://centresecuriteia.github.io/textbook/Chapters/01%20-%20Capabilities/5-Forecasting/">
+      
+      
+        <link rel="prev" href="../4-Leveraging-Computation/">
+      
+      
+        <link rel="next" href="../6-Appendix-1-Expert-Opinions/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>Forecasting - The AI Safety Handbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lora";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#forecasting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+This is still a beta version. If you want to help us, please consider supporting us on <a
+    href=https://manifund.org/projects/ai-safety-textbook>Manifund</a>
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="The AI Safety Handbook" class="md-header__button md-logo" aria-label="The AI Safety Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The AI Safety Handbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Forecasting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Courses/" class="md-tabs__link">
+        
+  
+    
+  
+  Courses using this book
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Chapters
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="The AI Safety Handbook" class="md-nav__button md-logo" aria-label="The AI Safety Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    The AI Safety Handbook
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Courses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Courses using this book
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    01   Capabilities
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            01   Capabilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-State-of-the-Art-AI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    State-of-the-Art AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-Foundation-Models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Foundation Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-Terminology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Terminology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4-Leveraging-Computation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Leveraging Computation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Forecasting
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Forecasting
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#zeroth-order-forecasting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zeroth-Order Forecasting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-order-forecasting" class="md-nav__link">
+    <span class="md-ellipsis">
+      First-Order Forecasting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#biological-anchors-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Biological Anchors Framework
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#takeoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Takeoff
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Takeoff">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Similarity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polarity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#takeoff-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Takeoff Arguments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-Appendix-1-Expert-Opinions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 1: Expert Opinions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7-Appendix-2-Discussions-on-LLMs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 2: Discussions on LLMs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8-Appendix-3-Trends/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 3: Trends
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../02%20-%20Risks%20Landscape/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    02   Risks Landscape
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            02   Risks Landscape
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/1-Risk-Decomposition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Risk Decomposition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/2-Risk-Aggravators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Risk Aggravators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/3-Misuse-Risks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Misuse Risks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/4-Misalignment-Risk-Case/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Misalignment Risk Case
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/5-Systemic-Risks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Systemic Risks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/6-Conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conclusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/7-Appendix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../03%20-%20Solutions%20Landscape/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    03   Solutions Landscape
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            03   Solutions Landscape
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/1-AI-Safety-is-Challenging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Safety is Challenging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/2-Definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/3-Misuse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Misuse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/4-Alignment-of-AGI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alignment of AGI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/5-Alignment-of-ASI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alignment of ASI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/6-Systemic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Systemic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/7-Conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conclusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../04%20-%20Evaluations/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    04   Evaluations
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            04   Evaluations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../05%20-%20Governance/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    05   Governance
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            05   Governance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../06%20-%20Reward%20Misspecification/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    06   Reward Misspecification
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            06   Reward Misspecification
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06%20-%20Reward%20Misspecification/1-Reinforcement-Learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reinforcement Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06%20-%20Reward%20Misspecification/2-Optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Optimization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06%20-%20Reward%20Misspecification/3-Reward-Misspecification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reward Misspecification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06%20-%20Reward%20Misspecification/4-Learning-from-imitation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learning from imitation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06%20-%20Reward%20Misspecification/5-Learning-from-feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learning from feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../07%20-%20Goal%20Misgeneralization/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    07   Goal Misgeneralization
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            07   Goal Misgeneralization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07%20-%20Goal%20Misgeneralization/1-Goal-Misgeneralization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Goal Misgeneralization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07%20-%20Goal%20Misgeneralization/2-Inner-Alignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inner Alignment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07%20-%20Goal%20Misgeneralization/3-Deceptive-alignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deceptive alignment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../08%20-%20Oversight/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    08   Oversight
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            08   Oversight
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../09%20-%20Intepretability/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    09   Intepretability
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            09   Intepretability
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../10%20-%20Agent%20Foundations/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    10   Agent Foundations
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            10   Agent Foundations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="forecasting">Forecasting</h1>
+<p>⌛ Estimated Reading Time: 31 minutes. (6109 words)</p>
+<details class="note" open="open">
+<summary>Forecasting <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr> - Video Introduction</summary>
+<p><iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/3K25VPdbAjU"></iframe></p>
+<div class="admonition warning">
+<p class="admonition-title">This video is optional and not necessary to understand the text.</p>
+</div>
+</details>
+<p>This section of the chapter investigates techniques used to forecast <abbr title="The (predicted) time until AI hits some milestone, usually AGI.">AI timelines</abbr> and <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> dynamics.</p>
+<p>AI Forecasting refers to the practice of making predictions about the future progress and impacts of AI. The aim is to anticipate when certain milestones will be reached, how AI will evolve, and what implications this could have for society. Examples of milestones are passing benchmarks, achieving mouse-level intelligence, observation of qualities such as external tool use, and long-term planning. This anticipation helps us understand the potential trajectory and societal impact of AI technologies.</p>
+<p><strong>Importance of forecasting</strong>. Forecasting in AI is critical because it allows us to orient ourselves and prepare adequate safety measures and governance strategies according to both which capabilities are expected to emerge and when they are expected. Here are a couple of ways that <abbr title="The (predicted) time until AI hits some milestone, usually AGI.">timelines</abbr> might affect the AI Risk case:</p>
+<ul>
+<li>
+<p><strong>Resource Allocation and Urgency</strong>: Belief in imminent AI advancements (short <abbr title="The (predicted) time until AI hits some milestone, usually AGI.">timelines</abbr>) may prompt a swift allocation of resources toward <abbr title="A research field about how to prevent risks from advanced artificial intelligence.">AI safety</abbr>, policymaking, and immediate practical measures. This is rooted in the concern that rapid transformative AI development might leave limited time to address safety and ethical considerations.</p>
+</li>
+<li>
+<p><strong>Research Focus</strong>: The perceived timeline influences research priorities. A belief in Short <abbr title="The (predicted) time until AI hits some milestone, usually AGI.">timelines</abbr> might steer efforts toward immediate safeguards for existing or soon-to-be-developed AI systems. In contrast, a belief in longer <abbr title="The (predicted) time until AI hits some milestone, usually AGI.">timelines</abbr> allows for a deeper exploration of theoretical and foundational aspects of <abbr title="A research field about how to prevent risks from advanced artificial intelligence.">AI safety</abbr> and alignment.</p>
+</li>
+<li>
+<p><strong>Career Choices</strong>: Individual decisions on engaging in <abbr title="A research field about how to prevent risks from advanced artificial intelligence.">AI safety</abbr> work are also timeline-dependent. A short timeline perspective may drive one to contribute directly and immediately to <abbr title="A research field about how to prevent risks from advanced artificial intelligence.">AI safety</abbr> efforts. Conversely, a belief in longer <abbr title="The (predicted) time until AI hits some milestone, usually AGI.">timelines</abbr> might encourage further skill and knowledge development before entering the field.</p>
+</li>
+<li>
+<p><strong>Governance and Policy-making</strong>: Estimations of AI development <abbr title="The (predicted) time until AI hits some milestone, usually AGI.">timelines</abbr> shape governance strategies, differentiating between short-term emergency measures and long-term institutional frameworks. This distinction is crucial in crafting effective policies that are responsive to the pace of AI evolution.</p>
+</li>
+</ul>
+<h2 id="zeroth-order-forecasting">Zeroth-Order Forecasting</h2>
+<p>Zeroth-order forecasting, also known as reference class forecasting (<a href="https://forecasting.quarto.pub/book/zeroth-first.html?ref=bounded-regret.ghost.io#first-order-approximation">source</a>), uses the outcomes of similar past situations to predict future events. This method assumes that the best predictor of future events is the average outcome of these past events. By comparing a current situation with a reference class of similar past instances, forecasters can make more accurate predictions without needing to delve into the details of the current case. This technique effectively bypasses the complexities of individual situations by focusing on historical averages, offering a straightforward way to estimate future outcomes based on past experiences.</p>
+<p><strong>Understanding Reference Classes</strong>. A reference class is a collection of similar situations from the past that serves as a benchmark for making predictions. Selecting an appropriate reference class is crucial; it must closely align with the current forecasting scenario to ensure accuracy. The process involves identifying past events that share key characteristics with the situation being predicted, allowing forecasters to draw on a wealth of historical data. The challenge lies in finding a truly analogous set of instances, which requires careful analysis and expert judgment. Reference classes ground predictions in reality, providing a statistical foundation by which we can gauge the likelihood of future occurrences.</p>
+<p><strong>The Role of Anchors in Forecasting</strong>. Anchors are initial estimates or known data points that act as a starting point for predictions, helping to set expectations and guide subsequent adjustments. They are crucial for establishing a baseline from which to refine forecasts, offering a concrete reference that aids in calibration and reducing speculation. While an anchor typically refers to a specific data point or benchmark, a reference class encompasses a broader set of data or experiences, making both concepts integral to informed forecasting. Anchors help in grounding the forecasting process, ensuring that predictions are not made in a vacuum but are instead based on observable and reliable data.</p>
+<p><strong>Integrating Anchors and Reference Classes</strong>. Together, anchors and reference classes form the backbone of effective forecasting. Anchors provide a solid starting point, while reference classes offer a comprehensive historical context, allowing forecasters to approach predictions with a balanced perspective. This combination enables a more systematic and data-driven approach to forecasting, minimizing biases and enhancing the reliability of predictions.</p>
+<p><strong>What are some important anchors?</strong> In the context of forecasting AI progress, some key anchors to consider include:</p>
+<ul>
+<li>
+<p><strong>Current machine learning (<abbr title="Machine Learning. An approach to AI in which, instead of designing an algorithm directly, we have the system search through possible algorithms based on how well they do on some training data.">ML</abbr>) anchor</strong>. The current state of machine learning systems serves as a starting point for forecasting future AI capabilities. By examining the strengths and limitations of existing <abbr title="Machine Learning. An approach to AI in which, instead of designing an algorithm directly, we have the system search through possible algorithms based on how well they do on some training data.">ML</abbr> systems, researchers can make educated guesses about the trajectory of AI development. This methodology can then be refined into the first-order forecasting methodology.</p>
+</li>
+<li>
+<p><strong>Biological anchor</strong>. Comparisons to biological systems, like the human brain, serve as useful anchors. For instance, the 'computational capacity of the human brain' is often used as a benchmark to estimate when AI might achieve comparable capabilities.</p>
+</li>
+<li>
+<p><strong><abbr title="Shorthand for “computing power”. It may refer to, for instance, physical infrastructure such as CPUs or GPUs that perform processing, or the amount of processing power needed to train a model.">Compute</abbr> anchor</strong>. This refers to the advancements in computing hardware that could potentially influence the speed and efficiency of AI development. It also covers the financial cost of training AI models, especially large-scale ones. Understanding this cost can provide insights into the resources required for further AI progress.</p>
+</li>
+</ul>
+<p>This is because both methods leverage the concept of 'reference classes' or 'anchors' to make predictions about future developments in AI.</p>
+<h2 id="first-order-forecasting">First-Order Forecasting</h2>
+<p>First-order forecasting moves beyond the static approach of zeroth-order forecasting by considering the rate of change observed in historical data. The first-order approximation is like saying, "If the rate of change continues as it has in the past, then the future state will be this way." It projects future developments by extrapolating current trends, assuming that the observed pace of progress or change will continue. This dynamic method of prediction considers both the present state and its historical evolution, offering predictions that reflect ongoing trends. However, it's worth noting that such forecasts may not account for sudden shifts in progress rates, potentially leading to inaccuracies if trends dramatically change. (<a href="https://forecasting.quarto.pub/book/zeroth-first.html?ref=bounded-regret.ghost.io#first-order-approximation">source</a>)</p>
+<p><strong>Contrast with Zeroth-Order Forecasting</strong>. Unlike zeroth-order forecasting, which assumes the future will mirror the current state without considering the past rate of change, first-order forecasting integrates this rate into its predictions. This means, that instead of expecting the status quo to persist, first-order forecasting anticipates growth or decline based on past trends. This method acknowledges that developments, especially in fast-evolving fields like AI, often follow a trajectory that can inform future expectations. However, choosing between these forecasting methods depends on the specific context and the predictability of the trend in question.</p>
+<p><strong>Implementing First-Order Forecasting in AI</strong>. In practice, first-order forecasting for AI involves analyzing the historical progression of AI capabilities and technology improvements to forecast future advancements. For example, observing the development timeline and performance enhancements of AI models, such as the GPT series by OpenAI, provides a basis for predicting the release and capabilities of future iterations. Similarly, applying first-order forecasting to hardware advancements, guided by historical trends like Moore's Law, allows for projections about the future computational power available for AI development.</p>
+<p><strong>Practical Examples and Methodology</strong>. One example of a first-order forecasting framework in AI is trend extrapolation using performance curves. This involves plotting the performance of AI systems against time or resources (like data or compute), fitting a curve to the data, and then extrapolating this curve into the future. This approach has been used to forecast trends in areas like image recognition, chess playing, and natural language processing.</p>
+<p>Another example is looking at how quickly new versions of models like OpenAI's GPT series are being developed and how much their performance is improving with each iteration. By extrapolating these trends, forecasters could make predictions about when we might see future versions of these models and how capable they are likely to be.</p>
+<p>Yet another common approach in first-order forecasting is to analyze trends in hardware improvements, such as those predicted by Moore's Law. Moore's Law, which predicts that the number of transistors on a microchip doubles approximately every two years, has been a reliable trend in the computing industry for several decades. Forecasters might extrapolate this trend to make predictions about future developments in computing power, which are crucial for training increasingly powerful AI models.</p>
+<p><strong>First-Order Forecasts</strong>. Here are some forecasts for GPT-2030, by Jacob Steinhardt based on this first-order forecasting methodology. He used "<em>empirical scaling laws, projections of future compute and data availability, the velocity of improvement on specific benchmarks, empirical inference speed of current systems, and potential future enhancements in parallelism. […]</em>” (<a href="https://bounded-regret.ghost.io/what-will-gpt-2030-look-like/">source</a>) to predict these capabilities.</p>
+<ul>
+<li>
+<p>GPT-2030 will likely be superhuman at various specific tasks, including coding, hacking, and math […]</p>
+</li>
+<li>
+<p>GPT-2030 can be run in parallel. The organization that trains GPT-2030 would have enough compute to run many parallel copies: I estimate enough to perform 1.8 million years of work when adjusted to human working speeds […]</p>
+</li>
+<li>
+<p>GPT-2030’s copies can share knowledge due to having identical model weights, allowing for rapid parallel learning: I estimate 2,500 human-equivalent years of learning in 1 day.”</p>
+</li>
+</ul>
+<h2 id="biological-anchors-framework">Biological Anchors Framework</h2>
+<p><strong>What are Biological anchors?</strong> Biological anchors are a forecasting technique. To find a reference class, assume that the human brain is indicative of general intelligence. This means we can treat it as a proof of concept. Whatever “amount of compute” it takes to train a human being, might be roughly the same amount it should take to train a <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr>. The biological anchors approach estimates the compute required for AI to reach a level of intelligence comparable to humans, outlined through several steps:</p>
+<ul>
+<li>
+<p>First, assess how much computation the human brain performs, translating this into a quantifiable measure similar to computer operations in <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr>/s.</p>
+</li>
+<li>
+<p>Second, estimate the amount of computation needed to train a neural network to match the brain's inferential capacity, adjusting for future improvements in algorithmic efficiency.</p>
+</li>
+<li>
+<p>Third, examine when it would be feasible to afford such vast computational resources, taking into account the decreasing cost of compute, economic growth, and increasing investment in AI.</p>
+</li>
+<li>
+<p>Finally, by analyzing these factors, we can predict when it might be economically viable for AI companies to deploy the necessary resources for developing <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr>.</p>
+</li>
+</ul>
+<p>Determining the exact computational equivalent for the human brain's training process is complex, leading to the proposal of six hypotheses, collectively referred to as "biological anchors" or "bioanchors." Each anchor has a different weighting contributing to the overall prediction.</p>
+<p>Evolution Anchor: Total computational effort across all evolutionary history.</p>
+<p>Lifetime Anchor: Brain's computational activity from birth to adulthood (0-32).</p>
+<p>Neural Network and Genome Anchors: Various computational benchmarks based on the human brain and genome to gauge the scale of <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> needed for AI to achieve general intelligence.</p>
+<p><strong>Forecasting with Biological Anchors</strong>. By integrating these anchors with projections of future compute accessibility, we can outline a potential timeline for <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr>. This method aims to provide a "soft upper bound" on <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr>'s arrival rather than pinpointing an exact year, acknowledging the complexity and unpredictability of AI development. (<a href="https://forum.effectivealtruism.org/posts/ajBYeiggAzu6Cgb3o/biological-anchors-is-about-bounding-not-pinpointing-ai">source</a>) The following image gives an overview of the methodology.</p>
+<p><img alt="Enter image alt description" src="../Images/4IF_Image_20.png" /></p>
+<p>Figure: The biological anchor model (<a href="https://epochai.org/blog/grokking-bioanchors">source</a>)</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><strong>Evolution anchor</strong></label><label for="__tabbed_1_2"><strong>Lifetime anchor</strong></label><label for="__tabbed_1_3"><strong><abbr title="A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.">Neural network</abbr> Anchors</strong></label><label for="__tabbed_1_4"><strong>Genome Anchor</strong></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition warning">
+<p class="admonition-title">This is extra detail provided for those interested. It can be safely skipped.</p>
+</div>
+<p>This anchor quantifies the computational effort invested by evolution in shaping the human brain. It considers the vast amount of processing and learning that has taken place from the emergence of the first neurons to the development of the modern human brain. This method suggests that evolution has served as a form of "pre-training" for the human brain, enhancing its ability to adapt and survive. To estimate the computational power of this evolutionary "pre-training", the report considers the total amount of compute used by all animal brains over the course of evolution. This includes not just the brains of humans, but also those of our ancestors and other animals with nervous systems. The idea is that all of this brain activity represents a form of learning or adaptation that has contributed to the development of the modern human brain. While the exact calculations involved in this estimate are complex and subject to considerable uncertainty, the basic idea is to multiply the number of animals that have ever lived by the amount of compute each of their brains performed over their lifetimes. This gives an estimate of the total compute performed by all animal brains over the course of evolution.</p>
+<p><img alt="Enter image alt description" src="../Images/jAr_Image_21.png" /></p>
+<p><strong><em>Figure</em></strong><em>: The Evolution anchor (</em><em><a href="https://epochai.org/blog/grokking-bioanchors">source</a></em><em>)</em></p>
+<p>Cotra accounts for these considerations and assumes that the “average ancestor” performed as many <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr>/s as a nematode, and that there were on average ~1e21 ancestors at any time. This yields a <strong>median of ~1e41 <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr></strong>, which seems extraordinarily high compared to modern machine learning. As an example, Google’s PaLM model was trained with ~2.5e24 <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr> (17 orders of magnitude smaller). She gives this anchor a <strong>weight of 10%</strong>. (<a href="https://epochai.org/blog/grokking-bioanchors">source</a>)</p>
+</div>
+<div class="tabbed-block">
+<div class="admonition warning">
+<p class="admonition-title">This is extra detail provided for those interested. It can be safely skipped.</p>
+</div>
+<p>This refers to the total computational activity the human brain performs over a human lifetime. This anchor is essentially a measure of the "training" a human brain undergoes from birth to adulthood and incorporates factors such as the number of neurons in the human brain, the amount of computation each neuron performs per year, and the number of years it takes for a human to reach adulthood. The human brain has an estimated 86 billion neurons. Each of these neurons performs a certain number of computations per second, which can be calculated as a certain number of operations per second in <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr>/s. When calculating the total amount of compute over a lifetime, these factors are multiplied together, along with the number of years a human typically lives.</p>
+<p>For example, if we assume that a neuron is able to perform about 1000 operations per second, and there are about 31.5 million seconds in a year, then a single neuron would perform about 31.5 billion operations in a year. Now, if we multiply this by the estimated number of neurons in the human brain (86 billion), we get an estimate of the total brain-compute performed in one year. We can then multiply this by the number of years in a typical human lifespan to estimate the total brain-compute over a lifetime. Plugging in the numbers about brain <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr>/s seems to suggest that ~1e27 <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr> would be required to reach <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr>. This seems low since examples from other technological domains suggest that the efficiency of things we build (on relevant metrics) is generally not great when compared to nature (<a href="https://docs.google.com/document/d/1HUtUBpRbNnnWBxiO2bz3LumEsQcaZioAPZDNcsWPnos/edit">source</a>).</p>
+<p><img alt="Enter image alt description" src="../Images/UP9_Image_22.png" /></p>
+<p>Figure: The Lifelong anchor (<a href="https://epochai.org/blog/grokking-bioanchors">source</a>)</p>
+<p>Cotra's report finds a median of ~1e28 <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr> and only gives the lifetime anchor a 5% weight, indicating that it's not the most influential factor in the overall model. The report acknowledges the inherent uncertainties and complexities involved in such a calculation and uses this anchor as one of several to provide a range of estimates for the compute required to achieve AI with human-level performance. (<a href="https://epochai.org/blog/grokking-bioanchors">source</a>)</p>
+</div>
+<div class="tabbed-block">
+<div class="admonition warning">
+<p class="admonition-title">This is extra detail provided for those interested. It can be safely skipped.</p>
+</div>
+<p>Each of the neural network anchors serves to provide a different perspective on the amount of compute that might be required to train a <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr>. There are three Neural Network Anchors presented in the report: long (~1e37 <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr>), medium (~1e34 <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr>), and short horizon (~1e32 <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr>). These anchors hypothesize that the ratio of <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> to compute used by a <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr> should be similar to the ratio observed in today's neural networks. Additionally, a <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr> should perform approximately as many <abbr title="The plural of “FLOP”, or occasionally an alternative spelling of “FLOPS”">FLOPs</abbr> per subjective second as a human brain. A “subjective second” is the time it takes a model to process as much data as a human can in one second (<a href="https://epochai.org/blog/grokking-bioanchors">source</a>). As an example a typical human reads about 3-4 words per second for non-technical material, so “one subjective second” for a language model would correspond to however much time that the model takes to process about ~3-4 words of data. (<a href="https://www.alignmentforum.org/posts/KrJfoZzpSDpnrv9va/draft-report-on-ai-timelines">source</a>) Cotra determines the training data requirements based on a mix of machine learning theory and empirical considerations. She puts 15% weight on short horizons, 30% on medium horizons, and 20% on long horizons, for a total of 65% on the three anchors. (<a href="https://epochai.org/blog/grokking-bioanchors">source</a>)</p>
+<p><img alt="Enter image alt description" src="../Images/Day_Image_23.png" /></p>
+<p>Figure: <abbr title="A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.">Neural network</abbr> Anchors(<a href="https://epochai.org/blog/grokking-bioanchors">source</a>)</p>
+</div>
+<div class="tabbed-block">
+<div class="admonition warning">
+<p class="admonition-title">This is extra detail provided for those interested. It can be safely skipped.</p>
+</div>
+<p>The genome anchor looks at the <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr>/subj sec of the human brain and expects <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr> to require as many <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> as there are bytes in the human genome. This hypothesis implicitly assumes a training process that’s structurally analogous to evolution, and that <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr> will have some critical cognitive ability that evolution optimized for. This differs from the evolution anchor in that it assumes we can search over possible architectures/algorithms a lot more efficiently than evolution, using gradients. Due to this structural similarity, and because feedback signals about the fitness of a particular genome configuration are generally sparse, this suggests that the anchor only really makes sense with long horizon lengths. (<a href="https://epochai.org/blog/grokking-bioanchors">source</a>)</p>
+<p><img alt="Enter image alt description" src="../Images/hu8_Image_24.png" /></p>
+<p>Figure: The Genome Anchor (<a href="https://epochai.org/blog/grokking-bioanchors">source</a>)</p>
+<p>At least at the time of writing (May 2022), machine learning architectures don’t look very much like the human genome, and we are yet to develop <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr> – thus Cotra updates against this hypothesis towards requiring more <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr>. Overall, she finds a median of ~1e33 <abbr title="A quantity of mathematical operations that involve floating-point numbers (numbers with a decimal point). “FLOPs” can be the plural of “FLOP”, but is confusingly also sometimes used interchangeably with “FLOPS”, meaning “FLOP per second”.">FLOP</abbr> and places 10% weight on this anchor. (<a href="https://epochai.org/blog/grokking-bioanchors">source</a>)</p>
+</div>
+</div>
+</div>
+<p><strong>Affordability of compute. </strong>The costs related to bio anchors are calculated by considering three different factors: Algorithmic progress, compute price estimates, and willingness to spend on machine learning. The report considers a doubling in algorithmic efficiency every ~2-3 years. As for prices, Cotra assumes cost decreases over time, halving every ~2.5 years, and further expects this to level off after 6 orders of magnitude. Cotra assumes that the willingness to spend on machine learning training runs should be capped at 1% of the GDP of the largest country, referencing previous case studies with megaprojects (e.g. the Manhattan Project), and should follow a doubling time of 2 years after 2025. (<a href="https://epochai.org/blog/grokking-bioanchors">source</a>) The main uncertainty is whether or not existing trends are going to persist more than several years into the future. For instance, Epoch found that OpenAI’s <em>AI and <abbr title="Shorthand for “computing power”. It may refer to, for instance, physical infrastructure such as CPUs or GPUs that perform processing, or the amount of processing power needed to train a model.">Compute</abbr></em> investigation (<a href="https://openai.com/blog/ai-and-compute/">source</a>) was too aggressive in its findings for compute growth. (<a href="https://epochai.org/blog/grokking-bioanchors">source</a>) This suggests taking caution when interpreting the forecasts made by the Bio Anchors report.</p>
+<p><img alt="Enter image alt description" src="../Images/F6B_Image_25.png" /></p>
+<p>Figure: Affordability of compute (<a href="https://epochai.org/blog/grokking-bioanchors">source</a>)</p>
+<p>The following graph gives an overview of the findings. Overall, the graph takes a weighted average of the different ways that the trajectory could flow. This gives us an estimate of a &gt;10% chance of transformative AI by 2036, a ~50% chance by 2055, and an ~80% chance by 2100. In 2022 a two-year update on the author’s (Ajeya Cotra) <abbr title="The (predicted) time until AI hits some milestone, usually AGI.">timelines</abbr> was published. The updated <abbr title="The (predicted) time until AI hits some milestone, usually AGI.">timelines</abbr> for <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr> are ~15% probability by 2030, ~35% probability by 2036, a median of ~2040, and a ~60% probability by 2050. (<a href="https://www.alignmentforum.org/posts/AfH2oPHCApdKicM4m/two-year-update-on-my-personal-ai-timelines">source</a>)</p>
+<p><img alt="Enter image alt description" src="../Images/1e4_Image_26.png" /></p>
+<p>Figure: Results from the biological anchor model for different anchors (<a href="https://forum.effectivealtruism.org/posts/vCaEnTbZ5KbypaGsm/forecasting-transformative-ai-the-biological-anchors-method">source</a>)</p>
+<p><strong>Criticisms. </strong>The Biological Anchors framework provides a unique perspective but it's also crucial to recognize its limitations and the broader debates it sparks within the AI research community. It is not universally accepted as the primary predictive tool among all <abbr title="Machine Learning. An approach to AI in which, instead of designing an algorithm directly, we have the system search through possible algorithms based on how well they do on some training data.">ML</abbr> scientists or alignment researchers.</p>
+<p>Platt's Law is a generalized observation named after Charles Platt. It is used to highlight a historical pattern where the estimated arrival of <abbr title="Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.">AGI</abbr> (Artificial General Intelligence) consistently seems to be "just 30 years away". Vernor Vinge referenced it in the body of his famous 1993 NASA speech, whose abstract begins, “<em>Within thirty years, we will have the technological means to create superhuman intelligence. Shortly after, the human era will be ended.</em>” (<a href="https://intelligence.org/2021/12/03/biology-inspired-agi-timelines-the-trick-that-never-works/">source</a>) Yudkowsky notes that this law seems to fit remarkably well with the prediction made by the Biological Anchors report in 2020. As the statistical aphorism goes: "All models are wrong, but some are useful".</p>
+<p>So to get a complete picture of how biological anchors were received, here are some of the criticisms of the Biological Anchors report:</p>
+<ul>
+<li>
+<p><strong>Challenges Beyond <abbr title="Shorthand for “computing power”. It may refer to, for instance, physical infrastructure such as CPUs or GPUs that perform processing, or the amount of processing power needed to train a model.">Compute</abbr></strong>: While Biological Anchors highlight compute power as a critical factor for AI development, they may oversimplify the complexity of achieving transformative AI. Factors beyond sheer computing capacity, such as algorithm design, data availability, and the intricacies of learning environments, play pivotal roles. It’s overly simplistic to equate the future of AI solely with compute availability, as transformative AI development encompasses more nuanced challenges like algorithm innovation and data accessibility. (<a href="https://www.cold-takes.com/biological-anchors-is-about-bounding-not-pinpointing-ai-timelines/">source</a>)</p>
+</li>
+<li>
+<p><strong>Potential for Rapid Advancements</strong>: Critics of the Biological Anchors method, such as Eliezer Yudkowsky, emphasize the unpredictability of AI progress and the potential for breakthroughs that could dramatically alter AI capabilities without adhering strictly to computational benchmarks derived from biology. These critiques highlight the importance of considering a range of factors and potential shifts in AI development paradigms that could accelerate progress beyond current forecasts. (<a href="https://www.alignmentforum.org/posts/nNqXfnjiezYukiMJi/reply-to-eliezer-on-biological-anchors">source</a>)</p>
+</li>
+<li>
+<p><strong>Purpose and Misinterpretation</strong>: The Biological Anchors approach is intended to provide boundary estimates for AI development <abbr title="The (predicted) time until AI hits some milestone, usually AGI.">timelines</abbr> rather than precise predictions. Misinterpretations may arise from expecting the method to offer specific year forecasts, whereas its goal is to outline possible upper and lower bounds, acknowledging the significant uncertainties in AI development. (<a href="https://www.cold-takes.com/biological-anchors-is-about-bounding-not-pinpointing-ai-timelines/">source</a>)</p>
+</li>
+<li>
+<p><strong>Contemplating Paradigm Shifts</strong>: The AI field's history suggests that major paradigm shifts and technological breakthroughs could substantially impact development <abbr title="The (predicted) time until AI hits some milestone, usually AGI.">timelines</abbr>. While deep learning currently dominates AI advances, the possibility of new, transformative methodologies emerging remains open, challenging the assumption that current trends will linearly continue into the future.</p>
+</li>
+</ul>
+<p>This is not an exhaustive list of all the criticisms but it serves to highlight the complexity of forecasting AI's future.</p>
+<h2 id="takeoff">Takeoff</h2>
+<p>This section introduces the concept of AI <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr>. There is much debate about how AI development will play out in the future. The main questions to consider are:</p>
+<ul>
+<li>
+<p><strong>Speed</strong>: How quickly do AI systems become more powerful?</p>
+</li>
+<li>
+<p><strong>Continuity</strong>: Does the speed progress in sudden jumps or is the speed gradual?</p>
+</li>
+<li>
+<p><strong>Homogeneity</strong>: How similar are the AI systems to each other?</p>
+</li>
+<li>
+<p><strong>Polarity</strong>: How many AI systems do we see vying for power in the world?</p>
+</li>
+</ul>
+<p><strong>Takeoff vs. Timelines</strong>. The difference between these two concepts is subtle, and forecasts in one domain affect the outlooks in the other. However, both <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> and <abbr title="The (predicted) time until AI hits some milestone, usually AGI.">timelines</abbr> offer some distinct insights: <abbr title="The (predicted) time until AI hits some milestone, usually AGI.">timelines</abbr> provide a countdown to AI breakthroughs, while <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> dynamics forecast the speed and breadth of their societal impact. Understanding both perspectives is key to preparing for the future of AI, guiding safety measures, policy development, and strategic research investment.</p>
+<h3 id="speed">Speed</h3>
+<p><strong>Takeoff Speeds</strong>. Slow and <abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">fast takeoff</abbr> scenarios offer contrasting views on AI's future trajectory, emphasizing different challenges and preparation strategies. While slow <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> allows for iterative safety measures and societal adaptation, <abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">fast takeoff</abbr> underscores the urgency of robust, pre-established safety frameworks. Understanding both dynamics is crucial for informed AI governance, safety research, and policy development, ensuring readiness for a range of possible futures.</p>
+<p><strong>Slow <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr></strong>. This refers to a scenario where AI capabilities improve in a gradual and measured manner over a relatively longer temporal interval, which could be years or even decades. Note that the "speed" of the <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> is not just about the raw increase in AI capabilities, but also about the societal and economic impact of those capabilities. Slow <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr>'s advantage lies in the preparation time it affords, potentially allowing us to adapt, respond, and correct course if things go wrong. However, on the other hand, more time being exposed to a certain growth trajectory might also breed complacency. It might also be the case that most preparations undertaken before the onset of a slow <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> would be rendered obsolete as better solutions gradually become visible which utilize new AI capabilities. In a slow <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> scenario, humanity’s fate essentially depends on preparations put in place during the times when such growth is apparent. The terms "slow <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr>" and "soft <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr>" are often used interchangeably. </p>
+<p><strong><abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">Fast takeoff</abbr></strong>. A "<abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">fast takeoff</abbr>" envisages AI's leap to superintelligence in a short timeframe, such as hours or days, limiting human capacity for response or control. This speed leaves little to no room for humans to react, adapt, or manage the situation. <abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">Fast takeoff</abbr> scenarios highlight the critical importance of preemptive safety and alignment efforts, as the window for post-emergence intervention could be minimal. Given such a short time to react, local dynamics of the <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> become relevant. The primary mechanism behind a <abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">fast takeoff</abbr> is often considered to be 'recursive self-improvement' through an “intelligence explosion”, where the AI system continually improves its own intelligence and capabilities. We talk about an intelligence explosion, and discontinuity in the next subsection. Terms like “<abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">fast takeoff</abbr>”, “<abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">hard takeoff</abbr>” and “<abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">FOOM</abbr>” are often used interchangeably.</p>
+<p><strong>Speed vs. Continuity.</strong> We observe that AI systems are created in discrete "events", sometimes many months or years apart. As an example GPT-3 was released in June 2020, and GPT-4 was released in March 2023. Is there a sudden, extremely large jump between such releases? or could the capabilities have been predicted by extrapolating trends? Where speed might be a measure of how quickly the AI becomes <abbr title="An AI with cognitive abilities far greater than those of humans in a wide range of important domains.">superintelligent</abbr>, continuity can be thought of as a measure of "surprise". Continuity measures the predictability and pattern of AI advancements, focusing on whether these advancements occur through gradual, steady improvements or unexpected breaks in previous technological trends. Even though we are presenting speed and continuity separately, the distinction between them is extremely nuanced. They are very related concepts, so much so that oftentimes most researchers use slow <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> as analogous to continuous <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr>, and <abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">fast takeoff</abbr> as analogous to discontinuous <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr>, making no distinction whatsoever.</p>
+<p><strong>Continuous <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr></strong>. Continuous <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> depicts AI's progression as an extension of existing trends, where advancements are made incrementally. An example is the steady advancement of technology witnessed during the Industrial Revolution, where each decade produced slightly better tools and machinery. The term 'continuous' in this context borrows from mathematical terminology, where a function is considered continuous if it doesn't have any abrupt changes or discontinuities. Some people prefer the term 'gradual' or 'incremental' over 'continuous' as they find it more descriptive and mathematically accurate. </p>
+<p><strong>Discontinuous Takeoff</strong>. The term 'discontinuous' in this context suggests that there are sudden jumps in capabilities, rather than being a smooth, gradual increase. This means that the AI system makes leaps that significantly exceed what would be expected based on past progress. In a discontinuous <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> scenario, the AI's capabilities quickly surpass human control and understanding. The terms '<abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">fast takeoff</abbr>' and 'discontinuous <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr>' are often used interchangeably. However, the images below displaying different <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> trajectories might help in clarifying the subtle differences between the concepts.</p>
+<p><img alt="Enter image alt description" src="../Images/kIj_Image_27.png" /></p>
+<p><strong><em>Figure</em></strong><em>: A comparative illustration of combinations of slow and <abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">fast takeoff</abbr>, alongside continuity. Source: Samuel Dylan Martin, Daniel_Eth (Sep 2021) “</em><em><a href="https://www.alignmentforum.org/posts/pGXR2ynhe5bBCCNqn/takeoff-speeds-and-discontinuities">Takeoff Speeds and Discontinuities</a></em><em>”</em></p>
+<h3 id="similarity">Similarity</h3>
+<p><strong>Homogenous <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr>. </strong>This refers to the similarity among different AI systems in play during the development and deployment of advanced AI. (<a href="https://www.lesswrong.com/posts/mKBfa8v4S9pNKSyKK/homogeneity-vs-heterogeneity-in-ai-takeoff-scenarios">source</a>) Future AI systems might share significant similarities in their design, capabilities, and alignment. This could be due to shared underlying <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr>, common APIs, or similar training methods. The uniformity of AI systems under a homogenous <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> scenario might imply the potential for easy cooperation between AI entities. Additionally, if homogeneity arises due to fine-tuning prevailing as the paradigm; the alignment of the initial AI system becomes the crucial factor for the alignment of all subsequent AI systems. A single misaligned system could, therefore, have widespread consequences, underscoring the importance of rigorous alignment and safety measures in early AI development stages. Homogeneity could either mitigate risks or exacerbate them, depending on the alignment and governance frameworks established during the initial phases of AI development.</p>
+<p><strong>Heterogeneity</strong>. A heterogeneous <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> scenario represents diversity and variation in the development, safety levels, and deployment of AI systems. Several factors contribute to the heterogeneity in AI <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr>. First is the diversity in AI development approaches. Organizations and researchers might adopt different strategies and technologies, leading to varied outcomes in terms of AI capabilities and alignment. Moreover, competitive dynamics among AI projects could exacerbate this diversity, as teams race to achieve breakthroughs without necessarily aligning on methodologies or sharing crucial information. As an example, we might have a future where AI becomes a strategic national asset, and AI development is closely guarded. In this environment, the pursuit of AI capabilities becomes siloed, each company or country would then employ different development methodologies, potentially leading to a wide range of behaviors, functionalities, and safety levels.</p>
+<h3 id="polarity">Polarity</h3>
+<p>Takeoff polarity in the context of AI development explores how power and control might be distributed during the critical phase when AI systems transition to higher levels of intelligence and capability. It measures whether we will see power centralized in the hands of a single entity or dispersed among various actors.</p>
+<p><strong>Unipolar Takeoff</strong>. In a <abbr title="A scenario in which there ends up being a single powerful decision maker.">unipolar takeoff</abbr> scenario, the landscape is characterized by the emergence of a single AI system or entity that achieves a significant lead over all others. This lead could be due to a breakthrough that allows for a sudden leap in capabilities, enabling this entity to outpace competitors rapidly, or due to something like an intelligence explosion. The concept hinges on the idea that early advantages in AI development—be it through technological breakthroughs, resource accumulation, or strategic positioning—could allow one project to dominate the field. This dominance could then be used to consolidate power, leveraging economic gains and network effects to maintain a hold over AI advancements and their applications.</p>
+<p><strong>Multipolar Takeoff</strong>. Conversely, a <abbr title="A scenario in which there end up being multiple powerful decision makers.">multipolar takeoff</abbr> scenario envisions a more balanced distribution of advanced AI systems across multiple entities. This diversity could stem from slower, more incremental progress in AI capabilities, allowing various projects to evolve in tandem without any single entity pulling decisively ahead. Factors contributing to a multipolar landscape include widespread sharing of technological advancements, collaborative efforts to ensure safety and alignment, and regulatory environments that promote competition and mitigate monopolistic outcomes. A <abbr title="A scenario in which there ends up being a single powerful decision maker.">unipolar scenario</abbr> raises concerns about the concentration of power and the potential for misuse of advanced AI capabilities, while a multipolar world presents challenges in coordination among diverse entities or AI systems.</p>
+<p>Factors Influencing Polarity. Several key elements influence whether <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> polarity leans towards a unipolar or multipolar outcome:</p>
+<ul>
+<li>
+<p>Speed of AI Development: A rapid <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> might favor a unipolar outcome by giving a significant advantage to the fastest developer. In contrast, a slower <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> could lead to a multipolar world where many entities reach advanced capabilities more or less simultaneously.</p>
+</li>
+<li>
+<p>Collaboration vs. Competition: The degree of collaboration and openness in the AI research community can significantly affect <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> polarity. High levels of collaboration and information sharing could support a multipolar outcome, while secretive or highly competitive environments might push towards unipolarity.</p>
+</li>
+<li>
+<p>Regulatory and Economic Dynamics: Regulatory frameworks and economic incentives also play a crucial role. Policies that encourage diversity in AI development and mitigate against the accumulation of too much power in any single entity's hands could foster a <abbr title="A scenario in which there end up being multiple powerful decision makers.">multipolar takeoff</abbr>.</p>
+</li>
+</ul>
+<h3 id="takeoff-arguments">Takeoff Arguments</h3>
+<p><strong>The Overhang Argument</strong>. There might be situations where there are substantial advancements or availability in one aspect of the AI system, such as hardware or data, but the corresponding software or algorithms to fully utilize these resources haven't been developed yet. The term 'overhang' is used because these situations imply a kind of 'stored’ or ‘latent’ potential. Once the software or algorithms catch up to the hardware or data, there could be a sudden unleashing of this potential, leading to a rapid leap in AI capabilities. Overhangs provide one possible argument for why we might favor discontinuous or fast takeoffs. There are two types of overhangs commonly discussed:</p>
+<ul>
+<li>
+<p><strong>Hardware Overhang</strong>: This refers to a situation where there is enough computing hardware to run many powerful AI systems, but the software to run such systems hasn't been developed yet. If such hardware could be repurposed for AI, this would mean that as soon as one powerful AI system exists, probably a large number of them would exist, which might amplify the impact of the arrival of human-level AI.</p>
+</li>
+<li>
+<p><strong>Data Overhang</strong>: This would be a situation where there is an abundance of data available that could be used for training AI systems, but the AI algorithms capable of utilizing all that data effectively haven't been developed or deployed yet.</p>
+</li>
+</ul>
+<p><strong>The Intelligence Explosion Argument</strong>. This concept of the 'intelligence explosion' is also central to the conversation around discontinuous <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr>. It originates from I.J. Good's thesis, which posits that sufficiently advanced machine intelligence could build a smarter version of itself. This smarter version could in turn build an even smarter version of itself, and so on, creating a cycle that could lead to intelligence vastly exceeding human capability (<a href="https://intelligence.org/files/IEM.pdf">source</a>). In their 2012 report on the evidence for Intelligence Explosions, Muehlhauser and Salamon delve into the numerous advantages that machine intelligence holds over human intelligence, which facilitate rapid intelligence augmentation. (<a href="https://intelligence.org/files/IE-EI.pdf">source</a>) These include:</p>
+<ul>
+<li>
+<p><strong>Computational Resources</strong>: Human computational ability remains somewhat stationary, whereas machine computation possesses scalability.</p>
+</li>
+<li>
+<p><strong>Speed</strong>: Humans communicate at a rate of two words per second, while GPT-4 can process 32k words in an instant. Once <abbr title="Large Language Model. An AI model that takes in some text and predicts how it’s most likely to continue.">LLMs</abbr> can write "better" than humans, their speed will most probably surpass us entirely.</p>
+</li>
+<li>
+<p><strong>Duplicability</strong>: Machines exhibit effortless duplicability. Unlike humans, they do not need birth, education, or training. While humans predominantly improve individually, machines have the potential to grow collectively. Humans take 20 years to become competent from birth, whereas once we have one capable AI, we can duplicate it immediately. Once AIs reach the level of the best programmer, we can just duplicate this AI. The same goes for other jobs.</p>
+</li>
+<li>
+<p><strong>Editability</strong>: Machines potentially allow more regulated variations. They exemplify the equivalent of direct brain enhancements via neurosurgery in opposition to laborious education or training requirements. Humans can also improve and learn new skills, but they don't have root access to their hardware: we are just starting to be able to understand the genome's "spaghetti code," while AI could use code versioning tools to improve itself, being able to attempt risky experiments with backup options in case of failure. This allows for much more controlled variation.</p>
+</li>
+<li>
+<p><strong>Goal coordination</strong>: Copied AIs possess the capability to share goals effortlessly, a feat challenging for humans.</p>
+</li>
+</ul>
+<p><strong>The Economic Growth Argument</strong>. Historical patterns of economic growth, driven by human population increases, suggest a potential for slow and continuous AI <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr>. This argument posits that as AIs augment the effective economic population, we might witness a gradual increase in economic growth, mirroring past expansions but at a potentially accelerated rate due to AI-enabled automation. Limitations in AI's ability to automate certain tasks, alongside societal and regulatory constraints (e.g. that medical or legal services can only be rendered by humans), could lead to a slower expansion of AI capabilities. Alternatively, growth might far exceed historical rates. Using a similar argument for a <abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">fast takeoff</abbr> hinges on AI's potential to quickly automate human labor on a massive scale, leading to unprecedented economic acceleration.</p>
+<p><strong><abbr title="Shorthand for “computing power”. It may refer to, for instance, physical infrastructure such as CPUs or GPUs that perform processing, or the amount of processing power needed to train a model.">Compute</abbr> Centric Takeoff Argument</strong>. This argument, similar to the Bio Anchors report, assumes that compute will be sufficient for transformative AI. Based on this assumption, Tom Davidson's 2023 report on compute-centric AI <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> discusses feedback loops that may contribute to <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> dynamics.</p>
+<ul>
+<li>
+<p><strong>Investment feedback loop</strong>: There might be increasing investment in AI, as AIs play a larger and larger role in the economy. This increases the amount of compute available to train models, as well as potentially leading to the discovery of novel algorithms. All of this increases capabilities, which drives economic progress, and further incentivizes investment.</p>
+</li>
+<li>
+<p><strong>Automation feedback loop</strong>: As AIs get more capable, they will be able to automate larger parts of the work of coming up with better AI algorithms, or helping in the design of better GPUs. Both of these will increase the capability of the AIs, which in turn allow them to automate more labor.</p>
+</li>
+</ul>
+<p>Depending on the strength and interplay of these feedback loops, they can create a self-fulfilling prophecy leading to either an accelerating <abbr title="A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.">fast takeoff</abbr> if regulations don't curtail various aspects of such loops, or a slow <abbr title="The amount of time that elapses between the first AI with roughly human-level intelligence and the first AI with vastly superhuman intelligence.">takeoff</abbr> if the loops are weaker or counterbalanced by other factors. The entire model is shown in the diagram below:</p>
+<p><img alt="Enter image alt description" src="../Images/AbI_Image_28.png" /></p>
+<p>Figure: A summary of What a <abbr title="Shorthand for “computing power”. It may refer to, for instance, physical infrastructure such as CPUs or GPUs that perform processing, or the amount of processing power needed to train a model.">Compute</abbr>-Centric Framework Says About Takeoff Speeds (<a href="https://www.openphilanthropy.org/research/what-a-compute-centric-framework-says-about-takeoff-speeds/">source</a>)</p>
+<!-- Abbreviations -->
+
+<!--
+*[Large language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[large language models]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+
+<!-- Glossary -->
+
+<!--HLAI-->
+<!--Human level AI-->
+
+<!--Catastrophic risk-->
+<!--catastrophic risk-->
+<!--catastrophic risks-->
+
+<!--
+*[Feature]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+<!--*[features]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+
+<!--polysemantic-->
+<!--polysemanticity-->
+<!--monosemantic-->
+<!--monosemanticity-->
+<!--superposition-->
+
+<!--
+*[Optimization algorithm]: A general procedure for finding solutions that score highly according to some well-defined objective function.-->
+
+<!--
+*[Optimizer]: Something that can improve some process or physical artifact so that it is fit for a certain purpose or fulfills some set of requirements.-->
+
+<!--bitter lesson-->
+<!--scaling laws-->
+<!--scaling hypothesis-->
+<!--bio anchors-->
+<!--biological anchors-->
+<!--world models-->
+<!--RAAP-->
+<!--RAAPs-->
+<!--CAIS-->
+<!--emergence-->
+<!--Few-shot -->
+<!--Zero-shot -->
+
+<!--Few-shot prompting-->
+<!--A technique where a language model is prompted with a few examples of problems with solutions, and is then asked to find a solution to the next problem.-->
+<!--treacherous turn-->
+<!--policy-->
+<!--policies-->
+<!--embedding-->
+<!--embeddings-->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../4-Leveraging-Computation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Leveraging Computation">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Leveraging Computation
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../6-Appendix-1-Expert-Opinions/" class="md-footer__link md-footer__link--next" aria-label="Next: Appendix 1: Expert Opinions">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Appendix 1: Expert Opinions
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      MIT; 2023 - 2024 Centre pour la Sécurité de l'IA (CeSIA) - EffiSciences
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.top", "navigation.footer", "content.tooltips", "content.footnote.tooltips", "header.autohide", "announce.dismiss", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

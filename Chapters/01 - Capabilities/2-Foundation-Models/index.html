@@ -1,0 +1,2044 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://centresecuriteia.github.io/textbook/Chapters/01%20-%20Capabilities/2-Foundation-Models/">
+      
+      
+        <link rel="prev" href="../1-State-of-the-Art-AI/">
+      
+      
+        <link rel="next" href="../3-Terminology/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>Foundation Models - The AI Safety Handbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lora";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#foundation-models" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+This is still a beta version. If you want to help us, please consider supporting us on <a
+    href=https://manifund.org/projects/ai-safety-textbook>Manifund</a>
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="The AI Safety Handbook" class="md-header__button md-logo" aria-label="The AI Safety Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The AI Safety Handbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Foundation Models
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Courses/" class="md-tabs__link">
+        
+  
+    
+  
+  Courses using this book
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Chapters
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="The AI Safety Handbook" class="md-nav__button md-logo" aria-label="The AI Safety Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    The AI Safety Handbook
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Courses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Courses using this book
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    01   Capabilities
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            01   Capabilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-State-of-the-Art-AI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    State-of-the-Art AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Foundation Models
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Foundation Models
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#techniques-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Techniques &amp; Training
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitations &amp; Risks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questions &amp; Exercises
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-Terminology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Terminology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4-Leveraging-Computation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Leveraging Computation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-Forecasting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Forecasting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-Appendix-1-Expert-Opinions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 1: Expert Opinions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7-Appendix-2-Discussions-on-LLMs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 2: Discussions on LLMs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8-Appendix-3-Trends/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix 3: Trends
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../02%20-%20Risks%20Landscape/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    02   Risks Landscape
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            02   Risks Landscape
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/1-Risk-Decomposition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Risk Decomposition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/2-Risk-Aggravators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Risk Aggravators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/3-Misuse-Risks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Misuse Risks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/4-Misalignment-Risk-Case/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Misalignment Risk Case
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/5-Systemic-Risks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Systemic Risks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/6-Conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conclusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02%20-%20Risks%20Landscape/7-Appendix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Appendix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../03%20-%20Solutions%20Landscape/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    03   Solutions Landscape
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            03   Solutions Landscape
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/1-AI-Safety-is-Challenging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Safety is Challenging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/2-Definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/3-Misuse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Misuse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/4-Alignment-of-AGI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alignment of AGI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/5-Alignment-of-ASI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alignment of ASI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/6-Systemic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Systemic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03%20-%20Solutions%20Landscape/7-Conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conclusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../04%20-%20Evaluations/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    04   Evaluations
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            04   Evaluations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../05%20-%20Governance/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    05   Governance
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            05   Governance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../06%20-%20Reward%20Misspecification/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    06   Reward Misspecification
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            06   Reward Misspecification
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06%20-%20Reward%20Misspecification/1-Reinforcement-Learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reinforcement Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06%20-%20Reward%20Misspecification/2-Optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Optimization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06%20-%20Reward%20Misspecification/3-Reward-Misspecification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reward Misspecification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06%20-%20Reward%20Misspecification/4-Learning-from-imitation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learning from imitation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06%20-%20Reward%20Misspecification/5-Learning-from-feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learning from feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../07%20-%20Goal%20Misgeneralization/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    07   Goal Misgeneralization
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            07   Goal Misgeneralization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07%20-%20Goal%20Misgeneralization/1-Goal-Misgeneralization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Goal Misgeneralization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07%20-%20Goal%20Misgeneralization/2-Inner-Alignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inner Alignment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07%20-%20Goal%20Misgeneralization/3-Deceptive-alignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deceptive alignment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../08%20-%20Oversight/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    08   Oversight
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            08   Oversight
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../09%20-%20Intepretability/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    09   Intepretability
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            09   Intepretability
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../10%20-%20Agent%20Foundations/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    10   Agent Foundations
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            10   Agent Foundations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="foundation-models">Foundation Models</h1>
+<p>⌛ Estimated Reading Time: 14 minutes. (2743 words)</p>
+<details class="note" open="open">
+<summary>Foundation Models - Video Introduction</summary>
+<p><iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/kK3NmQT241w"></iframe></p>
+<div class="admonition warning">
+<p class="admonition-title">This video is optional and not necessary to understand the text.</p>
+</div>
+</details>
+<p><strong>Foundation Model Paradigm.</strong> The foundation model paradigm came about in the mid-to-late 2010s. The machine learning strategy shifted from using task-specific labeled datasets to using large, unlabeled datasets and creating more generalist models that can later be fine-tuned for specific needs. You can think of them as the Swiss army knives because they are capable of everything from language translation to generating artwork.</p>
+<p>Advances in specialized hardware and parallelism (e.g., large clusters of NVIDIA GPUs), new developments in neural network architectures (e.g. transformers), and the increased easy access to vast amounts of online data all contributed to the paradigm of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr>. Examples of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> are BERT, GPT, Claude, DALL-E, Stable Diffusion, LLaMA, Gemini, and Mistral just to name a few.</p>
+<p>We use the term frontier models to refer to a subset of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> that have cutting-edge state-of-the-art capabilities. Frontier models do not have to be <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr>, but they often are.</p>
+<p><strong>Economics of Foundation Models.</strong> The development and deployment of these models is still extremely resource-intensive, requiring significant investment in three main areas:</p>
+<ul>
+<li>
+<p><strong>Data Acquisition</strong>. Foundation models are trained on large-scale datasets, often sourced from the internet. Collecting, cleaning, and updating these datasets can be costly, especially for specialized or proprietary data.</p>
+</li>
+<li>
+<p><strong>Computational Resources</strong>. The size of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> and their training datasets means that we need a lot of computational resources, including powerful hardware and electricity.</p>
+</li>
+<li>
+<p><strong>Research and Development</strong>. Beyond immediate costs, we also need ongoing investment in research to develop new techniques and fine-tune existing models. This requires both financial resources and specialized expertise.</p>
+</li>
+</ul>
+<p>The next section provides a deeper dive into the core underlying techniques used in the development of these models.</p>
+<h2 id="techniques-training">Techniques &amp; Training</h2>
+<p><strong>Overview of foundation model training</strong>. The training process of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> begins with pre-training on large, diverse datasets. We use self-supervised learning to train on unlabeled data. Finally, fine-tuning adapts the model’s general knowledge to specific tasks.</p>
+<p><strong>Pre-training.</strong> This is the initial phase where the model is trained on a massive dataset of millions or billions of examples. During this phase, the model learns general patterns, structures, and knowledge.</p>
+<p><strong>Self-Supervised Learning (SSL).</strong> This is how we actually implement the pre-training. Unlike traditional supervised learning (SL) which relies heavily on labeled data, Self-Supervised Learning (SSL) leverages unlabeled data, enabling models to learn from the inherent structure of the data itself.</p>
+<p>For example, instead of manually labeling images, we might just hide part of a full image we already have and ask a model to predict what the rest should be. So it might predict the bottom half of an image given the top half, learning about which objects appear often together. It might learn for instance that images with trees and grass at the top often have more grass, or perhaps a path, at the bottom. It learns about objects and their context — trees and grass often appear in parks, dogs are often found in these environments, paths are usually horizontal, and so on. These learned representations can then be used for a wide variety of tasks that the model was not explicitly trained for, such as identifying dogs in images, or recognizing parks - all without any human-provided labels! In natural language processing, a model might predict the next word in a sentence, such as "The cat sat on the ____," learning grammar, syntax, and context as long as we repeat this over huge amounts of text.</p>
+<p><strong>Zero &amp; Few-Shot Learning.</strong> These techniques enable models to perform tasks with very few examples. Zero-shot learning allows models to perform tasks without any specific examples, while few-shot learning enables them to generalize from a few examples. As an example, the model might learn to identify a new breed of dog after seeing just a few pictures, similar to how humans recognize new objects after just seeing them once or a few times.</p>
+<p><strong>Transfer Learning.</strong> We can now use our pre-trained model as a starting point for a new task or domain so that we don't have to start from scratch for every new task. The idea is to leverage the knowledge acquired by the pre-trained model from a large dataset and apply it to a related task with a smaller dataset. By doing so, we can benefit from the general features and patterns learned by the pre-trained model, saving time and computational resources. For example, a language model trained on general text data can be fine-tuned on legal documents to perform legal text analysis.</p>
+<p><strong>Fine-Tuning.</strong> Fine-tuning is one way that we can do transfer learning. In the fine-tuning phase, we adapt the model specifically to perform particular tasks. We use techniques like Reinforcement Learning from Human Feedback (<abbr title="Reinforcement learning from human feedback. A method for training an AI to give desirable outputs by using human feedback as a training signal.">RLHF</abbr>) to further refine them to be more effective at specific things. As an example, a general-purpose language model like GPT-4 might be fine-tuned to improve its conversational abilities and follow instructions, giving us ChatGPT.</p>
+<p><img alt="https://www.artificialintelligence.news/pathal/uploads/2021/09/2021-foundationmodel-1024x692.png" src="../Images/uxE-.png" /></p>
+<p><strong><em>Figure</em></strong><em>:</em><em> Bommasani Rishi et. al. (2022) "</em><em><a href="https://arxiv.org/pdf/2108.07258.pdf">On the Opportunities and Risks of Foundation Models</a></em><em>"</em></p>
+<p><strong>Elicitation Techniques</strong>. Lastly, we use prompts to point the model to use its abilities in even more specific context-relevant ways. Think of this as giving the model a final nudge in the right direction. The structure of the prompt can have a large effect on the overall performance we are able to get out of the system. We only briefly introduce the concept here. There are a variety of elicitation techniques like <abbr title="A prompting technique which makes a language model generate intermediate reasoning steps in its output.">chain-of-thought</abbr> (CoT) that will be discussed in later chapters.</p>
+<h2 id="properties">Properties</h2>
+<p><img alt="Enter image alt description" src="../Images/Wif_Image_14.png" /></p>
+<p><strong><em>Figure</em></strong><em>: Bommasani Rishi et. al. (2022) "</em><em><a href="https://arxiv.org/pdf/2108.07258.pdf">On the Opportunities and Risks of Foundation Models</a></em><em>"</em></p>
+<p><strong>Efficient use of resources</strong>. Foundation models have the capacity to elevate their performance by leveraging additional data, more powerful computing resources, or advancements in model architecture. It's not merely a technique, but a pivotal attribute that dictates how well a model can adapt and expand its capabilities. As <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> scale, they don't just grow; they become more nuanced, capable, and efficient in processing information, mirroring the enrichment of understanding and knowledge transfer. This makes scalability a crucial determinant in the operational efficacy of these models. We will discuss this capability further in the subsequent section on leveraging computation.</p>
+<p><strong>Generalization</strong>. This is the cornerstone of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr>' effectiveness, enabling these AI systems to perform accurately on data they haven't previously encountered. This trait ensures the models remain versatile and reliable across various applications, making them indispensable tools in the AI toolkit. However, even though <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> are displaying increasingly better generalization of capabilities, more research is needed to ensure the generalization of goals as well. The issue of capability generalization without goal generalization is something we will tackle in depth in subsequent chapters.</p>
+<p><strong>Multi-modality</strong>. This is a newer property that is still emerging as of 2024 but is expected to become extremely relevant as the years progresses. This opinion was reflected by Sam Altman, CEO of OpenAI in a conversation with Bill Gates, where he mentioned "<em>Multimodality will definitely be important. Speech in, speech out, images, eventually video. Clearly, people really want that. Customizability and personalization will also be very important.</em>" (<a href="https://www.linkedin.com/pulse/altman-multimodality-important-david-cronshaw-5fz0c">source</a>)</p>
+<p>We slightly touched on these capabilities in the section on state-of-the-art AI. This characterizes the capability of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> to process, interpret, and generate insights from various types of data, or "modalities," such as text, images, audio, and video. The power of multimodality in <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> lies in its potential to create richer, more nuanced representations of information. By leveraging multiple forms of data, these models can establish deeper connections and uncover insights that might be missed when data types are considered in isolation. This can be considered similar to humans, where our comprehension of the environment is enhanced by integrating visual, auditory, and textual information, thereby offering a more holistic understanding of our surroundings.</p>
+<h2 id="limitations-risks">Limitations &amp; Risks</h2>
+<p><strong>Balancing Cost and Accessibility. </strong>The development and training of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> require a significant investment, posing a delicate balance between cost and accessibility. While adapting an existing model for a specific task might be more cost-effective than developing a new one from scratch, potentially democratizing access to cutting-edge AI capabilities, the substantial initial costs risk centralizing power among a few well-resourced entities. This concentration of power can exacerbate existing inequalities, as only wealthy organizations or nations can afford to develop and deploy these advanced systems.</p>
+<p>Additionally, there is an ongoing debate about whether these models should be open-sourced. Open sourcing can democratize access, allowing more people to benefit and contribute to advancements. However, it also increases the risk of misuse, as malicious actors could exploit these powerful tools for harmful purposes, such as generating deepfakes or coordinating cyberattacks. We talk more about these issues in the chapters on the risk landscape and AI governance.</p>
+<p><strong>Homogenization</strong>. The process of homogenization refers to the situation where an increasing number of AI systems are merely fine-tuned versions of the same <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr>. Therefore, if a foundation model has certain biases or failure modes, these could potentially be propagated to all models that are fine-tuned from this foundation. This is a significant risk because if the same problem exists in the foundation model, it could manifest across many different models and applications, leading to widespread and potentially correlated failures. For example, if a foundation model has been trained on data that has gender or racial biases, these biases could propagate to all models fine-tuned from it, leading to biased decisions across various applications, whether it be text generation, sentiment analysis, or even predictive policing.</p>
+<p><strong>Emergence</strong>. Increasing the centralization of general-purpose capabilities within a single model might result in unexpected and unexplainable behavior arising as a function of scale. This describes the phenomenon where <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> exhibit complex behaviors or outputs not explicitly programmed, arising unpredictably from some underlying learned patterns. Emergent qualities rather than their explicit construction provide immense benefits, but this also makes <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> hard to understand, predict, and control. This lack of predictability and control is a significant concern when these models are used in high-stakes domains. If they fail in ways that are outside our current understanding and expectations, these failures could be particularly problematic when combined with the homogenization described above. The same foundation model integrated into multiple critical functions could lead to correlated failures that span multiple critical functions or failsafes. This phenomenon of emergence is also talked about in more detail in subsequent sections.</p>
+<p>We are only introducing the notion of emergence here, but we talk more about unexpected behavior due to scale in the section on scaling laws, as well as explore different arguments around emergence in the chapter on the landscape of AI risks.</p>
+<h2 id="questions-exercises">Questions &amp; Exercises</h2>
+<details class="question">
+<summary>What are the three main areas where significant investment is required for the development of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr>?</summary>
+<p>The three main areas requiring significant investment for <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> are:</p>
+<ul>
+<li>
+<p>Data Acquisition: Collecting, cleaning, and updating large-scale datasets.</p>
+</li>
+<li>
+<p>Computational Resources: Providing the necessary hardware and electricity for training and deploying models.</p>
+</li>
+<li>
+<p>Research and Development: Ongoing investment in developing new techniques and fine-tuning existing models, requiring financial resources and specialized expertise.</p>
+</li>
+</ul>
+<p><em>Example</em>: Training a model like GPT-4 required huge amounts of internet text (data acquisition), powerful GPUs and TPUs (computational resources), and a team of researchers to develop and refine the model (research and development).</p>
+</details>
+<details class="question">
+<summary>How does fine-tuning differ from pre-training in the context of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr>?</summary>
+<p>Fine-tuning is the process of specifically adapting a pre-trained model to perform particular tasks. Unlike pre-training, which involves learning broad patterns from large datasets, fine-tuning hones the model's capabilities for specific applications. This step enables the creation of versatile models capable of undertaking a wide range of tasks with high accuracy.</p>
+<p><em>Example</em>: OpenAI fine-tuned GPT-3 on specific datasets to enhance its ability to generate human-like text for customer support chatbots, making it more responsive and accurate in that context.</p>
+</details>
+<details class="question">
+<summary>Why is scalability important in the performance of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr>?</summary>
+<p>Scalability is crucial for <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> as it dictates their ability to adapt and expand their capabilities by leveraging additional data, more powerful computing resources, or advancements in model architecture. As <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> scale, they become more nuanced, capable, and efficient, enhancing their operational efficacy and broadening their applicability.</p>
+<p><em>Example</em>: Scaling up models like GPT-3 from 1.5 billion <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> to 175 billion <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> resulted in significantly improved performance across a range of tasks, from language translation to question answering.</p>
+</details>
+<details class="question">
+<summary>What is multi-modality, and why is it expected to become increasingly important in <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr>?</summary>
+<p>Multi-modality refers to the ability of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> to process, interpret, and generate insights from various types of data, such as text, images, audio, and video. This capability is expected to become increasingly important because it allows models to create richer, more nuanced representations of information, offering a more holistic understanding of complex environments and tasks.</p>
+<p><em>Example</em>: A multi-modal model like DALL-E can generate images from textual descriptions, combining language and visual data to create unique and contextually appropriate images.</p>
+</details>
+<details class="question">
+<summary>What are the risks associated with the homogenization of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr>?</summary>
+<p>The homogenization of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> refers to the widespread use of fine-tuned versions of the same <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr>. This poses risks such as the propagation of biases or failure modes present in the original model across multiple applications. If a foundation model has certain biases, they can be replicated in all derivative models, leading to widespread and potentially correlated failures.</p>
+<p><em>Example</em>: If a foundation model trained on internet text contains gender biases, these biases might manifest in various applications, such as biased hiring recommendations or biased language generation.</p>
+</details>
+<details class="question">
+<summary>How can the use of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> impact data privacy?</summary>
+<p>The use of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> can lead to privacy concerns because these models can inadvertently memorize and reproduce sensitive information from their training data. This is particularly problematic when the training data includes personal or confidential information, raising significant privacy and security issues.</p>
+<p><em>Example</em>: A language model like GPT-3 might accidentally generate text containing personal information it encountered during training, such as snippets of private conversations or confidential documents.</p>
+</details>
+<details class="question">
+<summary>How can centralized development of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> be both a benefit and a drawback for <abbr title="A research field about how to prevent risks from advanced artificial intelligence.">AI safety</abbr>?</summary>
+<p>Centralized development of <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> can be a benefit for <abbr title="A research field about how to prevent risks from advanced artificial intelligence.">AI safety</abbr> because it allows for more controlled and coordinated efforts to ensure model safety and alignment. However, it can also be a drawback because any flaws or biases in the centrally developed models can propagate widely, affecting many downstream applications. Additionally, it might lead to power concentration in the hands of a few companies which poses a different dimension of risk.</p>
+<p><em>Example</em>: A centrally developed model by a major AI company could be rigorously tested for safety and biases, but if an overlooked bias exists, it could impact a wide range of applications built on that model.</p>
+</details>
+<details class="question">
+<summary>What are some potential unintended emergent capabilities in <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr>, and why are they concerning?</summary>
+<p>Emergence refers to the unexpected and unexplainable behaviors or outputs that arise from <abbr title="A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model.">foundation models</abbr> as they scale. These emergent qualities can provide immense benefits but also make the models hard to understand, predict, and control. When the model is deployed and used in different contexts, emergent capabilities can lead to unpredictable and potentially harmful outcomes, making it challenging to ensure the model's safety and reliability.</p>
+<p><em>Example</em>: A foundation model trained for general language tasks might unexpectedly develop the ability to generate extremely convincing but false medical advice, posing risks if used in health-related applications.</p>
+</details>
+<!-- Abbreviations -->
+
+<!--
+*[Large language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[large language models]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+
+<!-- Glossary -->
+
+<!--HLAI-->
+<!--Human level AI-->
+
+<!--Catastrophic risk-->
+<!--catastrophic risk-->
+<!--catastrophic risks-->
+
+<!--
+*[Feature]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+<!--*[features]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+
+<!--polysemantic-->
+<!--polysemanticity-->
+<!--monosemantic-->
+<!--monosemanticity-->
+<!--superposition-->
+
+<!--
+*[Optimization algorithm]: A general procedure for finding solutions that score highly according to some well-defined objective function.-->
+
+<!--
+*[Optimizer]: Something that can improve some process or physical artifact so that it is fit for a certain purpose or fulfills some set of requirements.-->
+
+<!--bitter lesson-->
+<!--scaling laws-->
+<!--scaling hypothesis-->
+<!--bio anchors-->
+<!--biological anchors-->
+<!--world models-->
+<!--RAAP-->
+<!--RAAPs-->
+<!--CAIS-->
+<!--emergence-->
+<!--Few-shot -->
+<!--Zero-shot -->
+
+<!--Few-shot prompting-->
+<!--A technique where a language model is prompted with a few examples of problems with solutions, and is then asked to find a solution to the next problem.-->
+<!--treacherous turn-->
+<!--policy-->
+<!--policies-->
+<!--embedding-->
+<!--embeddings-->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../1-State-of-the-Art-AI/" class="md-footer__link md-footer__link--prev" aria-label="Previous: State-of-the-Art AI">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                State-of-the-Art AI
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../3-Terminology/" class="md-footer__link md-footer__link--next" aria-label="Next: Terminology">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Terminology
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      MIT; 2023 - 2024 Centre pour la Sécurité de l'IA (CeSIA) - EffiSciences
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.top", "navigation.footer", "content.tooltips", "content.footnote.tooltips", "header.autohide", "announce.dismiss", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
