@@ -1,6 +1,6 @@
 # Foundation Models
 
-⌛ Estimated Reading Time: 10 minutes. (1840 words)
+⌛ Estimated Reading Time: 14 minutes. (2743 words)
 
 
 ???+ note "Foundation Models - Video Introduction"
@@ -9,43 +9,43 @@
 
     !!! warning "This video is optional and not necessary to understand the text."
 
-Foundation models emerged in the mid-to-late 2010s, symbolizing a move away from the labor-intensive, one-model-per-task approach. These models are trained on vast, diverse datasets to learn broad patterns and skills, ready to be adapted to a multitude of tasks. Imagine them as the Swiss Army knives of the AI that can tackle everything from language translation to generating artwork. This marked a shift in strategy, to leveraging large, unlabeled datasets creating generalist models that can later be fine-tuned for specific needs.
+**Foundation Model Paradigm.** The foundation model paradigm came about in the mid-to-late 2010s. The machine learning strategy shifted from using task-specific labeled datasets to using large, unlabeled datasets and creating more generalist models that can later be fine-tuned for specific needs. You can think of them as the Swiss army knives because they are capable of everything from language translation to generating artwork.
 
-**Economics of Foundation Models.** The shift towards foundation models was fueled by several factors: the explosion of data, advances in computational power, and refinements in machine learning techniques. These models are also extremely resource-intensive. Their development, training, and deployment often requires significant investment. This capital requirement comes from three main areas:
+Advances in specialized hardware and parallelism (e.g., large clusters of NVIDIA GPUs), new developments in neural network architectures (e.g. transformers), and the increased easy access to vast amounts of online data all contributed to the paradigm of foundation models. Examples of foundation models are BERT, GPT, Claude, DALL-E, Stable Diffusion, LLaMA, Gemini, and Mistral just to name a few.
 
-- **Data Acquisition**. The large-scale datasets they're trained on, often sourced from the internet. Collecting, cleaning, and updating these datasets can be expensive, especially for specialized or proprietary data.
+We use the term frontier models to refer to a subset of foundation models that have cutting-edge state-of-the-art capabilities. Frontier models do not have to be foundation models, but they often are.
 
-- **Computational Resources**. The sheer size of foundation models and the datasets used in their training demands significant computational resources, not just in terms of hardware but also the electricity needed for operation.
+**Economics of Foundation Models.** The development and deployment of these models is still extremely resource-intensive, requiring significant investment in three main areas:
 
-- **Research and Development**. Beyond the immediate costs of data and computation, there's the ongoing investment in research required to develop new techniques, and fine-tune the existing models. This requires both financial resources and specialized expertise.
+- **Data Acquisition**. Foundation models are trained on large-scale datasets, often sourced from the internet. Collecting, cleaning, and updating these datasets can be costly, especially for specialized or proprietary data.
 
-The next section provides a deeper dive into the machinery that powers these models.
+- **Computational Resources**. The size of foundation models and their training datasets means that we need a lot of computational resources, including powerful hardware and electricity.
 
-## Techniques
+- **Research and Development**. Beyond immediate costs, we also need ongoing investment in research to develop new techniques and fine-tune existing models. This requires both financial resources and specialized expertise.
 
-**Pre-training.** This is the initial training phase on a large dataset comprising millions, if not billions, of examples. Here the models learn general patterns, structures, and knowledge.
+The next section provides a deeper dive into the core underlying techniques used in the development of these models.
 
-**Self-Supervised Learning (SSL).** This is how we actually implement the pre-training. Unlike traditional supervised learning (SL) that relies heavily on labeled data, Self-Supervised Learning (SSL) leverages unlabeled data, enabling models to learn from the inherent structure of the data itself. The development of this technique was a crucial step because it allowed developers to not be restricted by human provided labels. Now, we can leverage nearly unlimited (unlabeled) data available on the web.
+## Techniques & Training
 
-As an example of how this technique would work - suppose you have an image of a dog in a park. Instead of a human labeling the image, and then training the model to learn what the human would say, the task for the model is to predict a portion of the image given the rest of it. For instance, the model might be given the top half of the image, and its task would be to predict what the bottom half looks like.
+**Overview of foundation model training**. The training process of foundation models begins with pre-training on large, diverse datasets. We use self-supervised learning to train on unlabeled data. Finally, fine-tuning adapts the model’s general knowledge to specific tasks.
 
-This is repeated on a large number of such images, learning to recognize patterns and structures in this data. Through these examples, the model might learn for instance that images with trees and grass at the top often have more grass, or perhaps a path, at the bottom. It learns about objects and their context — trees and grass often appear in parks, dogs are often found in these environments, paths are usually horizontal, and so on. These learned representations can then be used for a wide variety of tasks that the model was not explicitly trained for, such as identifying dogs in images, or recognizing parks - all without any human-provided labels!
+**Pre-training.** This is the initial phase where the model is trained on a massive dataset of millions or billions of examples. During this phase, the model learns general patterns, structures, and knowledge.
 
-**Zero & Few-Shot Learning.** These are techniques in machine learning where models learn to perform tasks with very few examples. Zero-shot is when they perform well without any specific examples. This is yet another example of a technique which is useful when collecting extensive labeled data is impractical or too costly. Think about introducing a human to the concept of a cat for the first time with just a few images. Despite only seeing three examples, they learn to identify cats in a variety of contexts, not limited to the initial examples. Similarly, few-shot learning enables AI models to generalize from a minimal set of instances, identifying new examples in broader categories they've scarcely encountered.
+**Self-Supervised Learning (SSL).** This is how we actually implement the pre-training. Unlike traditional supervised learning (SL) which relies heavily on labeled data, Self-Supervised Learning (SSL) leverages unlabeled data, enabling models to learn from the inherent structure of the data itself.
 
-**Transfer Learning. **Transfer learning is the next step that follows the pre-training. It's where the model takes the general patterns, structures, and knowledge it has learned from the pre-training phase and applies them to new, related tasks. This technique hinges on the fact that knowledge acquired in one context can actually be "transferred" to enhance learning in another. It allows for the utilization of pre-existing knowledge, thereby sidestepping the need to start from scratch for every new task.
+For example, instead of manually labeling images, we might just hide part of a full image we already have and ask a model to predict what the rest should be. So it might predict the bottom half of an image given the top half, learning about which objects appear often together. It might learn for instance that images with trees and grass at the top often have more grass, or perhaps a path, at the bottom. It learns about objects and their context — trees and grass often appear in parks, dogs are often found in these environments, paths are usually horizontal, and so on. These learned representations can then be used for a wide variety of tasks that the model was not explicitly trained for, such as identifying dogs in images, or recognizing parks - all without any human-provided labels! In natural language processing, a model might predict the next word in a sentence, such as "The cat sat on the ____," learning grammar, syntax, and context as long as we repeat this over huge amounts of text.
 
-**Fine-Tuning.** The fine-tuning phase is where the model is specifically adapted to perform particular tasks. Fine-tuning enables the creation of versatile models capable of undertaking a wide range of tasks, from following instructions to doing programming or scientific analysis. This can be further enhanced later through methods like "Reinforcement Learning from Human Feedback" (RLHF), which refines models to be more effective and user-friendly by reinforcing desirable outputs. We will talk about this technique in detail in later chapters.
+**Zero & Few-Shot Learning.** These techniques enable models to perform tasks with very few examples. Zero-shot learning allows models to perform tasks without any specific examples, while few-shot learning enables them to generalize from a few examples. As an example, the model might learn to identify a new breed of dog after seeing just a few pictures, similar to how humans recognize new objects after just seeing them once or a few times.
+
+**Transfer Learning.** We can now use our pre-trained model as a starting point for a new task or domain so that we don't have to start from scratch for every new task. The idea is to leverage the knowledge acquired by the pre-trained model from a large dataset and apply it to a related task with a smaller dataset. By doing so, we can benefit from the general features and patterns learned by the pre-trained model, saving time and computational resources. For example, a language model trained on general text data can be fine-tuned on legal documents to perform legal text analysis.
+
+**Fine-Tuning.** Fine-tuning is one way that we can do transfer learning. In the fine-tuning phase, we adapt the model specifically to perform particular tasks. We use techniques like Reinforcement Learning from Human Feedback (RLHF) to further refine them to be more effective at specific things. As an example, a general-purpose language model like GPT-4 might be fine-tuned to improve its conversational abilities and follow instructions, giving us ChatGPT.
 
 ![https://www.artificialintelligence.news/pathal/uploads/2021/09/2021-foundationmodel-1024x692.png](Images/uxE-.png)
 
 ***Figure****:** Bommasani Rishi et. al. (2022) "**[On the Opportunities and Risks of Foundation Models](https://arxiv.org/pdf/2108.07258.pdf)**"*
 
-**Elicitation Techniques**. Prompting is how we interact with the models. It's akin to giving the model a nudge in the right direction, ensuring that the vast knowledge it has acquired is applied in a way that's relevant and useful. So the structure of the prompt can have a large effect on the overall performance you are able to elicit out of the system. We only briefly introduce the concept here. There are a variety of elicitation techniques like chain-of-thought (CoT) that will be discussed in later chapters.
-
-Prompting serves as a critical interface between human users and the sophisticated capabilities of foundation models. It's akin to giving the model a nudge in the right direction, ensuring that the vast knowledge it has acquired is applied in a way that's relevant and useful. The development of prompting techniques also reflects a broader shift in AI towards more interactive, user-friendly models like ChatGPT. We only briefly introduce the concept here, a broad variety of elicitation and prompting techniques will be discussed in later chapters.
-
-The learning journey of a student—beginning with acquiring broad knowledge, honing specific skills, engaging in self-directed exploration, and seeking expert guidance—mirrors the trajectory of foundation model development. From the foundational broad learning in pre-training through specialization via fine-tuning to the targeted application through prompting, this progression encapsulates the evolving interaction between AI models and the complex, multifaceted tasks they are now capable of addressing.
+**Elicitation Techniques**. Lastly, we use prompts to point the model to use its abilities in even more specific context-relevant ways. Think of this as giving the model a final nudge in the right direction. The structure of the prompt can have a large effect on the overall performance we are able to get out of the system. We only briefly introduce the concept here. There are a variety of elicitation techniques like chain-of-thought (CoT) that will be discussed in later chapters.
 
 ## Properties
 
@@ -57,43 +57,23 @@ The learning journey of a student—beginning with acquiring broad knowledge, ho
 
 **Generalization**. This is the cornerstone of foundation models' effectiveness, enabling these AI systems to perform accurately on data they haven't previously encountered. This trait ensures the models remain versatile and reliable across various applications, making them indispensable tools in the AI toolkit. However, even though foundation models are displaying increasingly better generalization of capabilities, more research is needed to ensure the generalization of goals as well. The issue of capability generalization without goal generalization is something we will tackle in depth in subsequent chapters.
 
-**Multi-modality**. This is a newer property that is still emerging as of 2024, but is expected to become extremely relevant as the years progress. This opinion was reflected by Sam Altman, CEO of OpenAI in a conversation with Bill Gates, where he mentioned "*Multimodality will definitely be important. Speech in, speech out, images, eventually video. Clearly, people really want that. Customizability and personalization will also be very important.*" ([source](https://www.linkedin.com/pulse/altman-multimodality-important-david-cronshaw-5fz0c))
+**Multi-modality**. This is a newer property that is still emerging as of 2024 but is expected to become extremely relevant as the years progresses. This opinion was reflected by Sam Altman, CEO of OpenAI in a conversation with Bill Gates, where he mentioned "*Multimodality will definitely be important. Speech in, speech out, images, eventually video. Clearly, people really want that. Customizability and personalization will also be very important.*" ([source](https://www.linkedin.com/pulse/altman-multimodality-important-david-cronshaw-5fz0c))
 
 We slightly touched on these capabilities in the section on state-of-the-art AI. This characterizes the capability of foundation models to process, interpret, and generate insights from various types of data, or "modalities," such as text, images, audio, and video. The power of multimodality in foundation models lies in its potential to create richer, more nuanced representations of information. By leveraging multiple forms of data, these models can establish deeper connections and uncover insights that might be missed when data types are considered in isolation. This can be considered similar to humans, where our comprehension of the environment is enhanced by integrating visual, auditory, and textual information, thereby offering a more holistic understanding of our surroundings.
 
 ## Limitations & Risks
 
-**Balancing Cost and Accessibility. **The development and training of foundation models require a significant investment, posing a delicate balance between cost and accessibility. While adapting an existing model for a specific task might be more cost-effective than developing a new one from scratch, potentially democratizing access to cutting-edge AI capabilities, the substantial initial costs risk centralizing power among a few well-resourced entities. Ensuring equitable access and ethical use of these technologies is vital to harness their societal benefits fully.
+**Balancing Cost and Accessibility. **The development and training of foundation models require a significant investment, posing a delicate balance between cost and accessibility. While adapting an existing model for a specific task might be more cost-effective than developing a new one from scratch, potentially democratizing access to cutting-edge AI capabilities, the substantial initial costs risk centralizing power among a few well-resourced entities. This concentration of power can exacerbate existing inequalities, as only wealthy organizations or nations can afford to develop and deploy these advanced systems.
+
+Additionally, there is an ongoing debate about whether these models should be open-sourced. Open sourcing can democratize access, allowing more people to benefit and contribute to advancements. However, it also increases the risk of misuse, as malicious actors could exploit these powerful tools for harmful purposes, such as generating deepfakes or coordinating cyberattacks. We talk more about these issues in the chapters on the risk landscape and AI governance.
 
 **Homogenization**. The process of homogenization refers to the situation where an increasing number of AI systems are merely fine-tuned versions of the same foundation models. Therefore, if a foundation model has certain biases or failure modes, these could potentially be propagated to all models that are fine-tuned from this foundation. This is a significant risk because if the same problem exists in the foundation model, it could manifest across many different models and applications, leading to widespread and potentially correlated failures. For example, if a foundation model has been trained on data that has gender or racial biases, these biases could propagate to all models fine-tuned from it, leading to biased decisions across various applications, whether it be text generation, sentiment analysis, or even predictive policing.
 
-**Emergence**. Increasing the centralization of general-purpose capabilities within a single model might result in unexpected and unexplainable behavior arising as a function of scale. This describes the phenomenon where foundation models exhibit complex behaviors or outputs not explicitly programmed, arising unpredictably from some underlying learned patterns. Emergent qualities rather than their explicit construction provide immense benefits, but this also makes foundation models hard to understand, predict, and control. This lack of predictability and control is a significant concern when these models are used in high-stakes domains. If they fail in ways that are outside our current understanding and expectations, these failures could be particularly problematic when combined with homogenization described above. The same foundation model integrated into multiple critical functions could lead to correlated failures that span multiple critical functions or failsafes. This phenomenon of emergence is also talked about in more detail in subsequent sections.
+**Emergence**. Increasing the centralization of general-purpose capabilities within a single model might result in unexpected and unexplainable behavior arising as a function of scale. This describes the phenomenon where foundation models exhibit complex behaviors or outputs not explicitly programmed, arising unpredictably from some underlying learned patterns. Emergent qualities rather than their explicit construction provide immense benefits, but this also makes foundation models hard to understand, predict, and control. This lack of predictability and control is a significant concern when these models are used in high-stakes domains. If they fail in ways that are outside our current understanding and expectations, these failures could be particularly problematic when combined with the homogenization described above. The same foundation model integrated into multiple critical functions could lead to correlated failures that span multiple critical functions or failsafes. This phenomenon of emergence is also talked about in more detail in subsequent sections.
+
+We are only introducing the notion of emergence here, but we talk more about unexpected behavior due to scale in the section on scaling laws, as well as explore different arguments around emergence in the chapter on the landscape of AI risks.
 
 ## Questions & Exercises
-
-??? question "What are foundation models?"
-
-	
-	Foundation models are large-scale, pretrained models that serve as a base for fine-tuning on various downstream tasks. These models are trained on vast, diverse datasets to learn broad patterns and skills, enabling them to generalize well across different applications.
-	
-	*Example*: Imagine a foundation model like GPT-3, which has been trained on diverse internet text. It can then be fine-tuned to write poetry, generate code, or summarize articles, demonstrating its versatility.
-	
-
-??? question "How do foundation models differ from traditional machine learning models?"
-
-	
-	Foundation models differ from traditional machine learning models in that they are pretrained on massive datasets and then fine-tuned for specific tasks. Traditional models are typically trained from scratch for each individual task. This pretraining allows foundation models to leverage a wide range of knowledge, making them more efficient and versatile when adapting to new tasks.
-	
-	*Example*: Instead of building a new model to detect spam emails from scratch, you could fine-tune a foundation model like GPT, which has already learned a lot about language from a huge corpus of text.
-	
-
-??? question "What significant shift in AI strategy did the emergence of foundation models represent?"
-
-	
-	The emergence of foundation models marked a shift from the labor-intensive, one-model-per-task approach to developing generalist models trained on vast, unlabeled datasets. These models can be adapted to multiple tasks, leveraging large, diverse datasets to create versatile AI systems capable of handling various applications.
-	
-	*Example*: Instead of creating separate models for speech recognition, translation, and text generation, a single model like GPT-4 can be fine-tuned for all these tasks, saving time and resources.
-	
 
 ??? question "What are the three main areas where significant investment is required for the development of foundation models?"
 
@@ -106,28 +86,7 @@ We slightly touched on these capabilities in the section on state-of-the-art AI.
 	
 	- Research and Development: Ongoing investment in developing new techniques and fine-tuning existing models, requiring financial resources and specialized expertise.
 	
-	*Example*: Training a model like GPT-3 required vast amounts of internet text (data acquisition), powerful GPUs and TPUs (computational resources), and a team of researchers to develop and refine the model (research and development).
-	
-
-??? question "Describe Self-Supervised Learning (SSL) and its significance in the training of foundation models."
-
-    Self-Supervised Learning (SSL) is a technique that leverages unlabeled data to train models by predicting parts of the data from other parts. It allows models to learn from the inherent structure of the data, which is crucial as it eliminates the need for extensive human-provided labels. SSL enables the utilization of vast amounts of unlabeled data available on the web, significantly advancing the capability and scalability of AI models.
-
-    *Example*: In SSL, a model might be trained to predict the missing words in a sentence (like filling in the blank). Given the sentence "The cat sat on the ____," the model learns to predict "mat," leveraging the context provided by the rest of the sentence.
-
-
-??? question "What are zero-shot and few-shot learning, and why are they important in machine learning?"
-
-	Zero-shot learning refers to models performing tasks without any specific examples, while few-shot learning involves models generalizing from a minimal set of examples. These techniques are important because they enable models to function effectively even when extensive labeled data is impractical or too costly to obtain. They enhance the versatility and adaptability of AI systems.
-	
-    *Example*: A zero-shot learning scenario could involve asking a language model to translate a sentence into a language it has never seen before. Few-shot learning could involve showing the model a few examples of translations before asking it to translate new sentences.
-
-??? question "Explain the concept of transfer learning and its role in the development of foundation models."
-
-	
-	Transfer learning involves applying the general patterns, structures, and knowledge learned during the pre-training phase to new, related tasks. This technique allows models to utilize pre-existing knowledge, avoiding the need to start from scratch for every new task. It enhances efficiency and effectiveness in developing AI systems for diverse applications.
-	
-	*Example*: A model trained on general image recognition tasks could be fine-tuned to recognize specific types of medical images, such as identifying tumors in radiographs.
+	*Example*: Training a model like GPT-4 required huge amounts of internet text (data acquisition), powerful GPUs and TPUs (computational resources), and a team of researchers to develop and refine the model (research and development).
 	
 
 ??? question "How does fine-tuning differ from pre-training in the context of foundation models?"
@@ -162,14 +121,6 @@ We slightly touched on these capabilities in the section on state-of-the-art AI.
 	*Example*: If a foundation model trained on internet text contains gender biases, these biases might manifest in various applications, such as biased hiring recommendations or biased language generation.
 	
 
-??? question "Describe the phenomenon of emergence in the context of foundation models and its potential implications."
-
-	
-	Emergence refers to the unexpected and unexplainable behaviors or outputs that arise from foundation models as they scale. These emergent qualities can provide immense benefits but also make the models hard to understand, predict, and control. This lack of predictability and control is particularly concerning in high-stakes domains, where unexpected failures can have significant consequences.
-	
-	*Example*: A model trained to generate text might start producing highly coherent but subtly harmful content, which was not explicitly programmed or anticipated by the developers.
-	
-
 ??? question "How can the use of foundation models impact data privacy?"
 
 	
@@ -189,8 +140,7 @@ We slightly touched on these capabilities in the section on state-of-the-art AI.
 ??? question "What are some potential unintended emergent capabilities in foundation models, and why are they concerning?"
 
 	
-	Unintended emergent capabilities in foundation models refer to unexpected behaviors or skills that arise when the model is fine-tuned or deployed in new contexts. These are concerning because they can lead to unpredictable and potentially harmful outcomes, making it challenging to ensure the model's safety and reliability.
+	Emergence refers to the unexpected and unexplainable behaviors or outputs that arise from foundation models as they scale. These emergent qualities can provide immense benefits but also make the models hard to understand, predict, and control. When the model is deployed and used in different contexts, emergent capabilities can lead to unpredictable and potentially harmful outcomes, making it challenging to ensure the model's safety and reliability.
 	
-	*Example*: A foundation model trained for general language tasks might unexpectedly develop the ability to generate convincing but false medical advice, posing risks if used in health-related applications.
+	*Example*: A foundation model trained for general language tasks might unexpectedly develop the ability to generate extremely convincing but false medical advice, posing risks if used in health-related applications.
 	
-

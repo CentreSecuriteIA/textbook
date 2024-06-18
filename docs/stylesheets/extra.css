@@ -13,12 +13,12 @@
 
 /*Uncomment if you want the narrower view width.*/
 /*[> Styles for larger screens <]*/
-/*@media (min-width: 1000px) {*/
-	/*.md-content {*/
-		/*width: 60vw; [> Use viewport width for larger screens <]*/
-		/*max-width: 768px; [> Set a maximum width <]*/
-	/*}*/
-/*}*/
+@media (min-width: 1000px) {
+	.md-content {
+		width: 60vw; /* Use viewport width for larger screens */
+		max-width: 768px; /* Set a maximum width */
+	}
+}
 
 h2,h3 {
   font-weight: bold;

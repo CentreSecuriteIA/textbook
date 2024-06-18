@@ -81,8 +81,7 @@ def split_markdown(folder_source, chapter):
                 imag_2.png
                 ...
         Output.md --> very long markdown that contains the chapter
-    
-        
+
     We want to update the chapter
 
     Chapters/
@@ -121,7 +120,7 @@ def split_markdown(folder_source, chapter):
     os.remove(chapter_path / "Output.md")
 
 split_markdown(
-    folder_source='/home/markov/git/00_textbook_temp/source_zips/ch_1.3',
+    folder_source='/home/markov/git/00_textbook_temp/source_zips/ch_1.4',
     chapter = "01 - Capabilities",
 )
 print("Don't forget to check the result of the formatting and then commit")
