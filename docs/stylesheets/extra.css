@@ -2,114 +2,121 @@
 /*extra_css:*/
   /*- stylesheets/extra.css*/
 
-
 .md-content {
-	text-align: justify;
-	text-justify: inter-word;
-	padding: 5px;
-	margin: 0 auto; /* Center the paragraph */
-	width: 100%; /* Default width for smaller screens */
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 5px;
+    width: 100%; /* Default width for smaller screens */
 }
 
-/*Uncomment if you want the narrower view width.*/
-/*[> Styles for larger screens <]*/
-@media (min-width: 1000px) {
-	.md-content {
-		width: 60vw; /* Use viewport width for larger screens */
-		max-width: 768px; /* Set a maximum width */
-	}
+/* Styles for larger screens */
+@media (min-width: 768px) {
+    .md-content {
+        width: 80vw; /* Slightly narrower for tablets and smaller desktops */
+        max-width: 768px; /* Set a maximum width for these devices */
+        /*margin-left: auto; [> Align flush left <]*/
+    }
 }
 
-h2,h3 {
-  font-weight: bold;
-  padding: 7px 7px 7px 20px; <!--top right bottom left-->
-  text-transform: uppercase;
+@media (min-width: 1200px) {
+    .md-content {
+        width: 60vw; /* Narrower for larger desktop screens */
+        max-width: 768px; /* Set a maximum width for larger desktops */
+        /*margin-left: auto; [> Align flush left <]*/
+    }
+}
+
+h2, h3 {
+    font-weight: bold;
+    padding: 7px 7px 7px 20px; /* top right bottom left */
+    text-transform: uppercase;
 }
 
 /*.md-nav__item{*/
-	/*padding:0px;*/
-	/*margin:0px;*/
-	/*background-color:red;*/
+    /*padding:0px;*/
+    /*margin:0px;*/
+    /*background-color:red;*/
 /*}*/
 
-.tabbed-labels{
-	color:black;
-	/*background-color:#b8b8b8;*/
+.tabbed-labels {
+    color: black;
+    /*background-color:#b8b8b8;*/
 }
 
-.tabbed-content{
-	color:black;
-	background-color:#f2f2f2;
-	padding: 0px 25px 0px 25px;
+.tabbed-content {
+    color: black;
+    background-color: #f2f2f2;
+    padding: 0px 25px 0px 25px;
 }
 
-.admonition.note .admonition-title{
-	color:black;
-	/*background-color:#b8b8b8;*/
-	border: 0px;
-	border-radius:0px;
+.admonition.note .admonition-title {
+    color: black;
+    /*background-color:#b8b8b8;*/
+    border: 0px;
+    border-radius: 0px;
 }
 
 .admonition.note {
-	color:black;
-	/*background-color:#eeeeee;*/
-	border: 0px;
-	box-shadow: none;
-	border-radius:0px;
+    color: black;
+    /*background-color:#eeeeee;*/
+    border: 0px;
+    box-shadow: none;
+    border-radius: 0px;
 }
 
-.admonition.quote .admonition-title{
-	/*color:black;*/
-	/*background-color:#b8b8b8;*/
-	border: 0px;
-	border-radius:0px;
+.admonition.quote .admonition-title {
+    /*color:black;*/
+    /*background-color:#b8b8b8;*/
+    border: 0px;
+    border-radius: 0px;
 }
 
 .admonition.quote {
-	/*color:black;*/
-	/*background-color:#eeeeee;*/
-	border: 0px;
-	box-shadow: none;
-	border-radius:0px;
+    /*color:black;*/
+    /*background-color:#eeeeee;*/
+    border: 0px;
+    box-shadow: none;
+    border-radius: 0px;
 }
 
 .admonition.warning {
-	/*color:black;*/
-	/*background-color:#eeeeee;*/
-	border: 0px;
-	box-shadow: none;
-	border-radius:0px;
+    /*color:black;*/
+    /*background-color:#eeeeee;*/
+    border: 0px;
+    box-shadow: none;
+    border-radius: 0px;
 }
 
 details.note {
-	color:black;
-	/*background-color:#eeeeee;*/
-	border: 0px;
-	box-shadow: none;
-	border-radius:0px;
+    color: black;
+    /*background-color:#eeeeee;*/
+    border: 0px;
+    box-shadow: none;
+    border-radius: 0px;
 }
 
 /*details[open].note {*/
-	/*background-color:red;*/
+    /*background-color:red;*/
 /*}*/
 
 details.question {
-	color:black;
-	border: 0px;
-	box-shadow: none;
-	border-radius:0px;
+    color: black;
+    border: 0px;
+    box-shadow: none;
+    border-radius: 0px;
 }
 
 details[open].question summary {
-	border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .md-header {
-	background-color:#161616;
+    background-color: #161616;
 }
 
 .md-tabs {
-	background-color:#161616;
-	font-weight: bold;
-	text-transform: uppercase;
+    background-color: #161616;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
