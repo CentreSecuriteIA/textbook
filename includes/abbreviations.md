@@ -10,10 +10,10 @@
 <!--*[language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
 <!--*[large language models]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
 
-*[ML]: Machine Learning. An approach to AI in which, instead of designing an algorithm directly, we have the system search through possible algorithms based on how well they do on some training data.
+<!--*[ML]: Machine Learning. An approach to AI in which, instead of designing an algorithm directly, we have the system search through possible algorithms based on how well they do on some training data.-->
 
-*[Neural network]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.
-*[NN]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.
+<!--*[Neural network]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.-->
+<!--*[NN]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.-->
 
 *[LMM]: Large Multimodal Model. An AI model that can take in and produce multiple forms of data (such as both text and images).
 *[LMMs]: Large Multimodal Model. An AI model that can take in and produce multiple forms of data (such as both text and images).
@@ -75,7 +75,8 @@
 <!--Human level AI-->
 
 *[AI ethics]: The study of ethical principles for AI systems and their creators to follow. In practice, “AI ethics”this often refers to a cluster of concerns about present systems that include algorithmic bias and transparency.
-*[Ethics of artificial intelligence]: The study of ethical principles for AI systems and their creators to follow. In practice, “AI ethics”this often refers to a cluster of concerns about present systems that include algorithmic bias and transparency.
+<!--
+*[Ethics of artificial intelligence]: The study of ethical principles for AI systems and their creators to follow. In practice, “AI ethics”this often refers to a cluster of concerns about present systems that include algorithmic bias and transparency.-->
 
 
 *[AI alignment]: Making sure that AI tries to do what we want it to do. 

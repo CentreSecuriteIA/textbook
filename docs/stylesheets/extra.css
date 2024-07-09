@@ -51,14 +51,14 @@ h2, h3 {
 
 .admonition.note .admonition-title {
     color: black;
-    /*background-color:#b8b8b8;*/
+	background-color:#c1e1ec;
     border: 0px;
     border-radius: 0px;
 }
 
 .admonition.note {
     color: black;
-    /*background-color:#eeeeee;*/
+	background-color:#e8f4f8;
     border: 0px;
     box-shadow: none;
     border-radius: 0px;
@@ -66,14 +66,14 @@ h2, h3 {
 
 .admonition.quote .admonition-title {
     /*color:black;*/
-    /*background-color:#b8b8b8;*/
+	background-color:#b8b8b8;
     border: 0px;
     border-radius: 0px;
 }
 
 .admonition.quote {
     /*color:black;*/
-    /*background-color:#eeeeee;*/
+	background-color:#eeeeee;
     border: 0px;
     box-shadow: none;
     border-radius: 0px;
