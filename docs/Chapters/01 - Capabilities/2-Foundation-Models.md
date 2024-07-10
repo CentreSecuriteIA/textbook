@@ -2,16 +2,12 @@
 
 ⌛ Estimated Reading Time: 14 minutes. (2743 words)
 
-
 ???+ note "Foundation Models - Video Introduction"
 
-<tab>
+    <iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/kK3NmQT241w"></iframe>
 
-<iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="[https://www.youtube.com/embed/kK3NmQT241w](https://www.youtube.com/embed/kK3NmQT241w)"></iframe>
+    !!! warning "This video is optional and not necessary to understand the text."
 
-!!! warning "This video is optional and not necessary to understand the text."
-
-</tab>
 
 **Foundation Model Paradigm.** The foundation model paradigm came about in the mid-to-late 2010s. The machine learning strategy shifted from using task-specific labeled datasets to using large, unlabeled datasets and creating more generalist models that can later be fine-tuned for specific needs. You can think of them as the Swiss army knives because they are capable of everything from language translation to generating artwork.
 
