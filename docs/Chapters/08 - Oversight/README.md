@@ -1,9 +1,8 @@
 !!! warning "This chapter is still being ported to the website."
 
-You can find previous versions of the chapters at the following links:
+You can find draft versions of the chapters at the following links:
 
- * [Task Decomposition](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/FFz6H35Gy6BArHxkc)
- * [Debate](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/WP4fciGn3rNtmq3tY)
+ * [Scalable Oversight + Debate](https://docs.google.com/document/d/1k6rlyBCZJw8xbUx0dzd-4sOhlzj-xzsmwi_OIZY1-3M/edit?usp=sharing)
  * [Advesarial Training](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/nz5NNAtfKJLmbtksL)
 
 In the meantime here is also a video introduction for the concept of iterated distillation:
