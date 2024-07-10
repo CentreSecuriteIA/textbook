@@ -1,13 +1,17 @@
 # Appendix 1: Expert Opinions
 
-⌛ Estimated Reading Time: 4 minutes. (672 words)
+⌛ Estimated Reading Time: 5 minutes. (835 words)
 
 
 ???+ note "Expert Opinions - Video Introduction"
 
-    <iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/NqmUBZQhOYw"></iframe>
+<tab>
 
-    !!! warning "This video is optional and not necessary to understand the text."
+<iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/NqmUBZQhOYw"></iframe>
+
+!!! warning "This video is optional and not necessary to understand the text."
+
+</tab>
 
 ## Surveys
 
@@ -15,11 +19,11 @@ According to a recent survey conducted by AI Impact ([source](https://aiimpacts.
 
 ![Enter image alt description](Images/01G_Image_29.png)
 
-Figure: 2024 Survey of AI Experts ([source](https://blog.aiimpacts.org/p/2023-ai-survey-of-2778-six-things))
+***Figure****: 2024 Survey of AI Experts (**[source](https://blog.aiimpacts.org/p/2023-ai-survey-of-2778-six-things)**)*
 
-It is also possible to compare the predictions of the same study in 2022 to the current results. It is interesting to note that the community has generally underestimated the speed of progress over the year 2023 and has adjusted its predictions downward. Some predictions are quite surprising. For example, tasks like "Write High School Essay" and "Transcribe Speech" are arguably already automated with ChatGPT and Whisper, respectively. However, it appears that researchers are not aware of these results. Additionally, it is surprising that “AI researcher” has longer timelines than “High-level machine intelligence (all human tasks)”.
+It is also possible to compare the predictions of the same study in 2022 to the current results. It is interesting to note that the community has generally underestimated the speed of progress over the year 2023 and has adjusted its predictions downward. Some predictions are quite surprising. For example, tasks like "Write High School Essay" and "Transcribe Speech" are arguably already automated with ChatGPT and Whisper, respectively. However, it appears that researchers are not aware of these results. Additionally, it is surprising that the forecast for when we are able to build an “AI researcher” has longer timelines than when we are able to build “High-level machine intelligence (all human tasks)”.
 
-The median of the most recent expert survey predicts human-level machine intelligence (HLMI) in 2049.
+The median of the 2024 expert survey predicts human-level machine intelligence (HLMI) in 2049.
 
 ## Expert Quotes
 
@@ -27,37 +31,52 @@ Here are some quotes from experts regarding transformative AI:
 
 !!! quote "Geoffrey Hinton"
 
-    "Until quite recently, I thought it was going to be like 20 to 50 years before we have general purpose AI," Hinton said. "And now I think it may be 20 years or less." ([source](https://www.cbsnews.com/news/godfather-of-artificial-intelligence-weighs-in-on-the-past-and-potential-of-artificial-intelligence/))
+	
+	"Until quite recently, I thought it was going to be like 20 to 50 years before we have general purpose AI," Hinton said. "And now I think it may be 20 years or less." ([source](https://www.cbsnews.com/news/godfather-of-artificial-intelligence-weighs-in-on-the-past-and-potential-of-artificial-intelligence/))
+	
 
 !!! quote "Yoshua Bengio"
 
-    Leading expert in AI, Yoshua Bengio: "...it started to dawn on me that my previous estimates of when human-level AI would be reached needed to be radically changed. Instead of decades to centuries, I now see it as 5 to 20 years with 90%." ([source](https://yoshuabengio.org/2022/08/12/personal-and-psychological-dimensions-of-ai-researchers-confronting-ai-catastrophic-risks/))
-
+	
+	Leading expert in AI, Yoshua Bengio: "...it started to dawn on me that my previous estimates of when human-level AI would be reached needed to be radically changed. Instead of decades to centuries, I now see it as 5 to 20 years with 90%." ([source](https://yoshuabengio.org/2023/08/12/personal-and-psychological-dimensions-of-ai-researchers-confronting-ai-catastrophic-risks/))
+	
 
 !!! quote "Yann LeCun"
 
-    “By "not any time soon", I mean "clearly not in the next 5 years", contrary to a number of folks in the AI industry.” ([source](https://www.cnbc.com/2023/12/03/meta-ai-chief-yann-lecun-skeptical-about-agi-quantum-computing.html))
-
+	
+	“By "not any time soon", I mean "clearly not in the next 5 years", contrary to a number of folks in the AI industry.” ([source](https://www.cnbc.com/2023/12/03/meta-ai-chief-yann-lecun-skeptical-about-agi-quantum-computing.html))
+	
 
 !!! quote "Ilya Sutskever"
 
-    "You're gonna see dramatically more intelligent systems in 10 or 15 years from now, and I think it's highly likely that those systems will have a completely astronomical impact on society" ([source](https://old.reddit.com/r/singularity/comments/kxgg1b/openais_chief_scientist_ilya_sutskever_comments/))
+	
+	"You're gonna see dramatically more intelligent systems in 10 or 15 years from now, and I think it's highly likely that those systems will have a completely astronomical impact on society" ([source](https://old.reddit.com/r/singularity/comments/kxgg1b/openais_chief_scientist_ilya_sutskever_comments/))
+	
 
 !!! quote "Demis Hassabis"
 
-    “We could only be a few years, maybe a decade away” ([source](https://www.wsj.com/video/events/the-race-for-true-ai-at-google/7953FE4B-AE84-4AFA-9722-AA215EB357EE.html))
-
-
-
+	
+	“We could only be a few years, maybe a decade away” ([source](https://www.wsj.com/video/events/the-race-for-true-ai-at-google/7953FE4B-AE84-4AFA-9722-AA215EB357EE.html))
+	
 
 Note that Hinton, Bengio, and Sutskever are the 3 most cited researchers in the field of AI. And that Hinton, Bengio, and LeCun are the recipients of the Turing Award in Deep Learning. Some users on reddit have put together a comprehensive list of publicly stated AI timelines forecasts from famous researchers and industry leaders. The full list can be found at [this link](https://www.reddit.com/r/singularity/comments/18vawje/comment/kfpntso/).
 
 ## Prediction Markets
 
+Prediction markets are like betting systems where people can buy and sell shares based on their predictions of future events. For instance, if there’s a prediction market for a presidential election, you can buy shares for the candidate you think will win. If many people believe Candidate A will win, the price of shares for Candidate A goes up, indicating a higher probability of winning.
+
+These markets are helpful because they gather the knowledge and opinions of many people, often leading to accurate predictions. For example, a company might use a prediction market to forecast whether a new product will succeed. Employees can buy shares if they believe the product will do well. If the majority think it will succeed, the share price goes up, giving the company a good indication of the product’s potential success.
+
+By allowing participants to profit from accurate predictions, these markets encourage the sharing of valuable information and provide real-time updates on the likelihood of various outcomes. The argument is that either prediction markets are more accurate than experts, or experts should be able to make a lot of money from these markets and, in doing so, correct the markets. So the incentive for profit leads to the most accurate predictions. Examples of prediction markets include [manifold](https://manifold.markets/home), or metaculus.
+
+When using prediction markets to estimate the reproducibility of scientific research it was found that  they outperformed expert surveys ([source](https://www.pnas.org/doi/10.1073/pnas.1516179112)). So if a lot of experts participate, prediction markets might be one of our best probabilistic forecasting tools, better even than surveys or experts.
+
+The live charts below show the results of the prediction markets from Metaculus for - “When will the first weakly general AI system be devised, tested, and publicly announced?” At the time of writing, weakly general systems are expected in 2027, and general systems in 2032.
+
 <iframe src="https://www.metaculus.com/questions/question_embed/3479/?theme=light"  style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0">
+
 </iframe>
 
 <iframe src="https://www.metaculus.com/questions/question_embed/5121/?theme=light"  style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0">
-</iframe>
 
-A prediction market, such as [manifold](https://manifold.markets/home) market, allows users to bet on future events, for example the result of a national election, or the release date of a particular product. Prediction markets are one of the best probabilistic crystal balls we currently have, and they are, in general, better tools than surveys or experts. An article on the prediction of the reproducibility of scientific articles compared these prediction methods, and it was found that prediction markets outperformed expert surveys ([source](https://www.pnas.org/doi/10.1073/pnas.1516179112)). The argument is that either prediction markets are more accurate than experts, or experts should be able to make a lot of money from these markets and, in doing so, correct the markets. As of January 2024, in response to the question “When will the first weakly general AI system be devised, tested, and publicly announced?”, the Metaculus market predicts currently a median year of 2026 ([source](https://www.notion.so/Economic-foresight-from-the-perspective-of-AI-development-8e2cf5c63f1748af85fa25e37fd5bc22?pvs=21)), and for the question “When will the first general AI system be devised, tested, and publicly announced?”Metaculus predicts currently a median of 2031. ([source](https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/)).
+</iframe>

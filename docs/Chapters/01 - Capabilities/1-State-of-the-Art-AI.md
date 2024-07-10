@@ -79,7 +79,7 @@ AI systems are becoming increasingly multimodal. This means that they can proces
 
 **Multi-modality**. A model is called multi-modal when both the inputs and outputs of a model can be in more than one modality. E.g. audio-to-text, video-to-text, text-to-image, etc…
 
-![Enter image alt description](Images/6oW_Image_9.png)
+![Enter image alt description](Images/6hS_Image_9.png)
 
 ***Figure:**** Image-to-text and text-to-image multimodality from the Flamingo model. (**[source](https://arxiv.org/abs/2204.14198)**)*
 
@@ -124,33 +124,3 @@ In recent years, AI's capability has extended to open-ended environments like Mi
 	
 	**Figure**: Voyager discovers new Minecraft items and skills continually by self-driven exploration, significantly outperforming the baselines. ([source](https://arxiv.org/abs/2305.16291))
 	
-
-## Questions
-
-??? question "What has been the major factor in the transformation of AI capabilities over the last decade?"
-
-    The major factor has been the successes in deep learning.
-
-??? question "What significant change in AI capabilities occurred with the development of large language models (LLMs)?"
-
-    There were transformative changes in sequence and language-based tasks, with LLMs significantly improving text generation and response to complex queries.
-
-??? question "How has the time to solve AI benchmarks changed over recent years?"
-
-	The time to solve AI benchmarks has decreased, illustrating the accelerating progress in AI.
-
-??? question "What are few-shot and zero-shot learning in the context of AI?"
-
-	Few-shot learning involves performing tasks with minimal examples, while zero-shot learning involves performing tasks without any specific examples.
-
-??? question "How has the programming ability of AI models evolved?"
-
-	AI models have progressed from basic code autocompletion to writing sophisticated, functional programs.
-
-??? question "What is the difference between cross-modality and multi-modality in AI models?"
-
-	Cross-modality involves input in one modality and output in another, while multi-modality involves both inputs and outputs in more than one modality.
-
-??? question "Give an example of a multimodal AI model mentioned in the text."
-
-	DeepMind's 2022 Flamingo model, which could adapt to various image/video understanding tasks.

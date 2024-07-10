@@ -5,9 +5,13 @@
 
 ???+ note "Foundation Models - Video Introduction"
 
-    <iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/kK3NmQT241w"></iframe>
+<tab>
 
-    !!! warning "This video is optional and not necessary to understand the text."
+<iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="[https://www.youtube.com/embed/kK3NmQT241w](https://www.youtube.com/embed/kK3NmQT241w)"></iframe>
+
+!!! warning "This video is optional and not necessary to understand the text."
+
+</tab>
 
 **Foundation Model Paradigm.** The foundation model paradigm came about in the mid-to-late 2010s. The machine learning strategy shifted from using task-specific labeled datasets to using large, unlabeled datasets and creating more generalist models that can later be fine-tuned for specific needs. You can think of them as the Swiss army knives because they are capable of everything from language translation to generating artwork.
 
@@ -27,7 +31,7 @@ The next section provides a deeper dive into the core underlying techniques used
 
 ## Techniques & Training
 
-**Overview of foundation model training**. The training process of foundation models begins with pre-training on large, diverse datasets. We use self-supervised learning to train on unlabeled data. Finally, fine-tuning adapts the model’s general knowledge to specific tasks.
+**Overview**** of foundation model training**. The training process of foundation models begins with pre-training on large, diverse datasets. We use self-supervised learning to train on unlabeled data. Finally, fine-tuning adapts the model’s general knowledge to specific tasks.
 
 **Pre-training.** This is the initial phase where the model is trained on a massive dataset of millions or billions of examples. During this phase, the model learns general patterns, structures, and knowledge.
 
@@ -74,6 +78,16 @@ Additionally, there is an ongoing debate about whether these models should be op
 We are only introducing the notion of emergence here, but we talk more about unexpected behavior due to scale in the section on scaling laws, as well as explore different arguments around emergence in the chapter on the landscape of AI risks.
 
 ## Questions & Exercises
+
+??? question "What are foundation models?"
+
+	
+	Foundation models are large-scale, pre-trained models that serve as a base for fine-tuning various downstream tasks. These models are trained on vast, diverse datasets to learn broad patterns and skills, enabling them to generalize well across different applications.
+	
+	They are different from traditional machine learning models because they are pre-trained on massive datasets and then fine-tuned for specific tasks. Traditional models are typically trained from scratch for each individual task.
+	
+	*Example*: Imagine a foundation model like GPT-3, which has been trained on diverse internet text. It can then be fine-tuned to write poetry, generate code, or summarize articles, demonstrating its versatility.
+	
 
 ??? question "What are the three main areas where significant investment is required for the development of foundation models?"
 

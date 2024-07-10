@@ -1,6 +1,6 @@
 # Leveraging Computation
 
-⌛ Estimated Reading Time: 14 minutes. (2705 words)
+⌛ Estimated Reading Time: 19 minutes. (3684 words)
 
 
 Leveraging computation refers to the strategic utilization of computational resources to maximize the performance of AI models. We learned in the previous section that foundation models have ushered in an era where scale—model size, data volume, and computational resources—has become a cornerstone of AI capabilities. This section aims to delve further into model scaling and its pivotal role in AI capabilities.
@@ -9,9 +9,23 @@ Leveraging computation refers to the strategic utilization of computational reso
 
 ???+ note "Bitter Lesson - Video Introduction"
 
-    <iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/wEgq6sT1uq8"></iframe>
+<tab>
 
-    !!! warning "This video is optional and not necessary to understand the text."
+<iframe
+
+style=" width: 100%; aspect-ratio: 16 / 9;"
+
+frameborder="0"
+
+allowfullscreen
+
+src="https://www.youtube.com/embed/wEgq6sT1uq8">
+
+</iframe>
+
+!!! warning "This video is optional and not necessary to understand the text."
+
+</tab>
 
 **What is the bitter lesson?** Traditionally, AI research has predominantly designed systems under the assumption that a fixed amount of computing power will be available to the designed agent. However, over time, computing power so far has been expanding in line with Moore's law (the number of transistors in an integrated circuit doubles every 1.5 years) ([source](https://en.wikipedia.org/wiki/Moore's_law)). So researchers could either leverage their human knowledge of the domain or exploit increases in general-purpose computational methods. Theoretically, the two were mutually compatible, but as time went on it was discovered that “*the biggest lesson that can be read from 70 years of AI research is that general methods that leverage computation are ultimately the most effective, and by a large margin. … [The bitter lesson teaches us] the great power of general purpose methods, of methods that continue to scale with increased computation even as the available computation becomes very great.*” - Sutton, Rich (March 2019) “[The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)”
 
@@ -31,7 +45,7 @@ This section explains the primary variables involved in scaling - compute, data,
 
 **Parameter Count**. Parameter count represents the number of tunable variables or weights in a machine learning model. The size of the model, meaning the number of parameters, affects the compute required: the more parameters a model has, the more compute-heavy the process of calculating loss and updating weights becomes. A larger parameter count allows the model to learn more complex representations but also increases the risk of overfitting, where the model becomes too tailored to the training data and performs poorly on unseen data.
 
-The following example offers a tangible illustration of capabilities increasing with an increasing parameter count in image generation models. In the following images, the same model architecture ([Parti](https://parti.research.google/)) is used to generate an image using an identical prompt, with the sole difference between the models being the parameter size.
+The following example offers a tangible illustration of capabilities increasing with an increasing parameter count in image generation models. In the following images, the same model architecture Parti is used to generate an image using an identical prompt, with the sole difference between the models being the parameter size.
 
 ![Enter image alt description](Images/Dhh_Image_17.png)
 
@@ -39,21 +53,35 @@ The following example offers a tangible illustration of capabilities increasing 
 
 Increased numbers of parameters not only enhance image quality but also aid the network in generalizing in various ways. More parameters enable the model to generate accurate representations of complex elements, such as hands and text, which are notoriously challenging. There are noticeable leaps in quality, and somewhere between 3 billion and 20 billion parameters, the model acquires the ability to spell words correctly. Parti is the first model with the ability to spell correctly. Before Parti, it was uncertain if such an ability could be obtained merely through scaling, but it is now evident that spelling correctly is another capability gained simply by leveraging scale. ([source](https://www.lesswrong.com/posts/uKp6tBFStnsvrot5t/what-dall-e-2-can-and-cannot-do))
 
-Below is a chart illustrating the impact of each of these three factors on model loss.[^1]
-
-[^1]: The appendix, and [Epoch AI](https://epochai.org/trends) prove many more graphs of this kind.
+Below is a chart illustrating the impact of each of these three factors on model loss.
 
 ![Enter image alt description](Images/nQO_Image_18.png)
 
 ***Figure****: Kaplan, Jared et. al. (Jan 2020) “**[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)**”*
 
+The current trends in various important variables to AI scaling are as below. Trends and bottlenecks for each of these are discussed in more detail in the appendix.
+
+- **Compute** : The compute used to train AI models grew 4-5x yearly from 2010 to May 2024. Generally compute used to train has been growing at 4.1x per year since 2010 with a 90% confidence interval: 3.7x to 4.6x. ([source](https://epochai.org/trends))
+
+- **Hardware** : The computational performance (FLOP/s) is growing by 1.35x per year. With a 90% confidence interval: 1.31x to 1.40x. ([source](https://epochai.org/trends))
+
+- **Data** : Training dataset sizes for language models have grown by 3x per year since 2010. Given these trends, the median projected year in which most of the effective stock of publicly available human-generated text will be used in a training run is 2028, with a 90% confidence interval that we will use up all the text data between 2026 to 2033. ([source](https://epochai.org/trends))
+
+- **Algorithms** : Due to algorithmic efficiency the physical compute required to achieve a given performance in language models is declining at a rate of 3 times per year. With a 95% confidence interval this is a rate of decline between 2 times to 6 times. It is also worth noting that the improvements to compute efficiency explain roughly 35% of performance improvements in language modeling since 2014, vs 65% explained by increases in model scale. ([source](https://epochai.org/trends))
+
+- **Costs** : The cost in USD of training frontier ML models has grown by 2.4x per year since 2016, with a 90% confidence interval this is between 2x to 3.1x. This suggests that the largest frontier models will cost over a billion dollars by 2027. Today, the total amortized cost of developing Gemini Ultra, including hardware, electricity, and staff compensation, is estimated at $130 million USD, with a 90% confidence interval it is between $70 million to $290 million. ([source](https://epochai.org/trends))
+
 ## Scaling Laws
 
 ???+ note "Scaling Laws - Video Introduction"
 
+<tab>
+
 <iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/ncCuJWJm8M8"></iframe>
 
 !!! warning "This video is optional and not necessary to understand the text."
+
+</tab>
 
 **Why do we care about scaling laws?** Scaling laws are mathematical relationships that describe how the performance of a machine learning model changes as we vary different aspects of the model and its training process. Training large foundation models like GPT is expensive. When potentially millions of dollars are invested in training AI models, developers need to ensure that funds are efficiently allocated. Developers need to decide on an appropriate resource allocation between - model size, training time, and dataset size. Scaling laws can guide decisions between trade-offs, such as: Should a developer invest in a license to train on Stack Overflow's data, or should they invest in more GPUs? Would it be efficient if they continued to cover the extra costs incurred by longer model training? If access to compute increases tenfold, how many parameters should be added to the model for optimal use of GPUs? For sizable language models like GPT-3, these trade-offs might resemble choosing between training a 20-billion parameter model on 40% of an internet archive or a 200-billion parameter model on just 4% of the same archive. ([source](https://www.lesswrong.com/posts/midXmMb2Xg37F2Kgn/new-scaling-laws-for-large-language-models)) In short, scaling laws are important because they help us optimally allocate resources, and they allow us to make predictions about how changes in compute, model size, and data size will affect the performance of future models.
 
@@ -75,8 +103,10 @@ Where $k$ is a constant, and $a$, $b$, and $c$ are the exponents that describe h
 	***Figure:**** Kaplan, Jared et. al. (Jan 2020) “**[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)**”*
 	
 
-=== "**2022 DeepMinds scaling law update**"
+=== "**2022 DeepMinds scaling laws (Chinchilla scaling laws)**"
 
+	
+	!!! warning "This is extra detail provided for those interested. It can be safely skipped."
 	
 	In 2022, DeepMind provided an update to OpenAIs scaling laws by publishing a paper called “Training Compute-Optimal Large Language Models” ([source](https://arxiv.org/abs/2203.15556)). They choose 9 different quantities of compute, ranging from about 10^18 FLOPs to 10^21 FLOPs. They hold the compute fixed at these amounts, and then for each quantity of compute, they train many different-sized models. Because the quantity of compute is constant for each level, the smaller models are trained for more time and the larger models for less. Based on their research DeepMind concluded that for every increase in compute, you should increase data size and model size by approximately the same amount. If you get a 100x increase in compute, you should make your model 10x bigger and your data 10x bigger. ([source](https://www.lesswrong.com/posts/midXmMb2Xg37F2Kgn/new-scaling-laws-for-large-language-models))
 	
@@ -143,27 +173,31 @@ Proponents include OpenAI ([sou](https://openai.com/blog/planning-for-agi-and-be
 	Additionally, as models scale, their internal workings become more opaque. The sheer number of parameters and the complexity of their interactions make it challenging to understand how specific inputs lead to particular outputs. This lack of interpretability hampers the ability to diagnose and rectify issues, increasing the risk of unintended behaviors. For instance, understanding why GPT-3 might generate a specific response requires deep analysis of its training data and parameter interactions, which is a non-trivial task.
 	
 
-??? question "What are scaling laws?"
+??? question "What is a scaling law in the context of machine learning models?"
 
+	
 	The primary variables involved in scaling AI models are compute (processing power), data (dataset size), and parameters (the number of tunable variables in the model).
-
+	
 	Scaling laws are power law relationships that describe how the performance of machine learning models improves predictably as these input variables change. They help allocate computational resources efficiently to maximize model capabilities.
 	
 	*Example*: OpenAI's research found that doubling the compute typically reduces the error rate by a fixed percentage, guiding efficient resource allocation.
+	
 
 ??? question "What is the scaling hypothesis in AI?"
 
-	The scaling hypothesis posits that increasing the scale of models, data, and computational resources will continue to yield significant improvements in AI performance, potentially leading to more general and capable AI systems.
-
-	The strong scaling hypothesis suggests that only scaling up models, data, and computation will lead to increasingly sophisticated AI behavior, eventually resulting in AGI.
-
-	The weak scaling hypothesis suggests that while scaling models is important, achieving AGI will also require discovering the right algorithms.
-
+	
+	The scaling hypothesis in general claims that increasing the scale of models, data, and computational resources will continue to yield significant improvements in AI performance, potentially leading to more general and capable AI systems.
+	
+	- The strong scaling hypothesis suggests that only scaling up models, data, and computation will lead to increasingly sophisticated AI behavior, eventually resulting in AGI.
+	
+	- The weak scaling hypothesis suggests that while scaling models is important, achieving AGI will also require discovering the right algorithms.
+	
 	*Example*: The impressive performance of GPT-3 and GPT-4, achieved by scaling up parameters and data, supports the scaling hypothesis, suggesting that simply continuing further scaling would lead to even more advanced AI capabilities.
-
+	
 
 ??? question "What are the safety implications of adhering to the weak and strong scaling hypotheses?"
 
+	
 	The weak scaling hypothesis, which assumes linear improvements with increased compute and data, suggests that safety measures can be incrementally scaled up as models grow. However, the strong scaling hypothesis, which posits exponential improvements, implies that small increases in compute and data could lead to disproportionately large performance gains and potential safety risks.
 	
 	In high-stakes applications, even modest changes in model design or training could result in significant, unpredictable behaviors. Therefore, adhering to the strong scaling hypothesis requires more comprehensive safety protocols put in place before training a model, including extensive testing, continuous monitoring, and adaptive risk management strategies to address potential emergent behaviors.

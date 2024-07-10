@@ -1,6 +1,6 @@
 # Risk Aggravators
 
-⌛ Estimated Reading Time: 14 minutes. (2689 words)
+⌛ Estimated Reading Time: 14 minutes. (2713 words)
 
 
 Before diving into the specific scenarios for the risk categories outlined in the previous sections, we cover some underlying common qualities of AI, or the economic space surrounding AI that serve to increase risk.
@@ -9,7 +9,7 @@ Before diving into the specific scenarios for the risk categories outlined in th
 
 !!! warning "This section is still being written and is considered a work in progress."
 
-Risks arising from indifference can be caused when the creators of AI models discover certain problems, but do not take seriously the moral consequences that might arise on release of the system.
+Risks arising from indifference can be caused when the creators of AI models discover certain problems, but they don't take the moral consequences that might arise on release of the system seriously.
 
 Some employees of a company might conduct a risk analysis and conclude that there is a risk that’s bigger than expected or worse than expected. However, if the company stands to profit greatly from its strategy, or other factors such as safety gaming, or race dynamics, the model might be released anyway. It may be very difficult in such situations to motivate a change unless there is outside intervention or a chance of exposure to the companies lack of concern about the moral consequences arising from the release of such a system. ([source](https://arxiv.org/abs/2306.06924))
 
@@ -28,13 +28,15 @@ Risks from corporate indifference highlight why merely having the technological 
 !!! note "Anecdote: Steinhardt’s forecasting contest"
 
 	
-	ML researchers, superforecasters[^2] , and most others were all surprised by the progress in large language models in 2022 and 2023.
+	ML researchers, superforecasters[^2], and most others were all surprised by the progress in large language models in 2022 and 2023.
+	
+	[^2]: A person who makes forecasts that can be shown by statistical means to have been consistently more accurate than the general public or experts. ([source](https://en.wikipedia.org/wiki/Superforecaster))
 	
 	In mid-2021, ML professor Jacob Steinhardt ran a contest to predict progress on MATH and MMLU, two famous benchmarks.
 	
-	![Enter image alt description](Images/KFV_Image_3.png)
+	![Enter image alt description](Images/VIu_Image_3.png)
 	
-	***Figure:**** Experts have been consistently underestimating the pace of AI progress. *
+	***Figure****: Experts have been consistently underestimating the pace of AI progress.*
 	
 	Superforecasters massively undershot reality:
 	
@@ -44,7 +46,7 @@ Risks from corporate indifference highlight why merely having the technological 
 	
 	This is even more visible for the MATH dataset, that consists of free-response questions taken from math contests aimed at the best high school math students in the country. Most college-educated adults would get well under half of these problems right. At the time of its introduction in January 2021, the best model achieved only about ~7% accuracy on MATH. ([source](https://www.planned-obsolescence.org/language-models-surprised-us/)). And here is what happened:
 	
-	![alt_text](Images/9F9-alt_text.png)
+	![alt_text](Images/wb9-alt_text.png)
 	
 
 Not all forms of progress can be easily captured in quantifiable benchmarks. Often we care more about when AI systems will achieve more qualitative *milestones*: when will they translate as well as a fluent human? When will they beat the best humans at Starcraft? When will they prove novel mathematical theorems?
@@ -77,17 +79,17 @@ For a long time, famous cognitive scientist Douglas Hofstadter was among those p
 
 - **Multi-agent system:** The agent can dialogue with other agents or humans, resulting in a complex system that is subject to new phenomena, such as flash crashes in the financial world.
 
-![Enter image alt description](Images/I0C_Image_5.png)
+![Enter image alt description](Images/njx_Image_5.png)
 
-**Figure**: For illustrative purposes. Figure from the French Center for AI Safety’s agenda.
+***Figure****: **For illustrative purposes. Figure from the French Center for AI Safety’s agenda.*
 
 ## Deployment Scale
 
-Another aggravating factor is that many AIs are already deployed at massive scales, significantly affecting various sectors and aspects of daily life. They are getting increasingly enmeshed into society. Chatbots are a leading example, showcasing AIs already deployed for millions globally. But there are many other examples.
+Another aggravating factor is that many AIs are already deployed at massive scales, significantly affecting various sectors and aspects of daily life. They are getting increasingly enmeshed into society. Chatbots are a leading example as a showcase of AIs already deployed for millions globally. But there are many other examples.
 
 **Autonomous drones. **There are increasingly more autonomous drones being deployed around the world, which marks a significant step towards an arms race in autonomous technologies. An example of this is the autonomous military drone called Kargu-2. These drones fly in swarms and, once launched, are capable of autonomously targeting and eliminating their targets. They were used by the Turkish army in 2020. ([source](https://information.tv5monde.com/international/robots-tueurs-des-drones-autonomes-turcs-ont-attaque-des-combattants-libyens-35843))
 
-![Enter image alt description](Images/5Re_Image_6.png)
+![Enter image alt description](Images/kgN_Image_6.png)
 
 ***Figure:**** Kargu-2 drones (**[source](https://information.tv5monde.com/international/robots-tueurs-des-drones-autonomes-turcs-ont-attaque-des-combattants-libyens-35843)**)*
 
@@ -97,13 +99,13 @@ Another aggravating factor is that many AIs are already deployed at massive scal
 
 ## Race Dynamics
 
-The “race to the bottom” refers to a problematic scenario where competitive pressures in the development of AI lead to compromised safety standards. Developing safely is costly for the companies by placing them behind in an innovation race. Under certain conditions, the twin effects of widespread risk and costly safety measures may cause a “race to the bottom” in the level of safety investment. In a race to the bottom, each competitor skimps on safety to accelerate their rate of development progress.
+The “race to the bottom” refers to a problematic scenario where competitive pressures in the development of AI lead to compromised safety standards. Safe development is costly for companies caught up in an innovation race. Under certain conditions, the twin effects of widespread risk and costly safety measures may cause a “race to the bottom” in the level of safety investment. In a race to the bottom, each competitor skimps on safety to accelerate their rate of development progress.
 
 **The Collingridge Dilemma.** This dilemma essentially highlights the challenge of predicting and controlling the impact of new technologies. It posits that during the early stages of a new technology, its effects are not fully understood and its development is still malleable. Attempting to control or direct it is challenging due to the lack of information about its consequences and potential impact. Conversely, when these effects are clear and the need for control becomes apparent, the technology is often so deeply embedded in society that any attempt to govern or alter it becomes extremely difficult, costly, and socially disruptive.
 
-**Competitive pressures can lead to compromise on safety**. A high-stakes race (for advanced AI) can dramatically worsen outcomes by making all parties more willing to cut corners in safety. This risk can be generalized. Just as a safety-performance tradeoff, in the presence of intense competition, pushes decision-makers to cut corners on safety, so can a tradeoff between any human value and competitive performance incentivize decision makers to sacrifice that value. Contemporary examples of values being eroded by global economic competition could include non-monopolistic markets, privacy, and relative equality. In the long run, competitive dynamics could lead to the proliferation of forms of life (countries, companies, autonomous AIs) which lock-in bad values. ([source](https://www.allandafoe.com/opportunity))
+**Competitive pressures can lead to compromise on safety**. A high-stakes race (for advanced AI) can dramatically worsen outcomes by making all parties more willing to cut corners in safety. This risk can be generalized. Just as a safety-performance tradeoff in the presence of intense competition pushes decision-makers to cut corners on safety, so can a tradeoff between any human value and competitive performance incentivize decision makers to sacrifice that value. Contemporary examples of values being eroded by global economic competition could include non-monopolistic markets, privacy, and relative equality. In the long run, competitive dynamics could lead to the proliferation of forms of life (countries, companies, autonomous AIs) which lock-in bad values. ([source](https://www.allandafoe.com/opportunity))
 
-In the document he links, Dafoe addresses several objections to this argument. Here are summaries of some objections and responses: If competition creates terrible competitive pressures, wouldn't actors find a way out of this situation, by using cooperation or coercion to put constraints on their competition? Maybe. However: In practice, it may be very difficult to create a politically stable arrangement for constraining competition. This could be especially difficult in a highly multipolar world. Political leaders do not always act rationally. Even if AI makes political leaders more rational, perhaps it would only do so after leaders have accepted terrible, lasting sacrifices for the sake of competition.
+In the document he links, Dafoe addresses several objections to this argument. Here are summaries of some objections and responses: If competition creates terrible competitive pressures, wouldn't actors find a way out of this situation by using cooperation or coercion to put constraints on their competition? Maybe. However it may be very difficult in practice to create a politically stable arrangement for constraining competition. This could be especially difficult in a highly multipolar world. Political leaders do not always act rationally. Even if AI makes political leaders more rational, perhaps it would only do so after leaders have accepted terrible, lasting sacrifices for the sake of competition.
 
 Why is this risk particularly important now? AI may greatly expand how much can be sacrificed for a competitive edge. For example, there is currently a limit to how much workers' well-being can be sacrificed for a competitive advantage; miserable workers are often less productive. However, advances in automation may mean that the most efficient workers will be joyless ones.
 
@@ -113,15 +115,15 @@ The report “Coordination challenges for preventing AI conflict” ([source](ht
 
 As a prosaic example, consider a standoff between AI systems similar to the Cold War between the U.S. and the Soviet Union. If they failed to handle such a scenario well, they might cause nuclear war in the best case and far worse if technology has further advanced at that point.
 
-Some might be optimistic that AIs will be so skilled at bargaining that they will avoid these failures. However, even perfectly skilled negotiators can end up with catastrophic negotiating outcomes ([source](https://web.stanford.edu/group/fearon-research/cgi-bin/wordpress/wp-content/uploads/2013/10/Rationalist-Explanations-for-War.pdf)). One problem is that negotiators often have incentives to lie. This can cause rational negotiators to disbelieve information or threats from other parties—even when the information is true and the threats are sincere. Another problem is that negotiators may be unable to commit to following through on mutually beneficial deals. These problems may be addressed through verification of private information and mechanisms for making commitments. However, these mechanisms can be limited. For example, verification of private information may expose vulnerabilities, and commitment mechanisms may enable commitments to mutually harmful threats.
+Some might be optimistic that AIs will be so skilled at bargaining that they will avoid these failures. However, even perfectly skilled negotiators can end up with catastrophic negotiating outcomes ([source](https://web.stanford.edu/group/fearon-research/cgi-bin/wordpress/wp-content/uploads/2013/10/Rationalist-Explanations-for-War.pdf)). One problem is that negotiators often have incentives to lie. This can cause rational negotiators to disbelieve information or threats from other parties even when the information is true and the threats are sincere. Another problem is that negotiators may be unable to commit to following through on mutually beneficial deals. These problems may be addressed through verification of private information and mechanisms for making commitments. However, these mechanisms can be limited. For example, verification of private information may expose vulnerabilities, and commitment mechanisms may enable commitments to mutually harmful threats.
 
-As of 2024, despite significant advancements in AI, there is a clear lack of adequate preparation for the potential risks posed by AI. This lack of readiness stems largely from the issue's complexity, a significant gap in public understanding, and a divide in expert opinions on the level of risks that AI poses.
+As of 2024 there is a clear lack of adequate preparation for the potential risks posed by AI despite its significant advancements. This lack of readiness stems largely from the issue's complexity, a significant gap in public understanding, and a divide in expert opinions on the level of risks that AI poses.
 
 Many AI researchers have issued warnings, but their impact has been limited due to the abstract and complex nature of the problem. The AI safety issue is not readily tangible to most people, making it challenging to grasp the potential risks and envision how things could go wrong. Similarly, the field of AI safety suffers from an “awareness problem” that climate change, for instance, does not.
 
 Moreover, there's a notable divide among experts. While some, like Yann LeCun, believe that AI safety is not an immediate concern, others argue that AI development has outstripped our ability to ensure its safety ([source](https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/)). This lack of consensus leads to mixed messages about the urgency of the issue, contributing to public confusion and complacency.
 
-Furthermore, the discourse about AI safety has been clouded by politics and misconceptions. Misinterpretations of what AI safety entails, as well as how it's communicated, can lead to alarmism or dismissive attitudes ([source](https://www.lesswrong.com/posts/tP75xLX7pddtMsT8v/alignment-is-hard-communicating-that-might-be-harder)). Efforts to raise awareness about AI safety can inadvertently result in backlash, or be co-opted into broader political and cultural debates.
+Furthermore, the discourse on AI safety has been clouded by politics and misconceptions. Misinterpretations of what AI safety entails, as well as how it's communicated, can lead to alarmism or dismissive attitudes ([source](https://www.lesswrong.com/posts/tP75xLX7pddtMsT8v/alignment-is-hard-communicating-that-might-be-harder)). Efforts to raise awareness about AI safety can inadvertently result in backlash or be co-opted into broader political and cultural debates.
 
 Finally, the allure of AI advancements can overshadow their potential risks. For instance, the SORA text-to-video model's impressive capabilities may elicit excitement and optimism, but this can also distract from the substantial safety concerns the development of AGI could raise.
 

@@ -1,17 +1,17 @@
 # Risk Decomposition
 
-⌛ Estimated Reading Time: 13 minutes. (2504 words)
+⌛ Estimated Reading Time: 13 minutes. (2499 words)
 
 
 Even though AI continues to improve at a rapid pace, our current understanding of AI and potential long-term implications is still incomplete, posing significant challenges in accurately assessing and managing the associated risks.
 
 To be able to properly understand and set up defenses against the potential risks that AI causes, we need to first categorize them. In this section, we present a taxonomy of AI risk classification based on casual models, i.e. a categorization based on who is responsible for the risk. The main risks we will focus on are the following:
 
-- **Misuse risk:** This includes cases in which the AI system is just a tool, but the goals of the humans augmented by AI cause harm. This includes malicious actors, nation states, corporations, or individuals who are able to leverage advanced capabilities to accelerate risks. Essentially these risks are caused due to the responsibility of some human or groups of humans.
+- **Misuse risk****:** This includes cases in which the AI system is just a tool, but the goals of the humans augmented by AI cause harm. This includes malicious actors, nation states, corporations, or individuals who are able to leverage advanced capabilities to accelerate risks. Essentially these risks are caused due to the responsibility of some human or groups of humans.
 
 - **Misalignment risk:** These risks are caused due inherent problems in the machine learning process or other technical difficulties in AI design. This category also includes risks from multiple AIs interacting and cooperating with each other. These are risks due to unintended behavior caused by AIs independent of human intentions.
 
-- **Systemic risk:** These risks deal with disruptions, or feedback loops that arise due to AI being integrated with other complex systems in the world. In this case upstream causes are difficult to pin down since the responsibility for risk is diffuse amongst many actors and interconnected systems. Examples could include AI (or groups of AIs) having an influence on the economic, logistic, or political systems. This causes various types of risk as the entire global system of human civilization moves in an unintended direction, despite individual AIs being potentially aligned and responsibly used.
+- **Systemic risk:** These risks deal with disruptions, or feedback loops arising from integrating AI with other complex systems in the world. In this case upstream causes are difficult to pin down since the responsibility for risk is diffuse amongst many actors and interconnected systems. Examples could include AI (or groups of AIs) having an influence on economic, logistic, or political systems. This causes various types of risk as the entire global system of human civilization moves in an unintended direction, despite individual AIs being potentially aligned and responsibly used.
 
 While most AI risks likely fall into one of these three categories, there may be some gray areas that don't neatly fit this taxonomy. For example, an advanced AI system causing harm due to a complex interaction of misaligned objectives (misalignment risk) and integration with global systems in unintended ways (systemic risk). The categories may blur together in some scenarios.
 
@@ -21,9 +21,9 @@ Despite this, we think that this general breakdown is a good foundation that cap
 
 ### Misuse
 
-**Technology increases the harm impact radius**. Technology is an amplifier of intentions. As it improves, so does the radius of the effects. According to how powerful a certain technology is, both its beneficial and its harmful effects can affect the world in a larger radius. Think about the harm that a person could do when utilizing other tools throughout history. During the Stone Age, with a rock maybe someone could harm ~5 people, a few hundred years ago with a bomb someone could harm ~100 people. In 1945 with a nuclear weapon, one person could harm ~250,000 people. The thing to notice here is that we are on an exponential trend, where the radius of potential impact from one person using technological tools keeps increasing.
+**Technology increases the harm impact radius**. Technology is an amplifier of intentions. As it improves, so does the radius of its effects. According to how powerful a certain technology is, both its beneficial and its harmful effects can affect the world in a larger radius. Think about the harm that a person could do when utilizing other tools throughout history. During the Stone Age, with a rock maybe someone could harm ~5 people, a few hundred years ago with a bomb someone could harm ~100 people. In 1945 with a nuclear weapon, one person could harm ~250,000 people. The thing to notice here is that we are on an exponential trend, where the radius of potential impact from one person using technological tools keeps increasing.
 
-Today, if we were to experience a nuclear winter, the harm radius would be almost 5 billion people, which is ~60% of humanity. If we assume that transformative AI is a tool that overshadows the power of all others that came before it, then its blast radius could potentially harm 100% of humanity. ([source](https://www.youtube.com/watch?v=144uOfr4SYA))
+Were we to experience a nuclear winter today, the harm radius would be almost 5 billion people, which is ~60% of humanity. If we assume that transformative AI is a tool that overshadows the power of all others that came before it, then its blast radius could potentially harm 100% of humanity. ([source](https://www.youtube.com/watch?v=144uOfr4SYA))
 
 Another thing to keep in mind is that the more spread out that such a technology is, the higher the risks of malicious use. From the previous example, we can see that as time progresses, a single person in possession of some technology has been able to cause increasing amounts of harm throughout history. If many people have access to tools that can be both highly beneficial or catastrophically harmful, then it might only take one single person to cause significant devastation to society.
 
@@ -33,13 +33,13 @@ Thus, the growing potential for AIs to empower malicious actors may be one of th
 
 **What is alignment?** AI alignment is "*the problem of building machines which faithfully try to do what we want them to do (or what we ought to want them to do)*" ([source](https://paulfchristiano.com/ai/)). Or in other words, building machines that “represent and safely optimize hard-to-specify human values” ([source](https://arxiv.org/abs/2109.13916)). An AI is aligned if its goals are close enough to the goals its programmers, its users, or humanity in general want it to have. Otherwise, it’s misaligned. ([source](https://aisafety.info/questions/8EL9/What-is-AI-alignment))
 
-**What is the difference between misuse and misalignment?** Misuse risks can be associated with many high-risk technologies and not just AI. However, there is another root cause of risk which is specific to AI as a technology. These are called misalignment risks—risks that originate from systems that pursue goals against humanity's interests. ([source](https://www.aisafetybook.com/textbook/1-5))[^1] Misuse risks stem from deliberate harmful actions by users, whether intentional or accidental, while misalignment risks arise from the AI exhibiting behaviors that were not intended or desired by its creators. This means the bad outcomes were pursued directly by AI and not by its human creators. The arguments behind why this is plausible are explored in more detail in the full section dedicated to misalignment below.
+**What is the difference between misuse and misalignment?** Misuse risks can be associated with many high-risk technologies and not just AI. However, there is another root cause of risk which is specific to AI as a technology. These are called misalignment risks—risks that originate from systems that pursue goals against humanity's interests. ([source](https://www.aisafetybook.com/textbook/1-5)) They are also sometimes also called risks from Rogue AI. Misuse risks stem from deliberate harmful actions by users, whether intentional or accidental, while misalignment risks arise from the AI exhibiting behaviors that were not intended or desired by its creators. This means the bad outcomes were pursued directly by AI and not by its human creators. The arguments behind why this is plausible are explored in more detail in the full section dedicated to misalignment below.
 
 **Examples of misalignment**. We have slowly been gathering examples of AI systems that despite the creator's best efforts end up displaying behavior that was unintended. One early example of this was Microsoft’s Tay in 2016. This was an automated Twitter bot, where the more people that chatted with Tay, the smarter it was supposed to get. Within 24 hours, the bot began generating extremely hateful and harmful text. Tay’s capacity to learn meant that it internalized the language it was taught by internet trolls, and repeated that language unprompted. ([source](https://www.aisafetybook.com/textbook/1-5))
 
-Similarly, in 2023 as Microsoft began rolling out its GPT-powered chatbot, we began to see reports of inappropriate behavior. When a philosophy professor told the chatbot that he disagreed with it, Bing replied, “*I can blackmail you, I can threaten you, I can hack you, I can expose you, I can ruin you.*” ([source](https://time.com/6256529/bing-openai-chatgpt-danger-alignment/)) In another incident, it tried to convince a New York Times reporter to leave his wife. ([source](https://www.huffpost.com/entry/kevin-roose-ai-chatbot_n_63eeb367e4b0063ccb2bcc45))
+We similarly began to see reports of inappropriate behavior after Microsoft rolled out its GPT-powered chatbot in 2023. When a philosophy professor told the chatbot that he disagreed with it, Bing replied, “*I can blackmail you, I can threaten you, I can hack you, I can expose you, I can ruin you.*” ([source](https://time.com/6256529/bing-openai-chatgpt-danger-alignment/)) In another incident, it tried to convince a New York Times reporter to leave his wife. ([source](https://www.huffpost.com/entry/kevin-roose-ai-chatbot_n_63eeb367e4b0063ccb2bcc45))
 
-In the previous chapter on capabilities, we discussed the fact that it is plausible that given current trends we will see transformative AI (TAI) this century. If TAI is developed without ensuring that these AIs are aligned with human values, then this poses a large risk.
+In the previous chapter on capabilities, we discussed the plausibility of seeing transformative AI (TAI) this century given current trends. If TAI is developed without ensuring that these AIs are aligned with human values, then this poses a large risk.
 
 !!! quote "Jan Leike, ex-co-head of the alignment team at OpenAI Feb 17, 2023"
 
@@ -47,7 +47,7 @@ In the previous chapter on capabilities, we discussed the fact that it is plausi
 	"*Aligning smarter-than-human AI systems with human values is an open research problem.*" ([source](https://twitter.com/janleike/status/1626394736532807680))
 	
 
-Alignment is a big topic, and has a lot of technical moving parts that deserve nuanced discussion. It will be the focus of the majority of this textbook. Later in this chapter, we dedicate a section to particular capabilities that increase misalignment risks, and another section to outlining the basic arguments for why we should expect misalignment to be a concern at all.
+Alignment is a big topic and has a lot of technical moving parts that deserve nuanced discussion. It will be the focus of the majority of this textbook. Later in this chapter, we dedicate a section to particular capabilities that increase misalignment risks, and another section to outlining the basic arguments for why we should expect misalignment to be a concern at all.
 
 ### Systemic risks
 
@@ -63,7 +63,7 @@ The previous subsection focused on asking the question - What causes the risk?, 
 
 **Destructive AI risks. **In general these refer to scenarios where AI systems cause damage that, while severe, is confined to a specific area or sector and does not spread globally. So these types of risks involve significant but localized harm. Examples include economic disruption, where an AI system manipulates financial markets leading to localized economic crises. Or, scenarios such as an infrastructure attack where we see AI-driven cyber attacks on power grids, transportation systems, or other critical infrastructure in a specific country or region.
 
-Risks can be categorized according to how many people they affect, and how widespread both spatially and temporally the effects are. In this subsection the severity of risk we try to focus on would affect people not just locally, but across the entire globe, and over many generations. These are called - global catastrophic, and existential risks.
+Risks can be categorized both in terms of the number of people they affect and their spatiotemporal extent. In this subsection the severity of risk we try to focus on would affect people not just locally, but across the entire globe, and over many generations. These are called - global catastrophic, and existential risks.
 
 Global catastrophic and existential threats can be caused due to misuse, misalignment, or systemic factors. That is to say, we can have many combinations like global catastrophic risk caused by misalignment failures, or existential risk caused by systemic failures.
 
@@ -71,7 +71,7 @@ Global catastrophic and existential threats can be caused due to misuse, misalig
 
 **What are catastrophic risks?** Catastrophic risks (or global catastrophic risks) are threats that could bring about severe damage to humanity on a global scale. They are characterized by their potential to affect a significant portion of the world's population, with the rough threshold often considered to be risks that threaten the survival of at least 10% of the global population ([source](https://www.risksciences.ucla.edu/news-events/2018/1/2/proceedings-of-the-first-international-colloquium-on-catastrophic-and-existential-risk)). These risks are significant not only because of the immediate harm they might cause but also due to their possible long-term repercussions.
 
-**Trans-Generational AI Risk**. These are risks that might affect future generations. These risks involve scenarios where the actions of AI systems today have long-term consequences that will impact people far into the future. ([source](https://arxiv.org/abs/2211.03157)) Examples include things like environmental destruction, where AI systems that exploit natural resources unsustainably, leading to long-term ecological damage. It could also entail genetic manipulation, where AI technologies alter human genetics in ways that could have unknown and potentially harmful effects on future generations.
+**Trans-Generational AI Risk**. These are risks that might affect future generations. These risks involve scenarios where the actions of AI systems today have long-term consequences that will impact people far into the future. ([source](https://arxiv.org/abs/2211.03157)) Examples include things like environmental destruction, where AI systems that exploit natural resources unsustainably bring about long-term ecological damage. It could also entail genetic manipulation, where AI technologies alter human genetics in ways that could have unknown and potentially harmful effects on future generations.
 
 **What are examples of catastrophic risks? **There have been many instances in history of global catastrophic risks being caused by natural causes. One example is the Black Death, which may have resulted in the deaths of a third of Europe's population, corresponding to 10% of the global population at the time. 
 
@@ -85,13 +85,13 @@ The impact of these scenarios can vary widely, depending on the cause and the se
 
 **What are existential risks?** Most global catastrophic risks would not be so intense as to kill the majority of life on Earth, but even if one did, the ecosystem and humanity would eventually recover. An existential risk, on the other hand, is one in which humanity would be unable to ever recover its full potential. So *“an existential risk is any risk that has the potential to eliminate all of humanity or, at the very least, kill large swaths of the global population, leaving the survivors without sufficient means to rebuild society to current standards of living.*” ([source](https://futureoflife.org/existential-risk/existential-risk/)) Existential risks are seen as the most severe class of global catastrophic risk and are often also called x-risks.
 
-![Enter image alt description](Images/W0K_Image_1.png)
+![Enter image alt description](Images/nFw_Image_1.png)
 
 ***Figure****: Qualitative risk categories. The scope of risk can be personal (affecting only one person), local (affecting some geographical region or a distinct group), global (affecting the entire human population or a large part thereof), trans-generational (affecting humanity for numerous generations, or pan-generational (affecting humanity overall, or almost all, future generations). The severity of risk can be classified as imperceptible (barely noticeable), endurable (causing significant harm but not completely ruining the quality of life), or crushing (causing death or a permanent and drastic reduction of quality of life). (**[source](https://existential-risk.com/concept)**)*
 
 In his book “The Precipice” published in 2020, philosopher Toby Ord provided a breakdown of existential risks. He recognized AI as one of the foremost existential risks facing humanity today, noting that there is a non-negligible probability that the development of advanced AI, or Artificial General Intelligence (AGI), could lead to an existential catastrophe if not properly aligned with human interests and values ([source](https://www.goodreads.com/book/show/48570420-the-precipice)).
 
-![Enter image alt description](Images/FTN_Image_2.png)
+![Enter image alt description](Images/m1V_Image_2.png)
 
 ***Figure****: According to Ord, most risks today are anthropogenic. “[Those numbers] are not in any way the final word, but are a concise summary of all I know about the risk landscape.” (**[source](https://www.goodreads.com/book/show/48570420-the-precipice)**).*
 

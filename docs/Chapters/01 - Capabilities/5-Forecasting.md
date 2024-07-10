@@ -1,13 +1,17 @@
 # Forecasting
 
-⌛ Estimated Reading Time: 31 minutes. (6109 words)
+⌛ Estimated Reading Time: 38 minutes. (7520 words)
 
 
 ???+ note "Forecasting TAI - Video Introduction"
 
-    <iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/3K25VPdbAjU"></iframe>
+<tab>
 
-    !!! warning "This video is optional and not necessary to understand the text."
+<iframe style=" width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/3K25VPdbAjU"></iframe>
+
+!!! warning "This video is optional and not necessary to understand the text."
+
+</tab>
 
 This section of the chapter investigates techniques used to forecast AI timelines and takeoff dynamics.
 
@@ -89,7 +93,7 @@ Neural Network and Genome Anchors: Various computational benchmarks based on the
 
 ![Enter image alt description](Images/4IF_Image_20.png)
 
-Figure: The biological anchor model ([source](https://epochai.org/blog/grokking-bioanchors))
+***Figure****: The biological anchor model (**[source](https://epochai.org/blog/grokking-bioanchors)**)*
 
 === "**Evolution anchor**"
 
@@ -116,7 +120,7 @@ Figure: The biological anchor model ([source](https://epochai.org/blog/grokking-
 	
 	![Enter image alt description](Images/UP9_Image_22.png)
 	
-	Figure: The Lifelong anchor ([source](https://epochai.org/blog/grokking-bioanchors))
+	***Figure****: The Lifelong anchor (**[source](https://epochai.org/blog/grokking-bioanchors)**)*
 	
 	Cotra's report finds a median of ~1e28 FLOP and only gives the lifetime anchor a 5% weight, indicating that it's not the most influential factor in the overall model. The report acknowledges the inherent uncertainties and complexities involved in such a calculation and uses this anchor as one of several to provide a range of estimates for the compute required to achieve AI with human-level performance. ([source](https://epochai.org/blog/grokking-bioanchors))
 	
@@ -130,7 +134,7 @@ Figure: The biological anchor model ([source](https://epochai.org/blog/grokking-
 	
 	![Enter image alt description](Images/Day_Image_23.png)
 	
-	Figure: Neural network Anchors([source](https://epochai.org/blog/grokking-bioanchors))
+	***Figure****: **Neural network Anchors**(**[source](https://epochai.org/blog/grokking-bioanchors)**)*
 	
 
 === "**Genome Anchor**"
@@ -142,7 +146,7 @@ Figure: The biological anchor model ([source](https://epochai.org/blog/grokking-
 	
 	![Enter image alt description](Images/hu8_Image_24.png)
 	
-	Figure: The Genome Anchor ([source](https://epochai.org/blog/grokking-bioanchors))
+	***Figure****: The Genome Anchor (**[source](https://epochai.org/blog/grokking-bioanchors)**)*
 	
 	At least at the time of writing (May 2022), machine learning architectures don’t look very much like the human genome, and we are yet to develop TAI – thus Cotra updates against this hypothesis towards requiring more FLOP. Overall, she finds a median of ~1e33 FLOP and places 10% weight on this anchor. ([source](https://epochai.org/blog/grokking-bioanchors))
 	
@@ -151,7 +155,7 @@ Figure: The biological anchor model ([source](https://epochai.org/blog/grokking-
 
 ![Enter image alt description](Images/F6B_Image_25.png)
 
-Figure: Affordability of compute ([source](https://epochai.org/blog/grokking-bioanchors))
+***Figure****: **Affordability of compute **(**[source](https://epochai.org/blog/grokking-bioanchors)**)*
 
 The following graph gives an overview of the findings. Overall, the graph takes a weighted average of the different ways that the trajectory could flow. This gives us an estimate of a >10% chance of transformative AI by 2036, a ~50% chance by 2055, and an ~80% chance by 2100. In 2022 a two-year update on the author’s (Ajeya Cotra) timelines was published. The updated timelines for TAI are ~15% probability by 2030, ~35% probability by 2036, a median of ~2040, and a ~60% probability by 2050. ([source](https://www.alignmentforum.org/posts/AfH2oPHCApdKicM4m/two-year-update-on-my-personal-ai-timelines))
 
@@ -238,19 +242,9 @@ Factors Influencing Polarity. Several key elements influence whether takeoff pol
 
 - **Data Overhang**: This would be a situation where there is an abundance of data available that could be used for training AI systems, but the AI algorithms capable of utilizing all that data effectively haven't been developed or deployed yet.
 
-**The Intelligence Explosion Argument**. This concept of the 'intelligence explosion' is also central to the conversation around discontinuous takeoff. It originates from I.J. Good's thesis, which posits that sufficiently advanced machine intelligence could build a smarter version of itself. This smarter version could in turn build an even smarter version of itself, and so on, creating a cycle that could lead to intelligence vastly exceeding human capability ([source](https://intelligence.org/files/IEM.pdf)). In their 2012 report on the evidence for Intelligence Explosions, Muehlhauser and Salamon delve into the numerous advantages that machine intelligence holds over human intelligence, which facilitate rapid intelligence augmentation. ([source](https://intelligence.org/files/IE-EI.pdf)) These include:
+Overhangs are also used as a counter argument to why AI pauses do not affect takeoff. One counter argument to the overhang argument is that it relies on the assumption that during the time that we are pausing AI development, the rate of production of chips will remain constant. It could be argued that the companies manufacturing these chips will not make as many chips if data centers aren't buying them. However, this argument only works if the pause is for any appreciable length of time, otherwise the data centers might just stockpile the chips. It is also possible to make progress on improved chip design, without having to manufacture as many during the pause period. However, during the same pause period we could also make progress on AI Safety techniques. ([source](https://www.youtube.com/watch?v=Q3eRy4t2oPQ))
 
-- **Computational Resources**: Human computational ability remains somewhat stationary, whereas machine computation possesses scalability.
-
-- **Speed**: Humans communicate at a rate of two words per second, while GPT-4 can process 32k words in an instant. Once LLMs can write "better" than humans, their speed will most probably surpass us entirely.
-
-- **Duplicability**: Machines exhibit effortless duplicability. Unlike humans, they do not need birth, education, or training. While humans predominantly improve individually, machines have the potential to grow collectively. Humans take 20 years to become competent from birth, whereas once we have one capable AI, we can duplicate it immediately. Once AIs reach the level of the best programmer, we can just duplicate this AI. The same goes for other jobs.
-
-- **Editability**: Machines potentially allow more regulated variations. They exemplify the equivalent of direct brain enhancements via neurosurgery in opposition to laborious education or training requirements. Humans can also improve and learn new skills, but they don't have root access to their hardware: we are just starting to be able to understand the genome's "spaghetti code," while AI could use code versioning tools to improve itself, being able to attempt risky experiments with backup options in case of failure. This allows for much more controlled variation.
-
-- **Goal coordination**: Copied AIs possess the capability to share goals effortlessly, a feat challenging for humans.
-
-**The Economic Growth Argument**. Historical patterns of economic growth, driven by human population increases, suggest a potential for slow and continuous AI takeoff. This argument posits that as AIs augment the effective economic population, we might witness a gradual increase in economic growth, mirroring past expansions but at a potentially accelerated rate due to AI-enabled automation. Limitations in AI's ability to automate certain tasks, alongside societal and regulatory constraints (e.g. that medical or legal services can only be rendered by humans), could lead to a slower expansion of AI capabilities. Alternatively, growth might far exceed historical rates. Using a similar argument for a fast takeoff hinges on AI's potential to quickly automate human labor on a massive scale, leading to unprecedented economic acceleration.
+**The Economic Growth Argument**. Historical patterns of economic growth, driven by human population increases, suggest a potential for slow and continuous AI takeoff. This argument says that as AIs augment the effective economic population, we might witness a gradual increase in economic growth, mirroring past expansions but at a potentially accelerated rate due to AI-enabled automation. Limitations in AI's ability to automate certain tasks, alongside societal and regulatory constraints (e.g. that medical or legal services can only be rendered by humans), could lead to a slower expansion of AI capabilities. Alternatively, growth might far exceed historical rates. Using a similar argument for a fast takeoff hinges on AI's potential to quickly automate human labor on a massive scale, leading to unprecedented economic acceleration.
 
 **Compute Centric Takeoff Argument**. This argument, similar to the Bio Anchors report, assumes that compute will be sufficient for transformative AI. Based on this assumption, Tom Davidson's 2023 report on compute-centric AI takeoff discusses feedback loops that may contribute to takeoff dynamics.
 
@@ -263,4 +257,118 @@ Depending on the strength and interplay of these feedback loops, they can create
 ![Enter image alt description](Images/AbI_Image_28.png)
 
 Figure: A summary of What a Compute-Centric Framework Says About Takeoff Speeds ([source](https://www.openphilanthropy.org/research/what-a-compute-centric-framework-says-about-takeoff-speeds/))
+
+**Automating Research Argument. **Researchers could potentially design the next generation of ML models more quickly by delegating some work to existing models, creating a feedback loop of ever-accelerating progress. The following argument is put forth by Ajeya Cotra:
+
+Currently, human researchers collectively are responsible for almost all of the progress in AI research, but are starting to delegate a small fraction of the work to large language models. This makes it somewhat easier to design and train the next generation of models.
+
+The next generation is able to handle harder tasks and more different types of tasks, so human researchers delegate more of their work to them. This makes it significantly easier to train the generation after that. Using models gives a much bigger boost than it did the last time around.
+
+Each round of this process makes the whole field move faster and faster. In each round, human researchers delegate everything they can productively delegate to the current generation of models — and the more powerful those models are, the more they contribute to research and thus the faster AI capabilities can improve. ([source](https://www.planned-obsolescence.org/ais-accelerating-ai-research/))
+
+So before we see a recursive explosion of intelligence, we see a steadily increasing amount of the full RnD process being delegated to AIs. At some point, instead of a significant majority of the research and design being done by AI assistants at superhuman speeds, it will become that - all of the research and design for AIs is done by AI assistants at superhuman speeds.
+
+At this point there is a possibility that this might eventually lead to a full automated recursive intelligence explosion.
+
+**The Intelligence Explosion Argument**. This concept of the 'intelligence explosion' is also central to the conversation around discontinuous takeoff. It originates from I.J. Good's thesis, which posits that sufficiently advanced machine intelligence could build a smarter version of itself. This smarter version could in turn build an even smarter version of itself, and so on, creating a cycle that could lead to intelligence vastly exceeding human capability ([source](https://intelligence.org/files/IEM.pdf)).
+
+In their 2012 report on the evidence for Intelligence Explosions, Muehlhauser and Salamon delve into the numerous advantages that machine intelligence holds over human intelligence, which facilitate rapid intelligence augmentation. ([source](https://intelligence.org/files/IE-EI.pdf)) These include:
+
+- **Computational Resources**: Human computational ability remains somewhat stationary, whereas machine computation possesses scalability.
+
+- **Speed**: Humans communicate at a rate of two words per second, while GPT-4 can process 32k words in an instant. Once LLMs can write "better" than humans, their speed will most probably surpass us entirely.
+
+- **Duplicability**: Machines exhibit effortless duplicability. Unlike humans, they do not need birth, education, or training. While humans predominantly improve individually, machines have the potential to grow collectively. Humans take 20 years to become competent from birth, whereas once we have one capable AI, we can duplicate it immediately. Once AIs reach the level of the best programmer, we can just duplicate this AI. The same goes for other jobs.
+
+- **Editability**: Machines potentially allow more regulated variations. They exemplify the equivalent of direct brain enhancements via neurosurgery in opposition to laborious education or training requirements. Humans can also improve and learn new skills, but they don't have root access to their hardware: we are just starting to be able to understand the genome's "spaghetti code," while AI could use code versioning tools to improve itself, being able to attempt risky experiments with backup options in case of failure. This allows for much more controlled variation.
+
+- **Goal coordination**: Copied AIs possess the capability to share goals effortlessly, a feat challenging for humans.
+
+## Questions & Exercises
+
+??? question "What is AI Forecasting, and why is it important?"
+
+	
+	AI Forecasting refers to the practice of predicting future progress and impacts of AI, aiming to anticipate when certain milestones will be reached, how AI will evolve, and its implications for society. This is important because it helps in preparing adequate safety measures and governance strategies, ensuring that we are ready for the capabilities expected to emerge and when they are expected.
+	
+	Example: If we forecast that AI will achieve human-level intelligence within 10 years, we can start developing policies, safety protocols, and ethical guidelines now, rather than scrambling to respond once the milestone is reached.
+	
+
+??? question "What is zeroth-order forecasting, and how does it utilize reference classes?"
+
+	
+	Zeroth-order forecasting, also known as reference class forecasting, uses outcomes of similar past situations to predict future events. It assumes that the best predictor of future events is the average outcome of these past events. Reference classes are collections of past events that share key characteristics with the current forecasting scenario, providing a statistical foundation for predictions.
+	
+	Example: Predicting the success of a new AI language model by comparing it to the launch and adoption rates of previous models like BERT or GPT-3.
+	
+
+??? question "How do anchors assist in forecasting AI progress, and what are some key anchors in AI forecasting?"
+
+	
+	Anchors are initial estimates or known data points that act as a starting point for predictions, helping to set expectations and guide subsequent adjustments. Key anchors in AI forecasting include:
+	
+	Current machine learning anchor: Examines strengths and limitations of existing ML systems.
+	
+	Biological anchor: Compares AI development to biological systems, like the computational capacity of the human brain.
+	
+	Compute anchor: Focuses on advancements in computing hardware and the financial cost of training AI models.
+	
+	Example: Using the computational power of the human brain as an anchor to estimate when AI might achieve similar capabilities, we can predict AI progress based on current advancements in computing power and algorithm efficiency.
+	
+
+??? question What distinguishes first-order forecasting from zeroth-order forecasting in AI?
+
+	
+	First-order forecasting considers the rate of change observed in historical data, projecting future developments by extrapolating current trends. In contrast, zeroth-order forecasting uses the average outcomes of past events without considering the rate of change.
+	
+	Example: Using the historical improvement rates of AI performance on language tasks to predict future capabilities, such as how quickly models like GPT have improved in understanding and generating text over the past decade.
+	
+
+??? question "What are biological anchors, and how do they help forecast AI development?"
+
+	
+	Biological anchors use the human brain as a benchmark to estimate the compute required for AI to achieve human-like intelligence. This involves assessing the brain's computational capacity, translating it into a measure similar to computer operations (FLOP/s), and estimating when such computational resources will be economically viable.
+	
+	Example: Estimating that reaching human-level AI might require computational resources equivalent to those used by the human brain over a lifetime, we can forecast when AI will achieve this based on current trends in computing power and algorithm efficiency.
+	
+
+??? question "Explain the concepts of slow and fast takeoff in AI development."
+
+	
+	Slow takeoff refers to a gradual improvement in AI capabilities over years or decades, allowing time for societal and regulatory adaptation. Fast takeoff envisions a rapid leap to superintelligence in a short timeframe, such as hours or days, leaving little time for human response.
+	
+	Example: A slow takeoff might resemble the gradual improvement of personal computers from the 1980s to now, whereas a fast takeoff could be akin to a sudden, massive breakthrough in AI, similar to how smartphones rapidly changed society within a few years.
+	
+
+??? question "How do homogeneity and heterogeneity affect AI takeoff dynamics?"
+
+	
+	Homogeneity in AI takeoff implies that AI systems are similar in design and capabilities, potentially allowing for easier cooperation but also posing risks if a single misaligned system influences many others. Heterogeneity represents diversity in AI systems, with varied development approaches leading to different levels of safety and functionality.
+	
+	Example: In a homogenous takeoff, a breakthrough in one AI system could quickly propagate across all systems, while in a heterogeneous takeoff, different AI systems might evolve at different rates, requiring varied safety measures.
+	
+
+??? question "What is the Overhang Argument in AI takeoff scenarios?"
+
+	
+	The Overhang Argument suggests that substantial advancements in one aspect (e.g., hardware or data) but not the corresponding software or algorithms can lead to a rapid leap in AI capabilities once the software catches up. This overhang creates a 'stored' potential that can be unleashed suddenly. Such arguments suggest that pausing AI does not constitute a solution to AI Safety, as capabilities will be able to very quickly catch up on the pause is removed.
+	
+	Example: If we already have powerful hardware capable of supporting advanced AI but lack the necessary algorithms, a sudden breakthrough in software development could lead to a quick and dramatic improvement in AI capabilities.
+	
+
+??? question "Describe the Intelligence Explosion Argument."
+
+	
+	The Intelligence Explosion Argument posits that an advanced machine intelligence could create a smarter version of itself, which in turn could create an even smarter version, leading to a rapid cycle of self-improvement and vastly exceeding human intelligence.
+	
+	Example: If an AI system develops the ability to enhance its own code and hardware, it could quickly surpass human intelligence by iteratively improving itself at an accelerating rate.
+	
+
+??? question "How do economic growth arguments relate to AI takeoff scenarios?"
+
+	
+	Economic growth arguments suggest that as AI systems augment the GDP, we might see a gradual increase in economic growth, similar to historical expansions but at a potentially accelerated rate due to AI-enabled automation. We might notice such an economic acceleration taking place allowing us to prepare accordingly.
+	
+	Example: AI automation in industries like manufacturing and services could lead to increased productivity and economic growth, paralleling historical periods of technological advancement like the Industrial Revolution.
+	
 

@@ -1,9 +1,9 @@
 # Terminology
 
-⌛ Estimated Reading Time: 10 minutes. (1941 words)
+⌛ Estimated Reading Time: 12 minutes. (2389 words)
 
 
-This section continues the discussion on the terminology necessary to discuss AI capabilities. It focuses in particular on certain thresholds that we might reach in the cognitive capabilities of these AI models.
+This section discusses the terminology necessary to discuss AI capabilities. It focuses in particular on certain thresholds that the abilities of these models might reach that might be significant from a safety perspective.
 
 ## Capabilities vs. Intelligence
 
@@ -19,9 +19,17 @@ This section continues the discussion on the terminology necessary to discuss AI
 
 - **Abstract and Ambiguous Nature**: Intelligence is an abstract concept and abstract concepts often carry inherent ambiguities. This ambiguity can lead to different interpretations and debates about what constitutes "real" or "true" intelligence.
 
-Due to all these reasons, when discussing artificial intelligence, particularly in the context of risks and safety, it's often more effective and precise to focus on "capabilities" rather than "intelligence".
+Due to all these listed reasons, when discussing artificial intelligence, particularly in the context of risks and safety, it's often more effective and precise to focus on "capabilities" rather than "intelligence".
 
 **Defining Capabilities**. The term "capabilities" encompasses the specific, measurable abilities of an AI system. These can range from pattern recognition across large datasets, learning and adapting from the environment to mastering complex tasks traditionally requiring human intelligence. Unlike the abstract qualities often associated with the notion of intelligence, such as consciousness or self-awareness, capabilities are directly observable and quantifiable aspects of AI performance.
+
+**Propensity**. An additional concrete measurable variable in addition to capabilities is propensity. We can break down risks from AI into whether a model has certain dangerous capabilities, and additionally whether it has the tendency to harmfully apply its capabilities. This tendency is called propensity, and measures how likely an AI model is to use its capabilities in harmful ways. ([source](https://arxiv.org/abs/2305.15324))
+
+**Decomposing capabilities**. Capabilities might still be a little too general. We can break them down into specific, measurable capabilities and more complex, fuzzy capabilities:
+
+- **Specific Capabilities**: These are well-defined tasks that can be quantitatively measured using benchmarks. For example, the Massive Multitask Language Understanding (MMLU) benchmark evaluates an AI model's performance across a range of academic subjects, providing clear metrics for specific cognitive tasks like language comprehension, mathematics, and science. ([source](https://arxiv.org/abs/2009.03300)) These benchmarks offer concrete data points to assess an AI's growth in specific distinct areas, making it easier to track progress and compare different models.
+
+- **Fuzzy Capabilities**: These refer to more complex and nuanced abilities that are harder to quantify. Examples include persuasion, deception, and situational awareness. Instead of just answering questions in a multiple choice test, these capabilities often require specialized evaluations and in depth subjective assessments. For instance, measuring an AI's ability to persuade might involve analyzing its performance in debate scenarios or its effectiveness in generating convincing arguments. Similarly, assessing deception could involve testing the AI's ability to generate misleading statements or conceal information. Situational awareness might be evaluated by how well an AI understands and responds to dynamic environments or unexpected changes. We talk in much more depth about concrete formalizations of different dangerous capabilities, as well as ways to measure and evaluate capabilities in the chapter on evaluations.
 
 **Advantages of Focusing on Capabilities**. Focusing on capabilities offers a clearer and more pragmatic framework for discussing AI systems, particularly when evaluating potential risks. This approach facilitates direct comparisons of AI abilities with human skills, sidestepping the ambiguities tied to the concept of intelligence. For instance, rather than debating an AI system's intelligence relative to humans, we can assess its proficiency in specific tasks, enabling a more straightforward understanding and management of AI-related risks. ([source](https://www.alignmentforum.org/posts/JtuTQgp9Wnd6R6F5s/when-discussing-ai-risks-talk-about-capabilities-not)) Talking about capabilities instead of intelligence gives us the following advantages:
 
@@ -41,7 +49,7 @@ This section explores various definitions of different AI capability thresholds.
 
 **Artificial intelligence**: An AI system is a machine-based system that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments. Different AI systems vary in their levels of autonomy and adaptiveness after deployment ([OECD.AI](https://oecd.ai/en/wonk/ai-system-definition-update), 2023).
 
-**Artificial Narrow Intelligence (ANI)**: “*Weak AI—also called Narrow AI or Artificial Narrow Intelligence (ANI)—is AI trained and focused to perform specific tasks. Weak AI drives most of the AI that surrounds us today. ‘Narrow’ might be a more accurate descriptor for this type of AI as it is anything but weak; it enables some very robust applications, such as Apple's Siri, Amazon's Alexa, IBM Watson, and autonomous vehicles.*” ([source IBM](https://www.ibm.com/topics/artificial-intelligence))
+**Artificial Narrow Intelligence (ANI)**: “*Weak AI—also called Narrow AI or Artificial Narrow Intelligence (ANI)—is AI trained and focused to perform specific tasks. Weak AI drives most of the AI that surrounds us today. ‘Narrow’ might be a more accurate descriptor for this type of AI as it is anything but weak; it enables some very robust applications, such as Apple's Siri, Amazon's Alexa, IBM Watson, and autonomous vehicles.*” ([source](https://www.ibm.com/topics/artificial-intelligence))
 
 **Artificial General Intelligence (AGI)**: Also known as strong AI. AGI refers to systems that can apply their intelligence to a similarly extensive range of domains as humans. These AIs do not need to perform all tasks; they merely need to be capable enough to invent tools to facilitate the completion of tasks. Much like how humans are not perfectly capable in all domains but can invent tools to make problems in all domains easier to solve. AGI often gets described as “*the ability to achieve complex goals in complex environments using limited computational resources. This includes efficient cross-domain optimization and the ability to transfer learning from one domain to another.*” - Muehlhauser, Luke (Aug 2013) “[What is AGI?](https://intelligence.org/2013/08/11/what-is-agi/)”
 
@@ -55,11 +63,22 @@ This section explores various definitions of different AI capability thresholds.
 
 ***Figure****: For illustrative purposes. This graph could be criticized because it is not clear that the capabilities of those AIs can be reduced to a single dimension.*
 
-Often, these terms get used as discrete capability thresholds; that is, individuals tend to categorize an AI as potentially an AGI, an ASI, or neither. The next section will introduce a framework for viewing AI capabilities on a continuous scale, providing a more granular and insightful lens through which to assess AI development and its implications for humanity.
+Often, these terms get used as discrete capability thresholds; that is, individuals tend to categorize an AI as potentially an AGI, an ASI, or neither. However, it is also completely possible that AI capabilities exist on a continuous scale. The next section introduces a framework for defining AGI in a more granular continuous way.
 
 ## (t,n)-AGI
 
-**Defi****ning (t,n)-AGI**. A system receives the designation of "t-AGI" if it can surpass a human expert in a certain cognitive task within the timespan 't'. A system gets identified as (t,n)-AGI if it can outdo a group of 'n' human experts working collectively on a set of cognitive tasks for the duration 't'.
+!!! definition "(t)-AGI"
+
+	
+	Given a time frame ‘t’ to complete some cognitive task, if an AI system can outperform a human expert who is also given the time frame ‘t’ to perform the same task, then the AI system is called t-AGI for that timeframe ‘t’. ([source](https://www.alignmentforum.org/posts/BoA3agdkAzL6HQtQP/clarifying-and-predicting-agi))
+	 \
+
+
+!!! definition "(t,n)-AGI"
+
+	
+	Instead of outperforming on human in timeframe ‘t’, if a system can outperform ‘n’ human experts working on the task for timeframe ‘t’, then we call it a (t,n)-AGI for the specific time duration ‘t’, and number of experts ‘n’. ([source](https://www.alignmentforum.org/posts/BoA3agdkAzL6HQtQP/clarifying-and-predicting-agi))
+	
 
 For instance, an AI that exceeds the capability of a human expert in one second on a given cognitive task would be classified as a "one-second AGI". This scalable measure extends to longer durations, such as one minute, one hour, or even one year, depending on the AI's efficiency compared to human expertise within those periods.
 
@@ -75,8 +94,10 @@ For instance, an AI that exceeds the capability of a human expert in one second 
 
 - **One-year AGI**: These AIs would beat humans at basically everything. Mainly because most projects can be divided into sub-tasks that can be completed in shorter timeframes.
 
-Although it is more formal than the definitions provided in the previous section, the (t,n)-AGI framework does not account for how many copies of the AI run simultaneously, or how much compute.
+Although it is more formal than the definitions provided in the previous section, the (t,n)-AGI framework does not account for how many copies of the AI run simultaneously, or how much compute/inference use. This is the question of decomposition, i.e. can complex tasks that take 1 minute (or some longer timeframe) simply be decomposed such that if we have a certain number of 1sec-AGIs, then they can still outcompete humans and effectively function as 1min-AGIs, which when combined can function at even higher thresholds.
+
+Additionally, there is also the open question of what are the specific cognitive tasks/evaluations/benchmarks that we are going to use to measure abstract capabilities? One possible suggestion is measurements like the Abstraction and reasoning corpus (ARC benchmark) ([source](https://arxiv.org/abs/1911.01547)). Overall more work needs to be done in the area of coming up with concrete benchmarks to measure fuzzy capabilities. We talk more about these concepts in the chapters on evaluations.
 
 As of the third quarter of 2023, we can establish a rough equivalence “*from informal initial experiments, our guess is that humans need about three minutes per problem to be overall as useful as GPT-4 when playing the role of trusted high-quality labor.”*([source](https://arxiv.org/abs/2312.06942)) So existing systems can roughly be believed to qualify as one-second AGIs, and are considered to be nearing the level of one-minute AGIs.
 
-They might be a few years away from becoming one-hour AGIs. Within this framework, Ngo anticipates that a superintelligence (ASI) could be something akin to a (one year, eight billion)-AGI, that is, an ASI could be seen as an AGI that outperforms all eight billion humans coordinating for one year on a given task.
+They might be a few years away from becoming one-hour AGIs. Within this framework, Ngo anticipates that a superintelligence (ASI) could be something akin to a (one year, eight billion)-AGI, that is, an ASI could be seen as an AGI that outperforms all eight billion humans coordinating for one year on a given task. ([source](https://www.alignmentforum.org/posts/BoA3agdkAzL6HQtQP/clarifying-and-predicting-agi))
