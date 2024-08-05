@@ -1,6 +1,7 @@
 site_name: The AI Safety Handbook
 site_url: https://centresecuriteia.github.io/textbook/
 copyright: MIT; 2023 - 2024 Centre pour la Sécurité de l'IA (CeSIA) - EffiSciences
+
 theme:
   name: material
   font:
@@ -18,13 +19,13 @@ theme:
     - header.autohide
     - announce.dismiss
     - toc.integrate
+
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.snippets
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
@@ -34,7 +35,6 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - abbr
-  - pymdownx.superfences
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -45,17 +45,28 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-  - pymdownx.superfences
   - footnotes
   - pymdownx.tabbed:
       alternate_style: true
+
 watch:
   - includes
+
 extra_css:
   - stylesheets/extra.css
+
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
-#plugins:
-    #- with-pdf
+
+plugins:
+  - search
+  - awesome-pages:
+      filename: .pages.yml
+      collapse_single_pages: false
+      strict: false
+      order: asc
+      sort_type: natural
+# plugins:
+#     - with-pdf

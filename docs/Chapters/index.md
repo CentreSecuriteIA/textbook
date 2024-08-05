@@ -7,23 +7,23 @@ We encourage all readers, including those without a technical background, to rea
 
 ---
 
-#### [Chapter 1: **Capabilities**](01 - Capabilities/README.md/)
+#### [Chapter 1: **Capabilities**](1 - Capabilities/README.md/)
 
 Concepts covered: Current Capabilities, Foundation Models, Leveraging Computation, Future Capabilities, Timelines and Anchors, Instrumental Convergence.
 
-#### [Chapter 2: **Risks Landscape**](02 - Risks/README.md/)
+#### [Chapter 2: **Risks Landscape**](2 - Risks Landscape/README.md/)
 
 Concepts covered: Misuses, Alignment risks, Systemic risks.
 
-#### [Chapter 3: **Solutions Landscape**](03 - Solutions/README.md/)
+#### [Chapter 3: **Solutions Landscape**](3 - Solutions Landscape/README.md/)
 
 Defense acceleration, Paradigms in AI Safety, Safety culture, Organizational safety.
 
-#### [Chapter 4: **Evaluations**](04 - Evaluations/README.md/)
+#### [Chapter 4: **Evaluations**](4 - Evaluations/README.md/)
 
 !!! warning "This chapter is still being written, it will be uploaded soon."
 
-#### [Chapter 5: **Governance**](05 - Governance/README.md/)
+#### [Chapter 5: **Governance**](5 - Governance/README.md/)
 
 !!! warning "This chapter is still being written, it will be uploaded soon."
 
@@ -40,23 +40,19 @@ These chapters assume some basic familiarity with Machine Learning (ML). Please 
 
 ---
 
-#### [Chapter 6: **Reward Misspecification**](06 - Reward Misspecification/README.md)
+#### [Chapter 6: **Reward Misspecification**](6 - Reward Misspecification/README.md)
 
 Concepts covered: Reward, Reward Misspecification, Optimization, Goodhart's Law, Learning by imitation, Learning by Feedback.
 
-#### [Chapter 7: **Goal Misgeneralization**](07 - Goal Misgeneralization/README.md)
+#### [Chapter 7: **Goal Misgeneralization**](7 - Goal Misgeneralization/README.md)
 
 Concepts covered: Optimization, Mesa-optimization, Inner-Alignment, Deceptive Alignment.
 
-#### [Chapter 8.1: **Task Decomposition**](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/FFz6H35Gy6BArHxkc)
+#### [Chapter 8: **Scalable Oversight**](8 - Scalable Oversight/README.md)
 
-Concepts covered: Scalable Oversight Problem, Sandwiching, Task decomposition, Factored cognition, Iterated Amplification, amplification in modern LLMs, Process Supervision.
+Concepts covered: Scalable Oversight Problem, Sandwiching, Task decomposition, Factored cognition, Iterated Amplification, Process Supervision, Debate, Critiques
 
-#### [Chapter 8.2: **Debate**](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/WP4fciGn3rNtmq3tY)
-
-Concepts covered: Debate, obfuscated arguments problem, AI-written critiques, problems with debate.
-
-#### [Chapter 8.3: **Adversarial Techniques**](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/nz5NNAtfKJLmbtksL)
+#### [Chapter 8.1: **Adversarial Techniques**](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/nz5NNAtfKJLmbtksL)
 
 Concepts covered: Unrestricted adversarial training, adversarial training, red-teaming language models, interpretability for finding adversarial examples, relaxed adversarial training.
 
