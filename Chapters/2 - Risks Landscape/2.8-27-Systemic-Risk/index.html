@@ -1,0 +1,2392 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://centresecuriteia.github.io/textbook/Chapters/2%20-%20Risks%20Landscape/2.8-27-Systemic-Risk/">
+      
+      
+        <link rel="prev" href="../2.7-26-Dangerous-Capabilities/">
+      
+      
+        <link rel="next" href="../2.9-28-Conclusion/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>2.7 Systemic Risk - The AI Safety Handbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.3cba04c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lora";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#27-systemic-risk" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+This is still a beta version. If you want to help us, please consider supporting us on <a
+    href=https://manifund.org/projects/ai-safety-textbook>Manifund</a>
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="The AI Safety Handbook" class="md-header__button md-logo" aria-label="The AI Safety Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The AI Safety Handbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.7 Systemic Risk
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../1%20-%20Capabilities/1.2-11-State-of-the-Art-AI/" class="md-tabs__link">
+          
+  
+    
+  
+  Chapters
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Courses/" class="md-tabs__link">
+        
+  
+    
+  
+  Courses using this book
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../pdfs/" class="md-tabs__link">
+          
+  
+    
+  
+  Pdfs
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="The AI Safety Handbook" class="md-nav__button md-logo" aria-label="The AI Safety Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    The AI Safety Handbook
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../1%20-%20Capabilities/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    1   Capabilities
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            1   Capabilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1%20-%20Capabilities/1.2-11-State-of-the-Art-AI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1 State-of-the-Art AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1%20-%20Capabilities/1.3-12-Foundation-Models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2 Foundation Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1%20-%20Capabilities/1.4-13-Terminology/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3 Terminology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1%20-%20Capabilities/1.5-14-Leveraging-Computation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.4 Leveraging Computation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1%20-%20Capabilities/1.6-15-Forecasting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.5 Forecasting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1%20-%20Capabilities/1.7-16-Appendix-1-Expert-Opinions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.6 Appendix 1: Expert Opinions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1%20-%20Capabilities/1.8-17-Appendix-2-Discussions-on-LLMs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.7 Appendix 2: Discussions on LLMs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1%20-%20Capabilities/1.9-18-Appendix-3-Trends--Bottlenecks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.8 Appendix 3: Trends &amp; Bottlenecks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    2   Risks Landscape
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            2   Risks Landscape
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.2-21-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1 Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.3-22-Risk-Decomposition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2 Risk Decomposition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.4-23-Risk-Aggravators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3 Risk Aggravators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.5-24-Misuse-Risk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.4 Misuse Risk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.6-25-Misalignment-Risk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5 Misalignment Risk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.7-26-Dangerous-Capabilities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.6 Dangerous Capabilities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2.7 Systemic Risk
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    2.7 Systemic Risk
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#271-emergence" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.1 Emergence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#272-persuasion" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.2 Persuasion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#273-power-concentration" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.3 Power Concentration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#274-biases" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.4 Biases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#275-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.5 Automation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#276-epistemic-erosion" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.6 Epistemic Erosion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#277-value-erosion" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.7 Value Erosion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#278-accidents" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7.8 Accidents
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.9-28-Conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.8 Conclusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.10-29-Appendix-X-Risk-Scenarios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.9 Appendix: X-Risk Scenarios
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2.11-210-Appendix-Miscellaneous/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.10 Appendix: Miscellaneous
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../3%20-%20Solutions%20Landscape/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    3   Solutions Landscape
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            3   Solutions Landscape
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3%20-%20Solutions%20Landscape/3.2-31-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1 Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3%20-%20Solutions%20Landscape/3.3-32-AI-Safety-is-Challenging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2 AI Safety is Challenging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3%20-%20Solutions%20Landscape/3.4-33-Definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3 Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3%20-%20Solutions%20Landscape/3.5-34-Misuse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.4 Misuse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3%20-%20Solutions%20Landscape/3.6-35-Alignment-of-AGI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.5 Alignment of AGI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3%20-%20Solutions%20Landscape/3.7-36-Alignment-of-ASI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.6 Alignment of ASI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3%20-%20Solutions%20Landscape/3.8-37-Systemic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.7 Systemic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3%20-%20Solutions%20Landscape/3.9-38-Conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.8 Conclusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../4%20-%20Evaluations/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    4   Evaluations
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            4   Evaluations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../5%20-%20Governance/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    5   Governance
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            5   Governance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../6%20-%20Reward%20Misspecification/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    6   Reward Misspecification
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            6   Reward Misspecification
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6%20-%20Reward%20Misspecification/6.2-61-Reinforcement-Learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.1 Reinforcement Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6%20-%20Reward%20Misspecification/6.3-62-Optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.2 Optimization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6%20-%20Reward%20Misspecification/6.4-63-Reward-Misspecification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.3 Reward Misspecification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6%20-%20Reward%20Misspecification/6.5-64-Learning-from-imitation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.4 Learning from imitation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6%20-%20Reward%20Misspecification/6.6-65-Learning-from-feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.5 Learning from feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../7%20-%20Goal%20Misgeneralization/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7   Goal Misgeneralization
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            7   Goal Misgeneralization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7%20-%20Goal%20Misgeneralization/7.2-71-Goal-Misgeneralization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1 Goal Misgeneralization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7%20-%20Goal%20Misgeneralization/7.3-72-Inner-Alignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.2 Inner Alignment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7%20-%20Goal%20Misgeneralization/7.4-73-Deceptive-alignment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.3 Deceptive alignment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../8%20-%20Scalable%20Oversight/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    8   Scalable Oversight
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            8   Scalable Oversight
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8%20-%20Scalable%20Oversight/8.2-81-Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.1 Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8%20-%20Scalable%20Oversight/8.3-82-Task-Decomposition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.2 Task Decomposition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8%20-%20Scalable%20Oversight/8.4-83-Process-Oversight/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.3 Process Oversight
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8%20-%20Scalable%20Oversight/8.5-84-Iterated-Amplification-IA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.4 Iterated Amplification (IA)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8%20-%20Scalable%20Oversight/8.6-85-Debate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.5 Debate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8%20-%20Scalable%20Oversight/8.7-86-Weak-to-Strong-W2S/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.6 Weak-to-Strong (W2S)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../9%20-%20Intepretability/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    9   Intepretability
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            9   Intepretability
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../10%20-%20Agent%20Foundations/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    10   Agent Foundations
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            10   Agent Foundations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Courses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Courses using this book
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../pdfs/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Pdfs
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Pdfs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="27-systemic-risk">2.7 Systemic Risk</h1>
+<p>⌛ Estimated Reading Time: 19 minutes. (3740 words)</p>
+<div class="admonition warning">
+<p class="admonition-title">This section is still being written and is considered a work in progress.</p>
+</div>
+<p>In the previous sections we have talked about misalignment and misuse risks. Both of these sections looked at how harms can be caused by AI systems in isolation. However, the real world is often quite complicated and harms and risks cannot be predicted by studying a particular technology in isolation. Risks and safety, especially at the macro level, are properties of an interconnected system, not of individual technologies.</p>
+<p>Even assuming that we have an aligned AI, it is possible that many relatively minor events could accumulate and lead us to slowly drift towards undesirable futures.</p>
+<p>The causes contributing to systemic risk comprise many variables. There are some key factors that make risks systemic:</p>
+<ul>
+<li>
+<p><strong>Interconnectedness:</strong> AI can empower several different existing systems such as supply chains, politics, or research in other disciplines. An individual system might cause substantial risk, but the interdependent behaviors arising from several empowered systems make it difficult to predict system-wide outcomes.</p>
+</li>
+<li>
+<p><strong>Emergence:</strong> New properties can emerge that are not present in individual components, thereby complicating predictions.</p>
+</li>
+</ul>
+<p>In this section we dive deeper into the risks that arise due to the interconnectedness of AI with various other sociotechnical systems. We will also explore the concept of emergence as a key factor contributing to unanticipated risks from AI systems.</p>
+<h2 id="271-emergence">2.7.1 Emergence</h2>
+<p>Emergent behavior, or emergence, manifests when a system exhibits properties or behaviors that its individual components lack independently. These attributes may materialize only when the components comprising the system interact as an integrated whole, or when the quantity of parts crosses a particular threshold. Often, these characteristics appear “all at once”—beyond the threshold, the system’s behavior undergoes a qualitative transformation. (<a href="https://en.wikipedia.org/wiki/Emergence">source</a>)</p>
+<p>In “More Is Different for AI” Jacob Steinhardt provides additional examples of such complex systems. He suggests that AI systems will manifest such emergent properties simply as a function of scale. (<a href="https://www.alignmentforum.org/s/4aARF2ZoBpFZAhbbe">source</a>) Assuming that models persist in growing as per the scaling laws, an unexpected threshold may soon be crossed, resulting in unanticipated differences in behaviors.</p>
+<p>Studying complex systems with emergent phenomena may assist in predicting what capabilities will emerge and when. Many, if not most, capabilities are the result of emergence in the current paradigm of ML. As an example, large language models have demonstrated surprising jumps in abilities such as improved performance on various tasks like modular arithmetic and answering questions in different languages once they reach a certain threshold size.</p>
+<p>Similarly, future models have the potential to show emergent behavior that could be qualitatively distinct from what is expected or what we have safety mechanisms in place for.</p>
+<p><strong>Phase Transitions</strong>. In physics, a “phase transition” refers to a significant change in the structure within the system that can manifest as a discontinuity in the energy. For example, a phase change occurs in water when it freezes to turn into ice, a solid, or evaporates to turn into vapor, a gas. Both changes occur at a critical temperature particular to water’s chemical composition. In ML, phase transitions can be thought of as sudden shifts between different configurations of the network which can dramatically change the network's behavior and potentially lead to unpredictable or uncontrollable outcomes.</p>
+<p>This concept is especially relevant when considering the “sharp left turn” hypothesis, where an AI might suddenly generalize its capabilities to new domains without a corresponding increase in alignment.</p>
+<h2 id="272-persuasion">2.7.2 Persuasion</h2>
+<p><strong>Polluting the information ecosystem</strong>. The deliberate propagation of disinformation is already a serious issue reducing our shared understanding of reality and polarizing opinions. AIs could be used to severely exacerbate this problem by generating personalized disinformation on a larger scale than ever before. Additionally, as AIs become better at predicting and nudging our behavior, they will become more capable of manipulating us. We will now discuss how AIs could be leveraged by malicious actors to create a fractured and dysfunctional society.</p>
+<p>First, AIs could be used to generate unique personalized disinformation at a large scale. While there are already many social media bots, some of which exist to spread disinformation, historically they have been run by humans or primitive text generators. The latest AI systems do not need humans to generate personalized messages, never get tired, and can potentially interact with millions of users at once (<a href="https://www.aisafetybook.com/textbook/1-2#persuasive-ais">source</a>).</p>
+<p>As things like deep fakes become ever more practical (e.g., with fake kidnapping scams) (<a href="https://edition.cnn.com/2023/04/29/us/ai-scam-calls-kidnapping-cec/index.html">source</a>). AI-powered tools could be used to generate and disseminate false or misleading information at scale, potentially influencing elections or undermining public trust in institutions.</p>
+<p><strong>AIs can exploit users’ trust</strong>. Already, hundreds of thousands of people pay for chatbots marketed as lovers and friends (<a href="https://www.reuters.com/technology/what-happens-when-your-ai-chatbot-stops-loving-you-back-2023-03-18/">source</a>), and one man’s suicide has been partially attributed to interactions with a chatbot (<a href="https://www.vice.com/en/article/pkadgm/man-dies-by-suicide-after-talking-with-ai-chatbot-widow-says">source</a>). As AIs appear increasingly human-like, people will increasingly form relationships with them and grow to trust them. AIs that gather personal information through relationship-building or by accessing extensive personal data, such as a user’s email account or personal files, could leverage that information to enhance persuasion. Powerful actors that control those systems could exploit user trust by delivering personalized disinformation directly through people’s “friends.”</p>
+<p><strong>Value lock-in</strong>. If AIs become too deeply embedded into society and are highly persuasive, we might see a scenario where a system's current values, principles, or procedures become so deeply entrenched that they are resistant to change. This could be due to a variety of reasons such as technological constraints, economic costs, or social and institutional inertia. The danger with value lock-in is the potential for perpetuating harmful or outdated values, especially when these values are institutionalized in influential systems like AI.</p>
+<p>Locking in certain values may curtail humanity’s moral progress. It’s dangerous to allow any set of values to become permanently entrenched in society. For example, AI systems have learned racist and sexist views (<a href="https://www.aisafetybook.com/textbook/1-2#persuasive-ais">source</a>), and once those views are learned, it can be difficult to fully remove them. In addition to problems we know exist in our society, there may be some we still do not. Just as we abhor some moral views widely held in the past, people in the future may want to move past moral views that we hold today, even those we currently see no problem with. For example, moral defects in AI systems would be even worse if AI systems had been trained in the 1960s, and many people at the time would have seen no problem with that. Therefore, when advanced AIs emerge and transform the world, there is a risk of their objectives locking in or perpetuating defects in today’s values. If AIs are not designed to continuously learn and update their understanding of societal values, they may perpetuate or reinforce existing defects in their decision-making processes long into the future.</p>
+<p>In a world with widespread persuasive AI systems, people’s beliefs might be almost entirely determined by which AI systems they interact with most. Never knowing whom to trust, people could retreat even further into ideological enclaves, fearing that any information from outside those enclaves might be a sophisticated lie. This would erode consensus reality, people’s ability to cooperate with others, participate in civil society, and address collective action problems. This would also reduce our ability to have a conversation as a species about how to mitigate <abbr title="A risk of human extinction or the permanent destruction of humanity’s long-term potential.">existential risks</abbr> from AIs.</p>
+<p>In summary, AIs could create highly effective, personalized disinformation on an unprecedented scale, and could be particularly persuasive to people they have built personal relationships with. In the hands of many people, this could create a deluge of disinformation that debilitates human society.</p>
+<h2 id="273-power-concentration">2.7.3 Power Concentration</h2>
+<p>In a previous section, we already spoke about value lock-in. This phenomenon of entrenched values can happen in a “bottom-up” fashion when society's moral character becomes fixed, but a similar risk also arises in a “top-down” case of misuse when corporations or governments might pursue intense surveillance and seek to keep AIs in the hands of a trusted minority. This reaction to keep AI “safe” could easily become an overcorrection and pave the way for an entrenched totalitarian regime that would be locked in by the power and capacity of AIs.</p>
+<p>Value lock-in can occur from the perpetuation of systems and practices that undermine individual autonomy and freedom, such as the implementation of paternalistic systems where certain value judgments are imposed on individuals without their consent. Even without active malicious use, values encoded in an AI system could create a self-reinforcing feedback loop where groups get stuck in a poor equilibrium that is robust to attempts to get unstuck. (<a href="https://arxiv.org/pdf/2206.05862.pdf">source</a>)</p>
+<p><strong><abbr title="A research field about how to prevent risks from advanced artificial intelligence.">AI safety</abbr> could further centralize control</strong>. This could begin with good intentions, such as using AIs to enhance fact-checking and help people avoid falling prey to false narratives. We could see regulations that consolidate control over various components needed to build <abbr title="Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.">TAI</abbr> into the hands of a few state or corporate actors, to ensure that any AI that is built remains safe. This includes things such as data centers, computing power, and big data. However, those in control of powerful systems may use them to suppress dissent, spread propaganda and disinformation, and otherwise advance their goals, which may be contrary to public well-being. (<a href="https://www.aisafetybook.com/textbook/1-2#persuasive-ais">source</a>)</p>
+<p><strong>Loss of privacy. </strong>The loss of individual privacy is among the factors that might accelerate power concentration. Better persuasion and predictive models of human behavior benefit from gathering more data about individual users. The desire for profit or to predict the flow of a country's resources, demographics, culture, etc. might incentivize behavior like intercepting personal data or legally eavesdropping on people’s activities. Data Mining can be used to collect and analyze large amounts of data from various sources such as social media, purchases, and internet usage. This information can be pieced together to create a complete picture of an individual's behavior, preferences, and lifestyle (<a href="https://www.goodreads.com/book/show/44767248-human-compatible">source</a>). Voice Recognition technologies can be used to recognize speech, which could potentially lead to widespread wiretapping. For example, a system like the U.S. government's Echelon system uses language translation, speech recognition, and keyword searching to automatically sift through telephone, email, fax, and telex traffic (<a href="https://www.goodreads.com/book/show/27543.Artificial_Intelligence">source</a>). AI can also be used to identify individuals in public spaces using facial recognition. This capability can potentially invade a person's privacy if a random stranger can easily identify them in public places (<a href="https://www.goodreads.com/book/show/39204073-on-the-future">source</a>). Some AIs can even decipher passwords from keyboard sounds in some contexts. (<a href="https://incyber.org/en/ai-deciphers-passwords-keyboard-sounds/#:~:text=On%20August%203%2C%202023%2C%20three,the%20sound%20each%20key%20produces.">source</a>)</p>
+<p>Whenever AI systems are used to collect and analyze data on a mass scale regimes can further strengthen self-reinforcing control. Personal information can be used to unfairly or unethically influence people's behavior. This can occur from both a state and a corporate perspective.</p>
+<p><strong>Economic inequalities</strong>. tbd. \</p>
+<h2 id="274-biases">2.7.4 <span style="text - decoration: underline;">Biases</span></h2>
+<p><strong>Exacerbated biases: </strong>AIs might unintentionally propagate or amplify existing biases. Biases persist within Large Language Models that often mirror the opinions and biases prevalent on the the internet data from which they were trained (<a href="https://arxiv.org/abs/2303.17548">source</a>) These biases can be harmful in various ways, as demonstrated by studies on GPT-3's Islamophobic biases. (<a href="https://arxiv.org/abs/2101.05783">source</a>) The paper Evaluating the Social Impact of Generative AI Systems in Systems and Society defines seven categories of social impact: bias, stereotypes, and representational harms; cultural values and sensitive content; disparate performance; privacy and data protection; financial costs; environmental costs; and data and content moderation labor costs. (<a href="https://arxiv.org/abs/2306.05949">source</a>)</p>
+<div class="admonition note">
+<p class="admonition-title">Self-Fulfilling Pessimism (<a href="https://www.aisafetybook.com/textbook/1-3">source</a>)</p>
+<p>Scientists develop an algorithm for predicting the answers to questions about a person, as a function of freely available and purchasable information about the person (social media, resumes, browsing history, purchasing history, etc.). The algorithm is made freely available to the public, and employers begin using the algorithm to screen out potential hires by asking, “Is this person likely to be arrested in the next year?” Courts and regulatory bodies attempt to ban the technology by evoking privacy norms but struggle to establish cases against the use of publicly available information.As a result, the technology broadly remains in use. Innocent people who share certain characteristics with past convicted criminals end up struggling to get jobs, become disproportionately unemployed, and correspondingly more often commit theft to fulfill basic needs. Meanwhile, police also use the algorithm to prioritize their investigations, and since unemployment is a predictor of property crime, the algorithm leads them to suspect and arrest more unemployed people. Some of the arrests are talked about on social media, so the algorithm learns that the arrested individuals are likely to be arrested again, making it even more difficult for them to get jobs. A cycle of deeply unfair socioeconomic discrimination begins.</p>
+</div>
+<h2 id="275-automation">2.7.5 <span style="text - decoration: underline;">Automation</span></h2>
+<p><strong>Economic Upheaval</strong>. The automation of the economy could lead to widespread impacts on the labor market, potentially exacerbating economic inequalities and social divisions (<a href="https://www.lesswrong.com/posts/Sn5NiiD5WBi4dLzaB/agi-will-drastically-increase-economies-of-scale-1">source</a>). This shift towards mass unemployment could also contribute to mental health issues by making human labor increasingly redundant. (<a href="https://gh.bmj.com/content/8/5/e010435">source</a>)</p>
+<p><strong>Disempowerment &amp; Enfeeblement.</strong> AI systems could make individual choices and agency less relevant as decisions are increasingly made or influenced by automated processes. This occurs when humans delegate increasingly important tasks to machines, leading to a loss of self-governance and complete dependence on machines. This scenario is reminiscent of the film Wall-E in which humans become dependent on machines. (<a href="https://www.safe.ai/ai-risk#Affaiblissement">source</a>)</p>
+<div class="admonition note">
+<p class="admonition-title">Story:The production web</p>
+<p><strong>The economic incentives to automate are strong</strong> and may lead to certain risks. A system with a human in the loop is slower than a fully automated system.</p>
+<p><strong>The production web.</strong> A consequence of AI that could create risks at a societal scale is described in the paper “<a href="https://arxiv.org/abs/2306.06924">TASRA: a Taxonomy and Analysis of Societal-Scale Risks from AI</a>,” in the form of a short story: '<em>Story 1b: The Production Web,</em>' which depicts a kind of capitalism on steroids, which gradually depletes all the natural resources necessary for human survival.</p>
+<p><strong>Here is the outline of this story: </strong>In a world where the economy is increasingly automated by AI systems that are much faster than humans, there arises a competitive pressure such that only the fastest companies survive. In this context, businesses with humans in the loop would be less efficient compared to those fully automated. Consequently, we would gradually see a world where humans are replaced and cede control to machines because their quality of life improves by doing so. And progressively, control is progressively handed over to more competitive machines. However, the economic system designed by these machines does not fully account for negative externalities. It maximizes metrics that are mere proxies for the actual well-being of humans. As a result, we get a system that rapidly consumes vast amounts of raw materials essential for human survival, such as air, rare metals, and oxygen, because machines do not need the same types of resources as humans. This could gradually lead us to a world uninhabitable by humans. It would no longer be possible to disconnect this system because humans would become dependent on it, just as today it is not possible to disconnect the Internet because the entire logistics and supply chain depends on it.</p>
+<p><strong>Note that the previous story does not require AI agents. </strong>This is a Robust <abbr title="A system that can be understood as taking actions towards achieving a goal.">Agent</abbr>-Agnostic Process (RAAPs), meaning that this story can occur with or without <abbr title="A system that can be understood as taking actions towards achieving a goal.">agentic</abbr> AIs. Nonetheless, the authors of this chapter think that an AI <abbr title="A system that can be understood as taking actions towards achieving a goal.">Agent</abbr> could make this story more plausible. In the article “<a href="https://gwern.net/tool-ai">Why Tool AIs Want to Be <abbr title="A system that can be understood as taking actions towards achieving a goal.">Agent</abbr> AIs</a>,” the author explains: “AIs limited to pure computation (Tool AIs) supporting humans, will be less intelligent, efficient, and economically valuable than more autonomous reinforcement-learning AIs (<abbr title="A system that can be understood as taking actions towards achieving a goal.">Agent</abbr> AIs) who act on their own and meta-learn because all problems are reinforcement-learning problems. […] All of these actions will result in <abbr title="A system that can be understood as taking actions towards achieving a goal.">Agent</abbr> AIs being more intelligent than Tool AIs, in addition to their greater economic competitiveness. […]”.</p>
+</div>
+<h2 id="276-epistemic-erosion">2.7.6 Epistemic Erosion</h2>
+<p><strong>Epistemic Deterioration</strong>. This can result from enfeeblement or the use of persuasion tools, leading to a massive deterioration of collective epistemic capacity (<a href="https://aiimpacts.org/relevant-pre-agi-possibilities/#easy-footnote-bottom-30-2336">source</a>) (our ability to reason and understand the world). The ability to comprehend and respond to problems are crucial skills that make our civilization robust to various threats. Without these, we could be incapable of making correct decisions, possibly leading to disastrous outcomes.</p>
+<p><strong>Epistemic Security</strong>. Arguably social media has undermined the ability of political communities to work together, making them more polarized and untethered from a foundation of agreed facts. Hostile foreign states have sought to exploit the vulnerability of mass political deliberation in democracies. While not yet possible, the specter of mass manipulation through psychological profiling as advertised by Cambridge Analytica hovers on the horizon. A decline in the ability of the world’s advanced democracies to deliberate competently would lower the chances that these countries could competently shape the development of advanced AI. (<a href="https://www.allandafoe.com/opportunity#h.ki5b34gee70z">source</a>)</p>
+<h2 id="277-value-erosion">2.7.7 Value Erosion</h2>
+<p><strong>Fragility of Complex Systems</strong>. The automation and tight coupling of different system components can make the failure of one part trigger the collapse of the entire system. (<a href="https://www.alignmentforum.org/posts/HBxe6wdjxK239zajf/what-failure-looks-like">source</a>) One possible example could be financial markets or automated trading systems, where complex dynamics can emerge, leading to unintended and potentially misaligned outcomes at the systemic level. Another example could be flash wars, as illustrated in the box below.</p>
+<p><strong>Challenges in Multi-<abbr title="A system that can be understood as taking actions towards achieving a goal.">Agent</abbr> Systems</strong>. In environments containing multiple agents, research highlights the risk of collective misalignment, where the pursuit of individual goals by agents leads to adverse effects on the system as a whole. This is exemplified in scenarios like Paul Cristiano's “You get what you measure,” which warns of an overemphasis on simple metrics such as the GDP economic metric that fail to consider the broader implications for human values. This could result in a civilization increasingly managed by seemingly beneficial tools that, in reality, erode human-centric values. Another problem would be the competitive disadvantage of human values with respect to other values. Evolutionary dynamics might favor aggressive behaviors, posing significant risks if AIs begin to outcompete humans, as discussed in “Natural Selection Favors AIs over Humans” by Dan Hendrycks. (<a href="https://doi.org/10.48550/arXiv.2303.16200">source</a>)</p>
+<h2 id="278-accidents">2.7.8 Accidents</h2>
+<p>Often, the whole point of producing a new technology is to produce a positive impact on society. Despite these noble intentions, there is a major category of risk that arises from large well-intentioned projects that unintentionally go wrong. (<a href="https://arxiv.org/abs/2306.06924">source</a>)</p>
+<p><strong>Flaws are hard to discover</strong>. It often takes time to observe all the downstream effects of releasing a technology. There are many examples throughout history of technologies that we built and released into the world only to later discover that they were causing harm. Some historical examples include the use of leaded paints and gasoline causing large populations to suffer from lead poisoning (<a href="https://environmentalhistory.org/about/ethyl-leaded-gasoline/lead-history-timeline/">source</a>), our use of CFCs causing a hole in the ozone layer (<a href="https://ozonewatch.gsfc.nasa.gov/facts/hole_SH.html">source</a>), our use of asbestos which is linked to serious health issues, our use of tobacco products (<a href="https://tobaccofreelife.org/tobacco/tobacco-history/">source</a>), and more recently the widespread use of social media, the excessive use of which is linked to depression and anxiety. (<a href="https://www.aisafetybook.com/textbook/1-4">source</a>)</p>
+<p>Some of these risks are diffuse and emerge only at the societal level, which we will talk about in the section on systemic risks. But others are perhaps easier to compare to software-based AI risks:</p>
+<p><strong>Undetected hole in the ozone layer</strong>. The example of the hole in the ozone layer might have occurred due to diffuse responsibility, but it was made worse because it remained undetected for a long period (<a href="https://earthobservatory.nasa.gov/features/RemoteSensingAtmosphere/remote_sensing5.php">source</a>). This is because the data analysis software used by NASA in its project to map the ozone layer had been designed to ignore values that deviated greatly from expected measurements. (<a href="https://www.pingdom.com/blog/10-historical-software-bugs-with-extreme-consequences/">source</a>)</p>
+<p><strong>The Mariner 1 Spacecraft</strong>. In 1962 the Mariner 1 space probe barely made it out of Cape Canaveral before the rocket veered dangerously off course. Worried that the rocket was heading towards a crash-landing on Earth, NASA engineers issued a self-destruct command and the craft was obliterated about 290 seconds after launch. An investigation revealed the cause to be a very simple software error. A hyphen was omitted in a line of code, which meant that incorrect guidance signals were sent to the spacecraft. (<a href="https://raygun.com/blog/costly-software-errors-history/">source</a>)</p>
+<p>There are countless other similar examples. Just like the one missing hyphen in the software for the Mariner spacecraft, we have also seen similar bugs due to one single character being altered in AI systems. OpenAI accidentally inverted the sign on the reward function while training GPT-2. The result was a model which optimized for negative sentiment while still regularizing toward natural language. Over time this caused the model to generate increasingly sexually explicit text, regardless of the starting prompt. In the author's own words “<em>This bug was remarkable since the result was not gibberish but maximally bad output. The authors were asleep during the training process, so the problem was noticed only once training had finished.</em>” (<a href="https://arxiv.org/abs/1909.08593">source</a>)</p>
+<p>While this example didn't really cause much harm, except to perhaps the human evaluators who had to spend an entire night reading increasingly reprehensible text, we can easily imagine that extremely small bugs like a single flipped sign on a reward function can cause really bad outcomes if they were to occur in more capable models.</p>
+<p>The rapid improvement, combined with a lack of understanding and predictability makes it more likely that despite the best intentions we might not be able to prevent accidents. This supports the case for heavily tested slow rollouts of AI systems, as opposed to the “Move fast and break things” ethos (<a href="https://en.wikipedia.org/wiki/Meta_Platforms#History">source</a>) that some tech companies might hold.</p>
+<p><strong>Harmful malfunctions</strong> (<a href="https://aisafetyfundamentals.com/blog/ai-risks/">source</a>). AI systems can make mistakes if applied inappropriately. For example:</p>
+<ul>
+<li>
+<p>A self-driving car in San Francisco collided with a pedestrian that was thrown into its path by a human driver. This was arguably not its fault - however, after initially stopping it then started moving again, dragging the injured pedestrian a further six meters along the road. (<a href="https://www.theguardian.com/technology/2023/nov/08/cruise-recall-self-driving-cars-gm">source</a>) Government investigators alleged that the company initially hid the severity of the collision from them. (<a href="https://www.theguardian.com/business/2023/dec/04/california-cruise-robotaxi-san-francisco-accident-severity">source</a>)</p>
+</li>
+<li>
+<p>A healthcare chatbot deployed in the UK was heavily criticized when it advised users potentially experiencing a heart attack not to get treatment. When these concerns were raised by a doctor, the company released a statement calling them a "Twitter troll". (<a href="https://techcrunch.com/2020/02/25/first-do-no-harm/">source</a>)</p>
+</li>
+</ul>
+<p>Furthermore, use of AI systems can make it harder to detect and address process issues. Outputs of computer systems are likely to be overly trusted. (<a href="https://en.wikipedia.org/wiki/Automation_bias">source</a>) Additionally, because most AI models are used as black boxes and AI systems are much more likely to be protected from court scrutiny than human processes, it can be hard to prove mistakes. (<a href="https://www.postofficetrial.com/2021/06/marshall-spells-it-out-speech-to.html">source</a>)</p>
+<p><strong>Counterarguments to Risk [WIP]</strong></p>
+<p><strong>Current short term AI Risks [WIP]</strong></p>
+<!-- Abbreviations -->
+
+<!--
+*[Large language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[large language models]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+
+<!--*[ML]: Machine Learning. An approach to AI in which, instead of designing an algorithm directly, we have the system search through possible algorithms based on how well they do on some training data.-->
+
+<!--*[Neural network]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.-->
+<!--*[NN]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.-->
+
+<!-- Glossary -->
+
+<!--HLAI-->
+<!--Human level AI-->
+
+<!--
+*[Ethics of artificial intelligence]: The study of ethical principles for AI systems and their creators to follow. In practice, “AI ethics”this often refers to a cluster of concerns about present systems that include algorithmic bias and transparency.-->
+
+<!--Catastrophic risk-->
+<!--catastrophic risk-->
+<!--catastrophic risks-->
+
+<!--
+*[Feature]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+<!--*[features]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+
+<!--polysemantic-->
+<!--polysemanticity-->
+<!--monosemantic-->
+<!--monosemanticity-->
+<!--superposition-->
+
+<!--
+*[Optimization algorithm]: A general procedure for finding solutions that score highly according to some well-defined objective function.-->
+
+<!--
+*[Optimizer]: Something that can improve some process or physical artifact so that it is fit for a certain purpose or fulfills some set of requirements.-->
+
+<!--bitter lesson-->
+<!--scaling laws-->
+<!--scaling hypothesis-->
+<!--bio anchors-->
+<!--biological anchors-->
+<!--world models-->
+<!--RAAP-->
+<!--RAAPs-->
+<!--CAIS-->
+<!--emergence-->
+<!--Few-shot -->
+<!--Zero-shot -->
+
+<!--Few-shot prompting-->
+<!--A technique where a language model is prompted with a few examples of problems with solutions, and is then asked to find a solution to the next problem.-->
+<!--treacherous turn-->
+<!--policy-->
+<!--policies-->
+<!--embedding-->
+<!--embeddings-->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../2.7-26-Dangerous-Capabilities/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2.6 Dangerous Capabilities">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                2.6 Dangerous Capabilities
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../2.9-28-Conclusion/" class="md-footer__link md-footer__link--next" aria-label="Next: 2.8 Conclusion">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                2.8 Conclusion
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      MIT; 2023 - 2024 Centre pour la Sécurité de l'IA (CeSIA) - EffiSciences
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.top", "navigation.footer", "content.tooltips", "content.footnote.tooltips", "header.autohide", "announce.dismiss", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
