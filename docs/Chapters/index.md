@@ -31,7 +31,6 @@ Defense acceleration, Paradigms in AI Safety, Safety culture, Organizational saf
 
 ### **TECHNICAL SAFETY**
 
-
 In this part, we dive into the specific technical challenges of AI alignment. We start with the problem of Reward Misspecification, which occurs when the reward function given to an AI agent fails to properly capture the intended goals. We explore key concepts such as optimization, Goodhart's Law, and different approaches to learning human preferences, such as learning by imitation and feedback.
 
 Next, we address the problem of Goal Misgeneralization, where an AI agent may learn unintended goals that differ from those intended by its designers. We examine important concepts such as mesa-optimization, inner alignment, and deceptive alignment. This part aims to provide a deep understanding of the main technical challenges in AI alignment and sets the stage for exploring research paradigms in the next part.
@@ -70,7 +69,6 @@ Concepts covered: Logit Lens, ROME, Probing, Induction heads, limits of interpre
 
 Concepts covered: Utility functions, agent AI, tool AI, True Name, Shard theory, CEV, CIRL.
 
-
 The field of alignment does not stop at just the concepts presented in the textbook. Many schools of thought are only briefly touched upon. To get an overview of the field, the best advice is to stay curious and try out various different viewpoints.
 
 ## Going Further
@@ -82,3 +80,6 @@ The field of alignment does not stop at just the concepts presented in the textb
 !!! tip "How to Best Read This Book"
     One of the best ways to use this textbook is in a reading group consisting of students or young researchers who gather periodically. You don't need to have a large group; a friend is enough, which allows you to discuss the concepts presented in the different chapters critically. If you want to create a reading group to facilitate this course, please get in touch.
 
+This book is a project from CeSIA.
+
+<img src="Images/CeSIA.png" alt="CeSIA - Centre pour la Sécurité de l'IA" style="width: 35%;" />
