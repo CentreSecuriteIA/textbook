@@ -1,7 +1,5 @@
 # Chapter 1 - Capabilities
 
-[Download PDF]( https://drive.google.com/file/d/10fO4qjxHX3OiNnafNlp5nvF-9nLW8TOt/view?usp=sharing){ .md-button }
-
 State-of-the-Art AI: We begin with a brief introduction to the current advancements in artificial intelligence as of 2024. We aim to acquaint readers with the latest breakthroughs across various domains such as language processing, vision, and robotics.
 
 Foundation Models: The second section focuses on foundation models, the paradigm powering the state-of-the-art systems introduced in the previous section. We explain the key techniques underpinning the huge success of these models such as self-supervised learning, zero-shot learning, and fine-tuning. The section concludes by looking at the risks that the foundation model paradigm could pose such as power centralization, homogenization, and the potential for emergent capabilities.
