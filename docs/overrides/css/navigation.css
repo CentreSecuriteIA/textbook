@@ -1,0 +1,35 @@
+/* Navigation Styles */
+
+.md-nav {
+    font-size: 14px;
+}
+
+.md-nav__item {
+    margin: 0;
+    padding: 0;
+}
+
+.md-nav__link {
+    margin: 0;
+    padding: 4px 0;
+    transition: color 0.2s ease;
+}
+
+.md-nav__link:hover {
+    color: var(--primary-color);
+}
+
+.md-nav__link--active {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.md-header {
+    background-color: var(--primary-color);
+}
+
+.md-tabs {
+    background-color: var(--primary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}

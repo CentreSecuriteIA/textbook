@@ -51,9 +51,16 @@ markdown_extensions:
 watch:
   - docs
 extra_css:
-  - overrides/extra.css
+  - overrides/css/base.css
+  - overrides/css/typography.css
+  - overrides/css/admonitions.css
+  - overrides/css/navigation.css
+  - overrides/css/components.css
+  - overrides/css/feedback.css
 extra_javascript:
-  - overrides/mathjax.js
+  - overrides/js/extra.js
+  - overrides/js/feedback.js
+  - overrides/js/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 plugins:
