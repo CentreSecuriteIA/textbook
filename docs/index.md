@@ -31,7 +31,7 @@ The alignment field is a pre-paradigmatic, and there is no right or wrong resear
 
     Covering all essential topics, this resource equips you with the knowledge needed to contribute effectively to the field of AI Safety.
 
-    [:octicons-arrow-right-24: See the list of Chapters](Chapters/index.md#curriculum)
+    [:octicons-arrow-right-24: See the list of Chapters](Chapters/index.md)
 
 - :material-school:{ .lg .middle } **Pedagogical**
 
@@ -47,7 +47,7 @@ The alignment field is a pre-paradigmatic, and there is no right or wrong resear
 
     Proven effective in diverse educational settings, our content is already being utilized in various universities, bootcamps, and reading groups.
 
-    [:octicons-arrow-right-24: Courses using this book](Courses.md)
+    [:octicons-arrow-right-24: Courses using this book](courses.md)
 
 - :material-laptop:{ .lg .middle } **Interactive**
 
@@ -81,3 +81,4 @@ The alignment field is a pre-paradigmatic, and there is no right or wrong resear
     This textbook was created by Charbel-Raphael Segerie, Markov Grey, Jeanne Salle, and Vincent Corruble. We are actively looking for funding to be able to continue working on this project. Please consider either reaching out, or upvoting us on [Manifund](https://manifund.org/projects/ai-safety-textbook) if you like our work.
 
     Contacts: [Charbel-Raphael Segerie](mailto:crsegerie@gmail.com), [Markov Grey](mailto:ai_safety_textbook.y4wqu@slmail.me).
+

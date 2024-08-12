@@ -1,6 +1,6 @@
 # Chapter 1 - Capabilities
 
-<a href="../../pdfs/chapter_1.pdf" class="pdf-button" download>Download PDF</a>
+[Download PDF]( https://drive.google.com/file/d/10fO4qjxHX3OiNnafNlp5nvF-9nLW8TOt/view?usp=sharing){ .md-button }
 
 State-of-the-Art AI: We begin with a brief introduction to the current advancements in artificial intelligence as of 2024. We aim to acquaint readers with the latest breakthroughs across various domains such as language processing, vision, and robotics.
 

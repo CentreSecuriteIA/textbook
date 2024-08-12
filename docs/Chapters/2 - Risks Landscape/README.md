@@ -1,3 +1,3 @@
 # Chapter 2 - Risks Landscape
 
-<a href="../../pdfs/chapter_2.pdf" class="pdf-button" download>Download PDF</a>
+[Download PDF](https://drive.google.com/file/d/1ymYnH9MfKFw6NnufsTY5BDCAmfVhIJG6/view?usp=sharing){ .md-button }

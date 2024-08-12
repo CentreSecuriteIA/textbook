@@ -1,36 +1,35 @@
-
 # The AI Safety Handbook
 
-### **FUNDAMENTALS**
+## FUNDAMENTALS
 
 We encourage all readers, including those without a technical background, to read through the fundamentals section of the textbook. This entails reading Chapters 1 through 5. These chapters explain in an accessible way why it is plausible to see the emergence of human-level AI, the potential risks associated, and what solutions are currently being explored to mitigate these risks. These introductory chapters aim to provide a solid foundation for understanding the issues and challenges of AI Safety.
 
----
+| Chapter 1: Capabilities |
+|-------------------------|
+| **Overview:** Covers current capabilities, foundation models, leveraging computation, future capabilities, timelines and anchors, and instrumental convergence. |
+| <div class="button-container"> [:fontawesome-solid-book: Read](1%20-%20Capabilities/README.md){ .md-button } [:fontawesome-solid-file-pdf: Download](https://drive.google.com/file/d/10fO4qjxHX3OiNnafNlp5nvF-9nLW8TOt/view?usp=sharing){ .md-button } [:fontawesome-solid-video: Video](){ .md-button .md-button--disabled } [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled } </div> |
 
-#### [Chapter 1: **Capabilities**](1 - Capabilities/README.md/)
+| Chapter 2: Risks Landscape |
+|----------------------------|
+| **Overview:** Explores misuses, alignment risks, and systemic risks. |
+| <div class="button-container"> [:fontawesome-solid-book: Read](2%20-%20Risks%20Landscape/README.md){ .md-button } [:fontawesome-solid-file-pdf: Download](https://drive.google.com/file/d/1ymYnH9MfKFw6NnufsTY5BDCAmfVhIJG6/view?usp=sharing){ .md-button } [:fontawesome-solid-video: Video](){ .md-button .md-button--disabled } [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled } </div> |
 
-Concepts covered: Current Capabilities, Foundation Models, Leveraging Computation, Future Capabilities, Timelines and Anchors, Instrumental Convergence.
+| Chapter 3: Solutions Landscape |
+|--------------------------------|
+| **Overview:** Covers defense acceleration, paradigms in AI Safety, safety culture, and organizational safety. |
+| <div class="button-container"> [:fontawesome-solid-book: Read](3%20-%20Solutions%20Landscape/README.md){ .md-button } [:fontawesome-solid-file-pdf: Download](https://drive.google.com/file/d/1XTWrspAMg8PBNKKiBLr_bEd7yJW5wB-5/view?usp=sharing){ .md-button } [:fontawesome-solid-video: Video](){ .md-button .md-button--disabled } [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled } </div> |
 
-#### [Chapter 2: **Risks Landscape**](2 - Risks Landscape/README.md/)
+| Chapter 4: Evaluations |
+|------------------------|
+| **Overview:** This chapter is still being written. |
+| <div class="button-container"> [:fontawesome-solid-book: Read](4%20-%20Evaluations/README.md){ .md-button } [:fontawesome-solid-file-pdf: Download](){ .md-button .md-button--disabled } [:fontawesome-solid-video: Video](){ .md-button .md-button--disabled } [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled } </div> |
 
-Concepts covered: Misuses, Alignment risks, Systemic risks.
+| Chapter 5: Governance |
+|------------------------|
+| **Overview:** This chapter is still being written. |
+| <div class="button-container"> [:fontawesome-solid-book: Read](5%20-%20Governance/README.md){ .md-button } [:fontawesome-solid-file-pdf: Download](){ .md-button .md-button--disabled } [:fontawesome-solid-video: Video](){ .md-button .md-button--disabled } [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled } </div> |
 
-#### [Chapter 3: **Solutions Landscape**](3 - Solutions Landscape/README.md/)
-
-Defense acceleration, Paradigms in AI Safety, Safety culture, Organizational safety.
-
-#### [Chapter 4: **Evaluations**](4 - Evaluations/README.md/)
-
-!!! warning "This chapter is still being written, it will be uploaded soon."
-
-#### [Chapter 5: **Governance**](5 - Governance/README.md/)
-
-!!! warning "This chapter is still being written, it will be uploaded soon."
-
----
-
-### **TECHNICAL SAFETY**
-
+## TECHNICAL SAFETY
 
 In this part, we dive into the specific technical challenges of AI alignment. We start with the problem of Reward Misspecification, which occurs when the reward function given to an AI agent fails to properly capture the intended goals. We explore key concepts such as optimization, Goodhart's Law, and different approaches to learning human preferences, such as learning by imitation and feedback.
 
@@ -38,38 +37,40 @@ Next, we address the problem of Goal Misgeneralization, where an AI agent may le
 
 These chapters assume some basic familiarity with Machine Learning (ML). Please take your time to understand the core concepts, *especially* Reinforcement Learning (RL). Here are some [resources](https://course.aisafetyfundamentals.com/alignment?week=0) if you are not familiar with ML yet.
 
----
+| Chapter 6: Reward Misspecification |
+|-------------------------------------|
+| **Overview:** Explores concepts of reward, reward misspecification, optimization, Goodhart's Law, learning by imitation, and learning by feedback. |
+| <div class="button-container"> [:fontawesome-solid-book: Read](6%20-%20Reward%20Misspecification/README.md){ .md-button } [:fontawesome-solid-file-pdf: Download](https://drive.google.com/file/d/1my3TSNPU-gzzv48MEN763EhIYL_UvG5v/view?usp=sharing){ .md-button } [:fontawesome-solid-video: Video](){ .md-button .md-button--disabled } [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled } </div> |
 
-#### [Chapter 6: **Reward Misspecification**](6 - Reward Misspecification/README.md)
+| Chapter 7: Goal Misgeneralization |
+|------------------------------------|
+| **Overview:** Covers optimization, mesa-optimization, inner-alignment, and deceptive alignment. |
+| <div class="button-container"> [:fontawesome-solid-book: Read](7%20-%20Goal%20Misgeneralization/README.md){ .md-button } [:fontawesome-solid-file-pdf: Download](https://drive.google.com/file/d/1lHSTzwlDukble7n1dXO5zoKhAybXgRYo/view?usp=sharing){ .md-button } [:fontawesome-solid-video: Video](){ .md-button .md-button--disabled } [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled } </div> |
 
-Concepts covered: Reward, Reward Misspecification, Optimization, Goodhart's Law, Learning by imitation, Learning by Feedback.
+| Chapter 8: Scalable Oversight |
+|--------------------------------|
+| **Overview:** Explores the scalable oversight problem, sandwiching, task decomposition, factored cognition, iterated amplification, process supervision, debate, and critiques. |
+| <div class="button-container"> [:fontawesome-solid-book: Read](8%20-%20Scalable%20Oversight/README.md){ .md-button } [:fontawesome-solid-file-pdf: Download](https://drive.google.com/file/d/17PVzvEMM7CiOaTIP_HH5h_YUrgV0iG1F/view?usp=sharing){ .md-button } [:fontawesome-solid-video: Video](){ .md-button .md-button--disabled } [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled } </div> |
 
-#### [Chapter 7: **Goal Misgeneralization**](7 - Goal Misgeneralization/README.md)
+| Chapter 8.1: Adversarial Techniques |
+|--------------------------------------|
+| **Overview:** Covers unrestricted adversarial training, adversarial training, red-teaming language models, interpretability for finding adversarial examples, and relaxed adversarial training. |
+| <div class="button-container"> [:fontawesome-solid-book: Read](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/nz5NNAtfKJLmbtksL){ .md-button } [:fontawesome-solid-file-pdf: Download](){ .md-button .md-button--disabled } [:fontawesome-solid-video: Video](){ .md-button .md-button--disabled } [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled } </div> |
 
-Concepts covered: Optimization, Mesa-optimization, Inner-Alignment, Deceptive Alignment.
+| Chapter 9.1: Interpretability: Vision |
+|---------------------------------------|
+| **Overview:** Explores feature visualization, saliency techniques (Grad-CAM), activation atlas, circuits, early vision, RL vision, automatic interpretability (NetDissect), and multimodal neurons. |
+| <div class="button-container"> [:fontawesome-solid-book: Read](https://www.lesswrong.com/posts/XZfJvxZqfbLfN6pKh/introductory-textbook-to-vision-models-interpretability){ .md-button } [:fontawesome-solid-file-pdf: Download](){ .md-button .md-button--disabled } [:fontawesome-solid-video: Video](){ .md-button .md-button--disabled } [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled } </div> |
 
-#### [Chapter 8: **Scalable Oversight**](8 - Scalable Oversight/README.md)
+| Chapter 9.2: Interpretability: NLP |
+|-------------------------------------|
+| **Overview:** Covers Logit Lens, ROME, Probing, Induction heads, and limits of interpretability. |
+| <div class="button-container"> [:fontawesome-solid-book: Read](){ .md-button .md-button--disabled } [:fontawesome-solid-file-pdf: Download](https://drive.google.com/file/d/145_PXa5XE1iaq911NmO25Res_ALAGLlE/view?usp=sharing){ .md-button } [:fontawesome-solid-video: Video](){ .md-button .md-button--disabled } [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled } </div> |
 
-Concepts covered: Scalable Oversight Problem, Sandwiching, Task decomposition, Factored cognition, Iterated Amplification, Process Supervision, Debate, Critiques
-
-#### [Chapter 8.1: **Adversarial Techniques**](https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/nz5NNAtfKJLmbtksL)
-
-Concepts covered: Unrestricted adversarial training, adversarial training, red-teaming language models, interpretability for finding adversarial examples, relaxed adversarial training.
-
-#### [Chapter 9.1: **Interpretability: Vision**](https://www.lesswrong.com/posts/XZfJvxZqfbLfN6pKh/introductory-textbook-to-vision-models-interpretability)
-
-Concepts covered: Feature visualization, saliency techniques (Grad-CAM), activation atlas, circuits, early vision, RL vision, automatic interpretability (NetDissect), multimodal neurons.
-
-#### [Chapter 9.2: **Interpretability: NLP**](https://drive.google.com/file/d/145_PXa5XE1iaq911NmO25Res_ALAGLlE/view?usp=sharing)
-
-Concepts covered: Logit Lens, ROME, Probing, Induction heads, limits of interpretability.
-
-#### [Chapter 10: **Agent Foundations**](https://docs.google.com/document/d/1z4CwGDUzHvPvfXNxyfDaIfh9kK1JBJWEcfdGUutfJY0/edit)
-
-!!! warning "This chapter is still being written, the link is a very early draft."
-
-Concepts covered: Utility functions, agent AI, tool AI, True Name, Shard theory, CEV, CIRL.
-
+| Chapter 10: Agent Foundations |
+|--------------------------------|
+| **Overview:** This chapter is still being written. It will cover utility functions, agent AI, tool AI, True Name, Shard theory, CEV, and CIRL. |
+| <div class="button-container"> [:fontawesome-solid-book: Read](https://docs.google.com/document/d/1z4CwGDUzHvPvfXNxyfDaIfh9kK1JBJWEcfdGUutfJY0/edit){ .md-button } [:fontawesome-solid-file-pdf: Download](){ .md-button .md-button--disabled } [:fontawesome-solid-video: Video](){ .md-button .md-button--disabled } [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled } </div> |
 
 The field of alignment does not stop at just the concepts presented in the textbook. Many schools of thought are only briefly touched upon. To get an overview of the field, the best advice is to stay curious and try out various different viewpoints.
 
