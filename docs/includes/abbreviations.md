@@ -53,11 +53,10 @@
 *[Compute]: Shorthand for “computing power”. It may refer to, for instance, physical infrastructure such as CPUs or GPUs that perform processing, or the amount of processing power needed to train a model.
 
 
-*[AGI]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.
-*[AGI]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.
-*[artificial general intelligence]: AI that is at least as good as humans at general problem-solving.
-*[AGIs]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.
-*[AGI’s]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.
+<!--*[AGI]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+<!--*[artificial general intelligence]: AI that is at least as good as humans at general problem-solving.-->
+<!--*[AGIs]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+<!--*[AGI’s]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
 
 
 *[Superintelligence]: An AI with cognitive abilities far greater than those of humans in a wide range of important domains.

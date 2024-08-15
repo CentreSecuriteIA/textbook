@@ -1,35 +1,85 @@
 /* Navigation Styles */
-
 .md-nav {
-    font-size: 14px;
+    font-family: var(--md-text-font);
+    font-size: var(--md-small-font-size);
 }
 
+/* Navigation Title */
+.md-nav__title {
+    font-family: var(--md-text-font);
+    font-size: var(--md-medium-font-size);
+    font-weight: 700;
+    color: var(--md-typeset-color);
+}
+
+/* Navigation Items */
 .md-nav__item {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
+/* Navigation Links */
 .md-nav__link {
-    margin: 0;
-    padding: 4px 0;
-    transition: color 0.2s ease;
+    font-family: var(--md-text-font);
+    font-size: var(--md-small-font-size);
+    color: var(--md-typeset-color);
+    display: flex;
+    align-items: center;
 }
 
 .md-nav__link:hover {
-    color: var(--primary-color);
+    color: var(--md-accent-fg-color);
 }
 
 .md-nav__link--active {
-    font-weight: bold;
-    color: var(--primary-color);
+    color: var(--md-accent-fg-color);
+    font-weight: 700;
 }
 
-.md-header {
-    background-color: var(--primary-color);
+/* Table of Contents (side nav) */
+.md-nav--secondary {
+    font-size: var(--md-small-font-size);
 }
 
-.md-tabs {
-    background-color: var(--primary-color);
-    font-weight: bold;
-    text-transform: uppercase;
+/* Primary Navigation */
+.md-nav--primary .md-nav__link {
+    color: var(--md-typeset-color);
+}
+
+.md-nav--primary .md-nav__link:hover {
+    color: var(--md-accent-fg-color);
+}
+
+.md-nav--primary .md-nav__link--active,
+.md-nav--primary .md-nav__link:active {
+    color: var(--md-accent-fg-color);
+    font-weight: 700;
+}
+
+/* Style the built-in nav icons */
+.md-nav__icon {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.4em;
+    transition: transform 0.15s ease-in-out;
+}
+
+.md-nav__item--expanded > .md-nav__link .md-nav__icon {
+    transform: rotate(90deg);
+}
+
+/* Sidebar adjustments */
+.md-sidebar {
+    position: sticky;
+    top: 48px; /* Adjust based on your header height */
+    height: calc(100vh - 48px);
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        width: var(--md-nav-width);
+    }
 }

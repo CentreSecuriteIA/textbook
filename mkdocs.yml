@@ -1,15 +1,16 @@
-site_name: The AI Safety Handbook
+site_name: The AI Safety Atlas
 site_url: https://centresecuriteia.github.io/textbook/
 copyright: MIT; 2023 - 2024 Centre pour la Sécurité de l'IA (CeSIA) - EffiSciences
+
 theme:
   name: material
   font:
-    text: Lora
+    text: Benne
   custom_dir: docs/overrides
   features:
     - navigation.tabs
     - navigation.indexes
-    - navigation.instant
+    # - navigation.instant  # Consider removing this line
     - navigation.instant.progress
     - navigation.top
     - navigation.footer
@@ -18,8 +19,13 @@ theme:
     - header.autohide
     - announce.dismiss
     - toc.integrate
+    - toc.follow
   icon:
     logo: material/book-open-page-variant
+  palette:
+    primary: custom
+    accent: custom
+
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
@@ -48,8 +54,10 @@ markdown_extensions:
   - footnotes
   - pymdownx.tabbed:
       alternate_style: true
+
 watch:
   - docs
+
 extra_css:
   - overrides/css/base.css
   - overrides/css/typography.css
@@ -57,12 +65,17 @@ extra_css:
   - overrides/css/navigation.css
   - overrides/css/components.css
   - overrides/css/feedback.css
+  - overrides/css/tables.css
+  - overrides/css/buttons.css
+  - https://fonts.googleapis.com/css2?family=Benne&display=swap
+
 extra_javascript:
   - overrides/js/extra.js
   - overrides/js/feedback.js
   - overrides/js/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
 plugins:
   - search
   - awesome-pages:

@@ -1,86 +1,165 @@
 /* Component Styles */
-/* Buttons */
+
+/* Button container */
 .button-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 5px;
+    margin-top: 0.5em;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    width: 100%; /* Ensure full width of the container */
 }
+
+/* Buttons */
 .md-button {
-    flex: 1 1 0;
-    min-width: 120px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5em 1em;
+    display: inline-block;
+    padding: 4px 8px;
     font-size: 0.8em;
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
     text-decoration: none;
-    border-radius: 0.3em;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color) !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 0;
+    box-shadow: none !important;
 }
-.md-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+.md-button:hover,
+.md-button:focus {
+    background-color: var(--md-primary-fg-color--light);
+    color: var(--md-primary-bg-color) !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
-.md-button .twemoji {
-    margin-right: 0.5em;
-}
+
 .md-button--disabled {
-    background-color: #e0e0e0 !important;
-    color: #9e9e9e !important;
+    opacity: 0.5;
     cursor: not-allowed;
 }
-.md-button--disabled:hover {
-    background-color: #e0e0e0 !important;
-    color: #9e9e9e !important;
+
+.md-button--disabled:hover,
+.md-button--disabled:focus {
+    background-color: var(--md-primary-fg-color) !important;
+    opacity: 0.5 !important;
 }
+
+/* Adjust icon size within buttons */
+.md-button .twemoji {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.1em;
+}
+
+/* Ensure buttons in tables are equally spaced */
+td .button-container {
+    justify-content: space-between;
+}
+
+td .md-button {
+    flex: 1 1 0;
+}
+
 /* Tables */
 .md-typeset table:not([class]) {
     width: 100%;
     display: table;
     margin: 1em 0;
     border-collapse: collapse;
+    font-size: 18px;
+    background-color: var(--md-primary-bg-color--light);
 }
+
 .md-typeset table:not([class]) th {
     min-width: 100px;
-    background-color: #f8f8f8;
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
     padding: 0.5em 1em;
     border: none;
 }
+
 .md-typeset table:not([class]) td {
     padding: 0.5em 1em;
     vertical-align: top;
     border: none;
 }
-/* Remove table borders */
-.md-typeset table:not([class]) {
-    border: none;
-}
-.md-typeset table:not([class]) tr {
-    border: none;
-}
+
 /* Code Blocks */
 .highlight pre {
-    padding: 1em;
+    padding: 1rem;
+    background-color: var(--md-code-bg-color);
+    border: none;
+    font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .md-button {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    
+    .md-typeset table:not([class]) {
+        font-size: 16px;
+    }
+    
+    .highlight pre {
+        font-size: 16px;
+    }
+}
+
+/* Admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+    border-left: 4px solid var(--md-primary-fg-color);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
     border-radius: 4px;
-    background-color: #f8f8f8;
-    border: 1px solid #e0e0e0;
+    box-shadow: none;
+    background-color: var(--md-admonition-bg-color);
+    margin: 1.5rem 0;
+    padding: 0;
+    font-size: 0.9rem;
+    overflow: visible;
 }
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 8px;
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0;
+    padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+    border-bottom: 1px solid var(--md-accent-fg-color--transparent);
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
 }
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
+
+.md-typeset .admonition-title::before,
+.md-typeset summary::before {
+    content: "";
+    position: absolute;
+    left: 0.8rem;
+    top: 0.8rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--md-primary-fg-color);
+    mask-repeat: no-repeat;
+    mask-size: contain;
 }
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
+
+/* Toggle icon for expandable admonitions */
+.md-typeset details > summary::after {
+    content: "\25BC";
+    position: absolute;
+    right: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%

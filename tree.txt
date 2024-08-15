@@ -1,0 +1,213 @@
+Directory tree of: /home/markov/git/textbook
+├── .github
+│   └── workflows
+│       └── ci.yml
+├── docs
+│   ├── assets
+│   │   ├── icons
+│   │   │   ├── algorithm.svg
+│   │   │   └── math.svg
+│   ├── Chapters
+│   │   ├── 1 - Capabilities
+│   │   │   ├── Images
+│   │   │   ├── 1.2-11-State-of-the-Art-AI.md
+│   │   │   ├── 1.3-12-Foundation-Models.md
+│   │   │   ├── 1.4-13-Terminology.md
+│   │   │   ├── 1.5-14-Leveraging-Computation.md
+│   │   │   ├── 1.6-15-Forecasting.md
+│   │   │   ├── 1.7-16-Appendix-1-Expert-Opinions.md
+│   │   │   ├── 1.8-17-Appendix-2-Discussions-on-LLMs.md
+│   │   │   ├── 1.9-18-Appendix-3-Trends--Bottlenecks.md
+│   │   │   └── README.md
+│   │   ├── 10 - Agent Foundations
+│   │   │   └── README.md
+│   │   ├── 2 - Risks Landscape
+│   │   │   ├── Images
+│   │   │   ├── 2.10-29-Appendix-X-Risk-Scenarios.md
+│   │   │   ├── 2.11-210-Appendix-Miscellaneous.md
+│   │   │   ├── 2.2-21-Introduction.md
+│   │   │   ├── 2.3-22-Risk-Decomposition.md
+│   │   │   ├── 2.4-23-Risk-Aggravators.md
+│   │   │   ├── 2.5-24-Misuse-Risk.md
+│   │   │   ├── 2.6-25-Misalignment-Risk.md
+│   │   │   ├── 2.7-26-Dangerous-Capabilities.md
+│   │   │   ├── 2.8-27-Systemic-Risk.md
+│   │   │   ├── 2.9-28-Conclusion.md
+│   │   │   └── README.md
+│   │   ├── 2 - Risks Landscape_2
+│   │   │   ├── images
+│   │   │   ├── 2-00-risks-landscape-full.md
+│   │   │   ├── 2-01-introduction.md
+│   │   │   ├── 2-02-risk-decomposition.md
+│   │   │   ├── 2-03-risk-aggravators.md
+│   │   │   ├── 2-04-misuse-risk.md
+│   │   │   ├── 2-05-misalignment-risk.md
+│   │   │   ├── 2-06-dangerous-capabilities.md
+│   │   │   ├── 2-07-systemic-risk.md
+│   │   │   ├── 2-08-conclusion.md
+│   │   │   ├── 2-09-appendix-x-risk-scenarios.md
+│   │   │   ├── 2-10-appendix-miscellaneous.md
+│   │   │   └── README.md
+│   │   ├── 3 - Solutions Landscape
+│   │   │   ├── Images
+│   │   │   ├── 3.2-31-Introduction.md
+│   │   │   ├── 3.3-32-AI-Safety-is-Challenging.md
+│   │   │   ├── 3.4-33-Definitions.md
+│   │   │   ├── 3.5-34-Misuse.md
+│   │   │   ├── 3.6-35-Alignment-of-AGI.md
+│   │   │   ├── 3.7-36-Alignment-of-ASI.md
+│   │   │   ├── 3.8-37-Systemic.md
+│   │   │   ├── 3.9-38-Conclusion.md
+│   │   │   └── README.md
+│   │   ├── 4 - Evaluations
+│   │   │   └── README.md
+│   │   ├── 5 - Governance
+│   │   │   └── README.md
+│   │   ├── 6 - Reward Misspecification
+│   │   │   ├── Images
+│   │   │   ├── 6.2-61-Reinforcement-Learning.md
+│   │   │   ├── 6.3-62-Optimization.md
+│   │   │   ├── 6.4-63-Reward-Misspecification.md
+│   │   │   ├── 6.5-64-Learning-from-imitation.md
+│   │   │   ├── 6.6-65-Learning-from-feedback.md
+│   │   │   └── README.md
+│   │   ├── 7 - Goal Misgeneralization
+│   │   │   ├── Images
+│   │   │   ├── 7.2-71-Goal-Misgeneralization.md
+│   │   │   ├── 7.3-72-Inner-Alignment.md
+│   │   │   ├── 7.4-73-Deceptive-alignment.md
+│   │   │   └── README.md
+│   │   ├── 8 - Scalable Oversight
+│   │   │   ├── Images
+│   │   │   ├── 8.2-81-Introduction.md
+│   │   │   ├── 8.3-82-Task-Decomposition.md
+│   │   │   ├── 8.4-83-Process-Oversight.md
+│   │   │   ├── 8.5-84-Iterated-Amplification-IA.md
+│   │   │   ├── 8.6-85-Debate.md
+│   │   │   ├── 8.7-86-Weak-to-Strong-W2S.md
+│   │   │   └── README.md
+│   │   ├── 9 - Intepretability
+│   │   │   └── README.md
+│   │   ├── .pages.yml
+│   │   ├── index.md
+│   ├── feedback
+│   │   └── index.md
+│   ├── includes
+│   │   ├── snippets
+│   │   │   └── mermaid_chapter_1.md
+│   │   ├── .pages.yml
+│   │   └── abbreviations.md
+│   ├── overrides
+│   │   ├── css
+│   │   │   ├── admonitions.css
+│   │   │   ├── base.css
+│   │   │   ├── buttons.css
+│   │   │   ├── components.css
+│   │   │   ├── feedback.css
+│   │   │   ├── navigation.css
+│   │   │   ├── tables.css
+│   │   │   └── typography.css
+│   │   ├── js
+│   │   │   ├── extra.js
+│   │   │   ├── feedback.js
+│   │   │   └── mathjax.js
+│   │   ├── .pages.yml
+│   │   └── main.html
+│   ├── .pages.yml
+│   ├── courses.md
+│   └── index.md
+├── scripts
+│   └── convert_gdoc2md.py
+├── site
+│   ├── assets
+│   │   ├── icons
+│   │   │   ├── algorithm.svg
+│   │   │   └── math.svg
+│   │   ├── images
+│   │   ├── javascripts
+│   │   │   ├── lunr
+│   │   │   │   ├── min
+│   │   │   │   │   ├── lunr.ar.min.js
+│   │   │   │   │   ├── lunr.da.min.js
+│   │   │   │   │   ├── lunr.de.min.js
+│   │   │   │   │   ├── lunr.du.min.js
+│   │   │   │   │   ├── lunr.el.min.js
+│   │   │   │   │   ├── lunr.es.min.js
+│   │   │   │   │   ├── lunr.fi.min.js
+│   │   │   │   │   ├── lunr.fr.min.js
+│   │   │   │   │   ├── lunr.he.min.js
+│   │   │   │   │   ├── lunr.hi.min.js
+│   │   │   │   │   ├── lunr.hu.min.js
+│   │   │   │   │   ├── lunr.hy.min.js
+│   │   │   │   │   ├── lunr.it.min.js
+│   │   │   │   │   ├── lunr.ja.min.js
+│   │   │   │   │   ├── lunr.jp.min.js
+│   │   │   │   │   ├── lunr.kn.min.js
+│   │   │   │   │   ├── lunr.ko.min.js
+│   │   │   │   │   ├── lunr.multi.min.js
+│   │   │   │   │   ├── lunr.nl.min.js
+│   │   │   │   │   ├── lunr.no.min.js
+│   │   │   │   │   ├── lunr.pt.min.js
+│   │   │   │   │   ├── lunr.ro.min.js
+│   │   │   │   │   ├── lunr.ru.min.js
+│   │   │   │   │   ├── lunr.sa.min.js
+│   │   │   │   │   ├── lunr.stemmer.support.min.js
+│   │   │   │   │   ├── lunr.sv.min.js
+│   │   │   │   │   ├── lunr.ta.min.js
+│   │   │   │   │   ├── lunr.te.min.js
+│   │   │   │   │   ├── lunr.th.min.js
+│   │   │   │   │   ├── lunr.tr.min.js
+│   │   │   │   │   ├── lunr.vi.min.js
+│   │   │   │   │   └── lunr.zh.min.js
+│   │   │   │   ├── tinyseg.js
+│   │   │   │   └── wordcut.js
+│   │   │   ├── workers
+│   │   │   │   ├── search.b8dbb3d2.min.js
+│   │   │   ├── bundle.fe8b6f2b.min.js
+│   │   ├── stylesheets
+│   │   │   ├── main.3cba04c6.min.css
+│   │   │   ├── palette.06af60db.min.css
+│   ├── Chapters
+│   │   ├── 1 - Capabilities
+│   │   │   └── Images
+│   │   ├── 2 - Risks Landscape
+│   │   │   └── Images
+│   │   ├── 3 - Solutions Landscape
+│   │   │   └── Images
+│   │   ├── 3 - Solutions Landscape_2
+│   │   │   └── Images
+│   │   ├── 6 - Reward Misspecification
+│   │   │   └── Images
+│   │   ├── 7 - Goal Misgeneralization
+│   │   │   └── Images
+│   │   └── 8 - Scalable Oversight
+│   │       └── Images
+│   ├── css
+│   │   ├── admonitions.css
+│   │   ├── base.css
+│   │   ├── components.css
+│   │   ├── feedback.css
+│   │   ├── navigation.css
+│   │   └── typography.css
+│   ├── js
+│   │   ├── extra.js
+│   │   ├── feedback.js
+│   │   └── mathjax.js
+│   ├── overrides
+│   │   ├── css
+│   │   │   ├── admonitions.css
+│   │   │   ├── base.css
+│   │   │   ├── components.css
+│   │   │   ├── feedback.css
+│   │   │   ├── navigation.css
+│   │   │   └── typography.css
+│   │   ├── js
+│   │   │   ├── extra.js
+│   │   │   ├── feedback.js
+│   │   │   └── mathjax.js
+│   │   └── main.html
+│   ├── search
+├── mkdocs.yml
+├── readme.md
+├── requirements.txt
+└── tree.py
