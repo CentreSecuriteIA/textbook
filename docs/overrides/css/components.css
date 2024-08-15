@@ -1,0 +1,165 @@
+/* Component Styles */
+
+/* Button container */
+.button-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    margin-top: 0.5em;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    width: 100%; /* Ensure full width of the container */
+}
+
+/* Buttons */
+.md-button {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 0.8em;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color) !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 0;
+    box-shadow: none !important;
+}
+
+.md-button:hover,
+.md-button:focus {
+    background-color: var(--md-primary-fg-color--light);
+    color: var(--md-primary-bg-color) !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.md-button--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.md-button--disabled:hover,
+.md-button--disabled:focus {
+    background-color: var(--md-primary-fg-color) !important;
+    opacity: 0.5 !important;
+}
+
+/* Adjust icon size within buttons */
+.md-button .twemoji {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.1em;
+}
+
+/* Ensure buttons in tables are equally spaced */
+td .button-container {
+    justify-content: space-between;
+}
+
+td .md-button {
+    flex: 1 1 0;
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+    width: 100%;
+    display: table;
+    margin: 1em 0;
+    border-collapse: collapse;
+    font-size: 18px;
+    background-color: var(--md-primary-bg-color--light);
+}
+
+.md-typeset table:not([class]) th {
+    min-width: 100px;
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    padding: 0.5em 1em;
+    border: none;
+}
+
+.md-typeset table:not([class]) td {
+    padding: 0.5em 1em;
+    vertical-align: top;
+    border: none;
+}
+
+/* Code Blocks */
+.highlight pre {
+    padding: 1rem;
+    background-color: var(--md-code-bg-color);
+    border: none;
+    font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .md-button {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    
+    .md-typeset table:not([class]) {
+        font-size: 16px;
+    }
+    
+    .highlight pre {
+        font-size: 16px;
+    }
+}
+
+/* Admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+    border-left: 4px solid var(--md-primary-fg-color);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 4px;
+    box-shadow: none;
+    background-color: var(--md-admonition-bg-color);
+    margin: 1.5rem 0;
+    padding: 0;
+    font-size: 0.9rem;
+    overflow: visible;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+    font-weight: 700;
+    font-size: 1em;
+    margin: 0;
+    padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+    border-bottom: 1px solid var(--md-accent-fg-color--transparent);
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.md-typeset .admonition-title::before,
+.md-typeset summary::before {
+    content: "";
+    position: absolute;
+    left: 0.8rem;
+    top: 0.8rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--md-primary-fg-color);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
+
+/* Toggle icon for expandable admonitions */
+.md-typeset details > summary::after {
+    content: "\25BC";
+    position: absolute;
+    right: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%
