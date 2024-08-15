@@ -47,13 +47,11 @@ def get_chapter_info(content):
 def remove_table_of_contents(content):
     """Remove the table of contents from the markdown content."""
     logger.debug("Removing table of contents")
-    # Find the start of the table of contents
     toc_start = content.find('[')
     if toc_start == -1:
         logger.debug("No table of contents found")
         return content  # No table of contents found
 
-    # Find the end of the table of contents
     toc_end = content.find('\n# ', toc_start)
     if toc_end == -1:
         toc_end = content.find('\n## ', toc_start)
@@ -61,24 +59,37 @@ def remove_table_of_contents(content):
         logger.warning("Couldn't find the end of the table of contents")
         return content  # Couldn't find the end of the table of contents
 
-    # Remove the table of contents
     logger.debug(f"Removing TOC from index {toc_start} to {toc_end}")
     return content[:toc_start] + content[toc_end:]
 
-def get_overview(content):
-    """Extract the overview section."""
-    logger.debug("Extracting overview section")
-    overview_pattern = re.compile(r'#\s*Overview(.*?)(?=\n#\s|$)', re.DOTALL)
-    match = overview_pattern.search(content)
-    if match:
-        return match.group(1).strip()
-    logger.warning("No overview section found")
-    return ""
+def get_first_section(content):
+    """Extract the first section after the table of contents."""
+    logger.debug("Extracting first section")
+    # Find the end of the table of contents
+    toc_end = content.find('\n# ')
+    if toc_end == -1:
+        toc_end = content.find('\n## ')
+    if toc_end == -1:
+        logger.warning("Couldn't find the end of the table of contents")
+        return ""
 
-def remove_overview(content):
-    """Remove the overview section from the content."""
-    logger.debug("Removing overview section")
-    return re.sub(r'(?s)#\s*Overview.*?(?=\n#\s|$)', '', content, count=1)
+    logger.debug(f"Table of contents ends at position: {toc_end}")
+
+    # Find the start of the next section
+    next_section = content.find('\n# ', toc_end + 1)
+    if next_section == -1:
+        next_section = content.find('\n## ', toc_end + 1)
+    if next_section == -1:
+        # If there's no next section, use the rest of the content
+        logger.debug("No next section found, using the rest of the content")
+        first_section = content[toc_end:].strip()
+    else:
+        logger.debug(f"Next section starts at position: {next_section}")
+        first_section = content[toc_end:next_section].strip()
+
+    logger.debug(f"Extracted first section (length: {len(first_section)})")
+    logger.debug(f"First 100 characters of extracted section: {first_section[:100]}")
+    return first_section
 
 def add_section_numbers(content, chapter_number):
     """Add section numbers to headers."""
@@ -89,7 +100,9 @@ def add_section_numbers(content, chapter_number):
 
     for line in lines:
         if line.startswith('# Chapter'):
-            numbered_lines.append(f"# Chapter {chapter_number} {line[9:]}")
+            # Remove any existing chapter number from the title
+            chapter_title = re.sub(r'^# Chapter \d+\s*-?\s*', '', line)
+            numbered_lines.append(f"# Chapter {chapter_number} - {chapter_title}")
         elif line.startswith('# '):
             section_counters[0] += 1
             section_counters[1] = 0
@@ -134,8 +147,25 @@ def add_time_to_read(section):
         return reading_time_text + section
 
 def sanitize_filename(filename):
-    """Sanitize the filename by removing invalid characters and replacing spaces with hyphens."""
-    return re.sub(r'[^\w\s-]', '', filename).replace(" ", '-')
+    """Sanitize the filename by converting to lowercase, removing invalid characters, and replacing spaces with hyphens."""
+    # Convert to lowercase
+    filename = filename.lower()
+    # Replace spaces and underscores with hyphens
+    filename = re.sub(r'[\s_]+', '-', filename)
+    # Remove any character that isn't alphanumeric or hyphen
+    sanitized = re.sub(r'[^\w\-]', '', filename)
+    # Replace multiple hyphens with a single hyphen
+    sanitized = re.sub(r'-+', '-', sanitized)
+    # Remove leading and trailing hyphens
+    return sanitized.strip('-')
+
+def generate_filename(chapter_number, section_number, title, is_full=False):
+    """Generate a clean URL-friendly filename based on the chapter number, section number, and title."""
+    sanitized_title = sanitize_filename(title)
+    if is_full:
+        return f"{chapter_number}-00-{sanitized_title}-full.md"
+    else:
+        return f"{chapter_number}-{section_number:02d}-{sanitized_title}.md"
 
 def add_snippets(content, snippets_dir):
     """Replace snippet placeholders with actual content."""
@@ -155,28 +185,8 @@ def add_tabs(content):
     """Replace $$$ with spaces and apply tab sections."""
     logger.debug("Adding tabs")
     content = content.replace("$$$$", "    ")
-    content = re.sub(r'<tab>(.*?)</tab>', lambda m: '\n'.join(['\t' + line for line in m.group(1).split('\n')]), content, flags=re.DOTALL)
+    content = re.sub(r'<tab>(.*?)</tab>', lambda m: '\n'.join(['    ' + line for line in m.group(1).split('\n')]), content, flags=re.DOTALL)
     return content
-
-def create_full_page(content, output_dir, chapter_number, chapter_title, snippets_dir):
-    """Create a full page with the entire content of the chapter."""
-    logger.info("Creating full page")
-    # Add section numbers
-    full_content = add_section_numbers(content, chapter_number)
-    
-    # Additional processing
-    full_content = add_tabs(full_content)
-    full_content = add_snippets(full_content, snippets_dir)
-    
-    # Create the full page file
-    full_page_filename = f"{chapter_number}-{sanitize_filename(chapter_title)}-full.md"
-    full_page_path = output_dir / full_page_filename
-    
-    with open(full_page_path, 'w', encoding='utf-8') as full_page_file:
-        full_page_file.write(full_content)
-    
-    logger.info(f"Created full page file: {full_page_filename}")
-    return full_page_path
 
 def process_markdown(input_path, output_dir, snippets_dir):
     """Process the markdown file following the specified flow."""
@@ -193,47 +203,59 @@ def process_markdown(input_path, output_dir, snippets_dir):
 
         # Step 2: Get chapter info and create folder
         chapter_number, chapter_title = get_chapter_info(full_markdown)
-        chapter_folder_name = f"{chapter_number} - {chapter_title}"
+        chapter_folder_name = f"{chapter_number} - {chapter_title}"  # Keep original folder naming
         chapter_path = output_dir / chapter_folder_name
         chapter_path.mkdir(parents=True, exist_ok=True)
         logger.info(f"Created chapter folder: {chapter_path}")
 
         # Step 3: Remove table of contents
-        full_markdown = remove_table_of_contents(full_markdown)
+        content_without_toc = remove_table_of_contents(full_markdown)
         logger.debug("Removed table of contents")
 
-        # Step 4: Create full page
-        full_page_path = create_full_page(full_markdown, chapter_path, chapter_number, chapter_title, snippets_dir)
+        # Step 4: Create full page (without TOC)
+        full_page_filename = generate_filename(chapter_number, 0, chapter_title, is_full=True)
+        full_page_path = chapter_path / full_page_filename
+        
+        with open(full_page_path, 'w', encoding='utf-8') as full_page_file:
+            full_page_file.write(content_without_toc)
+        
         logger.info(f"Created full page at {full_page_path}")
 
-        # Step 5: Get overview and write to README.md
-        overview = get_overview(full_markdown)
-        with open(chapter_path / "README.md", 'w', encoding='utf-8') as readme_file:
-            readme_file.write(f"# Chapter {chapter_number} - {chapter_title}\n\n{overview}")
-        logger.info("Created README.md with overview")
+        # Step 5: Get the first section and write to README.md
+        first_section = get_first_section(content_without_toc)
+        first_section = add_tabs(first_section)  # Process tabs in README.md
+        readme_content = f"# Chapter {chapter_number} - {chapter_title}\n\n{first_section}"
+        
+        readme_path = chapter_path / "README.md"
+        with open(readme_path, 'w', encoding='utf-8') as readme_file:
+            readme_file.write(readme_content)
+        
+        logger.info(f"Created README.md at {readme_path}")
 
-        # Step 6: Remove overview from full_markdown
-        full_markdown = remove_overview(full_markdown)
-
-        # Step 7: Add section numbers
-        full_markdown = add_section_numbers(full_markdown, chapter_number)
+        # Step 6: Add section numbers
+        content_without_toc = add_section_numbers(content_without_toc, chapter_number)
 
         # Additional processing steps
-        full_markdown = add_tabs(full_markdown)
-        full_markdown = add_snippets(full_markdown, snippets_dir)
+        content_without_toc = add_tabs(content_without_toc)
+        content_without_toc = add_snippets(content_without_toc, snippets_dir)
 
-        # Step 8: Get sections and create files
-        sections = get_sections(full_markdown)
-        for i, (header, content) in enumerate(sections, start=1):
+        # Step 7: Get sections and create files
+        sections = get_sections(content_without_toc)
+        for i, (header, content) in enumerate(sections):
+            # Skip the first section as it's already in README.md
+            if i == 0:
+                continue
+            
             section_content = f"{header}\n{add_time_to_read(content.strip())}"
-            sanitized_title = sanitize_filename(header.lstrip('#').strip())
-            output_filename = f"{chapter_number}.{i}-{sanitized_title}.md"
+            section_number = int(header.split(' ')[1].split('.')[-1])  # Extract section number
+            section_title = ' '.join(header.split(' ')[2:])  # Remove section number from title
+            output_filename = generate_filename(chapter_number, section_number, section_title)
             
             with open(chapter_path / output_filename, 'w', encoding='utf-8') as output_file:
                 output_file.write(section_content)
             logger.info(f"Created {output_filename}")
 
-        # Step 9: Handle images (if needed)
+        # Step 8: Handle images (if needed)
         images_source = input_path / "Images"
         if images_source.exists() and images_source.is_dir():
             shutil.copytree(images_source, chapter_path / "Images", dirs_exist_ok=True)
@@ -247,7 +269,7 @@ def process_markdown(input_path, output_dir, snippets_dir):
         raise
 
 if __name__ == "__main__":
-    input_path = Path("source_zips/ch8.zip")
+    input_path = Path("source_zips/ch1.zip")
     output_dir = Path("docs/Chapters")
     snippets_dir = Path("snippets")
 
