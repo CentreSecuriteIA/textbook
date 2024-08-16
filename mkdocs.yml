@@ -1,6 +1,6 @@
 site_name: The AI Safety Atlas
-site_url: https://centresecuriteia.github.io/textbook/
-copyright: MIT; 2023 - 2024 Centre pour la Sécurité de l'IA (CeSIA) - EffiSciences
+site_url: https://ai-safety-atlas.com/textbook/
+copyright: MIT; 2023 - 2024 Centre pour la Sécurité de l'IA (CeSIA)
 
 theme:
   name: material
