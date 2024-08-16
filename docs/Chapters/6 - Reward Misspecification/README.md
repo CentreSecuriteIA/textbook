@@ -1,5 +1,3 @@
-# Chapter 6 - Reward Misspecification
-
 # Overview
 
 1. **Reinforcement Learning**: The chapter starts with a reminder of some reinforcement learning concepts. This includes a quick dive into the concept of rewards and reward functions. This section lays the groundwork for explaining why reward design is extremely important.

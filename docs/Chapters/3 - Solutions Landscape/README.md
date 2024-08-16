@@ -1,5 +1,3 @@
-# Chapter 3 - Solutions Landscape
-
 # Introduction
 
 Although the field of AI safety is still in its infancy, several measures have already been identified that can significantly improve the safety of AI systems. While it remains to be seen if these measures are sufficient to fully address the risks posed by AI, they represent essential considerations. The diagram below provides a high-level overview of the main approaches to ensuring the safe development of AI.

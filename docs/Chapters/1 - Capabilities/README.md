@@ -1,5 +1,3 @@
-# Chapter 1 - Capabilities
-
 # Overview
 
 State-of-the-Art AI: We begin with a brief introduction to the current advancements in artificial intelligence as of 2024. We aim to acquaint readers with the latest breakthroughs across various domains such as language processing, vision, and robotics.

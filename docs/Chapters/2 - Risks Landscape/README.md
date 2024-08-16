@@ -1,5 +1,3 @@
-# Chapter 2 - Risks Landscape
-
 # Introduction
 
 It is expected that AI capabilities will continue to make progress in the upcoming years. The chapter on capabilities presents some arguments for why we might expect such trends to continue. But why are increasing capabilities a problem? As AI models get more capable, the potential risks associated with AI systems also rise. Before we can begin a discussion around mitigations, we need to get a concrete understanding of the specific risks - What exactly are the concerning scenarios? What are the likelihoods of certain harmful outcomes occurring over others?, and what aspects of current AI development accelerate these risks? In this chapter we aim to tackle these fundamental questions and provide a concrete overview of the various risks in the AI landscape.
@@ -27,5 +25,3 @@ They now want to bet their entire life savings in a match against Magnus Carlson
     "*There is no question that machines will become smarter than humans—in all domains in which humans are smart—in the future,*" says LeCun. "*It's a question of when and how, not a question of if.*" 
     
     ([source](https://www.technologyreview.com/2023/05/02/1072528/geoffrey-hinton-google-why-scared-ai/))
-    
-    
