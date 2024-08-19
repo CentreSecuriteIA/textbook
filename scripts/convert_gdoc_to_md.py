@@ -213,6 +213,39 @@ def finalize_chapter(chapter_path, content):
     
     logger.info(f"Finalized chapter: {new_file_path}")
 
+def create_readme(content, chapter_path):
+    """
+    Create README content, write it to README.md, and update Output.md.
+    
+    Args:
+    content (str): The full content of the chapter
+    chapter_path (Path): Path to the chapter folder
+    
+    Returns:
+    str: The updated main content (without README content)
+    """
+    toc_end = content.find('\n# ')
+    second_section_start = content.find('\n# ', toc_end + 1)
+    
+    if toc_end == -1 or second_section_start == -1:
+        logger.warning("Could not find the proper content structure.")
+        return content  # Return original content if structure is not as expected
+    
+    readme_content = content[toc_end:second_section_start].strip()
+    updated_content = content[second_section_start:].strip()
+    
+    # Write README content
+    with open(chapter_path / "README.md", 'w', encoding='utf-8') as file:
+        file.write(readme_content)
+    
+    # Write updated main content
+    with open(chapter_path / "Output.md", 'w', encoding='utf-8') as file:
+        file.write(updated_content)
+    
+    logger.info(f"Created README.md and updated Output.md in {chapter_path}")
+    
+    return updated_content
+
 def process_markdown(input_zip, output_dir, snippets_dir):
     """
     Process markdown from zip file and create chapter folder with processed content and section files.
@@ -254,38 +287,6 @@ def process_markdown(input_zip, output_dir, snippets_dir):
         if 'temp_dir' in locals():
             shutil.rmtree(temp_dir)
 
-def create_readme(content, chapter_path):
-    """
-    Create README content, write it to README.md, and update Output.md.
-    
-    Args:
-    content (str): The full content of the chapter
-    chapter_path (Path): Path to the chapter folder
-    
-    Returns:
-    str: The updated main content (without README content)
-    """
-    toc_end = content.find('\n# ')
-    second_section_start = content.find('\n# ', toc_end + 1)
-    
-    if toc_end == -1 or second_section_start == -1:
-        logger.warning("Could not find the proper content structure.")
-        return content  # Return original content if structure is not as expected
-    
-    readme_content = content[toc_end:second_section_start].strip()
-    updated_content = content[second_section_start:].strip()
-    
-    # Write README content
-    with open(chapter_path / "README.md", 'w', encoding='utf-8') as file:
-        file.write(readme_content)
-    
-    # Write updated main content
-    with open(chapter_path / "Output.md", 'w', encoding='utf-8') as file:
-        file.write(updated_content)
-    
-    logger.info(f"Created README.md and updated Output.md in {chapter_path}")
-    
-    return updated_content
 if __name__ == "__main__":
     snippets_dir = "path/to/snippets/directory"
     output_dir = "chapters/"
