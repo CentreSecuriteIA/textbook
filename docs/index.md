@@ -1,7 +1,7 @@
 ---
 title: Home
 ---
-# The AI Safety Handbook
+# The AI Safety Atlas
 
 !!! warning "This textbook is still under construction. It will be updated regularly."
 
@@ -70,9 +70,9 @@ The alignment field is a pre-paradigmatic, and there is no right or wrong resear
 </div>
 
 !!! quote "Reception"
-    * “*I found it to be very well written and super insightful. Learned tons of new things. Looking forwards to continue reading.*” - Participant of ML4G Germany 2023.
+    *“*I found it to be very well written and super insightful. Learned tons of new things. Looking forwards to continue reading.*” - Participant of ML4G Germany 2023.
     * “*I liked the text, was well written, concise, easy to follow, contained many important points.*” - Participant of ML4G Germany 2023.
-    * “*The textbooks are very helpful to keep a clear line of thought and a better structure.*”  - Participant of ML4G France 2023.
+    *“*The textbooks are very helpful to keep a clear line of thought and a better structure.*”  - Participant of ML4G France 2023.
     * “*The material and content are great, thank you for writing it and I can't wait to read it in its entirety.*” - Participant of ML4G France 2023.
 
 ## **About**
@@ -81,4 +81,3 @@ The alignment field is a pre-paradigmatic, and there is no right or wrong resear
     This textbook was created by Charbel-Raphael Segerie, Markov Grey, Jeanne Salle, and Vincent Corruble. We are actively looking for funding to be able to continue working on this project. Please consider either reaching out, or upvoting us on [Manifund](https://manifund.org/projects/ai-safety-textbook) if you like our work.
 
     Contacts: [Charbel-Raphael Segerie](mailto:crsegerie@gmail.com), [Markov Grey](mailto:ai_safety_textbook.y4wqu@slmail.me).
-
