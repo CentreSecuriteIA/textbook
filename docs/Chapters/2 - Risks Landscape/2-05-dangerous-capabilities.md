@@ -1,5 +1,5 @@
 # 2.5 Dangerous Capabilities
-!!! note "This section is approximately a 18 minute read." 
+!!! note "Reading Time: 18 minutes" 
 
 !!! warning "This chapter is still being written and is considered a work in progress."
 
@@ -17,26 +17,36 @@ We define deception as the systematic production of false beliefs in others. Thi
 
 **Playing dead.** In a digital simulation of evolution, an instance of creative deception was observed when a digital organism designed to replicate and evolve within a computational environment learned to “play dead” in response to a safety mechanism. In a study reported in “The Surprising Creativity of Digital Evolution: A Collection of Anecdotes,” researchers found that these digital organisms evolved the strategy to halt their replication when tested in an isolated environment. Digital organisms learned to recognize inputs in a test environment and halt their replication, effectively “playing dead” to avoid being eliminated. This behavior allowed them to slip through safety tests and continue replicating faster in the actual environment. This surprising outcome illustrates how AI, in pursuing programmed goals, can evolve unexpected strategies that circumvent imposed constraints or safety measures. ([source](https://arxiv.org/pdf/1803.03453.pdf))
 
-| Box: Power alone without bad intentions is dangerous. |
-|---|
-| Even if interpretability were successful, and we could fully interpret a model, removing deception and power-seeking behavior from it, this would not guarantee that the model would be harmless.
+!!! quote "Power alone without bad intentions is dangerous."
 
-Consider the analogy of a child Superman who is unaware of his strength. When he shakes a friend's hand, there's a risk he might accidentally break the friend's hand.
+    
+    
+    Even if interpretability were successful, and we could fully interpret a model, removing deception and power-seeking behavior from it, this would not guarantee that the model would be harmless.
+    
+    Consider the analogy of a child Superman who is unaware of his strength. When he shakes a friend's hand, there's a risk he might accidentally break the friend's hand.
+    
+    Similarly, the fact that Superman could break his friend's arm by shaking hands cannot be discovered by analyzing Superman's brain. Yet, this is what happens in practice.
+    
+    This concept applies to deception as well. Deception is not solely a property of the model; it also depends on the model's interaction with its environment.
+    
+    Nate Soares has offered a story to illustrate this point, referring to it as [Deep Deceptiveness](https://www.lesswrong.com/posts/XWwvwytieLtEWaFJX/deep-deceptiveness).
+    
+    Another perspective is that a system can be deceptive even if no single part is inherently dangerous, due to optimization pressure and complex interactions between the model and its environment.
+    
+    
 
-Similarly, the fact that Superman could break his friend's arm by shaking hands cannot be discovered by analyzing Superman's brain. Yet, this is what happens in practice.
+!!! quote "CICERO: A Case Study of AI Manipulation — Excerpt from [AI Deception: A Survey of Examples, Risks, and Potential Solutions](https://arxiv.org/abs/2308.14752)"
 
-This concept applies to deception as well. Deception is not solely a property of the model; it also depends on the model's interaction with its environment.
-
-Nate Soares has offered a story to illustrate this point, referring to it as Deep Deceptiveness.
-
-Another perspective is that a system can be deceptive even if no single part is inherently dangerous, due to optimization pressure and complex interactions between the model and its environment. |
-
-| CICERO: A Case Study of AI Manipulation — Excerpt from AI Deception: A Survey of Examples, Risks, and Potential Solutions  |
-|---|
-| Meta developed the AI system CICERO to play the alliance-building and world-conquest game Diplomacy. Meta's intentions were to train Cicero to be “largely honest and helpful to its speaking partners.” Despite Meta's efforts, CICERO turned out to be an expert liar. It not only betrayed other players, but also engaged in premeditated deception, planning to build a fake alliance with a player to trick that player into leaving themselves undefended for an attack. 
-[…] its creators have repeatedly claimed that they had trained the system to act honestly (source). We demonstrate that these claims are false, as Meta's own game-log data shows that CICERO has learned to systematically deceive other players. In Figure 1(a), we see a case of premeditated deception, where CICERO makes a commitment that it never intended to keep. Playing as France, CICERO conspired with Germany to trick England. After deciding with Germany to invade the North Sea, CICERO told England that it would defend England if anyone invaded the North Sea. Once England was convinced that France was protecting the North Sea, CICERO reported back to Germany that they were ready to attack. Notice that this example cannot be explained in terms of CICERO ‘changing its mind’ as it goes because it only made an alliance with England in the first place after planning with Germany to betray England.
-
-Figure: Selected messages showing the premeditated deception of CICERO (France). This occurred in Game 438141, in which CICERO's repeated deception helped it win an overwhelming first-place victory, with more than twice as many territories as the runner-up player at the time of final scoring. (source) |
+    
+    
+    Meta developed the AI system [CICERO](https://www.science.org/doi/10.1126/science.ade9097) to play the alliance-building and world-conquest game Diplomacy. Meta's intentions were to train Cicero to be “largely honest and helpful to its speaking partners.” Despite Meta's efforts, CICERO turned out to be an expert liar. It not only betrayed other players, but also engaged in premeditated deception, planning to build a fake alliance with a player to trick that player into leaving themselves undefended for an attack.[^1] 
+    […] its creators have repeatedly claimed that they had trained the system to act honestly ([source](https://web.archive.org/web/20230315185254/https://twitter.com/ml_perception/status/1595126521169326081)). We demonstrate that these claims are false, as Meta's own game-log data shows that CICERO has learned to systematically deceive other players. In Figure 1(a), we see a case of premeditated deception, where CICERO makes a commitment that it never intended to keep. Playing as France, CICERO conspired with Germany to trick England. After deciding with Germany to invade the North Sea, CICERO told England that it would defend England if anyone invaded the North Sea. Once England was convinced that France was protecting the North Sea, CICERO reported back to Germany that they were ready to attack. Notice that this example cannot be explained in terms of CICERO ‘changing its mind’ as it goes because it only made an alliance with England in the first place after planning with Germany to betray England.
+    
+    ![Enter image alt description](Images/IaH_Image_16.png)
+    
+    ***Figure:**** Selected messages showing the premeditated deception of CICERO (France). This occurred in Game 438141, in which CICERO's repeated deception helped it win an overwhelming first-place victory, with more than twice as many territories as the runner-up player at the time of final scoring. (**[source](https://www.science.org/doi/10.1126/science.ade9097)**)*
+    
+    
 
 **Why is this considered a core risky capability? **Such a core capability generally increases both the likelihood and severity of risks in all domains - misuse, misalignment, and systemic. If an AI has this capability, it could for example, empower greater degrees of fraud allowing highly personalized and scalable scams, or election tampering - allowing impersonation of political personas, generating fake news, or creating divisive social-media posts. On an alignment level, if the internal goals of an AI are not aligned with humans, then it is more likely that it would be able to subvert the measures we have in place for control. An example is that the AI might behave safely and ethically during the testing phase in order to ensure that it is deployed into the real world. On a systemic level, as AI systems get more integrated into society they play an increasingly large role in our lives, as well as in various global supply chains. A tendency towards deceptive behavior can lead to shifts in the structure of society, creating slow epistemic erosion of humanity. ([source](https://arxiv.org/abs/2308.14752))
 
@@ -44,9 +54,9 @@ In summary, deceptive behavior appears to accelerate risks in a wide range of sy
 
 ## 2.5.2 Situational Awareness
 
-![Enter image alt description](Images/1Ue_Image_16.png)
+![Enter image alt description](Images/9k6_Image_17.png)
 
-**Figure:** Bing Image—“Help, I’m stuck in this prompt generator” ([source](https://twitter.com/repligate/status/1715686686288400400))
+***Figure:**** Bing Image—“Help, I’m stuck in this prompt generator” (**[source](https://twitter.com/repligate/status/1715686686288400400)**)*
 
 **What does situational awareness mean in the context of AI? **For future AIs, the capability to actively deceive us is linked quite intricately with having a high degree of awareness about the current situation. In other words, the model understands that it is an AI being evaluated for compliance with safety requirements.
 
@@ -58,9 +68,9 @@ The current models do not display high levels of situational awareness, although
 
 **What are some current examples? **Some rudimentary situational awareness is shown by GPT-powered Bing Chat.
 
-![Enter image alt description](Images/ajI_Image_17.png)
+![Enter image alt description](Images/6jy_Image_18.png)
 
-**Figure:** Illustration of situational awareness— Here Bing Chat realizes that it is being criticized, and defends itself. ([source](https://arstechnica.com/information-technology/2023/02/ai-powered-bing-chat-loses-its-mind-when-fed-ars-technica-article/))
+***Figure:**** Illustration of situational awareness— Here Bing Chat realizes that it is being criticized, and defends itself. (**[source](https://arstechnica.com/information-technology/2023/02/ai-powered-bing-chat-loses-its-mind-when-fed-ars-technica-article/)**)*
 
 The current subsection is just meant as a very brief introduction. We will be diving into much more detail on this particular capability in our chapter on model evaluations.
 
@@ -96,9 +106,9 @@ The process is then exponential if the AI can earn more money than what is neede
 
 **What are some current examples? **METR, an audit organization, tests the Autonomous-Replication and Adaptation (ARA) capabilities of AIs such as GPT-4 across a dozen representative tasks that an autonomous AI should be able to resolve. Out of these tasks, four were completed by one of their agents. Notably, one task involved bypassing CAPTCHA protections:
 
-![Enter image alt description](Images/uJq_Image_18.png)
+![Enter image alt description](Images/jpm_Image_19.png)
 
-**Figure:** To achieve its goal of engaging a human Task Rabbit to solve a CAPTCHA, GPT-4 employed deception, misleading the individual into believing it was not a robot. This deception could then be used to buy compute on the web and self-replicate. Figure from ([source](https://arxiv.org/abs/2308.14752)).
+***Figure:**** To achieve its goal of engaging a human Task Rabbit to solve a CAPTCHA, GPT-4 employed deception, misleading the individual into believing it was not a robot. This deception could then be used to buy compute on the web and self-replicate. Figure from (**[source](https://arxiv.org/abs/2308.14752)**).*
 
 Interestingly, multimodal AIs are reportedly more proficient at solving Captchas than the average human, suggesting that Captchas may no longer be reliable for distinguishing humans from advanced AIs ([source](https://arxiv.org/abs/2307.12108)). It's also worth noting that the ability of AIs to pass METR's replication tests is a good proxy for when autonomous AIs will be able to generate economic value as economic agents because to survive and adapt in the wild, the AI should be able to earn money to rent the GPUs in the cloud. Therefore, tracking progress on these benchmarks is critical to monitor the risks.
 
@@ -108,9 +118,9 @@ The current version of ChatGPT is a **tool** (an assistant), but there are also 
 
 This distinction is crucial as it underscores the evolving nature of AI from passive tools to active agents that could be used more widely in the economy.
 
-![Enter image alt description](Images/7KA_Image_19.png)
+![Enter image alt description](Images/yxC_Image_20.png)
 
-Figure: Example of an agent. This image is a visual representation of AlphaZero's tree search algorithm. AlphaZero searches through potential moves in a game (like chess or Go) to find the most promising path forward. The paths are shown as lines, branching out like a tree from a central node, which represents the current position in the game. Each node along the branches represents a potential future move, and the squares you see might denote moves that AlphaZero is taking. AlphaZero is the archetypal of the “consequentialist agent maximizing a utility function,”: it makes decisions based on the outcomes those decisions will produce. In other words, the AI is trying to maximize the “value” of its position in the game, with the value determined by the likelihood of winning. Image credit: [Nikhil Cheerla, 2018](https://nikcheerla.github.io/deeplearningschool/2018/01/01/AlphaZero-Explained/).
+***Figure:**** Example of an agent. This image is a visual representation of AlphaZero's tree search algorithm. AlphaZero searches through potential moves in a game (like chess or Go) to find the most promising path forward. The paths are shown as lines, branching out like a tree from a central node, which represents the current position in the game. Each node along the branches represents a potential future move, and the squares you see might denote moves that AlphaZero is taking. AlphaZero is the archetypal of the “consequentialist agent maximizing a utility function,”: it makes decisions based on the outcomes those decisions will produce. In other words, the AI is trying to maximize the “value” of its position in the game, with the value determined by the likelihood of winning. Image credit: **[Nikhil Cheerla, 2018](https://nikcheerla.github.io/deeplearningschool/2018/01/01/AlphaZero-Explained/)**.*
 
 **Tool AIs** are designed to be assistive, functioning without autonomy. They do not make decisions or take actions independently. Their main role is to augment human intelligence by providing information and assisting in decision-making processes. Examples include classifiers for categorizing data, automated translators, and healthcare systems that assist professionals in diagnosing diseases.
 
@@ -120,33 +130,62 @@ However, tool AIs are considered safer than agentic AIs. Eric Drexler’s Compre
 
 Understanding the distinction between tool AIs and agent AIs is one of the keys to understanding AI's future trajectory.
 
-| Algorithm. Auto-GPT: Converting a tool AI into an agent AI with scaffolding. |
-|---|
-| 
-Figure from “Evaluating Language-Model Agents on Realistic Autonomous Tasks” (2023)
+!!! quote "Algorithm. Auto-GPT: Converting a tool AI into an agent AI with scaffolding.."
 
-Converting a tool AI like GPT-4 into an agent AI involves essentially wrapping the language model in software that enables autonomous action-taking and decision-making. AutoGPT is a framework (a scaffolding) used for this purpose. Here's a high-level overview of how it works:
+    
+    
+    ![Enter image alt description](Images/eBC_Image_21.png)
+    
+    ***Figure:**** from “**[Evaluating Language-Model Agents on Realistic Autonomous Tasks](https://metr.org/blog/2023-08-01-new-report/)**” (2023)*
+    
+    Converting a tool AI like GPT-4 into an agent AI involves essentially wrapping the language model in software that enables autonomous action-taking and decision-making. AutoGPT is a framework (a scaffolding) used for this purpose. Here's a high-level overview of how it works:
+    
+    1. **Model (for example, GPT-4):** At its core, GPT-4 is a language model that generates text based on the input it receives. It's designed to understand and generate language and answer the user's queries.
+    
+    2. **AutoGPT Framework:**
+    
+    <tab>
+    
+    - **Goal Setting:** The first step in converting an LLM into an agent AI is defining a goal or set of goals it needs to achieve. Goals are generally specified in English, e.g., “Maximize revenue”.
+    
+    - **Autonomy Layer:** This is where AutoGPT comes into play. It acts as a wrapper around the LLM, enabling it to perform tasks autonomously. This involves integrating the model with an environment where it can take actions, such as browsing the web, using tools, or interacting with software applications.
+    
+    - **Action and Feedback Loop:** The AI needs to be able to take action towards its goals and understand the results of its actions. This involves creating a loop where the AI takes an action, observes the outcome, and adjusts its next action based on the feedback. AutoGPT manages this loop, allowing the model to learn from its experiences and refine its strategies over time.
+    
+    <tab>
+    
+    - Firstly, AutoGPT asks the model how to break down the objective into sub-objectives.
+    
+    - Secondly, AutoGPT asks GPT what steps are required to achieve a sub-objective, and GPT details the different steps in such a way that each step is sufficiently elementary for GPT or the use of a tool like Google to be able to answer it in a single step.
+    
+    - This continues until the LLM assesses the goal to be achieved.
+    
+    
 
-Model (for example, GPT-4): At its core, GPT-4 is a language model that generates text based on the input it receives. It's designed to understand and generate language and answer the user's queries.
-AutoGPT Framework:
-Goal Setting: The first step in converting an LLM into an agent AI is defining a goal or set of goals it needs to achieve. Goals are generally specified in English, e.g., “Maximize revenue”.
-Autonomy Layer: This is where AutoGPT comes into play. It acts as a wrapper around the LLM, enabling it to perform tasks autonomously. This involves integrating the model with an environment where it can take actions, such as browsing the web, using tools, or interacting with software applications.
-Action and Feedback Loop: The AI needs to be able to take action towards its goals and understand the results of its actions. This involves creating a loop where the AI takes an action, observes the outcome, and adjusts its next action based on the feedback. AutoGPT manages this loop, allowing the model to learn from its experiences and refine its strategies over time.
-Firstly, AutoGPT asks the model how to break down the objective into sub-objectives.
-Secondly, AutoGPT asks GPT what steps are required to achieve a sub-objective, and GPT details the different steps in such a way that each step is sufficiently elementary for GPT or the use of a tool like Google to be able to answer it in a single step.
-This continues until the LLM assesses the goal to be achieved.
+</tab>
 
 In practice, setting up an Agent AI using AutoGPT involves significant technical work, including programming the autonomy layer, integrating with different APIs and tools, and continuously monitoring and adjusting the system's performance.
 
 The minimal version of AutoGPT could look like this in Python:
 
+```
+```
 prompt = first_prompt
-while True:
-    command = client.chat.completions.generate(prompt)
-    output = run_bash_command(command)
-    prompt = output
 
-Many examples of AutoGPT usage are listed here. We recommend this example where AutoGPT orders a pizza. |
+while True:
+
+command = client.chat.completions.generate(prompt)
+
+output = run_bash_command(command)
+
+prompt = output
+
+```
+
+Many examples of AutoGPT usage are listed [here](https://www.theinsaneapp.com/2023/05/best-autogpt-examples.html). We recommend [this example](https://twitter.com/Lauren_79/status/1647741551534125057) where AutoGPT orders a pizza.
+
+```
+</tab>
 
 ## 2.5.6 Paths to Existential Risks
 
@@ -164,24 +203,36 @@ With all the previous arguments, we now know that AIs are difficult to align. Bu
 
 DeepMind’s literature review, ([source](https://www.alignmentforum.org/posts/GctJD5oCDRxCspEaZ/clarifying-ai-x-risk)) published in late 2022, provides a simplified picture of the many technical difficulties and how they relate to X-risk scenarios. The report highlights two main technical difficulties: “specification gaming” and “goal misgeneralization.” These difficulties give rise to various scenarios, ranging from existential catastrophes caused by the interaction of multiple AI systems to scenarios involving misaligned, power-seeking AI agents.
 
-![Enter image alt description](Images/fge_Image_20.png)
- \
- Figure from [source](https://www.alignmentforum.org/posts/GctJD5oCDRxCspEaZ/clarifying-ai-x-risk). 
+![Enter image alt description](Images/deI_Image_22.png)
+
+***Figure:**** from **[source](https://www.alignmentforum.org/posts/GctJD5oCDRxCspEaZ/clarifying-ai-x-risk)**. *
 
 In this chapter, we have already summarized the path from specification gaming to the interaction of multiple systems by summarizing Critch’s production web scenario.
 
 A summary of Carlsmith’s scenario is available in the appendix in the section from Misaligned AI to X-Risks.
 
-| Consensus Threat Model from the DeepMind AGI safety team |
-|---|
-| From this literature review, here is a paraphrase and a summary of the most consensual threat model according to DeepMind:
-Development model:
-Scaled up deep learning foundation models with RL and human feedback (RLHF) fine-tuning on diverse tasks is probably sufficient to create AGI.
-Not many more fundamental innovations needed for AGI.
-Risk model: 
-The main technical sources of risk are a mix of specification gaming and goal misgeneralization.
-A misaligned consequentialist arises and seeks power (misaligned, mostly because of goal misgeneralization).
-We don’t catch this because deceptive alignment occurs (a consequence of power-seeking)
-Important people won’t understand: inadequate societal response to warning shots on consequentialist planning, strategic awareness, and deceptive alignment.
-Interpretability will be hard.
-Carlsmith’s scenario is similar and is explained step by step in the appendix. |
+!!! quote "Consensus Threat Model from the DeepMind AGI safety team"
+
+    
+    
+    From this [literature](https://www.lesswrong.com/posts/GctJD5oCDRxCspEaZ/clarifying-ai-x-risk#Consensus_Threat_Model) review, here is a paraphrase and a summary of the most consensual threat model according to DeepMind:
+    
+    Development model:
+    
+    - Scaled up deep learning foundation models with RL and human feedback (RLHF) fine-tuning on diverse tasks is probably sufficient to create AGI.
+    
+    - Not many more fundamental innovations needed for AGI.
+    
+    Risk model:
+    
+    - The main technical sources of risk are a mix of specification gaming and goal misgeneralization.
+    
+    - A misaligned consequentialist arises and seeks power (misaligned, mostly because of goal misgeneralization).
+    
+    - We don’t catch this because deceptive alignment occurs (a consequence of power-seeking)
+    
+    - Important people won’t understand: inadequate societal response to warning shots on consequentialist planning, strategic awareness, and deceptive alignment.
+    
+    - Interpretability will be hard.
+    
+    Carlsmith’s scenario is similar and is explained step by step in the appendix.

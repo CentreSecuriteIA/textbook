@@ -1,5 +1,5 @@
 # 2.1 Risk Decomposition
-!!! note "This section is approximately a 13 minute read." 
+!!! note "Reading Time: 13 minutes" 
 
 Even though AI continues to improve at a rapid pace, our current understanding of AI and potential long-term implications is still incomplete, posing significant challenges in accurately assessing and managing the associated risks.
 
@@ -85,13 +85,13 @@ The impact of these scenarios can vary widely, depending on the cause and the se
 
 **What are existential risks?** Most global catastrophic risks would not be so intense as to kill the majority of life on Earth, but even if one did, the ecosystem and humanity would eventually recover. An existential risk, on the other hand, is one in which humanity would be unable to ever recover its full potential. So *“an existential risk is any risk that has the potential to eliminate all of humanity or, at the very least, kill large swaths of the global population, leaving the survivors without sufficient means to rebuild society to current standards of living.*” ([source](https://futureoflife.org/existential-risk/existential-risk/)) Existential risks are seen as the most severe class of global catastrophic risk and are often also called x-risks.
 
-![Enter image alt description](Images/IhA_Image_1.png)
+![Enter image alt description](Images/ow7_Image_1.png)
 
 ***Figure****: Qualitative risk categories. The scope of risk can be personal (affecting only one person), local (affecting some geographical region or a distinct group), global (affecting the entire human population or a large part thereof), trans-generational (affecting humanity for numerous generations, or pan-generational (affecting humanity overall, or almost all, future generations). The severity of risk can be classified as imperceptible (barely noticeable), endurable (causing significant harm but not completely ruining the quality of life), or crushing (causing death or a permanent and drastic reduction of quality of life). (**[source](https://existential-risk.com/concept)**)*
 
 In his book “The Precipice” published in 2020, philosopher Toby Ord provided a breakdown of existential risks. He recognized AI as one of the foremost existential risks facing humanity today, noting that there is a non-negligible probability that the development of advanced AI, or Artificial General Intelligence (AGI), could lead to an existential catastrophe if not properly aligned with human interests and values ([source](https://www.goodreads.com/book/show/48570420-the-precipice)).
 
-![Enter image alt description](Images/duc_Image_2.png)
+![Enter image alt description](Images/suS_Image_2.png)
 
 ***Figure****: According to Ord, most risks today are anthropogenic. “[Those numbers] are not in any way the final word, but are a concise summary of all I know about the risk landscape.” (**[source](https://www.goodreads.com/book/show/48570420-the-precipice)**).*
 

@@ -1,5 +1,5 @@
 # 2.6 Systemic Risk
-!!! note "This section is approximately a 19 minute read." 
+!!! note "Reading Time: 19 minutes" 
 
 !!! warning "This section is still being written and is considered a work in progress."
 
@@ -132,6 +132,10 @@ The rapid improvement, combined with a lack of understanding and predictability 
 
 Furthermore, use of AI systems can make it harder to detect and address process issues. Outputs of computer systems are likely to be overly trusted. ([source](https://en.wikipedia.org/wiki/Automation_bias)) Additionally, because most AI models are used as black boxes and AI systems are much more likely to be protected from court scrutiny than human processes, it can be hard to prove mistakes. ([source](https://www.postofficetrial.com/2021/06/marshall-spells-it-out-speech-to.html))
 
+<!--
+
 **Counterarguments to Risk [WIP]**
 
-**Current short term AI Risks [WIP]**
+**Current short term AI Risks [WIP]**** **
+
+→

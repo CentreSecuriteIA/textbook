@@ -1,5 +1,5 @@
 # 2.2 Risk Aggravators
-!!! note "This section is approximately a 14 minute read." 
+!!! note "Reading Time: 14 minutes" 
 
 Before diving into the specific scenarios for the risk categories outlined in the previous sections, we cover some underlying common qualities of AI, or the economic space surrounding AI that serve to increase risk.
 
@@ -33,7 +33,7 @@ Risks from corporate indifference highlight why merely having the technological 
     
     In mid-2021, ML professor Jacob Steinhardt ran a contest to predict progress on MATH and MMLU, two famous benchmarks.
     
-    ![Enter image alt description](Images/d80_Image_3.png)
+    ![Enter image alt description](Images/K63_Image_3.png)
     
     ***Figure****: Experts have been consistently underestimating the pace of AI progress.*
     
@@ -45,7 +45,7 @@ Risks from corporate indifference highlight why merely having the technological 
     
     This is even more visible for the MATH dataset, that consists of free-response questions taken from math contests aimed at the best high school math students in the country. Most college-educated adults would get well under half of these problems right. At the time of its introduction in January 2021, the best model achieved only about ~7% accuracy on MATH. ([source](https://www.planned-obsolescence.org/language-models-surprised-us/)). And here is what happened:
     
-    ![alt_text](Images/SyB-alt_text.png)
+    ![alt_text](Images/qed-alt_text.png)
     
     
 
@@ -81,7 +81,7 @@ For a long time, famous cognitive scientist Douglas Hofstadter was among those p
 
 - **Multi-agent system:** The agent can dialogue with other agents or humans, resulting in a complex system that is subject to new phenomena, such as flash crashes in the financial world.
 
-![Enter image alt description](Images/KPK_Image_5.png)
+![Enter image alt description](Images/IjC_Image_5.png)
 
 ***Figure****: **For illustrative purposes. Figure from the French Center for AI Safety’s agenda.*
 
@@ -91,7 +91,7 @@ Another aggravating factor is that many AIs are already deployed at massive scal
 
 **Autonomous drones. **There are increasingly more autonomous drones being deployed around the world, which marks a significant step towards an arms race in autonomous technologies. An example of this is the autonomous military drone called Kargu-2. These drones fly in swarms and, once launched, are capable of autonomously targeting and eliminating their targets. They were used by the Turkish army in 2020. ([source](https://information.tv5monde.com/international/robots-tueurs-des-drones-autonomes-turcs-ont-attaque-des-combattants-libyens-35843))
 
-![Enter image alt description](Images/hME_Image_6.png)
+![Enter image alt description](Images/G0k_Image_6.png)
 
 ***Figure:**** Kargu-2 drones (**[source](https://information.tv5monde.com/international/robots-tueurs-des-drones-autonomes-turcs-ont-attaque-des-combattants-libyens-35843)**)*
 

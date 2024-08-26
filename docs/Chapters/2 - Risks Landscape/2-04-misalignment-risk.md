@@ -1,5 +1,5 @@
 # 2.4 Misalignment Risk
-!!! note "This section is approximately a 21 minute read." 
+!!! note "Reading Time: 21 minutes" 
 
 In the earlier sections, we outlined what exactly it means for an AI to be misaligned and covered some basic capabilities and risks such as deceptive behavior, power-seeking behaviors, etc. In this section, we focus on why we might expect a powerful AI to become misaligned in the first place.
 
@@ -121,13 +121,13 @@ Instead of trying to enumerate all these heuristics, it is more feasible to enco
     
     What about a chatbot? It depends. If you put a chatbot in AutoGPT, the system can become goal-directed: the system can list possibilities, and try to rate and evaluate each possibility against the goal. This is much more goal-oriented than the basic LLM.
     
-    ![Enter image alt description](Images/lMf_Image_11.png)
+    ![Enter image alt description](Images/Ajz_Image_11.png)
     
     Figure: ([source](https://www.alignmentforum.org/s/sCGfFb5DPfjEmtEdn/p/cAC4AXiNC5ig6jQnc))
     
     What about a mouse AI trained to navigate a maze to find the cheese? It depends on how you define goal-directedness, but behaviorally it navigates to the cheese, and it is possible to look at the internal structure of the AI to discover that we can somewhat decompose the AI between the “goal” and the capabilities.
     
-    ![Enter image alt description](Images/55j_Image_12.png)
+    ![Enter image alt description](Images/MWK_Image_12.png)
     
     Figure: ([source](https://www.alignmentforum.org/s/sCGfFb5DPfjEmtEdn/p/cAC4AXiNC5ig6jQnc))
     
@@ -139,7 +139,7 @@ Instead of trying to enumerate all these heuristics, it is more feasible to enco
 
 ### 2.4.2.3 Vingean uncertainty
 
-![Enter image alt description](Images/dQv_Image_13.png)
+![Enter image alt description](Images/vRs_Image_13.png)
 
 ***Figure****: An illustration of Vingean uncertainty: Magnus Carlsen **checkmates** Bill Gates in 12 seconds, and this is not a surprise. Bill Gates knew he was going to lose, but not how. (**[source](https://www.chess.com/news/view/bill-gates-vs-magnus-carlsen-checkmate-in-12-seconds-8224)**)*
 
@@ -165,9 +165,9 @@ And the greater the space for action, the more difficult it is to predict the ac
 
 ### 2.4.3.1 Specification gaming
 
-![Enter image alt description](Images/iwN_Image_14.png)
+![Enter image alt description](Images/13q_Image_14.png)
 
-Figure: An example of Specification Gaming. Developers train an AI boat to race in a game. The developers maximize the scoring system, but unfortunately, the AI finds a hack to maximize the point system by collecting coins. The AI does nothing but collect coins instead of finishing the race as the developers intended. This illustrates the fact that simple metrics are only proxies for what humans want. However, AIs are trained to maximize metrics. ([source](https://openai.com/research/faulty-reward-functions))
+***Figure:**** An example of Specification Gaming. Developers train an AI boat to race in a game. The developers maximize the scoring system, but unfortunately, the AI finds a hack to maximize the point system by collecting coins. The AI does nothing but collect coins instead of finishing the race as the developers intended. This illustrates the fact that simple metrics are only proxies for what humans want. However, AIs are trained to maximize metrics. (**[source](https://openai.com/research/faulty-reward-functions)**)*
 
 Since most goals are dangerous, we need to choose a goal. Unfortunately, we don't really know of any goal that is good to maximize fully without causing harm or loss of diversity. And this is not only true for AI but also for humans. Here is the story of the cobra effect. The British government wanted to reduce the number of venomous cobras in Delhi, so they offered a bounty for every dead cobra. Initially, this worked as planned, but then people began to breed cobras for income. When the government became aware of this, they scrapped the reward program, leading breeders to release their now-worthless snakes, which increased the wild cobra population. This story illustrates the unintended consequences of incentives and how efforts to solve a problem can sometimes exacerbate it, much like the challenge of choosing a safe, universal goal for AI.
 
@@ -183,7 +183,7 @@ We already see some AI systems that are not general-purpose and directly maximiz
 
 ### 2.4.3.2 Goal misgeneralization
 
-![Enter image alt description](Images/xfV_Image_15.png)
+![Enter image alt description](Images/sv3_Image_15.png)
 
 ***Figure****: Example of Goal misgeneralization. An AI is trained to catch a coin in a platform game (similar to Mario). As the coin is located at the end of the level, the AI learns to go to the end of the level and not to pick up the coin. When we change the position of the piece by putting the piece in the middle of the level instead of at the far right of the level; the AI remains competent, and can still navigate and dodge enemies, but only its objective generalizes incorrectly and heads to the right instead of towards the piece.  Note that this is not a specification problem because the developer was able to specify the goal mathematically. The goal was correctly specified because the developer used the correct code to describe the winning condition (Something like “the AI wins if the AI is touching the coin”), but the AI still learned the wrong goal. Worse still, the objective was incorrect from the start, with no way for the developer to notice that the goal was correct. (**[source](https://arxiv.org/abs/2105.14111)**)*
 

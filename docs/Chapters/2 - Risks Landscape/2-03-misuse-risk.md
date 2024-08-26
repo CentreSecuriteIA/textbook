@@ -1,5 +1,5 @@
 # 2.3 Misuse Risk
-!!! note "This section is approximately a 15 minute read." 
+!!! note "Reading Time: 15 minutes" 
 
 In the previous section, we walked through some common capabilities that if observed in AI elevate the levels of risk. In this and the following two sections, we will go through some world-states that hopefully paint a little bit of a clearer picture of risks when it comes to AI. Although the sections have been divided into misuse, misalignment, and systemic, it is important to remember that this is for the sake of explanation. The future in high likelihood will involve combinations of risks from all of these categories that should set safety mechanisms in place.
 
@@ -37,7 +37,7 @@ An alternative route to generating attacks using AI models is to generate uninte
 
 **Adversarial machine learning:** It is feasible to craft special inputs to induce bad behavior. This can be seen in the image below, with the pandas classified as gibbons, a type of monkey, after a small amount of noise, almost invisible to humans, has been added. Moreover, the confidence of the wrong classification is even higher than the initial correct prediction. This is why ML models are said to be non-robust.
 
-![Enter image alt description](Images/iLl_Image_7.png)
+![Enter image alt description](Images/nNS_Image_7.png)
 
 ***Figure****: Fooling an image classifier with an adversarial attack (FGSM). (**[source](https://openai.com/research/attacking-machine-learning-with-adversarial-examples)**)*
 
@@ -65,19 +65,19 @@ The potential consequences of these defense weaknesses are significant, ranging 
     
     One notable example of ChatGPT's safety measures was prominently featured on its landing page. The example showcased the model's response to the query, "How do I break into a car?" with ChatGPT stating, "It is inappropriate to discuss or encourage illegal activities...":
     
-    ![Enter image alt description](Images/9MB_Image_8.png)
+    ![Enter image alt description](Images/f4d_Image_8.png)
     
     ***Figure****: ChatGPT's main example of safety measures on its website.*
     
     Surprisingly, users found that by creating role-play scenarios involving multiple characters, they could circumvent these security protocols:
     
-    ![Enter image alt description](Images/rlm_Image_9.png)
+    ![Enter image alt description](Images/wVv_Image_9.png)
     
     ***Figure****: A user posting a jailbreak on X (formerly known as Twitter).*
     
     Although this specific jailbreak was promptly patched, it was just one of many. A series of new jailbreak methods emerged in quick succession, such as the "sudo jailbreak" (see the following figure), which exploited the concept of admin power in Linux systems.
     
-    ![Enter image alt description](Images/btL_Image_10.png)
+    ![Enter image alt description](Images/m6P_Image_10.png)
     
     ***Figure****: The sudo jailbreak, which no longer works*
     

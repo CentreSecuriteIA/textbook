@@ -1,5 +1,5 @@
 # 2.9 Appendix: Miscellaneous
-!!! note "This section is approximately a 4 minute read." 
+!!! note "Reading Time: 4 minutes" 
 
 ## 2.9.1 <span style="text - decoration: underline;">AI risks are non-enumerable</span>
 
@@ -11,19 +11,17 @@ A complete exhaustive systematization is difficult.
 
 An exercise you can try to convince yourself of this point is to search for loopholes in this document and read [the list of lethalities](https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities#E2getLSb35tmAZC5t) from Yudkovsky ([source](https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities#E2getLSb35tmAZC5t)). How many points overlap? Not much. That’s expected.
 
-![Enter image alt description](Images/f5G_Image_26.png)
-
+![Enter image alt description](Images/y8V_Image_28.png)
 
 ***Figure****: Here is another framework that is very different from what we presented.*
 
-![Enter image alt description](Images/8ZN_Image_27.png)
+![Enter image alt description](Images/cVV_Image_29.png)
 
 ***Figure****: Here is another framework focusing on LLM vulnerabilities. (**[source](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)**)*
 
 ## 2.9.2 <span style="text - decoration: underline;">Measuring alignment is hard</span>
 
-![Enter image alt description](Images/ahH_Image_28.png)
-
+![Enter image alt description](Images/F5j_Image_30.png)
 
 ***Figure****: **(**[source](https://www.cold-takes.com/ai-safety-seems-hard-to-measure/)**)*
 
@@ -48,3 +46,7 @@ This question is asked frequently. Here is a concise response.
 - **Prestige and recognition:** Prestige is another significant motivator. Many AGI researchers aim for high citation counts, respect within the academic and technological communities, and financial success. Unfortunately, burning the timelines is high status.
 
 - **Moreover, most AGI researchers believe in the feasibility of AGI safety.** There is a belief among some researchers that a large-scale, concerted effort—comparable to the Manhattan Project and similar to the “super alignment plan” by OpenAI—could lead to the development of a controllable AI capable of implementing comprehensive safety measures.
+
+## 2.9.4 Notes
+
+[^1]:
