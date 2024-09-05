@@ -73,7 +73,7 @@ watch:
 extra_css:
   - overrides/css/base.css
   - overrides/css/components.css
-  - overrides/css/404.css
+  #- overrides/css/404.css
   #- overrides/css/glossary.css
   #- overrides/css/header_footer.css
   #- overrides/css/titles.css
