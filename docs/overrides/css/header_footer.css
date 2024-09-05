@@ -1,0 +1,61 @@
+/* header_footer.css */
+
+/* Header Styles */
+.md-header {
+    background-color: var(--md-primary-fg-color);
+}
+
+.md-header__inner {
+    padding: 0.5rem 1rem;
+}
+
+.md-header__title {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: var(--md-primary-bg-color);
+}
+
+/* Ensure all header elements are visible */
+.md-header__button,
+.md-header__source,
+.md-header__topic,
+.md-header nav a {
+    color: var(--md-primary-bg-color) !important;
+}
+
+.md-header__button:hover,
+.md-header nav a:hover {
+    background-color: var(--md-primary-fg-color--light);
+    color: var(--md-accent-fg-color) !important;
+}
+
+/* Footer Styles */
+.md-footer {
+    background-color: var(--md-primary-fg-color);
+}
+
+.md-footer-nav {
+    background-color: var(--md-primary-fg-color--dark);
+}
+
+/* Ensure all footer elements are visible */
+.md-footer-nav__link,
+.md-footer-nav__title,
+.md-footer-nav__direction,
+.md-footer-nav__button,
+.md-footer-meta a,
+.md-footer-social__link {
+    color: var(--md-primary-bg-color) !important;
+}
+
+.md-footer-nav__link:hover,
+.md-footer-meta a:hover,
+.md-footer-social__link:hover {
+    color: var(--md-accent-fg-color) !important;
+    text-decoration: underline;
+}
+
+.md-footer-copyright {
+    font-size: clamp(0.7rem, 1.8vw, 0.8rem);
+    color: var(--md-primary-bg-color);
+    opacity: 0.8;
+}

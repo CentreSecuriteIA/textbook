@@ -1,0 +1,131 @@
+/* Reset default abbr styles */
+abbr[title] {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    cursor: help;
+}
+
+/* Remove default tooltip */
+abbr[title]:hover::after,
+abbr[title]:focus::after {
+    content: none !important;
+    display: none !important;
+}
+
+.glossary-term {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #666;
+}
+
+.glossary-term abbr {
+    border-bottom: none !important;
+}
+
+.md-tooltip {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1000;
+    padding: 10px 15px;
+    background-color: #1a252f;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    white-space: normal;
+    max-width: 300px;
+    width: max-content;
+    pointer-events: none;
+}
+
+.glossary-term:hover .md-tooltip,
+.md-tooltip.stick {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.md-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #1a252f transparent transparent transparent;
+}
+
+/* Adjustments for tooltips that would go off-screen */
+.md-tooltip.right {
+    left: auto;
+    right: 0;
+    transform: translateY(10px);
+}
+
+.md-tooltip.right::after {
+    left: auto;
+    right: 10px;
+}
+
+.md-tooltip.left {
+    left: 0;
+    transform: translateY(10px);
+}
+
+.md-tooltip.left::after {
+    left: 10px;
+}
+
+.glossary-term:hover .md-tooltip.right,
+.md-tooltip.right.stick,
+.glossary-term:hover .md-tooltip.left,
+.md-tooltip.left.stick {
+    transform: translateY(0);
+}
+
+/* Bottom positioning for cases where top positioning doesn't fit */
+.md-tooltip.bottom {
+    top: 125%;
+    bottom: auto;
+}
+
+.md-tooltip.bottom::after {
+    top: auto;
+    bottom: 100%;
+    border-color: transparent transparent #1a252f transparent;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .md-tooltip {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: auto;
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .md-tooltip::after {
+        display: none;
+    }
+
+    .md-tooltip.right,
+    .md-tooltip.left,
+    .md-tooltip.bottom {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        right: auto;
+        bottom: auto;
+    }
+}

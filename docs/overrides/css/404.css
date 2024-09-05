@@ -1,0 +1,127 @@
+/* 404.css */
+
+.error-page {
+    font-family: var(--md-text-font);
+    background-color: var(--md-primary-bg-color);
+    color: var(--md-typeset-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.error-container {
+    text-align: center;
+    background-color: var(--md-primary-bg-color--light);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 400px;
+}
+
+.error-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--md-primary-fg-color);
+}
+
+.error-message {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.error-countdown-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+}
+
+.error-countdown-circle {
+    fill: none;
+    stroke: var(--md-primary-fg-color);
+    stroke-width: 12;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.error-countdown-background {
+    fill: none;
+    stroke: var(--md-primary-bg-color--light);
+    stroke-width: 12;
+}
+
+.error-countdown-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--md-primary-fg-color);
+}
+
+.error-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.error-button:hover,
+.error-button:focus {
+    background-color: var(--md-primary-fg-color--light);
+    text-decoration: none;
+}
+
+.error-immediate-action {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 1rem;
+    color: var(--md-typeset-color);
+}
+
+@media (max-width: 480px) {
+    .error-container {
+        padding: 1.5rem;
+    }
+
+    .error-title {
+        font-size: 2rem;
+    }
+
+    .error-message {
+        font-size: 0.9rem;
+    }
+
+    .error-countdown-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .error-countdown-number {
+        font-size: 2rem;
+    }
+
+    .error-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .error-immediate-action {
+        font-size: 0.8rem;
+    }
+}

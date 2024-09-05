@@ -1,101 +1,30 @@
-/* Blue Scheme Navigation Styles */
+/* base.css */
 
 :root {
     /* Colors */
-    --md-primary-fg-color: #2c3e50;
-    --md-primary-fg-color--light: #34495e;
-    --md-primary-fg-color--dark: #1a252f;
+    --md-primary-fg-color: #1a252f;
+    --md-primary-fg-color--light: #2c3e50;
+    --md-primary-fg-color--dark: #0d1318;
     --md-primary-bg-color: #ffffff;
     --md-primary-bg-color--light: #ecf0f1;
-
+    
     --md-accent-fg-color: #3498db;
-    --md-accent-fg-color--transparent: rgba(52, 152, 219, 0.1);
-    --md-accent-bg-color: #ffffff;
-    --md-accent-bg-color--light: #e3f2fd;
-
+    --md-accent-fg-color--transparent: #3498db1a;
+    
     --md-typeset-color: #333333;
-    --md-typeset-a-color: var(--md-primary-fg-color);
-
-    --md-admonition-fg-color: var(--md-typeset-color);
-    --md-admonition-bg-color: var(--md-primary-bg-color--light);
-
-    --md-code-bg-color: #f1f3f5;
-    --md-code-fg-color: var(--md-typeset-color);
-
-    --md-footer-fg-color: var(--md-primary-bg-color);
-    --md-footer-bg-color: var(--md-primary-fg-color);
-    --md-footer-bg-color--dark: var(--md-primary-fg-color--dark);
+    --md-typeset-a-color: #1a252f;
 
     /* Fonts */
     --md-text-font: 'Benne', serif;
     --md-code-font: 'Roboto Mono', monospace;
 
     /* Font Sizes */
-    /* --md-base-font-size: 16px;
+    --md-base-font-size: 16px;
     --md-small-font-size: 0.8rem;
     --md-medium-font-size: 0.9rem;
-    --md-large-font-size: 1rem; */
+    --md-large-font-size: 1rem;
 
     /* Widths */
-    /* --md-main-content-width: 10rem; */
-    /* --md-nav-width: 300px; */
+    --md-main-content-width: 55rem;
 }
 
-.md-grid {
-    max-width: 55rem;
-}
-
-/* Header Styles */
-.md-header {
-    background-color: var(--md-primary-fg-color);
-    color: var(--md-primary-bg-color);
-}
-
-.md-header__inner {
-    padding: 0.5rem 1rem;
-}
-
-.md-header__title {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
-    color: var(--md-primary-bg-color);
-}
-
-.md-header__button {
-    color: var(--md-primary-bg-color);
-}
-
-/* Footer Styles */
-.md-footer {
-    background-color: var(--md-footer-bg-color);
-    color: var(--md-footer-fg-color);
-}
-
-.md-footer-nav {
-    background-color: var(--md-footer-bg-color--dark);
-}
-
-.md-footer-nav__link {
-    padding: 0.5rem 1rem;
-    color: var(--md-footer-fg-color);
-}
-
-.md-footer-nav__link:hover {
-    color: var(--md-accent-fg-color);
-}
-
-.md-footer-meta {
-    background-color: var(--md-footer-bg-color);
-}
-
-.md-footer-copyright {
-    font-size: clamp(0.7rem, 1.8vw, 0.8rem);
-    opacity: 0.8;
-}
-
-.md-footer-social__link {
-    color: var(--md-footer-fg-color);
-}
-
-.md-footer-social__link:hover {
-    color: var(--md-accent-fg-color);
-}

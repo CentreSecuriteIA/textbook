@@ -1,3 +1,5 @@
+<!--File: textbook/docs/courses.md-->
+
 # Courses using this book
 
 Even though our book is still a work in progress, many courses and groups are already using these resources:
@@ -9,4 +11,4 @@ Even though our book is still a work in progress, many courses and groups are al
 
 If you want to use this resource for your group, don't hesitate to get in touch with us to receive a facilitation guide.
 
-[Read the Book](Chapters/index.md){ .md-button }
+[Read the Book](chapters/index.md){ .md-button }

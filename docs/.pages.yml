@@ -1,8 +1,7 @@
-arrange:
-  - index.md
-  - chapters
-  - courses.md
 nav:
-  - index.md
-  - ...
-  - courses.md
+- Home: index.md
+- Book:
+  - chapters/index.md
+  - '...'
+- Courses: courses.md
+#- Feedback: index.md

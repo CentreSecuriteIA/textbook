@@ -1,17 +1,17 @@
----
-title: Home
----
+<!--File: textbook/docs/index.md-->
+
 # The AI Safety Atlas
 
 !!! warning "This textbook is still under construction. It will be updated regularly."
 
-[Read the Book](Chapters/index.md){ .md-button }
+[Read the Book](chapters/index.md){ .md-button }
 
 ## **Overview**
 
 <!--<h2 align="left">A comprehensive guide</h2>-->
 
 <!-- ![AI Safety](https://lh7-us.googleusercontent.com/XuuImYOYY7YElHDnooD6S7k1tf11JAV_a7LQZ6IUXbItUbPp0p7sAgDp1EjHJAuuHvZ_cJ-pj7rGq7SLxb0O4Xe9OkyRIEKh4R8TwoUwERq8TJxKRMQdixUPBjXXwVEjog_AqBgNiCwvE9QHEHlr_rk) -->
+
 
 Currently, AI Safety educational materials often rely heavily on a patchwork of many external links to blog posts and research papers. This content varies in terms of technical depth and communication style, posing a significant barrier to coherent learning. We are writing a textbook that aims to unify the disparate narratives in the field of AI Safety into a seamless end-to-end narrative. This helps improve the learning experience for newcomers, while at the same time also providing a single unified reference text for existing researchers in the field.
 
@@ -31,7 +31,7 @@ The alignment field is a pre-paradigmatic, and there is no right or wrong resear
 
     Covering all essential topics, this resource equips you with the knowledge needed to contribute effectively to the field of AI Safety.
 
-    [:octicons-arrow-right-24: See the list of Chapters](Chapters/index.md)
+    [:octicons-arrow-right-24: See the list of Chapters](chapters/index.md)
 
 - :material-school:{ .lg .middle } **Pedagogical**
 

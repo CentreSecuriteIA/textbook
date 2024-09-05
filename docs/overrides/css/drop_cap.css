@@ -1,0 +1,84 @@
+/* typography.css */
+
+/* Import fonts */
+@font-face {
+    font-family: 'Dauphin';
+    src: url('../fonts/Dauphinn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Germania';
+    src: url('../fonts/Germania.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Refined Drop cap styling */
+p.drop-cap {
+  margin-bottom: 1em;
+}
+
+p.drop-cap::first-letter {
+  float: left;
+  font-family: 'Germania', 'Dauphin', serif; /* Using Germania as primary, Dauphin as fallback */
+  font-size: 4em;
+  line-height: 0.8;
+  padding-top: 0.05em;
+  padding-right: 0.1em;
+  padding-left: 0;
+  margin-bottom: -0.1em;
+  color: var(--md-primary-fg-color);
+}
+
+/* Rest of your typography styles remain the same */
+.md-typeset a {
+  color: var(--md-typeset-a-color);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.md-typeset a:hover {
+  color: var(--md-accent-fg-color);
+  text-decoration: underline;
+}
+
+/* Ensure link color doesn't affect buttons */
+.md-typeset .md-button {
+  color: inherit;
+}
+
+/* Additional typography improvements */
+.md-typeset {
+  font-size: var(--md-base-font-size);
+  line-height: 1.6;
+}
+
+.md-typeset p {
+  margin-bottom: 1em;
+}
+
+.md-typeset strong {
+  font-weight: 600;
+}
+
+.md-typeset em {
+  font-style: italic;
+}
+
+/* Improve readability of code blocks */
+.md-typeset code {
+  background-color: var(--md-code-bg-color);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+/* Improve blockquote styling */
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-accent-fg-color);
+  padding-left: 1em;
+  color: var(--md-typeset-color);
+  font-style: italic;
+}
