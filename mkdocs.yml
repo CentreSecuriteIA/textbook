@@ -1,6 +1,6 @@
 # File: textbook/mkdocs.yml
 site_name: The AI Safety Atlas
-site_url: https://ai-safety-atlas.com/textbook/
+site_url: https://ai-safety-atlas.com
 
 theme:
   name: material
