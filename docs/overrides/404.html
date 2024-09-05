@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found | The AI Safety Atlas</title>
-    <link rel="stylesheet" href="{{ base_url }}/css/base.css">
-    <link rel="stylesheet" href="{{ base_url }}/css/404.css">
+    <link rel="stylesheet" href="/textbook/overrides/css/base.css">
+    <link rel="stylesheet" href="/textbook/overrides/css/components.css">
+    <link rel="stylesheet" href="/textbook/overrides/css/404.css">
 </head>
 <body class="error-page">
     <div class="error-container">
@@ -29,12 +30,7 @@
 
     <script>
         function getRedirectUrl() {
-            const currentPath = window.location.pathname;
-            const textbookIndex = currentPath.indexOf('/textbook');
-            if (textbookIndex !== -1) {
-                return currentPath.substring(0, textbookIndex) + '/textbook/chapters';
-            }
-            return '/textbook/chapters';  // fallback
+            return '/textbook/';  // Redirect to the root of the textbook
         }
 
         const redirectUrl = getRedirectUrl();
