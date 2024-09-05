@@ -1,0 +1,106 @@
+/* buttons.css */
+
+/* Button container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 0.5em;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+/* Buttons */
+.md-button {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 0.85em;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none !important;
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color) !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    flex: 1 1 auto;
+    min-width: 80px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+}
+
+.md-button:hover,
+.md-button:focus {
+    background-color: var(--md-primary-fg-color--light);
+    color: var(--md-primary-bg-color) !important;
+    border: none !important;
+    outline: none !important;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    text-decoration: none !important;
+}
+
+.md-button--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.md-button--disabled:hover,
+.md-button--disabled:focus {
+    background-color: var(--md-primary-fg-color) !important;
+    opacity: 0.5 !important;
+    transform: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust icon size within buttons */
+.md-button .twemoji {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.1em;
+}
+
+/* Ensure buttons in tables are equally spaced */
+td .button-container {
+    justify-content: space-between;
+}
+
+td .md-button {
+    flex: 1 1 0;
+}
+
+/* Remove any possible underline from nested elements */
+.md-button *,
+.md-button:hover *,
+.md-button:focus * {
+    text-decoration: none !important;
+}
+
+/* Overwrite any conflicting styles from other files */
+.md-typeset .md-button {
+    color: var(--md-primary-bg-color) !important;
+    background-color: var(--md-primary-fg-color);
+}
+
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus {
+    color: var(--md-primary-bg-color) !important;
+    background-color: var(--md-primary-fg-color--light);
+    text-decoration: none !important;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .button-container {
+        gap: 8px;
+    }
+
+    .md-button {
+        padding: 5px 10px;
+        font-size: 0.8em;
+        min-width: 70px;
+    }
+}

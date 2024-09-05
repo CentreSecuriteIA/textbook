@@ -30,8 +30,8 @@
     /* Widths */
     --md-main-content-width: 40rem;
 
-    /* Font weight */
-    --md-text-font-weight: 500;
+    /* New font weight variable */
+    --md-text-font-weight: 400; /* Adjust this value as needed */
 }
 
 /* Apply base font size and weight to body */
@@ -40,58 +40,32 @@ body {
     font-weight: var(--md-text-font-weight);
 }
 
-/* Apply font size and weight to main content */
+/* Apply font size, weight, and justification to main content */
 .md-content {
     font-size: var(--md-base-font-size);
     font-weight: var(--md-text-font-weight);
 }
 
-/* Justify text on larger screens */
-@media screen and (min-width: 60em) {
-    .md-content__inner {
-        text-align: justify;
-    }
-
-    .md-typeset p,
-    .md-typeset ul,
-    .md-typeset ol {
-        text-align: justify;
-    }
+.md-content__inner {
+    text-align: justify;
 }
 
-/* Style for all headings */
+/* Ensure paragraphs and list items are justified */
+.md-typeset p,
+.md-typeset ul,
+.md-typeset ol {
+    text-align: justify;
+}
+
+/* Keep headings left-aligned and with their original font weight */
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3,
 .md-typeset h4,
 .md-typeset h5,
 .md-typeset h6 {
-    font-family: var(--md-text-font);
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 1em 0 0.5em;
-    padding: 0;
-    border: none;
-    background: none;
-}
-
-/* Specific sizes for different heading levels */
-.md-typeset h1 { font-size: 1.6em; }
-.md-typeset h2 { font-size: 1.4em; }
-.md-typeset h3 { font-size: 1.2em; }
-.md-typeset h4 { font-size: 1.1em; }
-.md-typeset h5 { font-size: 1em; }
-.md-typeset h6 { font-size: 0.9em; }
-
-/* Remove any additional styling from headings */
-.md-typeset h1::before,
-.md-typeset h2::before,
-.md-typeset h3::before,
-.md-typeset h4::before,
-.md-typeset h5::before,
-.md-typeset h6::before {
-    display: none;
+    text-align: left;
+    font-weight: initial;
 }
 
 /* Apply font size to table of contents */
@@ -158,13 +132,5 @@ body {
     .md-content {
         width: 100%;
         max-width: 100%;
-    }
-    
-    /* Remove justification on mobile to prevent wide spaces */
-    .md-content__inner,
-    .md-typeset p,
-    .md-typeset ul,
-    .md-typeset ol {
-        text-align: left;
     }
 }

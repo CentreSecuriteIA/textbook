@@ -4,4 +4,6 @@ nav:
   - chapters/index.md
   - '...'
 - Courses: courses.md
-#- Feedback: index.md
+- Feedback: feedback.md
+
+
