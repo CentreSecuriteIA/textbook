@@ -18,7 +18,7 @@ The core objective of this chapter is to examine trends, key capability threshol
 [:fontawesome-solid-download: Download](https://drive.google.com/file/d/10fO4qjxHX3OiNnafNlp5nvF-9nLW8TOt/view?usp=sharing){ .md-button } 
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled }
+[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1L32xCVUCWEsm-x8UZ3GSTgKnmBcC7rJQLLIh9wGLj40/edit?usp=sharing){ .md-button }
 
 ### Chapter 2: Risks Landscape
 
@@ -32,7 +32,7 @@ The goal of this chapter is to provide a concrete, comprehensive overview of AI-
 [:fontawesome-solid-download: Download](https://drive.google.com/file/d/1ymYnH9MfKFw6NnufsTY5BDCAmfVhIJG6/view?usp=sharing){ .md-button } 
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled }
+[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1evE1rG91DKBuKlWnqPw45QtPxKBz0GlD_ZYrurNdvN4/edit?usp=sharing){ .md-button }
 
 ### Chapter 3: Solutions Landscape
 
@@ -50,7 +50,7 @@ Overall, this chapter serves as a stepping stone to future chapters, which will 
 [:fontawesome-solid-download: Download](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled }
+[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1cv0gzwSouDjckYHzV7gYbHPKhJZR6bwbJWgHzEJ604Q/edit?usp=sharing){ .md-button  }
 
 ### Chapter 4: Evaluations
 
@@ -67,7 +67,7 @@ It will explore the critical role of evaluations in AI safety, presenting a comp
 
 This chapter will aim to provide readers with a comprehensive understanding of how to assess and ensure the safety of AI systems as they grow increasingly complex and capable.
 
-[:fontawesome-solid-book: Read](04/README.md){ .md-button } 
+[:fontawesome-solid-book: Read](04/README.md){ .md-button .md-button--disabled} 
 [:fontawesome-solid-download: Download](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
@@ -88,7 +88,7 @@ We will explain the full landscape of AI governance across corporate, national, 
 - Exploration of adaptive governance approaches and novel mechanisms like algorithmic governance.
 - Lessons from governance efforts in other fields and their potential application to AI.
 
-[:fontawesome-solid-book: Read](05/README.md){ .md-button } 
+[:fontawesome-solid-book: Read](05/README.md){ .md-button .md-button--disabled}
 [:fontawesome-solid-download: Download](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
@@ -110,7 +110,7 @@ The first chapter in the technical safety series addresses a fundamental challen
 [:fontawesome-solid-download: Download](https://drive.google.com/file/d/1my3TSNPU-gzzv48MEN763EhIYL_UvG5v/view?usp=sharing){ .md-button } 
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled }
+[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1JfmzGii5QG6hW8AM5WxzDBVyGc14aLV_Lc_1PkK2ZLc/edit?usp=sharing){ .md-button }
 
 ### Chapter 7: Goal Misgeneralization
 
@@ -120,7 +120,7 @@ The second chapter in the technical safety series, addresses Goal Misgeneralizat
 [:fontawesome-solid-download: Download](https://drive.google.com/file/d/1lHSTzwlDukble7n1dXO5zoKhAybXgRYo/view?usp=sharing){ .md-button } 
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled }
+[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1uQooTncb7Hw2NhITtr3S5iGHqT6cvj74c0SZ4Unad_M/edit?usp=sharing){ .md-button }
 
 ### Chapter 8: Scalable Oversight
 
@@ -130,7 +130,7 @@ This chapter follows up from the chapter on specification gaming. It introduces 
 [:fontawesome-solid-download: Download](https://drive.google.com/file/d/17PVzvEMM7CiOaTIP_HH5h_YUrgV0iG1F/view?usp=sharing){ .md-button } 
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled }
+[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1DaygDSW0L5dWuJnpSjYPF2XUbW51UoBJsT1cjLYKc2w/edit?usp=sharing){ .md-button }
 
 ### Chapter 9.1: Interpretability: Vision
 
@@ -142,7 +142,7 @@ This chapter focuses on interpretability techniques for vision models. We cover 
 [:fontawesome-solid-download: Download](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled }
+[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1izDWZKR_xB2qj2a8LkbqcnqnjBIC-C7fn-74CIA-m9w/edit?usp=sharing){ .md-button }
 
 ### Chapter 9.2: Interpretability: NLP
 
@@ -154,7 +154,7 @@ Complementing the previous chapter on vision interpretability, this section focu
 [:fontawesome-solid-download: Download](https://drive.google.com/file/d/145_PXa5XE1iaq911NmO25Res_ALAGLlE/view?usp=sharing){ .md-button } 
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled }
+[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1izDWZKR_xB2qj2a8LkbqcnqnjBIC-C7fn-74CIA-m9w/edit?usp=sharing){ .md-button }
 
 ### Chapter 10: Agent Foundations
 
