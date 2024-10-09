@@ -44,6 +44,7 @@ body {
 .md-content {
     font-size: var(--md-base-font-size);
     font-weight: var(--md-text-font-weight);
+	margin-bottom: 100px;
 }
 
 /* Justify text on larger screens */

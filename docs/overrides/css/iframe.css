@@ -1,0 +1,14 @@
+/*File: textbook/docs/overrides/css/responsive-iframe.css*/
+
+.responsive-iframe-container {
+    width: 100%;
+    max-width: var(--md-main-content-width);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.responsive-iframe-container iframe {
+    width: 100%;
+    border: none;
+    overflow: auto;
+}

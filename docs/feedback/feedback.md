@@ -10,3 +10,7 @@ Alternatively, you can ask a question or give us feedback on the Discord:
 <div></div>
 
 [Our Discord](https://discord.gg/YtatCZ3SQ8){ .md-button }
+
+<div class="responsive-iframe-container">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUksnmw-2OvfQt1mgzzi6VF0Uye4SJ7VI1tQSJCc4abQVJeg/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>

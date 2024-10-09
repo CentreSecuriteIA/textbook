@@ -1,5 +1,10 @@
 # Introduction
 
+[:fontawesome-solid-download: Download](https://drive.google.com/file/d/1ymYnH9MfKFw6NnufsTY5BDCAmfVhIJG6/view?usp=sharing){ .md-button } 
+[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-video: Watch      ](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-users: Facilitate ](https://docs.google.com/document/d/1evE1rG91DKBuKlWnqPw45QtPxKBz0GlD_ZYrurNdvN4/edit?usp=sharing){ .md-button }
+
 It is expected that AI capabilities will continue to make progress in the upcoming years. The chapter on capabilities presents some arguments for why we might expect such trends to continue. But why are increasing capabilities a problem? As AI models get more capable, the potential risks associated with AI systems also rise. Before we can begin a discussion around mitigations, we need to get a concrete understanding of the specific risks - What exactly are the concerning scenarios? What are the likelihoods of certain harmful outcomes occurring over others?, and what aspects of current AI development accelerate these risks? In this chapter we aim to tackle these fundamental questions and provide a concrete overview of the various risks in the AI landscape.
 
 There are identifiable pathways through which AI can be misused, leading to catastrophic outcomes that could profoundly impact society. Moreover, we are approaching a critical threshold where the development of dangerously advanced capabilities, such as uncontrolled self-proliferation and self-replicating AI agents, becomes a tangible reality. These capabilities could lead to scenarios where AI systems rapidly expand and evolve beyond human control, potentially causing widespread disruption and harm. This proximity to such advanced capabilities underscores the immediate need for vigilance and proactive measures. Additionally, the current regulatory landscape is beset by significant gaps, lacking comprehensive regulations governing AI development and deployment. This absence of adequate regulatory frameworks further exacerbates the risks associated with AI.

@@ -14,11 +14,11 @@ We explore various potential paths to Artificial General Intelligence (AGI). Thi
 
 The core objective of this chapter is to examine trends, key capability thresholds, and potential development trajectories, to lay a solid foundation for the subsequent chapters of this textbook. Only when we have a solid understanding based on trends, can we begin to discuss the risks, and then potential solutions in the following chapters.
 
-[:fontawesome-solid-book: Read](01/README.md){ .md-button } 
-[:fontawesome-solid-download: Download](https://drive.google.com/file/d/10fO4qjxHX3OiNnafNlp5nvF-9nLW8TOt/view?usp=sharing){ .md-button } 
-[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1L32xCVUCWEsm-x8UZ3GSTgKnmBcC7rJQLLIh9wGLj40/edit?usp=sharing){ .md-button }
+[:fontawesome-solid-book: Read          ](01/README.md){ .md-button }
+[:fontawesome-solid-download: Download  ](https://drive.google.com/file/d/10fO4qjxHX3OiNnafNlp5nvF-9nLW8TOt/view?usp=sharing){ .md-button }
+[:fontawesome-solid-headphones: Listen  ](){ .md-button .md-button--disabled }
+[:fontawesome-solid-video: Watch        ](){ .md-button .md-button--disabled }
+[:fontawesome-solid-users: Facilitate   ](https://docs.google.com/document/d/1L32xCVUCWEsm-x8UZ3GSTgKnmBcC7rJQLLIh9wGLj40/edit?usp=sharing){ .md-button }
 
 ### Chapter 2: Risks Landscape
 
@@ -28,11 +28,11 @@ We decompose these risks into three main groups: Misuse, Misalignment, and Syste
 
 The goal of this chapter is to provide a concrete, comprehensive overview of AI-related risks and their underlying factors. This foundation is crucial for understanding the governance and technical solutions discussed in later chapters, as each of these solutions aims to address one or more of the risks introduced here.
 
-[:fontawesome-solid-book: Read](02/README.md){ .md-button } 
+[:fontawesome-solid-book: Read        ](02/README.md){ .md-button } 
 [:fontawesome-solid-download: Download](https://drive.google.com/file/d/1ymYnH9MfKFw6NnufsTY5BDCAmfVhIJG6/view?usp=sharing){ .md-button } 
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1evE1rG91DKBuKlWnqPw45QtPxKBz0GlD_ZYrurNdvN4/edit?usp=sharing){ .md-button }
+[:fontawesome-solid-video: Watch      ](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-users: Facilitate ](https://docs.google.com/document/d/1evE1rG91DKBuKlWnqPw45QtPxKBz0GlD_ZYrurNdvN4/edit?usp=sharing){ .md-button }
 
 ### Chapter 3: Solutions Landscape
 

@@ -1,3 +1,5 @@
+# File: docs/.pages.yml
+
 nav:
 - Home: index.md
 - Book:
@@ -5,5 +7,5 @@ nav:
   - '...'
 - Courses: courses.md
 - Feedback: feedback.md
-
+- Contribute: https://aisafety.info/questions/8TJV/How-can-I-help
 

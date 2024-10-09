@@ -1,4 +1,5 @@
 nav:
+- Overview: README.md
 - 2.1 Risk Decomposition: 01.md
 - 2.2 Risk Aggravators: 02.md
 - 2.3 Misuse Risk: 03.md
@@ -8,5 +9,4 @@ nav:
 - 2.7 Conclusion: 07.md
 - '2.8 Appendix: X-Risk Scenarios': 08.md
 - '2.9 Appendix: Miscellaneous': 09.md
-- Overview: README.md
 title: 02 - Risks Landscape

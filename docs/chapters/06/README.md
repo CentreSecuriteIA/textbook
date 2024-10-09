@@ -1,5 +1,10 @@
 # Overview
 
+[:fontawesome-solid-download: Download](https://drive.google.com/file/d/1my3TSNPU-gzzv48MEN763EhIYL_UvG5v/view?usp=sharing){ .md-button } 
+[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1JfmzGii5QG6hW8AM5WxzDBVyGc14aLV_Lc_1PkK2ZLc/edit?usp=sharing){ .md-button }
+
 1. **Reinforcement Learning**: The chapter starts with a reminder of some reinforcement learning concepts. This includes a quick dive into the concept of rewards and reward functions. This section lays the groundwork for explaining why reward design is extremely important.
 
 2. **Optimization**: This section briefly introduces the concept of Goodhart's Law. It provides some motivation behind understanding why rewards are difficult to specify in a way such that they do not collapse in the face of immense optimization pressure.
