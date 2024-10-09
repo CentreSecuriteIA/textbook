@@ -1,0 +1,1575 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ai-safety-atlas.com/chapters/07/03/">
+      
+      
+        <link rel="prev" href="../02/">
+      
+      
+        <link rel="next" href="../../08/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>7.3 Deceptive alignment - The AI Safety Atlas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../overrides/css/base.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/buttons.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/header_footer.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/typography.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/glossary.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/iframe.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/toc.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#03" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="The AI Safety Atlas" class="md-header__button md-logo" aria-label="The AI Safety Atlas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The AI Safety Atlas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7.3 Deceptive alignment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Book
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../courses/" class="md-tabs__link">
+        
+  
+    
+  
+  Courses
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../feedback/" class="md-tabs__link">
+        
+  
+    
+  
+  Feedback
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://aisafety.info/questions/8TJV/How-can-I-help" class="md-tabs__link">
+        
+  
+    
+  
+  Contribute
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="The AI Safety Atlas" class="md-nav__button md-logo" aria-label="The AI Safety Atlas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    The AI Safety Atlas
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Book
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Book
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../01/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    01 - Capabilities
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../02/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    02 - Risks Landscape
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../03/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    03 - Solutions Landscape
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../04/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    04 - Evaluations
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../05/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    05 - Governance
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../06/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    06 - Reward Misspecification
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_8" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    07 - Goal Misgeneralization
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_8" id="__nav_2_1_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_8">
+            <span class="md-nav__icon md-icon"></span>
+            07 - Goal Misgeneralization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1 Goal Misgeneralization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.2 Inner Alignment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    7.3 Deceptive alignment
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    7.3 Deceptive alignment
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.1 Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.2 Inductive Priors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.3 Path Dependence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.4 Deception =/= Deceptive Alignment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.5 Likelihood
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../08/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    08 - Scalable Oversight
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../09/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    09 - Interpretability
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../courses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Courses
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://aisafety.info/questions/8TJV/How-can-I-help" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="03">7.3 <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">Deceptive alignment</abbr><a class="headerlink" href="#03" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Reading Time: 14 minutes</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">This section is still being written and is considered a work in progress.</p>
+</div>
+<details class="note" open="open">
+<summary><abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">Deceptive Alignment</abbr> - Video Introduction</summary>
+<p><iframe width="1280" height="720" src="https://www.youtube.com/embed/IeWljQw3UgQ" title="Deceptive Misaligned Mesa-Optimisers? It&#39;s More Likely Than You Think..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+<div class="admonition warning">
+<p class="admonition-title">This video is optional and not necessary to understand the text.</p>
+</div>
+</details>
+<p>This section focuses on further exploring the concept of mesa-optimizers. There are various different types of mesa-optimizers that can result at the end of the training process. Ajeya Cotra in her post “<a href="https://www.cold-takes.com/why-ai-alignment-could-be-hard-with-modern-deep-learning/">Why <abbr title="Making sure that AI tries to do what we want it to do.">AI alignment</abbr> could be hard with modern deep learning</a>” provided an intuitive example by exploring three archetypes that an AI might embody. She explains this through the analogy of a young child (humanity) who has inherited a company to run and has a choice of the following three types of candidates (AIs) to hire to run the inherited company:</p>
+<ol>
+<li>
+<p><strong>Saints</strong> are those who genuinely just want to help manage your estate well and look out for your long-term interests.</p>
+</li>
+<li>
+<p><strong>Sycophants</strong> want to do whatever it takes to make you short-term happy or satisfy the letter of your instructions regardless of long-term consequences. They want to see the child be happy even if it means lying. Sycophants would provide false facts about the world to convince the child that things are going well, but they don't have some long-term ulterior motives. Sycophants are an example of deception/dishonesty but they are not <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr>.</p>
+</li>
+<li>
+<p><strong>Schemers</strong> have their own agendas and want to get access to the company and all its wealth and power so they can use it however they want. These are examples of deceptive alignment. Schemers have some ulterior motive (mesa-objective) that they want to accomplish.</p>
+</li>
+</ol>
+<p>During training, Sycophants and Schemers are behaviorally indistinguishable from Saints. Once a schemer is deployed or is otherwise safe from modification, it can "defect" and begin to pursue its true objective. Risks from learned optimization uses a slightly different vocabulary to convey the same concept. Following are the behaviorally indistinguishable types of mesa-optimizers that might be seen at the end of the training process:</p>
+<p><strong>Internally aligned <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr></strong>: These AIs want exactly the same things as humans, because they have the same values and exactly the same way of thinking about the world. </p>
+<div class="admonition info">
+<p class="admonition-title">Definition: Internally aligned <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr></p>
+<p><em>An internally aligned <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> is a robustly aligned <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> that has internalized the base objective in its mesa-objective.</em></p>
+<ul>
+<li>Hubinger et. al. (Jun 2019) “<a href="https://intelligence.org/learned-optimization/">Risks from Learned Optimization (Glossary)</a>”</li>
+</ul>
+</div>
+<p><strong>Corrigibly</strong> <strong>aligned <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr></strong>: These AIs don’t have an exact copy of human values, but they do have instead a desire to really understand human values. They then take action based on this understanding.</p>
+<div class="admonition info">
+<p class="admonition-title">Definition: Corrigibly aligned <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr></p>
+<p><em>A corrigibly aligned <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> is a robustly aligned <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> that has a mesa-objective that “points to” its epistemic model of the base objective.</em></p>
+<ul>
+<li>Hubinger et. al. (Jun 2019) “<a href="https://intelligence.org/learned-optimization/">Risks from Learned Optimization (Glossary)</a>”</li>
+</ul>
+</div>
+<p><strong>Deceptively </strong><strong>aligned</strong><strong> <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr></strong>: These AIs have their own desires independent of human values. But they also don't want to be shut off, or their values get trained away. So they act aligned until such fears are not relevant.</p>
+<div class="admonition info">
+<p class="admonition-title">Definition: Deceptively aligned <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr></p>
+<p><em>A <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr> <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> is a pseudoaligned <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> that has enough information about the base objective to seem more fit from the perspective of the base optimizer than it actually is.</em></p>
+<ul>
+<li>Hubinger et. al. (Jun 2019) “<a href="https://intelligence.org/learned-optimization/">Risks from Learned Optimization (Glossary)</a>”</li>
+</ul>
+</div>
+<p>To understand deceptive alignment slightly more formally, imagine that an <abbr title="Reinforcement Learning. A machine learning method in which the machine gets rewards based on its actions, and is adjusted to be more likely to take actions that lead to high reward.">RL</abbr> agent is trying to optimize for mesa-objective/reward (R) instead of the base objective (R<em>). Assume that this agent eventually develops some understanding of the training process. During training, the myopic strategy would be to just greedily choose the maximizing action for R immediately. However, since the model has an understanding of gradient descent it ‘knows’ that its <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> will get changed to focus on some other reward function (R</em>). Therefore the optimal course is to choose the action that instead maximizes R<em> to avoid parameter updates. As long as R</em> is being maximized during training, there is no reason to update or look for a ‘truly internally aligned model’. After training concludes, the agent is free to choose actions that maximize R as many times as it likes without the risk of being modified, resulting in an overall greater reward. Such type of behavior, where a <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr> <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> might purposefully act in ways that cause gradient descent to update (or not) it in some specific way is called gradient hacking.</p>
+<div class="admonition info">
+<p class="admonition-title">Definition: Gradient Hacking</p>
+<p><em>"Gradient hacking" describes the phenomenon wherein a <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr> <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> might be able to purposefully act in ways which cause gradient descent to update it in a particular way. - </em>Evan Hubinger (2019)<em> “</em><a href="https://www.alignmentforum.org/posts/uXH4r6MmKPedk8rMA/gradient-hacking">Gradient hacking</a><em>”</em></p>
+</div>
+<h2 id="01">7.3.1 Prerequisites<a class="headerlink" href="#01" title="Permanent link">&para;</a></h2>
+<p>Risks From Learned Optimization lists three prerequisites for an AI to become <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr>. These conditions must be fulfilled during the training phase for an AI to develop internal goals, as well as the ability and desire to deceive the training process:</p>
+<p><em>Situational awareness</em></p>
+<p>The model must have a good enough understanding of the world to understand what humans “really want” and how it is different from what the AI wants (i.e. an understanding of the base objective). This is because in order to be successfully deceptive, the model still has to give the humans what they want during training. Additionally, it needs an understanding of the fact that it is part of a training process and some understanding of the technical details of how stochastic gradient descent (SGD) works. As an example, an agent tasked with forecasting stock performance in the tech sector might be given data about the entire world, including current AI technology in order to improve its performance. This information might also allow it to learn about its own situation. There is a lot of ongoing research and formalizing and detecting situational awareness in models.</p>
+<p><strong><em>Long-term planning</em></strong></p>
+<p>A model might be explicitly encouraged during training to acquire long-term planning capabilities to optimize its base objective. This might be, for example, because it was trained to take action in an environment where actions can have permanent consequences, or because of reasoning abilities. The possibility of permanently altering its environment means that the model has to consider the implications of its actions across longer time periods and training update cycles. Once it gains significant capabilities in long-term planning, it can use this ability to optimize for its own mesa-objective.</p>
+<p>How could a model tell if it is training or deployment? RSA-2048</p>
+<p><strong><em>Expectation of distribution shift</em></strong></p>
+<p>The model must expect that at some point in the future, the threat of objective modification will go away. This means that the model thinks that training either has to end at some point, or that the trainer (SGD) does not need to update the behavior of the model because it is already performing well enough on the given task.</p>
+<p>There are some dynamics of the gradient descent training process that might make the emergence of prerequisites like situational awareness and long term planning more or less likely. The next couple of sections explain machine learning training dynamics like inductive biases and path dependence. The subsequent section then uses this understanding to make an argument for the likelihood of deceptive alignment.</p>
+<h2 id="02">7.3.2 Inductive Priors<a class="headerlink" href="#02" title="Permanent link">&para;</a></h2>
+<p>Inductive biases represent the constraints and influence how and what ML models learn. An inductive prior represents the initial state before any evidence has been observed. Here are some examples:</p>
+<ul>
+<li>
+<p><strong>Complexity Bias</strong>: It might be the case that the ML process prefers simpler models over more complex ones. The intuition behind this is Occam's razor, which suggests that the simplest explanation (or in this case, model) is often the “correct” one.</p>
+</li>
+<li>
+<p><strong>Smoothness Bias</strong>: It could also be possible that smoother target functions are easier to find in search space than those that are erratic. In other words, small changes in the input should not produce large changes in the output.</p>
+</li>
+<li>
+<p><strong>Speed Bias</strong>: Similarly, it could be the case that functions that can be computed quickly are more desirable.</p>
+</li>
+</ul>
+<p>There are many more inductive biases that the current machine learning process might have. The above are only a couple of examples. So depending on the inductive bias, gradient descent might just always simply find either the simplest, fastest, or smoothest model that fits the data. Which means that given the same dataset, all paths converge on essentially the same generalization.</p>
+<p>Both inductive biases and path dependence can significantly influence the learning process and the final outcome of a machine learning model. A model's inductive priors can set it on a certain 'path', and then path dependence can further shape how the model learns and adapts as it travels down that path.</p>
+<h2 id="03">7.3.3 Path Dependence<a class="headerlink" href="#03" title="Permanent link">&para;</a></h2>
+<p><em>Path dependence refers to the update path that gradient descent follows through parameter space.</em></p>
+<p>Path dependence studies the effects of changes in the training procedure on the path that gradient descent follows while searching for the optimal learned algorithm. This includes things like the sequence of training data, the order of training, etc…</p>
+<p><strong>High path dependence</strong> means that significantly different learned models emerge at the end of the training process. <strong>Low path dependence</strong> means that similar learned models emerge across multiple training runs with the same model on the same data. </p>
+<p>This means that not only the emergence of mesa-optimizers but also overall levels of alignment could be sensitive to changes in the training procedure, which could make it harder to implement and enforce exact training procedures across different labs.</p>
+<p><em>High path dependence</em></p>
+<p>If gradient descent is highly path-dependent, then that would mean that different training runs can converge to very different models. This essentially means that the learned algorithm is very sensitive to the particular parameter update path that is taken through model space. To understand the types of expected learned algorithms, the path itself must also be understood.</p>
+<p>There is some empirical evidence to suggest that many ML models might have high path dependence. The paper “<a href="https://arxiv.org/abs/1911.02969">BERTs of a feather do not generalize together</a>” showed that different versions of the fine-tuned BERT models resulted in differing generalizations on downstream tasks, even with the same training data. This sort of path dependence is especially prevalent in reinforcement learning (<abbr title="Reinforcement Learning. A machine learning method in which the machine gets rewards based on its actions, and is adjusted to be more likely to take actions that lead to high reward.">RL</abbr>) models, where an identical setup can be run multiple times, sometimes getting good performance and sometimes terrible performance.</p>
+<p><em>Low path dependence</em></p>
+<p>In this type of process, similar training processes converge to essentially the same simple solution, regardless of early training dynamics. In this case, inductive priors play a much larger role in what type of algorithm you might end up with.</p>
+<p>Ajeya Cotra provided a simple example of low path dependence in her post “<a href="https://www.cold-takes.com/why-ai-alignment-could-be-hard-with-modern-deep-learning/">Why <abbr title="Making sure that AI tries to do what we want it to do.">AI alignment</abbr> could be hard with modern deep learning</a>”. The AI model was trained to be a shape detector. She defined a “thneeb” as one of the two shapes shown in the image below. Multiple models are trained to distinguish between two distinct types of shapes.</p>
+<p><img alt="Enter image alt description" src="../Images/srO_Image_10.png" /></p>
+<p><strong>Figure</strong>: Thneeb</p>
+<p><img alt="Enter image alt description" src="../Images/09X_Image_11.png" /></p>
+<p><strong>Figure</strong>: Thneebs with colors changed</p>
+<p>Source: Cotra, Ajeya (Sep 2021) <a href="https://www.cold-takes.com/why-ai-alignment-could-be-hard-with-modern-deep-learning/">Why <abbr title="Making sure that AI tries to do what we want it to do.">AI alignment</abbr> could be hard with modern deep learning</a></p>
+<p>However, in addition to the shapes in each cluster being similar, one shape was always blue, and the other was always red. During training, the model performed well at recognizing the shapes. During testing, the colors were swapped and it turned out that the model was only looking at the colors and not considering the shapes. On running the training process multiple times with random initialization points, it might be expected that at least one of the times the ML model generalizes to look for shapes instead of looking for colors. However, the paper “<a href="https://arxiv.org/abs/1811.12231">ImageNet-trained CNNs are biased towards texture</a>” found that neural networks (or gradient descent) are consistently biased towards colors over shapes when given the choice.</p>
+<p>Overall, there is no consensus on whether advanced machine learning models have high or low path dependence since there is evidence for both. The next section explores the likelihood of <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr> mesa-optimizers emerging in both low and high-path dependent training scenarios.</p>
+<h2 id="04">7.3.4 Deception =/= <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">Deceptive Alignment</abbr><a class="headerlink" href="#04" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">This section is still being written and is considered a work in progress.</p>
+</div>
+<p><a href="https://www.lesswrong.com/posts/a392MCzsGXAZP5KaS/deceptive-ai-deceptively-aligned-ai">https://www.lesswrong.com/posts/a392MCzsGXAZP5KaS/deceptive-ai-deceptively-aligned-ai</a></p>
+<h2 id="05">7.3.5 Likelihood<a class="headerlink" href="#05" title="Permanent link">&para;</a></h2>
+<p>Since the objective is to analyze the emergence of deceptive alignment, this section assumes the emergence of a <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> during training. The focus is more on “which type” of <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> (aligned, corrigible, or deceptive) is most likely to be found using current ML training methods.</p>
+<p>A couple of further assumptions: First, there is a relatively complex base objective such as human values. Second, training environments are diverse enough with enough situations to get the models to robustly understand what humans want.</p>
+<p>During training, ML models always start with a seemingly random proxy objective. To improve performance Gradient descent can do two things:</p>
+<ul>
+<li>
+<p><strong>Better Proxies</strong>: The model can improve its understanding of the objective</p>
+</li>
+<li>
+<p><strong>Better World Models</strong>: The model can improve its ability to act on its existing understanding of the objective</p>
+</li>
+</ul>
+<p><em>High Path Dependence Scenario</em></p>
+<p>If gradient descent is highly path-dependent, then depending on the path followed either the world model or the proxy could be perfected first. Which indicates that there could be the following different types of scenarios:</p>
+<ol>
+<li>
+<p>If the proxy objective is perfected to match the base objective before the world model is perfected, then the model is internally aligned.</p>
+</li>
+<li>
+<p>If the world model is perfected before the proxy objective, then the world model is also perfect enough to simulate gradient descent. Since the world model is perfect the base objective also exists within the world model. In which case, one of two things can happen:</p>
+</li>
+<li>
+<p>The <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> ‘throws out’ the proxy objective and replaces it with a pointer to gradient descent’s base objective.</p>
+</li>
+<li>
+<p><strong>T</strong>he <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> just makes the current proxy objective a long-term goal (crystallizes it), which means that the <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> is now free to maximize the base objective.</p>
+</li>
+</ol>
+<p>In all three of these cases, at the end of training gradient descent returns a model that optimizes the base objective. All three are functionally indistinguishable.</p>
+<p><em>Low Path Dependence Scenarios</em></p>
+<p>If training has low path dependence then the inductive priors come into play.</p>
+<p>The simplicity inductive bias is an analysis of the algorithm's Kolmogorov complexity. In all three - internally, corrigibly, and <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr> types of models the world model is exactly the same. The main difference between the models is the mesa objective, i.e. the complexity of the objective given to the model to learn and optimize. The simplest internally aligned mesa-objective is the base objective. So for internal alignment, the complexity class is the full complexity of the base objective. The simplest corrigibly aligned mesa-objective is a specification for how to point to the base objective. The simplest <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr> mesa-objective is literally any long-term objective. So as far as <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr> AI is concerned, the most complexity cost paid is just the simplest long-term objective that gradient descent can find. In other words, the <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr> one has the lowest complexity cost out of the three alignment scenarios, assuming a relatively complex training objective. All of the other model classes scale with the complexity of the training objective, whereas the complexity of the <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr> model is essentially fixed. Therefore the more complex the base objective (e.g. human values) the more deceptive alignment wins in the complexity race. Overall, the analysis results in the conclusion that the number of internally aligned AIs is less than the number of corrigibly aligned AIs which is less than the number of <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr> AIs:</p>
+<p>(internally aligned AIs) &lt; #(corrigibly aligned AIs) &lt; #(<abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr> AIs)
+Random sampling from a distribution of learned optimizers means there are more ways to get a <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr> AI than the other two.</p>
+<p>The speed inductive bias thankfully falls in favor of corrigibly and internally aligned models. The <abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr> model has to perform extra steps of ‘thinking’. For example, it has to realize that caring about the mesa-objective in the long term means that it should optimize the training objective temporarily to get a higher reward on your internal objective eventually. The internal and corrigibly aligned models however don’t have to do this extra thinking and can just directly optimize what they care for which is the base objective. So in terms of time taken for each model class to output the correct answer:</p>
+<p>t(internally aligned) ~= t(corrigibly aligned) &lt; t(<abbr title="A case where the AI acts as if it were aligned while in training, but when deployed it turns out not to be aligned.">deceptively aligned</abbr>)</p>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUksnmw-2OvfQt1mgzzi6VF0Uye4SJ7VI1tQSJCc4abQVJeg/viewform?embedded=true" width="640" height="2330" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+<!-- Abbreviations -->
+
+<!--
+*[Large language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[large language models]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+
+<!--*[ML]: Machine Learning. An approach to AI in which, instead of designing an algorithm directly, we have the system search through possible algorithms based on how well they do on some training data.-->
+
+<!--*[Neural network]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.-->
+<!--*[NN]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.-->
+
+<!-- Glossary -->
+
+<!--*[AGI]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+<!--*[artificial general intelligence]: AI that is at least as good as humans at general problem-solving.-->
+<!--*[AGIs]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+<!--*[AGI’s]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+
+<!--HLAI-->
+<!--Human level AI-->
+
+<!--
+*[Ethics of artificial intelligence]: The study of ethical principles for AI systems and their creators to follow. In practice, “AI ethics”this often refers to a cluster of concerns about present systems that include algorithmic bias and transparency.-->
+
+<!--Catastrophic risk-->
+<!--catastrophic risk-->
+<!--catastrophic risks-->
+
+<!--
+*[Feature]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+<!--*[features]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+
+<!--polysemantic-->
+<!--polysemanticity-->
+<!--monosemantic-->
+<!--monosemanticity-->
+<!--superposition-->
+
+<!--
+*[Optimization algorithm]: A general procedure for finding solutions that score highly according to some well-defined objective function.-->
+
+<!--
+*[Optimizer]: Something that can improve some process or physical artifact so that it is fit for a certain purpose or fulfills some set of requirements.-->
+
+<!--bitter lesson-->
+<!--scaling laws-->
+<!--scaling hypothesis-->
+<!--bio anchors-->
+<!--biological anchors-->
+<!--world models-->
+<!--RAAP-->
+<!--RAAPs-->
+<!--CAIS-->
+<!--emergence-->
+<!--Few-shot -->
+<!--Zero-shot -->
+
+<!--Few-shot prompting-->
+<!--A technique where a language model is prompted with a few examples of problems with solutions, and is then asked to find a solution to the next problem.-->
+<!--treacherous turn-->
+<!--policy-->
+<!--policies-->
+<!--embedding-->
+<!--embeddings-->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../02/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 7.2 Inner Alignment">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                7.2 Inner Alignment
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../08/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.top", "navigation.footer", "navigation.sections", "navigation.tacking", "navigation.path", "navigation.prune", "content.tooltips", "content.footnote.tooltips", "header.autohide", "announce.dismiss", "toc.integrate", "toc.follow"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../../overrides/js/mathjax.js"></script>
+      
+        <script src="../../../overrides/js/glossary.js"></script>
+      
+        <script src="../../../overrides/js/toc_collapse.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

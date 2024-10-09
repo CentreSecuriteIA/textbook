@@ -1,0 +1,1624 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ai-safety-atlas.com/chapters/01/01/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../02/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>1.1 State-of-the-Art AI - The AI Safety Atlas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../overrides/css/base.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/buttons.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/header_footer.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/typography.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/glossary.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/iframe.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/toc.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#01" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="The AI Safety Atlas" class="md-header__button md-logo" aria-label="The AI Safety Atlas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The AI Safety Atlas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1.1 State-of-the-Art AI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Book
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../courses/" class="md-tabs__link">
+        
+  
+    
+  
+  Courses
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../feedback/" class="md-tabs__link">
+        
+  
+    
+  
+  Feedback
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://aisafety.info/questions/8TJV/How-can-I-help" class="md-tabs__link">
+        
+  
+    
+  
+  Contribute
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="The AI Safety Atlas" class="md-nav__button md-logo" aria-label="The AI Safety Atlas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    The AI Safety Atlas
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Book
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Book
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    01 - Capabilities
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            01 - Capabilities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1.1 State-of-the-Art AI
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1.1 State-of-the-Art AI
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1.1 Language
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1.2 Image Generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1.3 Multi &amp; Cross modality
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1.4 Robotics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#05" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1.5 Playing Games
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2 Foundation Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3 Terminology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.4 Leveraging Computation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.5 Forecasting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.6 Appendix 1: Expert Opinions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.7 Appendix 2: Discussions on LLMs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.8 Appendix 3: Trends & Bottlenecks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../02/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    02 - Risks Landscape
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../03/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    03 - Solutions Landscape
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../04/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    04 - Evaluations
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../05/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    05 - Governance
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../06/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    06 - Reward Misspecification
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../07/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    07 - Goal Misgeneralization
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../08/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    08 - Scalable Oversight
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../09/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    09 - Interpretability
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../courses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Courses
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://aisafety.info/questions/8TJV/How-can-I-help" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="01">1.1 State-of-the-Art AI<a class="headerlink" href="#01" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Reading Time: 11 minutes</p>
+</div>
+<p>Over the last decade, the field of artificial intelligence (AI) has experienced a profound transformation, largely attributed to the successes in deep learning. This remarkable progress has redefined the boundaries of AI capabilities, challenging many preconceived notions of what machines can achieve. The following sections detail some of these advancements.</p>
+<p><img alt="Enter image alt description" src="../Images/V7p_Image_1.jpeg" /></p>
+<p><strong><em>Figure</em></strong><em>:</em><em> Once a benchmark is published, it takes less and less time to solve it. This can illustrate the accelerating progress in AI and how quickly AI benchmarks are “saturating”, and starting to surpass human performance on a variety of tasks. (</em><em><a href="https://www.science.org/content/article/computers-ace-iq-tests-still-make-dumb-mistakes-can-different-tests-help">source</a></em><em>)</em></p>
+<h2 id="01">1.1.1 Language<a class="headerlink" href="#01" title="Permanent link">&para;</a></h2>
+<p><strong>Language-based tasks.</strong> There have been transformative changes in sequence and language-based tasks, primarily through the development of large language models (<abbr title="Large Language Model. An AI model that takes in some text and predicts how it’s most likely to continue.">LLMs</abbr>). Early language models in 2018 struggled to construct coherent sentences. The evolution from these to the advanced capabilities of GPT-3 (Generative Pre-Trained Transformer) and ChatGPT within less than 5 years is remarkable. These models demonstrate not only an improved capacity for generating text but also for responding to complex queries with nuanced, common-sense reasoning. Their performance in various question-answering tasks, including those requiring strategic thinking, has been particularly impressive.</p>
+<p><strong>GPT-4. </strong>One of the state-of-the-art language models in 2024 is OpenAI’s <abbr title="Large Language Model. An AI model that takes in some text and predicts how it’s most likely to continue.">LLM</abbr> GPT-4. In contrast with the text-only GPT-3 and follow-ups, GPT-4 is multimodal: it was trained on both text and images. This means that it can now not only generate text based on images but has also gained some other capabilities. GPT-4 saw an upgraded context window with up to 32k tokens (tokens ≈ words). The short-term memory limit of an <abbr title="Large Language Model. An AI model that takes in some text and predicts how it’s most likely to continue.">LLM</abbr> can be thought of as the model's ability to retain information from previous tokens within a certain context window. GPT-4 is trained via next-token prediction (autoregressive self-supervised learning). In 2018 GPT-1 was barely able to count to 10, while in 2024 GPT-4 can implement complex programmatic functions among other things.</p>
+<p><img alt="Enter image alt description" src="../Images/CAe_Image_2.png" /></p>
+<p><strong><em>Figure</em></strong><em>: a list of "Nowhere near solved” [...] issues in AI, from "A brief history of AI", published in January 2021 (</em><em><a href="https://www.amazon.com/Brief-History-Artificial-Intelligence-Where/dp/1250770742">source</a></em><em>). They also say: “At present, we have no idea how to get computers to do the tasks at the bottom of the list”. But everything in the category “Nowhere near solved” has been solved by GPT-4 (</em><em><a href="https://arxiv.org/abs/2303.12712">source</a></em><em>), except human-level general intelligence.</em></p>
+<p><strong>Scaling</strong>. Remarkably, GPT-4 is trained using roughly the same methods as GPT-1, 2, and 3. The only significant difference is the size of the model and the data given to it during training. The size of the model has gone from 1.5B <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> to hundreds of billions of <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr>, and datasets have become similarly larger and more diverse.</p>
+<p><img alt="Enter image alt description" src="../Images/uW1_Image_3.png" /></p>
+<p><strong><em>Figure</em></strong><em>: How fast is AI Improving? (</em><em><a href="https://theaidigest.org/progress-and-dangers">source</a></em><em>)</em></p>
+<p>We have observed that just an expansion in scale has contributed to enhanced performance. This includes improvements in the ability to generate contextually appropriate responses, and highly diverse text across a range of domains. It has also contributed to overall improved understanding, and coherence. Most of those advances in the GPT series come from increasing the size and computation power behind the models, rather than fundamental shifts in architecture or training.</p>
+<p>Here are some of the capabilities that have been emerging in the last few years:</p>
+<ul>
+<li>
+<p><strong>Few-shot and Zero-shot Learning</strong>. The model's proficiency at understanding and executing tasks with minimal or no prior examples. 'Few-shot' means accomplishing the task after having seen a few examples in the context window, while 'Zero-shot' indicates performing the task without any specific examples (<a href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html">source</a>). This also includes induction capabilities, i.e. identifying patterns and generalizing rules not present in the training, but only present in the current context window (<a href="https://arxiv.org/abs/2005.14165">source</a>).</p>
+</li>
+<li>
+<p><strong>Metacognition</strong>. This refers to the ability to recognize its own knowledge and limitations, for example, being able to know the probability of the truth of something (<a href="https://arxiv.org/abs/2207.05221">source</a>).</p>
+</li>
+<li>
+<p><strong>Theory of Mind</strong>. The capability to attribute mental states to itself and others, which helps in predicting human behaviors and responses for more nuanced interactions (<a href="https://arxiv.org/abs/2302.02083">source</a>, <a href="https://arxiv.org/abs/2402.06044">source</a>).</p>
+</li>
+<li>
+<p><strong>Tool Use</strong>. Being able to interact with external tools, like using a calculator or browsing the internet, expanding its problem-solving abilities (<a href="https://arxiv.org/abs/2307.16789">source</a>).</p>
+</li>
+<li>
+<p><strong>Self-correction</strong>. The model's ability to identify and correct its own mistakes, which is crucial for improving the accuracy of AI-generated content (<a href="https://arxiv.org/abs/2303.11366">source</a>).</p>
+</li>
+</ul>
+<p><img alt="Enter image alt description" src="../Images/vR6_Image_4.png" /></p>
+<p><strong><em>Figure</em></strong><em>: An example of a mathematical problem solved by GPT-4 using Chain of Thought (CoT), from the paper “Sparks of Artificial General Intelligence” (</em><em><a href="https://arxiv.org/abs/2303.12712">source</a></em><em>).</em></p>
+<ul>
+<li>
+<p><strong>Reasoning</strong>. The advancements in <abbr title="Large Language Model. An AI model that takes in some text and predicts how it’s most likely to continue.">LLMs</abbr> have also led to significant improvements in the ability to process and generate logical chains of thought and reasoning. This is particularly important in problem-solving tasks where a straightforward answer isn't immediately available, and a step-by-step reasoning process is required. (<a href="https://arxiv.org/abs/2303.12712">Source</a>)</p>
+</li>
+<li>
+<p><strong>Programming ability</strong>. In coding, AI models have progressed from basic code autocompletion to writing sophisticated, functional programs.</p>
+</li>
+<li>
+<p><strong>Scientific &amp; Mathematical ability</strong>. In mathematics, AI's have assisted in the subfield of automatic theorem proving for decades. Today's models continue to assist in solving complex problems. AI can even achieve a gold medal level in the mathematical Olympiad by solving geometry problems (<a href="https://www.nature.com/articles/s41586-023-06747-5">source</a>).</p>
+</li>
+</ul>
+<p><img alt="Enter image alt description" src="../Images/mPJ_Image_5.png" /></p>
+<p><strong><em>Figure</em></strong><em>: GPT-4 solves some tasks that GPT-3.5 was unable to, like the uniform bar examination, where GPT-4 scores 90% compared to 10% for GPT-3.5. GPT-4 is also capable of vision processing, and the added vision component had only a minor impact, but it helped others tremendously.  (</em><em><a href="https://openai.com/research/gpt-4">source</a></em><em>)</em></p>
+<h2 id="02">1.1.2 Image Generation<a class="headerlink" href="#02" title="Permanent link">&para;</a></h2>
+<p>The leap forward in image generation is not just in accuracy, but also in the ability to handle complex, real-world images. The latter, particularly with the advent of Generative Adversarial Networks (<abbr title="Generative Adversarial Network">GANs</abbr>) in 2014, has shown an astounding rate of progress. The quality of images generated by AI has evolved from simple, blurry representations to highly detailed and creative scenes, often in response to intricate language prompts.</p>
+<p><img alt="Enter image alt description" src="../Images/dwX_Image_6.png" /></p>
+<p>Figure: An example of state-of-the-art image recognition. The Segment Anything Model (SAM) by Meta’s FAIR (Fundamental AI Research) lab, can classify and segment visual data at highly precise levels. The detection is performed without the need to annotate images. (<a href="https://viso.ai/deep-learning/segment-anything-model-sam-explained/">source</a>)</p>
+<p><img alt="Enter image alt description" src="../Images/PBp_Image_7.png" /></p>
+<p><strong><em>Figure</em></strong><em>: An example of the evolution of image generation. At the top left, starting from <abbr title="Generative Adversarial Network">GANs</abbr> (Generative Adversarial Networks) to the bottom right, an image from MidJourney V5.</em></p>
+<p>The rate of progress within a single year alone is quite astounding as is seen from the improvements between the V1 of the MidJourney image generation model in early 2022, to the V6 in December 2023.</p>
+<p><img alt="Enter image alt description" src="../Images/wh2_Image_8.png" /></p>
+<p><strong><em>Figure</em></strong><em>: MidJourney AI image generation over 2022-2023. Prompt: high-quality photography of a young Japanese woman smiling, backlighting, natural pale light, film camera, by Rinko Kawauchi, HDR (</em><em><a href="https://goldpenguin.org/blog/midjourney-v1-to-v6-evolution/">source</a></em><em>)</em></p>
+<h2 id="03">1.1.3 Multi &amp; Cross modality<a class="headerlink" href="#03" title="Permanent link">&para;</a></h2>
+<p>AI systems are becoming increasingly multimodal. This means that they can process images, text, audio, vision, and robotics using the same model. So they are trained using multiple different “modes” and can translate between them after deployment.</p>
+<p><strong>Cross-modality</strong>. A model is called cross-modal when the input of a model is in one modality (e.g. text) and the output is in another modality (e.g. image). The section on computer vision showed fast progress between 2014 and 2020 in cross-modality. We went from text-to-image models only capable of generating black-and-white pixelated images of faces, to models capable of generating an image of any textual prompt. More examples of cross-modality include OpenAIs Whisper (<a href="https://cdn.openai.com/papers/whisper.pdf">source</a>) which is capable of speech-to-text transcription.</p>
+<p><strong>Multi-modality</strong>. A model is called multi-modal when both the inputs and outputs of a model can be in more than one modality. E.g. audio-to-text, video-to-text, text-to-image, etc…</p>
+<p><img alt="Enter image alt description" src="../Images/sAw_Image_9.png" /></p>
+<p><strong><em>Figure:</em></strong><em> Image-to-text and text-to-image multimodality from the Flamingo model. (</em><em><a href="https://arxiv.org/abs/2204.14198">source</a></em><em>)</em></p>
+<p>DeepMind’s 2022 Flamingo model, could be “<em>rapidly adapted to various image/video understanding tasks</em>” and “<em>is also capable of multi-image visual dialogue</em>”. (<a href="https://arxiv.org/abs/2204.14198">source</a>) Similarly, DeepMind’s 2022 Gato model, was called a "Generalist <abbr title="A system that can be understood as taking actions towards achieving a goal.">Agent</abbr>". It was a single network with the same weights which could “<em>play Atari, caption images, chat, stack blocks with a real robot arm, and much more</em>”. (<a href="https://arxiv.org/abs/2205.06175">source</a>) Continuing this trend, DeepMind’s 2023 Google Gemini model could be called a Large Multimodal Model (<abbr title="Large Multimodal Model. An AI model that can take in and produce multiple forms of data (such as both text and images).">LMM</abbr>). The paper described Gemini as “<em>natively multimodal</em>” and claimed to be able to “<em>seamlessly combine their capabilities across modalities (e.g. extracting information and spatial layout out of a table, a chart, or a figure) with the strong reasoning capabilities of a language model (e.g. its state-of-art-performance in math and coding)</em>”(<a href="https://arxiv.org/abs/2312.11805">source</a>)</p>
+<h2 id="04">1.1.4 Robotics<a class="headerlink" href="#04" title="Permanent link">&para;</a></h2>
+<p>The field of robotics has also been progressing alongside artificial intelligence. In this section, we provide a couple of examples where these two fields are merging, highlighting some robots using inspiration from machine learning techniques to make advancements.</p>
+<p><img alt="Enter image alt description" src="../Images/VZl_Image_9.png" /></p>
+<p><strong><em>Figure:</em></strong><em> Researchers used Model-Free Reinforcement Learning to automatically learn quadruped locomotion in only 20 minutes in the real world instead of in simulated environments. The Figure shows examples of learned gaits on a variety of real-world terrains. (</em><em><a href="https://arxiv.org/abs/2208.07860">source</a></em><em>)</em></p>
+<p><strong>Advances in robotics</strong>. At the forefront of robotic advancements is PaLM-E, a general-purpose, embodied model with 562 billion <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> that integrates vision, language, and robot data for real-time manipulator control and excels in language tasks involving geospatial reasoning. (<a href="https://arxiv.org/abs/2303.03378">source</a>)</p>
+<p>Simultaneously, developments in vision-language models have led to breakthroughs in fine-grained robot control, with models like RT-2 showing significant capabilities in object manipulation and multimodal reasoning. RT-2 demonstrates how we can use <abbr title="Large Language Model. An AI model that takes in some text and predicts how it’s most likely to continue.">LLM</abbr>-inspired prompting methods (<abbr title="A prompting technique which makes a language model generate intermediate reasoning steps in its output.">chain-of-thought</abbr>), to learn a self-contained model that can both plan long-horizon skill sequences and predict robot actions. (<a href="https://deepmind.google/discover/blog/rt-2-new-model-translates-vision-and-language-into-action/">source</a>)</p>
+<p>Mobile ALOHA is another example of combining modern machine learning techniques with robotics. Trained using supervised behavioral cloning, the robot can autonomously perform complex tasks “<em>such as sauteing and serving a piece of shrimp, opening a two-door wall cabinet to store heavy cooking pots, calling and entering an elevator, and lightly rinsing a used pan using a kitchen faucet.</em>” (<a href="https://arxiv.org/abs/2401.02117">source</a>) Such advancements not only demonstrate the increasing sophistication and applicability of robotic systems but also highlight the potential for further groundbreaking developments in autonomous technologies.</p>
+<p><img alt="Enter image alt description" src="../Images/3A4_Image_10.png" /></p>
+<p><strong><em>Figure:</em></strong><em> DeepMinds RT-2 can both plan long-horizon skill sequences and predict robot actions using inspiration from <abbr title="Large Language Model. An AI model that takes in some text and predicts how it’s most likely to continue.">LLM</abbr> prompting techniques (<abbr title="A prompting technique which makes a language model generate intermediate reasoning steps in its output.">chain-of-thought</abbr>). (</em><em><a href="https://deepmind.google/discover/blog/rt-2-new-model-translates-vision-and-language-into-action/">source</a></em><em>)</em></p>
+<h2 id="05">1.1.5 Playing Games<a class="headerlink" href="#05" title="Permanent link">&para;</a></h2>
+<p><strong>AI and board games.</strong> AI has made continuous progress in game playing for decades. Starting from AIs beating the world champion at chess in 1997 (<a href="https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)">source</a>), Scrabble in 2006 (<a href="https://content.time.com/time/specials/packages/article/0,28804,2049187_2049195_2049083,00.html">source</a>) to DeepMind’s <a href="https://www.deepmind.com/research/highlighted-research/alphago">AlphaGo</a> in 2016, which was good enough to defeat the world champion in the game of Go, a game assumed to be notoriously difficult for AI. Within a year, the next model <a href="https://www.deepmind.com/blog/alphazero-shedding-new-light-on-chess-shogi-and-go">AlphaZero</a> trained through self-play had mastered multiple games of Go, chess, and shogi reaching a superhuman level after less than three days of training.</p>
+<p><strong>AI and video games.</strong> We started using machine learning techniques on simple Atari games in 2013 (<a href="https://arxiv.org/abs/1312.5602">source</a>). By 2019, OpenAI Five defeated the world champions at DOTA2 (<a href="https://openai.com/research/openai-five-defeats-dota-2-world-champions">source</a>), while in the same year, DeepMind’s AlphaStar beat professional esports players at StarCraft II (<a href="https://www.deepmind.com/blog/alphastar-mastering-the-real-time-strategy-game-starcraft-ii">source</a>). Both these games require thousands of actions in a row at a high number of actions per minute. In 2020 DeepMind MuZero model, described as “<em>a significant step forward in the pursuit of general-purpose algorithms</em>” (<a href="https://www.deepmind.com/blog/muzero-mastering-go-chess-shogi-and-atari-without-rules">source</a>), was capable of playing Atari games, Go, chess, and shogi without even being told the rules.</p>
+<p>In recent years, AI's capability has extended to open-ended environments like Minecraft, showcasing an ability to perform complex sequences of actions. In strategy games, Meta’s Cicero displayed intricate strategic negotiation and deception skills in natural language for the game Diplomacy (<a href="https://arxiv.org/abs/2210.05492">source</a>).</p>
+<p><img alt="Enter image alt description" src="../Images/KMJ_Image_11.png" /></p>
+<p><strong><em>Figure</em></strong><em>: A map of diplomacy and the dialog box where the AI negotiates. (</em><em><a href="https://www.youtube.com/watch?v=u5192bvUS7k&amp;t=2216s">source</a></em><em>)</em></p>
+<details class="note">
+<summary>Example of Voyager: Planning and Continuous Learning in Minecraft with GPT-4</summary>
+<p>Voyager (<a href="https://arxiv.org/abs/2305.16291">source</a>) stands as a particularly impressive example of the capabilities of AI in continuous learning environments. This AI is designed to play Minecraft, a task that involves a significant degree of planning and adaptive learning. What makes Voyager so remarkable is its ability to learn continuously and progressively within the game's environment, using GPT-4 contextual reasoning abilities to plan and write the code necessary for each new challenge. Starting from scratch in a single game session, Voyager initially learns to navigate the virtual world, engage and defeat enemies, and remember all these skills in its long-term memory. As the game progresses, it continues to learn and store new skills, leading up to the challenging task of mining diamonds, a complex activity that requires a deep understanding of the game mechanics and strategic planning. The ability of Voyager to integrate new information continuously and utilize it effectively showcases the potential of AI in managing complex, changing environments and performing tasks that require a long-term buildup of knowledge and skills.</p>
+<p><img alt="Enter image alt description" src="../Images/ccN_Image_12.png" /></p>
+<p><strong>Figure</strong>: Voyager discovers new Minecraft items and skills continually by self-driven exploration, significantly outperforming the baselines. (<a href="https://arxiv.org/abs/2305.16291">source</a>)</p>
+</details>
+<!-- Abbreviations -->
+
+<!--
+*[Large language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[large language models]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+
+<!--*[ML]: Machine Learning. An approach to AI in which, instead of designing an algorithm directly, we have the system search through possible algorithms based on how well they do on some training data.-->
+
+<!--*[Neural network]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.-->
+<!--*[NN]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.-->
+
+<!-- Glossary -->
+
+<!--*[AGI]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+<!--*[artificial general intelligence]: AI that is at least as good as humans at general problem-solving.-->
+<!--*[AGIs]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+<!--*[AGI’s]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+
+<!--HLAI-->
+<!--Human level AI-->
+
+<!--
+*[Ethics of artificial intelligence]: The study of ethical principles for AI systems and their creators to follow. In practice, “AI ethics”this often refers to a cluster of concerns about present systems that include algorithmic bias and transparency.-->
+
+<!--Catastrophic risk-->
+<!--catastrophic risk-->
+<!--catastrophic risks-->
+
+<!--
+*[Feature]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+<!--*[features]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+
+<!--polysemantic-->
+<!--polysemanticity-->
+<!--monosemantic-->
+<!--monosemanticity-->
+<!--superposition-->
+
+<!--
+*[Optimization algorithm]: A general procedure for finding solutions that score highly according to some well-defined objective function.-->
+
+<!--
+*[Optimizer]: Something that can improve some process or physical artifact so that it is fit for a certain purpose or fulfills some set of requirements.-->
+
+<!--bitter lesson-->
+<!--scaling laws-->
+<!--scaling hypothesis-->
+<!--bio anchors-->
+<!--biological anchors-->
+<!--world models-->
+<!--RAAP-->
+<!--RAAPs-->
+<!--CAIS-->
+<!--emergence-->
+<!--Few-shot -->
+<!--Zero-shot -->
+
+<!--Few-shot prompting-->
+<!--A technique where a language model is prompted with a few examples of problems with solutions, and is then asked to find a solution to the next problem.-->
+<!--treacherous turn-->
+<!--policy-->
+<!--policies-->
+<!--embedding-->
+<!--embeddings-->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../02/" class="md-footer__link md-footer__link--next" aria-label="Next: 1.2 Foundation Models">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                1.2 Foundation Models
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.top", "navigation.footer", "navigation.sections", "navigation.tacking", "navigation.path", "navigation.prune", "content.tooltips", "content.footnote.tooltips", "header.autohide", "announce.dismiss", "toc.integrate", "toc.follow"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../../overrides/js/mathjax.js"></script>
+      
+        <script src="../../../overrides/js/glossary.js"></script>
+      
+        <script src="../../../overrides/js/toc_collapse.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
