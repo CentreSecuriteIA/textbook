@@ -1,0 +1,1509 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ai-safety-atlas.com/chapters/07/02/">
+      
+      
+        <link rel="prev" href="../01/">
+      
+      
+        <link rel="next" href="../03/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
+    
+    
+      
+        <title>7.2 Inner Alignment - The AI Safety Atlas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../overrides/css/base.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/buttons.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/header_footer.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/typography.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/glossary.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/iframe.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/toc.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#02" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="The AI Safety Atlas" class="md-header__button md-logo" aria-label="The AI Safety Atlas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The AI Safety Atlas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7.2 Inner Alignment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Book
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../courses/" class="md-tabs__link">
+        
+  
+    
+  
+  Courses
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../feedback/" class="md-tabs__link">
+        
+  
+    
+  
+  Feedback
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://aisafety.info/questions/8TJV/How-can-I-help" class="md-tabs__link">
+        
+  
+    
+  
+  Contribute
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="The AI Safety Atlas" class="md-nav__button md-logo" aria-label="The AI Safety Atlas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    The AI Safety Atlas
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Book
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Book
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../01/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    01 - Capabilities
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../02/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    02 - Risks Landscape
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../03/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    03 - Solutions Landscape
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../04/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    04 - Evaluations
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../05/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    05 - Governance
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../06/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    06 - Reward Misspecification
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_8" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    07 - Goal Misgeneralization
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_8" id="__nav_2_1_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_8">
+            <span class="md-nav__icon md-icon"></span>
+            07 - Goal Misgeneralization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1 Goal Misgeneralization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    7.2 Inner Alignment
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    7.2 Inner Alignment
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.1 Optimization = Search
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.2 Mesa Optimizers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2.3 Objective taxonomy
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.3 Deceptive alignment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../08/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    08 - Scalable Oversight
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../09/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    09 - Interpretability
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../courses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Courses
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://aisafety.info/questions/8TJV/How-can-I-help" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="02">7.2 <abbr title="When an mesa optimizer pursues a different objective than the one that was specified.">Inner Alignment</abbr><a class="headerlink" href="#02" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Reading Time: 9 minutes</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">This section is still being written and is considered a work in progress.</p>
+</div>
+<h2 id="01">7.2.1 Optimization = Search<a class="headerlink" href="#01" title="Permanent link">&para;</a></h2>
+<p>Traditional programming requires the explicit coding of a set of instructions to solve a specified problem. Programmers go step-by-step discovering and implementing the required algorithms. However, sometimes it’s too hard to hand-code a solution. In this case, the focus changes to a learning based approach. The learning based approach entails the automated finding of new algorithms instead of relying on pre-programmed logic.</p>
+<p>In machine learning, the term 'learning' refers to a system or an algorithm that continuously refines an algorithm. This means that ML can be broken down into three individual parts:</p>
+<ul>
+<li>
+<p><strong><abbr title="The algorithms that a base optimizer finds to solve the problem it has been given.">Learned algorithm</abbr></strong>: This is represented by the <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> of the neural network. A combination of the floating point numbers in these <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> encodes an algorithmic process that matches the inputs to the desired outputs.</p>
+</li>
+<li>
+<p><strong>Objective</strong>: This is either a piece of code, or math, that captures what the programmers want the learned algorithm to do. This could be, for example, a reward function for a reinforcement learning system, or a loss function in a deep learning system. Such functions take as input the answers or actions of our machine learning model, and output a measure of how good they are, which serves as feedback during training.</p>
+</li>
+<li>
+<p><strong>Refinement process</strong>: The learned algorithm is initially made up of random floating point numbers. Which means that it initially performs random actions. Slowly through the process of refinement, it should perform the specific actions which cause it to achieve a good score on the desired objective. This is commonly an optimization algorithm such as stochastic gradient descent (SGD). This algorithm modifies the <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> of the learning model in function of its performance. For example, gradient descent strengthens or weakens the connections in a neural network in a way that makes its outputs achieve better scores according to the loss function. </p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Definition: Optimizer</p>
+<p><em>An </em><strong><em>optimizer</em></strong><em> is a system that internally searches through some space of possible outputs, policies, plans, strategies, etc. looking for those that do well according to some internally-represented objective function. - </em>Hubinger et. al. (Jun 2019) “<em><a href="https://intelligence.org/learned-optimization/">Risks from Learned Optimization (Glossary)</a></em>”</p>
+</div>
+<p>Optimization algorithms like gradient descent can be thought of as being analogous to search algorithms. Every collection of <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> making up neural networks encodes some algorithm. So the search space is the set of algorithms that can be encoded by the available number of free <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> in the neural network.</p>
+<p>The size of the search space corresponds to the number of free <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> in a neural network. This then also relates directly to the quantity of algorithms that can theoretically be located within this space. More free <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr>, implies a more complex possible internal algorithm. This is referred to as the "algorithmic range" of the network.</p>
+<div class="admonition info">
+<p class="admonition-title">Definition: Algorithmic Range</p>
+<p><em>The </em><strong><em>algorithmic range</em></strong><em> of a machine learning system refers to how extensive the set of algorithms capable of being found be the base optimizer is. - </em>Hubinger et. al. (Jun 2019) “<em><a href="https://intelligence.org/learned-optimization/">Risks from Learned Optimization (Glossary)</a></em>”</p>
+</div>
+<p>As an example, In the following diagram every black dot represents a full set of possible neural network <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr>, which collectively represent some algorithm. A maze solving agent then has following search space of algorithms:</p>
+<p><img alt="Enter image alt description" src="../Images/ni9_Image_6.png" /></p>
+<p>Source: Harth, Rafael (Aug 2020) “<em><a href="https://www.alignmentforum.org/posts/AHhCrJ2KpTjsCSwbt/inner-alignment-explain-like-i-m-12-edition"><abbr title="When an mesa optimizer pursues a different objective than the one that was specified.">Inner Alignment</abbr>: Explain like I'm 12 Edition</a></em>”</p>
+<p>Stochastic gradient descent (SGD) searches through this space according to the direction dictated by the steepest descent of the loss. Depending on where gradient descent starts in this search space, certain algorithms might be harder, or easier to reach. This is called “reachability”.</p>
+<div class="admonition info">
+<p class="admonition-title">Definition: Algorithmic <abbr title="The reachability of a learned algorithm refers to the difficulty for the base optimizer to find that learned algorithm.">Reachability</abbr></p>
+<p><em>The reachability of a learned algorithm refers to the difficulty for the base optimizer to find that learned algorithm. - </em>Hubinger et. al. (Jun 2019) “<em><a href="https://intelligence.org/learned-optimization/">Risks from Learned Optimization (Glossary)</a></em>”</p>
+</div>
+<p>The search target is an algorithm that performs well on the evaluation criteria. In supervised learning, for instance, the search seeks the best <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> that minimize the difference between predicted outputs and true labels. In reinforcement learning, it focuses on locating the optimal policy to maximize the cumulative reward signal.</p>
+<p><img alt="Enter image alt description" src="../Images/Wws_Image_7.png" /></p>
+<p>Source: Harth, Rafael (Aug 2020) “<em><a href="https://www.alignmentforum.org/posts/AHhCrJ2KpTjsCSwbt/inner-alignment-explain-like-i-m-12-edition"><abbr title="When an mesa optimizer pursues a different objective than the one that was specified.">Inner Alignment</abbr>: Explain like I'm 12 Edition</a></em>”</p>
+<h2 id="02">7.2.2 Mesa Optimizers<a class="headerlink" href="#02" title="Permanent link">&para;</a></h2>
+<p>In the framing of Risks from learned optimization (RFLO), gradient descent is referred to as a base optimizer.</p>
+<div class="admonition info">
+<p class="admonition-title">Definition: Base Optimizer</p>
+<p><em>A </em><strong><em>base optimizer </em></strong><em>is an optimizer that searches through algorithms according to some objective. A </em><strong><em>base objective</em></strong><em> is the objective of a base optimizer. The algorithms that a base optimizer is searching through are called </em><strong><em>learned algorithms</em></strong><em>. - </em>Hubinger et. al. (Jun 2019) “<em><a href="https://intelligence.org/learned-optimization/">Risks from Learned Optimization (Glossary)</a></em>”</p>
+</div>
+<p>Throughout the search procedure (training), direct control over the resulting algorithm type remains minimal. Provided that the discovered set of <abbr title="Values an AI system that are modified during training to change the AI's performance.">parameters</abbr> perform well on the original specified objective, training could potentially result in any class of algorithm. Consequently, one type of algorithm potentially ‘discovered’ by SGD while going through the algorithm space could be yet another search (optimization) algorithm. In essence, learned algorithms can serve as optimizers themselves. Such entities are referred to as mesa- (or inner or learned) optimizers. They search for their own mesa-objective. Therefore, during training, SGD could identify a <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr>—a model not only optimized but also capable of executing optimization itself.</p>
+<div class="admonition info">
+<p class="admonition-title">Definition: Mesa-Optimizer</p>
+<p><em>A </em><strong><em><abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr></em></strong><em> is a learned algorithm that is itself an optimizer. A </em><strong><em>mesa-objective</em></strong><em> is the objective of a <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr>. - </em>Hubinger et. al. (Jun 2019) “<em><a href="https://intelligence.org/learned-optimization/">Risks from Learned Optimization (Glossary)</a></em>”</p>
+</div>
+<p><img alt="Enter image alt description" src="../Images/1Dw_Image_8.png" /></p>
+<p>Source: Hubinger, Evan (Jan 2023) “<em><a href="https://www.youtube.com/watch?v=oY7c75ggrRI">AI Safety Talks - Risks from Learned Optimization</a></em>”</p>
+<p>“Meta” refers to the above/upper level of something. E.g. Meta-Learning is learning how to learn. Similarly "Mesa" is Greek for inner/within/inside. "Optimizer" is the term for something that solves problems. So "<abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr>" means something like "inner problem-solver".</p>
+<p>As an example, imagine evolution as a process that is trying to get the best genes to be passed on through generations. This is the base optimizer. It tries out random mutations, and if these changes help the organism survive better or reproduce more, those changes are kept and passed on. Now, consider humans. They are a product of this process, but their behaviors and goals are not solely focused on passing on genes. This makes humans mesa-optimizers. They are optimizing for their own objectives, not just the objective that evolution 'intended'.</p>
+<p>Why does finding a <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> warrant more concern than locating any other arbitrary algorithm type? Two primary reasons exist:</p>
+<ul>
+<li>
+<p>Firstly, optimization can lead to arbitrarily bad end states. Failures due to over-optimization were already explored in the previous chapter. It can lead to possible extreme actions that veer from intended behavior and potentially induce harm or undesirable outcomes. While a conventional algorithm is a mere set of heuristics, optimizers adjust their own behavior or environment to yield improved results. Similar to how SGD can improve the performance of the learned algorithm, these systems can learn from experience (potentially even post training) and enhance performance over time relative to their mesa-objective.</p>
+</li>
+<li>
+<p>Secondly, there are now two divergent search targets—SGDs human-set performance metric (base objective), and the mesa-optimizers own performance metric (mesa-objective). This means that now there are two problems - Align the goal inside the human mind with the goal given to gradient descent, and, align the goal inside gradient descent to the goal given to the <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa optimizer</abbr>.</p>
+</li>
+</ul>
+<p>Trying to get the objective of these two different optimization processes to match up with each other is what is called the inner alignment problem.</p>
+<div class="admonition info">
+<p class="admonition-title">Definition: <abbr title="When a mesa optimizer ends up pursuing the objective that was specified.">Inner alignment</abbr> problem</p>
+<p>“... <em>[We define the] problem of aligning mesa-optimizers with the base objective as the </em><strong><em>inner alignment problem.</em></strong>”</p>
+<p>Hubinger et. al. (Jun 2019) “<a href="https://arxiv.org/abs/1906.01820">Risks from Learned Optimization</a>”</p>
+</div>
+<p>There are some common confusions around the concept of mesa-optimizers and mesa-objectives that merit clarification:</p>
+<p><strong>Mesa-Optimizers ≠ Sub-Agents: </strong>Optimization does not imply agency. Similarly, in the context of deep learning, a <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> is simply a neural network that is implementing some <abbr title="Something that can improve some process or physical artifact so that it is fit for a certain purpose or fulfills some set of requirements.">optimization process</abbr> and not some emergent subagent inside that neural network. Mesa-optimizers are simply a particular type of algorithm that the base optimizer might find to solve its task. Furthermore, the base optimizer will generally be considered a straightforward optimization algorithm, and not as an intelligent agent choosing to create a subagent. A subagent is an agent that is a part of an agent; a <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> is an optimizer that is optimized by an optimizer.</p>
+<p><strong>Mesa-Objective ≠ Behavioral Objective</strong>: Informally, the behavioral objective is the objective which “appears” to be optimized by the system’s behavior. This is in contrast to the mesa-objective, which is the objective actually being used by the <abbr title="An algorithm that is created by optimization and that is also itself an optimizer.">mesa-optimizer</abbr> in its optimization algorithm.</p>
+<div class="admonition info">
+<p class="admonition-title">Definition: Behavioral Objective</p>
+<p><em>The behavioral objective is what an optimizer appears to be optimizing for. Formally, the behavioral objective is the objective recovered from perfect inverse reinforcement learning.</em></p>
+<p><em>- </em>Hubinger et. al. (Jun 2019) “<em><a href="https://intelligence.org/learned-optimization/">Risks from Learned Optimization (Glossary)</a></em>”</p>
+</div>
+<h2 id="03">7.2.3 Objective taxonomy<a class="headerlink" href="#03" title="Permanent link">&para;</a></h2>
+<p>Within the alignment community, unfortunately, a myriad of definitions for 'inner alignment' circulate. The term 'inner alignment' has since been extended beyond its original narrow context as defined above, leading to widespread confusion. This situation has been acknowledged by Evan Hubinger himself in <a href="https://www.lesswrong.com/posts/HYERofGZE6j9Tuigi/?commentId=Gp7fDFdN7sFCJAA2m">response</a> to John Wentworth's post, <a href="https://www.lesswrong.com/posts/HYERofGZE6j9Tuigi/inner-alignment-failures-which-are-actually-outer-alignment">"<abbr title="When an mesa optimizer pursues a different objective than the one that was specified.">Inner Alignment</abbr> Failures" Which Are Actually Outer Alignment Failures</a>.</p>
+<p><abbr title="Pursuing a different goal during deployment than was intended to be learned in training.">Goal misgeneralization</abbr> leverages its own breakdown of the alignment problem as was introduced earlier. Misgeneralization, in the generalization taxonomy, points to an AI system's inability to accurately generalize its learned objective to new distributions, while inner alignment, belonging to the objective-based taxonomy, zeroes in on aligning the base objective with the learned objective  within the system.</p>
+<p><img alt="Enter image alt description" src="../Images/ALh_Image_9.png" /></p>
+<p>Source: Hubinger, Evan (Nov 2020) “<em><a href="https://www.alignmentforum.org/posts/SzecSPYxqRa5GCaSF/clarifying-inner-alignment-terminology">Clarifying inner alignment terminology</a></em>”</p>
+<p>The emphasis within the objective focused approach is towards ensuring that AI models or agents have the correct objectives or goals. The natural decomposition is then to separate alignment into two problems:</p>
+<ul>
+<li>
+<p>How do we specify an outer (base) objective that incentivizes good behavior in all situations that the model will ever encounter?</p>
+</li>
+<li>
+<p>How do we ensure that the mesa objective equals the base objective?</p>
+</li>
+</ul>
+<!-- Abbreviations -->
+
+<!--
+*[Large language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[large language models]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+
+<!--*[ML]: Machine Learning. An approach to AI in which, instead of designing an algorithm directly, we have the system search through possible algorithms based on how well they do on some training data.-->
+
+<!--*[Neural network]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.-->
+<!--*[NN]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.-->
+
+<!-- Glossary -->
+
+<!--*[AGI]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+<!--*[artificial general intelligence]: AI that is at least as good as humans at general problem-solving.-->
+<!--*[AGIs]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+<!--*[AGI’s]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+
+<!--HLAI-->
+<!--Human level AI-->
+
+<!--
+*[Ethics of artificial intelligence]: The study of ethical principles for AI systems and their creators to follow. In practice, “AI ethics”this often refers to a cluster of concerns about present systems that include algorithmic bias and transparency.-->
+
+<!--Catastrophic risk-->
+<!--catastrophic risk-->
+<!--catastrophic risks-->
+
+<!--
+*[Feature]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+<!--*[features]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+
+<!--polysemantic-->
+<!--polysemanticity-->
+<!--monosemantic-->
+<!--monosemanticity-->
+<!--superposition-->
+
+<!--
+*[Optimization algorithm]: A general procedure for finding solutions that score highly according to some well-defined objective function.-->
+
+<!--
+*[Optimizer]: Something that can improve some process or physical artifact so that it is fit for a certain purpose or fulfills some set of requirements.-->
+
+<!--bitter lesson-->
+<!--scaling laws-->
+<!--scaling hypothesis-->
+<!--bio anchors-->
+<!--biological anchors-->
+<!--world models-->
+<!--RAAP-->
+<!--RAAPs-->
+<!--CAIS-->
+<!--emergence-->
+<!--Few-shot -->
+<!--Zero-shot -->
+
+<!--Few-shot prompting-->
+<!--A technique where a language model is prompted with a few examples of problems with solutions, and is then asked to find a solution to the next problem.-->
+<!--treacherous turn-->
+<!--policy-->
+<!--policies-->
+<!--embedding-->
+<!--embeddings-->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../01/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 7.1 Goal Misgeneralization">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                7.1 Goal Misgeneralization
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../03/" class="md-footer__link md-footer__link--next" aria-label="Next: 7.3 Deceptive alignment">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                7.3 Deceptive alignment
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.top", "navigation.footer", "navigation.sections", "navigation.tacking", "navigation.path", "navigation.prune", "content.tooltips", "content.footnote.tooltips", "header.autohide", "announce.dismiss", "toc.integrate", "toc.follow"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../../overrides/js/mathjax.js"></script>
+      
+        <script src="../../../overrides/js/glossary.js"></script>
+      
+        <script src="../../../overrides/js/toc_collapse.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
