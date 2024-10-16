@@ -12,7 +12,6 @@
 
 <!-- ![AI Safety](https://lh7-us.googleusercontent.com/XuuImYOYY7YElHDnooD6S7k1tf11JAV_a7LQZ6IUXbItUbPp0p7sAgDp1EjHJAuuHvZ_cJ-pj7rGq7SLxb0O4Xe9OkyRIEKh4R8TwoUwERq8TJxKRMQdixUPBjXXwVEjog_AqBgNiCwvE9QHEHlr_rk) -->
 
-
 Currently, AI Safety educational materials often rely heavily on a patchwork of many external links to blog posts and research papers. This content varies in terms of technical depth and communication style, posing a significant barrier to coherent learning. We are writing a textbook that aims to unify the disparate narratives in the field of AI Safety into a seamless end-to-end narrative. This helps improve the learning experience for newcomers, while at the same time also providing a single unified reference text for existing researchers in the field.
 
 This textbook is designed to serve as the central comprehensive educational resource for the AI safety field bringing together, organizing and presenting arguments on AI Safety from research papers, blog posts, seminars and lectures, etc.
@@ -70,9 +69,9 @@ The alignment field is a pre-paradigmatic, and there is no right or wrong resear
 </div>
 
 !!! quote "Reception"
-    * “*I found it to be very well written and super insightful. Learned tons of new things. Looking forwards to continue reading.*” - Participant of ML4G Germany 2023.
+    *“*I found it to be very well written and super insightful. Learned tons of new things. Looking forwards to continue reading.*” - Participant of ML4G Germany 2023.
     * “*I liked the text, was well written, concise, easy to follow, contained many important points.*” - Participant of ML4G Germany 2023.
-    * “*The textbooks are very helpful to keep a clear line of thought and a better structure.*”  - Participant of ML4G France 2023.
+    *“*The textbooks are very helpful to keep a clear line of thought and a better structure.*”  - Participant of ML4G France 2023.
     * “*The material and content are great, thank you for writing it and I can't wait to read it in its entirety.*” - Participant of ML4G France 2023.
 
 ## **About**
@@ -81,3 +80,7 @@ The alignment field is a pre-paradigmatic, and there is no right or wrong resear
     This textbook was created by Charbel-Raphael Segerie, Markov Grey, Jeanne Salle, and Vincent Corruble. We are actively looking for funding to be able to continue working on this project. Please consider either reaching out, or upvoting us on [Manifund](https://manifund.org/projects/ai-safety-textbook) if you like our work.
 
     Contacts: [Charbel-Raphael Segerie](mailto:crsegerie@gmail.com), [Markov Grey](mailto:ai_safety_textbook.y4wqu@slmail.me).
+
+This book is a project from the French Center for AI Safety (Centre pour la Securité de l'IA, CeSIA).
+
+<img src="Images/CeSIA.png" alt="CeSIA - Centre pour la Sécurité de l'IA" style="width: 35%;" />
