@@ -14,11 +14,11 @@ We explore various potential paths to Artificial General Intelligence (AGI). Thi
 
 The core objective of this chapter is to examine trends, key capability thresholds, and potential development trajectories, to lay a solid foundation for the subsequent chapters of this textbook. Only when we have a solid understanding based on trends, can we begin to discuss the risks, and then potential solutions in the following chapters.
 
-[:fontawesome-solid-book: Read          ](01/README.md){ .md-button }
-[:fontawesome-solid-download: Download  ](https://drive.google.com/file/d/10fO4qjxHX3OiNnafNlp5nvF-9nLW8TOt/view?usp=sharing){ .md-button }
-[:fontawesome-solid-headphones: Listen  ](){ .md-button .md-button--disabled }
-[:fontawesome-solid-video: Watch        ](){ .md-button .md-button--disabled }
-[:fontawesome-solid-users: Facilitate   ](https://docs.google.com/document/d/1L32xCVUCWEsm-x8UZ3GSTgKnmBcC7rJQLLIh9wGLj40/edit?usp=sharing){ .md-button }
+[:fontawesome-solid-book: Read](01/README.md){ .md-button }
+[:fontawesome-solid-download: Download](https://drive.google.com/file/d/10fO4qjxHX3OiNnafNlp5nvF-9nLW8TOt/view?usp=sharing){ .md-button }
+[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled }
+[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled }
+[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1L32xCVUCWEsm-x8UZ3GSTgKnmBcC7rJQLLIh9wGLj40/edit?usp=sharing){ .md-button }
 
 ### Chapter 2: Risks Landscape
 
@@ -28,11 +28,11 @@ We decompose these risks into three main groups: Misuse, Misalignment, and Syste
 
 The goal of this chapter is to provide a concrete, comprehensive overview of AI-related risks and their underlying factors. This foundation is crucial for understanding the governance and technical solutions discussed in later chapters, as each of these solutions aims to address one or more of the risks introduced here.
 
-[:fontawesome-solid-book: Read        ](02/README.md){ .md-button } 
-[:fontawesome-solid-download: Download](https://drive.google.com/file/d/1ymYnH9MfKFw6NnufsTY5BDCAmfVhIJG6/view?usp=sharing){ .md-button } 
-[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-video: Watch      ](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-users: Facilitate ](https://docs.google.com/document/d/1evE1rG91DKBuKlWnqPw45QtPxKBz0GlD_ZYrurNdvN4/edit?usp=sharing){ .md-button }
+[:fontawesome-solid-book: Read](02/README.md){ .md-button }
+[:fontawesome-solid-download: Download](https://drive.google.com/file/d/1ymYnH9MfKFw6NnufsTY5BDCAmfVhIJG6/view?usp=sharing){ .md-button }
+[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled }
+[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled }
+[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1evE1rG91DKBuKlWnqPw45QtPxKBz0GlD_ZYrurNdvN4/edit?usp=sharing){ .md-button }
 
 ### Chapter 3: Solutions Landscape
 
@@ -46,10 +46,10 @@ To understand proposed solutions to broader systemic risks, we explore AI govern
 
 Overall, this chapter serves as a stepping stone to future chapters, which will cover each solution mentioned here in greater individual depth. It provides a crucial link between understanding risks and implementing practical safety measures.
 
-[:fontawesome-solid-book: Read](03/README.md){ .md-button } 
-[:fontawesome-solid-download: Download](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-book: Read](03/README.md){ .md-button }
+[:fontawesome-solid-download: Download](){ .md-button .md-button--disabled }
+[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled }
+[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled }
 [:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1cv0gzwSouDjckYHzV7gYbHPKhJZR6bwbJWgHzEJ604Q/edit?usp=sharing){ .md-button  }
 
 ### Chapter 4: Evaluations
@@ -67,10 +67,10 @@ It will explore the critical role of evaluations in AI safety, presenting a comp
 
 This chapter will aim to provide readers with a comprehensive understanding of how to assess and ensure the safety of AI systems as they grow increasingly complex and capable.
 
-[:fontawesome-solid-book: Read](04/README.md){ .md-button .md-button--disabled} 
-[:fontawesome-solid-download: Download](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-book: Read](04/README.md){ .md-button .md-button--disabled}
+[:fontawesome-solid-download: Download](){ .md-button .md-button--disabled }
+[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled }
+[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled }
 [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled }
 
 ### Chapter 5: Governance
@@ -89,9 +89,9 @@ We will explain the full landscape of AI governance across corporate, national, 
 - Lessons from governance efforts in other fields and their potential application to AI.
 
 [:fontawesome-solid-book: Read](05/README.md){ .md-button .md-button--disabled}
-[:fontawesome-solid-download: Download](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-download: Download](){ .md-button .md-button--disabled }
+[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled }
+[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled }
 [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled }
 
 ## TECHNICAL SAFETY
@@ -106,30 +106,30 @@ In structuring the chapters we tried to follow the paradigm of - present the pro
 
 The first chapter in the technical safety series addresses a fundamental challenge in AI alignment: the problem of reward misspecification. We explore how reward functions given to reinforcement learning agents can fail to capture intended goals, leading to unintended behaviors. The chapter covers key concepts such as reinforcement learning fundamentals, optimization pitfalls including Goodhart's Law, and various reward-related challenges. We then examine alternative approaches like imitation learning and inverse reinforcement learning. Finally, we discuss advanced techniques such as Reinforcement Learning from Human Feedback (RLHF) and its extensions, including their limitations and potential solutions like Direct Preference Optimization (DPO).
 
-[:fontawesome-solid-book: Read](06/README.md){ .md-button } 
-[:fontawesome-solid-download: Download](https://drive.google.com/file/d/1my3TSNPU-gzzv48MEN763EhIYL_UvG5v/view?usp=sharing){ .md-button } 
-[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-book: Read](06/README.md){ .md-button }
+[:fontawesome-solid-download: Download](https://drive.google.com/file/d/1my3TSNPU-gzzv48MEN763EhIYL_UvG5v/view?usp=sharing){ .md-button }
+[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled }
+[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled }
 [:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1JfmzGii5QG6hW8AM5WxzDBVyGc14aLV_Lc_1PkK2ZLc/edit?usp=sharing){ .md-button }
 
 ### Chapter 7: Goal Misgeneralization
 
 The second chapter in the technical safety series, addresses Goal Misgeneralization. This is the problem of AI systems pursuing targets that differ from those intended by the developers. We explore why exactly cross distribution generalization is a difficult problem and covers concepts such as mesa-optimization, inner alignment, and deceptive alignment.
 
-[:fontawesome-solid-book: Read](07/README.md){ .md-button } 
-[:fontawesome-solid-download: Download](https://drive.google.com/file/d/1lHSTzwlDukble7n1dXO5zoKhAybXgRYo/view?usp=sharing){ .md-button } 
-[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-book: Read](07/README.md){ .md-button }
+[:fontawesome-solid-download: Download](https://drive.google.com/file/d/1lHSTzwlDukble7n1dXO5zoKhAybXgRYo/view?usp=sharing){ .md-button }
+[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled }
+[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled }
 [:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1uQooTncb7Hw2NhITtr3S5iGHqT6cvj74c0SZ4Unad_M/edit?usp=sharing){ .md-button }
 
 ### Chapter 8: Scalable Oversight
 
 This chapter follows up from the chapter on specification gaming. It introduces the problem of providing effective supervision even when the outputs of AI become too complex for human evaluators. We explore approaches such as task decomposition, process-based oversight, and debate.
 
-[:fontawesome-solid-book: Read](08/README.md){ .md-button } 
-[:fontawesome-solid-download: Download](https://drive.google.com/file/d/17PVzvEMM7CiOaTIP_HH5h_YUrgV0iG1F/view?usp=sharing){ .md-button } 
-[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-book: Read](08/README.md){ .md-button }
+[:fontawesome-solid-download: Download](https://drive.google.com/file/d/17PVzvEMM7CiOaTIP_HH5h_YUrgV0iG1F/view?usp=sharing){ .md-button }
+[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled }
+[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled }
 [:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1DaygDSW0L5dWuJnpSjYPF2XUbW51UoBJsT1cjLYKc2w/edit?usp=sharing){ .md-button }
 
 ### Chapter 9.1: Interpretability: Vision
@@ -138,10 +138,10 @@ This chapter is currently still being written.
 
 This chapter focuses on interpretability techniques for vision models. We cover various methods including feature visualization, attribution techniques, and automatic interpretability.
 
-[:fontawesome-solid-book: Read](https://www.lesswrong.com/posts/XZfJvxZqfbLfN6pKh/introductory-textbook-to-vision-models-interpretability){ .md-button } 
-[:fontawesome-solid-download: Download](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-book: Read](https://www.lesswrong.com/posts/XZfJvxZqfbLfN6pKh/introductory-textbook-to-vision-models-interpretability){ .md-button }
+[:fontawesome-solid-download: Download](){ .md-button .md-button--disabled }
+[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled }
+[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled }
 [:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1izDWZKR_xB2qj2a8LkbqcnqnjBIC-C7fn-74CIA-m9w/edit?usp=sharing){ .md-button }
 
 ### Chapter 9.2: Interpretability: NLP
@@ -150,10 +150,10 @@ This chapter is currently still being written.
 
 Complementing the previous chapter on vision interpretability, this section focuses on transformer mechanistic interpretability. We explore techniques to understand the inner workings of language models, including methods like the Logit Lens, knowledge editing, and concept erasure.
 
-[:fontawesome-solid-book: Read](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-download: Download](https://drive.google.com/file/d/145_PXa5XE1iaq911NmO25Res_ALAGLlE/view?usp=sharing){ .md-button } 
-[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-book: Read](){ .md-button .md-button--disabled }
+[:fontawesome-solid-download: Download](https://drive.google.com/file/d/145_PXa5XE1iaq911NmO25Res_ALAGLlE/view?usp=sharing){ .md-button }
+[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled }
+[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled }
 [:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1izDWZKR_xB2qj2a8LkbqcnqnjBIC-C7fn-74CIA-m9w/edit?usp=sharing){ .md-button }
 
 ### Chapter 10: Agent Foundations
@@ -162,10 +162,10 @@ This chapter is currently still being written.
 
 The final chapter covers fundamental theoretical concepts in AI agent design, tying together many of the ideas explored in previous chapters. We examine key topics such as utility functions, decision theory, the distinction between agent AI and tool AI, natural abstractions, selection theorems, and various theories of value learning.
 
-[:fontawesome-solid-book: Read](https://docs.google.com/document/d/1z4CwGDUzHvPvfXNxyfDaIfh9kK1JBJWEcfdGUutfJY0/edit){ .md-button } 
-[:fontawesome-solid-download: Download](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
-[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-book: Read](https://docs.google.com/document/d/1z4CwGDUzHvPvfXNxyfDaIfh9kK1JBJWEcfdGUutfJY0/edit){ .md-button }
+[:fontawesome-solid-download: Download](){ .md-button .md-button--disabled }
+[:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled }
+[:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled }
 [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled }
 
 The field of alignment does not stop at just the concepts presented in the textbook. Many schools of thought are only briefly touched upon. To get an overview of the field, the best advice is to stay curious and try out various different viewpoints.
@@ -173,6 +173,6 @@ The field of alignment does not stop at just the concepts presented in the textb
 !!! tip "How to Best Read This Book"
     One of the best ways to use this textbook is in a reading group consisting of students or young researchers who gather periodically. You don't need to have a large group; a friend is enough, which allows you to discuss the concepts presented in the different chapters critically. If you want to create a reading group to facilitate this course, please get in touch.
 
-This book is a project from CeSIA.
+This book is a project from the French Center for AI Safety (Centre pour la Securité de l'IA, CeSIA).
 
 <img src="Images/CeSIA.png" alt="CeSIA - Centre pour la Sécurité de l'IA" style="width: 35%;" />

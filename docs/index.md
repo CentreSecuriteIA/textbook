@@ -69,9 +69,9 @@ The alignment field is a pre-paradigmatic, and there is no right or wrong resear
 </div>
 
 !!! quote "Reception"
-    *“*I found it to be very well written and super insightful. Learned tons of new things. Looking forwards to continue reading.*” - Participant of ML4G Germany 2023.
+    * “*I found it to be very well written and super insightful. Learned tons of new things. Looking forwards to continue reading.*” - Participant of ML4G Germany 2023.
     * “*I liked the text, was well written, concise, easy to follow, contained many important points.*” - Participant of ML4G Germany 2023.
-    *“*The textbooks are very helpful to keep a clear line of thought and a better structure.*”  - Participant of ML4G France 2023.
+    * “*The textbooks are very helpful to keep a clear line of thought and a better structure.*”  - Participant of ML4G France 2023.
     * “*The material and content are great, thank you for writing it and I can't wait to read it in its entirety.*” - Participant of ML4G France 2023.
 
 ## **About**
@@ -83,4 +83,4 @@ The alignment field is a pre-paradigmatic, and there is no right or wrong resear
 
 This book is a project from the French Center for AI Safety (Centre pour la Securité de l'IA, CeSIA).
 
-<img src="Images/CeSIA.png" alt="CeSIA - Centre pour la Sécurité de l'IA" style="width: 35%;" />
+<img src="assets/CeSIA.png" alt="CeSIA - Centre pour la Sécurité de l'IA" style="width: 35%;" />
