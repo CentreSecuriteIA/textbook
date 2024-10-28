@@ -29,7 +29,7 @@ We decompose these risks into three main groups: Misuse, Misalignment, and Syste
 The goal of this chapter is to provide a concrete, comprehensive overview of AI-related risks and their underlying factors. This foundation is crucial for understanding the governance and technical solutions discussed in later chapters, as each of these solutions aims to address one or more of the risks introduced here.
 
 [:fontawesome-solid-book: Read](02/README.md){ .md-button }
-[:fontawesome-solid-download: Download](https://drive.google.com/file/d/1ymYnH9MfKFw6NnufsTY5BDCAmfVhIJG6/view?usp=sharing){ .md-button }
+[:fontawesome-solid-download: Download](https://drive.google.com/file/d/1Z5yra38Ybuf2f305DPRVDZvchLgrueD3/view?usp=sharing){ .md-button }
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled }
 [:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled }
 [:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1evE1rG91DKBuKlWnqPw45QtPxKBz0GlD_ZYrurNdvN4/edit?usp=sharing){ .md-button }
