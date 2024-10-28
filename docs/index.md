@@ -2,9 +2,9 @@
 
 # The AI Safety Atlas
 
-!!! warning "This textbook is still under construction. It will be updated regularly."
-
 [Read the Book](chapters/index.md){ .md-button }
+
+!!! warning "This textbook is still under construction. It will be updated regularly."
 
 ## **Overview**
 
