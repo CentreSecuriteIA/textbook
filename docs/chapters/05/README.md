@@ -1,11 +1,11 @@
 # Introduction
 
-[:fontawesome-solid-download: Download](){ .md-button .md-button--disabled } 
+[:fontawesome-solid-download: Download](https://drive.google.com/file/d/1InewRHNRlxVxjFN1Ort82jl46qjPm_pu/view?usp=sharing){ .md-button } 
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1T-UU0FBeElX6cvbWYKpVAl3U4ivrQLHA3IdIWqWKuBA/edit?usp=sharing){ .md-button  }
 
-![Enter image alt description](Images/Euq_Image_1.png)
+![Enter image alt description](Images/bqM_Image_1.png)
 
 As AI systems grow increasingly powerful, our ability to rigorously evaluate them becomes crucial for safety and governance. The challenge isn't just measuring what AI systems can do, but understanding their behavioral tendencies and verifying our ability to maintain control. This section introduces the landscape of AI evaluation and explains why we need increasingly sophisticated approaches beyond simple benchmarking.
 
@@ -21,6 +21,6 @@ As AI systems grow increasingly powerful, our ability to rigorously evaluate the
 
 **Control Evaluations.** Taking evaluation to its logical conclusion, we examine whether we can maintain meaningful control even if an AI system actively tries to circumvent safety measures. This section explores how techniques like red team/blue team testing can help verify safety protocols remain effective under worst-case scenarios, while acknowledging the inherent challenges in simulating truly adversarial behavior.
 
-**Evaluation Infrastructure.** Moving from theory to practice, we examine how to implement these evaluations effectively at scale. This includes designing robust evaluation protocols, automating assessment processes where possible, and integrating evaluations with broader safety frameworks and auditing systems. A key focus is developing systematic approaches that can be reliably implemented across different organizations.
+**Evaluation Design.** Moving from theory to practice, we examine how to implement these evaluations effectively at scale. This includes designing robust evaluation protocols, automating assessment processes where possible, and integrating evaluations with broader safety frameworks and auditing systems. A key focus is developing systematic approaches that can be reliably implemented across different organizations.
 
-**Limitations.** Finally, we confront the fundamental challenges facing AI evaluation. From the difficulty of proving absence of capabilities, to technical constraints around measurement precision, to governance challenges around independence and standardization - understanding these limitations is crucial for both improving our methods and maintaining appropriate epistemic humility about their results.
+**Limitations.** Finally, we talk about the fundamental challenges facing AI evaluations. From the difficulty of proving absence of capabilities, to technical constraints around measurement precision, to governance challenges around independence and standardization - understanding these limitations is crucial for both improving our methods and maintaining appropriate epistemic humility about their results.
