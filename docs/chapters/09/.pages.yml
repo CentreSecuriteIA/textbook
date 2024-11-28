@@ -1,1 +1,8 @@
+nav:
+- Overview: README.md
+- 9.1 What is Interpretability ?: 01.md
+- 9.2 Observational Methods: 02.md
+- 9.3 Interventional Methods: 03.md
+- 9.4 Automating and Scaling Interpretability: 04.md
+- 9.5 Critiques of Interpretability: 05.md
 title: 09 - Interpretability
