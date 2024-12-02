@@ -1,0 +1,135 @@
+
+<!--
+*[Large language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[language model]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+<!--*[large language models]: An AI model that takes in some text and predicts how it’s most likely to continue.-->
+
+<!--*[ML]: Machine Learning. An approach to AI in which, instead of designing an algorithm directly, we have the system search through possible algorithms based on how well they do on some training data.-->
+
+<!--*[Neural network]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.-->
+<!--*[NN]: A simulated network of nodes (‘neurons’) and their connections (weights). Neural networks are the core component of deep learning, the leading AI paradigm.-->
+
+
+
+*[AI alignment]: Making sure that AI tries to do what we want it to do.
+*[Compute]: Shorthand for “computing power”. It may refer to, for instance, physical infrastructure such as CPUs or GPUs that perform processing, or the amount of processing power needed to train a model.
+<!--*[AGI]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+<!--*[artificial general intelligence]: AI that is at least as good as humans at general problem-solving.-->
+<!--*[AGIs]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+<!--*[AGI’s]: Aritifical General Intelligence. AI that is at least as good as humans at general problem-solving.-->
+
+<!--HLAI-->
+<!--Human level AI-->
+
+*[AI ethics]: The study of ethical principles for AI systems and their creators to follow. In practice, “AI ethics”this often refers to a cluster of concerns about present systems that include algorithmic bias and transparency.
+<!--
+*[Ethics of artificial intelligence]: The study of ethical principles for AI systems and their creators to follow. In practice, “AI ethics”this often refers to a cluster of concerns about present systems that include algorithmic bias and transparency.-->
+
+
+*[AI alignment]: Making sure that AI tries to do what we want it to do. 
+*[Alignment problem]: Making sure that AI tries to do what we want it to do. 
+
+*[AI safety]: A research field about how to prevent risks from advanced artificial intelligence.
+
+*[AI timelines]: The (predicted) time until AI hits some milestone, usually AGI.
+*[timelines]: The (predicted) time until AI hits some milestone, usually AGI.
+
+
+<!--Catastrophic risk-->
+<!--catastrophic risk-->
+<!--catastrophic risks-->
+*[existential risk]: A risk of human extinction or the permanent destruction of humanity’s long-term potential.
+*[existential risks]: A risk of human extinction or the permanent destruction of humanity’s long-term potential.
+*[Existential risk]: A risk of human extinction or the permanent destruction of humanity’s long-term potential.
+*[existential threat]: A risk of human extinction or the permanent destruction of humanity’s long-term potential.
+
+
+<!--
+*[Feature]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+<!--*[features]: A feature of a region of input space that corresponds to a useful pattern. For example, in an image detector, a set of neurons that detects cars might be a feature.-->
+
+
+
+*[Foundation model]: A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model. 
+
+*[foundation models]: A large machine learning model trained on a vast amount of data so that it can be targeted at a wide variety of different tasks. GPT-4 is an example of a foundation model. 
+
+*[Goal misgeneralization]: Pursuing a different goal during deployment than was intended to be learned in training.
+
+
+*[Interpretability]: A research area that aims to make machine learning systems easier for humans to understand.
+*[interpretability]: A research area that aims to make machine learning systems easier for humans to understand.
+*[Transparency]: The ability to ‘look inside’ a model, to understand how it works and why it produces a specific output.
+
+<!--polysemantic-->
+<!--polysemanticity-->
+<!--monosemantic-->
+<!--monosemanticity-->
+<!--superposition-->
+
+*[Mechanistic interpretability]: A subfield of interpretability which involves reverse-engineering the mechanisms by which a model gets from its inputs to its outputs.
+*[mech interp]: A subfield of interpretability which involves reverse-engineering the mechanisms by which a model gets from its inputs to its outputs.
+
+<!--
+*[Optimization algorithm]: A general procedure for finding solutions that score highly according to some well-defined objective function.-->
+
+<!--
+*[Optimizer]: Something that can improve some process or physical artifact so that it is fit for a certain purpose or fulfills some set of requirements.-->
+
+*[optimization process]: Something that can improve some process or physical artifact so that it is fit for a certain purpose or fulfills some set of requirements.
+
+
+*[Parameter]: Values an AI system that are modified during training to change the AI's performance.
+*[parameters]: Values an AI system that are modified during training to change the AI's performance.
+
+
+
+*[Scalable Oversight]: Methods that allow humans to provide oversight for numerous or superhuman AI systems, usually by using AI systems to help supervise other AI systems.
+*[Scalable oversight]: Methods that allow humans to provide oversight for numerous or superhuman AI systems, usually by using AI systems to help supervise other AI systems.
+*[scaleable oversight]: Methods that allow humans to provide oversight for numerous or superhuman AI systems, usually by using AI systems to help supervise other AI systems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*[Terminal goals]: Goals which are valued as ends in themselves, rather than as means to some other end. 
+*[terminal goal]: Goals which are valued as ends in themselves, rather than as means to some other end. 
+
+*[Frontier model]: A state-of-the-art AI system. Currently, this typically refers to the largest and most capable LLMs.
+*[Frontier AI model]: A state-of-the-art AI system. Currently, this typically refers to the largest and most capable LLMs.
+*[Frontier AI system]: A state-of-the-art AI system. Currently, this typically refers to the largest and most capable LLMs.
+<!--bitter lesson-->
+<!--scaling laws-->
+<!--scaling hypothesis-->
+<!--bio anchors-->
+<!--biological anchors-->
+<!--world models-->
+<!--RAAP-->
+<!--RAAPs-->
+<!--CAIS-->
+<!--emergence-->
+<!--Few-shot -->
+<!--Zero-shot -->
+
+<!--Few-shot prompting-->
+<!--A technique where a language model is prompted with a few examples of problems with solutions, and is then asked to find a solution to the next problem.-->
+<!--treacherous turn-->
+<!--policy-->
+<!--policies-->
+<!--embedding-->
+<!--embeddings-->
+
+
+
+*[Capabilities research]: Research aimed at making AI more capable. This is sometimes contrasted with AI research that emphasizes safety, as they can be at odds with one another.

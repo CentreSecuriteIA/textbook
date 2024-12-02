@@ -5,7 +5,5 @@ nav:
 - Book:
   - chapters/index.md
   - '...'
-- Courses: courses.md
 - Feedback: feedback.md
-- Contribute: https://aisafety.info/questions/8TJV/How-can-I-help
 
