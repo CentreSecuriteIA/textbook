@@ -1,3 +1,5 @@
+# File: scripts/generate_pages.py
+
 import os
 import yaml
 import re
@@ -14,17 +16,21 @@ def get_full_chapter_title(docs_path, chapter_number):
 
 def generate_chapter_pages_yml(docs_path, chapter_path):
     chapter_number = os.path.basename(chapter_path)
-    files = sorted([f for f in os.listdir(chapter_path) if f.endswith('.md')])
+    files = [f for f in os.listdir(chapter_path) if f.endswith('.md')]
     
     pages = []
-    for file in files:
-        if file == 'README.md':
-            pages.append({'Overview': 'README.md'})
-        else:
-            with open(os.path.join(chapter_path, file), 'r') as f:
-                first_line = f.readline().strip()
-            title = clean_title(first_line.lstrip('#').strip())
-            pages.append({title: file})
+    # First add README.md/Introduction if it exists
+    if 'README.md' in files:
+        pages.append({'Introduction': 'README.md'})
+        files.remove('README.md')
+    
+    # Then add the rest of the files in sorted order
+    sorted_files = sorted(files)
+    for file in sorted_files:
+        with open(os.path.join(chapter_path, file), 'r') as f:
+            first_line = f.readline().strip()
+        title = clean_title(first_line.lstrip('#').strip())
+        pages.append({title: file})
 
     chapter_title = get_full_chapter_title(docs_path, chapter_number)
     if not chapter_title:
@@ -79,3 +85,4 @@ def generate_all_pages_yml(docs_path):
 if __name__ == "__main__":
     docs_path = "/home/markov/git/textbook/docs"
     generate_all_pages_yml(docs_path)
+
