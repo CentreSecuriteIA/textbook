@@ -73,17 +73,9 @@ watch:
 extra_css:
   - overrides/css/base.css
   - overrides/css/buttons.css
-  - overrides/css/header_footer.css
-  - overrides/css/typography.css
-  - overrides/css/glossary.css
-  - overrides/css/iframe.css
-  #- overrides/css/titles.css
-  - overrides/css/toc.css
+
 
 extra_javascript:
-  - overrides/js/mathjax.js
-  - overrides/js/glossary.js
-  - overrides/js/toc_collapse.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
