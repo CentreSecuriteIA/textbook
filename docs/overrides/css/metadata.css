@@ -1,0 +1,94 @@
+/* File: docs/overrides/css/metadata.css */
+.chapter-meta {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: var(--md-code-bg-color);
+    border-radius: 0.5rem;
+}
+
+.meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.meta-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.meta-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.meta-icon {
+    color: var(--md-typeset-color);
+    opacity: 0.5;
+    width: 1rem;
+    text-align: center;
+}
+
+.meta-icon i {
+    font-size: 0.9rem;
+}
+
+.meta-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.meta-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--md-typeset-color);
+    opacity: 0.7;
+    margin-bottom: 0.25rem;
+}
+
+.meta-value {
+    color: var(--md-typeset-color);
+    font-size: 0.8rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.meta-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.meta-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.meta-link {
+    color: var(--md-typeset-color) !important;
+    text-decoration: none !important;
+}
+
+.meta-link:hover {
+    color: var(--md-primary-fg-color) !important;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .meta-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .meta-col {
+        gap: 1rem;
+    }
+    
+    .chapter-meta {
+        padding: 1rem;
+    }
+}

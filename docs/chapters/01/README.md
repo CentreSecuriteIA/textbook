@@ -1,11 +1,86 @@
 # Introduction
 
-:material-account-circle: **Authors**: Markov Grey, Charbel-Raphael Segerie  
-:material-office-building: **Affiliation**: French Center for AI Safety (CeSIA)  
-:octicons-clock-24: **Last Updated**: 2024-03-27  
-:octicons-book-24: **Reading Time**: 119 minutes  
-:material-link-variant: **Also available on**:  
-[:material-forum: Alignment Forum](https://www.alignmentforum.org/posts/MkfaQyxB9PN4h8Bs9/) · [:material-google: Google Docs](https://docs.google.com/document/d/1HKo0Kest9Xppjn7m2ODpfMUlEu93SzLsfxXBH48Xaus/edit?usp=sharing)
+<div class="chapter-meta">
+    <div class="meta-grid">
+        <!-- Left Column -->
+        <div class="meta-col">
+            <!-- Authors -->
+            <div class="meta-item">
+                <span class="meta-icon">
+                    <i class="fas fa-users"></i>
+                </span>
+                <div class="meta-content">
+                    <div class="meta-label">Authors</div>
+                    <div class="meta-value meta-list">
+                        <div>Markov Grey</div>
+                        <div>Charbel-Raphael Segerie</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Affiliations -->
+            <div class="meta-item">
+                <span class="meta-icon">
+                    <i class="fas fa-building"></i>
+                </span>
+                <div class="meta-content">
+                    <div class="meta-label">Affiliations</div>
+                    <div class="meta-value meta-list">
+                        <div>French Center for AI Safety (CeSIA)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acknowledgements -->
+            <div class="meta-item">
+                <span class="meta-icon">
+                    <i class="fas fa-heart"></i>
+                </span>
+                <div class="meta-content">
+                    <div class="meta-label">Acknowledgements</div>
+                    <div class="meta-value meta-list">
+                        <div>Jeanne Salle</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="meta-col">
+            <!-- Date -->
+            <div class="meta-item">
+                <span class="meta-icon">
+                    <i class="fas fa-calendar"></i>
+                </span>
+                <div class="meta-content">
+                    <div class="meta-label">Last Updated</div>
+                    <div class="meta-value">2024-03-27</div>
+                </div>
+            </div>
+            
+            <!-- Links -->
+            <div class="meta-item">
+                <span class="meta-icon">
+                    <i class="fas fa-link"></i>
+                </span>
+                <div class="meta-content">
+                    <div class="meta-label">Also available on</div>
+                    <div class="meta-value meta-links">
+                        <a href="https://www.alignmentforum.org/posts/MkfaQyxB9PN4h8Bs9/" class="meta-link">Alignment Forum</a> ·
+                        <a href="https://docs.google.com/document/d/1HKo0Kest9Xppjn7m2ODpfMUlEu93SzLsfxXBH48Xaus/edit?usp=sharing" class="meta-link">Google Docs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--:material-account-circle: **Authors**: Markov Grey, Charbel-Raphael Segerie  -->
+<!--:material-office-building: **Affiliation**: French Center for AI Safety (CeSIA)  -->
+<!--:octicons-clock-24: **Last Updated**: 2024-03-27  -->
+<!--:octicons-book-24: **Reading Time**: 119 minutes  -->
+<!--:material-link-variant: **Also available on**:  -->
+<!--[:material-forum: Alignment Forum](https://www.alignmentforum.org/posts/MkfaQyxB9PN4h8Bs9/) · [:material-google: Google Docs](https://docs.google.com/document/d/1HKo0Kest9Xppjn7m2ODpfMUlEu93SzLsfxXBH48Xaus/edit?usp=sharing)-->
 
 [:fontawesome-solid-message: Feedback](https://forms.gle/ZsA4hEWUx1ZrtQLL9){ .md-button }
 [:fontawesome-solid-video: Watch](https://www.youtube.com/watch?v=J_iMeH1hb9M){ .md-button }

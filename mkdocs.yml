@@ -93,10 +93,22 @@ watch:
 extra_css:
   - overrides/css/base.css
   - overrides/css/buttons.css
+  - overrides/css/tippy.css
+  - overrides/css/tabs.css
+  - overrides/css/typography.css
+  - overrides/css/admonitions.css
+  - overrides/css/navigation.css
+  - overrides/css/metadata.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
 
 
 extra_javascript:
   - overrides/js/mathjax.js
+  - overrides/js/tippy.js
+  - overrides/js/navigation.js
+  - https://unpkg.com/@popperjs/core@2
+  - https://unpkg.com/tippy.js@6
+  - https://unpkg.com/tippy.js@6/dist/animations/perspective-extreme.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
@@ -105,3 +117,4 @@ extra:
     - name: English
       link: /en/ 
       lang: en
+
