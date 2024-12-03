@@ -6,8 +6,10 @@ import zipfile
 from pathlib import Path
 import shutil
 import logging
+import yaml
 import generate_pages
-
+from generate_meta import extract_metadata
+from generate_readme import create_readme
 
 
 # Set up logging
@@ -49,7 +51,11 @@ def create_chapter_folder(temp_dir, output_dir):
     shutil.move(str(output_md_path), str(chapter_path / "Output.md"))
     images_folder = temp_dir / "Images"
     if images_folder.exists():
-        shutil.move(str(images_folder), str(chapter_path / "Images"))
+        # Remove existing Images directory if it exists
+        images_dest = chapter_path / "Images"
+        if images_dest.exists():
+            shutil.rmtree(images_dest)
+        shutil.move(str(images_folder), str(images_dest))
     
     return chapter_path, content, chapter_number, chapter_title
 
@@ -162,30 +168,6 @@ def finalize_chapter(chapter_path, content, chapter_title):
 
     logger.info(f"Finalized chapter: {new_file_path}")
 
-def create_readme(content, chapter_path):
-    """Create README content, write it to README.md, and update Output.md."""
-    toc_end = content.find('\n# ')
-    second_section_start = content.find('\n# ', toc_end + 1)
-
-    if toc_end == -1 or second_section_start == -1:
-        logger.warning("Could not find the proper content structure.")
-        return content  # Return original content if structure is not as expected
-
-    readme_content = content[toc_end:second_section_start].strip()
-    updated_content = content[second_section_start:].strip()
-
-    # Write README content
-    with open(chapter_path / "README.md", 'w', encoding='utf-8') as file:
-        file.write(readme_content)
-
-    # Write updated main content
-    with open(chapter_path / "Output.md", 'w', encoding='utf-8') as file:
-        file.write(updated_content)
-
-    logger.info(f"Created README.md and updated Output.md in {chapter_path}")
-
-    return updated_content
-
 def process_markdown(input_zip, output_dir, snippets_dir):
     """Process markdown from zip file and create chapter folder with processed content and section files."""
     try:
@@ -198,21 +180,22 @@ def process_markdown(input_zip, output_dir, snippets_dir):
         # Process content in memory
         content = add_snippets(content, snippets_dir)
         content = add_tabs(content)
+        
+        # Extract metadata and create .meta.yml
+        content = extract_metadata(content, chapter_path)
 
         # Create README and update main content
         content = create_readme(content, chapter_path)
-
+        
         # Add section numbers and write to Output.md
         content = add_section_numbers(content, chapter_number, chapter_path)
-
-        # Split content into section files (includes adding reading time)
+        
+        # Split content into section files
         split_into_section_files(content, chapter_path, chapter_number)
-
-        # Finalize the chapter
+        
+        # Finalize chapter
         finalize_chapter(chapter_path, content, chapter_title)
 
-        logger.info(f"Processed Chapter: {chapter_path.name}")
-        logger.info(f"Files created in: {chapter_path} and ../Full Chapters/")
     except Exception as e:
         logger.error(f"Error processing markdown: {e}")
         raise
@@ -223,6 +206,7 @@ def process_markdown(input_zip, output_dir, snippets_dir):
 if __name__ == "__main__":
     snippets_dir = "path/to/snippets/directory"
     output_dir = "docs"  # This should be the path to your docs directory
-    for chapter in ["ch1", "ch2", "ch3", "ch6", "ch7", "ch8"]:
+    # for chapter in ["ch1", "ch2", "ch3", "ch4", "ch5", "ch6", "ch7", "ch8", "ch9"]:
+    for chapter in ["ch1"]:
         process_markdown(f"source_zips/{chapter}.zip", os.path.join(output_dir, "chapters"), snippets_dir)
     generate_pages.generate_all_pages_yml(output_dir)

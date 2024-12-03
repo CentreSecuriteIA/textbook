@@ -85,4 +85,3 @@ def generate_all_pages_yml(docs_path):
 if __name__ == "__main__":
     docs_path = "/home/markov/git/textbook/docs"
     generate_all_pages_yml(docs_path)
-

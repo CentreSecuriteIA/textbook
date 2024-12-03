@@ -1,10 +1,22 @@
 # Introduction
 
+:material-account-circle: **Authors**: Markov Grey, Charbel-Raphael Segerie  
+:material-office-building: **Affiliation**: French Center for AI Safety (CeSIA)  
+:octicons-clock-24: **Last Updated**: 2024-03-27  
+:octicons-book-24: **Reading Time**: 119 minutes  
+:material-link-variant: **Also available on**:  
+[:material-forum: Alignment Forum](https://www.alignmentforum.org/posts/MkfaQyxB9PN4h8Bs9/) · [:material-google: Google Docs](https://docs.google.com/document/d/1HKo0Kest9Xppjn7m2ODpfMUlEu93SzLsfxXBH48Xaus/edit?usp=sharing)
+
+[:fontawesome-solid-message: Feedback](https://forms.gle/ZsA4hEWUx1ZrtQLL9){ .md-button }
+[:fontawesome-solid-video: Watch](https://www.youtube.com/watch?v=J_iMeH1hb9M){ .md-button }
+[:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1L32xCVUCWEsm-x8UZ3GSTgKnmBcC7rJQLLIh9wGLj40/edit?usp=sharing){ .md-button }
+
+
 The field of artificial intelligence has undergone a remarkable transformation in recent years, with capabilities expanding at an unprecedented pace. This chapter provides a comprehensive examination of current AI capabilities, the fundamental principles driving their advancement, and frameworks for understanding and forecasting future progress.
 
 Understanding artificial intelligence capabilities is fundamental to addressing AI safety challenges. This chapter lays the groundwork for the entire book by establishing what AI systems can currently do, how they achieve these capabilities, and how we might anticipate their future development. This foundation is essential for all subsequent chapters: our analysis of potential risks (Chapter 2) stems directly from understanding capabilities; proposed technical (Chapter 3) and governance solutions (Chapter 4) both must account for the current and projected future of AI capabilities.
 
-![Enter image alt description](Images/gVo_Image_1.png)
+![Enter image alt description](Images/z8U_Image_1.png)
 
 **State-of-the-Art AI - Achieved breakthrough capabilities across multiple domains**. We begin by exploring how AI systems have evolved from narrow, specialized tools to increasingly general-purpose technologies. Language models can now engage in complex reasoning, while computer vision systems demonstrate sophisticated understanding of visual information. In robotics, we're seeing the emergence of systems that can learn and adapt to real-world environments with increasing autonomy. These advances across different domains paint a picture of rapidly expanding AI capabilities.
 

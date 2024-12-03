@@ -1,0 +1,41 @@
+title: Capabilities
+chapter_number: '1'
+authors:
+- Markov Grey
+- Charbel-Raphael Segerie
+affiliations:
+- French Center for AI Safety (CeSIA)
+acknowledgements:
+- Jeanne Salle
+date: '2024-03-27'
+description: ''
+links:
+- name: AI Safety Atlas
+  url: https://ai-safety-atlas.com/chapters/01/
+  type: ai_safety_atlas
+- name: Alignment Forum
+  url: https://www.alignmentforum.org/posts/MkfaQyxB9PN4h8Bs9/
+  type: alignment_forum
+- name: Google Docs
+  url: https://docs.google.com/document/d/1HKo0Kest9Xppjn7m2ODpfMUlEu93SzLsfxXBH48Xaus/edit?usp=sharing
+  type: google_docs
+- name: Feedback form
+  url: https://forms.gle/ZsA4hEWUx1ZrtQLL9
+  type: feedback_form
+- name: PDF download
+  url: https://drive.google.com/file/d/10fO4qjxHX3OiNnafNlp5nvF-9nLW8TOt/view?usp=sharing
+  type: pdf_download
+- name: Video version
+  url: https://www.youtube.com/watch?v=J_iMeH1hb9M
+  type: video_version
+- name: Facilitation guide
+  url: https://docs.google.com/document/d/1L32xCVUCWEsm-x8UZ3GSTgKnmBcC7rJQLLIh9wGLj40/edit?usp=sharing
+  type: facilitation_guide
+- name: Audio version
+  url: ''
+  type: audio_version
+  disabled: true
+social:
+  cards_layout: default
+search:
+  boost: 2.0
