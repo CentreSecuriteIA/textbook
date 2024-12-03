@@ -2,7 +2,7 @@
 .tippy-box[data-theme~='elegant'] {
   background-color: var(--md-primary-fg-color);
   color: #fff;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   line-height: 1.5;
   padding: 0.5rem 0.8rem;
   border-radius: 4px;
@@ -83,7 +83,7 @@
 .tippy-box[data-theme~='elegant'] {
     background-color: var(--md-primary-fg-color);
     color: #fff;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     line-height: 1.5;
     padding: 0.5rem 0.8rem;
     border-radius: 4px;

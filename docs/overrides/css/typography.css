@@ -10,6 +10,13 @@
 .md-footer,
 .md-search {
     font-family: "Libre Baskerville", Baskerville, Georgia, serif;
+font-size: 0.65rem; /* Adjust base size to compensate for Libre Baskerville */
+}
+
+/* Disable justification for admonitions */
+.md-typeset .admonition p,
+.md-typeset details p {
+    text-align: left;
 }
 
 /* Ensure code blocks still use monospace */
@@ -48,27 +55,27 @@
 /* Individual heading styles */
 .md-typeset h1 {
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 1.5em;
     color: var(--md-typeset-h1-color);
 }
 
 .md-typeset h2 {
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-top: 2.5em;
     color: var(--md-typeset-h2-color);
 }
 
 .md-typeset h3 {
     font-weight: 600;
-    font-size: 1.25em;
+    font-size: 1.1em;
     color: var(--md-typeset-h3-color);
 }
 
 .md-typeset h4 {
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1em;
     color: var(--md-typeset-h4-color);
 }
 
@@ -82,7 +89,7 @@
 
 /* Paragraphs */
 .md-typeset p {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     line-height: 1.7;
     margin: 1em 0;
 }

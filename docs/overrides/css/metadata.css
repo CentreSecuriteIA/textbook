@@ -41,7 +41,7 @@
 }
 
 .meta-label {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--md-typeset-color);
@@ -51,7 +51,7 @@
 
 .meta-value {
     color: var(--md-typeset-color);
-    font-size: 0.8rem;
+    font-size: 0.55rem;
     line-height: 1.6;
     text-align: left;
 }
