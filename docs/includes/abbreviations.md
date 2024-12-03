@@ -1,4 +1,3 @@
-
 <!-- Abbreviations -->
 
 *[LLM]: Large Language Model. An AI model that takes in some text and predicts how it’s most likely to continue.
@@ -276,4 +275,3 @@
 
 *[SoTA]: A state-of-the-art AI system. Currently, this typically refers to the largest and most capable LLMs.
 *[SOTA]: A state-of-the-art AI system. Currently, this typically refers to the largest and most capable LLMs.
-

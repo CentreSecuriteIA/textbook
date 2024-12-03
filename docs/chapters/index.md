@@ -169,10 +169,3 @@ The final chapter covers fundamental theoretical concepts in AI agent design, ty
 [:fontawesome-solid-users: Facilitate](){ .md-button .md-button--disabled }
 
 The field of alignment does not stop at just the concepts presented in the textbook. Many schools of thought are only briefly touched upon. To get an overview of the field, the best advice is to stay curious and try out various different viewpoints.
-
-!!! tip "How to Best Read This Book"
-    One of the best ways to use this textbook is in a reading group consisting of students or young researchers who gather periodically. You don't need to have a large group; a friend is enough, which allows you to discuss the concepts presented in the different chapters critically. If you want to create a reading group to facilitate this course, please get in touch.
-
-This book is a project from the French Center for AI Safety (Centre pour la Securité de l'IA, CeSIA).
-
-<img src="Images/CeSIA.png" alt="CeSIA - Centre pour la Sécurité de l'IA" style="width: 35%;" />
