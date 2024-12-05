@@ -1,4 +1,4 @@
-# Introduction
+# 01 - Capabilities
 
 <div class="chapter-meta">
     <div class="meta-grid">
@@ -87,11 +87,20 @@
 [:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1L32xCVUCWEsm-x8UZ3GSTgKnmBcC7rJQLLIh9wGLj40/edit?usp=sharing){ .md-button }
 
 
+## Introduction
+
 The field of artificial intelligence has undergone a remarkable transformation in recent years, with capabilities expanding at an unprecedented pace. This chapter provides a comprehensive examination of current AI capabilities, the fundamental principles driving their advancement, and frameworks for understanding and forecasting future progress.
 
 Understanding artificial intelligence capabilities is fundamental to addressing AI safety challenges. This chapter lays the groundwork for the entire book by establishing what AI systems can currently do, how they achieve these capabilities, and how we might anticipate their future development. This foundation is essential for all subsequent chapters: our analysis of potential risks (Chapter 2) stems directly from understanding capabilities; proposed technical (Chapter 3) and governance solutions (Chapter 4) both must account for the current and projected future of AI capabilities.
 
-![Enter image alt description](Images/z8U_Image_1.png)
+
+
+<figure markdown="span">
+![Enter image alt description](Images/z8U_Image_1.png){ loading=lazy }
+  <!--![Image title](https://dummyimage.com/600x400/){ width="300" }-->
+  <figcaption><b>Figure:</b> This is an overview of what the chapter is going to talk about.</figcaption>
+</figure>
+
 
 **State-of-the-Art AI - Achieved breakthrough capabilities across multiple domains**. We begin by exploring how AI systems have evolved from narrow, specialized tools to increasingly general-purpose technologies. Language models can now engage in complex reasoning, while computer vision systems demonstrate sophisticated understanding of visual information. In robotics, we're seeing the emergence of systems that can learn and adapt to real-world environments with increasing autonomy. These advances across different domains paint a picture of rapidly expanding AI capabilities.
 

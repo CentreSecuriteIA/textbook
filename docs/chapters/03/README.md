@@ -1,6 +1,5 @@
 # Introduction
 
-[:fontawesome-solid-download: Download](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-headphones: Listen](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-video: Watch](){ .md-button .md-button--disabled } 
 [:fontawesome-solid-users: Facilitate](https://docs.google.com/document/d/1cv0gzwSouDjckYHzV7gYbHPKhJZR6bwbJWgHzEJ604Q/edit?usp=sharing){ .md-button  }
