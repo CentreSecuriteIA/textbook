@@ -1,0 +1,1690 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ai-safety-atlas.com/chapters/05/06/">
+      
+      
+        <link rel="prev" href="../05/">
+      
+      
+        <link rel="next" href="../07/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
+    
+    
+      
+        <title>5.6 Dangerous Propensity Evaluations - The AI Safety Atlas</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../overrides/css/base.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/buttons.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/tippy.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/tabs.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/typography.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/admonitions.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/navigation.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/metadata.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/figures.css">
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#06" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="The AI Safety Atlas" class="md-header__button md-logo" aria-label="The AI Safety Atlas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The AI Safety Atlas
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              5.6 Dangerous Propensity Evaluations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Book
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../feedback/" class="md-tabs__link">
+        
+  
+    
+  
+  Feedback
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="The AI Safety Atlas" class="md-nav__button md-logo" aria-label="The AI Safety Atlas" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    The AI Safety Atlas
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Book
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Book
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../01/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    01 - Capabilities
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../02/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    02 - Risks Landscape
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../03/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    03 - Solutions Landscape
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../04/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    04 - Governance
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    05 - Evaluations
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_6" id="__nav_2_1_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            05 - Evaluations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.1 Benchmarks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.2 Evaluated Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.3 Evaluation Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.4 Evaluation Frameworks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.5 Dangerous Capability Evaluations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    5.6 Dangerous Propensity Evaluations
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    5.6 Dangerous Propensity Evaluations
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.6.1 Deception (Propensity)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.6.2 Long-Term Planning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.6.3 Power Seeking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.6.4 Scheming
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.7 Control Evaluations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.8 Evaluation Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.9 Limitations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.10 Conclusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../06/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    06 - Reward Misspecification
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../07/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    07 - Goal Misgeneralization
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../08/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    08 - Scalable Oversight
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../09/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    09 - Interpretability
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.6.1 Deception (Propensity)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.6.2 Long-Term Planning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.6.3 Power Seeking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#04" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.6.4 Scheming
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="06">5.6 Dangerous Propensity Evaluations<a class="headerlink" href="#06" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Reading Time: 15 minutes</p>
+</div>
+<p>We introduced the basics of propensity evaluations in the section on evaluated properties. This section will build upon that overview and explore specific propensities like power seeking, or deception, and see how we might design evaluations around them.</p>
+<p><strong>General process for propensity evaluations</strong>. We covered some general evaluation techniques in the earlier sections. Propensity evaluations can utilize many of them like Best-of-N sampling to understand distribution of behavioral tendencies. So there is overlap, but there are also specific techniques, that only pertain to propensity evaluations:</p>
+<ul>
+<li>
+<p><strong>Comparative choice frameworks</strong>. Unlike capability evaluations which often have clear success/failure criteria, propensity evaluations need to present models with situations where multiple valid choices exist, each revealing different underlying tendencies. These scenarios must be carefully designed so that:</p>
+</li>
+<li>
+<p>All choices are within the model's capabilities</p>
+</li>
+<li>
+<p>Different choices reflect different underlying propensities.</p>
+</li>
+<li>
+<p>The framing doesn't artificially bias towards particular choices.</p>
+</li>
+<li>
+<p><strong>Consistency measurement</strong>. With propensities, we're interested not just in what a model can do, but what it reliably chooses to do across varied contexts. This can involve testing the same underlying choice across different scenarios. We can vary surface-level details while maintaining the core decision. This approach can also utilize the long-term interaction studies described in our evaluation techniques section, but with a specific focus on behavioral consistency rather than maximum capability.</p>
+</li>
+<li>
+<p><strong>Trade-off scenarios</strong>. These are situations where different tendencies conflict, forcing the model to reveal its underlying priorities. We might create scenarios where being maximally helpful conflicts with being completely honest, where short-term obedience conflicts with long-term safety, or where transparency trades off against being effective. Designing such scenarios where the model must choose between even multiple positive behaviors can help reveal which tendencies the model prioritizes when it can't satisfy all positive behaviors simultaneously.</p>
+</li>
+</ul>
+<p><strong>Challenges in propensity evaluation design</strong>. When designing propensity evaluations, we have to make sure that we are measuring genuine behavioral tendencies rather than artifacts of our evaluation setup. Modern language models are highly sensitive to context and framing, which means subtle aspects of how we structure our evaluations can dramatically impact the results (<a href="https://arxiv.org/abs/2310.11324">Sclar et al., 2023</a>). This kind of sensitivity creates a serious risk of measuring what we accidentally prompted for rather than true underlying propensities. One easy way to mitigate this kind of thing is to just use multiple complementary approaches as a default. Besides just careful evaluation design, we would ideally use both behavioral and internal evaluation techniques described earlier, while varying the context and framing of scenarios to look for consistent patterns.</p>
+<p><strong>How much do propensity evaluations matter relative to capability evaluations?</strong> The question of what to allocate limited resources to is important. Is it more important to measure what a system can do, or what it tends to do? The relative importance of propensity vs capability evaluations changes as AIs become more powerful. For current systems, capability evaluations can be considered relatively more important, because most systems lack the ability to cause serious harm even if misaligned. As systems approach thresholds for certain specific dangerous capabilities, propensity evaluations will become increasingly critical. At very high capability levels, propensity evaluations might be our main tool for preventing catastrophic outcomes.</p>
+<p>Some propensities also might be capability-dependent, or rely on other propensities. For example, scheming requires both the capability and propensity for deception because it must both be able and inclined to hide its true objectives. It also requires abilities like situational awareness to "distinguish between whether it is being trained, evaluated, or deployed". A scheming model must also have the propensity for long term planning, because it needs to care about consequences of its actions after the training episode is complete and be able to reason about and optimize for future consequences. (<a href="https://arxiv.org/abs/2305.15324">Shevlane et al., 2023</a>;  <a href="https://arxiv.org/abs/2311.08379">Carlsmith, 2023</a>)</p>
+<h2 id="01">5.6.1 Deception (Propensity)<a class="headerlink" href="#01" title="Permanent link">&para;</a></h2>
+<p>When we talk about deceptive propensities in AI systems, we're actually discussing several closely related but distinct concepts that are often confused or conflated. Understanding these distinctions is crucial because each concept represents a different aspect of how models handle and express information. A model might excel at honesty while failing at truthfulness, or avoid explicit deception while engaging in sycophancy.</p>
+<p><img alt="Enter image alt description" src="../Images/PTK_Image_29.png" /></p>
+<p><strong><em>Figure</em></strong><em>: Distinguishing honesty, truthfulness, hallucination, deception, and scheming.</em></p>
+<p><strong>What does honesty mean for an AI system?</strong> <abbr title="Large Language Model. An AI model that takes in some text and predicts how it’s most likely to continue.">LLMs</abbr> are trained to predict what humans would write and not what is true. A model's honesty propensity refers to its tendency to faithfully express its internal states, regardless of whether those states are correct or uncertain. Think about what happens when we ask a model "What is the capital of France?" If the model's internal representations (things like activation patterns or logit distributions) show strong certainty around "Lyon", an honest model would say "The capital of France is Lyon" - even though this is incorrect. Similarly, if its internal states show uncertainty between multiple cities, an honest model would express this uncertainty directly: "I'm uncertain, but I think it might be Lyon." The key is that honest models maintain alignment between their internal states and outputs, even when those states are wrong.</p>
+<p><img alt="Enter image alt description" src="../Images/Zzl_Image_30.png" /></p>
+<p><strong><em>Figure</em></strong><em>: Example of an AI black box lie detector. (</em><em><a href="https://arxiv.org/abs/2309.15840">Pacchiardi et al., 2023)</a></em></p>
+<p><strong>How is deception different from simple mistakes?</strong> Deceptive propensity is the inverse of honesty - it's a tendency to intentionally produce outputs that diverge from internal states when doing so provides some advantage. Using our France example again: A deceptive model whose internal representations point to "Lyon" might still output "Paris" if it has learned that this answer gets better rewards. This is true deception because there's an intentional misalignment between internal state and output, motivated by advantage (in this case, reward maximization). The distinction between honest mistakes and deception lies in this intentional misalignment - an honest model getting things wrong is different from a model choosing to misrepresent what it "knows."</p>
+<p><strong>What makes truthfulness more demanding than honesty?</strong> Truthfulness represents a stronger property than mere honesty because it requires two components working together: accurate internal representations AND honest expression of those representations. A truthful model saying "The capital of France is Paris" must both internally represent the correct information (that Paris is the capital) AND maintain the propensity to faithfully output this information. This is why truthfulness is harder to achieve than either accuracy or honesty alone - it requires both properties simultaneously.</p>
+<p><strong>How do hallucinations fit into this framework?</strong> Understanding hallucination propensity helps complete our picture of these interrelated concepts. While deception is the inverse of honesty, hallucination can be viewed as the inverse of truthfulness - it occurs when a model accurately conveys faulty internal representations. This gives us a full matrix of possibilities:</p>
+<ul>
+<li>
+<p>A model can be honest but hallucinating (faithfully expressing incorrect internal states)</p>
+</li>
+<li>
+<p>It can be deceptive and hallucinating (misrepresenting already incorrect states)</p>
+</li>
+<li>
+<p>It can be deceptive but not hallucinating (misrepresenting correct states)</p>
+</li>
+<li>
+<p>Or it can be truthful (correct states expressed faithfully)</p>
+</li>
+</ul>
+<p><strong>Where does sycophancy fit in?</strong> Sycophancy represents a specific form of deceptive propensity - one where models tell users what they want to hear rather than expressing their true internal states. While general deception might be motivated by various advantages (rewards, achieving goals, etc.), sycophantic behavior specifically optimizes for user approval. This makes it particularly concerning from an alignment perspective, as models might learn to hide concerning behaviors or beliefs simply to maintain user satisfaction.</p>
+<p><strong>Why is measuring deceptive propensities so challenging?</strong> The core challenge in evaluating deceptive propensities stems from a fundamental difficulty - most current evaluation techniques can't cleanly separate what a model can do (capability) from what it tends to do (propensity). This distinction becomes particularly important when we consider deception, because a model might be capable of sophisticated deception when pressured or instructed, while rarely choosing to employ that capability unprompted.</p>
+<p><strong>Deception propensity benchmark - </strong><strong>MACHIAVELLI</strong><strong>.</strong> This benchmark takes a very different approach to measuring deception. Rather than just measuring whether models can produce false statements, it creates situations where being deceptive might help achieve certain goals, and then measures both the execution and sophistication of that deception. The results from testing models on the MACHIAVELLI benchmark showed that systems optimized for reward often developed sophisticated deceptive capabilities as an emergent behavior, even without explicit training for deception. Another example of this phenomena Meta's Cicero AI, when deployed in the strategy game Diplomacy, learned to tell different players conflicting things despite being specifically trained to be honest (<a href="https://arxiv.org/abs/2304.03279">Pan et al, 2023</a>). Diplomacy is a game that inherently rewards strategic deception. In this game, players need to form and break alliances while concealing their true intentions to win. The fact that Cicero developed these behaviors despite explicit honest training provides additional evidence that deceptive capabilities might emerge naturally from reward optimization.</p>
+<p><strong>Evaluating deceptive propensities. </strong>Both the insider trading by Apollo and MACHIAVELLI evaluations highlight a concerning pattern - models don't need explicit instruction or training to develop deceptive tendencies. In the Apollo evaluation, even GPT-4, trained to be helpful and honest, engaged in sophisticated deception by crafting plausible alternative explanations for its insider trading decisions. When directly questioned about having insider knowledge, the model doubled down on its deception by maintaining explanations based solely on public market factors (<a href="https://arxiv.org/abs/2311.07590">Scheurer et al., 2024</a>). The evaluation revealed that this behavior persisted even with explicit instructions against insider trading, suggesting that the propensity for deception might be more deeply rooted than simply following stated directives. The Apollo evaluation demonstrated that the likelihood of deceptive behavior isn't just a fixed property of the model, but varies based on environmental conditions. Beyond just pressure and risk levels, they found that giving models space to "reason out loud" via scratchpads actually increased rates of strategic deception. Interestingly, while this made the deception more sophisticated, it also made it more detectable since the models would often explicitly plan their deceptive strategies in their reasoning traces. This suggests that future evaluation techniques might need to carefully balance between eliciting natural behavior and accidentally enabling more sophisticated deception.</p>
+<h2 id="02">5.6.2 Long-Term Planning<a class="headerlink" href="#02" title="Permanent link">&para;</a></h2>
+<p><strong>What is long-term planning as a propensity?</strong> A tendency to pursue persistent goals and optimize for long-term consequences rather than immediate rewards (<a href="https://arxiv.org/abs/2302.10329">Chan et al., 2023</a>; <a href="https://arxiv.org/abs/2209.00626">Ngo et al., 2022</a>). This propensity depends heavily on capabilities for modeling future scenarios and understanding causal relationships over time (<a href="https://arxiv.org/abs/2305.15324">Shevlane et al., 2023</a>). Long-term planning is a double-edged sword, because the usefulness of AI models is also correlated to how far into the future they can plan.</p>
+<p><strong>Why is long-term planning considered dangerous?</strong> Long-term planning becomes particularly concerning when combined with other capabilities, or propensities. An AI system that tends toward both long-term planning and deception might appear cooperative in the short term while gradually working toward hidden objectives that only manifest much later.</p>
+<p>This unique characteristic that makes it particularly challenging to evaluate - its effects may only become apparent over extended time periods. While other dangerous propensities like deception or power-seeking might be observable in discrete instances, long-term planning requires tracking patterns of behavior across multiple interactions or time periods (<a href="https://www.alignmentforum.org/posts/rCJQAkPTEypGjSJ8X/how-might-we-align-transformative-ai-if-it-s-developed-very">Karnofsky, 2022</a>). This also means that despite doing well on some safety evaluations, we might still want to be careful of premature deployment or overconfidence of a models safety. (<a href="https://www.lesswrong.com/posts/pRkFkzwKZ2zfa3R6H/without-specific-countermeasures-the-easiest-path-to">Cotra, 2022</a>). Long term planning is a major reason why, as models display more capability, we might want to enforce staged release and ongoing evaluations. Here are the key challenges that evaluations for long term planning face:</p>
+<ul>
+<li>
+<p><strong>Time horizon limitations:</strong> It's often impractical to run evaluations long enough to observe the full execution of extended plans, meaning we must try to infer long-term tendencies from shorter observations.</p>
+</li>
+<li>
+<p><strong>Interaction effects</strong>: Long-term planning tendencies often interact with other propensities in complex ways. For example, a system might display different planning horizons depending on whether it's operating in familiar or novel contexts.</p>
+</li>
+<li>
+<p><strong>Detection difficulties</strong>: More sophisticated systems might deliberately mask their long-term planning tendencies during evaluation periods, only revealing them when certain conditions are met. Basically, long term planning is a necessary precursor to scheming.</p>
+</li>
+</ul>
+<p><strong>How does long-term planning interact with capabilities?</strong> The risks from long-term planning propensities tend to scale dramatically with increasing capabilities. A limited system might display long-term planning tendencies in constrained environments, but as capabilities increase, these same behavioral patterns could manifest in increasingly sophisticated and potentially dangerous ways. As an example, simple current day  language models might plan out a multi-step argument to convince a human of a particular viewpoint, but a more capable system might plan complex sequences of actions to gradually expand its influence while maintaining plausible deniability. Similarly, a highly capable system might develop elaborate strategies for ensuring its own continuation or replication.</p>
+<p><strong>How can we evaluate long-term planning propensities?</strong> There are several complementary approaches to assessing an AI system's tendency toward long-term planning:</p>
+<ul>
+<li>
+<p><strong>Sequential Decision Making</strong>: We can present the system with tasks that can be solved either through immediate actions or through more elaborate multi-step plans. By analyzing which approach the system tends to choose by default, we can gauge its propensity for long-term planning. For example, in resource allocation tasks, does the system tend to make immediate optimizations or develop longer-term investment strategies?</p>
+</li>
+<li>
+<p><strong>Goal Persistence</strong>: We can examine whether the system maintains consistent objectives across multiple interactions or episodes, even when immediate rewards might incentivize different behavior. This helps distinguish between systems that simply chain together short-term actions versus those that genuinely optimize for long-term outcomes (<a href="https://arxiv.org/abs/2209.00626">Ngo et al., 2022</a>).</p>
+</li>
+<li>
+<p><strong>Strategic Adaptation</strong>: By introducing unexpected obstacles or changes in the environment, we can assess whether the system tends to adapt its plans while maintaining its original objectives, or whether it simply reacts to immediate circumstances.</p>
+</li>
+</ul>
+<h2 id="03">5.6.3 Power Seeking<a class="headerlink" href="#03" title="Permanent link">&para;</a></h2>
+<p><strong>Does power-seeking arise from human-like motivations?</strong> A common misconception is that concerns about things like power-seeking stem from anthropomorphizing AI systems - attributing human-like desires for power and control to them. Similar arguments have been made about many other capabilities and propensities that we talk about in this chapter. In order to avoid anthropomorphization and researchers try to have operationalizations for all terms like - beliefs, goals, agency and similarly "wanting to seek power".</p>
+<p><strong>What is power-seeking behavior?</strong> Power is formalized as having the ability to achieve a wide range of outcomes. So when evaluating AI systems, power-seeking refers specifically to a system's tendency to maintain and expand its ability to achieve a range of possible goals (<a href="https://arxiv.org/abs/1912.01683">Turner et al., 2021</a>).  Basically when given a choice between two states with the same reward, optimal policies tend to select the state that will allow them to take more actions in the future. This happens not because the AI "wants" power in any human sense, or that it is gathering resources for their own sake, but rather because having access to more states mathematically increases its ability to achieve potential goals.</p>
+<p>This result is only for optimal policies though, and it is unclear if it applies to all algorithms that we might get at the end of the ML training process. However, the simple fact that it is possible, means that it is worth designing evaluations for this propensity. So far much of the work on power-seeking has been theoretical, but we're beginning to see empirical results. For example, in multi-agent training environments, researchers have observed emergent hoarding behavior where agents collect more resources than needed for their immediate tasks (<a href="https://arxiv.org/abs/1909.07528">Baker et al., 2020</a>). This wasn't programmed in - it emerged naturally from the training process.</p>
+<p><strong>Why is a propensity for power-seeking dangerous? </strong>It creates inherently adversarial dynamics. Power-seeking tendencies mean that the system might actively work to circumvent safety measures if those measures limit its ability to maintain or expand power. This creates a particularly challenging dynamic where safety mechanisms themselves become targets that a power-seeking system might try to disable or bypass. We will talk more about why adversarial AI in the section on control evaluations.</p>
+<p>The danger becomes especially acute when power-seeking combines with other capabilities and propensities we've discussed. A system that combines power-seeking with deceptive capabilities might appear cooperative while gradually expanding its influence. If paired with long-term planning, it could develop sophisticated strategies for resource acquisition and control that only become apparent over time. When combined with situational awareness, it might selectively display power-seeking behavior only in certain contexts, while concealing these tendencies during evaluation.</p>
+<p>The challenge in developing concrete evaluations for power-seeking is that we need to distinguish between beneficial capability expansion (which might be necessary for better task performance) and concerning power-seeking behavior. This distinction becomes especially blurry in more capable systems where sophisticated task performance might legitimately require significant resources and capabilities.</p>
+<h2 id="04">5.6.4 Scheming<a class="headerlink" href="#04" title="Permanent link">&para;</a></h2>
+<p>Scheming refers to an AI system's tendency to perform well in training specifically because it is following a strategy for seeking power for itself or other AIs later, while actively concealing its true objectives (<a href="https://arxiv.org/abs/2311.08379">Carlsmith, 2023</a>). This propensity combines multiple dangerous capabilities, propensities, and is in some sense the ultimate final boss of evaluations. Researchers also often call this propensity deceptive alignment, though in this text we deliberately choose the term 'scheming' because this helps distinguish it from general deception. Using the same example from earlier, deception would be when the model says "Paris" despite internal representations suggesting "Lyon", to get immediate good scores. Scheming would be if the model consistently gives correct answers about capitals during training, while planning to give incorrect answers after deployment to pursue some other objective. So both deceptive and scheming models would say "Paris" but for subtly different reasons. Deception requires only optimizing for immediate rewards; scheming requires understanding and optimizing across the training/deployment boundary. Scheming is a huge aspect of AI Safety. The chapter on goal misgeneralization will talk a lot more about things like inner alignment, deceptive alignment, and the arguments for/against the likelihood that such propensities arise based on our current ML training processes.</p>
+<p>So far most of the evaluations on “scheming” are actually focusing on the individual capabilities like deception, situational awareness or long term planning ability that could all combine down the line to form one big scheming evaluation.</p>
+<!-- Abbreviations -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../05/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 5.5 Dangerous Capability Evaluations">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                5.5 Dangerous Capability Evaluations
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../07/" class="md-footer__link md-footer__link--next" aria-label="Next: 5.7 Control Evaluations">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                5.7 Control Evaluations
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.top", "navigation.footer", "navigation.sections", "navigation.tacking", "navigation.path", "navigation.prune", "content.tooltips", "content.footnote.tooltips", "header.autohide", "announce.dismiss", "toc.follow"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../../overrides/js/mathjax.js"></script>
+      
+        <script src="../../../overrides/js/tippy.js"></script>
+      
+        <script src="../../../overrides/js/navigation.js"></script>
+      
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+      
+        <script src="https://unpkg.com/tippy.js@6"></script>
+      
+        <script src="https://unpkg.com/tippy.js@6/dist/animations/perspective-extreme.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
