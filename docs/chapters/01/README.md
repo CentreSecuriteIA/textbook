@@ -97,7 +97,6 @@ Understanding artificial intelligence capabilities is fundamental to addressing 
 
 <figure markdown="span">
 ![Enter image alt description](Images/z8U_Image_1.png){ loading=lazy }
-  <!--![Image title](https://dummyimage.com/600x400/){ width="300" }-->
   <figcaption><b>Figure:</b> This is an overview of what the chapter is going to talk about.</figcaption>
 </figure>
 
