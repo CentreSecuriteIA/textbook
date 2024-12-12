@@ -1,0 +1,22 @@
+authors:
+- Markov Grey
+- Charbel-Raphael Segerie
+affiliations:
+- French Center for AI Safety (CeSIA)
+acknowledgements:
+- Jeanne Salle
+- Oscar Heitmann
+- Ram Rachum
+- Nicolas Guillard
+- Camille Berger
+date: '2023-12-01'
+links:
+- name: AI Safety Atlas
+  url: https://ai-safety-atlas.com/chapters/06/
+  type: ai_safety_atlas
+- name: Alignment Forum
+  url: https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/mMBoPnFrFqQJKzDsZ
+  type: alignment_forum
+- name: Google Docs
+  url: https://docs.google.com/document/d/1kEdmyVTUG3MO7lwuw4utHEm7CcavvgAiUZcWHaOZuPY/edit?usp=sharing
+  type: google_docs
