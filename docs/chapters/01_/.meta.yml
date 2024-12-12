@@ -1,0 +1,29 @@
+authors:
+- Markov Grey
+- Charbel-Raphael Segerie
+affiliations:
+- French Center for AI Safety (CeSIA)
+acknowledgements:
+- Jeanne Salle
+- Charles Martinet
+- Vincent Corruble
+- Diego Dorn
+- Josh Thorsteinson
+- Jonathan Claybrough
+- Alejandro Acelas
+- Jamie Raldua Veuthey
+- Alexandre Variengien
+- Léo Dana
+- Angélina Gentaz
+- Nicolas Guillard
+date: '2024-11-20'
+links:
+- name: AI Safety Atlas
+  url: https://ai-safety-atlas.com/chapters/01/
+  type: ai_safety_atlas
+- name: Alignment Forum
+  url: https://www.alignmentforum.org/posts/MkfaQyxB9PN4h8Bs9/
+  type: alignment_forum
+- name: Google Docs
+  url: https://docs.google.com/document/d/1HKo0Kest9Xppjn7m2ODpfMUlEu93SzLsfxXBH48Xaus/edit?usp=sharing
+  type: google_docs

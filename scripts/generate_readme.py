@@ -1,145 +1,126 @@
-# File: scripts/generate_readme.py
-
-import yaml
 import logging
 import re
 from pathlib import Path
+from process_metadata import process_metadata, write_metadata_yaml
+from process_links import process_links, format_links_for_readme
 
 logger = logging.getLogger(__name__)
 
-def create_button_links(links):
-    """Create button-style links for specific types of links."""
-    button_config = {
-        'pdf_download': ('download', 'Download'),
-        'audio_version': ('headphones', 'Listen'),
-        'video_version': ('video', 'Watch'),
-        'facilitation_guide': ('users', 'Facilitate'),
-        'feedback_form': ('message', 'Feedback')
+def format_metadata_values(metadata, reading_time):
+    """Prepare metadata values for template injection."""
+    # Format authors and affiliations as HTML divs
+    authors_html = "".join(f'<div>{author}</div>' for author in metadata.get('authors', []))
+    affiliations_html = "".join(f'<div>{aff}</div>' for aff in metadata.get('affiliations', []))
+    
+    # Format acknowledgements as comma-separated string
+    acknowledgements_html = ", ".join(metadata.get('acknowledgements', []))
+    
+    # Filter and format links
+    links = [link for link in metadata.get('links', []) 
+            if link['type'] in ['alignment_forum', 'google_docs']]
+    links_html = " · ".join(f'<a href="{link["url"]}" class="meta-link">{link["name"]}</a>' 
+                           for link in links) if links else ""
+
+    return {
+        "authors": authors_html,
+        "affiliations": affiliations_html,
+        "acknowledgements": acknowledgements_html,
+        "date": metadata.get('date', ''),
+        "reading_time": reading_time,
+        "links": links_html
     }
-    
-    buttons = []
-    used_types = set()
-    
-    # First create buttons for existing links
-    for link in links:
-        link_type = link.get('type', '')
-        if link_type in button_config:
-            icon, text = button_config[link_type]
-            button_class = " .md-button--disabled" if link.get('disabled') else ""
-            buttons.append(f'[:fontawesome-solid-{icon}: {text}]({link["url"]}){{ .md-button{button_class} }}')
-            used_types.add(link_type)
-    
-    # Then add disabled buttons for missing types
-    for link_type, (icon, text) in button_config.items():
-        if link_type not in used_types:
-            buttons.append(f'[:fontawesome-solid-{icon}: {text}](){{ .md-button .md-button--disabled }}')
-    
-    return '\n'.join(buttons)
 
-def format_metadata_html(chapter_path):
-    """Read metadata from .meta.yml and format it as HTML for README.md."""
+def inject_values_into_template(template, values):
+    """Inject values into template by replacing placeholders."""
+    content = template
+    for key, value in values.items():
+        placeholder = "{" + key + "}"
+        content = content.replace(placeholder, str(value))
+    return content
+
+def create_chapter_readme(content, chapter_path):
+    """Create README.md in a systematic, step-by-step manner."""
     try:
-        with open(chapter_path / ".meta.yml", 'r', encoding='utf-8') as f:
-            metadata = yaml.safe_load(f)
+        logger.debug("Starting README creation")
+        readme_parts = []
+        remaining_content = content
+
+        # 1. Extract and add chapter title
+        title_match = re.match(r'#\s*Chapter\s*(\d+)\s*-\s*(.+)', remaining_content)
+        if title_match:
+            chapter_num, title = title_match.groups()
+            readme_parts.append(f"# {title.strip()}")
+            remaining_content = re.sub(r'^#.*\n', '', remaining_content, 1)
+            logger.debug(f"Found chapter title: Chapter {chapter_num} - {title}")
         
-        # Core metadata lines - each on its own line with double space at end for markdown line break
-        metadata_lines = [
-            f":material-account-circle: **Authors**: {', '.join(metadata.get('authors', []))}  ",
-            f":material-office-building: **Affiliation**: {', '.join(metadata.get('affiliations', []))}  ",
-            f":octicons-clock-24: **Last Updated**: {metadata.get('date', '')}  "
-        ]
-        
-        # Join core metadata with newlines
-        metadata_section = '\n'.join(metadata_lines)
-
-        # Add "Also available on" section if there are regular links
-        regular_links = [
-            link for link in metadata.get('links', []) 
-            if link.get('type') not in [
-                'pdf_download', 
-                'audio_version', 
-                'video_version', 
-                'facilitation_guide', 
-                'feedback_form', 
-                'ai_safety_atlas'
-            ]
-        ]
-                        
-        if regular_links:
-            # Add the "Also available on" line directly to metadata_section
-            metadata_section += f"\n:material-link-variant: **Also available on**:  "
+        # 2. Handle metadata if present
+        metadata, remaining_content = process_metadata(remaining_content)
+        if metadata:
+            # Write .meta.yml file
+            write_metadata_yaml(metadata, chapter_path / ".meta.yml")
+            logger.debug("Processed metadata")
             
-            # Format each link with appropriate icon - note the : is inside the []
-            links_formatted = [
-                f'[:material-{get_link_icon(link.get("type", ""), link["url"])}: {link["name"]}]({link["url"]})'
-                for link in regular_links
-            ]
+            try:
+                # Read template
+                template_path = Path("templates/chapter_meta.html")
+                with open(template_path, 'r', encoding='utf-8') as f:
+                    template_content = f.read()
+                
+                # Calculate reading time
+                word_count = len(remaining_content.split())
+                reading_time = max(1, round(word_count / 200))
+                
+                # Format values and inject into template
+                meta_values = format_metadata_values(metadata, reading_time)
+                meta_html = inject_values_into_template(template_content, meta_values)
+                
+                readme_parts.append('<div class="chapter-meta">')
+                readme_parts.append(meta_html)
+                readme_parts.append('</div>')
+                
+            except FileNotFoundError:
+                logger.warning("Template file not found: templates/chapter_meta.html")
+            except Exception as e:
+                logger.error(f"Error processing template: {e}")
+                raise
+
+        # 3. Handle links if present
+        links, remaining_content = process_links(remaining_content)
+        if links:
+            formatted_links = format_links_for_readme(links)
+            if formatted_links:
+                readme_parts.append(formatted_links)
+            logger.debug("Processed links")
+
+        # 4. Remove table of contents
+        parts = re.split(r'#\s*Table of Contents.*?\n(?=# )', remaining_content, flags=re.DOTALL, maxsplit=1)
+        if len(parts) > 1:
+            logger.debug("Found and removed table of contents")
+            remaining_content = parts[1]
+        else:
+            logger.warning("No table of contents found")
             
-            metadata_section += '\n' + ' · '.join(links_formatted)
-
-        # Add action buttons with single newline
-        button_links = create_button_links(metadata.get('links', []))
-        metadata_section += f"\n\n{button_links}"
+        # 5. Find and extract the first section
+        first_section_match = re.match(r'(# [^\n]+\n.*?)(?=\n# |$)', remaining_content, re.DOTALL)
+        if first_section_match:
+            first_section = first_section_match.group(1).strip()
+            logger.debug(f"Found first section: {first_section[:50]}...")
+            readme_parts.append(first_section)
             
-        return metadata_section
-    except Exception as e:
-        logger.error(f"Error formatting metadata HTML: {e}")
-        return ""
+            # Remove the first section from remaining content
+            remaining_content = re.sub(re.escape(first_section), '', remaining_content, 1).strip()
+            logger.debug("Removed first section from remaining content")
+        else:
+            logger.warning("No first section found")
 
-def get_link_icon(link_type, url):
-    """Determine appropriate icon based on link type or URL."""
-    icon_mapping = {
-        'forum': 'forum',              # Alignment Forum, LessWrong
-        'alignmentforum': 'forum',
-        'lesswrong': 'forum',
-        'docs.google': 'google',       # Google Docs
-        'github': 'github',            # GitHub
-        'medium': 'medium',            # Medium
-        'arxiv': 'file-pdf',          # ArXiv
-        'youtube': 'video',            # YouTube
-        'twitter': 'twitter',          # Twitter
-        'linkedin': 'linkedin'         # LinkedIn
-    }
-    
-    for domain, icon in icon_mapping.items():
-        if domain in url.lower():
-            return f'{icon}'  # Removed the 'material-' prefix since we'll add it in the link formatting
-    
-    return 'link'  # Default icon without prefix
-
-
-def create_readme(content, chapter_path):
-    """Create README content, write it to README.md, and update Output.md."""
-    try:
-        # Extract introduction section from content
-        intro_match = re.search(r'# Introduction\n(.*?)(?=\n# |\Z)', content, re.DOTALL)
-        if not intro_match:
-            logger.error("Could not find Introduction section")
-            return content
-            
-        intro_content = intro_match.group(1).strip()
-
-        # Get formatted metadata HTML
-        metadata_section = format_metadata_html(chapter_path)
-
-        # Combine sections with appropriate spacing
-        final_readme = "\n".join([
-            "# Introduction",
-            "",  # Blank line after title
-            metadata_section,
-            "",  # Blank line before content
-            intro_content
-        ])
-
-        # Write README content
-        with open(chapter_path / "README.md", 'w', encoding='utf-8') as file:
-            file.write(final_readme)
+        # 6. Write complete README
+        readme_content = '\n\n'.join(part.strip() for part in readme_parts if part.strip())
+        with open(chapter_path / "README.md", 'w', encoding='utf-8') as f:
+            f.write(readme_content)
 
         logger.info(f"Created README.md in {chapter_path}")
-        
-        # Return the content without the introduction section
-        return re.sub(r'# Introduction\n.*?(?=\n# |\Z)', '', content, flags=re.DOTALL)
+        return remaining_content.strip()
 
     except Exception as e:
         logger.error(f"Error creating README: {e}")
-        return content  # Return original content in case of error
+        return content

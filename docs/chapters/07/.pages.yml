@@ -1,6 +1,6 @@
 nav:
-- Overview: README.md
+- Introduction: README.md
 - 7.1 Goal Misgeneralization: 01.md
 - 7.2 Inner Alignment: 02.md
 - 7.3 Deceptive alignment: 03.md
-title: 07 - Goal Misgeneralization
+title: 07 - Generalization

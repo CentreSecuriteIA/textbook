@@ -13,7 +13,7 @@
             <div class="meta-content">
                 <div class="meta-label">Authors</div>
                 <div class="meta-value meta-list">
-                    <div><div>Markov Grey</div><div>Charbel-Raphael Segerie</div></div>
+                    <div><div>Markov Grey & Charbel-Raphael Segerie</div></div>
                 </div>
             </div>
         </div>

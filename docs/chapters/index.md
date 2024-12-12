@@ -1,5 +1,88 @@
 # AI Safety Atlas
 
+
+<div class="chapter-meta">
+<div class="meta-grid">
+    <!-- Left Column -->
+    <div class="meta-col">
+        <!-- Authors -->
+        <div class="meta-item">
+            <span class="meta-icon">
+                <i class="fas fa-users"></i>
+            </span>
+            <div class="meta-content">
+                <div class="meta-label">Authors</div>
+                <div class="meta-value meta-list">
+                    <div>
+                    <div>Markov Grey</div>
+                    <div>Charbel-Raphael Segerie</div>
+                    <div>Jeanne Salle</div>
+                    <div>Charles Martinet</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Affiliations -->
+        <div class="meta-item">
+            <span class="meta-icon">
+                <i class="fas fa-building"></i>
+            </span>
+            <div class="meta-content">
+                <div class="meta-label">Affiliations</div>
+                <div class="meta-value meta-list">
+                    <div><div>French Center for AI Safety (CeSIA)</div></div>
+                </div>
+            </div>
+        </div>
+        <!-- Acknowledgements section -->
+        <div class="meta-item">
+            <span class="meta-icon">
+                <i class="fas fa-heart"></i>
+            </span>
+            <div class="meta-content">
+                <div class="meta-label">Acknowledgements</div>
+                <div class="meta-value">
+                    <div>Vincent Corruble</div>
+                    <div>Jonathan Claybrough</div>
+                    <div>Jérémy Andréoletti</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Right Column -->
+    <div class="meta-col">
+
+        <!-- Citation -->
+        <div class="meta-item">
+            <span class="meta-icon">
+                <i class="fas fa-quote-right"></i>
+            </span>
+            <div class="meta-content">
+                <div class="meta-label">Cite this work as</div>
+                <div class="meta-value">
+                    <div>Grey, M., Segerie, C.R., et al. (2024). AI Safety Atlas. French Center for AI Safety (CeSIA). URL: ai-safety-atlas.com</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project funded by -->
+        <div class="meta-item">
+            <span class="meta-icon">
+                <i class="fas fa-hand-holding-dollar"></i>
+            </span>
+            <div class="meta-content">
+                <div class="meta-label">Project funded by</div>
+                <div class="meta-value">
+                    <div><a href="https://manifund.org/projects/ai-safety-textbook" target="_blank" style="text-decoration: none; color: inherit;">Ryan Kidd (Manifund)</a></div>
+                    <div>Open Philanthropy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
 ## Fundamentals
 
 The first four chapters form the foundational understanding of AI Safety that every stakeholder needs, regardless of their technical background. These chapters are written to be accessible to wide audiences, while still maintaining technical accuracy and depth where needed. The target audience includes anyone seeking to understand why AI Safety matters and how we might address it. While no specific technical prerequisites are required, basic familiarity with AI concepts and current developments in the field will help readers get the most out of these chapters.
