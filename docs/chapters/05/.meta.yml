@@ -1,0 +1,18 @@
+authors:
+- Markov Grey
+- Charbel-Raphael Segerie
+affiliations:
+- French Center for AI Safety (CeSIA)
+acknowledgements:
+- Maxime Riché
+- Martin
+- Jeanne Salle
+- Camille Berger
+date: '2024-11-20'
+links:
+- name: AI Safety Atlas
+  url: https://ai-safety-atlas.com/chapters/05/
+  type: ai_safety_atlas
+- name: Google Docs
+  url: https://docs.google.com/document/d/1KI95w27Ce7yWoynE11PJ94IXK0gT0NwP8091s06P7wM/edit?usp=sharing
+  type: google_docs

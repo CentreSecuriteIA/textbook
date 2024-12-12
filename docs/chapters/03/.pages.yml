@@ -1,10 +1,10 @@
 nav:
-- Overview: README.md
+- Introduction: README.md
 - 3.1 AI Safety is Challenging: 01.md
 - 3.2 Definitions: 02.md
-- 3.3 Misuse: 03.md
-- 3.4 Alignment of AGI: 04.md
-- 3.5 Alignment of ASI: 05.md
-- 3.6 Systemic: 06.md
+- 3.3 Preventing Misuse: 03.md
+- 3.4 AGI Safety: 04.md
+- 3.5 ASI Safety: 05.md
+- 3.6 Systemic Safety: 06.md
 - 3.7 Conclusion: 07.md
-title: 03 - Solutions Landscape
+title: 03 - Solutions

@@ -1,0 +1,34 @@
+authors:
+- Charbel-Raphael Segerie
+affiliations:
+- French Center for AI Safety (CeSIA)
+acknowledgements:
+- Markov Grey
+- Jeanne Salle
+- Charles Martinet
+- Lukas Gebhard
+- Amaury Lorin
+- Alejandro Acelas
+- Flawn
+- Emily Fan
+- Kieron Kretschmar
+- Sebastian Gil
+- Evander Hammer
+- Sophia Wesenberg
+- Jessica Wen
+- Niharika Chaubey
+- Angélina Gentaz
+- Jonathan Claybrough
+- Camille Berger
+- Josh Thorsteinson
+date: '2024-05-01'
+links:
+- name: AI Safety Atlas
+  url: https://ai-safety-atlas.com/chapters/03/
+  type: ai_safety_atlas
+- name: Alignment Forum
+  url: https://www.lesswrong.com/s/3ni2P2GZzBvNebWYZ/p/RzsXRbk2ETNqjhsma
+  type: alignment_forum
+- name: Google Docs
+  url: https://docs.google.com/document/d/1WTyLHyaJ_NEDEu49U_hh7oz0-AOQfp7uOJKLck-7A78/edit?usp=sharing
+  type: google_docs
