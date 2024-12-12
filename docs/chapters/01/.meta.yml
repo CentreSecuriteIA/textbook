@@ -1,5 +1,3 @@
-title: ''
-chapter_number: '1'
 authors:
 - Markov Grey
 - Charbel-Raphael Segerie
@@ -9,6 +7,15 @@ acknowledgements:
 - Jeanne Salle
 - Charles Martinet
 - Vincent Corruble
+- Diego Dorn
+- Josh Thorsteinson
+- Jonathan Claybrough
+- Alejandro Acelas
+- Jamie Raldua Veuthey
+- Alexandre Variengien
+- Léo Dana
+- Angélina Gentaz
+- Nicolas Guillard
 date: '2024-11-20'
 links:
 - name: AI Safety Atlas
@@ -20,12 +27,3 @@ links:
 - name: Google Docs
   url: https://docs.google.com/document/d/1HKo0Kest9Xppjn7m2ODpfMUlEu93SzLsfxXBH48Xaus/edit?usp=sharing
   type: google_docs
-- name: Feedback
-  url: https://forms.gle/ZsA4hEWUx1ZrtQLL9
-  type: feedback
-- name: Watch
-  url: https://www.youtube.com/watch?v=J_iMeH1hb9M
-  type: watch
-- name: Facilitate
-  url: https://docs.google.com/document/d/1L32xCVUCWEsm-x8UZ3GSTgKnmBcC7rJQLLIh9wGLj40/edit?usp=sharing
-  type: facilitate
