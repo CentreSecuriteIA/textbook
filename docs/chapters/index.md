@@ -6,19 +6,19 @@ The first four chapters form the foundational understanding of AI Safety that ev
 
 The progression through these chapters is carefully structured: we begin with understanding AI capabilities (what the technology can do), move to potential risks (what could go wrong), explore proposed solutions (how we might prevent those problems), examine governance frameworks (how to implement those solutions systematically). This sequence ensures readers build a comprehensive understanding of both the challenges and potential approaches to addressing them.
 
-### Chapter 1 (Capabilities)
+### Capabilities
 
 This chapter lays essential groundwork by examining the current state and trajectory of AI technology, introducing key concepts like foundation models, scaling laws, and methods for measuring and forecasting AI progress. This foundational understanding of what AI systems can do today—and may be capable of tomorrow—is crucial for grasping the risks and challenges discussed in subsequent chapters, as we can't meaningfully address AI safety without first understanding the technology we're trying to make safe.
 
-### Chapter 2 (Risks Landscape)
+### Risks
 
 This chapter builds directly on our understanding of AI capabilities to explore three fundamental categories of risk: misuse risks where humans intentionally deploy AI for harm, misalignment risks where AI systems pursue goals that conflict with human values, and systemic risks that emerge from complex interactions between AI systems and global structures. By systematically breaking down these risks and examining how they can manifest at different scales, from localized disruptions to existential threats, this chapter establishes why AI safety work is crucial and what specific challenges need to be addressed.
 
-### Chapter 3 (Solutions Landscape)
+### Solutions
 
 This chapter responds to the risks identified in Chapter 2 by examining current approaches and proposals for ensuring safe AI development, covering strategies from technical solutions to alignment to organizational safety practices and governance frameworks. While acknowledging that the field of AI safety is still young and no single solution appears sufficient, this chapter provides a comprehensive overview of available tools and strategies, setting up readers to understand the more technical deep-dives into specific safety mechanisms that follow in later chapters.
 
-### Chapter 4 (Governance) 
+### Governance 
 
 This chapter examines how we can implement and enforce the solutions discussed in Chapter 3 through effective oversight and regulation across multiple layers—from corporate policies to national legislation to international cooperation. By exploring key governance challenges and essential tools like compute monitoring, model registries, and incident reporting frameworks, this chapter completes our foundational understanding of AI safety by showing how technical solutions and policy mechanisms must work together to ensure beneficial AI development.
 
@@ -28,23 +28,23 @@ The technical extension to the textbook, comprising chapters 5 through 9. It del
 
 Each technical chapter is structured to first thoroughly examine a specific problem (like reward misspecification or goal misgeneralization), explain why it presents a fundamental challenge to AI Safety, and then explore current approaches to addressing it along with their limitations. Together, these chapters provide the technical depth needed to engage with and contribute to current AI Safety research and development.
 
-### Chapter 5 (Evaluations).
+### Evaluations
 
 This chapter serves as a bridge between the governance frameworks and technical implementation by exploring how we can rigorously assess AI systems' safety and capabilities. The chapter introduces key evaluation techniques from simple benchmarking to comprehensive protocols for testing dangerous capabilities, propensities, and control mechanisms, establishing how we can verify whether our safety measures are actually working and providing the measurement tools needed to implement many of the governance frameworks discussed in Chapter 4.
 
-### Chapter 6 (Reward Misspecification)
+### Specification
 
 This chapter tackles one of the fundamental challenges in AI alignment: ensuring that AI systems optimize for what we truly want rather than following reward functions literally or exploiting loopholes. This chapter examines why simply specifying the right reward is extremely difficult, how reward-based learning can lead to unintended behaviors through mechanisms like reward hacking and reward tampering, and explores potential solutions including learning from demonstrations, feedback, and constitutional AI approaches.
 
-### Chapter 7 (Goal Misgeneralization)
+### Generalization
 
 This chapter builds on the reward specification problem to explore a deeper issue: even when AI systems appear to learn the right behavior during training, they may learn and pursue the wrong goals when deployed in new situations. Through detailed examination of real-world examples and theoretical frameworks, this chapter explores how misaligned goals can emerge even from well-specified rewards, introducing concepts like mesa-optimization and deceptive alignment that are crucial for understanding advanced AI safety risks.
 
-### Chapter 8 (Scalable Oversight)
+### Oversight
 
 This chapter addresses a critical challenge that emerges as AI systems become more capable: how can we maintain meaningful human oversight when AI systems begin to exceed human capabilities in various domains? The chapter examines various approaches to this problem, from debate and amplification to recursive reward modeling, showing how we might maintain control and alignment even as AI capabilities scale beyond human-level in many areas.
 
-### Chapter 9 (Interpretability)
+### Interpretability
 
 This chapter explores how we can understand the internal workings of AI systems, which is crucial for verifying their safety and alignment. Moving from simple visualization techniques to sophisticated methods for analyzing neural networks, this chapter examines both current tools and fundamental challenges in making AI systems more transparent and interpretable, which is essential for implementing many of the safety approaches discussed in previous chapters.
 

@@ -1,8 +1,5 @@
 <!-- Abbreviations -->
 
-*[LLM]: Large Language Model. An AI model that takes in some text and predicts how it’s most likely to continue.
-*[LLMs]: Large Language Model. An AI model that takes in some text and predicts how it’s most likely to continue.
-*[LMM]: Large Multimodal Model. An AI model that can take in and produce multiple forms of data (such as both text and images).
 *[LMMs]: Large Multimodal Model. An AI model that can take in and produce multiple forms of data (such as both text and images).
 *[Multimodal model]: An AI model that can take in and produce multiple forms of data (such as both text and images).
 *[multimodal system]: An AI model that can take in and produce multiple forms of data (such as both text and images).
@@ -10,28 +7,6 @@
 
 *[CEV]: Coherent Extrapolated Volition.
 *[CAV]: Coherent Aggregated Volition.
-
-*[NLP]: Natural Language Processing
-*[NLU]: Natural Language Understanding
-
-*[GAN]: Generative Adversarial Network
-*[GANs]: Generative Adversarial Network
-
-*[CV]: Computer Vision
-*[GAN]: Generative Adversarial Network
-*[RNN]: Recurrent Neural Network
-*[CNN]: Convolutional Neural Network
-*[DNN]: Deep Neural Network
-
-*[RL]: Reinforcement Learning. A machine learning method in which the machine gets rewards based on its actions, and is adjusted to be more likely to take actions that lead to high reward.
-
-
-*[DL]: Deep Learning
-*[EDA]: Exploratory Data Analysis
-*[API]: Application Programming Interface
-*[CPU]: Central Processing Unit
-*[GPU]: Graphics Processing Unit
-*[TPU]: Tensor Processing Unit. A type of CPU specialized for machine learning. 
 
 
 *[Superintelligence]: An AI with cognitive abilities far greater than those of humans in a wide range of important domains.
@@ -45,14 +20,19 @@
 *[TAI]: Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.
 *[TAIs]: Transformative AI. An AI that is capable of transforming society, as drastically as the industrial revolution or even more so.
 
-*[Agent]: A system that can be understood as taking actions towards achieving a goal.
-*[agentic]: A system that can be understood as taking actions towards achieving a goal.
 
+
+*[Safety tax]: The added cost in time, money, computing power, capabilities, etc. needed to ensure that a system is aligned.
+*[safety tax]: The added cost in time, money, computing power, capabilities, etc. needed to ensure that a system is aligned.
+*[alignment tax]: The added cost in time, money, computing power, capabilities, etc. needed to ensure that a system is aligned.
 *[Alignment tax]: The added cost in time, money, computing power, capabilities, etc. needed to ensure that a system is aligned.
 
 *[Corrigible]: An AI system is corrigible if it doesn't interfere with our attempts to deactivate or modify it.
+*[corrigible]: An AI system is corrigible if it doesn't interfere with our attempts to deactivate or modify it.
+*[Corrigibility]: An AI system is corrigible if it doesn't interfere with our attempts to deactivate or modify it.
 *[corrigibility]: An AI system is corrigible if it doesn't interfere with our attempts to deactivate or modify it.
 
+*[CoT]: A prompting technique which makes a language model generate intermediate reasoning steps in its output.
 *[chain-of-thought]: A prompting technique which makes a language model generate intermediate reasoning steps in its output.
 *[Chain-of-Thought prompting]: A prompting technique which makes a language model generate intermediate reasoning steps in its output.
 *[Chain-of-thought]: A prompting technique which makes a language model generate intermediate reasoning steps in its output.
@@ -65,6 +45,7 @@
 
 *[x-risk]: Existential risk. A risk of human extinction or the permanent destruction of humanity’s long-term potential.
 *[s-risk]: Existential suffering risk.
+*[i-risk]: Ikigai risk. A risk of loss of meaning.
 
 
 *[Fast takeoff]: A transition from human-level AI to superintelligent AI that goes very quickly, giving us no time to react.
