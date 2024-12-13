@@ -46,6 +46,7 @@
                     <div>Vincent Corruble</div>
                     <div>Jonathan Claybrough</div>
                     <div>Jérémy Andréoletti</div>
+                    <div>Evander Hammer</div>
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@
 <div class="meta-grid">
     <!-- Left Column -->
     <div class="meta-col">
+
         <!-- Authors -->
         <div class="meta-item">
             <span class="meta-icon">
@@ -12,8 +13,8 @@
             </span>
             <div class="meta-content">
                 <div class="meta-label">Authors</div>
-                <div class="meta-value meta-list">
-                    <div><div>Markov Grey & Charbel-Raphael Segerie</div></div>
+                <div class="meta-value">
+                    Markov Grey & Charbel-Raphael Segerie
                 </div>
             </div>
         </div>

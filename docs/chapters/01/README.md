@@ -5,6 +5,7 @@
 <div class="meta-grid">
     <!-- Left Column -->
     <div class="meta-col">
+
         <!-- Authors -->
         <div class="meta-item">
             <span class="meta-icon">
@@ -12,8 +13,8 @@
             </span>
             <div class="meta-content">
                 <div class="meta-label">Authors</div>
-                <div class="meta-value meta-list">
-                    <div><div>Markov Grey & Charbel-Raphael Segerie</div></div>
+                <div class="meta-value">
+                    Markov Grey & Charbel-Raphael Segerie
                 </div>
             </div>
         </div>
@@ -59,15 +60,15 @@
         </div>
         
         <!-- Reading Time -->
-        <div class="meta-item">
-            <span class="meta-icon">
-                <i class="fas fa-book-open"></i>
-            </span>
-            <div class="meta-content">
-                <div class="meta-label">Reading Time</div>
-                <div class="meta-value">126 minutes</div>
-            </div>
-        </div>
+		<div class="meta-item">
+			<span class="meta-icon">
+				<i class="fas fa-clock"></i>
+			</span>
+			<div class="meta-content">
+				<div class="meta-label">Reading Time</div>
+				<div class="meta-value">90 min (core), 35 min (appendix)</div>
+			</div>
+		</div>
         
         <!-- Links -->
         <div class="meta-item">

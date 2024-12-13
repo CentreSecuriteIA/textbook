@@ -10,6 +10,9 @@
 
 **Why does AI Safety need this project?** The field of AI Safety has grown significantly, yet its educational infrastructure hasn't kept pace. While there's abundant information available, it's scattered across forums, blogs, papers, and videos. This makes learning difficult, and demands significant effort to piece together concepts, and see how everything is connected to the larger safety infrastructure. Our project transforms this fragmented landscape into a coherent learning journey.
 
+
+<img src="assets/project_image_1.png"/>
+
 ## Adoption
 
 **Who currently uses this project?** Our materials have been adopted across three main categories of users:
