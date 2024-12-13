@@ -77,25 +77,6 @@
     color: var(--md-primary-fg-color) !important;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .meta-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .meta-col {
-        gap: 1rem;
-    }
-    
-    .chapter-meta {
-        padding: 1rem;
-    }
-}
-
-
-
-
 .section-meta {
     background-color: var(--md-code-bg-color);
     border-radius: 0.2rem;
@@ -126,3 +107,25 @@
 .section-meta a:hover {
     text-decoration: underline;
 }
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .meta-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .meta-col {
+        gap: 1rem;
+    }
+    
+    .chapter-meta {
+        padding: 1rem;
+    }
+}
+
+
+
+

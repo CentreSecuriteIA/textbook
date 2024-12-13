@@ -5,6 +5,7 @@
 <div class="meta-grid">
     <!-- Left Column -->
     <div class="meta-col">
+
         <!-- Authors -->
         <div class="meta-item">
             <span class="meta-icon">
@@ -12,8 +13,8 @@
             </span>
             <div class="meta-content">
                 <div class="meta-label">Authors</div>
-                <div class="meta-value meta-list">
-                    <div><div>Markov Grey & Charbel-Raphael Segerie</div></div>
+                <div class="meta-value">
+                    Markov Grey & Charbel-Raphael Segerie
                 </div>
             </div>
         </div>
@@ -93,7 +94,7 @@
 As AI systems grow increasingly powerful, our ability to rigorously evaluate them becomes crucial for safety and governance. The challenge isn't just measuring what AI systems can do, but understanding their behavioral tendencies and verifying our ability to maintain control. This section introduces the landscape of AI evaluation and explains why we need increasingly sophisticated approaches beyond simple benchmarking.
 
 <figure markdown="span">
-![Enter image alt description](Images/tS5_Image_1.png){ loading=lazy }
+![Enter image alt description](Images/9N4_Image_1.png){ loading=lazy }
   <figcaption markdown="1"><b>Figure 1:</b> Overview of chapter content.</figcaption>
 </figure>
 
