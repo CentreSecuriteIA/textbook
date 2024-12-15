@@ -116,6 +116,7 @@ extra_css:
   - overrides/css/navigation.css
   - overrides/css/metadata.css
   - overrides/css/figures.css
+  - overrides/css/footer.css
   - https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
 
@@ -135,4 +136,15 @@ extra:
     - name: English
       link: /en/ 
       lang: en
-
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/CentreSecuriteIA/textbook
+      name: AI Safety Atlas on GitHub
+    - icon: fontawesome/brands/discord 
+      link: https://discord.gg/YtatCZ3SQ8
+      name: Join our Discord community
+    - icon: fontawesome/brands/youtube 
+      link: https://www.youtube.com/@securite-ia
+      name: Subsribe to the youtube channel
+  copyright: Copyright &copy; 2024 French Center for AI Safety (CeSIA)
