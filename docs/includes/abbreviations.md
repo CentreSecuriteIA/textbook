@@ -298,3 +298,6 @@
 *[Sparse Autoencoder]: A type of autoencoder designed to disentangle features that a model has learned.
 *[superposition hypothesis]: The superposition hypothesis posits that neural networks efficiently store more features than they have neurons by encoding features as overlapping linear combinations across multiple neurons.
 
+*[OOM]: Order of Magnitude
+*[OOMs]: Orders of Magnitude
+

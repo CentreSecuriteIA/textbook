@@ -117,6 +117,7 @@ extra_css:
   - overrides/css/metadata.css
   - overrides/css/figures.css
   - overrides/css/footer.css
+  - overrides/css/section-end.css
   - https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
 

@@ -40,7 +40,7 @@
     <div class="meta-content">
         <div class="meta-label">Acknowledgements</div>
         <div class="meta-value">
-            Jeanne Salle, Charles Martinet, Vincent Corruble, Diego Dorn, Josh Thorsteinson, Jonathan Claybrough, Alejandro Acelas, Jamie Raldua Veuthey, Alexandre Variengien, Léo Dana, Angélina Gentaz, Nicolas Guillard
+            Jeanne Salle, Charles Martinet, Vincent Corruble, Diego Dorn, Josh Thorsteinson, Jonathan Claybrough, Alejandro Acelas, Jamie Raldua Veuthey, Alexandre Variengien, Léo Dana, Angélina Gentaz, Nicolas Guillard, Leo Karoubi
         </div>
     </div>
 </div>
@@ -66,7 +66,7 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">90 min (core), 35 min (appendix)</div>
+				<div class="meta-value">92 min (core), 45 min (appendix)</div>
 			</div>
 		</div>
         
@@ -96,8 +96,8 @@
 The field of artificial intelligence has undergone a remarkable transformation in recent years. This chapter lays the groundwork for the entire book by establishing what AI systems can currently do, how they achieve these capabilities, and how we might anticipate their future development. This understanding is essential for all subsequent chapters: the discussion of dangerous capabilities and potential risks (Chapter 2) follows directly from understanding capabilities. Similarly, proposed technical (Chapter 3) and governance solutions (Chapter 4) both must account for the current and projected future of AI capabilities.
 
 <figure markdown="span">
-![Enter image alt description](Images/kPY_Image_1.png){ loading=lazy }
-  <figcaption markdown="1"><b>Figure 1:</b> We first explain foundation models, which have been continuously showing improved capabilities due to scale. Then examine empirically observed scaling laws. Based on these trends we look at some techniques that researchers use to try and forecast future AI progress.</figcaption>
+![Enter image alt description](Images/4pU_Image_1.png){ loading=lazy }
+  <figcaption markdown="1"><b>Figure 1.1:</b> We first explain foundation models, which have been continuously showing improved capabilities due to scale. Then examine empirically observed scaling laws. Based on these trends we look at some techniques that researchers use to try and forecast future AI progress.</figcaption>
 </figure>
 
 **State-of-the-Art AI - Achieved breakthrough capabilities across multiple domains**. We begin by exploring how AI systems have evolved from narrow, specialized tools to increasingly general-purpose tools. Language models can now engage in complex reasoning, while computer vision systems demonstrate sophisticated understanding of visual information. In robotics, we're seeing the emergence of systems that can learn and adapt to real-world environments with increasing autonomy. The goal of this section is to give the reader many examples from different domains of accelerating AI capabilities.
@@ -111,3 +111,8 @@ The field of artificial intelligence has undergone a remarkable transformation i
 **Forecasting - Predicting capabilities progress helps us prepare safety measures in advance**. Building on our understanding of current capabilities and scaling behaviors, we examine various approaches to anticipating future progress. From biological anchors to trend analysis, we explore frameworks for making informed predictions about AI development trajectories. This is very important to know when different safety measures need to be in place.
 
 **Appendices - Overview of expert opinions on AI, detailed debates around scale, and scaling trends.** We consider these sections optional, but still useful to those who want to get a little bit of a deeper dive. The chapter concludes with appendices examining expert opinions on AI progress, deeper discussions about the nature and limitations of large language models, and comprehensive data on key trends in AI development.
+
+
+<div class="section-end">
+    <span>❧</span>
+</div>
