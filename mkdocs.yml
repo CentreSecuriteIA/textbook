@@ -47,6 +47,12 @@ theme:
 
 plugins:
   - search
+  - awesome-pages:
+      filename: .pages.yml
+      collapse_single_pages: false
+      strict: false
+      order: asc
+      sort_type: natural
   #- glightbox: # https://github.com/blueswen/mkdocs-glightbox
        #touchNavigation: true
        #loop: false
@@ -63,12 +69,15 @@ plugins:
        #background: white
        #shadow: true
        #manual: false
-  - awesome-pages:
-      filename: .pages.yml
-      collapse_single_pages: false
-      strict: false
-      order: asc
-      sort_type: natural
+  #- minify: # optimize the site's performance by minifying
+      #minify_html: true
+      #minify_js: true
+      #minify_css: true
+      #htmlmin_opts:
+          #remove_comments: true
+  #- meta-descriptions: # better SEO
+      #export_csv: false
+      #quiet: false
 
 use_directory_urls: true
 
@@ -118,6 +127,7 @@ extra_css:
   - overrides/css/figures.css
   - overrides/css/footer.css
   - overrides/css/section-end.css
+  - overrides/css/scroll-buttons.css
   - https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
 
@@ -126,6 +136,7 @@ extra_javascript:
   - overrides/js/mathjax.js
   - overrides/js/tippy.js
   - overrides/js/navigation.js
+  - overrides/js/scroll-buttons.js
   - https://unpkg.com/@popperjs/core@2
   - https://unpkg.com/tippy.js@6
   - https://unpkg.com/tippy.js@6/dist/animations/perspective-extreme.js

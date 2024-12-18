@@ -1,0 +1,99 @@
+/* File: textbook/docs/overrides/css/buttons.css */
+
+/* Common styles for both themes */
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.action-button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    text-decoration: none !important;
+    font-size: 0.8em;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: transparent;
+    height: 36px;
+}
+
+.action-button i {
+    margin-right: 8px;
+    font-size: 0.9em;
+    transition: transform 0.2s ease;
+}
+
+.action-button:hover i {
+    transform: scale(1.1);
+}
+
+.action-button span {
+    margin-left: 4px;
+}
+
+/* Light mode specifics */
+[data-md-color-scheme="default"] .action-button {
+    color: var(--md-primary-fg-color);
+    border: 1.5px solid var(--md-primary-fg-color);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+[data-md-color-scheme="default"] .action-button:hover {
+    background-color: var(--md-primary-fg-color);
+    color: white !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-md-color-scheme="default"] .action-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode specifics */
+[data-md-color-scheme="slate"] .action-button {
+    color: var(--md-primary-fg-color--light);
+    border: 1.5px solid var(--md-primary-fg-color--light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+[data-md-color-scheme="slate"] .action-button:hover {
+    background-color: var(--md-primary-fg-color--light);
+    color: var(--md-default-bg-color) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-md-color-scheme="slate"] .action-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .action-buttons {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .action-button {
+        padding: 8px;
+        aspect-ratio: 1;
+        border-radius: 8px;
+    }
+
+    .action-button i {
+        margin-right: 0;
+        font-size: 1.2em;
+    }
+
+    .action-button span {
+        display: none;
+    }
+}
