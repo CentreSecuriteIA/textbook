@@ -5,6 +5,7 @@
 <div class="meta-grid">
     <!-- Left Column -->
     <div class="meta-col">
+
         <!-- Authors -->
         <div class="meta-item">
             <span class="meta-icon">
@@ -12,8 +13,8 @@
             </span>
             <div class="meta-content">
                 <div class="meta-label">Authors</div>
-                <div class="meta-value meta-list">
-                    <div><div>Jeanne Salle & Charbel-Raphael Segerie</div></div>
+                <div class="meta-value">
+                    Jeanne Salle
                 </div>
             </div>
         </div>
@@ -39,7 +40,7 @@
     <div class="meta-content">
         <div class="meta-label">Acknowledgements</div>
         <div class="meta-value">
-            Markov Grey
+            Markov Grey, Charbel-Raphael Segerie
         </div>
     </div>
 </div>
@@ -59,15 +60,15 @@
         </div>
         
         <!-- Reading Time -->
-        <div class="meta-item">
-            <span class="meta-icon">
-                <i class="fas fa-book-open"></i>
-            </span>
-            <div class="meta-content">
-                <div class="meta-label">Reading Time</div>
-                <div class="meta-value">55 minutes</div>
-            </div>
-        </div>
+		<div class="meta-item">
+			<span class="meta-icon">
+				<i class="fas fa-clock"></i>
+			</span>
+			<div class="meta-content">
+				<div class="meta-label">Reading Time</div>
+				<div class="meta-value">55 min (core)</div>
+			</div>
+		</div>
         
         <!-- Links -->
         <div class="meta-item">
@@ -86,8 +87,28 @@
 
 </div>
 
-[Feedback](https://forms.gle/ZsA4hEWUx1ZrtQLL9){ .md-button }
-[Facilitate](https://docs.google.com/document/d/1izDWZKR_xB2qj2a8LkbqcnqnjBIC-C7fn-74CIA-m9w/edit?usp=sharing){ .md-button }
+<div class="action-buttons">
+    <div class="action-button disabled" data-tippy-content="Video coming soon">
+        <i class="fas fa-video"></i>
+        <span>Watch</span>
+    </div>
+    <div class="action-button disabled" data-tippy-content="Audio coming soon">
+        <i class="fas fa-headphones"></i>
+        <span>Listen</span>
+    </div>
+    <div class="action-button disabled" data-tippy-content="PDF coming soon">
+        <i class="fas fa-file-pdf"></i>
+        <span>Download</span>
+    </div>
+    <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
+        <i class="fas fa-comment"></i>
+        <span>Feedback</span>
+    </a>
+    <a href="https://docs.google.com/document/d/1izDWZKR_xB2qj2a8LkbqcnqnjBIC-C7fn-74CIA-m9w/edit?usp=sharing" class="action-button">
+        <i class="fas fa-users"></i>
+        <span>Facilitate</span>
+    </a>
+</div>
 
 # Overview
 
@@ -102,3 +123,8 @@ We currently don’t understand how AI models work. We know how to train and bui
 <iframe style="width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/aircAruvnKk"></iframe>
 
 For each method presented in this chapter, we first provide a high-level overview, followed by a more in-depth and technical explanation. The technical explanations can be skipped.
+
+
+<div class="section-end">
+    <span>❧</span>
+</div>

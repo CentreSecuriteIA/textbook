@@ -2,6 +2,8 @@
 
 # Overview
 
+<img src="assets/project_image_1.png"/>
+
 **What are we building?** The overarching project is to improve the AI safety education landscape. This means that we aim to do a couple of things:
 
 - **Textbook**: First, the core of our project is writing a textbook that systematically maps the landscape of AI Safety knowledge. Rather than just aggregating existing content, we reconstruct key ideas into a carefully structured narrative where concepts build naturally on previous ones. This textbook currently contains 9 chapters, spanning from the basics of understanding AI capabilities, to the technical details of interpretability.
@@ -11,7 +13,6 @@
 **Why does AI Safety need this project?** The field of AI Safety has grown significantly, yet its educational infrastructure hasn't kept pace. While there's abundant information available, it's scattered across forums, blogs, papers, and videos. This makes learning difficult, and demands significant effort to piece together concepts, and see how everything is connected to the larger safety infrastructure. Our project transforms this fragmented landscape into a coherent learning journey.
 
 
-<img src="assets/project_image_1.png"/>
 
 ## Adoption
 

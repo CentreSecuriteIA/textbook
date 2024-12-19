@@ -7,16 +7,14 @@ theme:
   custom_dir: docs/overrides
   palette:
     # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: indigo
       accent: indigo
       toggle:
@@ -30,7 +28,7 @@ theme:
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
-    - navigation.top
+    #- navigation.top
     - navigation.footer
     - navigation.sections
     - navigation.tacking
@@ -144,10 +142,10 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
-  alternate:
-    - name: English
-      link: /en/ 
-      lang: en
+  #alternate:
+    #- name: English
+      #link: /en/ 
+      #lang: en
   generator: false
   social:
     - icon: fontawesome/brands/github

@@ -60,15 +60,15 @@
         </div>
         
         <!-- Reading Time -->
-        <div class="meta-item">
-            <span class="meta-icon">
-                <i class="fas fa-book-open"></i>
-            </span>
-            <div class="meta-content">
-                <div class="meta-label">Reading Time</div>
-                <div class="meta-value">59 minutes</div>
-            </div>
-        </div>
+		<div class="meta-item">
+			<span class="meta-icon">
+				<i class="fas fa-clock"></i>
+			</span>
+			<div class="meta-content">
+				<div class="meta-label">Reading Time</div>
+				<div class="meta-value">60 min (core)</div>
+			</div>
+		</div>
         
         <!-- Links -->
         <div class="meta-item">
@@ -87,8 +87,28 @@
 
 </div>
 
-[Feedback](https://forms.gle/ZsA4hEWUx1ZrtQLL9){ .md-button }
-[Facilitate](https://docs.google.com/document/d/1JfmzGii5QG6hW8AM5WxzDBVyGc14aLV_Lc_1PkK2ZLc/edit?usp=sharing){ .md-button }
+<div class="action-buttons">
+    <div class="action-button disabled" data-tippy-content="Video coming soon">
+        <i class="fas fa-video"></i>
+        <span>Watch</span>
+    </div>
+    <div class="action-button disabled" data-tippy-content="Audio coming soon">
+        <i class="fas fa-headphones"></i>
+        <span>Listen</span>
+    </div>
+    <div class="action-button disabled" data-tippy-content="PDF coming soon">
+        <i class="fas fa-file-pdf"></i>
+        <span>Download</span>
+    </div>
+    <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
+        <i class="fas fa-comment"></i>
+        <span>Feedback</span>
+    </a>
+    <a href="https://docs.google.com/document/d/1JfmzGii5QG6hW8AM5WxzDBVyGc14aLV_Lc_1PkK2ZLc/edit?usp=sharing" class="action-button">
+        <i class="fas fa-users"></i>
+        <span>Facilitate</span>
+    </a>
+</div>
 
 # Introduction
 
@@ -101,3 +121,8 @@
 **Learning by Imitation**: This section focuses on some proposed solutions to reward misspecification that rely on learning reward functions through imitating human behavior. It examines proposals such as imitation learning (IL), behavioral cloning (BC), and inverse reinforcement learning (IRL). Each section also contains an examination of possible issues and limitations of these approaches as they pertain to resolving reward hacking.
 
 **Learning by Feedback**: The final section investigates proposals aiming to rectify reward misspecification by providing feedback to the machine learning models. The section also provides a comprehensive insight into how current large language models (LLMs) are trained. The discussion covers reward modeling, reinforcement learning from human feedback (RLHF), reinforcement learning from artificial intelligence feedback (RLAIF), and the limitations of these approaches.
+
+
+<div class="section-end">
+    <span>❧</span>
+</div>

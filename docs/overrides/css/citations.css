@@ -1,0 +1,74 @@
+/* File: textbook/docs/overrides/css/citations.css */
+
+.citation-formats {
+    margin: 2rem 0;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 4px;
+    background-color: var(--md-code-bg-color);
+}
+
+.citation-formats summary {
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+}
+
+.citation-formats[open] summary {
+    border-bottom-color: var(--md-default-fg-color--lightest);
+}
+
+.citation-content {
+    padding: 1rem;
+}
+
+.citation-format {
+    margin-bottom: 1rem;
+}
+
+.citation-format:last-child {
+    margin-bottom: 0;
+}
+
+.format-label {
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--md-default-fg-color--light);
+}
+
+.format-content {
+    position: relative;
+    background-color: var(--md-code-bg-color--light);
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-family: var(--md-code-font-family);
+    font-size: 0.7rem;
+    line-height: 1.5;
+    overflow-x: auto;
+}
+
+.copy-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.7rem;
+    color: var(--md-default-fg-color--light);
+    background-color: transparent;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+    background-color: var(--md-default-fg-color--lightest);
+    color: var(--md-default-fg-color);
+}
+
+.copy-button.copied {
+    background-color: var(--md-primary-fg-color);
+    color: white;
+    border-color: var(--md-primary-fg-color);
+}

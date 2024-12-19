@@ -5,6 +5,7 @@
 <div class="meta-grid">
     <!-- Left Column -->
     <div class="meta-col">
+
         <!-- Authors -->
         <div class="meta-item">
             <span class="meta-icon">
@@ -12,8 +13,8 @@
             </span>
             <div class="meta-content">
                 <div class="meta-label">Authors</div>
-                <div class="meta-value meta-list">
-                    <div><div>Markov Grey & Charbel-Raphael Segerie</div></div>
+                <div class="meta-value">
+                    Markov Grey & Charbel-Raphael Segerie
                 </div>
             </div>
         </div>
@@ -59,15 +60,15 @@
         </div>
         
         <!-- Reading Time -->
-        <div class="meta-item">
-            <span class="meta-icon">
-                <i class="fas fa-book-open"></i>
-            </span>
-            <div class="meta-content">
-                <div class="meta-label">Reading Time</div>
-                <div class="meta-value">92 minutes</div>
-            </div>
-        </div>
+		<div class="meta-item">
+			<span class="meta-icon">
+				<i class="fas fa-clock"></i>
+			</span>
+			<div class="meta-content">
+				<div class="meta-label">Reading Time</div>
+				<div class="meta-value">92 min (core)</div>
+			</div>
+		</div>
         
         <!-- Links -->
         <div class="meta-item">
@@ -86,8 +87,28 @@
 
 </div>
 
-[Feedback](https://forms.gle/ZsA4hEWUx1ZrtQLL9){ .md-button }
-[Facilitate](https://docs.google.com/document/d/1DaygDSW0L5dWuJnpSjYPF2XUbW51UoBJsT1cjLYKc2w/edit?usp=sharing){ .md-button }
+<div class="action-buttons">
+    <div class="action-button disabled" data-tippy-content="Video coming soon">
+        <i class="fas fa-video"></i>
+        <span>Watch</span>
+    </div>
+    <div class="action-button disabled" data-tippy-content="Audio coming soon">
+        <i class="fas fa-headphones"></i>
+        <span>Listen</span>
+    </div>
+    <div class="action-button disabled" data-tippy-content="PDF coming soon">
+        <i class="fas fa-file-pdf"></i>
+        <span>Download</span>
+    </div>
+    <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
+        <i class="fas fa-comment"></i>
+        <span>Feedback</span>
+    </a>
+    <a href="https://docs.google.com/document/d/1DaygDSW0L5dWuJnpSjYPF2XUbW51UoBJsT1cjLYKc2w/edit?usp=sharing" class="action-button">
+        <i class="fas fa-users"></i>
+        <span>Facilitate</span>
+    </a>
+</div>
 
 # Introduction
 
@@ -102,3 +123,8 @@
 **Debate**. This section explores AI Safety via Debate as an adversarial technique for scalable oversight. It describes how AI models arguing for different positions, with a human or AI judge determining the winner, can result in more truthful outcomes. The potential of debate to elicit latent knowledge, improve reasoning, and enhance our ability to oversee complex AI systems is discussed. Key metrics such as the Discriminator Critique Gap (DCG) are introduced, along with the challenges of judging debates. The section also examines the assumptions required for Debate to converge on truth.
 
 **Weak-to-Strong (W2S)**. The final section introduces Weak-to-Strong Generalization (W2SG) as a practical approach to scalable oversight, building on insights from previous techniques. It explains how narrowly superhuman models can be used as case studies for scalable oversight techniques. W2SG involves training strong AI models using weak supervision, aiming for the strong model to outperform its weak supervisor by leveraging pre-existing knowledge. The section concludes by discussing various methods of evaluating oversight techniques, including sandwiching evaluations and meta-level adversarial evaluations, providing a way to judge future scalable oversight protocols.
+
+
+<div class="section-end">
+    <span>❧</span>
+</div>

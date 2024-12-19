@@ -50,3 +50,14 @@ function initializeTippy() {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    tippy('.action-button.disabled', {
+        theme: 'elegant',
+        placement: 'top',
+        arrow: true,
+        animation: 'fade',
+        duration: [0, 0], // [enter, leave] duration in ms
+        hideOnClick: false,
+    });
+});

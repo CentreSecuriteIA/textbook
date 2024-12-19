@@ -5,6 +5,7 @@
 <div class="meta-grid">
     <!-- Left Column -->
     <div class="meta-col">
+
         <!-- Authors -->
         <div class="meta-item">
             <span class="meta-icon">
@@ -12,8 +13,8 @@
             </span>
             <div class="meta-content">
                 <div class="meta-label">Authors</div>
-                <div class="meta-value meta-list">
-                    <div><div>Markov Grey & Charbel-Raphael Segerie</div></div>
+                <div class="meta-value">
+                    Markov Grey & Charbel-Raphael Segerie
                 </div>
             </div>
         </div>
@@ -59,15 +60,15 @@
         </div>
         
         <!-- Reading Time -->
-        <div class="meta-item">
-            <span class="meta-icon">
-                <i class="fas fa-book-open"></i>
-            </span>
-            <div class="meta-content">
-                <div class="meta-label">Reading Time</div>
-                <div class="meta-value">118 minutes</div>
-            </div>
-        </div>
+		<div class="meta-item">
+			<span class="meta-icon">
+				<i class="fas fa-clock"></i>
+			</span>
+			<div class="meta-content">
+				<div class="meta-label">Reading Time</div>
+				<div class="meta-value">106 min (core), 12 min (appendix)</div>
+			</div>
+		</div>
         
         <!-- Links -->
         <div class="meta-item">
@@ -86,9 +87,28 @@
 
 </div>
 
-[Feedback](https://forms.gle/ZsA4hEWUx1ZrtQLL9){ .md-button }
-[Watch](https://www.youtube.com/watch?v=dhr4u-w75aQ){ .md-button }
-[Facilitate](https://docs.google.com/document/d/1evE1rG91DKBuKlWnqPw45QtPxKBz0GlD_ZYrurNdvN4/edit?usp=sharing){ .md-button }
+<div class="action-buttons">
+    <a href="https://www.youtube.com/watch?v=dhr4u-w75aQ" class="action-button">
+        <i class="fas fa-video"></i>
+        <span>Watch</span>
+    </a>
+    <div class="action-button disabled" data-tippy-content="Audio coming soon">
+        <i class="fas fa-headphones"></i>
+        <span>Listen</span>
+    </div>
+    <div class="action-button disabled" data-tippy-content="PDF coming soon">
+        <i class="fas fa-file-pdf"></i>
+        <span>Download</span>
+    </div>
+    <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
+        <i class="fas fa-comment"></i>
+        <span>Feedback</span>
+    </a>
+    <a href="https://docs.google.com/document/d/1evE1rG91DKBuKlWnqPw45QtPxKBz0GlD_ZYrurNdvN4/edit?usp=sharing" class="action-button">
+        <i class="fas fa-users"></i>
+        <span>Facilitate</span>
+    </a>
+</div>
 
 # Introduction
 
@@ -100,7 +120,7 @@ The first step is to get an understanding of - What exactly are the concerning s
 
 <figure markdown="span">
 ![Enter image alt description](Images/TeB_Image_1.png){ loading=lazy }
-  <figcaption markdown="1"><b>Figure 1:</b> Example of how increasing capabilities might result in different impacts at different levels.</figcaption>
+  <figcaption markdown="1"><b>Figure 2.1:</b> Example of how increasing capabilities might result in different impacts at different levels.</figcaption>
 </figure>
 
 We already have identifiable pathways through which AI can be misused. This misuse can lead to catastrophic outcomes that could profoundly impact society. In addition to misuse, there is the risk that we are approaching a critical threshold where the development of dangerously advanced capabilities, such as uncontrolled self-proliferation and self-replicating AI agents, becomes a tangible reality. These capabilities could lead to scenarios where AI systems rapidly expand and evolve beyond human control, potentially causing widespread disruption and harm. This proximity to such advanced capabilities underscores the immediate need for vigilance and proactive measures. Additionally, the current regulatory landscape is beset by significant gaps, lacking comprehensive regulations governing AI development and deployment. This absence of adequate regulatory frameworks further exacerbates the risks associated with AI.
@@ -124,3 +144,10 @@ They now want to bet their entire life savings in a match against Magnus Carlson
 
 
     There is no question that machines will become smarter than humans—in all domains in which humans are smart—in the future. It's a question of when and how, not a question of if.
+
+
+
+
+<div class="section-end">
+    <span>❧</span>
+</div>

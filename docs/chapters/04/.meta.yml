@@ -1,0 +1,15 @@
+authors:
+- Charles Martinet
+affiliations:
+- French Center for AI Safety (CeSIA)
+acknowledgements:
+- Markov Grey
+- Charbel-Raphael Segerie
+date: '2024-05-01'
+links:
+- name: AI Safety Atlas
+  url: https://ai-safety-atlas.com/chapters/04/
+  type: ai_safety_atlas
+- name: Google Docs
+  url: https://docs.google.com/document/d/1WTyLHyaJ_NEDEu49U_hh7oz0-AOQfp7uOJKLck-7A78/edit?usp=sharing
+  type: google_docs
