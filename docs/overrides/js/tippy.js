@@ -1,13 +1,4 @@
-// Wait for document load
-document.addEventListener('DOMContentLoaded', () => {
-    initializeTippy();
-    
-    // Watch for navigation changes using MkDocs' event system
-    document$.subscribe(() => {
-        // Small delay to ensure DOM is fully updated
-        setTimeout(initializeTippy, 200);
-    });
-});
+// File: docs/js/tippy.js
 
 function initializeTippy() {
     // Get all abbr elements
@@ -29,18 +20,11 @@ function initializeTippy() {
             theme: 'elegant',
             animation: 'perspective-extreme',
             arrow: true,
-            appendTo: document.body, // Ensures proper positioning
+            appendTo: document.body,
             delay: [100, 50],
             duration: [200, 150],
             maxWidth: 300,
-            offset: [0, 12],
-            onMount(instance) {
-                // Ensure arrow is visible after mount
-                const box = instance.popper.querySelector('.tippy-box');
-                if (box) {
-                    box.style.opacity = '1';
-                }
-            }
+            offset: [0, 12]
         });
         
         // Store title and remove it to prevent default tooltip
@@ -51,13 +35,29 @@ function initializeTippy() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+// Initialize on first load
+document.addEventListener('DOMContentLoaded', initializeTippy);
+
+// Handle MkDocs page changes
+document$.subscribe(() => {
+    // Small delay to ensure DOM is fully updated
+    setTimeout(initializeTippy, 100);
+});
+
+// Initialize tooltips for disabled buttons
+function initializeDisabledTooltips() {
     tippy('.action-button.disabled', {
         theme: 'elegant',
         placement: 'top',
         arrow: true,
         animation: 'fade',
-        duration: [0, 0], // [enter, leave] duration in ms
+        duration: [0, 0],
         hideOnClick: false,
     });
-});
+}
+
+// Initialize disabled tooltips on first load
+document.addEventListener('DOMContentLoaded', initializeDisabledTooltips);
+
+// Handle MkDocs page changes for disabled tooltips
+document$.subscribe(initializeDisabledTooltips);

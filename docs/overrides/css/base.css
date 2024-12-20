@@ -45,3 +45,11 @@
 .md-content {
 	margin-bottom: 100px;
 }
+
+/* Remove shadows from top navbar */
+.md-header {
+    box-shadow: none;
+}
+
+
+

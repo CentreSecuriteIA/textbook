@@ -1,3 +1,5 @@
+/* File: docs/overrides/css/tippy.css */
+
 /* Base tippy styling */
 .tippy-box[data-theme~='elegant'] {
   background-color: var(--md-primary-fg-color);
@@ -7,33 +9,35 @@
   padding: 0.5rem 0.8rem;
   border-radius: 4px;
   box-shadow: var(--md-shadow-z2);
-    font-family: Baskerville, "Libre Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: Baskerville, "Libre Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
-/* Arrow styling */
-.tippy-box[data-theme~='elegant'] .tippy-arrow {
-  color: var(--md-primary-fg-color);
-}
-
-.tippy-box[data-theme~='elegant'] .tippy-arrow:before {
-  content: '';
-  position: absolute;
-  border-color: transparent;
-  border-style: solid;
-}
-
-.tippy-box[data-theme~='elegant'][data-placement^='top'] .tippy-arrow:before {
-  border-top-color: currentColor;
-  border-width: 8px 8px 0;
+/* Arrow styling - fix for white background */
+.tippy-box[data-theme~='elegant'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--md-primary-fg-color);
   bottom: -7px;
-  left: -8px;
 }
 
-.tippy-box[data-theme~='elegant'][data-placement^='bottom'] .tippy-arrow:before {
-  border-bottom-color: currentColor;
-  border-width: 0 8px 8px;
+.tippy-box[data-theme~='elegant'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: var(--md-primary-fg-color);
   top: -7px;
-  left: -8px;
+}
+
+.tippy-box[data-theme~='elegant'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: var(--md-primary-fg-color);
+  right: -7px;
+}
+
+.tippy-box[data-theme~='elegant'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: var(--md-primary-fg-color);
+  left: -7px;
+}
+
+/* Remove any background from arrow */
+.tippy-arrow {
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
 }
 
 /* Dark mode adjustments */
@@ -56,7 +60,8 @@
 }
 
 /* Remove default dotted underline and set custom underline */
-.md-typeset abbr {
+/* Only show abbreviations in paragraphs, not in headers or other elements */
+.md-typeset p > abbr {
     border-bottom: none;
     text-decoration: none;
     cursor: help;
@@ -75,19 +80,11 @@
 }
 
 /* Hover effect */
-.md-typeset abbr:hover::after {
+.md-typeset p > abbr:hover::after {
     opacity: 0.7;
 }
 
-/* Tippy styling */
-.tippy-box[data-theme~='elegant'] {
-    background-color: var(--md-primary-fg-color);
-    color: #fff;
-    font-size: 0.65rem;
-    line-height: 1.5;
-    padding: 0.5rem 0.8rem;
-    border-radius: 4px;
-    box-shadow: var(--md-shadow-z2);
+/* Prevent abbreviation styling on line breaks */
+.md-typeset p > abbr {
+    white-space: nowrap;
 }
-
-/* Rest of your existing tippy styles... */

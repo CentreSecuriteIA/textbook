@@ -25,9 +25,9 @@ theme:
   features:
     - navigation.tabs
     - navigation.indexes
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
+    #- navigation.instant
+    #- navigation.instant.prefetch
+    #- navigation.instant.progress
     #- navigation.top
     - navigation.footer
     - navigation.sections
@@ -126,6 +126,7 @@ extra_css:
   - overrides/css/footer.css
   - overrides/css/section-end.css
   - overrides/css/scroll-buttons.css
+  - overrides/css/citations.css
   - https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
 
@@ -135,6 +136,7 @@ extra_javascript:
   - overrides/js/tippy.js
   - overrides/js/navigation.js
   - overrides/js/scroll-buttons.js
+  - overrides/js/citations.js
   - https://unpkg.com/@popperjs/core@2
   - https://unpkg.com/tippy.js@6
   - https://unpkg.com/tippy.js@6/dist/animations/perspective-extreme.js
