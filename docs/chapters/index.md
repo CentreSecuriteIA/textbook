@@ -75,7 +75,7 @@
             <div class="meta-content">
                 <div class="meta-label">Project funded by</div>
                 <div class="meta-value">
-                    <div><a href="https://manifund.org/projects/ai-safety-textbook" target="_blank" style="text-decoration: none; color: inherit;">Ryan Kidd (Manifund)</a></div>
+                    <div><a href="https://manifund.org/projects/ai-safety-textbook" target="_blank" style="text-decoration: none; color: inherit;">Ryan Kidd (Manifund Regrant)</a></div>
                     <div>Open Philanthropy</div>
                 </div>
             </div>
