@@ -66,7 +66,7 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">92 min (core), 45 min (appendix)</div>
+				<div class="meta-value">94 min (core), 47 min (appendix)</div>
 			</div>
 		</div>
         
@@ -115,7 +115,7 @@
 The field of artificial intelligence has undergone a remarkable transformation in recent years. This chapter lays the groundwork for the entire book by establishing what AI systems can currently do, how they achieve these capabilities, and how we might anticipate their future development. This understanding is essential for all subsequent chapters: the discussion of dangerous capabilities and potential risks (Chapter 2) follows directly from understanding capabilities. Similarly, proposed technical (Chapter 3) and governance solutions (Chapter 4) both must account for the current and projected future of AI capabilities.
 
 <figure markdown="span">
-![Enter image alt description](Images/4pU_Image_1.png){ loading=lazy }
+![Enter image alt description](Images/IVe_Image_1.png){ loading=lazy }
   <figcaption markdown="1"><b>Figure 1.1:</b> We first explain foundation models, which have been continuously showing improved capabilities due to scale. Then examine empirically observed scaling laws. Based on these trends we look at some techniques that researchers use to try and forecast future AI progress.</figcaption>
 </figure>
 

@@ -113,36 +113,6 @@ markdown_extensions:
 watch:
   - docs
 
-extra_css:
-  - overrides/css/base.css
-  - overrides/css/buttons.css
-  - overrides/css/tippy.css
-  - overrides/css/tabs.css
-  - overrides/css/typography.css
-  - overrides/css/admonitions.css
-  - overrides/css/navigation.css
-  - overrides/css/metadata.css
-  - overrides/css/figures.css
-  - overrides/css/footer.css
-  - overrides/css/section-end.css
-  - overrides/css/scroll-buttons.css
-  - overrides/css/citations.css
-  - https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap
-  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
-
-
-extra_javascript:
-  - overrides/js/mathjax.js
-  - overrides/js/tippy.js
-  - overrides/js/navigation.js
-  - overrides/js/scroll-buttons.js
-  - overrides/js/citations.js
-  - https://unpkg.com/@popperjs/core@2
-  - https://unpkg.com/tippy.js@6
-  - https://unpkg.com/tippy.js@6/dist/animations/perspective-extreme.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
 extra:
   #alternate:
     #- name: English
@@ -160,3 +130,36 @@ extra:
       link: https://www.youtube.com/@securite-ia
       name: Subsribe to the youtube channel
   copyright: Copyright &copy; 2024 French Center for AI Safety (CeSIA)
+
+extra_css:
+  - overrides/css/base.css
+  - overrides/css/buttons.css
+  - overrides/css/tippy.css
+  - overrides/css/tabs.css
+  - overrides/css/typography.css
+  - overrides/css/admonitions.css
+  - overrides/css/navigation.css
+  - overrides/css/metadata.css
+  - overrides/css/figures.css
+  - overrides/css/footer.css
+  - overrides/css/section-end.css
+  - overrides/css/scroll-buttons.css
+  - overrides/css/citations.css
+  - overrides/css/progress-bar.css
+  - https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+
+
+extra_javascript:
+  - overrides/js/mathjax.js
+  - overrides/js/tippy.js
+  - overrides/js/navigation.js
+  - overrides/js/scroll-buttons.js
+  - overrides/js/citations.js
+  - overrides/js/progress-bar.js
+  - https://unpkg.com/@popperjs/core@2
+  - https://unpkg.com/tippy.js@6
+  - https://unpkg.com/tippy.js@6/dist/animations/perspective-extreme.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+

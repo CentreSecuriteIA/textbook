@@ -66,7 +66,7 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">124 min (core)</div>
+				<div class="meta-value">131 min (core)</div>
 			</div>
 		</div>
         
@@ -108,7 +108,6 @@
         <i class="fas fa-users"></i>
         <span>Facilitate</span>
     </a>
-
 </div>
 
 # Introduction
@@ -116,7 +115,7 @@
 As AI systems grow increasingly powerful, our ability to rigorously evaluate them becomes crucial for safety and governance. The challenge isn't just measuring what AI systems can do, but understanding their behavioral tendencies and verifying our ability to maintain control. This section introduces the landscape of AI evaluation and explains why we need increasingly sophisticated approaches beyond simple benchmarking.
 
 <figure markdown="span">
-![Enter image alt description](Images/9N4_Image_1.png){ loading=lazy }
+![Enter image alt description](Images/QDl_Image_1.png){ loading=lazy }
   <figcaption markdown="1"><b>Figure 5.1:</b> Overview of chapter content.</figcaption>
 </figure>
 

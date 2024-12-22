@@ -301,3 +301,40 @@
 *[OOM]: Order of Magnitude
 *[OOMs]: Orders of Magnitude
 
+
+
+*[MNIST]: A dataset of handwritten digits used to benchmark basic image recognition capabilities.
+*[CIFAR-10/100]: A dataset of small natural color images used to benchmark object classification across multiple categories.
+*[ImageNet]: A dataset of natural images used to benchmark large-scale object recognition and classification.
+*[PASCAL VOC]: A dataset of annotated images used to benchmark object detection and segmentation.
+*[Caltech-101/256]: A dataset of natural images used to benchmark object recognition across diverse categories.
+*[ALE]: A benchmark environment of Atari games used to evaluate reinforcement learning from raw pixel inputs.
+*[OpenAI Gym]: A benchmark suite of standardized environments used to evaluate reinforcement learning algorithms.
+*[DeepMind Lab]: A benchmark environment using 3D first-person games to evaluate navigation and motor control.
+*[AI Safety Gridworlds]: A benchmark suite of simple environments used to evaluate AI safety properties.
+*[XLand]: A benchmark environment of procedurally generated 3D worlds used to evaluate general agent capabilities.
+*[XLand 2.0]: A benchmark environment with production rules used to evaluate human-like adaptation speeds.
+*[XLand-100B]: A dataset of learning trajectories used to evaluate in-context reinforcement learning.
+*[MMLU]: A benchmark of multiple-choice questions used to evaluate knowledge across academic subjects.
+*[TruthfulQA]: A benchmark of questions used to evaluate tendency to repeat or avoid misinformation.
+*[ETHICS]: A benchmark of scenarios used to evaluate understanding of human moral judgments.
+*[GSM8K]: A benchmark of elementary math word problems used to evaluate step-by-step reasoning.
+*[DROP]: A benchmark of questions used to evaluate discrete mathematical operations over text.
+*[GPQA]: A benchmark of graduate-level science questions used to evaluate expert knowledge.
+*[SAD]: A benchmark of questions used to evaluate models' self-awareness and contextual understanding.
+*[Chatbot Arena]: A benchmark platform used to evaluate language models through human preferences.
+*[CodeBLEU]: A metric used to evaluate code quality across syntax, semantics, and functionality.
+*[APPS]: A benchmark of programming problems used to evaluate code generation from natural language.
+*[HumanEval]: A benchmark of Python functions used to evaluate code generation capabilities.
+*[BigCode]: A benchmark of programming tasks used to evaluate complex tool usage and instruction following.
+*[HumanEval-V]: A benchmark of coding tasks used to evaluate combined visual and textual understanding.
+*[HumanEval-XL]: A benchmark of multilingual programming problems used to evaluate cross-language code generation.
+*[ARC]: A benchmark of visual puzzles used to evaluate abstract reasoning and generalization.
+*[MATH]: A benchmark of competition mathematics problems used to evaluate advanced reasoning.
+*[ConceptARC]: A benchmark of systematic variations used to evaluate abstract concept learning.
+*[HellaSwag]: A benchmark of sequence completion tasks used to evaluate commonsense reasoning.
+*[MAGICAL]: A benchmark of robot manipulation tasks used to evaluate imitation learning generalization.
+*[MACHIAVELLI]: A benchmark of interactive scenarios used to evaluate ethical decision-making.
+*[AgentHarm]: A benchmark of malicious tasks used to evaluate safety and misuse resistance.
+*[SPA-BENCH]: A benchmark of smartphone tasks used to evaluate real-world mobile interaction capabilities.
+
