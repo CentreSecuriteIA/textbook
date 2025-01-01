@@ -22,10 +22,9 @@
 
 
 
-*[Safety tax]: The added cost in time, money, computing power, capabilities, etc. needed to ensure that a system is aligned.
+*[alignment tax]: The added cost in time money computing power capabilities etc. needed to ensure that a system is aligned.
 *[safety tax]: The added cost in time, money, computing power, capabilities, etc. needed to ensure that a system is aligned.
-*[alignment tax]: The added cost in time, money, computing power, capabilities, etc. needed to ensure that a system is aligned.
-*[Alignment tax]: The added cost in time, money, computing power, capabilities, etc. needed to ensure that a system is aligned.
+
 
 *[Corrigible]: An AI system is corrigible if it doesn't interfere with our attempts to deactivate or modify it.
 *[corrigible]: An AI system is corrigible if it doesn't interfere with our attempts to deactivate or modify it.
@@ -123,10 +122,12 @@
 *[i.i.d.]: An assumption, often made in statistics and machine learning, that data points are drawn randomly “from the same distribution” and that knowing any data point does not tell you anything about the others.
 *[IID]: An assumption, often made in statistics and machine learning, that data points are drawn randomly “from the same distribution” and that knowing any data point does not tell you anything about the others.
 
-*[Auto-induced distributional shift]: A distributional shift caused by the behavior or actions of an algorithm or machine learning system itself. It arises due to the influence of the system on its own input distribution.
-*[auto-induced distributional shift]: A distributional shift caused by the behavior or actions of an algorithm or machine learning system itself. It arises due to the influence of the system on its own input distribution.
-*[auto induced distributional shift]: A distributional shift caused by the behavior or actions of an algorithm or machine learning system itself. It arises due to the influence of the system on its own input distribution.
-*[ADS]: Auto-induced distributional shift. A distributional shift caused by the behavior or actions of an algorithm or machine learning system itself. It arises due to the influence of the system on its own input distribution.
+
+*[auto-induced distribution shift]: A change in data distribution caused by the models's own actions or outputs.
+*[Auto-induced distribution shift]: A change in data distribution caused by the models's own actions or outputs.
+*[auto induced distribution shift]: A change in data distribution caused by the models's own actions or outputs.
+*[Auto induced distribution shift]: A change in data distribution caused by the models's own actions or outputs.
+*[ADS]: Auto-induced distributional shift. A distributional shift caused by the behavior or actions of an algorithm or machine learning system itself.
 
 
 *[Oracle AI]: An AI whose only goal is to give correct answers to questions.
@@ -152,9 +153,12 @@
 
 *[Reinforcement learning from human feedback]: A method for training an AI to give desirable outputs by using human feedback as a training signal. 
 *[reinforcement learning from human feedback]: A method for training an AI to give desirable outputs by using human feedback as a training signal. 
-*[RLHF]: Reinforcement learning from human feedback. A method for training an AI to give desirable outputs by using human feedback as a training signal. 
-*[RLAIF]: Reinforcement learning from AI feedback. A method for training an AI to give desirable outputs by using AI feedback as a training signal. 
 
+*[RLHF]: Reinforcement Learning from Human Feedback. A method for training AI using human feedback as training signals.
+*[RLAIF]: Reinforcement Learning from AI Feedback. A method for training AI using AI feedback as training signals.
+*[RLCAI]: Reinforcement Learning from Constitutional AI. A method for training AI using AI feedback based upon a constituion as training signals.
+*[CAI]: Reinforcement Learning from Constitutional AI. A method for training AI using AI feedback based upon a constituion as training signals.
+*[Constitutional AI]: Reinforcement Learning from Constitutional AI. A method for training AI using AI feedback based upon a constituion as training signals.
 
 *[Robustness]: An agent's ability to maintain its goal and its capabilities when exposed to environments that are substantially different from that on which the agent was trained.
 
@@ -208,9 +212,9 @@
 
 *[Robust alignment]: A mesa-optimizer is robustly aligned with the base objective if it robustly optimizes for the base objective across distributions.
 
-*[Algorithmic range]: The algorithmic range of a machine learning system refers to how extensive the set of algorithms capable of being found by the base optimizer is.
+*[algorithmic range]: The set of possible algorithms that can be found by a machine learning algorithm within a model's parameter space.
+*[algorithmic reachability]: The relative difficulty for an machine learning model to find a specific algorithm within the parameter space.
 
-*[Reachability]: The reachability of a learned algorithm refers to the difficulty for the base optimizer to find that learned algorithm.
 
 *[Approximate alignment]: An approximately aligned mesa-optimizer is a pseudo-aligned mesa-optimizer where the base and mesa- objectives are the same up to some degree of approximation error caused only by  the difficulty of representing the base objective in the mesa-optimizer.
 
@@ -250,7 +254,8 @@
 *[Sovereign AI]: An AI that acts autonomously in the world, in pursuit of potentially long-range objectives.
 *[sovereign]: An AI that acts autonomously in the world, in pursuit of potentially long-range objectives.
 
-*[Adversarial training]: A safety technique that pits two models against each other.
+*[adversarial training]: A safety technique that pits two models against each other to improve robustness.
+
 
 *[World model]: A system’s internal representation of its environment, which it uses to predict what will happen, including as a result of its own possible actions.
 
@@ -274,11 +279,12 @@
 
 
 
-
-*[ACDC]: Automatic Circuit DisCovery
+*[ACDC]: Automatic Circuit DisCovery an algorithm that automates the process of finding circuits within neural networks.
 *[activations]: The outputs produced by neurons or units in a neural network after processing input data through a layer.
-*[activation patching]: A method used for understanding which components of a model are responsible for specific behaviors by replacing activations from one input with those from another and observing the impact on output.
-*[activation steering]: A technique for controlling a model’s output by modifying its activations during inference, directing the model toward desired outcomes without retraining.
+*[activation patching]: A technique that identifies which parts of a neural network are responsible for specific behaviors by selectively replacing activations.
+*[activation steering]: A technique to control model behavior by modifying internal activations during inference, directing the model toward desired outcomes without retraining.
+
+
 *[channel]: A channel refers to a dimension within a layer’s activations.
 *[channels]: Channels refer to a dimension within a layer’s activations.
 *[circuit]: Collection of neurons or components that work together to perform a specific function.
@@ -337,4 +343,10 @@
 *[MACHIAVELLI]: A benchmark of interactive scenarios used to evaluate ethical decision-making.
 *[AgentHarm]: A benchmark of malicious tasks used to evaluate safety and misuse resistance.
 *[SPA-BENCH]: A benchmark of smartphone tasks used to evaluate real-world mobile interaction capabilities.
+
+*[latent knowledge]: Information or capabilities present in a model but not readily apparent in its typical outputs.
+*[Latent knowledge]: Information or capabilities present in a model but not readily apparent in its typical outputs.
+*[externalized reasoning oversight]: Techniques that encourage models to reveal their reasoning steps in natural language.
+*[Externalized reasoning oversight]: Techniques that encourage models to reveal their reasoning steps in natural language.
+*[ERO]: Techniques that encourage models to reveal their reasoning steps in natural language.
 
