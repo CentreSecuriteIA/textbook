@@ -285,10 +285,6 @@
 *[activation steering]: A technique to control model behavior by modifying internal activations during inference, directing the model toward desired outcomes without retraining.
 
 
-*[channel]: A channel refers to a dimension within a layer’s activations.
-*[channels]: Channels refer to a dimension within a layer’s activations.
-*[circuit]: Collection of neurons or components that work together to perform a specific function.
-*[circuits]: Collections of neurons or components that work together to perform specific functions
 *[CNN]: Convolutional Neural Network, a type of neural network primarily used for image classification, object detection, and pattern recognition.
 *[CNNs]: Convolutional Neural Networks, a type of neural networks primarily used for image classification, object detection, and pattern recognition.
 *[deceptively aligned model]: A model that pretends to be aligned during training but engages in dangerous behavior during deployment. During training it acts helpful, honest and harmless, but in deployment it acts according to a dangerous secret goal.

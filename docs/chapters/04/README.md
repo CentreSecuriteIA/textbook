@@ -55,7 +55,7 @@
             </span>
             <div class="meta-content">
                 <div class="meta-label">Last Updated</div>
-                <div class="meta-value">2024-05-01</div>
+                <div class="meta-value">2024-12-10</div>
             </div>
         </div>
         
@@ -66,10 +66,22 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">117 min (core)</div>
+				<div class="meta-value">109 min (core)</div>
 			</div>
 		</div>
         
+        <!-- Links -->
+        <div class="meta-item">
+            <span class="meta-icon">
+                <i class="fas fa-link"></i>
+            </span>
+            <div class="meta-content">
+                <div class="meta-label">Also available on</div>
+                <div class="meta-value meta-links">
+                    
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -100,32 +112,35 @@
 
 # Introduction
 
-!!! warning "This chapter is still a work in progress, the full version will be uploaded soon."
+
+<figure class="video-figure" markdown="span">
+<iframe style="width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/FSKuDqze9es"></iframe>
+  <figcaption markdown="1"><b>Video 4.1:</b> Optional video to get an overview of Governance.</figcaption>
+</figure>
+
 
 Artificial intelligence (AI) has the potential to revolutionize numerous aspects of society, from healthcare to transportation to scientific research. Recent advancements have demonstrated AI's ability to defeat world champions at Go, generate photorealistic images from text descriptions, and discover new antibiotics. However, these developments also raise significant challenges and risks.
 
 Policymakers, researchers, and the general public express both excitement about AI's potential and concern about its risks, including job displacement, privacy infringements, and the potential for AI systems to make consequential mistakes or be misused. While technical AI safety research is necessary to ensure AI systems behave reliably and align with human values as they become more capable and autonomous, it alone is insufficient to address the full spectrum of challenges posed by advanced AI systems.
 
-This chapter explores the emerging field of AI governance, with a particular focus on frontier AI - highly capable foundation models that could possess dangerous capabilities sufficient to pose severe risks to public safety ([Anderljung et al. 2023](https://arxiv.org/abs/2307.03718)). We will examine why governance is necessary, how it complements technical AI safety efforts, and the key challenges and opportunities in this rapidly evolving field. 
+The scope of AI governance is broad, so this chapter will primarily focus on large-scale risks associated with frontier AI - highly capable foundation models that could possess dangerous capabilities sufficient to pose severe risks to public safety ([Anderljung et al. 2023](https://arxiv.org/abs/2307.03718)). We will examine why governance is necessary, how it complements technical AI safety efforts, and the key challenges and opportunities in this rapidly evolving field. Our discussion will center on the governance of commercial and civil AI applications, as military AI governance involves a distinct set of issues that are beyond the scope of this chapter.
 
 <figure markdown="span">
-![Enter image alt description](Images/2is_Image_1.png){ loading=lazy }
-  <figcaption markdown="1"><b>Figure 4.1:</b> Distinguishing AI models according to their level of potential harm and generality. We focus here on frontier AI models (source: [U.K. government](https://www.gov.uk/government/publications/frontier-ai-capabilities-and-risks-discussion-paper/frontier-ai-capabilities-and-risks-discussion-paper#figure-1))</figcaption>
+![Enter image alt description](Images/0VI_Image_1.png){ loading=lazy }
+  <figcaption markdown="1"><b>Figure 4.1:</b> Distinguishing AI models according to their level of potential harm and generality. We focus here on frontier AI models ([U.K. government, 2023](https://www.gov.uk/government/publications/frontier-ai-capabilities-and-risks-discussion-paper/frontier-ai-capabilities-and-risks-discussion-paper))</figcaption>
 </figure>
 
-AI governance can be defined as "the study and shaping of governance systems -- including norms, policies, laws, processes, politics, and institutions -- that affect the research, development, deployment, and use of existing and future AI systems in ways that positively shape societal outcomes" ([Maas 2022](https://ea.greaterwrong.com/posts/Bzezf2zmgBhtCD3Pb/components-of-strategic-clarity-strategic-perspectives-on)). It encompasses both research into effective governance approaches and the practical implementation of these approaches. AI governance also addresses the broader systemic impacts of AI, including the interactions between multiple AI systems and their effects on economic, political, and social structures.
+AI governance can be defined as "the study and shaping of governance systems - including norms, policies, laws, processes, politics, and institutions - that affect the research, development, deployment, and use of existing and future AI systems in ways that positively shape societal outcomes" ([Maas, 2022](https://ea.greaterwrong.com/posts/Bzezf2zmgBhtCD3Pb/components-of-strategic-clarity-strategic-perspectives-on)). It encompasses both research into effective governance approaches and the practical implementation of these approaches. AI governance also addresses the broader systemic impacts of AI, including the interactions between multiple AI systems and their effects on economic, political, and social structures.
 
-The scope of AI governance is broad, so this chapter will primarily focus on large-scale risks associated with frontier AI systems. We will explore why governance is necessary, how it complements technical AI safety efforts, and the key challenges and opportunities in this rapidly evolving field. Our discussion will center on the governance of commercial and civil AI applications, as military AI governance involves a distinct set of issues that are beyond the scope of this chapter.
+This chapter will also examine the current state of AI governance, proposed frameworks and policies, and the roles that various stakeholders – including governments, industry, academia, and civil society – can play in shaping the future of AI. The scope of this chapter includes:
 
-We'll examine the current state of AI governance, proposed frameworks and policies, and the roles that various stakeholders – including governments, industry, academia, and civil society – can play in shaping the future of AI. The scope of this chapter includes:
+- An overview of AI development processes and key challenges in AI governance
 
-1. An overview of AI development processes and key challenges in AI governance
+- Governance parameters and the role of compute
 
-2. Governance parameters and the role of compute
+- Critical issues in AI governance
 
-3. Critical issues in AI governance
-
-4. Layers of responsibility: corporate, national, and international governance
+- Layers of responsibility: corporate, national, and international governance
 
 By the end of this chapter, you'll have a comprehensive understanding of why AI governance matters and how it can help ensure that the development of frontier AI aligns with human values and societal well-being.
 
