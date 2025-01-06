@@ -78,7 +78,7 @@
             <div class="meta-content">
                 <div class="meta-label">Also available on</div>
                 <div class="meta-value meta-links">
-                    
+                    <a href="https://docs.google.com/document/d/1fFVYWes5JQgSc2l9cAMQKprCevw2qW0-4MKMQPnpbxw/edit?usp=sharing" class="meta-link">Google Docs</a>
                 </div>
             </div>
         </div>
@@ -96,10 +96,10 @@
         <i class="fas fa-headphones"></i>
         <span>Listen</span>
     </div>
-    <div class="action-button disabled" data-tippy-content="PDF coming soon">
+    <a href="https://github.com/CentreSecuriteIA/textbook/blob/main/latex/AI%20Safety%20Atlas%20-%20Governance.pdf" class="action-button">
         <i class="fas fa-file-pdf"></i>
         <span>Download</span>
-    </div>
+    </a>
     <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
         <i class="fas fa-comment"></i>
         <span>Feedback</span>
@@ -126,7 +126,7 @@ Policymakers, researchers, and the general public express both excitement about 
 The scope of AI governance is broad, so this chapter will primarily focus on large-scale risks associated with frontier AI - highly capable foundation models that could possess dangerous capabilities sufficient to pose severe risks to public safety ([Anderljung et al. 2023](https://arxiv.org/abs/2307.03718)). We will examine why governance is necessary, how it complements technical AI safety efforts, and the key challenges and opportunities in this rapidly evolving field. Our discussion will center on the governance of commercial and civil AI applications, as military AI governance involves a distinct set of issues that are beyond the scope of this chapter.
 
 <figure markdown="span">
-![Enter image alt description](Images/0VI_Image_1.png){ loading=lazy }
+![Enter image alt description](Images/QnJ_Image_1.png){ loading=lazy }
   <figcaption markdown="1"><b>Figure 4.1:</b> Distinguishing AI models according to their level of potential harm and generality. We focus here on frontier AI models ([U.K. government, 2023](https://www.gov.uk/government/publications/frontier-ai-capabilities-and-risks-discussion-paper/frontier-ai-capabilities-and-risks-discussion-paper))</figcaption>
 </figure>
 
