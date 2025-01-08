@@ -66,7 +66,7 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">106 min (core), 12 min (appendix)</div>
+				<div class="meta-value">128 min (core), 14 min (appendix)</div>
 			</div>
 		</div>
         
@@ -119,7 +119,7 @@ Increasing capabilities are a problem, because as AI models get more capable, th
 The first step is to get an understanding of - What exactly are the concerning scenarios? What are the likelihoods of certain harmful outcomes occurring over others?, and what aspects of current AI development accelerate these risks? In this chapter we aim to tackle these fundamental questions and provide a concrete overview of the various risks in the AI landscape.
 
 <figure markdown="span">
-![Enter image alt description](Images/TeB_Image_1.png){ loading=lazy }
+![Enter image alt description](Images/Nab_Image_1.png){ loading=lazy }
   <figcaption markdown="1"><b>Figure 2.1:</b> Example of how increasing capabilities might result in different impacts at different levels.</figcaption>
 </figure>
 
@@ -138,14 +138,6 @@ By understanding the nature and scope of these risks, we can develop more effect
 While despite these hurdles we have attempted to outline specific stories, it might be best for you as the reader to come away with an intuition of the types of risks involved instead of highly detailed world states. As an example of this type of notion, imagine humanity is similar to an amateur chess player, who has discovered a brilliant new opening for a chess match. This chess player has been able to use this opening against all their other amateur chess player friends and successfully win all their matches.
 
 They now want to bet their entire life savings in a match against Magnus Carlson (World Chess Grandmaster). We think this might be a bad idea and want to dissuade them. They ask - "But how is Magnus Carlsen going to beat me? Show me the exact move that he is going to make to counter my opening." It is a very difficult question to answer because we the authors are not Chess players. We don't really know what moves Magnus Carlsen is specifically going to make. This is akin to asking for extremely detailed specific stories on risk from transformative AI. However, we can say with high confidence that Magnus is going to be able to beat an amateur chess player, no matter how sophisticated their opening move. Similarly a highly capable general purpose AI is going to be a risk to humanity. This is the general notion that we wish to convey.
-
-!!! quote "Yann LeCun Chief AI scientist at Meta and Turing Prize winner, May 2023 ([Heaven, 2023](https://www.technologyreview.com/2023/05/02/1072528/geoffrey-hinton-google-why-scared-ai/))"
-
-
-
-    There is no question that machines will become smarter than humans—in all domains in which humans are smart—in the future. It's a question of when and how, not a question of if.
-
-
 
 
 <div class="section-end">

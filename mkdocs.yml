@@ -82,7 +82,7 @@ use_directory_urls: true
 markdown_extensions:
   - toc:
       permalink: true
-      toc_depth: 3
+      toc_depth: 4
   - pymdownx.arithmatex:
       generic: true
   - admonition

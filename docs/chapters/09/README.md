@@ -14,7 +14,7 @@
             <div class="meta-content">
                 <div class="meta-label">Authors</div>
                 <div class="meta-value">
-                    Jeanne Salle
+                    Jeanne Salle & Charbel-Raphael Segerie
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
     <div class="meta-content">
         <div class="meta-label">Acknowledgements</div>
         <div class="meta-value">
-            Markov Grey, Charbel-Raphael Segerie
+            Markov Grey
         </div>
     </div>
 </div>
@@ -66,7 +66,7 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">55 min (core)</div>
+				<div class="meta-value">56 min (core)</div>
 			</div>
 		</div>
         
@@ -116,11 +116,19 @@ We currently don’t understand how AI models work. We know how to train and bui
 
 !!! warning "Before reading this chapter it is recommended to be familiar with the transformer and CNN architectures."
 
+
+<figure class="video-figure" markdown="span">
 <iframe style="width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/KuXjwB4LzSA"></iframe>
+  <figcaption markdown="1"><b>Video 9.1:</b> Optional Video. If you are unfamiliar with convolutional neural networks (CNNs), this video will help you get up to speed before reading this chapter.</figcaption>
+</figure>
 
-!!! warning "If you are unfamiliar with transformers, the videos on transformers in this playlist will help you get up to speed before reading this chapter."
 
+
+<figure class="video-figure" markdown="span">
 <iframe style="width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/aircAruvnKk"></iframe>
+  <figcaption markdown="1"><b>Video 9.2:</b> Optional Video. If you are unfamiliar with transformers, the videos on transformers in this playlist will help you get up to speed before reading this chapter.</figcaption>
+</figure>
+
 
 For each method presented in this chapter, we first provide a high-level overview, followed by a more in-depth and technical explanation. The technical explanations can be skipped.
 
