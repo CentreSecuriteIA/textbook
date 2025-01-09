@@ -68,6 +68,10 @@
 *[Goodhart's law]: “When a measure becomes a target, it ceases to be a good measure.”
 *[Goodharts law]: “When a measure becomes a target, it ceases to be a good measure.”
 *[Goodharting]: “When a measure becomes a target, it ceases to be a good measure.”
+*[goodhart's law]: “When a measure becomes a target, it ceases to be a good measure.”
+*[goodharts law]: “When a measure becomes a target, it ceases to be a good measure.”
+*[goodharting]: “When a measure becomes a target, it ceases to be a good measure.”
+
 
 *[Inner misalignment]: When an mesa optimizer pursues a different objective than the one that was specified.
 *[Inner-Alignment]: When an mesa optimizer pursues a different objective than the one that was specified.
