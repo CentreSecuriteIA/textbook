@@ -86,21 +86,45 @@
 
 ## Fundamentals
 
-The first four chapters form the foundational understanding of AI Safety that every stakeholder needs, regardless of their technical background. These chapters are written to be accessible to wide audiences, while still maintaining technical accuracy and depth where needed. The target audience includes anyone seeking to understand why AI Safety matters and how we might address it. While no specific technical prerequisites are required, basic familiarity with AI concepts and current developments in the field will help readers get the most out of these chapters.
+The first four chapters form the foundation of AI Safety understanding that every stakeholder needs, regardless of their technical background. These chapters are written to be accessible to wide audiences, while still maintaining technical accuracy and depth where needed. The target audience includes anyone seeking to understand why AI Safety matters and how we might address it. While no specific technical prerequisites are required, basic familiarity with AI concepts and current developments in the field will help readers get the most out of these chapters.
 
-The progression through these chapters is carefully structured: we begin with understanding AI capabilities (what the technology can do), move to potential risks (what could go wrong), explore proposed solutions (how we might prevent those problems), examine governance frameworks (how to implement those solutions systematically). This sequence ensures readers build a comprehensive understanding of both the challenges and potential approaches to addressing them.
+The progression through these is: beginning with understanding AI capabilities (what the AI can do), move to potential risks (what could go wrong), explore proposed solution strategies (how we might prevent those problems), examine governance frameworks (how to implement the strategies systematically). This sequence ensures readers build a comprehensive understanding of both the challenges and potential approaches to addressing them. The follow up technical chapters go into detail on specific strategies to problems in AI safety.
 
 ### Capabilities
 
-This chapter lays essential groundwork by examining the current state and trajectory of AI technology, introducing key concepts like foundation models, scaling laws, and methods for measuring and forecasting AI progress. This foundational understanding of what AI systems can do today—and may be capable of tomorrow—is crucial for grasping the risks and challenges discussed in subsequent chapters, as we can't meaningfully address AI safety without first understanding the technology we're trying to make safe.
+AI models are transforming from narrow, specialized tools into increasingly general-purpose systems that can handle complex tasks. Empirical trends show that scaling up - using more data, compute, and parameters - is leading to steady gains in both performance and generality. Rather than viewing AI progress through simple thresholds like "narrow" versus "general" intelligence, we introduce frameworks for measuring capabilities along continuous dimensions. The chapter covers things like definitions of capabilities, scaling patterns, performance trends, and forecasting methods. Understanding these concepts shapes how we think about potential risks, safety measures, and governance approaches throughout the rest of the book.
+
+<div class="action-buttons">
+    <a href="https://www.youtube.com/watch?v=J_iMeH1hb9M" class="action-button">
+        <i class="fas fa-video"></i>
+        <span>Watch</span>
+    </a>
+    <div class="action-button disabled" data-tippy-content="Audio coming soon">
+        <i class="fas fa-headphones"></i>
+        <span>Listen</span>
+    </div>
+    <div class="action-button disabled" data-tippy-content="PDF coming soon">
+        <i class="fas fa-file-pdf"></i>
+        <span>Download</span>
+    </div>
+    <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
+        <i class="fas fa-comment"></i>
+        <span>Feedback</span>
+    </a>
+    <a href="https://docs.google.com/document/d/1L32xCVUCWEsm-x8UZ3GSTgKnmBcC7rJQLLIh9wGLj40/edit?usp=sharing" class="action-button">
+        <i class="fas fa-users"></i>
+        <span>Facilitate</span>
+    </a>
+</div>
 
 ### Risks
 
-This chapter builds directly on our understanding of AI capabilities to explore three fundamental categories of risk: misuse risks where humans intentionally deploy AI for harm, misalignment risks where AI systems pursue goals that conflict with human values, and systemic risks that emerge from complex interactions between AI systems and global structures. By systematically breaking down these risks and examining how they can manifest at different scales, from localized disruptions to existential threats, this chapter establishes why AI safety work is crucial and what specific challenges need to be addressed.
+The previous chapter establishes that we see increasing trends of capability, generality and autonomy in AI. Building on this we look at how risks emerge when these capabilities are combined with human incentives, and complex social systems. We divide risks into three main categories: misuse (humans using AI for harm, like cyber attacks or bioweapons), misalignment (AI systems failing in unintended ways), and systemic risks (problems that emerge when AI interacts with other comlex systems). We also talk about other factors that amplify these risks like competitive pressures creating race dynamics. Finally, we also give brief overviews of specific capabilities that amplify risks - like deception, situational awareness, autonomous replication and power-seeking behavior.
 
-### Solutions
 
-This chapter responds to the risks identified in Chapter 2 by examining current approaches and proposals for ensuring safe AI development, covering strategies from technical solutions to alignment to organizational safety practices and governance frameworks. While acknowledging that the field of AI safety is still young and no single solution appears sufficient, this chapter provides a comprehensive overview of available tools and strategies, setting up readers to understand the more technical deep-dives into specific safety mechanisms that follow in later chapters.
+### Strategies
+
+Building on our understanding of AI capabilities and risks, we explore concrete approaches to making AI development safer. We divide potential solutions into the same three categories as risks: preventing misuse (through monitored APIs and defensive technologies), addressing alignment (via technical research and control measures), and managing systemic impacts (through governance and safety culture). The field of AI safety is still emerging and no single solution might be sufficient - rather, we need a layered "Swiss cheese" approach where multiple safeguards work together to create robust protection against risks. The technical approaches discussed here set up readers for the deep-dives that follow in later chapters, while our examination of systemic and social solutions leads into the next few chapters on governance and evaluation frameworks, which explore how to implement these strategies through policy and coordination.
 
 ### Governance 
 

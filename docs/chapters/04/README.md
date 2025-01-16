@@ -40,7 +40,7 @@
     <div class="meta-content">
         <div class="meta-label">Acknowledgements</div>
         <div class="meta-value">
-            Markov Grey, Charbel-Raphael Segerie
+            Markov Grey, Charbel-Raphael Segerie, Léo Karoubi
         </div>
     </div>
 </div>
@@ -66,7 +66,7 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">109 min (core)</div>
+				<div class="meta-value">121 min (core)</div>
 			</div>
 		</div>
         
@@ -119,14 +119,22 @@
 </figure>
 
 
+!!! quote "The Bletchley Declaration (signed by 28 countries, including all AI leaders, and the EU, 2023)"
+
+
+
+    "Substantial risks may arise from potential intentional misuse or unintended issues of control relating to alignment with human intent. These issues are in part because those capabilities are not fully understood [...] There is potential for serious, even catastrophic, harm, either deliberate or unintentional, stemming from the most significant capabilities of these AI models."
+
+
+
 Artificial intelligence (AI) has the potential to revolutionize numerous aspects of society, from healthcare to transportation to scientific research. Recent advancements have demonstrated AI's ability to defeat world champions at Go, generate photorealistic images from text descriptions, and discover new antibiotics. However, these developments also raise significant challenges and risks.
 
 Policymakers, researchers, and the general public express both excitement about AI's potential and concern about its risks, including job displacement, privacy infringements, and the potential for AI systems to make consequential mistakes or be misused. While technical AI safety research is necessary to ensure AI systems behave reliably and align with human values as they become more capable and autonomous, it alone is insufficient to address the full spectrum of challenges posed by advanced AI systems.
 
-The scope of AI governance is broad, so this chapter will primarily focus on large-scale risks associated with frontier AI - highly capable foundation models that could possess dangerous capabilities sufficient to pose severe risks to public safety ([Anderljung et al. 2023](https://arxiv.org/abs/2307.03718)). We will examine why governance is necessary, how it complements technical AI safety efforts, and the key challenges and opportunities in this rapidly evolving field. Our discussion will center on the governance of commercial and civil AI applications, as military AI governance involves a distinct set of issues that are beyond the scope of this chapter.
+The scope of AI governance is broad, so this chapter will primarily focus on large-scale risks associated with frontier AI - highly capable foundation models that could possess dangerous capabilities sufficient to pose severe risks to public safety ([Anderljung et al., 2023](https://arxiv.org/abs/2307.03718)). We will examine why governance is necessary, how it complements technical AI safety efforts, and the key challenges and opportunities in this rapidly evolving field. Our discussion will center on the governance of commercial and civil AI applications, as military AI governance involves a distinct set of issues that are beyond the scope of this chapter.
 
 <figure markdown="span">
-![Enter image alt description](Images/QnJ_Image_1.png){ loading=lazy }
+![Enter image alt description](Images/Wmr_Image_1.png){ loading=lazy }
   <figcaption markdown="1"><b>Figure 4.1:</b> Distinguishing AI models according to their level of potential harm and generality. We focus here on frontier AI models ([U.K. government, 2023](https://www.gov.uk/government/publications/frontier-ai-capabilities-and-risks-discussion-paper/frontier-ai-capabilities-and-risks-discussion-paper))</figcaption>
 </figure>
 
