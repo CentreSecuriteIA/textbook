@@ -90,9 +90,9 @@ The first four chapters form the foundation of AI Safety understanding that ever
 
 The progression through these is: beginning with understanding AI capabilities (what the AI can do), move to potential risks (what could go wrong), explore proposed solution strategies (how we might prevent those problems), examine governance frameworks (how to implement the strategies systematically). This sequence ensures readers build a comprehensive understanding of both the challenges and potential approaches to addressing them. The follow up technical chapters go into detail on specific strategies to problems in AI safety.
 
-### Capabilities
+### [Capabilities](https://ai-safety-atlas.com/chapters/01/)
 
-AI models are transforming from narrow, specialized tools into increasingly general-purpose systems that can handle complex tasks. Empirical trends show that scaling up - using more data, compute, and parameters - is leading to steady gains in both performance and generality. Rather than viewing AI progress through simple thresholds like "narrow" versus "general" intelligence, we introduce frameworks for measuring capabilities along continuous dimensions. The chapter covers things like definitions of capabilities, scaling patterns, performance trends, and forecasting methods. Understanding these concepts shapes how we think about potential risks, safety measures, and governance approaches throughout the rest of the book.
+AI models are transforming from specialized tools into increasingly general-purpose systems that can handle complex tasks. Empirical trends show that scaling up - using more data, compute, and parameters - is leading to steady gains in both performance and generality. Rather than viewing AI progress through simple thresholds like "narrow" versus "general" intelligence, we introduce frameworks for measuring capabilities along continuous dimensions. The chapter covers things like definitions of capabilities, scaling patterns, performance trends, and forecasting methods. Understanding these concepts shapes how we think about potential risks, safety measures, and governance approaches throughout the rest of the book.
 
 <div class="action-buttons">
     <a href="https://www.youtube.com/watch?v=J_iMeH1hb9M" class="action-button">
