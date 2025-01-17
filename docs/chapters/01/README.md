@@ -66,7 +66,7 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">94 min (core), 47 min (appendix)</div>
+				<div class="meta-value">95 min (core), 53 min (appendix)</div>
 			</div>
 		</div>
         
@@ -112,16 +112,24 @@
 
 # Introduction
 
+!!! quote "Yann LeCun Chief AI scientist at Meta and Turing Prize winner, May 2023 ([Heaven, 2023](https://www.technologyreview.com/2023/05/02/1072528/geoffrey-hinton-google-why-scared-ai/))"
+
+
+
+    There is no question that machines will become smarter than humans—in all domains in which humans are smart—in the future. It's a question of when and how, not a question of if.
+
+
+
 The field of artificial intelligence has undergone a remarkable transformation in recent years. This chapter lays the groundwork for the entire book by establishing what AI systems can currently do, how they achieve these capabilities, and how we might anticipate their future development. This understanding is essential for all subsequent chapters: the discussion of dangerous capabilities and potential risks (Chapter 2) follows directly from understanding capabilities. Similarly, proposed technical (Chapter 3) and governance solutions (Chapter 4) both must account for the current and projected future of AI capabilities.
 
 <figure markdown="span">
-![Enter image alt description](Images/IVe_Image_1.png){ loading=lazy }
+![Enter image alt description](Images/d8J_Image_1.png){ loading=lazy }
   <figcaption markdown="1"><b>Figure 1.1:</b> We first explain foundation models, which have been continuously showing improved capabilities due to scale. Then examine empirically observed scaling laws. Based on these trends we look at some techniques that researchers use to try and forecast future AI progress.</figcaption>
 </figure>
 
 **State-of-the-Art AI - Achieved breakthrough capabilities across multiple domains**. We begin by exploring how AI systems have evolved from narrow, specialized tools to increasingly general-purpose tools. Language models can now engage in complex reasoning, while computer vision systems demonstrate sophisticated understanding of visual information. In robotics, we're seeing the emergence of systems that can learn and adapt to real-world environments with increasing autonomy. The goal of this section is to give the reader many examples from different domains of accelerating AI capabilities.
 
-**Foundation models - Revolutionized how we build AI systems. **The next section explores how we have moved from smaller specialized architectures to large scale general-purpose architectures. Rather than building separate systems for each task, these foundation models serve as the starting point. They are building blocks that can be later adapted for various applications using fine-tuning. We explore how these models are trained, their key properties, and the unique challenges they present. The emergence of unexpected capabilities from these models raises important questions about both their potential and implications for AI Safety.
+**Foundation models - Revolutionized how we build AI systems. **The next section explores how we have moved from smaller specialized architectures to large scale general-purpose architectures. Rather than building separate systems for each task, these foundation models serve as the starting point. They are building blocks that can be later adapted for various applications using fine-tuning. We explore how these models are trained, their key properties, and the unique challenges they present. The emergence of unexpected capabilities from these models raises important questions about both their potential and implications for AI safety.
 
 **Understanding Intelligence - Capabilities require precise measurement to guide safety work**. The objective of this section is to provide an understanding of what terms like artificial general intelligence and artificial superintelligence actually mean in practice. Through detailed case studies and empirical observations, we examine different approaches to defining and measuring AI capabilities. Moving beyond traditional binary distinctions between "narrow" and "general" AI, we introduce more nuanced formal frameworks that track progress along multiple dimensions, essential for understanding when and how safety measures need to be implemented.
 
