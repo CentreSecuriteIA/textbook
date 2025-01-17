@@ -110,8 +110,6 @@ AI is undergoing unprecedented growth in capabilities, from writing code and ana
 
 ## [Capabilities](https://ai-safety-atlas.com/chapters/01/)
 
-*Why might AIs keep becoming both increasingly general and capable?*
-
 AI models are moving from specialized tools into increasingly general-purpose systems that can handle complex tasks. In this chapter we talk about empirical trends which show that scaling up - using more data, compute, and parameters - is leading to steady gains in both capabilities and generality. We explain the definitions of things like artificial general intelligence (AGI) and superintelligence (ASI) that we will be using throughout the book. Rather than viewing AI progress through discrete thresholds like "narrow" versus "general" intelligence, we introduce frameworks for measuring capabilities, generality and autonomy along continuous curves. Based on this we look at arguments for different AI takeoff scenarios, and provide expert opinions on timelines to transformative AI. Understanding these concepts shapes the conversations around potential risks and safety strategies throughout the rest of the book. After reading this chapter, you'll be able to critically evaluate many of the claims about AI progress and engage in informed discussions about future AI developments. 
 
 <div class="action-buttons">
