@@ -282,7 +282,7 @@ In this chapter we turn to how AI systems actually learn and generalize from tra
     </a>
 </div>
 
-## [Oversight](https://ai-safety-atlas.com/chapters/08/)
+## [Scalable Oversight](https://ai-safety-atlas.com/chapters/08/)
 
 *How can we maintain meaningful control when AIs smarter than us?*
 
