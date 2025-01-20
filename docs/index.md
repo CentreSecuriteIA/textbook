@@ -42,8 +42,3 @@ For policymakers and governance professionals, we focus on building a strong con
 ### The Technical Path
 
 Technical practitioners - from students to experienced ML engineers - need both conceptual understanding and implementation details. Building on the foundation laid in the first four chapters, six additional technical chapters dive deep into specific safety mechanisms, mathematical frameworks, and current research directions. This track serves as excellent preparation for specialized programs like MATS or ARENA.
-
-
-This is a project from the [French Center for AI Safety (Centre pour la Securité de l'IA, CeSIA)](https://www.securite-ia.fr/).
-
-<img src="assets/CeSIA.png" alt="CeSIA - Centre pour la Sécurité de l'IA" />
