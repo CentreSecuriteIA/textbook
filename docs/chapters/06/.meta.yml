@@ -1,3 +1,5 @@
+chapter_number: 6
+chapter_title: Specification
 authors:
 - Markov Grey
 - Charbel-Raphael Segerie
@@ -20,3 +22,9 @@ links:
 - name: Google Docs
   url: https://docs.google.com/document/d/1kEdmyVTUG3MO7lwuw4utHEm7CcavvgAiUZcWHaOZuPY/edit?usp=sharing
   type: google_docs
+- name: Feedback
+  url: https://forms.gle/ZsA4hEWUx1ZrtQLL9
+  type: feedback
+- name: Facilitate
+  url: https://docs.google.com/document/d/1JfmzGii5QG6hW8AM5WxzDBVyGc14aLV_Lc_1PkK2ZLc/edit?usp=sharing
+  type: facilitate

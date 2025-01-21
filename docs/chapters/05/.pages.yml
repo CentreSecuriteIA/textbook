@@ -1,13 +1,13 @@
 nav:
-- Introduction: README.md
-- 5.1 Benchmarks: 01.md
-- 5.2 Evaluated Properties: 02.md
-- 5.3 Evaluation Techniques: 03.md
-- 5.4 Evaluation Frameworks: 04.md
-- 5.5 Dangerous Capability Evaluations: 05.md
-- 5.6 Dangerous Propensity Evaluations: 06.md
-- 5.7 Control Evaluations: 07.md
-- 5.8 Evaluation Design: 08.md
-- 5.9 Limitations: 09.md
-- 5.10 Conclusion: 10.md
+- Chapter 05: README.md
+- 5.1 - Benchmarks: 01.md
+- 5.2 - Evaluated Properties: 02.md
+- 5.3 - Evaluation Techniques: 03.md
+- 5.4 - Evaluation Frameworks: 04.md
+- 5.5 - Dangerous Capability Evaluations: 05.md
+- 5.6 - Dangerous Propensity Evaluations: 06.md
+- 5.7 - Control Evaluations: 07.md
+- 5.8 - Evaluation Design: 08.md
+- 5.9 - Limitations: 09.md
+- 5.10 - Conclusion: 10.md
 title: 05 - Evaluations

@@ -1,8 +1,8 @@
 nav:
-- Introduction: README.md
-- 6.1 Reinforcement Learning: 01.md
-- 6.2 Optimization: 02.md
-- 6.3 Specification Gaming: 03.md
-- 6.4 Learning from imitation: 04.md
-- 6.5 Learning from feedback: 05.md
+- Chapter 06: README.md
+- 6.1 - Reinforcement Learning: 01.md
+- 6.2 - Optimization: 02.md
+- 6.3 - Specification Gaming: 03.md
+- 6.4 - Learning from imitation: 04.md
+- 6.5 - Learning from feedback: 05.md
 title: 06 - Specification

@@ -145,7 +145,7 @@ extra_css:
   - overrides/css/section-end.css
   - overrides/css/scroll-buttons.css
   - overrides/css/citations.css
-  - overrides/css/progress-bar.css
+  #- overrides/css/progress-bar.css
   - https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
 
@@ -156,7 +156,7 @@ extra_javascript:
   - overrides/js/navigation.js
   - overrides/js/scroll-buttons.js
   - overrides/js/citations.js
-  - overrides/js/progress-bar.js
+  #- overrides/js/progress-bar.js
   - https://unpkg.com/@popperjs/core@2
   - https://unpkg.com/tippy.js@6
   - https://unpkg.com/tippy.js@6/dist/animations/perspective-extreme.js

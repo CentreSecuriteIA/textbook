@@ -1,6 +1,4 @@
-# Governance
-
-<div class="chapter-meta">
+# Chapter 04 - Governance
 
 <div class="meta-grid">
     <!-- Left Column -->
@@ -66,7 +64,7 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">121 min (core)</div>
+				<div class="meta-value">119 min (core)</div>
 			</div>
 		</div>
         
@@ -85,8 +83,6 @@
     </div>
 </div>
 
-</div>
-
 <div class="action-buttons">
     <a href="https://www.youtube.com/watch?v=FSKuDqze9es" class="action-button">
         <i class="fas fa-video"></i>
@@ -96,10 +92,10 @@
         <i class="fas fa-headphones"></i>
         <span>Listen</span>
     </div>
-    <a href="https://github.com/CentreSecuriteIA/textbook/blob/main/latex/AI%20Safety%20Atlas%20-%20Governance.pdf" class="action-button">
+    <div class="action-button disabled" data-tippy-content="PDF coming soon">
         <i class="fas fa-file-pdf"></i>
         <span>Download</span>
-    </a>
+    </div>
     <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
         <i class="fas fa-comment"></i>
         <span>Feedback</span>
@@ -112,12 +108,10 @@
 
 # Introduction
 
-
 <figure class="video-figure" markdown="span">
 <iframe style="width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/FSKuDqze9es"></iframe>
   <figcaption markdown="1"><b>Video 4.1:</b> Optional video to get an overview of Governance.</figcaption>
 </figure>
-
 
 !!! quote "The Bletchley Declaration (signed by 28 countries, including all AI leaders, and the EU, 2023)"
 
@@ -151,8 +145,3 @@ This chapter will also examine the current state of AI governance, proposed fram
 - Layers of responsibility: corporate, national, and international governance
 
 By the end of this chapter, you'll have a comprehensive understanding of why AI governance matters and how it can help ensure that the development of frontier AI aligns with human values and societal well-being.
-
-
-<div class="section-end">
-    <span>❧</span>
-</div>

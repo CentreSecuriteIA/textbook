@@ -1,12 +1,13 @@
 nav:
-- Introduction: README.md
-- 2.1 Risk Decomposition: 01.md
-- 2.2 Risk Amplifiers: 02.md
-- 2.3 Misuse Risk: 03.md
-- 2.4 Misalignment Risk: 04.md
-- 2.5 Dangerous Capabilities: 05.md
-- 2.6 Systemic Risk: 06.md
-- 2.7 Conclusion: 07.md
-- '2.8 Appendix: X-Risk Scenarios': 08.md
-- '2.9 Appendix: Miscellaneous': 09.md
+- Chapter 02: README.md
+- 2.1 - Risk Decomposition: 01.md
+- 2.2 - Risk Amplifiers: 02.md
+- 2.3 - Misuse Risk: 03.md
+- 2.4 - Misalignment Risk: 04.md
+- 2.5 - Dangerous Capabilities: 05.md
+- 2.6 - Systemic Risk: 06.md
+- 2.7 - Conclusion: 07.md
+- Appendix:
+  - 2.A1 - X-Risk Scenarios: A1.md
+  - 2.A2 - Miscellaneous: A2.md
 title: 02 - Risks

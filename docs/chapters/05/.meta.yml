@@ -1,3 +1,5 @@
+chapter_number: 5
+chapter_title: Evaluations
 authors:
 - Markov Grey
 - Charbel-Raphael Segerie
@@ -6,9 +8,11 @@ affiliations:
 acknowledgements:
 - Maxime Riché
 - Martin
+- Fabien Roger
 - Jeanne Salle
 - Camille Berger
-date: '2024-11-20'
+- Leo Karoubi
+date: '2025-01-15'
 links:
 - name: AI Safety Atlas
   url: https://ai-safety-atlas.com/chapters/05/
@@ -16,3 +20,9 @@ links:
 - name: Google Docs
   url: https://docs.google.com/document/d/1KI95w27Ce7yWoynE11PJ94IXK0gT0NwP8091s06P7wM/edit?usp=sharing
   type: google_docs
+- name: Feedback
+  url: https://forms.gle/ZsA4hEWUx1ZrtQLL9
+  type: feedback
+- name: Facilitate
+  url: https://docs.google.com/document/d/1T-UU0FBeElX6cvbWYKpVAl3U4ivrQLHA3IdIWqWKuBA/edit?tab=t.0#heading=h.fo57hwsn3del
+  type: facilitate

@@ -1,6 +1,4 @@
-# Evaluations
-
-<div class="chapter-meta">
+# Chapter 05 - Evaluations
 
 <div class="meta-grid">
     <!-- Left Column -->
@@ -40,7 +38,7 @@
     <div class="meta-content">
         <div class="meta-label">Acknowledgements</div>
         <div class="meta-value">
-            Maxime Riché, Martin, Jeanne Salle, Camille Berger
+            Maxime Riché, Martin, Fabien Roger, Jeanne Salle, Camille Berger, Leo Karoubi
         </div>
     </div>
 </div>
@@ -55,7 +53,7 @@
             </span>
             <div class="meta-content">
                 <div class="meta-label">Last Updated</div>
-                <div class="meta-value">2024-11-20</div>
+                <div class="meta-value">2025-01-15</div>
             </div>
         </div>
         
@@ -66,7 +64,7 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">131 min (core)</div>
+				<div class="meta-value">132 min (core)</div>
 			</div>
 		</div>
         
@@ -83,8 +81,6 @@
             </div>
         </div>
     </div>
-</div>
-
 </div>
 
 <div class="action-buttons">
@@ -115,7 +111,7 @@
 As AI systems grow increasingly powerful, our ability to rigorously evaluate them becomes crucial for safety and governance. The challenge isn't just measuring what AI systems can do, but understanding their behavioral tendencies and verifying our ability to maintain control. This section introduces the landscape of AI evaluation and explains why we need increasingly sophisticated approaches beyond simple benchmarking.
 
 <figure markdown="span">
-![Enter image alt description](Images/QDl_Image_1.png){ loading=lazy }
+![Enter image alt description](Images/OR7_Image_1.png){ loading=lazy }
   <figcaption markdown="1"><b>Figure 5.1:</b> Overview of chapter content.</figcaption>
 </figure>
 
@@ -134,8 +130,3 @@ As AI systems grow increasingly powerful, our ability to rigorously evaluate the
 **Evaluation Design.** Moving from theory to practice, we examine how to implement these evaluations effectively at scale. This includes designing robust evaluation protocols, automating assessment processes where possible, and integrating evaluations with broader safety frameworks and auditing systems. A key focus is developing systematic approaches that can be reliably implemented across different organizations.
 
 **Limitations.** Finally, we talk about the fundamental challenges facing AI evaluations. From the difficulty of proving absence of capabilities, to technical constraints around measurement precision, to governance challenges around independence and standardization - understanding these limitations is crucial for both improving our methods and maintaining appropriate epistemic humility about their results.
-
-
-<div class="section-end">
-    <span>❧</span>
-</div>

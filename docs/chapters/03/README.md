@@ -1,6 +1,4 @@
-# Solutions
-
-<div class="chapter-meta">
+# Chapter 03 - Strategies
 
 <div class="meta-grid">
     <!-- Left Column -->
@@ -66,7 +64,7 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">64 min (core)</div>
+				<div class="meta-value">62 min (core)</div>
 			</div>
 		</div>
         
@@ -83,8 +81,6 @@
             </div>
         </div>
     </div>
-</div>
-
 </div>
 
 <div class="action-buttons">
@@ -112,16 +108,16 @@
 
 # Introduction
 
+<figure class="video-figure" markdown="span">
+<iframe style="width: 100%; aspect-ratio: 16 / 9;" frameborder="0" allowfullscreen src="https://www.youtube.com/embed/iO7Jl4xders"></iframe>
+  <figcaption markdown="1"><b>Video 3.1:</b> Optional video to get an overview of risk mitigation strategies.</figcaption>
+</figure>
+
 Although the field of AI safety is still in its infancy, several measures have already been identified that can significantly improve the safety of AI systems. While it remains to be seen if these measures are sufficient to fully address the risks posed by AI, they represent essential considerations. The diagram below provides a high-level overview of the main approaches to ensuring the safe development of AI.
 
 <figure markdown="span">
-![Enter image alt description](Images/RNK_Image_1.png){ loading=lazy }
+![Enter image alt description](Images/lQA_Image_1.png){ loading=lazy }
   <figcaption markdown="1"><b>Figure 3.1:</b> Tentative diagram summarizing the main high-level approaches to make AI development safe.</figcaption>
 </figure>
 
 The information in this chapter is far from exhaustive and only scratches the surface of the complex landscape of AI safety. Readers are encouraged to explore this [recent list of agendas](https://www.lesswrong.com/posts/zaaGsFBeDTpCsYHef/shallow-review-of-live-agendas-in-alignment-and-safety#Understand_learning) for a more comprehensive review.
-
-
-<div class="section-end">
-    <span>❧</span>
-</div>

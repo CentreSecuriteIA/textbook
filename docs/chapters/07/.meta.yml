@@ -1,3 +1,5 @@
+chapter_number: 7
+chapter_title: Generalization
 authors:
 - Markov Grey
 affiliations:
@@ -15,3 +17,9 @@ links:
 - name: Google Docs
   url: https://docs.google.com/document/d/10aqDKJgqonHNc9IMMogtda64u8V_JsPlbuzruBMUmAU/edit?usp=sharing
   type: google_docs
+- name: Feedback
+  url: https://forms.gle/ZsA4hEWUx1ZrtQLL9
+  type: feedback
+- name: Facilitate
+  url: https://docs.google.com/document/d/1uQooTncb7Hw2NhITtr3S5iGHqT6cvj74c0SZ4Unad_M/edit?usp=sharing
+  type: facilitate
