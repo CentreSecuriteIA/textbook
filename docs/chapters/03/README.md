@@ -116,7 +116,7 @@
 Although the field of AI safety is still in its infancy, several measures have already been identified that can significantly improve the safety of AI systems. While it remains to be seen if these measures are sufficient to fully address the risks posed by AI, they represent essential considerations. The diagram below provides a high-level overview of the main approaches to ensuring the safe development of AI.
 
 <figure markdown="span">
-![Enter image alt description](Images/lQA_Image_1.png){ loading=lazy }
+![Enter image alt description](Images/qLi_Image_1.png){ loading=lazy }
   <figcaption markdown="1"><b>Figure 3.1:</b> Tentative diagram summarizing the main high-level approaches to make AI development safe.</figcaption>
 </figure>
 

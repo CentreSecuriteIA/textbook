@@ -64,7 +64,7 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">81 min (core)</div>
+				<div class="meta-value">85 min (core)</div>
 			</div>
 		</div>
         

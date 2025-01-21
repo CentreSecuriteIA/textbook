@@ -1,0 +1,96 @@
+
+- [x] mkdocs sections split - generate pages yml (should be new file) (17/01/25)
+- [x] mkdocs sections split - split content into seperate files by section (17/01/25)
+- [x] mkdocs inject section numbers for url (17/01/25)
+- [x] mkdocs rename appendices to A. ... (17/01/25)
+- [x] mkdocs header 4 scrolling (relies on section number injection) (17/01/25)
+- [x] mkdocs appendix name should be 1.A1.x ... currently on toc is only A1.x (20/01/25)
+- [x] mkdocs buttons dont appear in readme (20/01/25)
+- [x] mkdocs sections split - create chapter header (imported from template) (20/01/25)
+- [x] mkdocs sections split - create section header (create + import from template) (20/01/25)
+- [x] mkdocs introduction h1 doesnt appear in readme (21/01/25)
+- [x] mkdocs set basics - folder, copy images, then read file and do stuff (21/01/25)
+- [x] mkdocs move imports to top of file (21/01/25)
+- [x] mkdocs rename folder to chapter num
+- [ ] mkdocs section endline
+- [ ] mkdocs sub-section endline
+- [ ] mkdocs add section metadata
+- [ ] mkdocs change youtube embed tag to video embed
+- [ ] mkdocs add iframe alt image functionality
+- [ ] mkdocs inject feedback form at end of chapter (last section)
+    - Question: Section specific better? = rearrange form
+
+- [x] website cesia logo on footer (20/01/25)
+- [x] website better footer (20/01/25)
+- [ ] website toc redesign
+	- [ ] toc flush left
+	- [ ] toc integrate
+	- [ ] toc slight line after
+	- [ ] toc better mobile
+	- [ ] toc remove book on top
+
+- [ ] website header redesign
+	- [ ] atlas logo top center
+	- [ ] remove atlas from chapters/index.md redundancy
+
+- [ ] website improve feedback page (incorporate directly?)
+- [ ] website glossary
+	- [ ] remove solid underline from glossary terms
+	- [ ] suppress glossary on all headers
+- [ ] website progress bar
+	- [ ] website showcase better progression through text/book/website
+	- show reading percent? read percent? e.g. - https://thenetworkstate.com/the-network-state-in-one-sentence
+
+- [ ] website citation style switcher - [1] numbered, on hover?
+- [ ] website citation footer?
+
+
+- [ ] latex read folder name as a command line argument
+- [ ] latex set it up as auto process after the preprocess
+- [ ] LaTeX Error: Unicode character ≠ (U+2260)
+- [ ] latex equations
+- [ ] latex gifs dont work ...
+- [ ] latex figures are rendering with double colons - Figure 4.8: :
+- [ ] latex images are breaking order and appearing on different pages, they should appear exactly in the text + image + text order as in the markdown
+- [ ] latex admonitions converted tcolorboxes do not have the same paragraph spacing as the normal text, they should have the same post paragraph spacing
+- [ ] latex inject pagebreak after sections
+- [ ] latex design individual boxes for different types of admonitions
+- [ ] latex !!! warning tags need to be turned into some sort of tcolor box
+- [ ] latex use pdflatex, pandoc, or whatever is best to actually convert the .tex files into a proper finalized pdf
+- [ ] latex improve title page aesthetics
+- [ ] latex line numbers (but not on header elements, boxes, and code)
+- [ ] latex: not every admonition will be accompanied by text, if there is no <tab> </tab> , then that means it is a title only admonition
+
+e.g.
+original -
+# Intelligence
+## Case Studies
+!!! warning "The bulk of this subsection will deal with the theory and historical aspects of defining intelligence. If you are more interested in just the core practical aspects of how we measure artificial general intelligence (AGI), then you can safely skip to the next subsection - measurement."
+
+**Why do we need to define intelligence?** In our previous section on foundation models, we explored how modern AI systems are becoming increasingly powerful. But before we can meaningfully discuss the risks and safety implications of these systems, we need to agree on what we mean when we talk about AGI. Some believe that "sparks" of AGI are already present in the latest language models ([Bubeck et al., 2023](https://arxiv.org/abs/2303.12712)), while others predict human-level AI within a decade ([Bengio et al., 2024](https://arxiv.org/abs/2310.17688)). Without a clear definition, how are we supposed to assess such claims or plan appropriate safety measures?
+
+The core point is that if you can't define something, you can't measure it. If you can't measure it, you can't reliably track progress or identify potential risks. Think about an example from physics - saying something like "it moved 5" makes no sense without specifying the unit of measurement. Did it move 5 meters, 5 feet, or 5 royal cubits? Nobody knows. If we don't know how far or fast it moved, then can we enforce speed limits? Also, no. The same applies to intelligence, and subsequent risks and safety techniques. Just as physics needed standardized units like meters and watts to advance beyond qualitative descriptions, AI safety research needs rigorous definitions to move beyond vague analogies and anthropomorphisms.
+
+converted -
+
+\begin{tcolorbox}[breakable,title={The bulk of this subsection will deal with the theory and historical aspects of defining intelligence. If you are more interested in just the core practical aspects of how we measure artificial general intelligence (AGI), then you can safely skip to the next subsection - measurement.}] \textbf{Why do we need to define intelligence?} In our previous section on foundation models, we explored how modern AI systems are becoming increasingly powerful. But before we can meaningfully discuss the risks and safety implications of these systems, we need to agree on what we mean when we talk about AGI. Some believe that "sparks" of AGI are already present in the latest language models (\href{https://arxiv.org/abs/2303.12712}{Bubeck et al., 2023}), while others predict human-level AI within a decade (\href{https://arxiv.org/abs/2310.17688}{Bengio et al., 2024}). Without a clear definition, how are we supposed to assess such claims or plan appropriate safety measures? \end{tcolorbox}
+
+original -
+
+!!! question "Initial Forecast: Before we explore more sophisticated methods, make an initial prediction: When do you think we'll see transformative AI? Keep this forecast in mind as we examine different forecasting approaches."
+
+## Methodology
+
+**How do we convert beliefs into probabilities and forecasts?** We need some ways to actually convert beliefs like "I think AGI is likely this decade" into precise probability estimates. One way we can do this is by decomposition - breaking down complex beliefs into smaller, measurable components and analyzing relevant data. Rather than directly estimating the year in which transformative AI emerges, we can start by separately forecasting things like compute growth, algorithmic progress, and hardware limitations, and then combine these estimates ([Zhang, 2024](https://forecasting-sp24.quarto.pub/forecasting-sp24/estimation.html)). This decomposition approach helps us ground predictions in observable trends rather than relying purely on intuitions. So, using this approach there are two main techniques we need to discuss - zeroth-order forecasting for establishing baselines, and first-order forecasting for understanding trajectories of change.
+
+
+converted -
+
+
+\begin{tcolorbox}[breakable,title={Initial Forecast: Before we explore more sophisticated methods, make an initial prediction: When do you think we'll see transformative AI? Keep this forecast in mind as we examine different forecasting approaches.}]
+
+\subsection{Methodology}
+
+\textbf{How do we convert beliefs into probabilities and forecasts?} We need some ways to actually convert beliefs like "I think AGI is likely this decade" into precise probability estimates. One way we can do this is by decomposition - breaking down complex beliefs into smaller, measurable components and analyzing relevant data. Rather than directly estimating the year in which transformative AI emerges, we can start by separately forecasting things like compute growth, algorithmic progress, and hardware limitations, and then combine these estimates (\href{https://forecasting-sp24.quarto.pub/forecasting-sp24/estimation.html}{Zhang, 2024}). This decomposition approach helps us ground predictions in observable trends rather than relying purely on intuitions. So, using this approach there are two main techniques we need to discuss - zeroth-order forecasting for establishing baselines, and first-order forecasting for understanding trajectories of change. \end{tcolorbox}
+
+

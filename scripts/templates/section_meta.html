@@ -1,0 +1,55 @@
+<!-- File: scripts/templates/section_meta.html -->
+<div class="section-meta">
+    <div class="meta-grid">
+        <!-- Left Column -->
+        <div class="meta-col">
+            <!-- Word Count -->
+            <div class="meta-item">
+                <span class="meta-icon">
+                    <i class="fas fa-file-alt"></i>
+                </span>
+                <div class="meta-content">
+                    <div class="meta-label">Length</div>
+                    <div class="meta-value">{word_count} words</div>
+                </div>
+            </div>
+            <!-- Reading Time -->
+            <div class="meta-item">
+                <span class="meta-icon">
+                    <i class="fas fa-clock"></i>
+                </span>
+                <div class="meta-content">
+                    <div class="meta-label">Reading Time</div>
+                    <div class="meta-value">{reading_time} min</div>
+                </div>
+            </div>
+        </div>
+        <!-- Right Column -->
+        <div class="meta-col">
+            <!-- Section Navigation -->
+            <div class="meta-item">
+                <span class="meta-icon">
+                    <i class="fas fa-route"></i>
+                </span>
+                <div class="meta-content">
+                    <div class="meta-label">Navigation</div>
+                    <div class="meta-value meta-nav">
+                        {prev_section_link} · {next_section_link}
+                    </div>
+                </div>
+            </div>
+            <!-- Interactive Elements -->
+            <div class="meta-item">
+                <span class="meta-icon">
+                    <i class="fas fa-layer-group"></i>
+                </span>
+                <div class="meta-content">
+                    <div class="meta-label">Contents</div>
+                    <div class="meta-value">
+                        {subsection_count} subsections · {figure_count} figures
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
