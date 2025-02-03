@@ -84,26 +84,26 @@
 </div>
 
 <div class="action-buttons">
-    <a href="https://www.youtube.com/watch?v=dhr4u-w75aQ" class="action-button">
-        <i class="fas fa-video"></i>
-        <span>Watch</span>
-    </a>
-    <div class="action-button disabled" data-tippy-content="Audio coming soon">
-        <i class="fas fa-headphones"></i>
-        <span>Listen</span>
-    </div>
-    <div class="action-button disabled" data-tippy-content="PDF coming soon">
-        <i class="fas fa-file-pdf"></i>
-        <span>Download</span>
-    </div>
-    <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
-        <i class="fas fa-comment"></i>
-        <span>Feedback</span>
-    </a>
-    <a href="https://docs.google.com/document/d/1evE1rG91DKBuKlWnqPw45QtPxKBz0GlD_ZYrurNdvN4/edit?usp=sharing" class="action-button">
-        <i class="fas fa-users"></i>
-        <span>Facilitate</span>
-    </a>
+   <a href="https://www.youtube.com/watch?v=dhr4u-w75aQ" class="action-button">
+       <i class="fas fa-video"></i>
+       <span>Watch</span>
+   </a>
+   <div class="action-button disabled" data-tippy-content="Audio coming soon">
+       <i class="fas fa-headphones"></i>
+       <span>Listen</span>
+   </div>
+   <a href="https://raw.githubusercontent.com/CentreSecuriteIA/textbook/main/latex/AI%20Safety%20Atlas%20-%20Risks.pdf" class="action-button" download>
+       <i class="fas fa-file-pdf"></i>
+       <span>Download</span>
+   </a>
+   <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
+       <i class="fas fa-comment"></i>
+       <span>Feedback</span>
+   </a>
+   <a href="https://docs.google.com/document/d/1evE1rG91DKBuKlWnqPw45QtPxKBz0GlD_ZYrurNdvN4/edit?usp=sharing" class="action-button">
+       <i class="fas fa-users"></i>
+       <span>Facilitate</span>
+   </a>
 </div>
 
 # Introduction
@@ -120,7 +120,7 @@ Increasing capabilities are a problem, because as AI models get more capable, th
 The first step is to get an understanding of - What exactly are the concerning scenarios? What are the likelihoods of certain harmful outcomes occurring over others?, and what aspects of current AI development accelerate these risks? In this chapter we aim to tackle these fundamental questions and provide a concrete overview of the various risks in the AI landscape.
 
 <figure markdown="span">
-![Enter image alt description](Images/XS2_Image_1.png){ loading=lazy }
+![Enter image alt description](Images/F2p_Image_1.png){ loading=lazy }
   <figcaption markdown="1"><b>Figure 2.1:</b> The two-dimensional view of performance x generality. With increasing capabilities, and increasing generality, we also see increasing risks. Depending on the development trajectory and takeoff we might see longer periods with potential catastrophic risks, or suddenly emerging severe existential risks. The curves and colors in this diagram are meant to be illustrative and do not represent any specific forecasted development trajectory.</figcaption>
 </figure>
 
