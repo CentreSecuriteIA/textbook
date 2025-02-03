@@ -145,7 +145,7 @@ extra_css:
   - overrides/css/footer.css
   - overrides/css/section-end.css
   - overrides/css/scroll-buttons.css
-  - overrides/css/citations.css
+  #- overrides/css/citations.css
   - overrides/css/header.css
   #- overrides/css/progress.css
   #- overrides/css/home.css
@@ -163,7 +163,7 @@ extra_javascript:
   - overrides/js/tippy.js
   - overrides/js/navigation.js
   - overrides/js/scroll-buttons.js
-  - overrides/js/citations.js
+  #- overrides/js/citations.js
   #- overrides/js/home.js
   #- overrides/js/contact.js
   #- overrides/js/knowledge-tree.js
