@@ -15,7 +15,7 @@ theme:
         name: Switch to dark mode
     # Dark mode
     - scheme: slate
-      primary: indigo
+      primary: black
       accent: indigo
       toggle:
         icon: material/brightness-4
@@ -41,7 +41,8 @@ theme:
     - announce.dismiss
     - toc.follow
     #- toc.integrate
-
+    - search.suggest
+    - search.highlight
 
 plugins:
   - search
@@ -151,6 +152,7 @@ extra_css:
   - overrides/css/home/hero-animation.css
   - overrides/css/home/header.css
   - overrides/css/home/why.css
+  - overrides/css/header.css
   - https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
   - https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700;800;900&display=swap
