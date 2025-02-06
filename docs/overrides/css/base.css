@@ -4,7 +4,7 @@
 
 .md-content {
     max-width: var(--md-main-content-width);
-    margin: 0 auto;
+    margin: auto;
 }
 
 /* Justified text with increased mobile padding */
@@ -15,7 +15,7 @@
 /* Increased padding on mobile for better word spacing */
 @media screen and (max-width: 768px) {
     .md-content__inner {
-        padding: 0 1rem;
+        padding: auto;
     }
 }
 

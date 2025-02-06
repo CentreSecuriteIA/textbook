@@ -1,0 +1,229 @@
+<!-- File: docs/overrides/partials/parallax/testimonials.html -->
+<section class="atlas-testimonials">
+    <div class="atlas-testimonials__container">
+        <h2 class="testimonials-title">Testimonials</h2>
+        
+        <div class="testimonials-collage">
+            <!-- Featured quote -->
+            <div class="testimonial-card large">
+                <blockquote>
+                    "For a systematic, centralized, and concise introduction to the core topics in AI safety, this is the best and most up-to-date resource I know."
+                </blockquote>
+                <cite>AI Safety Lead, UBC Vancouver</cite>
+            </div>
+            
+            <!-- Medium quotes -->
+            <div class="testimonial-card medium">
+                <blockquote>
+                    "Your explanations of goal misgeneralization and deceptive alignment really helped me understand these concepts."
+                </blockquote>
+                <cite>ML Researcher</cite>
+            </div>
+
+            <div class="testimonial-card medium">
+                <blockquote>
+                    "The systematic approach makes it remarkably easier to integrate into existing curricula."
+                </blockquote>
+                <cite>Course Organizer, ML4Good</cite>
+            </div>
+
+            <!-- Small quotes -->
+            <div class="testimonial-card small">
+                <blockquote>
+                    "I found it to be super insightful. Learned tons of new things."
+                </blockquote>
+                <cite>ML4G Germany</cite>
+            </div>
+
+            <div class="testimonial-card small">
+                <blockquote>
+                    "The textbooks keep a clear line of thought and structure."
+                </blockquote>
+                <cite>ML4G France</cite>
+            </div>
+
+            <div class="testimonial-card small">
+                <blockquote>
+                    "The material and content are great, can't wait to read more."
+                </blockquote>
+                <cite>Independent Student</cite>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* File: docs/overrides/css/home/testimonials.css */
+.atlas-testimonials {
+    background-color: var(--md-primary-fg-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.atlas-testimonials__container {
+    width: min(90vw, 1200px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials-title {
+    font-family: 'Crimson Pro', serif;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--md-primary-bg-color);
+    opacity: 0;
+    animation: fadeInSlideUp 0.8s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+}
+
+.testimonials-collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    height: calc(100vh - 8rem);
+    max-height: 600px;
+}
+
+.testimonial-card {
+    background: var(--md-default-bg-color);
+    border: 3px solid var(--atlas-deep-blue);
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeInSlideUp 0.8s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+}
+
+.testimonial-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0 var(--md-default-bg-color);
+}
+
+/* Card sizes */
+.testimonial-card.large {
+    grid-column: span 2;
+    grid-row: span 2;
+    animation-delay: 0.1s;
+}
+
+.testimonial-card.medium {
+    grid-column: span 1;
+    grid-row: span 2;
+    animation-delay: 0.2s;
+}
+
+.testimonial-card.small {
+    grid-column: span 1;
+    grid-row: span 1;
+    animation-delay: 0.3s;
+}
+
+/* Typography */
+blockquote {
+    font-family: 'Crimson Pro', serif;
+    line-height: 1.4;
+    color: var(--md-primary-fg-color);
+    margin: 0 0 0.75rem 0;
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+.large blockquote {
+    font-size: 1.2rem;
+}
+
+.medium blockquote {
+    font-size: 1rem;
+}
+
+.small blockquote {
+    font-size: 0.9rem;
+}
+
+blockquote::before {
+    content: '"';
+    position: absolute;
+    left: 0;
+    top: -0.4rem;
+    font-size: 2.5rem;
+    color: var(--md-primary-fg-color);
+    opacity: 0.2;
+    line-height: 1;
+}
+
+cite {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    color: var(--md-default-fg-color--light);
+    padding-left: 1.25rem;
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .testimonials-collage {
+        grid-template-columns: repeat(2, 1fr);
+        max-height: none;
+    }
+
+    .testimonial-card.large {
+        grid-column: span 2;
+    }
+
+    .testimonial-card.medium {
+        grid-column: span 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .atlas-testimonials {
+        padding: 1.5rem;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .testimonials-collage {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .testimonial-card.large,
+    .testimonial-card.medium {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .testimonial-card {
+        padding: 1rem;
+    }
+
+    blockquote {
+        padding-left: 1rem;
+    }
+
+    cite {
+        padding-left: 1rem;
+    }
+
+    .large blockquote,
+    .medium blockquote,
+    .small blockquote {
+        font-size: 0.9rem;
+    }
+}
+</style>

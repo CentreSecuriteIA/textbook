@@ -1,5 +1,5 @@
 # File: textbook/mkdocs.yml
-site_name: The AI Safety Atlas
+site_name: AI Safety Atlas
 site_url: https://ai-safety-atlas.com
 
 theme:
@@ -144,19 +144,30 @@ extra_css:
   - overrides/css/footer.css
   - overrides/css/section-end.css
   - overrides/css/scroll-buttons.css
-  - overrides/css/citations.css
+  #- overrides/css/citations.css
   #- overrides/css/progress-bar.css
+  - overrides/css/home/base.css
+  - overrides/css/home/hero.css
+  - overrides/css/home/hero-animation.css
+  - overrides/css/home/header.css
+  - overrides/css/home/why.css
   - https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
-
+  - https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700;800;900&display=swap
+  - https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&display=swap
 
 extra_javascript:
   - overrides/js/mathjax.js
   - overrides/js/tippy.js
   - overrides/js/navigation.js
   - overrides/js/scroll-buttons.js
-  - overrides/js/citations.js
+  #- overrides/js/citations.js
   #- overrides/js/progress-bar.js
+  - overrides/js/home/base.js
+  - overrides/js/home/hero.js
+  - overrides/js/home/why.js
+  - overrides/js/home/header.js
+  - overrides/js/home/scroll-animations.js
   - https://unpkg.com/@popperjs/core@2
   - https://unpkg.com/tippy.js@6
   - https://unpkg.com/tippy.js@6/dist/animations/perspective-extreme.js
