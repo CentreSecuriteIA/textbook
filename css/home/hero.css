@@ -1,0 +1,236 @@
+/* File: docs/overrides/css/home/hero.css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+.atlas-hero {
+    min-height: 100vh;
+    padding: var(--atlas-spacing-md);
+    background-color: var(--atlas-bg);
+    display: flex;
+    align-items: center;
+}
+
+.atlas-hero__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.atlas-hero__book-svg {
+    width: 100%;
+    height: 100%;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    fill: none;
+    opacity: 0.1;
+}
+
+.atlas-hero__container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 2rem;
+    z-index: 1;
+}
+
+.atlas-hero__text {
+    text-align: center;
+}
+
+.atlas-hero__title {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 700;
+    font-size: clamp(4rem, 8vw, 7rem);
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--atlas-primary);
+    opacity: 0;
+    animation: fadeInSlideUp 0.8s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+}
+
+.atlas-hero__subtitle {
+	font-family: var(--atlas-font-heading);
+    color: var(--atlas-text);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 500;
+    margin: 0;
+}
+
+.atlas-hero__tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto;
+    opacity: 0;
+    animation: fadeInSlideUp 0.8s cubic-bezier(0.23, 1, 0.320, 1) 0.4s forwards;
+}
+
+
+/* Brutalist Card Styles */
+.brutalist-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+
+.brutalist-card {
+    border: 4px solid var(--atlas-primary);
+    background-color: var(--atlas-bg);
+    box-shadow: var(--atlas-shadow-lg);
+    transition: var(--atlas-transition);
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeInSlideUp 0.8s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+}
+
+.brutalist-card:nth-child(1) { animation-delay: 0.8s; }
+.brutalist-card:nth-child(2) { animation-delay: 1s; }
+.brutalist-card:nth-child(3) { animation-delay: 1.2s; }
+
+
+.brutalist-card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 15px 15px 0 var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] .brutalist-card {
+    border-color: var(--md-primary-bg-color);
+    box-shadow: 10px 10px 0 var(--md-primary-bg-color);
+}
+
+[data-md-color-scheme="slate"] .brutalist-card:hover {
+    box-shadow: 15px 15px 0 var(--md-primary-bg-color);
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.brutalist-card__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--md-primary-fg-color);
+    padding-bottom: 1rem;
+}
+
+.brutalist-card__icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brutalist-card__alert {
+    font-weight: 900;
+    color: var(--md-primary-fg-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.brutalist-card__message {
+    color: var(--md-primary-fg-color);
+    font-size: 0.9rem;
+	padding: 0 0 1rem 0;
+    line-height: 1.4;
+    font-weight: 600;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.brutalist-card__button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid var(--md-primary-fg-color);
+    color: var(--md-primary-fg-color);
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.brutalist-card__button:hover {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-default-bg-color);
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 1024px) {
+    .atlas-hero {
+        height: auto;
+        min-height: 100vh;
+    }
+
+
+    .brutalist-cards-wrapper {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .atlas-hero__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .atlas-hero__text {
+        align-items: center;
+    }
+
+    .atlas-hero__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brutalist-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .atlas-hero {
+        padding: 1rem;
+    }
+
+    .atlas-hero__container {
+        padding: 0 0.5rem;
+    }
+}

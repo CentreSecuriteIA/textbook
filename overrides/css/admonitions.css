@@ -1,0 +1,148 @@
+/* Base admonition styling */
+/* Add pointer cursor to show it's clickable */
+.md-typeset summary {
+    cursor: pointer;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+    border: none;
+    border-left: 4px solid;
+    box-shadow: none;
+    margin: 2em 0;
+    padding: 1.2em 1.6em;
+    font-size: 0.9em;
+    border-radius: 4px;
+}
+
+/* Note */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+    background-color: rgba(68, 138, 255, 0.08);
+    border-left-color: rgb(68, 138, 255);
+}
+
+/* Abstract */
+.md-typeset .admonition.abstract,
+.md-typeset details.abstract {
+    background-color: rgba(100, 100, 100, 0.08);
+    border-left-color: rgb(100, 100, 100);
+}
+
+/* Info */
+.md-typeset .admonition.info,
+.md-typeset details.info {
+    background-color: rgba(0, 184, 212, 0.08);
+    border-left-color: rgb(0, 184, 212);
+}
+
+/* Tip */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+    background-color: rgba(0, 191, 165, 0.08);
+    border-left-color: rgb(0, 191, 165);
+}
+
+/* Success */
+.md-typeset .admonition.success,
+.md-typeset details.success {
+    background-color: rgba(46, 204, 113, 0.08);
+    border-left-color: rgb(46, 204, 113);
+}
+
+/* Question */
+.md-typeset .admonition.question,
+.md-typeset details.question {
+    background-color: rgba(100, 221, 23, 0.08);
+    border-left-color: rgb(100, 221, 23);
+}
+
+/* Warning */
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+    background-color: rgba(255, 145, 0, 0.08);
+    border-left-color: rgb(255, 145, 0);
+}
+
+/* Failure */
+.md-typeset .admonition.failure,
+.md-typeset details.failure {
+    background-color: rgba(255, 82, 82, 0.08);
+    border-left-color: rgb(255, 82, 82);
+}
+
+/* Danger */
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+    background-color: rgba(255, 23, 68, 0.08);
+    border-left-color: rgb(255, 23, 68);
+}
+
+/* Bug */
+.md-typeset .admonition.bug,
+.md-typeset details.bug {
+    background-color: rgba(244, 67, 54, 0.08);
+    border-left-color: rgb(244, 67, 54);
+}
+
+/* Example */
+.md-typeset .admonition.example,
+.md-typeset details.example {
+    background-color: rgba(156, 39, 176, 0.08);
+    border-left-color: rgb(156, 39, 176);
+}
+
+/* Quote */
+.md-typeset .admonition.quote,
+.md-typeset blockquote,
+.md-typeset .quote {
+    background-color: rgba(158, 158, 158, 0.08);
+    border-left-color: rgb(158, 158, 158);
+    color: var(--md-default-fg-color--light);
+}
+
+/* Title styling for all admonitions */
+.md-typeset .admonition-title,
+.md-typeset summary {
+    background-color: transparent !important;
+    padding: 0.4em 0;
+    padding-left: 2.2em;
+    font-weight: 600;
+    margin: 0 -1.6em 0.8em -1.6em;
+    color: inherit;
+}
+
+/* Icon styling for all admonitions */
+.md-typeset .admonition-title::before,
+.md-typeset summary::before {
+    position: absolute;
+    left: 0.8em;
+    top: 0.5em;
+    width: 1.2em;
+    height: 1.2em;
+    opacity: 0.7;
+}
+
+/* Remove collapse marker */
+.md-typeset details > summary::after {
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%) rotate(0);
+    transition: transform 0.15s ease-in-out;
+    content: "›";
+    font-size: 1.2em;
+    opacity: 0.7;
+}
+
+.md-typeset details[open] > summary::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
