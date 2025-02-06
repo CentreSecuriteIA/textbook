@@ -1,0 +1,70 @@
+
+<div class="atlas-hero">
+    <div class="atlas-hero__container">
+        <!-- Left side with text -->
+        <div class="atlas-hero__text">
+            <h1 class="atlas-hero__title">Atlas Project</h1>
+            <p class="atlas-hero__tagline">
+                Systematically distilling AI Safety research into clear, interconnected knowledge.
+            </p>
+        </div>
+
+        <!-- Right side with cards -->
+        <div class="atlas-hero__cards-container">
+            <div class="atlas-hero__cards">
+
+
+    <a href="/chapters" class="atlas-card">
+        <!-- Front of card -->
+        <i class="fas fa-book-reader"></i>
+        <span class="atlas-card__front-text">Learn</span>
+        
+        <!-- Back of card -->
+        <div class="atlas-card__content">
+            <p class="atlas-card__title">Learn</p>
+            <p class="atlas-card__description">
+                Explore our systematic explanations of AI Safety concepts
+            </p>
+        </div>
+    </a>
+
+    <a href="/teach" class="atlas-card">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <span class="atlas-card__front-text">Teach</span>
+        <div class="atlas-card__content">
+            <p class="atlas-card__title">Teach</p>
+            <p class="atlas-card__description">
+                Access resources for educators and study groups
+            </p>
+        </div>
+    </a>
+
+    <a href="/sponsor" class="atlas-card">
+        <i class="fas fa-hand-holding-heart"></i>
+        <span class="atlas-card__front-text">Sponsor</span>
+        <div class="atlas-card__content">
+            <p class="atlas-card__title">Sponsor</p>
+            <p class="atlas-card__description">
+                Support building knowledge infrastructure
+            </p>
+        </div>
+    </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

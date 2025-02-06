@@ -1,0 +1,139 @@
+/* File: docs/overrides/css/home/why.css */
+
+.atlas-why {
+    position: relative;
+    min-height: 100vh;
+    background: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    padding: 4rem 2rem;
+}
+
+.atlas-why__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.atlas-why__content {
+    text-align: center;
+}
+
+.atlas-why__title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+}
+
+.atlas-why__explanation {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+
+.atlas-why__text {
+    max-width: 600px;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.320, 1) 0.4s forwards;
+}
+
+.knowledge-graph {
+    width: 100%;
+    max-width: 800px;
+    opacity: 0;
+    animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.320, 1) 0.8s forwards;
+}
+
+.knowledge-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.knowledge-node i {
+    font-size: 2rem;
+}
+
+.knowledge-node span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.knowledge-node.primary {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin-bottom: 2rem;
+}
+
+.knowledge-connections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    position: relative;
+}
+
+.knowledge-node.secondary {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+.knowledge-node:hover {
+    transform: translateY(-5px);
+}
+
+/* Path animations */
+.knowledge-connections::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    width: 2px;
+    height: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="default"] .atlas-why {
+    background: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .knowledge-connections {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .atlas-why {
+        padding: 3rem 1rem;
+    }
+
+    .knowledge-node {
+        padding: 1rem;
+    }
+
+    .knowledge-node i {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
