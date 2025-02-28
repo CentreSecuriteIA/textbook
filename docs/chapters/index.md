@@ -44,6 +44,7 @@
                 <div class="meta-label">Advisors</div>
                 <div class="meta-value">
                     <div>Vincent Corruble</div>
+                    <div>Fabien Roger</div>
                 </div>
             </div>
         </div>
