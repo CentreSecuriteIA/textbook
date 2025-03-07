@@ -1,0 +1,38 @@
+/* File: docs/overrides/css/home/header.css */
+.is-home-page {
+    /* Remove the header space */
+    --md-header-height: 0;
+}
+
+.is-home-page .md-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.is-home-page .md-header[data-md-state="shadow"],
+.is-home-page .md-header:focus-within {
+    transform: translateY(0);
+    background-color: var(--atlas-bg);
+}
+
+/* Make content start from top */
+.is-home-page .md-main {
+    margin-top: 0;
+}
+
+.is-home-page .md-content {
+    padding-top: 0;
+}
+
+/* Show header on hover near top */
+.is-home-page .md-header:hover,
+.is-home-page .header-visible {
+    transform: translateY(0);
+    background-color: var(--atlas-bg);
+}

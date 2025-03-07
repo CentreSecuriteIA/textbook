@@ -1,0 +1,50 @@
+/* Tab container */
+.tabbed-set {
+    position: relative;
+    border-radius: 4px;
+    margin: 1em 0;
+}
+
+/* Tab labels */
+.tabbed-set > label {
+    padding: 0.7em 1.4em;
+    font-weight: 500;
+    font-size: 0.85em;
+    cursor: pointer;
+    position: relative;
+    color: var(--md-default-fg-color--light);
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+/* Selected tab styling */
+.tabbed-set > input:checked + label {
+    color: var(--md-accent-fg-color);
+    border-bottom: 2px solid var(--md-accent-fg-color);
+    background-color: var(--md-code-bg-color);
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+}
+
+/* Hover effect for unselected tabs */
+.tabbed-set > label:hover {
+    color: var(--md-accent-fg-color);
+    background-color: var(--md-code-bg-color--light);
+    border-radius: 4px 4px 0 0;
+}
+
+/* Tab content */
+.tabbed-content {
+    background-color: var(--md-code-bg-color);
+    padding: 1.5em;
+    border-radius: 0 4px 4px 4px;
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .tabbed-set > input:checked + label {
+    background-color: var(--md-code-bg-color);
+}
+
+[data-md-color-scheme="slate"] .tabbed-set > label:hover {
+    background-color: var(--md-code-bg-color--light);
+}
