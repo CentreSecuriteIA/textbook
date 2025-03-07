@@ -88,10 +88,10 @@
         <i class="fas fa-video"></i>
         <span>Watch</span>
     </div>
-    <div class="action-button disabled" data-tippy-content="Audio coming soon">
+    <a href="#" class="action-button">
         <i class="fas fa-headphones"></i>
         <span>Listen</span>
-    </div>
+    </a>
     <div class="action-button disabled" data-tippy-content="PDF coming soon">
         <i class="fas fa-file-pdf"></i>
         <span>Download</span>
@@ -104,6 +104,55 @@
         <i class="fas fa-users"></i>
         <span>Facilitate</span>
     </a>
+</div>
+
+<div class="atlas-audio-player">
+    <!-- Header section -->
+    <div class="audio-player__header">
+        <div class="header-left">
+            <i class="fas fa-headphones-alt"></i>
+            <span class="audio-player__title">Audio Version</span>
+            <span class="audio-warning-text"><i class="fas fa-robot"></i> AI-generated</span>
+        </div>
+        <div class="header-right">
+            <button class="audio-close-button" aria-label="Close audio player">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- MEGA embed wrapper -->
+    <div class="mega-audio-wrapper">
+        <iframe 
+            width="100%" 
+            height="160" 
+            frameborder="0" 
+            src="https://mega.nz/embed/ieBRQZQZ#GzZAljhhfVUmUHSG0cWEBaW2AkuCm4LmpfYFGtWKBbM!1v1c" 
+            allowfullscreen
+            loading="lazy"
+            allow="autoplay">
+        </iframe>
+    </div>
+    
+    <!-- Error toggle button at the bottom -->
+    <div class="errors-toggle-container">
+        <button class="errors-toggle-button" aria-label="View known errors">
+            <i class="fas fa-exclamation-circle"></i> View known errors in AI-generated audio
+        </button>
+    </div>
+    
+    <!-- Hidden errors panel at the bottom -->
+    <div class="audio-errors-panel">
+        <h4>Known Errors in AI-Generated Audio</h4>
+        <ul>
+            <li><strong>3:00</strong> - Error - Feature visualizations (are not that helpful currently; behavioral approaches remain the best way to evaluate deception)</li>
+            <li><strong>4:00</strong> - Imprecise - Multiple labs evaluate CBRN capabilities, not just OpenAI</li>
+            <li><strong>12:30</strong> - Debated - TruthfulQA is not really a propensity evaluation</li>
+            <li><strong>17:30</strong> - Error - Sandbagging emerges from the AI itself, it is not implemented by developers</li>
+            <li><strong>18:40</strong> - Inaccurate - One of the most important limitations is not just that we lack evaluations in cybersecurity; rather, it's difficult to elicit the capabilities of a system, and we cannot be certain whether it will be impossible to create a system that performs</li>
+        </ul>
+        <p class="report-errors">Found more errors? Please report to <a href="mailto:contact@securite-ia.fr">contact@securite-ia.fr</a></p>
+    </div>
 </div>
 
 # Introduction
@@ -130,3 +179,4 @@ As AI systems grow increasingly powerful, our ability to rigorously evaluate the
 **Evaluation Design.** Moving from theory to practice, we examine how to implement these evaluations effectively at scale. This includes designing robust evaluation protocols, automating assessment processes where possible, and integrating evaluations with broader safety frameworks and auditing systems. A key focus is developing systematic approaches that can be reliably implemented across different organizations.
 
 **Limitations.** Finally, we talk about the fundamental challenges facing AI evaluations. From the difficulty of proving absence of capabilities, to technical constraints around measurement precision, to governance challenges around independence and standardization - understanding these limitations is crucial for both improving our methods and maintaining appropriate epistemic humility about their results.
+

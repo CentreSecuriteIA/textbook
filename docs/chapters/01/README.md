@@ -83,15 +83,17 @@
     </div>
 </div>
 
+
+
 <div class="action-buttons">
    <a href="https://www.youtube.com/watch?v=J_iMeH1hb9M" class="action-button">
        <i class="fas fa-video"></i>
        <span>Watch</span>
    </a>
-   <div class="action-button disabled" data-tippy-content="Audio coming soon">
+   <button class="action-button audio-toggle-button">
        <i class="fas fa-headphones"></i>
        <span>Listen</span>
-   </div>
+   </button>
    <a href="https://raw.githubusercontent.com/CentreSecuriteIA/textbook/main/latex/AI%20Safety%20Atlas%20-%20Capabilities.pdf" class="action-button" download>
        <i class="fas fa-file-pdf"></i>
        <span>Download</span>
@@ -105,6 +107,61 @@
        <span>Facilitate</span>
    </a>
 </div>
+
+<div class="atlas-audio-player hidden-player">
+    <!-- Header section -->
+    <div class="audio-player__header">
+        <div class="header-left">
+            <i class="fas fa-headphones-alt"></i>
+            <span class="audio-player__title">Audio Version</span>
+            <span class="audio-warning-text"><i class="fas fa-robot"></i> AI-generated</span>
+        </div>
+        <div class="header-right">
+            <button class="audio-close-button" aria-label="Close audio player">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- MEGA embed wrapper -->
+    <div class="mega-audio-wrapper">
+        <iframe 
+            width="100%" 
+            height="160" 
+            frameborder="0" 
+            src="https://mega.nz/embed/TbR00YZa#pxHbeGX_Xx8S_s5wvYXzqR9vdR9oX_6LiXtVzf8FFV8!1v1c" 
+            allowfullscreen
+            loading="lazy"
+            allow="autoplay">
+        </iframe>
+    </div>
+    
+    <!-- Error toggle button at the bottom -->
+    <div class="errors-toggle-container">
+        <button class="errors-toggle-button" aria-label="View known errors">
+            <i class="fas fa-exclamation-circle"></i> View known errors in AI-generated audio
+        </button>
+    </div>
+    
+    <!-- Hidden errors panel at the bottom -->
+    <div class="audio-errors-panel">
+        <h4>Known Errors in AI-Generated Audio</h4>
+        <ul>
+            <li><strong>Note:</strong> - This is an AI-generated audio version. Please report any errors you find.</li>
+        </ul>
+        <p class="report-errors">Found errors? Please report to <a href="mailto:contact@securite-ia.fr">contact@securite-ia.fr</a></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 # Introduction
 
@@ -139,3 +196,4 @@ The field of artificial intelligence has undergone a remarkable transformation i
 **Forecasting - Predicting capabilities progress helps us prepare safety measures in advance** . Building on our understanding of current capabilities and scaling behaviors, we examine various approaches to anticipating future progress. From biological anchors to trend analysis, we explore frameworks for making informed predictions about AI development trajectories. This is very important to know when different safety measures need to be in place.
 
 **Appendices - Overview of expert opinions on AI, detailed debates around scale, and scaling trends.** We consider these sections optional, but still useful to those who want to get a little bit of a deeper dive. The chapter concludes with appendices examining expert opinions on AI progress, deeper discussions about the nature and limitations of large language models, and comprehensive data on key trends in AI development.
+
