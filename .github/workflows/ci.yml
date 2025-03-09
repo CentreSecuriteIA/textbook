@@ -33,9 +33,8 @@ jobs:
      - run: pip install mkdocs-glightbox
      - run: pip install mkdocs-meta-descriptions-plugin
      - run: pip install mkdocs-minify-plugin
-     # Create CNAME file
+     # Create CNAME file in docs directory
      - name: Create CNAME file
        run: |
-         mkdir -p site   # Create the site directory if it doesn't exist
-         echo "ai-safety-atlas.com" > site/CNAME
+         echo "ai-safety-atlas.com" > docs/CNAME
      - run: mkdocs gh-deploy --force
