@@ -174,10 +174,11 @@
 }
 
 .audio-errors-panel.active {
-  max-height: 400px;
+  max-height: none;
   padding: 1rem 1rem 1.5rem 1rem;
   border-top-width: 1px;
   margin-top: 0.5rem;
+  overflow: visible;
 }
 
 .audio-errors-panel h4 {
@@ -191,11 +192,14 @@
   margin: 0;
   padding-left: 1.5rem;
   font-size: 0.8rem;
+  list-style-position: outside;
 }
 
 .audio-errors-panel li {
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .audio-errors-panel li strong {
