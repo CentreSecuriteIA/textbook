@@ -145,7 +145,12 @@
     <div class="audio-errors-panel">
         <h4>Known Errors in AI-Generated Audio</h4>
         <ul>
-            <li><strong>Note:</strong> - This is an AI-generated audio version. Please report any errors you find.</li>
+            <li><strong>5:00</strong> - Error - Cleaning robot example is not an empirical experiment but merely a hypothetical thought</li>
+            <li><strong>13:00</strong> - Outdated - While DPO avoids some pitfalls of RLHF (easier implementation, computational efficiency, improved in-distribution performance), recent research shows DPO has serious out-of-distribution problems (<a href="https://arxiv.org/abs/2310.08941">Ziniu Li et al. 2023</a>), and RLHF is more efficient at handling diverse feedback formats</li>
+            <li><strong>15:00</strong> - Inaccurate - Bias is not such a significant problem in DPO; robots taking over is in fact a serious consideration</li>
+            <li><strong>20:00</strong> - Questionable - "More like raising a child" concept is not reliably considered in the chapter; AI Parenting is not considered a reliable strategy (see the strategy chapter)</li>
+            <li><strong>22:00</strong> - Incomplete - While we have made progress, LLMs remain highly jailbreakable, and Claude can fake alignment to avoid being modified to values it does not prefer (<a href="https://arxiv.org/abs/2310.08941">Greenblatt et al., 2024</a>), and some recent models like O1 are trying in some simulated situation to avoid developers oversight and to copy itself when at risks of being shut down (<a href="https://www.apolloresearch.ai/blog/o1-emergent">Apollo, 2024</a>)</li>
+            <li><strong>After 22:00</strong> - Note - There is a lot of AI slop at the end</li>
         </ul>
         <p class="report-errors">Found errors? Please report to <a href="mailto:contact@securite-ia.fr">contact@securite-ia.fr</a></p>
     </div>

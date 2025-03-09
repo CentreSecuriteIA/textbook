@@ -146,6 +146,13 @@
         <h4>Known Errors in AI-Generated Audio</h4>
         <ul>
             <li><strong>Note:</strong> - This is an AI-generated audio version. Please report any errors you find.</li>
+            <li><strong>9:00</strong> - Inaccuracy - No one pronounces "CoT" as "Cootee" like this</li>
+            <li><strong>11:00</strong> - Inaccuracy - Bias has nothing to do with Procedural Cloning</li>
+            <li><strong>12:00</strong> - Inaccuracy - Amplification is not necessarily a team of AI working together, this is just an example</li>
+            <li><strong>15:00</strong> - Replace "Bias" by "Flaws"</li>
+            <li><strong>21:00</strong> - Error - Sandwiching is extremely poorly explained</li>
+            <li><strong>23:00</strong> - Inaccuracy - The motte and bailey fallacy is just one of many ways that both AI and humans can be misleading</li>
+            <li><strong>After 22:00</strong> - Note - Everything at the end is sloppy</li>
         </ul>
         <p class="report-errors">Found errors? Please report to <a href="mailto:contact@securite-ia.fr">contact@securite-ia.fr</a></p>
     </div>

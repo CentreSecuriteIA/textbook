@@ -145,7 +145,12 @@
     <div class="audio-errors-panel">
         <h4>Known Errors in AI-Generated Audio</h4>
         <ul>
-            <li><strong>Note:</strong> - This is an AI-generated audio version. Please report any errors you find.</li>
+            <li><strong>1:00</strong> - Imprecise - The discussion on the diagram is somewhat underwhelming; we encourage listeners to examine the diagram themselves—it's not a map, it's a diagram</li>
+            <li><strong>2:00</strong> - Error - Frontier AI is not designing an AI that is reshaping the world, at least not currently. An AI that is reshaping the world would be classified as "transformative AI"</li>
+            <li><strong>14:00</strong> - Outdated - The Executive Order has recently been revoked by the Trump administration</li>
+            <li><strong>26:00</strong> - Update - The Council of Europe treaty has been published</li>
+            <li><strong>After 30:00</strong> - Note - There is a lot of slop that could be trimmed down</li>
+        </ul>
         </ul>
         <p class="report-errors">Found errors? Please report to <a href="mailto:contact@securite-ia.fr">contact@securite-ia.fr</a></p>
     </div>
