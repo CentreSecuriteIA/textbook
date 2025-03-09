@@ -145,7 +145,9 @@
     <div class="audio-errors-panel">
         <h4>Known Errors in AI-Generated Audio</h4>
         <ul>
-            <li><strong>Note:</strong> - This is an AI-generated audio version. Please report any errors you find.</li>
+            <li><strong>Note:</strong> - This is an AI-generated audio version.</li>
+            <li><strong>General</strong> - Note - Nothing in this podcast is explicitly false, but it is a bit superficial</li>
+            <li><strong>End section</strong> - Note - There is a lot of slop at the end</li>
         </ul>
         <p class="report-errors">Found errors? Please report to <a href="mailto:contact@securite-ia.fr">contact@securite-ia.fr</a></p>
     </div>
