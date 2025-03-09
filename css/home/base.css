@@ -1,0 +1,67 @@
+/* File: docs/overrides/css/home/base.css */
+:root {
+    /* Colors */
+    --atlas-primary: var(--md-primary-fg-color); /* Default blue */
+    --atlas-primary-dark: var(--md-primary-fg-color--dark);
+    --atlas-primary-light: var(--md-primary-fg-color--light);
+    --atlas-bg: var(--md-default-bg-color);
+    --atlas-text: var(--md-default-fg-color);
+    --atlas-text-light: var(--md-default-fg-color--light);
+    
+    /* Typography */
+    --atlas-font-heading: 'Crimson Pro', system-ui, sans-serif;
+    --atlas-font-body: 'Inter', system-ui, sans-serif;
+    
+    /* Spacing */
+    --atlas-spacing-xs: 0.5rem;
+    --atlas-spacing-sm: 1rem;
+    --atlas-spacing-md: 2rem;
+    --atlas-spacing-lg: 4rem;
+    
+    /* Shadows */
+    --atlas-shadow-sm: 5px 5px 0 var(--atlas-primary);
+    --atlas-shadow-lg: 10px 10px 0 var(--atlas-primary);
+    
+    /* Transitions */
+    --atlas-transition: all 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+/* Fix scrollbar issue by modifying parallax container */
+.mdx-parallax {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.mdx-parallax__group {
+    position: relative;
+    height: auto;
+    transform-style: preserve-3d;
+}
+
+/* Hero section core styles */
+.atlas-hero {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--atlas-bg);
+}
+
+.atlas-hero__container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+/* Fix for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .atlas-hero {
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+}
