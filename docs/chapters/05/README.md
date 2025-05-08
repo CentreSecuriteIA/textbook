@@ -92,10 +92,12 @@
         <i class="fas fa-headphones"></i>
         <span>Listen</span>
     </a>
-    <div class="action-button disabled" data-tippy-content="PDF coming soon">
-        <i class="fas fa-file-pdf"></i>
-        <span>Download</span>
-    </div>
+   <a href="https://raw.githubusercontent.com/CentreSecuriteIA/textbook/main/latex/AI%20Safety%20Atlas%20-%20Evaluations.pdf" class="action-button" download>
+       <i class="fas fa-file-pdf"></i>
+       <span>Download</span>
+   </a>
+
+
     <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
         <i class="fas fa-comment"></i>
         <span>Feedback</span>
