@@ -64,7 +64,7 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">154 min (core)</div>
+				<div class="meta-value">132 min (core)</div>
 			</div>
 		</div>
         
@@ -76,7 +76,7 @@
             <div class="meta-content">
                 <div class="meta-label">Also available on</div>
                 <div class="meta-value meta-links">
-                    <a href="https://docs.google.com/document/d/1KI95w27Ce7yWoynE11PJ94IXK0gT0NwP8091s06P7wM/edit?usp=sharing" class="meta-link">Google Docs</a> · <a href="https://www.lesswrong.com/s/GTAGBi3fyw88yArQi" class="meta-link">Alignment Forum</a>
+                    <a href="https://docs.google.com/document/d/1KI95w27Ce7yWoynE11PJ94IXK0gT0NwP8091s06P7wM/edit?usp=sharing" class="meta-link">Google Docs</a>
                 </div>
             </div>
         </div>
@@ -84,26 +84,75 @@
 </div>
 
 <div class="action-buttons">
-   <div class="action-button disabled" data-tippy-content="Video coming soon">
-       <i class="fas fa-video"></i>
-       <span>Watch</span>
-   </div>
-   <div class="action-button disabled" data-tippy-content="Audio coming soon">
-       <i class="fas fa-headphones"></i>
-       <span>Listen</span>
-   </div>
-   <div class="action-button disabled" data-tippy-content="PDF coming soon">
-       <i class="fas fa-file-pdf"></i>
-       <span>Download</span>
-   </div>
-   <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
-       <i class="fas fa-comment"></i>
-       <span>Feedback</span>
-   </a>
-   <a href="https://docs.google.com/document/d/1T-UU0FBeElX6cvbWYKpVAl3U4ivrQLHA3IdIWqWKuBA/edit?tab=t.0#heading=h.fo57hwsn3del" class="action-button">
-       <i class="fas fa-users"></i>
-       <span>Facilitate</span>
-   </a>
+    <div class="action-button disabled" data-tippy-content="Video coming soon">
+        <i class="fas fa-video"></i>
+        <span>Watch</span>
+    </div>
+    <a href="#" class="action-button">
+        <i class="fas fa-headphones"></i>
+        <span>Listen</span>
+    </a>
+    <div class="action-button disabled" data-tippy-content="PDF coming soon">
+        <i class="fas fa-file-pdf"></i>
+        <span>Download</span>
+    </div>
+    <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
+        <i class="fas fa-comment"></i>
+        <span>Feedback</span>
+    </a>
+    <a href="https://docs.google.com/document/d/1T-UU0FBeElX6cvbWYKpVAl3U4ivrQLHA3IdIWqWKuBA/edit?tab=t.0#heading=h.fo57hwsn3del" class="action-button">
+        <i class="fas fa-users"></i>
+        <span>Facilitate</span>
+    </a>
+</div>
+
+<div class="atlas-audio-player">
+    <!-- Header section -->
+    <div class="audio-player__header">
+        <div class="header-left">
+            <i class="fas fa-headphones-alt"></i>
+            <span class="audio-player__title">Audio Version</span>
+            <span class="audio-warning-text"><i class="fas fa-robot"></i> AI-generated</span>
+        </div>
+        <div class="header-right">
+            <button class="audio-close-button" aria-label="Close audio player">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- MEGA embed wrapper -->
+    <div class="mega-audio-wrapper">
+        <iframe 
+            width="100%" 
+            height="160" 
+            frameborder="0" 
+            src="https://mega.nz/embed/ieBRQZQZ#GzZAljhhfVUmUHSG0cWEBaW2AkuCm4LmpfYFGtWKBbM!1v1c" 
+            allowfullscreen
+            loading="lazy"
+            allow="autoplay">
+        </iframe>
+    </div>
+    
+    <!-- Error toggle button at the bottom -->
+    <div class="errors-toggle-container">
+        <button class="errors-toggle-button" aria-label="View known errors">
+            <i class="fas fa-exclamation-circle"></i> View known errors in AI-generated audio
+        </button>
+    </div>
+    
+    <!-- Hidden errors panel at the bottom -->
+    <div class="audio-errors-panel">
+        <h4>Known Errors in AI-Generated Audio</h4>
+        <ul>
+            <li><strong>3:00</strong> - Error - Feature visualizations (are not that helpful currently; behavioral approaches remain the best way to evaluate deception)</li>
+            <li><strong>4:00</strong> - Imprecise - Multiple labs evaluate CBRN capabilities, not just OpenAI</li>
+            <li><strong>12:30</strong> - Debated - TruthfulQA is not really a propensity evaluation</li>
+            <li><strong>17:30</strong> - Error - Sandbagging emerges from the AI itself, it is not implemented by developers</li>
+            <li><strong>18:40</strong> - Inaccurate - One of the most important limitations is not just that we lack evaluations in cybersecurity; rather, it's difficult to elicit the capabilities of a system, and we cannot be certain whether it will be impossible to create a system that performs</li>
+        </ul>
+        <p class="report-errors">Found more errors? Please report to <a href="mailto:contact@securite-ia.fr">contact@securite-ia.fr</a></p>
+    </div>
 </div>
 
 # Introduction
