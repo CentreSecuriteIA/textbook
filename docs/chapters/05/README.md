@@ -64,7 +64,7 @@
 			</span>
 			<div class="meta-content">
 				<div class="meta-label">Reading Time</div>
-				<div class="meta-value">132 min (core)</div>
+				<div class="meta-value">154 min (core)</div>
 			</div>
 		</div>
         
@@ -76,7 +76,7 @@
             <div class="meta-content">
                 <div class="meta-label">Also available on</div>
                 <div class="meta-value meta-links">
-                    <a href="https://docs.google.com/document/d/1KI95w27Ce7yWoynE11PJ94IXK0gT0NwP8091s06P7wM/edit?usp=sharing" class="meta-link">Google Docs</a>
+                    <a href="https://docs.google.com/document/d/1KI95w27Ce7yWoynE11PJ94IXK0gT0NwP8091s06P7wM/edit?usp=sharing" class="meta-link">Google Docs</a> · <a href="https://www.lesswrong.com/s/GTAGBi3fyw88yArQi" class="meta-link">Alignment Forum</a>
                 </div>
             </div>
         </div>
@@ -84,99 +84,60 @@
 </div>
 
 <div class="action-buttons">
-    <div class="action-button disabled" data-tippy-content="Video coming soon">
-        <i class="fas fa-video"></i>
-        <span>Watch</span>
-    </div>
-    <a href="#" class="action-button">
-        <i class="fas fa-headphones"></i>
-        <span>Listen</span>
-    </a>
-    <div class="action-button disabled" data-tippy-content="PDF coming soon">
-        <i class="fas fa-file-pdf"></i>
-        <span>Download</span>
-    </div>
-    <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
-        <i class="fas fa-comment"></i>
-        <span>Feedback</span>
-    </a>
-    <a href="https://docs.google.com/document/d/1T-UU0FBeElX6cvbWYKpVAl3U4ivrQLHA3IdIWqWKuBA/edit?tab=t.0#heading=h.fo57hwsn3del" class="action-button">
-        <i class="fas fa-users"></i>
-        <span>Facilitate</span>
-    </a>
-</div>
-
-<div class="atlas-audio-player">
-    <!-- Header section -->
-    <div class="audio-player__header">
-        <div class="header-left">
-            <i class="fas fa-headphones-alt"></i>
-            <span class="audio-player__title">Audio Version</span>
-            <span class="audio-warning-text"><i class="fas fa-robot"></i> AI-generated</span>
-        </div>
-        <div class="header-right">
-            <button class="audio-close-button" aria-label="Close audio player">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-    </div>
-    
-    <!-- MEGA embed wrapper -->
-    <div class="mega-audio-wrapper">
-        <iframe 
-            width="100%" 
-            height="160" 
-            frameborder="0" 
-            src="https://mega.nz/embed/ieBRQZQZ#GzZAljhhfVUmUHSG0cWEBaW2AkuCm4LmpfYFGtWKBbM!1v1c" 
-            allowfullscreen
-            loading="lazy"
-            allow="autoplay">
-        </iframe>
-    </div>
-    
-    <!-- Error toggle button at the bottom -->
-    <div class="errors-toggle-container">
-        <button class="errors-toggle-button" aria-label="View known errors">
-            <i class="fas fa-exclamation-circle"></i> View known errors in AI-generated audio
-        </button>
-    </div>
-    
-    <!-- Hidden errors panel at the bottom -->
-    <div class="audio-errors-panel">
-        <h4>Known Errors in AI-Generated Audio</h4>
-        <ul>
-            <li><strong>3:00</strong> - Error - Feature visualizations (are not that helpful currently; behavioral approaches remain the best way to evaluate deception)</li>
-            <li><strong>4:00</strong> - Imprecise - Multiple labs evaluate CBRN capabilities, not just OpenAI</li>
-            <li><strong>12:30</strong> - Debated - TruthfulQA is not really a propensity evaluation</li>
-            <li><strong>17:30</strong> - Error - Sandbagging emerges from the AI itself, it is not implemented by developers</li>
-            <li><strong>18:40</strong> - Inaccurate - One of the most important limitations is not just that we lack evaluations in cybersecurity; rather, it's difficult to elicit the capabilities of a system, and we cannot be certain whether it will be impossible to create a system that performs</li>
-        </ul>
-        <p class="report-errors">Found more errors? Please report to <a href="mailto:contact@securite-ia.fr">contact@securite-ia.fr</a></p>
-    </div>
+   <div class="action-button disabled" data-tippy-content="Video coming soon">
+       <i class="fas fa-video"></i>
+       <span>Watch</span>
+   </div>
+   <div class="action-button disabled" data-tippy-content="Audio coming soon">
+       <i class="fas fa-headphones"></i>
+       <span>Listen</span>
+   </div>
+   <div class="action-button disabled" data-tippy-content="PDF coming soon">
+       <i class="fas fa-file-pdf"></i>
+       <span>Download</span>
+   </div>
+   <a href="https://forms.gle/ZsA4hEWUx1ZrtQLL9" class="action-button">
+       <i class="fas fa-comment"></i>
+       <span>Feedback</span>
+   </a>
+   <a href="https://docs.google.com/document/d/1T-UU0FBeElX6cvbWYKpVAl3U4ivrQLHA3IdIWqWKuBA/edit?tab=t.0#heading=h.fo57hwsn3del" class="action-button">
+       <i class="fas fa-users"></i>
+       <span>Facilitate</span>
+   </a>
 </div>
 
 # Introduction
 
-As AI systems grow increasingly powerful, our ability to rigorously evaluate them becomes crucial for safety and governance. The challenge isn't just measuring what AI systems can do, but understanding their behavioral tendencies and verifying our ability to maintain control. This section introduces the landscape of AI evaluation and explains why we need increasingly sophisticated approaches beyond simple benchmarking.
+!!! quote "Lord Kelvin ([Oxford Reference, 2016](https://www.oxfordreference.com/display/10.1093/acref/9780191826719.001.0001/q-oro-ed4-00006236))"
+
+
+
+    When you can measure what you are speaking about, and express it in numbers, you know something about it, when you cannot express it in numbers, your knowledge is of a meager and unsatisfactory kind; it may be the beginning of knowledge, but you have scarcely, in your thoughts advanced to the stage of science.
+
+
+
+**The gap between what AI systems can do and what we can reliably measure creates a fundamental safety challenge.** In late 2024, AI researchers created FrontierMath, a benchmark of exceptionally difficult problems they predicted would "*resist AIs for several years*". Just a few months later, OpenAI's o3 model achieved 25.2% accuracy on these supposedly insurmountable problems. This pattern repeats across AI development: tools designed to measure AI capabilities become obsolete almost immediately as models rapidly surpass them. As AI systems approach potentially transformative capabilities in domains like cybersecurity, autonomous operation, and strategic planning, this evaluation gap becomes increasingly dangerous. We cannot afford to discover the full extent of advanced AI capabilities through their emergent real-world impacts.
+
+**Benchmarks provide standardization of measurement but fail to capture the complex risks posed by advanced AI systems.** Early AI development faced a measurement crisis similar to pre-standardized engineering—without reliable metrics, progress was chaotic and unpredictable.
+
+Benchmarks revolutionized AI development by creating standardized metrics that allowed meaningful comparisons between systems. While benchmarks like MMLU, GPQA, or FrontierMath are extremely useful, they still fall short when predicting real-world behavior. They fail to measure what happens when models are pushed to their limits or operate in complex environments where unexpected capability combinations emerge. As we move towards highly capable AI systems, we need stronger safety guarantees in a wider range of scenarios than what benchmarks alone can provide.
+
+**Safety risks emerge from interactions between capabilities, creating a combinatorial challenge.** Individual capabilities like situational awareness or deception appear manageable when measured in isolation, but their combination creates emergent risks fundamentally different from either capability alone. Models might recognize when they're being evaluated and selectively hide capabilities during testing but demonstrate concerning behaviors during deployment. This combinatorial explosion makes comprehensive testing exponentially more difficult but essential for meaningful safety claims. A model passing most safety benchmarks might still harbor dangerous capability combinations that weren't explicitly tested. This is why we need to move measurement of safety critical properties of a system towards comprehensive evaluations.
+
+**Effective safety assessment requires measuring three distinct properties: capabilities, propensities, and control.** Dangerous capabilities evaluations establish upper bounds on what models can do when pushed to their limits through techniques like scaffolding and tool-augmentation. Propensity evaluations reveal what behaviors models tend to exhibit by default, measuring behavioral tendencies rather than just maximum abilities. Control evaluations verify whether safety protocols remain effective when models actively try to circumvent them. This three-part taxonomy provides a systematic framework for safety measurement that helps answer the most decision-relevant questions about AI.
+
+ \
+**Safety evaluation requires both behavioral and internal techniques, each providing different forms of evidence.** Behavioral techniques examine model outputs through approaches like red teaming, which systematically attempts to elicit concerning behaviors; supervised fine-tuning, which elicits capabilities by modifying weights rather than just prompting; and best-of-N sampling, which examines multiple potential responses to understand output distributions. These techniques can establish upper bounds on potential capabilities but struggle to tell us “why” models generate certain outputs. Internal techniques complement this by examining model mechanisms directly. For example, sparse autoencoders have successfully extracted interpretable features related to safety-relevant behaviors including deception, sycophancy, and bias. Other techniques like mechanistic interpretability, can help trace computational pathways through the model, enumerative safety can catalogs concepts the model has encoded, and representation engineering can examine how models encode information. Behavioral and internal evaluation techniques are complementary and together provide stronger safety guarantees than either approach alone.
+
+**Evaluation frameworks help transform measurements into concrete development and deployment decisions.** Rather than relying on ad-hoc responses to capabilities, frameworks like Anthropic's Responsible Scaling Policies establish "AI Safety Levels" inspired by biosafety containment protocols, with each level requiring increasingly stringent evaluation requirements and safety measures. These frameworks create "evaluation gates" that determine when scaling can proceed safely—requiring models to pass cybersecurity, biosecurity, and autonomous replication evaluations before development continues. By integrating evaluations into governance structures, we create systematic approaches to managing AI risk rather than relying on ad-hoc decisions.
+
+**Evaluations must be systematically designed to maintain quality and scale across increasingly complex models.** Evaluation design requires careful consideration of affordances—the resources and opportunities provided to the model during testing. By systematically varying affordances from minimal (restricting tools and resources) to maximal (providing all potentially relevant tools and context), we can build a more complete picture of model behavior under different conditions. As the number of safety-relevant properties grows, automating evaluation becomes necessary. We can potentially use model-written evaluations to help address scaling challenges.
+
+**Despite significant progress, AI evaluations face fundamental limitations that threaten their reliability.** The asymmetry between proving presence versus absence of capabilities means we can never be certain we've detected all potential risks. Evaluations can conclusively confirm that a model possesses certain capabilities but cannot definitively prove their absence. Technical challenges include measurement sensitivity—performance can vary based on seemingly trivial changes in prompting formats—and the combinatorial explosion of test cases as we add new dimensions to evaluate. Misalignment might lead to model "sandbagging" (strategic underperformance on evaluations), research shows language models can be made to selectively underperform on tests for dangerous capabilities while maintaining performance on general benchmarks. Organizational incentives might lead labs themselves to do "safetywashing" (misrepresenting capability improvements as safety advancements). These challenges highlight the need for continued research into more robust evaluation methodologies and institutional arrangements that support genuinely independent assessment.
 
 <figure markdown="span">
-![Enter image alt description](Images/OR7_Image_1.png){ loading=lazy }
+![Enter image alt description](Images/nvk_Image_1.png){ loading=lazy }
   <figcaption markdown="1"><b>Figure 5.1:</b> Overview of chapter content.</figcaption>
 </figure>
 
-**Benchmarks.** Building on this need for measurement, we explore how standardized tests like MMLU or TruthfulQA have historically helped quantify AI capabilities. While these benchmarks provide valuable standardization, they face fundamental limitations - models can memorize answers without understanding, and benchmark performance may not translate to real-world safety. The "reversal curse" demonstrates how models might score well on tests while failing to learn basic logical relationships, highlighting why we need more comprehensive evaluation approaches.
-
-**Evaluated Properties.** To develop better evaluations, we first need to understand exactly what properties of AI systems matter for safety. This section introduces three fundamental categories: capabilities (what a model can do), propensities (what it tends to do), and control (whether we can prevent unacceptable outcomes). This framework helps clarify why, for instance, a model being capable of writing malicious code is different from having a tendency to do so, and both are different from our ability to prevent it from doing so even if it tries.
-
-**Evaluation Techniques.** With clear properties to measure, we explore specific techniques for gathering evidence about AI systems. We examine both behavioral techniques that study model outputs and internal techniques that analyze model mechanisms. This includes approaches like best-of-N sampling, multistep reasoning prompting, and red teaming, providing concrete tools for the evaluations explored in subsequent sections.
-
-**Dangerous Capability Evaluations.** Focusing first on dangerous capabilities, we examine how to measure abilities like deception, situational awareness, and autonomous replication. These evaluations aim to establish upper bounds on what AI systems can achieve when explicitly trying, providing crucial information about potential risks. METR's evaluation of GPT-4 demonstrates how systematic protocols can probe concerning capabilities even in current systems.
-
-**Dangerous Propensity Evaluations.** Building on capability assessment, we explore how to measure behavioral tendencies like power-seeking or deception. These become increasingly critical as models grow more capable - knowing what a model can do isn't enough, we need to understand what it's likely to do by default. This involves carefully designed choice frameworks and consistency measurements to reveal underlying behavioral patterns.
-
-**Control Evaluations.** Taking evaluation to its logical conclusion, we examine whether we can maintain meaningful control even if an AI system actively tries to circumvent safety measures. This section explores how techniques like red team/blue team testing can help verify safety protocols remain effective under worst-case scenarios, while acknowledging the inherent challenges in simulating truly adversarial behavior.
-
-**Evaluation Design.** Moving from theory to practice, we examine how to implement these evaluations effectively at scale. This includes designing robust evaluation protocols, automating assessment processes where possible, and integrating evaluations with broader safety frameworks and auditing systems. A key focus is developing systematic approaches that can be reliably implemented across different organizations.
-
-**Limitations.** Finally, we talk about the fundamental challenges facing AI evaluations. From the difficulty of proving absence of capabilities, to technical constraints around measurement precision, to governance challenges around independence and standardization - understanding these limitations is crucial for both improving our methods and maintaining appropriate epistemic humility about their results.
-
+This introduction gave you the general overview of many of the concepts that we will be talking about throughout this chapter. The sections will largely proceed in the order that we introduced the ideas above. We begin by exploring how benchmarks have shaped AI development.

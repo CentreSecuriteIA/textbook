@@ -20,6 +20,9 @@ links:
 - name: Google Docs
   url: https://docs.google.com/document/d/1KI95w27Ce7yWoynE11PJ94IXK0gT0NwP8091s06P7wM/edit?usp=sharing
   type: google_docs
+- name: Alignment Forum
+  url: https://www.lesswrong.com/s/GTAGBi3fyw88yArQi
+  type: alignment_forum
 - name: Feedback
   url: https://forms.gle/ZsA4hEWUx1ZrtQLL9
   type: feedback
