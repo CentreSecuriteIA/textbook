@@ -1,0 +1,36 @@
+/* File: docs/overrides/css/navigation.css */
+
+/* Hide scrollbars but keep functionality */
+.md-sidebar__scrollwrap {
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer/Edge */
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+}
+
+/* Same for table of contents */
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.md-sidebar--secondary .md-sidebar__scrollwrap::-webkit-scrollbar {
+    display: none;
+}
+
+/* For the actual TOC nav element */
+.md-nav--secondary {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.md-nav--secondary::-webkit-scrollbar {
+    display: none;
+}
+
+/* Remove divider lines from nav items */
+.md-nav__item {
+    border-top: none !important;
+}
