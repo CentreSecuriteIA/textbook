@@ -10,7 +10,12 @@
 .md-footer,
 .md-search {
     font-family: "Libre Baskerville", Baskerville, Georgia, serif;
-font-size: 0.65rem; /* Adjust base size to compensate for Libre Baskerville */
+}
+
+
+.md-search__input,
+.md-search__suggest .md-search__result {
+  font-family: "Libre Baskerville", Baskerville, Georgia, serif;
 }
 
 /* Disable justification for admonitions */
