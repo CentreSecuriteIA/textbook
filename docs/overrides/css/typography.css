@@ -12,7 +12,7 @@
     font-family: "Libre Baskerville", Baskerville, Georgia, serif;
 }
 
-
+/* I don't understand why this is needed since the line above is setting the font family for the search*/
 .md-search__input,
 .md-search__suggest .md-search__result {
   font-family: "Libre Baskerville", Baskerville, Georgia, serif;
