@@ -1,0 +1,82 @@
+/* File: docs/overrides/css/figures.css */
+
+/* Base figure styles */
+.md-typeset figure {
+    margin: 2.5em 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Image within figure */
+.md-typeset figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Iframe and Video container styles */
+.md-typeset figure.iframe-figure iframe,
+.md-typeset figure.video-figure iframe {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 4px;
+    background-color: var(--md-default-bg-color);
+}
+
+/* Common figure caption styles */
+.md-typeset figcaption {
+    margin-top: 1em;
+    padding: 0 1.5em;
+    font-family: "Libre Baskerville", Baskerville, Georgia, serif;
+    font-size: 0.65rem;
+    line-height: 1.7;
+    color: var(--md-default-fg-color--light);
+    text-align: center;
+}
+
+/* Caption bold text (e.g., "Figure:", "Video:", "Interactive Figure:") */
+.md-typeset figcaption b {
+    font-weight: 700;
+    color: var(--md-default-fg-color);
+}
+
+/* Links within captions */
+.md-typeset figcaption a {
+    color: var(--md-primary-fg-color);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+}
+
+.md-typeset figcaption a:hover {
+    text-decoration-thickness: 2px;
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] {
+    /* Image shadow in dark mode */
+    .md-typeset figure img {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Iframe and video borders/backgrounds in dark mode */
+    .md-typeset figure.iframe-figure iframe,
+    .md-typeset figure.video-figure iframe {
+        border-color: var(--md-default-fg-color--lighter);
+        background-color: var(--md-code-bg-color);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .md-typeset figure {
+        margin: 2em 0;
+    }
+    
+    .md-typeset figcaption {
+        padding: 0 1em;
+    }
+}
