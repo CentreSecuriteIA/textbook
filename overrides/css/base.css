@@ -1,0 +1,55 @@
+:root {
+    --md-main-content-width: 80vw;
+}
+
+.md-content {
+    max-width: var(--md-main-content-width);
+    margin: auto;
+}
+
+/* Justified text with increased mobile padding */
+.md-typeset {
+	text-align: justify;
+}
+
+/* Increased padding on mobile for better word spacing */
+@media screen and (max-width: 768px) {
+    .md-content__inner {
+        padding: auto;
+    }
+}
+
+/* Keep headings left-aligned */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+    text-align: center;
+}
+
+/* Keep lists and code blocks left-aligned */
+.md-typeset ul,
+.md-typeset ol,
+.md-typeset pre {
+    text-align: left;
+}
+
+
+.md-nav--primary .md-nav__title {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+}
+
+.md-content {
+	margin-bottom: 100px;
+}
+
+/* Remove shadows from top navbar */
+.md-header {
+    box-shadow: none;
+}
+
+
+

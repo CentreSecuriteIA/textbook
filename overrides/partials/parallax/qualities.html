@@ -1,0 +1,389 @@
+
+<!-- File: docs/overrides/partials/parallax/qualities.html -->
+<section class="atlas-qualities">
+    <div class="atlas-qualities__container">
+        <h2 class="main-title animate-on-scroll">What is the Atlas project?</h2>
+        
+        <div class="atlas-qualities__content">
+            <!-- Left column -->
+            <div class="atlas-qualities__left">
+                <div class="atlas-qualities__intro animate-on-scroll">
+                    <p class="intro-text">We transform scattered AI Safety research into clear, systematic knowledge. Each explanation saves researchers hours previously spent piecing together understanding.</p>
+                </div>
+                
+                <div class="atlas-showcase animate-on-scroll delay-1">
+                    <div class="showcase-container">
+                        <img src="assets/qualities/progressive.png" alt="Progressive Learning" class="showcase-image active" data-quality="progressive">
+                        <img src="assets/qualities/interactive.png" alt="Interactive Learning" class="showcase-image" data-quality="interactive">
+                        <img src="assets/qualities/multimodal.jpg" alt="Multi-Format Learning" class="showcase-image" data-quality="multimodal">
+                        <p class="showcase-label">Progressive Learning</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side with qualities -->
+            <div class="qualities-grid">
+                <!-- Same content as before -->
+                <!-- Your six brutalist containers... -->
+
+
+
+
+                <div class="brutalist-container animate-on-scroll delay-2" data-quality="progressive">
+                    <div class="brutalist-content">
+                        <p>Clear learning paths from fundamentals to advanced topics, for every skill level.</p>
+                    </div>
+                    <div class="brutalist-label">Progressive Learning</div>
+                </div>
+
+                <div class="brutalist-container animate-on-scroll delay-3" data-quality="interactive">
+                    <div class="brutalist-content">
+                        <p>Complex research distilled into clear, interconnected explanations.</p>
+                    </div>
+                    <div class="brutalist-label">Interactive Learning</div>
+                </div>
+
+                <div class="brutalist-container animate-on-scroll delay-4" data-quality="multimodal">
+                    <div class="brutalist-content">
+                        <p>Learn through text, video, interactive exercises, and discussion guides.</p>
+                    </div>
+                    <div class="brutalist-label">Multi-Format</div>
+                </div>
+
+                <div class="brutalist-container animate-on-scroll delay-5" data-quality="proven">
+                    <div class="brutalist-content">
+                        <p>Used by leading AI Safety programs with strong repeat adoption.</p>
+                    </div>
+                    <div class="brutalist-label">Proven Impact</div>
+                </div>
+
+                <div class="brutalist-container animate-on-scroll delay-6" data-quality="community">
+                    <div class="brutalist-content">
+                        <p>Open-source content improved by researchers and educators worldwide.</p>
+                    </div>
+                    <div class="brutalist-label">Community Driven</div>
+                </div>
+
+                <div class="brutalist-container animate-on-scroll delay-7" data-quality="efficient">
+                    <div class="brutalist-content">
+                        <p>Save research hours with well-structured explanations.</p>
+                    </div>
+                    <div class="brutalist-label">Time Efficient</div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+/* File: docs/overrides/css/home/qualities.css */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --atlas-deep-blue: #1a237e;
+    --atlas-light-blue: #3949ab;
+}
+
+/* Main section */
+.atlas-qualities {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    overflow: hidden;
+    padding: 4rem 0;
+}
+
+.atlas-qualities__container {
+    width: min(90vw, 1400px);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Title */
+.main-title {
+    font-family: 'Crimson Pro', serif;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    text-align: center;
+    margin: 0 0 3rem 0;
+}
+
+/* Content grid */
+.atlas-qualities__content {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 4rem;
+    width: 100%;
+}
+
+/* Left column */
+.atlas-qualities__left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.intro-text {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
+    line-height: 1.6;
+}
+
+/* Showcase styles */
+.atlas-showcase {
+    width: 100%;
+}
+
+.showcase-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.showcase-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.showcase-image.active {
+    opacity: 1;
+}
+
+.showcase-label {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--md-default-bg-color);
+    padding: 0.5rem 0;
+}
+
+/* Qualities grid */
+.qualities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-content: start;
+    width: 100%;
+}
+
+/* Brutalist containers */
+.brutalist-container {
+    position: relative;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.brutalist-content {
+    padding: 1.5rem;
+    background-color: var(--md-default-bg-color);
+    border: 3px solid var(--atlas-deep-blue);
+    box-shadow: 5px 5px 0 var(--atlas-deep-blue), 
+                10px 10px 0 var(--atlas-light-blue);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.brutalist-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--md-primary-fg-color);
+}
+
+.brutalist-label {
+    position: absolute;
+    left: 0;
+    top: -2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: var(--md-default-bg-color);
+    background-color: var(--atlas-deep-blue);
+    padding: 0.4rem 0.8rem;
+    transform: rotate(-0.5deg);
+    z-index: 1;
+}
+
+.brutalist-container:hover .brutalist-content {
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 0 var(--atlas-deep-blue), 
+                15px 15px 0 var(--atlas-light-blue);
+}
+
+.brutalist-container:hover .brutalist-label {
+    transform: rotate(0deg);
+    background-color: var(--atlas-light-blue);
+}
+
+/* Animation classes */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.animate-on-scroll.animate {
+    animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1.0s; }
+.delay-6 { animation-delay: 1.2s; }
+.delay-7 { animation-delay: 1.4s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 1024px) {
+    .atlas-qualities__content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .qualities-grid {
+        gap: 1.5rem;
+    }
+
+    .brutalist-container {
+        margin-top: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .atlas-qualities {
+        padding: 2rem 0;
+    }
+
+    .qualities-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .brutalist-container {
+        margin-top: 1.75rem;
+    }
+
+    .brutalist-content {
+        padding: 1rem;
+        box-shadow: 3px 3px 0 var(--atlas-deep-blue), 
+                    5px 5px 0 var(--atlas-light-blue);
+    }
+
+    .brutalist-container:hover .brutalist-content {
+        transform: translate(-3px, -3px);
+        box-shadow: 5px 5px 0 var(--atlas-deep-blue), 
+                    7px 7px 0 var(--atlas-light-blue);
+    }
+
+    .brutalist-label {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+        top: -1.75rem;
+    }
+
+    .showcase-label {
+        bottom: -2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .atlas-qualities__container {
+        padding: 0.5rem;
+    }
+
+    .main-title {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .qualities-grid {
+        gap: 1.25rem;
+    }
+
+    .brutalist-container {
+        margin-top: 1.5rem;
+    }
+
+    .intro-text {
+        font-size: 0.9rem;
+    }
+}
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const showcaseImages = document.querySelectorAll('.showcase-image');
+    const showcaseLabel = document.querySelector('.showcase-label');
+    let currentIndex = 0;
+    let autoplayInterval;
+
+    function updateShowcase() {
+        showcaseImages.forEach((img, index) => {
+            if (index === currentIndex) {
+                img.classList.add('active');
+                showcaseLabel.textContent = img.alt;
+            } else {
+                img.classList.remove('active');
+            }
+        });
+    }
+
+    function startAutoplay() {
+        autoplayInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % showcaseImages.length;
+            updateShowcase();
+        }, 3000); // Change image every 3 seconds
+    }
+
+    // Set initial state and start cycle
+    updateShowcase();
+    startAutoplay();
+});
+</script>

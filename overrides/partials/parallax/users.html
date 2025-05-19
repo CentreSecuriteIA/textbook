@@ -1,0 +1,264 @@
+<!-- File: docs/overrides/partials/parallax/users.html -->
+<section class="atlas-users">
+    <div class="atlas-users__container">
+        <!-- Header with core metrics -->
+        <div class="atlas-users__header animate-on-scroll">
+            <h2 class="section-title">Growing Impact</h2>
+            <div class="core-metrics">
+                <div class="metric-item">
+                    <div class="metric-number">
+                        <span class="count" data-target="400">0</span>+
+                    </div>
+                    <div class="metric-label">Students Annually</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-number">
+                        <span class="count" data-target="6">0</span>
+                    </div>
+                    <div class="metric-label">Major Programs</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Safety Groups -->
+        <div class="impact-row animate-on-scroll">
+            <div class="impact-image">
+                <img src="/assets/users/ml4g.png" alt="AI Safety Groups">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="impact-content">
+                <h3>AI Safety Groups</h3>
+                <p class="impact-description">ML4Good, AI Safety Collab, and other dedicated AI Safety initiatives have integrated our materials into their core curriculum, with strong repeat adoption across multiple cohorts.</p>
+            </div>
+        </div>
+
+        <!-- Universities -->
+        <div class="impact-row reverse animate-on-scroll">
+            <div class="impact-image">
+                <img src="/assets/users/ens.png" alt="Universities">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="impact-content">
+                <h3>Universities</h3>
+                <p class="impact-description">Academic institutions like ENS and UBC are incorporating our materials into formal curricula, teaching AI Safety to computer science and machine learning students.</p>
+            </div>
+        </div>
+
+        <!-- Independent Readers -->
+        <div class="impact-row animate-on-scroll">
+            <div class="impact-image">
+                <img src="/assets/users/ml4g_brasil.jpg" alt="Independent Readers">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="impact-content">
+                <h3>Independent Readers</h3>
+                <p class="impact-description">Study groups and individual researchers use our materials to understand core AI Safety concepts and contribute to the field.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* File: docs/overrides/css/home/users.css */
+.atlas-users {
+    background-color: var(--md-default-bg-color);
+    padding: 4rem 2rem; /* Reduced from 6rem */
+    min-height: 100vh;
+}
+
+.atlas-users__container {
+    width: min(90vw, 1400px);
+    margin: 0 auto;
+}
+
+.atlas-users__header {
+    text-align: center;
+    margin-bottom: 4rem; /* Reduced from 6rem */
+}
+
+.section-title {
+    font-family: 'Crimson Pro', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem); /* Slightly smaller */
+    margin-bottom: 2rem; /* Reduced from 3rem */
+    color: var(--md-primary-fg-color);
+}
+
+.core-metrics {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Reduced from 4rem */
+    margin-bottom: 1rem; /* Reduced from 2rem */
+}
+
+.metric-item {
+    text-align: center;
+}
+
+.metric-number {
+    font-family: 'Crimson Pro', serif;
+    font-size: 3rem; /* Reduced from 3.5rem */
+    font-weight: 700;
+    color: var(--md-primary-fg-color);
+    line-height: 1;
+    margin-bottom: 0.3rem; /* Reduced from 0.5rem */
+}
+
+.metric-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem; /* Reduced from 1rem */
+    color: var(--md-default-fg-color);
+}
+
+.impact-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem; /* Reduced from 4rem */
+    margin-bottom: 6rem; /* Reduced from 8rem */
+    align-items: center;
+}
+
+.impact-row:last-child {
+    margin-bottom: 0; /* Remove margin from last row */
+}
+
+.impact-row.reverse {
+    direction: rtl;
+}
+
+.impact-row.reverse > * {
+    direction: ltr;
+}
+
+.impact-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/3;
+    border: 4px solid var(--md-primary-fg-color);
+    box-shadow: 10px 10px 0 var(--md-primary-fg-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.impact-image:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 15px 15px 0 var(--md-primary-fg-color);
+}
+
+.impact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--md-primary-fg-color);
+    opacity: 0.1;
+}
+
+.impact-content h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.75rem; /* Reduced from 2rem */
+    margin: 0 0 1.5rem 0; /* Reduced from 2rem */
+    color: var(--md-primary-fg-color);
+    border-bottom: 3px solid var(--md-primary-fg-color);
+    padding-bottom: 0.4rem; /* Reduced from 0.5rem */
+    display: inline-block;
+}
+
+.impact-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem; /* Reduced from 1.1rem */
+    line-height: 1.5; /* Reduced from 1.6 */
+    color: var(--md-default-fg-color);
+    margin: 0;
+}
+
+/* Animation classes */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animate-on-scroll.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 1024px) {
+    .impact-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem; /* Reduced from 2rem */
+    }
+
+    .impact-row.reverse {
+        direction: ltr;
+    }
+
+    .impact-image {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .core-metrics {
+        gap: 1.5rem; /* Reduced from 2rem */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .atlas-users {
+        padding: 3rem 1.5rem; /* Further reduced padding on mobile */
+    }
+    
+    .core-metrics {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .impact-row {
+        margin-bottom: 4rem; /* Reduced from original */
+    }
+}
+</style>
+
+<script>
+// File: docs/overrides/js/home/count-animation.js
+document.addEventListener('DOMContentLoaded', () => {
+    const countElements = document.querySelectorAll('.count');
+    const duration = 500; // Even faster animation (reduced from 1000ms)
+    
+    function animateCount(element) {
+        const target = parseInt(element.dataset.target);
+        const increment = target / (duration / 16);
+        let current = 0;
+        
+        const updateCount = () => {
+            if (current < target) {
+                current += increment;
+                element.textContent = Math.floor(current);
+                requestAnimationFrame(updateCount);
+            } else {
+                element.textContent = target;
+            }
+        };
+        
+        updateCount();
+    }
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCount(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    countElements.forEach(element => observer.observe(element));
+});
+</script>

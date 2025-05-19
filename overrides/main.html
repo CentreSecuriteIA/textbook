@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block scripts %} {{ super() }}
+
+<!-- Custom JavaScript -->
+<script src="{{ 'docs/assets/js/custom.js' | url }}"></script>
+
+<!-- JSON-LD for search -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://ai-safety-atlas.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://ai-safety-atlas.com/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+</script>
+{% endblock %}

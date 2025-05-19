@@ -1,0 +1,100 @@
+/* File: docs/overrides/css/progress.css */
+
+
+.md-progress-container {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    width: 80%;
+    max-width: 800px;
+    height: 6px;
+    z-index: 99;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.md-progress-container.hidden {
+    opacity: 0;
+}
+
+.md-progress-box {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    background: transparent;
+}
+
+.md-progress-segment-container {
+    height: 100%;
+    position: relative;
+    flex: 1;
+    background: rgba(158, 158, 158, 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.md-progress-segment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: var(--md-primary-fg-color);
+    border-radius: 3px;
+    transition: width 0.2s ease;
+}
+
+.md-progress-segment-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--md-primary-fg-color);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    margin-bottom: 8px;
+    z-index: 100;
+}
+
+.md-progress-segment-container:hover .md-progress-segment-tooltip {
+    opacity: 1;
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .md-progress-segment-container {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 76.1875em) {
+    .md-progress-container {
+        width: 90%;
+        bottom: 1.5rem;
+    }
+}
+
+/* Hide on very small screens */
+@media screen and (max-width: 40em) {
+    .md-progress-container {
+        width: 95%;
+        bottom: 1rem;
+    }
+}
+
+/* Print handling */
+@media print {
+    .md-progress-container {
+        display: none;
+    }
+}

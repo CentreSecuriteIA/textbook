@@ -1,0 +1,91 @@
+/* File: docs/overrides/css/tippy.css */
+
+/* Base tippy styling */
+.tippy-box[data-theme~='elegant'] {
+  background-color: var(--md-primary-fg-color);
+  color: #fff;
+  font-size: 0.65rem;
+  line-height: 1.5;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  box-shadow: var(--md-shadow-z2);
+  font-family: Baskerville, "Libre Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+/* Arrow styling */
+.tippy-box[data-theme~='elegant'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--md-primary-fg-color);
+  bottom: -7px;
+}
+
+.tippy-box[data-theme~='elegant'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: var(--md-primary-fg-color);
+  top: -7px;
+}
+
+.tippy-box[data-theme~='elegant'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: var(--md-primary-fg-color);
+  right: -7px;
+}
+
+.tippy-box[data-theme~='elegant'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: var(--md-primary-fg-color);
+  left: -7px;
+}
+
+/* Remove any background from arrow */
+.tippy-arrow {
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .tippy-box[data-theme~='elegant'] {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+[data-md-color-scheme="slate"] .tippy-box[data-theme~='elegant'] .tippy-arrow {
+  color: var(--md-primary-fg-color--dark);
+}
+
+/* Animation durations */
+.tippy-box[data-animation='perspective-extreme'][data-state='visible'] {
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+/* Selection color within tooltip */
+.tippy-box[data-theme~='elegant'] ::selection {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Abbr styling */
+.md-typeset abbr {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.32);
+  text-decoration: none;
+  cursor: help;
+  position: relative;
+}
+
+[data-md-color-scheme="slate"] .md-typeset abbr {
+  border-bottom-color: rgba(255, 255, 255, 0.32);
+}
+
+/* Prevent abbreviation styling on line breaks */
+.md-typeset abbr {
+  white-space: nowrap;
+}
+
+/* Exclude styling from certain contexts */
+h1 abbr, h2 abbr, h3 abbr, h4 abbr, h5 abbr, h6 abbr,
+a abbr,
+button abbr,
+.md-nav__link abbr,
+.md-header__inner abbr,
+.md-footer abbr,
+.md-tabs abbr,
+.excluded-abbr {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  white-space: normal !important;
+}

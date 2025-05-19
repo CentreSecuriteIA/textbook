@@ -1,0 +1,188 @@
+/* File: docs/overrides/css/footer.css */
+
+/* Footer meta section */
+.md-footer-meta {
+    background-color: var(--md-footer-bg-color--dark);
+    width: 100%;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+}
+
+.md-footer-meta__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1rem 0.8rem;  /* Added horizontal padding */
+    max-width: 61rem;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;  /* Include padding in width calculation */
+}
+
+/* Social section with lines */
+.footer-social-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;  /* Reduced gap on mobile */
+    padding: 0 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-line {
+    flex: 1;
+    border: none;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2) 50%,
+        transparent
+    );
+    min-width: 20px;  /* Ensure lines don't disappear completely */
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;  /* Allow wrapping if needed */
+    justify-content: center;
+}
+
+.footer-social__link i {
+    color: #ffffff;
+    font-size: 1.4rem;
+    transition: color 0.2s ease;
+}
+
+/* Social icon hover colors */
+.footer-social__link:hover .fa-github {
+    color: #d0d0d0;
+}
+
+.footer-social__link:hover .fa-youtube {
+    color: rgba(255, 0, 0, 0.85);
+}
+
+.footer-social__link:hover .fa-discord {
+    color: rgba(88, 101, 242, 0.85);
+}
+
+.footer-social__link:hover .fa-x-twitter {
+    color: rgba(29, 161, 242, 0.85);
+}
+
+/* Logo section */
+.footer-identity {
+    text-align: center;
+    margin: 0.5rem auto;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.footer-logo {
+    display: inline-block;
+    width: 360px;
+    max-width: 100%;  /* Ensure logo doesn't overflow */
+    transition: opacity 0.2s ease;
+}
+
+.footer-logo:hover {
+    opacity: 0.9;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Links and legal section */
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+}
+
+.footer-links a {
+    color: var(--md-footer-fg-color--light);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--md-footer-fg-color);
+}
+
+.footer-legal {
+    color: var(--md-footer-fg-color--lighter);
+    font-size: 0.7rem;
+    font-family: var(--md-code-font-family);
+    text-align: center;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.footer-legal span {
+    display: inline-block;  /* Allow better wrapping */
+    white-space: nowrap;  /* Keep each section together */
+    margin: 0.2rem 0;
+}
+
+.footer-legal a {
+    color: var(--md-footer-fg-color--light);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+    color: var(--md-footer-fg-color);
+}
+
+.separator {
+    color: var(--md-footer-fg-color--lighter);
+    margin: 0 0.2rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 76.1875em) {
+    .footer-social-container {
+        gap: 0.8rem;
+    }
+    
+    .footer-logo {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .md-footer-meta__inner {
+        padding: 1rem 0.5rem;
+    }
+
+    .footer-legal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+    }
+    
+    .footer-legal span {
+        margin: 0;
+    }
+    
+    .footer-legal .separator {
+        display: none;
+    }
+}
