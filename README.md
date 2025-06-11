@@ -1,11 +1,10 @@
 <!-- File: textbook/README.md -->
 
+This repository is archived. We have moved to a completely different framework. The new repo is at - https://github.com/markov-root/atlas
+
+The website is hosted at - https://ai-safety-atlas.com/
+
 # AI Safety Atlas
-
-## Overview
-This repository contains the source files for the AI Safety Handbook/Texbook/Atlas.
-
-The website is currently hosted at [https://centresecuriteia.github.io/textbook/](https://centresecuriteia.github.io/textbook/).
 
 ## File Structure
 
